@@ -1,0 +1,3 @@
+= TortoiseHg PyQt Port =
+
+Future official home of the TortoiseHg development repository; currently the home of the PyQt port.

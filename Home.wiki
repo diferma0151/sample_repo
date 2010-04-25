@@ -12,7 +12,7 @@ As part of this rewrite, we would like to perform a few cleanups in the design. 
 
 === "Patches" Tab ===
 
-I prefer not porting the MQ features that have been integrated into the GTK changelog browser and commit tools, and instead create an "patches" tab in the main application.  The "patches" tab would show the patch queue (allow patches to be dragged into it, etc), show the contents of selected patches, and support all the MQ commands (push, pop, refresh, etc).
+I prefer not porting the MQ features that have been integrated into the GTK changelog browser and commit tools, and instead create a "patches" tab in the main application.  The "patches" tab would show the patch queue, allow patches to be dragged into it, show the contents of selected patches, and support all the MQ commands (push, pop, refresh, etc).
 
 === Simplify Commit, Drop Shelve ===
 

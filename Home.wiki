@@ -1,3 +1,23 @@
 = TortoiseHg PyQt Port =
 
 Future official home of the TortoiseHg development repository; currently the home of the PyQt port.
+
+== Grand Plans ==
+
+TortoiseHg 1.2, scheduled for November 1, 2010, is slated to have all PyGtk dialogs replaced by PyQt equivalents.
+
+=== Main Application ===
+
+As part of this rewrite, we would like to perform a few cleanups in the design.  The changelog browser, grep and annotate (datamine) tools, and the commit tool should be combined into a single "main application" with a tabbed interface.  This app should be usable from a desktop icon or start menu link, opening a browse window (more below) if the cwd is not within a repository.
+
+=== "Patches" Tab ===
+
+I prefer not porting the MQ features that have been integrated into the GTK changelog browser and commit tools, and instead create an "patches" tab in the main application.  The "patches" tab would show the patch queue (allow patches to be dragged into it, etc), show the contents of selected patches, and support all the MQ commands (push, pop, refresh, etc).
+
+=== Simplify Commit, Drop Shelve ===
+
+I also prefer to not port the shelve tool.  Instead, the commit tool should allow change hunks to be moved into patches (or just reverted).  In fact, qnew should simply be the act of moving changes into a patch, then pushing it.  The commit tool should always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory should be tasks for the MQ tab.
+
+=== Browse Application ===
+
+I believe we need an application that remembers all the repositories on the users machine and gives a summary of all their states.  On request it should query in/out status of each of them.  It should also be able to launch the main application on any of them, or initiate pulls, or even clone one of them.

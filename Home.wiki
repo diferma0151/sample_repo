@@ -24,8 +24,26 @@ I believe we need an application that remembers all the repositories on the user
 
 == Would you like to help? ==
 
-If people are looking for places to get started, the clone, init, and web serve tools are good places to get started.  The email, archive, tags, and backout dialogs should be fairly direct ports.
+If people are looking for places to get started, from easiest to hardest, there's:
 
-The settings tool (thgconfig) is a bigger task, but more interesting.  Quickop is also in this next larger category, along with strip.  Please don't bother with the synchronize tool; it's been deprecated.
+# init
+# archive
+# tags
+# backout
+# email
+# clone
+# hgignore
+# web serve
+# strip
+# quickop
+# visdiff
+# guess renames
+# settings (thgconfig)
+# "main" application framework
+* grep
+* annotate
+* patches (MQ)
+* status/commit
+* changelog
 
-Leave the recovery tool alone until we decide what to do with it.
+Please don't bother with the synchronize tool; it's been deprecated.  And leave the recovery tool alone until we decide what to do with it.

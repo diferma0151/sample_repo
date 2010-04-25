@@ -12,7 +12,11 @@ As part of this rewrite, we would like to perform a few cleanups in the design. 
 
 === "Patches" Tab ===
 
-I prefer not porting the MQ features that have been integrated into the GTK changelog browser and commit tools, and instead create a "patches" tab in the main application.  The "patches" tab would show the patch queue, allow patches to be dragged into it, show the contents of selected patches, and support all the MQ commands (push, pop, refresh, etc).
+I prefer not porting the MQ features that have been integrated into the GTK changelog browser and commit tools, and instead create a "patches" tab in the main application.  The "patches" tab would show the patch queue, allow patches to be dragged into it, show the contents of selected patches, and support all the MQ commands (push, pop, refresh, etc).  It should also be able to apply patches to the working directory without commiting, and manage patches that are not in the MQ series file.  This tab should perhaps have a console pane to show command output.
+
+=== "Sync" Tab ===
+
+A tab of the main application should replace the "paths" page of the settings tool.  It should show all configured paths for the repository, allow this list to be modified, and support sync operations with each remote target.. including preview incoming w/ bundle (perhaps creating a new changelog tab), annotating outgoing changes, etc.  We could also put a console pane and progress bar on this tab to show running operations.  Some operations could be banned for certain URLs (p4, svn, git, etc).
 
 === Simplify Commit, Drop Shelve ===
 

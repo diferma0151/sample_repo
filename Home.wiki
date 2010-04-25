@@ -35,9 +35,10 @@ If people are looking for places to get started, from easiest to hardest, there'
 # tags
 # backout
 # email - (in progress: **Yuja**)
-# clone - (in progress: **Yuki**)
+# clone
 # hgignore
 # web serve
+# update - (in progress: **Yuki**)
 # strip
 # quickop
 # visdiff

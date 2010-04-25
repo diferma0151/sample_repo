@@ -47,3 +47,5 @@ If people are looking for places to get started, from easiest to hardest, there'
 * changelog
 
 Please don't bother with the synchronize tool; it's been deprecated.  And leave the recovery tool alone until we decide what to do with it.
+
+Please send an e-mail to thg-dev if you start working on something so we do not duplicate effort.

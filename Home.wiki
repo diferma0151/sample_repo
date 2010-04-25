@@ -34,7 +34,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 # archive
 # tags
 # backout
-# email
+# email - (in progress: **Yuja**)
 # clone - (in progress: **Yuki**)
 # hgignore
 # web serve

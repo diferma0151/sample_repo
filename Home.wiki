@@ -2,6 +2,8 @@
 
 Future official home of the TortoiseHg development repository; currently the home of the PyQt port.
 
+Mailing list: http://groups.google.com/group/thg-dev/about?hl=en
+
 == Grand Plans ==
 
 TortoiseHg 1.2, scheduled for November 1, 2010, is slated to have all PyGtk dialogs replaced by PyQt equivalents.

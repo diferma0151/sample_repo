@@ -51,7 +51,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 * grep
 * annotate
 * patches (MQ)
-* status/commit
+* status/commit - (in progress: **Steve**) currently connected to 'thg test'
 * changelog
 
 Plus basic details like common keyboard accelerators, app icons, settings, geometry restore.

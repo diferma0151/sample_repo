@@ -32,6 +32,7 @@ I believe we need an application that remembers all the repositories on the user
 
 If people are looking for places to get started, from easiest to hardest, there's:
 
+# about - (in progress: **Johan**)
 # init
 # archive
 # tags

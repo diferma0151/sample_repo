@@ -24,9 +24,9 @@ A tab of the main application should replace the "paths" page of the settings to
 
 I also prefer to not port the shelve tool.  Instead, the commit tool should allow change hunks to be moved into patches (or just reverted).  In fact, qnew should simply be the act of moving changes into a patch, then pushing it.  The commit tool should always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory should be tasks for the patches widget.
 
-=== Browse Application ===
+=== Browse Widget ===
 
-I believe we need an application that remembers all the repositories on the users machine and gives a summary of all their states.  On request it should query in/out status of each of them.  It should also be able to launch the main application on any of them, or initiate pulls, or even clone one of them.
+I believe we need a widget that remembers all the repositories on the users machine and gives a summary of all their states.  On request it should query in/out status of each of them.  It should also be able to launch the main application on any of them, or initiate pulls, or even clone one of them.
 
 == Would you like to help? ==
 

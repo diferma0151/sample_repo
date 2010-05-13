@@ -46,7 +46,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 # quickop - (done)
 # visdiff - (done)
 # guess renames
-# settings (thgconfig)
+# settings/thgconfig
 # "main" application framework
 * grep - (in progress: **Steve**)
 * annotate

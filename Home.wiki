@@ -48,14 +48,14 @@ If people are looking for places to get started, from easiest to hardest, there'
 # guess renames
 # settings (thgconfig)
 # "main" application framework
-* grep
+* grep - (in progress: **Steve**)
 * annotate
 * patches (MQ)
-* status/commit - (in progress: **Steve**) currently connected to 'thg test'
-* changelog
+* status/commit - (on hold: **Steve**)
+* changelog - "borrowed" from hgview, still needs work
 
-Plus basic details like common keyboard accelerators, app icons, settings, geometry restore.
+Plus basic details like common keyboard accelerators, app icons
 
-Please don't bother with the synchronize tool; it'll be replaced with the "sync" tab of the main application.  And leave the recovery tool alone until we decide what to do with it.
+The synchronize and recovery tools will be swallowed whole by the workbench app.
 
 Please send an e-mail to thg-dev if you start working on something so we do not duplicate effort.

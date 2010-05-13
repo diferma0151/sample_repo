@@ -33,7 +33,7 @@ I believe we need an application that remembers all the repositories on the user
 If people are looking for places to get started, from easiest to hardest, there's:
 
 # about - (in progress: **Johan**)
-# init
+# init (drag folder onto workbench)
 # archive
 # tags
 # backout
@@ -43,8 +43,8 @@ If people are looking for places to get started, from easiest to hardest, there'
 # web serve
 # strip
 # merge - using [[http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/html/qwizard.html|QWizard]]? ([[http://doc.qt.nokia.com/qq/qq22-qwizard.html|example]])
-# quickop
-# visdiff - (basically done)
+# quickop - (done)
+# visdiff - (done)
 # guess renames
 # settings (thgconfig)
 # "main" application framework

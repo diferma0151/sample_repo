@@ -37,10 +37,10 @@ If people are looking for places to get started, from easiest to hardest, there'
 # archive
 # tags
 # backout
-# email - (in progress: **Yuja**)
+# email - (partially done: **Yuya**)
 # clone - (in progress: **Yuki**)
 # hgignore
-# web serve
+# web serve - (in progress: **Yuya**)
 # strip
 # merge - using [[http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/html/qwizard.html|QWizard]]? ([[http://doc.qt.nokia.com/qq/qq22-qwizard.html|example]])
 # quickop - (done)

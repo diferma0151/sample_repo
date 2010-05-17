@@ -32,9 +32,9 @@ I believe we need a widget that remembers all the repositories on the users mach
 
 If people are looking for places to get started, from easiest to hardest, there's:
 
-# about - (in progress: **Johan**)
+# about - (partially done (needs threading added): **Johan**)
 # init (drag folder onto workbench)
-# archive
+# archive - (in progress: **Johan**)
 # tags
 # backout
 # email - (partially done: **Yuya**)

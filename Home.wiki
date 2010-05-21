@@ -39,7 +39,7 @@ Currently being implemented as a "registry" widget in the workbench
 If people are looking for places to get started, from easiest to hardest, there's:
 
 # about - (partially done (needs threading added): **Johan**)
-# init (drag folder onto workbench)
+# init
 # archive - (in progress: **Johan**)
 # tags
 # backout
@@ -52,11 +52,11 @@ If people are looking for places to get started, from easiest to hardest, there'
 # quickop - (done)
 # visdiff - (done)
 # guess renames
-# settings/thgconfig
+# settings/thgconfig - (in progress: **Steve**)
 # "main" application framework
-* grep - (in progress: **Steve**)
+* grep - (done: **Steve**)
 * annotate
-* patches (MQ)
+* patches
 * status/commit - (on hold: **Steve**)
 * changelog - "borrowed" from hgview, still needs work
 

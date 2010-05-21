@@ -6,7 +6,7 @@ Mailing list: http://groups.google.com/group/thg-dev/about?hl=en
 
 == Grand Plans ==
 
-TortoiseHg 1.2, scheduled for November 1, 2010, is slated to have all PyGtk dialogs replaced by PyQt equivalents.
+TortoiseHg 2.0, scheduled for November 1, 2010, is slated to have all PyGtk dialogs replaced by PyQt equivalents.
 
 === Main Application ===
 

@@ -34,6 +34,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 
 # about - (partially done (needs threading added): **Johan**)
 # init
+# rename / move
 # archive - (in progress: **Johan**)
 # tags
 # backout

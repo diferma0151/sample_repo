@@ -1,0 +1,11 @@
+Feel free to add new categories as necessary
+
+== Workbench ==
+
+== Commit ==
+
+== Quickop ==
+
+== Settings ==
+
+== qtlib ==

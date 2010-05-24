@@ -4,24 +4,24 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-# No commit/qrefresh button for embedded commit tool
+* No commit/qrefresh button for embedded commit tool
 
 == Commit ==
 
-#  qrefresh support
-#  auto-select a file at startup?
-#  re-select the previous file after refresh
-#  threaded / wrapped commit (need a CmdRunner equivalent)
-#  qtlib decode failure dialog (ask for retry locale, suggest HGENCODING)
-#  Need a unicode-to-UTF8 function
-#  +1 / -1 head indication (not as important with workbench integration)
-#  recent committers history
-#  pushafterci, autoincludes list
-#  use date option
-#  qnew/shelve-patch creation dialog (in another file)
-#  reflow / auto-wrap / message format checks / paste filenames
-#  spell check / tab completion
-#  in-memory patching / committing chunk selected files
+*  qrefresh support
+*  auto-select a file at startup?
+*  re-select the previous file after refresh
+*  threaded / wrapped commit (need a CmdRunner equivalent)
+*  qtlib decode failure dialog (ask for retry locale, suggest HGENCODING)
+*  Need a unicode-to-UTF8 function
+*  +1 / -1 head indication (not as important with workbench integration)
+*  recent committers history
+*  pushafterci, autoincludes list
+*  use date option
+*  qnew/shelve-patch creation dialog (in another file)
+*  reflow / auto-wrap / message format checks / paste filenames
+*  spell check / tab completion
+*  in-memory patching / committing chunk selected files
 
 == Quickop ==
 

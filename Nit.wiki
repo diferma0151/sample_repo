@@ -39,3 +39,16 @@ This is where you register features that are unimplemented or badly implemented 
 
 * Need an encode fail dialog that prompts for an encoding, sets HGENCODING, then retries
 * Need functions to convert between unicode<->UTF-8
+
+== Log ==
+
+* The changeset graph window starts too small (and does not remember your settings)
+* Window cannot be closed with ctrl+q
+* Navigation cannot be done with up arrow/down arrow as normal, but has to happen with ctrl accelerator
+* Moving from working changeset to the parent shows an empty diff at the parent, if you select another non-working changeset revision you get a diff and navigating back to the working changeset parent shows its diff correctly now
+* Underlines of revision and node for parent/child in changeset does not follow the same baseline
+* There is no reason for commit message to be italicized.
+* F5 should also refresh
+* The repository browser is a waste of space if you do not use subrepos (hide it if no subrepos are present)
+* It was preferable to have the graph to the far left as that makes more sense visually
+* Optional columns are missing (e.g. the node can be useful)

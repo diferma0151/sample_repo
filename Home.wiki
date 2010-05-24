@@ -28,12 +28,6 @@ I also prefer to not port the shelve tool.  Instead, the commit tool should allo
 
 Currently being implemented as a "registry" widget in the workbench
 
-=== Settings Tool ===
-
-* Use a QStackedLayout
-* One page of the stacked layout should be a QSci instance for editing the file, giving us control over synchronization between the editor and viewer panes
-* make use of Qt's font and color choosers
-
 == Would you like to help? ==
 
 If people are looking for places to get started, from easiest to hardest, there's:
@@ -45,16 +39,16 @@ If people are looking for places to get started, from easiest to hardest, there'
 # backout
 # email - (partially done: **Yuya**)
 # clone - (in progress: **Yuki**)
-# hgignore
+# hgignore - (in progress: **Steve**)
 # web serve - (in progress: **Yuya**)
 # strip
 # merge - using [[http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/html/qwizard.html|QWizard]]? ([[http://doc.qt.nokia.com/qq/qq22-qwizard.html|example]])
 # quickop - (done)
 # visdiff - (done)
 # guess renames
-# settings/thgconfig - (in progress: **Steve**)
+# settings/thgconfig - (mostly done)
 # "main" application framework
-* grep - (done: **Steve**)
+* grep - (mostly done)
 * annotate
 * patches
 * status/commit - (on hold: **Steve**)

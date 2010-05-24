@@ -29,6 +29,10 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Settings ==
 
+* port extensions page
+* new [auth] page
+* new generic extension registration
+
 == qtlib ==
 
 == i18n ==

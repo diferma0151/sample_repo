@@ -25,6 +25,8 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Quickop ==
 
+* Error messages are not being displayed (cmdui.Widget.pmon.set_text() does not appear to work)
+
 == Settings ==
 
 == qtlib ==

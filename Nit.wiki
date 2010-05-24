@@ -15,6 +15,7 @@ This is where you register features that are unimplemented or badly implemented 
 * The repository browser is a waste of space if you do not use subrepos (hide it if no subrepos are present)
 * It was preferable to have the graph to the far left as that makes more sense visually
 * Optional columns are missing (e.g. the node can be useful)
+* Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 
 == Commit ==
 

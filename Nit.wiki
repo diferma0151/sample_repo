@@ -64,3 +64,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 * Need an encode fail dialog that prompts for an encoding, sets HGENCODING, then retries
 * Need functions to convert between unicode<->UTF-8
+
+== run ==
+
+* slower startup than hgtk

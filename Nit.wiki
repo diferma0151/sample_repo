@@ -15,8 +15,10 @@ This is where you register features that are unimplemented or badly implemented 
 * The repository browser takes up a lot of (possibly unnecessary) space, please support hiding it
 * It was preferable to have the graph to the far left as that makes more sense visually
 * Optional columns are missing (e.g. the node can be useful)
+* Current column selection should be saved as a setting.
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 * Hitting ctrl+g after having done an inline search one is presented with a new control to enter search criteria - at the very least this should be filled out with what you actually searched for - better, it should jump to the next match
+* Make changelog column size adjustable, and save them with other settings (might also apply to other parts).
 
 == Commit ==
 
@@ -55,6 +57,10 @@ This is where you register features that are unimplemented or badly implemented 
 * threaded preview
 * save history and window size
 * rename module 'hgemail' to 'email' ?
+
+== grep ==
+
+* I (= Johan) don't like the use of the little treeview-borrowed '+'-button for expanding the query possibilities. It's too small. It's used in other places too; same remark. (It's not because MS uses it in Explorer, we have to take it over elsewhere.) Or there should be a keyboard alternative.
 
 == qtlib ==
 

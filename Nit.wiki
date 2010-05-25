@@ -54,6 +54,7 @@ This is where you register features that are unimplemented or badly implemented 
 * selectively send changesets
 * threaded preview
 * save history and window size
+* rename module 'hgemail' to 'email' ?
 
 == qtlib ==
 

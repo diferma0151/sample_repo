@@ -58,7 +58,7 @@ This is where you register features that are unimplemented or badly implemented 
 * save history and window size
 * rename module 'hgemail' to 'email' ?
 
-== grep ==
+== Grep ==
 
 * I (= Johan) don't like the use of the little treeview-borrowed '+'-button for expanding the query possibilities. It's too small. It's used in other places too; same remark. (It's not because MS uses it in Explorer, we have to take it over elsewhere.) Or there should be a keyboard alternative.
 

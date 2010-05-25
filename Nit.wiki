@@ -50,7 +50,7 @@ This is where you register features that are unimplemented or badly implemented 
 == qtlib ==
 
 * pre-defined colors (liek gtklib)
-* more general means for showing the generated hg command (see archive dialog)
+* more general means for showing or previewing the generated hg command (see archive dialog)
 
 == i18n ==
 

@@ -34,9 +34,9 @@ Currently being implemented as a "registry" widget in the workbench
 If people are looking for places to get started, from easiest to hardest, there's:
 
 # about - (partially done (needs threading added): **Johan**)
-# init
+# init - (in progress: **Johan**)
 # rename / move
-# archive - (in progress: **Johan**)
+# archive - (mostly done: **Johan**)
 # tags - (in progress: **Yuki**)
 # backout
 # email - (partially done: **Yuya**)

@@ -37,6 +37,10 @@ This is where you register features that are unimplemented or badly implemented 
 
 * Error messages are not being displayed (cmdui.Widget.pmon.set_text() does not appear to work)
 
+== Update ==
+
+* "smart update" feature (incomplete)
+
 == Settings ==
 
 * port extensions page
@@ -44,6 +48,8 @@ This is where you register features that are unimplemented or badly implemented 
 * new generic extension registration
 
 == qtlib ==
+
+* pre-defined colors (liek gtklib)
 
 == i18n ==
 

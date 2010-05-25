@@ -47,6 +47,13 @@ This is where you register features that are unimplemented or badly implemented 
 * new [auth] page
 * new generic extension registration
 
+== Email ==
+
+* bundle support
+* selectively send changesets
+* threaded preview
+* save history and window size
+
 == qtlib ==
 
 * pre-defined colors (liek gtklib)

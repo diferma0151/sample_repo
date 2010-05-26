@@ -4,7 +4,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* No commit/qrefresh button for embedded commit tool
 * The changeset graph window starts too small (and does not remember your settings)
 * Window cannot be closed with ctrl+q
 * Navigation cannot be done with up arrow/down arrow as normal, but has to happen with ctrl accelerator

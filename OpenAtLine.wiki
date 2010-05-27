@@ -10,3 +10,25 @@ If no line number is being passed to the editor, the braces and everything betwe
 $FILE is optional, if it is not specified the filename is appended.
 
 More specific examples:
+
+Here are 3 examples of editors tested on Windows 7 Professional.
+
+For Scite (the Scintilla example editor) (tested with v2.11) (free, open source) :
+{{{
+[tortoisehg]
+editor = <path\to\>Scite_2.11.exe ["-open:$FILE" -goto:$LINENUM]
+}}}
+The quotes are mandatory, as I experienced. Scite is also available on Linux.
+
+For NotePad++ (tested with v5.6.8) (free, open source, gpl) :
+{{{
+[tortoisehg]
+editor = <path\to\>Notepad++.exe [$FILE -n$LINENUM] -multiInst
+}}}
+I experienced the '-multiInst' option as case-sensitive.
+
+For TextPad (tested with v5.3.1) (shareware) :
+{{{
+[tortoisehg]
+editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
+}}}

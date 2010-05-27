@@ -22,10 +22,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Commit ==
 
-* Ctrl-Enter when focus is in file list unchecks highlighted files, then commits
 *  qrefresh support
-*  auto-select a file at startup?
-*  re-select the previous file after refresh
 *  threaded / wrapped commit (need a CmdRunner equivalent)
 *  +1 / -1 head indication (not as important with workbench integration)
 *  recent committers history

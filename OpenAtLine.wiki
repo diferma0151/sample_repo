@@ -1,0 +1,12 @@
+TortoiseHg 2.0 adds variable expansion to tortoisehg.editor to allow you to open source files to particular lines.  The is particularly useful when search the repository history.
+
+In general, the syntax is:
+{{{
+[tortoisehg]
+editor = editprog -flags [$FILE --num=$LINENUM] -moreflags
+}}}
+
+If no line number is being passed to the editor, the braces and everything between are removed.
+$FILE is optional, if it is not specified the filename is appended.
+
+More specific examples:

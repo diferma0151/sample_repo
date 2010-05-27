@@ -3,7 +3,7 @@ TortoiseHg 2.0 adds variable expansion to tortoisehg.editor to allow you to open
 In general, the syntax is:
 {{{
 [tortoisehg]
-editor = editprog -flags [$FILE --num=$LINENUM] -moreflags
+editor = myeditor -flags [$FILE --num=$LINENUM] -moreflags
 }}}
 
 If no line number is being passed to the editor, the braces and everything between are removed.

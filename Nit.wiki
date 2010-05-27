@@ -23,13 +23,13 @@ This is where you register features that are unimplemented or badly implemented 
 == Commit ==
 
 *  qrefresh support
+*  use date option
+*  reflow / auto-wrap / message format checks / paste filenames
 *  threaded / wrapped commit (need a CmdRunner equivalent)
 *  +1 / -1 head indication (not as important with workbench integration)
 *  recent committers history
 *  pushafterci, autoincludes list
-*  use date option
 *  qnew/shelve-patch creation dialog (in another file)
-*  reflow / auto-wrap / message format checks / paste filenames
 *  spell check / tab completion
 *  in-memory patching / committing chunk selected files
 
@@ -47,6 +47,7 @@ This is where you register features that are unimplemented or badly implemented 
 * new [auth] page
 * new generic extension registration
 * font settings
+* new [color] page
 
 == Email ==
 
@@ -58,11 +59,11 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Grep ==
 
-* I (= Johan) don't like the use of the little treeview-borrowed '+'-button for expanding the query possibilities. It's too small. It's used in other places too; same remark. (It's not because MS uses it in Explorer, we have to take it over elsewhere.) Or there should be a keyboard alternative.
+* I (= Johan) don't like the use of the little treeview-borrowed '+'-button for expanding the query possibilities. It's too small. It's used in other places too; same remark. (It's not because MS uses it in Explorer, we have to take it over elsewhere.) Or there should be a keyboard alternative.  (please, pick an accelerator (ctrl-space?) -- steve)
 
 == qtlib ==
 
-* pre-defined colors (liek gtklib)
+* pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
 * more general means for showing or previewing the generated hg command (see archive dialog)
 
 == i18n ==

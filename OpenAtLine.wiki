@@ -36,5 +36,5 @@ editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 === "The Big Two" on Unix ===
 
 [tortoisehg]
-editor = gvim -f [$FILE +$LINENUM]
+editor = gvim -f [+$LINENUM $FILE]
 editor = emacs [+$LINENUM $FILE]

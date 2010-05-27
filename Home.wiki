@@ -4,6 +4,7 @@ Future official home of the TortoiseHg development repository; currently the hom
 
 * Mailing list: http://groups.google.com/group/thg-dev/about?hl=en
 * File a bug/nit on our [[Nit]] list
+* [[OpenAtLine]] new feature
 
 == Grand Plans ==
 

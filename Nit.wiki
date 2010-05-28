@@ -78,4 +78,4 @@ This is where you register features that are unimplemented or badly implemented 
 
 == other ==
 
-* I would like to have a really good way to change fonts in the TortoiseHg qt dialogs. Mostly for enlarging fonts, but in small steps, so each can find their own "best setting". All fonts means both for dialog fonts and for content widgets. This is necessary f.i. for people not having the good sight of a youngster anymore (like me). (Also because changing screen resolution and/or OS settings cannot solve everything.)
+* I would like to have a really good way to change fonts in the TortoiseHg qt dialogs. Mostly for enlarging fonts, but in small steps, so each can find their own "best setting". All fonts means both for dialog fonts and for content widgets. This is necessary f.i. for people not having the good sight of a youngster anymore (like me). (Also because changing screen resolution and/or OS settings cannot solve everything.) I'm willing to help with this, of course.

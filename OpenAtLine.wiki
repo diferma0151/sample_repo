@@ -34,8 +34,17 @@ editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 }}}
 
 === "The Big Two" on Unix ===
+
 {{{
 [tortoisehg]
 editor = gvim -f [+$LINENUM $FILE]
 editor = emacs [+$LINENUM $FILE]
+}}}
+
+=== OS X Editors ===
+
+{{{
+[tortoisehg]
+editor = textwrangler --wait [+$LINENUM $FILE]
+editor = textmate --wait [--line $LINENUM $FILE]
 }}}

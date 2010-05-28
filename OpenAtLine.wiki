@@ -3,7 +3,7 @@ TortoiseHg 2.0 adds variable expansion to tortoisehg.editor to allow you to open
 In general, the syntax is:
 {{{
 [tortoisehg]
-editor = myeditor -flags [$FILE --num=$LINENUM] -moreflags
+editor = myeditor -flags [$FILE --num=$LINENUM] [--highlight "$SEARCH"] -moreflags
 }}}
 
 If no line number is being passed to the editor, the braces and everything between are removed.
@@ -37,7 +37,7 @@ editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 
 {{{
 [tortoisehg]
-editor = gvim -f [+$LINENUM $FILE]
+editor = gvim -f [-c':set hls' -c'/$SEARCH/'] [+$LINENUM $FILE]
 
 [tortoisehg]
 editor = emacs [+$LINENUM $FILE]

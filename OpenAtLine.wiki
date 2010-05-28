@@ -41,7 +41,7 @@ editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 editor = gvim -f [-c':set hls' -c'/$SEARCH/'] [+$LINENUM $FILE]
 
 [tortoisehg]
-editor = emacs [+$LINENUM $FILE]
+emacs [+$LINENUM $FILE] [--eval '(highlight-regexp "$SEARCH")']
 }}}
 
 === OS X Editors ===

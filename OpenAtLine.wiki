@@ -38,6 +38,8 @@ editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 {{{
 [tortoisehg]
 editor = gvim -f [+$LINENUM $FILE]
+
+[tortoisehg]
 editor = emacs [+$LINENUM $FILE]
 }}}
 
@@ -46,5 +48,7 @@ editor = emacs [+$LINENUM $FILE]
 {{{
 [tortoisehg]
 editor = textwrangler --wait [+$LINENUM $FILE]
-editor = textmate --wait [--line $LINENUM $FILE]
+
+[tortoisehg]
+editor = mate --wait [--line $LINENUM $FILE]
 }}}

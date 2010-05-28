@@ -8,7 +8,7 @@ editor = myeditor -flags [$FILE --num=$LINENUM] [--highlight "$SEARCH"] -morefla
 
 $LINENUM and $SEARCH are key-phrases.  If you specify them in a bracketed section and those parameters are not passed to the editor, the entire bracketed phrase is removed from the command line.
 
-$FILE is optional.  If it is not expanded any phrase, the filename will be appended at the end of the command line.
+$FILE is optional.  If it is not expanded in any phrase, the filename will be appended at the end of the command line.
 
 More specific examples:
 

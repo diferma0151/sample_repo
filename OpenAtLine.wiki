@@ -17,7 +17,7 @@ More specific examples:
 * For Scite (the Scintilla example editor) (tested with v2.11) (free, open source) :
 {{{
 [tortoisehg]
-editor = <path\to\>Scite_2.11.exe ["-open:$FILE" -goto:$LINENUM]
+editor = <path\to\>Scite_2.11.exe ["-open:$FILE" -goto:$LINENUM]["-find:$SEARCH"]
 }}}
 The quotes are mandatory, as I experienced. Scite is also available on Linux.
 
@@ -42,6 +42,12 @@ editor = gvim -f [-c':set hls' -c'/$SEARCH/'] [+$LINENUM $FILE]
 
 [tortoisehg]
 editor = emacs [+$LINENUM $FILE] [--eval '(highlight-regexp "$SEARCH")']
+}}}
+
+Scite also runs on Linux
+{{{
+[tortoisehg]
+editor = scite [-open:$FILE -goto:$LINENUM]["-find:$SEARCH"]
 }}}
 
 === OS X Editors ===

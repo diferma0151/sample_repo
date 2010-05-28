@@ -6,8 +6,9 @@ In general, the syntax is:
 editor = myeditor -flags [$FILE --num=$LINENUM] [--highlight "$SEARCH"] -moreflags
 }}}
 
-If no line number is being passed to the editor, the braces and everything between are removed.
-$FILE is optional, if it is not specified the filename is appended.
+$LINENUM and $SEARCH are key-phrases.  If you specify them in a bracketed section and those parameters are not passed to the editor, the entire bracketed phrase is removed from the command line.
+
+$FILE is optional.  If it is not expanded any phrase, the filename will be appended at the end of the command line.
 
 More specific examples:
 

@@ -13,23 +13,22 @@ $FILE is optional.  If it is not expanded in any phrase, the filename will be ap
 More specific examples:
 
 === Windows ===
-Tested on Windows 7 Professional : Scite, Notepad++, Textpad.
-* For Scite (the Scintilla example editor) (tested with v2.11) (free, open source) :
+Tested on Windows 7 Professional : Scite v2.11, Notepad++ v5.6.8, Textpad v5.3.1.
 {{{
+# Scite (the Scintilla example editor) (free) :
 [tortoisehg]
-editor = <path\to\>Scite_2.11.exe ["-open:$FILE" -goto:$LINENUM]["-find:$SEARCH"]
+editor = <path\to\>Scite.exe ["-open:$FILE" -goto:$LINENUM] ["-find:$SEARCH"]
 }}}
-The quotes are mandatory, as I experienced (at least on Win7).
 
-* For NotePad++ (tested with v5.6.8) (free, open source, gpl) :
 {{{
+# NotePad++ (free) :
+# I experienced the '-multiInst' option as case-sensitive (at least on Win7).
 [tortoisehg]
-editor = <path\to\>Notepad++.exe [$FILE -n$LINENUM] -multiInst
+editor = <path\to\>Notepad++.exe ["$FILE" -n$LINENUM] -multiInst
 }}}
-I experienced the '-multiInst' option as case-sensitive.
 
-* For TextPad (tested with v5.3.1) (shareware) :
 {{{
+# TextPad (shareware) :
 [tortoisehg]
 editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 }}}
@@ -47,7 +46,7 @@ editor = emacs [+$LINENUM $FILE] [--eval '(highlight-regexp "$SEARCH")']
 
 # Scite
 [tortoisehg]
-editor = scite [-open:$FILE -goto:$LINENUM]["-find:$SEARCH"]
+editor = scite [-open:$FILE -goto:$LINENUM] ["-find:$SEARCH"]
 }}}
 
 === OS X Editors ===

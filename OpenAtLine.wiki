@@ -53,9 +53,11 @@ editor = scite [-open:$FILE -goto:$LINENUM]["-find:$SEARCH"]
 === OS X Editors ===
 
 {{{
+# TextWrangler
 [tortoisehg]
-editor = textwrangler --wait [+$LINENUM $FILE]
+editor = edit [+$LINENUM --wait $FILE]
 
+# TextMate
 [tortoisehg]
 editor = mate --wait [--line $LINENUM $FILE]
 }}}

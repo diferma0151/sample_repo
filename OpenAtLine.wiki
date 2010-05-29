@@ -12,14 +12,14 @@ $FILE is optional.  If it is not expanded in any phrase, the filename will be ap
 
 More specific examples:
 
-=== Here are 3 examples of editors tested on Windows 7 Professional. ===
-
+=== Windows ===
+Tested on Windows 7 Professional : Scite, Notepad++, Textpad.
 * For Scite (the Scintilla example editor) (tested with v2.11) (free, open source) :
 {{{
 [tortoisehg]
 editor = <path\to\>Scite_2.11.exe ["-open:$FILE" -goto:$LINENUM]["-find:$SEARCH"]
 }}}
-The quotes are mandatory, as I experienced. Scite is also available on Linux.
+The quotes are mandatory, as I experienced (at least on Win7).
 
 * For NotePad++ (tested with v5.6.8) (free, open source, gpl) :
 {{{

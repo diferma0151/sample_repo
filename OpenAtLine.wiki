@@ -34,18 +34,18 @@ I experienced the '-multiInst' option as case-sensitive.
 editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 }}}
 
-=== "The Big Two" on Unix ===
+=== Linux / Unix ===
 
 {{{
+# (G)VIM
 [tortoisehg]
 editor = gvim -f [-c':set hls' -c'/$SEARCH/'] [+$LINENUM $FILE]
 
+# (x)emacs
 [tortoisehg]
 editor = emacs [+$LINENUM $FILE] [--eval '(highlight-regexp "$SEARCH")']
-}}}
 
-Scite also runs on Linux
-{{{
+# Scite
 [tortoisehg]
 editor = scite [-open:$FILE -goto:$LINENUM]["-find:$SEARCH"]
 }}}

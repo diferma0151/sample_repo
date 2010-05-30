@@ -34,8 +34,8 @@ Currently being implemented as a "registry" widget in the workbench
 
 If people are looking for places to get started, from easiest to hardest, there's:
 
-# about - (partially done (needs threading added): **Johan**)
-# init - (in progress: **Johan**)
+# about - (done (but needs threading added): **Johan**)
+# init - (done)
 # rename / move
 # archive - (mostly done: **Johan**)
 # tags - (done)

@@ -22,7 +22,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Commit ==
 
-*  qrefresh support
+*  qrefresh support, checkbox for -D option
 *  threaded / wrapped commit (need a CmdRunner equivalent)
 *  +1 / -1 head indication (not as important with workbench integration)
 *  pushafterci (not necessary if we fully support hooks)

@@ -23,12 +23,9 @@ This is where you register features that are unimplemented or badly implemented 
 == Commit ==
 
 *  qrefresh support
-*  use date option
-*  reflow / auto-wrap / message format checks / paste filenames
 *  threaded / wrapped commit (need a CmdRunner equivalent)
 *  +1 / -1 head indication (not as important with workbench integration)
-*  recent committers history
-*  pushafterci, autoincludes list
+*  pushafterci (not necessary if we fully support hooks)
 *  qnew/shelve-patch creation dialog (in another file)
 *  spell check / tab completion
 *  in-memory patching / committing chunk selected files
@@ -36,6 +33,10 @@ This is where you register features that are unimplemented or badly implemented 
 == Quickop ==
 
 * Error messages are not being displayed (cmdui.Widget.pmon.set_text() does not appear to work)
+
+== Ignore ==
+
+* More intelligent insert routine; find glob or regexp file section and add line without prefix
 
 == Update ==
 

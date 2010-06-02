@@ -30,10 +30,6 @@ This is where you register features that are unimplemented or badly implemented 
 *  spell check / tab completion
 *  in-memory patching / committing chunk selected files
 
-== Quickop ==
-
-* Error messages are not being displayed (cmdui.Widget.pmon.set_text() does not appear to work)
-
 == Ignore ==
 
 * More intelligent insert routine; find glob or regexp file section and add line without prefix

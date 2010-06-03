@@ -36,7 +36,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 
 # about - (done (but needs threading added): **Johan**)
 # init - (done)
-# rename / move
+# rename / move - (in progress: **Johan**)
 # archive - (mostly done: **Johan**)
 # tags - (done)
 # backout - (done)

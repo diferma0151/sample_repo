@@ -46,7 +46,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 # web serve - (in progress: **Yuya**)
 # update - (done)
 # strip - (in progress: **Yuki**)
-# merge - (in progress: **Yuki**) - using [[http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/html/qwizard.html|QWizard]]? ([[http://doc.qt.nokia.com/qq/qq22-qwizard.html|example]])
+# merge - (mostly done)
 # quickop - (done)
 # visdiff - (done)
 # guess renames - (in progress: **Steve**)

@@ -43,7 +43,8 @@ This is where you register features that are unimplemented or badly implemented 
 * shelve feature
 * temporary patch name
 * show outstanding changes in WD
-* preview merged files (Commit page)
+* preview merged files (Commit page) - support for wcts on csinfo
+* emit "repoInvalidated" signal after merged and committed
 
 == Settings ==
 

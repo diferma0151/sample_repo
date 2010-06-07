@@ -59,7 +59,6 @@ This is where you register features that are unimplemented or badly implemented 
 * bundle support
 * selectively send changesets
 * threaded preview
-* save history and window size
 * handle errors gracefully
 * rename module 'hgemail' to 'email' ?
 

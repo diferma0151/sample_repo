@@ -9,16 +9,14 @@ This is where you register features that are unimplemented or badly implemented 
 * Navigation cannot be done with up arrow/down arrow as normal, but has to happen with ctrl accelerator
 * Moving from working changeset to the parent shows an empty diff at the parent, if you select another non-working changeset revision you get a diff and navigating back to the working changeset parent shows its diff correctly now
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline
-* There is no reason for commit message to be italicized.
-* F5 should also refresh
-* The repository browser takes up a lot of (possibly unnecessary) space, please support hiding it
+* F5 should refresh
 * It was preferable to have the graph to the far left as that makes more sense visually
 * Optional columns are missing (e.g. the node can be useful)
 * Current column selection should be saved as a setting.
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 * Hitting ctrl+g after having done an inline search one is presented with a new control to enter search criteria - at the very least this should be filled out with what you actually searched for - better, it should jump to the next match
 * Make changelog column size adjustable, and save them with other settings (might also apply to other parts).
-* The graph of the gtk version is much easier to "read" and follow, specially in the more complex parts. The graphical appearance is clearer.
+
 
 == Commit ==
 

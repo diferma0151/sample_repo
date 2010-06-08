@@ -28,10 +28,6 @@ This is where you register features that are unimplemented or badly implemented 
 *  spell check / tab completion
 *  in-memory patching / committing chunk selected files
 
-== Ignore ==
-
-* More intelligent insert routine; find glob or regexp file section and add line without prefix
-
 == Update ==
 
 * "smart update" feature (incomplete)

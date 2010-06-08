@@ -51,9 +51,7 @@ This is where you register features that are unimplemented or badly implemented 
 == Email ==
 
 * bundle support
-* selectively send changesets
 * threaded preview
-* handle errors gracefully
 * rename module 'hgemail' to 'email' ?
 
 == Grep ==

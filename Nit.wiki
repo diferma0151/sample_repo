@@ -16,7 +16,9 @@ This is where you register features that are unimplemented or badly implemented 
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 * Hitting ctrl+g after having done an inline search one is presented with a new control to enter search criteria - at the very least this should be filled out with what you actually searched for - better, it should jump to the next match
 * Make changelog column size adjustable, and save them with other settings (might also apply to other parts).
-
+* Filter csets per cset type (all, tagged, ancestry, parents, heads, merge, non-merge).
+* Filter csets per filename.
+* Filter csets per username.
 
 == Commit ==
 

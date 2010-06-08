@@ -68,7 +68,7 @@ This is where you register features that are unimplemented or badly implemented 
 == qtlib ==
 
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
-* more general means for showing or previewing the generated hg command (see archive dialog)
+* more general means for showing or previewing the generated hg command (see archive dialog) (log widget)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() ?
 

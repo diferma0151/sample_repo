@@ -84,6 +84,7 @@ This is where you register features that are unimplemented or badly implemented 
 == run ==
 
 * slower startup than hgtk (demandimport is never enabled, it breaks pixmap loading)
+** now as fast as hgtk thanks to <<changeset decb52eebbb3>>
 ** Idea: do portable_fork() on early stage (before loading Qt and mercurial things.) It tooks 0.5 sec before spawning new process on my env.
 
 == usability ==

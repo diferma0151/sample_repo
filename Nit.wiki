@@ -40,7 +40,6 @@ This is where you register features that are unimplemented or badly implemented 
 * emit "repoInvalidated" signal after merged and committed
 * shelve feature
 * temporary patch name
-* show outstanding changes in WD
 
 == Settings ==
 

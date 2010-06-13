@@ -2,7 +2,7 @@
 
 Future official home of the TortoiseHg development repository; currently the home of the PyQt port.
 
-* Mailing list: http://groups.google.com/group/thg-dev/about?hl=en
+* Mailing list: http://groups.google.com/group/thg-dev
 * File a bug/nit on our [[Nit]] list
 * [[OpenAtLine]] new feature
 

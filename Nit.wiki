@@ -36,6 +36,13 @@ Has a lot of potential:
 *  spell check / tab completion
 *  in-memory patching / committing chunk selected files
 
+Safe chunk select / "move to patch" implementation:
+# Teach hgshelve to parse non-git diffs, drop git diffs everywhere, detect binary/perm/copies ourselves
+# When chunk select dialog is opened, record hash of raw contents
+# When revert or "move to patch" is selected, re-read file and compare hash
+# To revert chunks, backup file to "trashcan" with timestamp in name, revert contents then apply remaining chunks
+# To "move to patch", revert then apply remaining, then do diff against original raw file > patch file
+
 == Update ==
 
 * "smart update" feature (incomplete)

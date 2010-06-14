@@ -55,6 +55,7 @@ Safe chunk select / "move to patch" implementation:
 
 == Settings ==
 
+* path validation for ui.editor and similar
 * port extensions page
 * new [auth] page
 * new generic extension registration

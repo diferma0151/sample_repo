@@ -16,6 +16,7 @@ This is where you register features that are unimplemented or badly implemented 
 * Filter csets per cset type (all, tagged, ancestry, parents, heads, merge, non-merge).
 * Filter csets per filename.
 * Filter csets per username.
+* Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
 
 == Manifest Viewer ==
 

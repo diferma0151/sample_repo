@@ -28,13 +28,14 @@ Has a lot of potential:
 
 == Commit ==
 
-*  qrefresh support, checkbox for -D option
-*  threaded / wrapped commit (need a CmdRunner equivalent)
-*  +1 / -1 head indication (not as important with workbench integration)
-*  pushafterci (not necessary if we fully support hooks)
-*  qnew/shelve-patch creation dialog (in another file)
-*  spell check / tab completion
-*  in-memory patching / committing chunk selected files
+* Do not fill model on status widget creation, parent widget should request it (opening Workbench should not result in a run of repo.dirstate.status() until the user switches to the working directory node).
+* qrefresh support, checkbox for -D option
+* threaded / wrapped commit (need a CmdRunner equivalent)
+* +1 / -1 head indication (not as important with workbench integration)
+* pushafterci (not necessary if we fully support hooks)
+* qnew/shelve-patch creation dialog (in another file)
+* spell check / tab completion
+* in-memory patching / committing chunk selected files
 
 Safe chunk select / "move to patch" implementation:
 # Teach hgshelve to parse non-git diffs, drop git diffs everywhere, detect binary/perm/copies ourselves

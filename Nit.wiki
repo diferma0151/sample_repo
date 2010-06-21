@@ -6,7 +6,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 * Refresh after commit, add undo/rollback action
 * Window cannot be closed with ctrl+q
-* Moving from working changeset to the parent shows an empty diff at the parent, if you select another non-working changeset revision you get a diff and navigating back to the working changeset parent shows its diff correctly now
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline
 * F5 should refresh
 * Optional columns are missing (e.g. the node can be useful)

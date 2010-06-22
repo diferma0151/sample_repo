@@ -23,7 +23,7 @@ Has a lot of potential:
 
 * remember geometry (done)
 * draggable filenames
-* context menu for open in editor, file history, annotate, etc
+* context menu for open in editor, file history, annotate, etc (in progress - Johan)
 * interface to grep at revision
 
 == Commit ==

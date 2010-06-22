@@ -21,7 +21,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 Has a lot of potential:
 
-* remember geometry
+* remember geometry (done)
 * draggable filenames
 * context menu for open in editor, file history, annotate, etc
 * interface to grep at revision

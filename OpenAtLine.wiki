@@ -32,6 +32,12 @@ editor = <path\to\>Notepad++.exe ["$FILE" -n$LINENUM] -multiInst
 editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 }}}
 
+{{{
+# (G)VIM, must be in %PATH%
+[tortoisehg]
+editor = gvim -f [-c":set hls" -c"/$SEARCH/"] [+$LINENUM $FILE]
+}}}
+
 === Linux / Unix ===
 
 {{{

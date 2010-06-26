@@ -28,7 +28,7 @@ http://www.riverbankcomputing.co.uk/software/qscintilla/download
 % sudo make install
 }}}
 
-installed files are:
+installed files:
 * /usr/include/Qsci
 * /Developer/Applications/Qt/translations/qscintilla_*
 * /usr/local/Qt4.6/qsci
@@ -44,7 +44,7 @@ installed files are:
 % sudo make install
 }}}
 
-installed files are:
+installed files:
 * /Developer/Applications/Qt/plugins/designer/libqscintillaplugin.dylib
 
 ==== 3. Install Sip (from source) ====
@@ -60,7 +60,7 @@ http://www.riverbankcomputing.co.uk/software/sip/download
 
 For Snow Leopard (10.6) users: {{{-n --arch i386}}} is required. See http://old.nabble.com/PyQt4,-Qt-on-osx-SnowLeopard-td26394590.html
 
-installed files are:
+installed files:
 * /System/Library/Frameworks/Python.framework/Versions/2.6/bin/sip
 * /Library/Python/2.6/site-packages/sip.so
 * /System/Library/Frameworks/Python.framework/Version/2.6/include/python2.6/sip.h
@@ -76,7 +76,7 @@ installed files are:
 % sudo make install
 }}}
 
-installed files are:
+installed files:
 * /Library/Python/2.6/site-packages/PyQt4
 * /System/Library/Frameworks/Python.framework/Versions/2.6/share/sip/PyQt4
 * /System/Library/Frameworks/Python.framework/Versions/2.6/bin/pyuic4
@@ -91,7 +91,7 @@ You may need to add /System/Library/Frameworks/Python.framework/Versions/2.6/bin
 % for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/$name; done
 }}}
 
-==== 5. Install Python binding of QScintilla ====
+==== 5. Install Python binding for QScintilla ====
 
 {{{
 ~/Downloads/QScintilla-gpl-2.4.3
@@ -101,7 +101,7 @@ You may need to add /System/Library/Frameworks/Python.framework/Versions/2.6/bin
 % make install
 }}}
 
-installed files are:
+installed files:
 * /System/Library/Frameworks/Python.framework/Versions/2.6/share/sip/PyQt4/Qsci
 * /usr/local/Qt4.6/qsci/api/python/QScintilla2.api
 

@@ -1,0 +1,146 @@
+== Hacking on TortoiseHg Qt on Mac OS X ==
+
+=== Dependencies: PyQt and QScintilla ===
+
+For Snow Leopard (10.6) users: python2.6 is now run on 64-bit environment by default.
+BUT, since Qt4 is shipped as 32-bit binary, you need to run python2.6 as 32-bit.
+See http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/python.1.html
+
+0. Install Apple Development Tools (Xcode)
+
+http://developer.apple.com/technologies/tools/
+
+1. Install Qt4 (Qt SDK for Mac)
+
+http://qt.nokia.com/downloads
+
+2. Install QScintilla (from source)
+
+http://www.riverbankcomputing.co.uk/software/qscintilla/download
+
+{{{
+~/Downloads/QScintilla-gpl-2.4.3
+% cd Qt4
+% qmake -spec macx-g++
+% make
+% sudo make install
+}}}
+
+installed files are:
+* /usr/include/Qsci
+* /Developer/Applications/Qt/translations/qscintilla_*
+* /usr/local/Qt4.6/qsci
+* /Library/Frameworks/libqscintilla*
+
+(Optionally) install Qt Designer plugin:
+
+{{{
+~/Downloads/QScintilla-gpl-2.4.3
+% cd designer-Qt4
+% qmake -spec macx-g++
+% make
+% sudo make install
+}}}
+
+installed files are:
+* /Developer/Applications/Qt/plugins/designer/libqscintillaplugin.dylib
+
+3. Install Sip (from source)
+
+http://www.riverbankcomputing.co.uk/software/sip/download
+
+{{{
+~/Downloads/sip-4.10.2
+% python configure.py -n --arch i386
+% make
+% sudo make install
+}}}
+
+For Snow Leopard (10.6) users: {{{-n --arch i386}}} is required. See http://old.nabble.com/PyQt4,-Qt-on-osx-SnowLeopard-td26394590.html
+
+installed files are:
+* /System/Library/Frameworks/Python.framework/Versions/2.6/bin/sip
+* /Library/Python/2.6/site-packages/sip.so
+* /System/Library/Frameworks/Python.framework/Version/2.6/include/python2.6/sip.h
+* /Library/Python/2.6/site-packages/sipconfig.py
+* /Library/Python/2.6/site-packages/sipdistutils.py
+
+4. Install PyQt (from source)
+
+{{{
+~/Downloads/PyQt-mac-gpl-4.7.3
+% python configure.py
+% make
+% sudo make install
+}}}
+
+installed files are:
+* /Library/Python/2.6/site-packages/PyQt4
+* /System/Library/Frameworks/Python.framework/Versions/2.6/share/sip/PyQt4
+* /System/Library/Frameworks/Python.framework/Versions/2.6/bin/pyuic4
+* /System/Library/Frameworks/Python.framework/Versions/2.6/bin/pylupdate4
+* /System/Library/Frameworks/Python.framework/Versions/2.6/bin/pyrcc4
+* /usr/local/Qt4.6/qsci/api/python/PyQt4.api
+
+You may need to add /System/Library/Frameworks/Python.framework/Versions/2.6/bin to PATH; or create symlink to them:
+
+{{{
+/usr/local/bin
+% for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/$name; done
+}}}
+
+5. Install Python binding of QScintilla
+
+{{{
+~/Downloads/QScintilla-gpl-2.4.3
+% cd Python
+% python configure.py
+% make
+% make install
+}}}
+
+installed files are:
+* /System/Library/Frameworks/Python.framework/Versions/2.6/share/sip/PyQt4/Qsci
+* /usr/local/Qt4.6/qsci/api/python/QScintilla2.api
+
+6. Test installation
+
+{{{
+% VERSIONER_PYTHON_PREFER_32_BIT=yes python
+Python 2.6.1 (r261:67515, Feb 11 2010, 00:51:29) 
+[GCC 4.2.1 (Apple Inc. build 5646)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from PyQt4.QtGui import *
+>>> app = QApplication([])
+>>> w = QDialog()
+>>> w.show()
+>>> app.exec_()
+}}}
+
+=== Other Dependencies ===
+
+TODO
+
+=== Get Latest Mercurial and TortoiseHg ===
+
+{{{
+~/Documents 
+% hg clone http://selenic.com/repo/hg mercurial
+% hg clone http://bitbucket.org/tortoisehg/thg/
+% cd mercurial
+% make local
+}}}
+
+Add {{{~/Documents/mercurial}}} to PYTHONPATH, or symlink to them:
+{{{
+~/Documents/thg
+% ln -s ../mercurial/mercurial
+% ln -s ../mercurial/hgext
+}}}
+
+Run it:
+{{{
+% VERSIONER_PYTHON_PREFER_32_BIT=yes ./thg log
+}}}
+
+Happy Hacking!

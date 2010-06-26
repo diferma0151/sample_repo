@@ -69,6 +69,8 @@ installed files:
 
 ==== 4. Install PyQt (from source) ====
 
+http://www.riverbankcomputing.co.uk/software/pyqt/download
+
 {{{
 ~/Downloads/PyQt-mac-gpl-4.7.3
 $ python configure.py

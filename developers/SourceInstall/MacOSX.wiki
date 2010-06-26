@@ -8,15 +8,15 @@ For Snow Leopard (10.6) users: python2.6 is now run on 64-bit environment by def
 BUT, since Qt4 is shipped as 32-bit binary, you need to run python2.6 as 32-bit.
 See http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/python.1.html
 
-0. Install Apple Development Tools (Xcode)
+==== 0. Install Apple Development Tools (Xcode) ====
 
 http://developer.apple.com/technologies/tools/
 
-1. Install Qt4 (Qt SDK for Mac)
+==== 1. Install Qt4 (Qt SDK for Mac) ====
 
 http://qt.nokia.com/downloads
 
-2. Install QScintilla (from source)
+==== 2. Install QScintilla (from source) ====
 
 http://www.riverbankcomputing.co.uk/software/qscintilla/download
 
@@ -47,7 +47,7 @@ installed files are:
 installed files are:
 * /Developer/Applications/Qt/plugins/designer/libqscintillaplugin.dylib
 
-3. Install Sip (from source)
+==== 3. Install Sip (from source) ====
 
 http://www.riverbankcomputing.co.uk/software/sip/download
 
@@ -67,7 +67,7 @@ installed files are:
 * /Library/Python/2.6/site-packages/sipconfig.py
 * /Library/Python/2.6/site-packages/sipdistutils.py
 
-4. Install PyQt (from source)
+==== 4. Install PyQt (from source) ====
 
 {{{
 ~/Downloads/PyQt-mac-gpl-4.7.3
@@ -91,7 +91,7 @@ You may need to add /System/Library/Frameworks/Python.framework/Versions/2.6/bin
 % for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/$name; done
 }}}
 
-5. Install Python binding of QScintilla
+==== 5. Install Python binding of QScintilla ====
 
 {{{
 ~/Downloads/QScintilla-gpl-2.4.3
@@ -105,7 +105,7 @@ installed files are:
 * /System/Library/Frameworks/Python.framework/Versions/2.6/share/sip/PyQt4/Qsci
 * /usr/local/Qt4.6/qsci/api/python/QScintilla2.api
 
-6. Test installation
+==== 6. Test installation ====
 
 {{{
 % VERSIONER_PYTHON_PREFER_32_BIT=yes python
@@ -120,6 +120,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 }}}
 
 === Other Dependencies ===
+
+==== Install iniparse ====
 
 TODO
 

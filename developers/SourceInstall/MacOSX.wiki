@@ -22,10 +22,10 @@ http://www.riverbankcomputing.co.uk/software/qscintilla/download
 
 {{{
 ~/Downloads/QScintilla-gpl-2.4.3
-% cd Qt4
-% qmake -spec macx-g++
-% make
-% sudo make install
+$ cd Qt4
+$ qmake -spec macx-g++
+$ make
+$ sudo make install
 }}}
 
 installed files:
@@ -38,10 +38,10 @@ installed files:
 
 {{{
 ~/Downloads/QScintilla-gpl-2.4.3
-% cd designer-Qt4
-% qmake -spec macx-g++
-% make
-% sudo make install
+$ cd designer-Qt4
+$ qmake -spec macx-g++
+$ make
+$ sudo make install
 }}}
 
 installed files:
@@ -53,9 +53,9 @@ http://www.riverbankcomputing.co.uk/software/sip/download
 
 {{{
 ~/Downloads/sip-4.10.2
-% python configure.py -n --arch i386
-% make
-% sudo make install
+$ python configure.py -n --arch i386
+$ make
+$ sudo make install
 }}}
 
 For Snow Leopard (10.6) users: {{{-n --arch i386}}} is required. See http://old.nabble.com/PyQt4,-Qt-on-osx-SnowLeopard-td26394590.html
@@ -71,9 +71,9 @@ installed files:
 
 {{{
 ~/Downloads/PyQt-mac-gpl-4.7.3
-% python configure.py
-% make
-% sudo make install
+$ python configure.py
+$ make
+$ sudo make install
 }}}
 
 installed files:
@@ -88,17 +88,17 @@ You may need to add /System/Library/Frameworks/Python.framework/Versions/2.6/bin
 
 {{{
 /usr/local/bin
-% for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/$name; done
+$ for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/$name; done
 }}}
 
 ==== 5. Install Python binding for QScintilla ====
 
 {{{
 ~/Downloads/QScintilla-gpl-2.4.3
-% cd Python
-% python configure.py
-% make
-% make install
+$ cd Python
+$ python configure.py
+$ make
+$ make install
 }}}
 
 installed files:
@@ -108,7 +108,7 @@ installed files:
 ==== 6. Test installation ====
 
 {{{
-% VERSIONER_PYTHON_PREFER_32_BIT=yes python
+$ VERSIONER_PYTHON_PREFER_32_BIT=yes python
 Python 2.6.1 (r261:67515, Feb 11 2010, 00:51:29) 
 [GCC 4.2.1 (Apple Inc. build 5646)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -129,22 +129,22 @@ TODO
 
 {{{
 ~/Documents 
-% hg clone http://selenic.com/repo/hg mercurial
-% hg clone http://bitbucket.org/tortoisehg/thg/
-% cd mercurial
-% make local
+$ hg clone http://selenic.com/repo/hg mercurial
+$ hg clone http://bitbucket.org/tortoisehg/thg/
+$ cd mercurial
+$ make local
 }}}
 
 Add {{{~/Documents/mercurial}}} to PYTHONPATH, or symlink to them:
 {{{
 ~/Documents/thg
-% ln -s ../mercurial/mercurial
-% ln -s ../mercurial/hgext
+$ ln -s ../mercurial/mercurial
+$ ln -s ../mercurial/hgext
 }}}
 
 Run it:
 {{{
-% VERSIONER_PYTHON_PREFER_32_BIT=yes ./thg log
+$ VERSIONER_PYTHON_PREFER_32_BIT=yes ./thg log
 }}}
 
 Happy Hacking!

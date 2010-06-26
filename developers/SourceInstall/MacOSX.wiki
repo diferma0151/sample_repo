@@ -1,4 +1,6 @@
-== Hacking on TortoiseHg Qt on Mac OS X ==
+== Hacking TortoiseHg Qt on Mac OS X ==
+
+<<toc>>
 
 === Dependencies: PyQt and QScintilla ===
 

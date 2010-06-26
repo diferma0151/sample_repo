@@ -5,6 +5,7 @@ Future official home of the TortoiseHg development repository; currently the hom
 * Mailing list: http://groups.google.com/group/thg-dev
 * File a bug/nit on our [[Nit]] list
 * [[OpenAtLine]] new feature
+* For Mac users: see [[developers/SourceInstall/MacOSX]]
 
 == Grand Plans ==
 

@@ -7,7 +7,7 @@ This is where you register features that are unimplemented or badly implemented 
 * Refresh after commit, add undo/rollback action
 * Window cannot be closed with ctrl+q
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline
-* F5 should refresh
+* F5 should refresh (done)
 * Optional columns are missing (e.g. the node can be useful)
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 * Hitting ctrl+g after having done an inline search one is presented with a new control to enter search criteria - at the very least this should be filled out with what you actually searched for - better, it should jump to the next match
@@ -16,6 +16,7 @@ This is where you register features that are unimplemented or badly implemented 
 * Filter csets per filename.
 * Filter csets per username.
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
+* Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?
 
 == Manifest Viewer ==
 

@@ -12,4 +12,4 @@ Once everything is installed, you should be able to clone this repository and ru
 hg clone http://bitbucket.org/tortoisehg/thg thg
 cd thg
 python thg log
-}}
+}}}

@@ -5,3 +5,11 @@ Users, please add sections here for your favorite distribution.
 * PyQt 4.6 or later
 * iniparse 0.3.1 or later
 * Qscintilla, and its Python bindings
+
+Once everything is installed, you should be able to clone this repository and run from it.
+
+{{{
+hg clone http://bitbucket.org/tortoisehg/thg thg
+cd thg
+python thg log
+}}

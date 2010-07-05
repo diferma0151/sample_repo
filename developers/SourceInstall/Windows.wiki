@@ -7,7 +7,14 @@ You need:
 * py2win32
 * iniparse 0.3.1 or later
 
-
 For URLs and other helpful info, see:
 
 http://bitbucket.org/tortoisehg/thg-winbuild/src/tip/README.txt
+
+Once everything is installed, you should be able to clone this repository and run from it.
+
+{{{
+hg clone http://bitbucket.org/tortoisehg/thg thg
+cd thg
+python thg log
+}}}

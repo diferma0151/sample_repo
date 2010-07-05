@@ -1,0 +1,7 @@
+Users, please add sections here for your favorite distribution.
+
+* Mercurial 1.6
+* Python development headers, etc
+* PyQt 4.6 or later
+* iniparse 0.3.1 or later
+* Qscintilla, and its Python bindings

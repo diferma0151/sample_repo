@@ -3,7 +3,7 @@ You need:
 * Python 2.6.X
 * Mercurial source install
 * TortoiseHg 1.1 binary installer (for shell extension)
-* PyQt 4.6 or higher
+* PyQt 4.6 (includes Qsci) or higher
 * py2win32
 * iniparse 0.3.1 or later
 

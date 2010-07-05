@@ -4,32 +4,31 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
+* progress bar
+* log dock window
+* need an svg for grep task bar
 * Refresh after commit, add undo/rollback action
 * Window cannot be closed with ctrl+q
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline
-* F5 should refresh (done)
 * Optional columns are missing (e.g. the node can be useful)
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 * Hitting ctrl+g after having done an inline search one is presented with a new control to enter search criteria - at the very least this should be filled out with what you actually searched for - better, it should jump to the next match
-* Make changelog column size adjustable, and save them with other settings (might also apply to other parts).
 * Filter csets per cset type (all, tagged, ancestry, parents, heads, merge, non-merge).
 * Filter csets per filename.
 * Filter csets per username.
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
-* Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?
+* Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?  (debatable, bring it up on the list).
 
 == Manifest Viewer ==
 
 Has a lot of potential:
 
-* remember geometry (done)
 * draggable filenames
 * context menu for open in editor, file history, annotate, etc (in progress - Johan)
 * interface to grep at revision
 
 == Commit ==
 
-* Do not fill model on status widget creation, parent widget should request it (opening Workbench should not result in a run of repo.dirstate.status() until the user switches to the working directory node).
 * qrefresh support, checkbox for -D option
 * threaded / wrapped commit (need a CmdRunner equivalent)
 * +1 / -1 head indication (not as important with workbench integration)

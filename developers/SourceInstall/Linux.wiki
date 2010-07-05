@@ -1,3 +1,5 @@
+== Hacking TortoiseHg Qt on Linux ==
+
 Users, please add sections here for your favorite distribution.
 
 * Mercurial 1.6

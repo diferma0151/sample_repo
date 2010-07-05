@@ -7,6 +7,7 @@ This is where you register features that are unimplemented or badly implemented 
 * progress bar
 * log dock window
 * need an svg for grep task bar
+* need a way to just refresh the commit tool
 * Refresh after commit, add undo/rollback action
 * Window cannot be closed with ctrl+q
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline

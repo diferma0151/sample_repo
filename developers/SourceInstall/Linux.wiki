@@ -11,9 +11,9 @@ Users, please add sections here for your favorite distribution.
 Once everything is installed, you should be able to clone this repository and run from it.
 
 {{{
-hg clone http://bitbucket.org/tortoisehg/thg thg
-cd thg
-python thg log
+$ hg clone http://bitbucket.org/tortoisehg/thg thg
+$ cd thg
+$ python thg log
 }}}
 
 == Debian sid/testing ==

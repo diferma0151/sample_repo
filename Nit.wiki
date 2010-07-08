@@ -10,6 +10,9 @@ This is where you register features that are unimplemented or badly implemented 
 * need a way to just refresh the commit tool
 * Refresh after commit, add undo/rollback action
 * Window cannot be closed with ctrl+q
+* Multi-selection and intelligent changeset context menu (1 sel : base menu, 2 sel : merge, range menu, >2 sel: patch/email menu )
+* Changeset file list menu, just like repository explorer
+* Drag file names from changeset file list to editor
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline
 * Optional columns are missing (e.g. the node can be useful)
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text

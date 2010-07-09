@@ -7,7 +7,7 @@ This is where you register features that are unimplemented or badly implemented 
 * progress bar
 * log dock window
 * need an svg for grep task bar
-* need a way to just refresh the commit tool
+* need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ?)
 * Refresh after commit, add undo/rollback action
 * Window cannot be closed with ctrl+q
 * Multi-selection and intelligent changeset context menu (1 sel : base menu, 2 sel : merge, range menu, >2 sel: patch/email menu )

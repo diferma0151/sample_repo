@@ -30,7 +30,7 @@ Has a lot of potential:
 * draggable filenames
 * context menu for open in editor, file history, annotate, etc (in progress - Johan)
 * interface to grep at revision
-* Show the filelist as a treeview (see [[gmane.comp.version-control.mercurial.tortoisehg.user/2290|this email thread]])
+* Show the filelist as a treeview (see [[gmane.comp.version-control.mercurial.tortoisehg.user/2284|this email thread]])
 
 == Commit ==
 

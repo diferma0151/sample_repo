@@ -4,6 +4,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
+* startup with cold cache can abort with the timer, not have any rows to set column widths properly
 * progress bar
 * log dock window
 * need an svg for grep task bar

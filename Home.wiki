@@ -32,7 +32,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 # about - (done)
 # init - (done)
 # rename / move / copy - (partially done: **Johan**)
-# archive - (mostly done: **Johan**)
+# archive - (done)
 # tags - (done)
 # backout - (done)
 # email - (partially done: **Yuya**)

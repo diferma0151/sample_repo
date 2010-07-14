@@ -1,20 +1,38 @@
-You need:
+To be able to evaluate, test, or hack on the TortoiseHg Qt port, you need to install:
 
 * Python 2.6.X
-* Mercurial source install
-* TortoiseHg 1.1 binary installer (for shell extension)
-* PyQt 4.6 (includes Qsci) or higher
 * py2win32
 * iniparse 0.3.1 or later
+* PyQt 4.6 (includes Qsci) or higher
+* TortoiseHg 1.1 binary installer (for shell extension)
+
+Then you:
+* Clone the Mercurial default repo from http://selenic.com/repo/hg
+* Get the 6 *.pyd files from the mercurial folder from the library.zip file from your TortoiseHg installation, and copy them into the mercurial folder in the cloned default Hg repo.
+* Clone the TortoiseHg thg (qt port) repo from http://bitbucket.org/tortoisehg/thg
+
+Add the following thg.cmd script into the root folder of your TortoiseHg Qt clone :
+{{{
+@echo off
+rem
+rem thg.cmd
+rem
+setlocal
+set HGPATH=<path\to>\hg-default
+set cmdpath=<path\to>\thg-qt
+echo --- running thg from %cmdpath%
+python "%cmdpath%\thg" %*
+rem set THGDEBUG=1
+rem python "%cmdpath%\thg" --nofork %
+endlocal
+}}}
+
+Make sure your python.exe is in de execution path, and from the root folder of  the cloned TortoiseHg qt clone, with
+{{{
+thg <command>
+}}}
+you can start evaluating/testing/hacking.
 
 For URLs and other helpful info, see:
 
 http://bitbucket.org/tortoisehg/thg-winbuild/src/tip/README.txt
-
-Once everything is installed, you should be able to clone this repository and run from it.
-
-{{{
-hg clone http://bitbucket.org/tortoisehg/thg thg
-cd thg
-python thg log
-}}}

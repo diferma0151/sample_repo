@@ -4,9 +4,9 @@ To be able to evaluate, test, or hack on the TortoiseHg Qt port, you need to ins
 
 * Python 2.6.X
 * py2win32
-* iniparse 0.3.1 or later
-* PyQt 4.6 (includes Qsci) or higher
-* TortoiseHg 1.1 binary installer (for shell extension)
+* iniparse >= 0.3.1
+* PyQt >=  4.6 (includes Qsci)
+* TortoiseHg >= 1.1 binary installer (for shell extension)
 
 Then you:
 * Clone the Mercurial default repo from http://selenic.com/repo/hg

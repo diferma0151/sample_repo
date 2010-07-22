@@ -35,6 +35,8 @@ thg <command>
 }}}
 you can start evaluating/testing/hacking.
 
+To work with a test repo other than the thg-qt repo itself, just make sure the /path/to/thg-qt is in the path, so your thg.cmd script is found.
+
 For URLs and other helpful info, see:
 
 http://bitbucket.org/tortoisehg/thg-winbuild/src/tip/README.txt

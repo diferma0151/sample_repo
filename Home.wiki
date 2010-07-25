@@ -15,7 +15,7 @@ TortoiseHg 2.0, scheduled for November 1, 2010, is slated to have PyQt replaceme
 
 === Main Application ===
 
-As part of this rewrite, we would like to perform a few cleanups in the design.  The changelog browser, grep and annotate (datamine) tools, and the commit tool should be combined into a single "main application" with a tabbed interface.  This app should be usable from a desktop icon or start menu link, opening a browse window (more below) if the cwd is not within a repository.
+As part of this rewrite, we would like to perform a few cleanups in the design.  The changelog browser, grep and annotate (datamine) tools, and the commit tool should be combined into a single "main application" with a tabbed interface.  This app should be usable from a desktop icon or start menu link, offering a repository list if the cwd is not within a repository.
 
 === "Sync" Widget ===
 
@@ -23,7 +23,7 @@ A "task" tab of the workbench should replace the "paths" page of the settings to
 
 === Simplify Commit, Drop Shelve ===
 
-I also prefer to not port the shelve tool.  Instead, the commit tool should allow change hunks to be moved into patches (or just reverted).  In fact, qnew should simply be the act of moving changes into a patch, then pushing it.  The commit tool should always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory should be tasks for a patches widget.
+I prefer to not port the shelve tool.  Instead, the commit tool should allow change hunks to be moved into patches (or just reverted).  In fact, qnew should simply be the act of moving changes into a patch, then pushing it.  The commit tool should always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory should be tasks for a patches widget.
 
 == Would you like to help? ==
 
@@ -47,10 +47,9 @@ If people are looking for places to get started, from easiest to hardest, there'
 # guess renames - (done)
 # settings/thgconfig - (mostly done)
 # Workbench
-* grep - (reintegrate as a task tab)
 * annotate - (integrate into workbench)
 * patches - (task tab or registry feature, or both)
-* status/commit - (chunk selection on hold: **Steve**)
+* status/commit - better workbench integration (chunk selection on hold: **Steve**)
 
 Plus basic details like common keyboard accelerators, app icons
 

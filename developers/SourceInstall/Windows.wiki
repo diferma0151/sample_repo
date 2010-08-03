@@ -3,7 +3,7 @@
 To be able to evaluate, test, or hack on the TortoiseHg Qt port, you need to install:
 
 * Python 2.6.X
-* py2win32
+* pywin32
 * iniparse >= 0.3.1
 * PyQt >=  4.6 (includes Qsci)
 * TortoiseHg >= 1.1 binary installer (for shell extension)

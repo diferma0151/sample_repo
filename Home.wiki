@@ -29,27 +29,26 @@ I prefer to not port the shelve tool.  Instead, the commit tool should allow cha
 
 If people are looking for places to get started, from easiest to hardest, there's:
 
-# about - (done)
-# init - (done)
-# rename / move / copy - (partially done: **Johan**)
-# archive - (done)
-# tags - (done)
-# backout - (done)
-# email - (partially done: **Yuya**)
-# clone - (done)
-# hgignore - (mostly done)
-# web serve - (in progress: **Yuya**)
-# update - (done)
-# strip - (in progress: **Yuki**)
-# merge - (mostly done)
-# quickop - (done)
-# visdiff - (done)
-# guess renames - (done)
-# settings/thgconfig - (mostly done)
-# Workbench
-* annotate - (integrate into workbench)
-* patches - (task tab or registry feature, or both)
-* status/commit - better workbench integration (chunk selection on hold: **Steve**)
+| about | done |
+| init | done |
+| rename / move / copy | partially done: **Johan** |
+| archive | done |
+| tags | done |
+| backout | done |
+| email | partially done: **Yuya** |
+| clone | done |
+| hgignore | mostly done |
+| web serve | in progress: **Yuya** |
+| update | done |
+| strip | in progress: **Yuki** |
+| merge | mostly done |
+| quickop | done |
+| visdiff | done |
+| guess renames | done |
+| settings/thgconfig | mostly done |
+| Workbench annotate | integrate into workbench |
+| Workbench patches | task tab or registry feature, or both |
+| Workbench status/commit - better workbench integration | chunk selection on hold: **Steve** |
 
 Plus basic details like common keyboard accelerators, app icons
 

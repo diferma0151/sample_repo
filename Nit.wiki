@@ -4,18 +4,16 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* startup with cold cache can abort with the timer, not have any rows to set column widths properly
-* progress bar
-* log dock window
-* need an svg for grep task bar
-* need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ?)
-* Refresh after commit, add undo/rollback action
-* Window cannot be closed with ctrl+q
+* refresh/reload should not switch task tabs
+* startup with cold cache can abort with the timer, not have any rows to set column widths properly (still a problem?)
+* need an svg for grep task tab
+* need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!)
+* Add undo/rollback action
 * Multi-selection and intelligent changeset context menu (1 sel : base menu, 2 sel : merge, range menu, >2 sel: patch/email menu )
 * Changeset file list menu, just like repository explorer
 * Drag file names from changeset file list to editor
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline
-* Optional columns are missing (e.g. the node can be useful)
+* Some columns are missing (e.g. the node can be useful)
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 * Hitting ctrl+g after having done an inline search one is presented with a new control to enter search criteria - at the very least this should be filled out with what you actually searched for - better, it should jump to the next match
 * Filter csets per cset type (all, tagged, ancestry, parents, heads, merge, non-merge).

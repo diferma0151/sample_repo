@@ -91,6 +91,7 @@ Safe chunk select / "move to patch" implementation:
 
 == qtlib ==
 
+* replace 'yellow' with some reasonable default, like 'lightbrown'
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
 * more general means for showing or previewing the generated hg command (see archive dialog) (log widget)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
@@ -106,6 +107,8 @@ Safe chunk select / "move to patch" implementation:
 * slower startup than hgtk (demandimport is never enabled, it breaks pixmap loading)
 ** now as fast as hgtk thanks to <<changeset decb52eebbb3>>
 ** Idea: do portable_fork() on early stage (before loading Qt and mercurial things.) It tooks 0.5 sec before spawning new process on my env.
+
+* Catch certain Mercurial errors (RepoLookupError, etc) and provide a non-bug-report fallback for them.
 
 == usability ==
 

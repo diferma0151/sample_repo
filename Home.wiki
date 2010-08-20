@@ -38,7 +38,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 | email | partially done: **Yuya** |
 | clone | done |
 | hgignore | mostly done |
-| web serve | in progress: **Yuya** |
+| web serve | mostly done |
 | update | done |
 | strip | in progress: **Yuki** |
 | merge | mostly done |

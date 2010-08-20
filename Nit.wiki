@@ -90,11 +90,6 @@ Safe chunk select / "move to patch" implementation:
 * I (= Johan) don't like the use of the little treeview-borrowed '+'-button for expanding the query possibilities. It's too small. It's used in other places too; same remark. (It's not because MS uses it in Explorer, we have to take it over elsewhere.) Or there should be a keyboard alternative.  (please, pick an accelerator (ctrl-space?) -- steve) Is there a list of what combination are already in use, or will be used for more important things ? How about ctrl-e (for **e**xpand) ?
 * add history for include and exclude names (also possible for regexp itself) as done for the latest 10 messages in the commit widget
 
-== Serve ==
-
-* web-conf (webdir-conf) support
-* make multi-repo server configurable via GUI
-
 == Annotate ==
 
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.)

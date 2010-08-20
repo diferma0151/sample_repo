@@ -38,6 +38,7 @@ Could be done as a single dialog.
 
 Has a lot of potential:
 
+* obsolete the .ui file
 * draggable filenames
 * context menu for open in editor, file history, annotate, etc (in progress - Johan)
 * interface to grep at revision

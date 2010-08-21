@@ -42,7 +42,7 @@ Has a lot of potential:
 * context menu for open in editor, file history, annotate, etc (in progress - Johan)
 * interface to grep at revision
 * Show the filelist as a treeview (see [[http://news.gmane.org/find-root.php?group=gmane.comp.version-control.mercurial.tortoisehg.user&article=2284|this email thread]])
-  ... maybe fixed by <<changeset 1123a7baab26>>, Yuya.
+  ... maybe fixed by <<changeset 1123a7baab26>>, Yuya. -- Indeed, thank you Yuya, Johan.
 
 == Commit ==
 

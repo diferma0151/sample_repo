@@ -22,6 +22,7 @@ This is where you register features that are unimplemented or badly implemented 
 * Filter csets per username.
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
 * Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?  (debatable, bring it up on the list).
+* Unnaplied patches should use italic font
 
 ==== history compression feature ====
 

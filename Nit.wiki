@@ -8,7 +8,7 @@ This is where you register features that are unimplemented or badly implemented 
 * refresh/reload should not switch task tabs
 * startup with cold cache can abort with the timer, not have any rows to set column widths properly (still a problem?)
 * need an svg for grep task tab
-* need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!)
+* need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench
 * Multi-selection and intelligent changeset context menu (1 sel : base menu, 2 sel : merge, range menu, >2 sel: patch/email menu )
 * Changeset file list menu, just like repository explorer

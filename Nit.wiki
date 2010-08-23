@@ -95,6 +95,7 @@ Safe chunk select / "move to patch" implementation:
 == Grep ==
 
 * add history for include and exclude names (also possible for regexp itself) as done for the latest 10 messages in the commit widget
+* grep task tab should be notified of currently selected revision, auto-select that rev
 
 == Annotate ==
 

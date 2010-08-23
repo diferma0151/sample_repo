@@ -87,6 +87,7 @@ Safe chunk select / "move to patch" implementation:
 * bundle support
 * threaded preview
 * rename module 'hgemail' to 'email' ?
+* replace to/from/cc combo boxes with entry and [...] that opens address book style dialog
 
 == Sync ==
 

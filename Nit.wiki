@@ -88,6 +88,7 @@ Safe chunk select / "move to patch" implementation:
 * threaded preview
 * rename module 'hgemail' to 'email' ?
 * replace to/from/cc combo boxes with entry and [...] that opens address book style dialog
+* perhaps changeset list could be in a second tab, before preview
 
 == Sync ==
 

@@ -67,6 +67,10 @@ Safe chunk select / "move to patch" implementation:
 
 * "smart update" feature (incomplete)
 
+== Quickop ==
+
+* "No appropriate files" warning, when launched deep in a repo from shell extension
+
 == Merge ==
 
 * detect unresolved conflicts in WD

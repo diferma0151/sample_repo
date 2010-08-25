@@ -4,7 +4,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Style Issues ==
 
-* Cancel buttons should not have underlines accelerators
+* Cancel buttons should not have underlined accelerators
 
 == Workbench ==
 

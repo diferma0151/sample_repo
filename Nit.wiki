@@ -2,6 +2,10 @@ Feel free to add new categories as necessary.
 
 This is where you register features that are unimplemented or badly implemented in the new Qt dialogs
 
+== Style Issues ==
+
+* Cancel buttons should not have underlines accelerators
+
 == Workbench ==
 
 * nuke csinfo caches, keep that kind of data in thgrepo, or don't cache at all

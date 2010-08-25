@@ -8,6 +8,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
+* When launched from desktop icon, workbench opens a cmd window briefly
 * nuke csinfo caches, keep that kind of data in thgrepo, or don't cache at all
 * toolbar toggle push buttons for showing log dock and repo registry
 * refresh/reload should not switch task tabs

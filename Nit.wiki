@@ -151,3 +151,5 @@ Safe chunk select / "move to patch" implementation:
 ** SJB - I've started work on this.  Apps can get the user's configured font from qtlib and connect to a signal emitted when the font is changed.  The settings tool in turn will emit the signal when the user picks a new font and selects 'ok' in the font editor.  Two things need to happen:
 ## We must use this font interface consistently in all our tools
 ## Someone should look into connecting to the live updates that come out of the selection dialog
+
+* Qt Settings: save column widths along with geometry/splitter settings (changelog, status, email, etc).

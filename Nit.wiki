@@ -112,7 +112,7 @@ Safe chunk select / "move to patch" implementation:
 
 == Patches ==
 
-* Add support for multiple mq patche queues (hg qqueue).
+* Add support for multiple mq patch queues (hg qqueue).
 
 == Grep ==
 

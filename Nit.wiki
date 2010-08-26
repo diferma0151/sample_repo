@@ -15,7 +15,10 @@ This is where you register features that are unimplemented or badly implemented 
 * need an svg for grep task tab
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench
-* Multi-selection and intelligent changeset context menu (1 sel : base menu, 2 sel : merge, range menu, >2 sel: patch/email menu )
+* Multi-selection and intelligent changeset context menu:
+** 1 sel : base menu
+** 2 sel : merge, range menu, compress history
+** >2 sel: patch/email menu
 * Changeset file list menu, just like repository explorer
 * Drag file names from changeset file list to editor
 * Underlines of revision and node for parent/child in changeset does not follow the same baseline
@@ -42,9 +45,15 @@ that were compressed.
 Has a lot of potential:
 
 * draggable filenames
-* context menu for open in editor, file history, annotate, etc
+* context menu for: open in editor, file history, annotate, etc
 * interface to grep at revision
 * manifest widget as tasktab (workbench)
+* Complete the annotate view with the hovering info as in the separate annotate dialog ?
+* Indication of what was changed in the revision shown :
+** Show a separate column, left of the names, and for affected folders show indicators like the 'Changes' column in the Gtk version. (Or if that is too much, show folders in bold because they could contain a mixture of add/mod/del.)
+** Show affected filenames in the appropriate color (see the status view).
+** Right-clicking on files should allow a diff-to-parent for affected files only.
+** Maybe even a toolbar toggle to collapse the tree to only affected folders/files ?
 
 == Commit ==
 
@@ -100,6 +109,10 @@ Safe chunk select / "move to patch" implementation:
 * bundle preview when in workbench
 * incoming / outgoing marks
 * show related local repositories, and their configured paths
+
+== Patches ==
+
+* Add support for multiple mq patche queues (hg qqueue).
 
 == Grep ==
 

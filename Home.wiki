@@ -42,6 +42,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 | update | done |
 | strip | in progress: **Yuki** |
 | merge | mostly done |
+| pbranch | in progress: **Peer** |
 | quickop | done |
 | visdiff | done |
 | guess renames | done |

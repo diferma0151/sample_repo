@@ -6,15 +6,20 @@ This is where you register features that are unimplemented or badly implemented 
 
 * Cancel buttons should not have underlined accelerators
 
+== thgrepo work ==
+
+* add invalidateui - re-reads .hg/hgrc, rebuilds repo.ui, deletes ui based attributes
+* nuke csinfo caches, keep that kind of data in thgrepo, or don't cache at all
+
 == Workbench ==
 
 * When launched from desktop icon, workbench opens a cmd window briefly
-* nuke csinfo caches, keep that kind of data in thgrepo, or don't cache at all
 * toolbar toggle push buttons for showing log dock and repo registry
 * refresh/reload should not switch task tabs
 * need an svg for grep task tab
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench
+* move diff-mode toolbar to top of revdetails task tab, drop annotate
 * Multi-selection and intelligent changeset context menu:
 ** 1 sel : base menu
 ** 2 sel : merge, range menu, compress history

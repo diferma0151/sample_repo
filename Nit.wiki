@@ -11,7 +11,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 * When launched from desktop icon, workbench opens a cmd window briefly
 * toolbar toggle push buttons for showing log dock and repo registry
-* refresh/reload should not switch task tabs
 * need an svg for grep task tab
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench

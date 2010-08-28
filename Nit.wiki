@@ -9,6 +9,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
+* Windows thg.exe now has no stdout for interactive commands
 * need an svg for grep task tab, load all, show output log, and show repo registry
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench

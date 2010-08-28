@@ -9,7 +9,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* When launched from desktop icon, workbench opens a cmd window briefly
 * need an svg for grep task tab, load all, show output log, and show repo registry
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench

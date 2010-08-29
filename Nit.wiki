@@ -37,7 +37,7 @@ concatenated commit messages of revisions between A and B.  User can then edit t
 message and make the commit.  There should be an option to then strip the changesets
 that were compressed.
 ** Could be done as a single dialog.
-
+* Extensions that are only enabled in a particularly repo don't work correctly at the moment. If I have two repos, one with and one without MQ, then the repo I start in seems to control whether I get MQ facilities across all repos displayed in the workbench, regardless of an individual repo's MQ status.
 
 == Manifest Viewer ==
 

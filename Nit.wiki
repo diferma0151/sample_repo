@@ -29,13 +29,21 @@ This is where you register features that are unimplemented or badly implemented 
 * Filter csets per username.
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
 * Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?  (debatable, bring it up on the list).
-* Unnaplied patches should use italic font
 * History compression feature (I'll tackle this, Johan)
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.
 ** It will update to the parent of A (if necessary), hg revert --all --rev B, then open the commit tool with the concatenated commit messages of revisions between A and B (both inclusive).  User can then edit the message and make the commit.  There should be an option to then strip the changesets
 that were compressed.
 ** Could be done as a single dialog.
 * Extensions that are only enabled in a particularly repo don't work correctly at the moment. If I have two repos, one with and one without MQ, then the repo I start in seems to control whether I get MQ facilities across all repos displayed in the workbench, regardless of an individual repo's MQ status.
+* MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
+** view in revision details tab - George is looking at this
+** rename - should be easy
+** fold - should be easy to implement. Could benefit from a dialog confirming what will be folded and a --keep option checkbox.
+** delete - needs multi-select in the log.
+** reorder - up/top/down/bottom. Needs thgmq code migrating (perhaps to
+thgrepo? certainly to util.something). Steve suggest making a special dialog for this one.
+** push/pop - all or individual. Push individual is useful when you don't think a series is going to apply and want to try each patch at a time. Push/pop all is useful when "rebasing" applied patches on a new downloaded tip. These don't really belong on a context menu (push/pop on an individual patch is just goto). On the main workbench toolbar is most obvious place.
+** Unnaplied patches should use italic font
 
 == Manifest Viewer ==
 

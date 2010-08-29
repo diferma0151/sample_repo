@@ -24,9 +24,10 @@ This is where you register features that are unimplemented or badly implemented 
 * Some columns are missing (e.g. the node can be useful)
 * Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
 * Hitting ctrl+g after having done an inline search one is presented with a new control to enter search criteria - at the very least this should be filled out with what you actually searched for - better, it should jump to the next match
-* Filter csets per cset type (all, tagged, ancestry, parents, heads, merge, non-merge).
-* Filter csets per filename.
-* Filter csets per username.
+* Filter csets
+** per cset type (all, tagged, ancestry, parents, heads, merge, non-merge).
+** per filename.
+** per username.
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
 * Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?  (debatable, bring it up on the list).
 * History compression feature (I'll tackle this, Johan)

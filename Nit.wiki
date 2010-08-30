@@ -4,7 +4,8 @@ This is where you register features that are unimplemented or badly implemented 
 
 == installer ==
 
-SVGs are not still displayed unless PyQt is installed.  We're missing some files, need to figure out which ones.
+* SVGs are not still displayed unless PyQt is installed.  We're missing some files, need to figure out which ones.
+* python-svn bindings missing
 
 == guess ==
 

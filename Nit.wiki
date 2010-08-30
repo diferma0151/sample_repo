@@ -2,6 +2,10 @@ Feel free to add new categories as necessary.
 
 This is where you register features that are unimplemented or badly implemented in the new Qt dialogs
 
+== installer ==
+
+SVGs are not still displayed unless PyQt is installed.  We're missing some files, need to figure out which ones.
+
 == guess ==
 
 * rename guessing is not finding any obvious matches, arguments to hg look correct

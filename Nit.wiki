@@ -109,6 +109,8 @@ Safe chunk select / "move to patch" implementation:
 
 == Sync ==
 
+* drop URLs into top or not-yet-added "related repos" list
+* Problem adding new keys to keyring on Mac, worked on command line
 * bundle preview when in workbench
 * incoming / outgoing marks
 * show related local repositories, and their configured paths
@@ -121,6 +123,7 @@ Safe chunk select / "move to patch" implementation:
 
 * add history for include and exclude names (also possible for regexp itself) as done for the latest 10 messages in the commit widget
 * grep task tab should be notified of currently selected revision, auto-select that rev
+* problems with include path filters on Mac
 
 == Annotate ==
 

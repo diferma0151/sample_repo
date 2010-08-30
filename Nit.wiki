@@ -118,11 +118,12 @@ Safe chunk select / "move to patch" implementation:
 
 == Sync ==
 
-* drop URLs into top or not-yet-added "related repos" list
+* drop URLs into top section or not-yet-added "related repos" list
 * Problem adding new keys to keyring on Mac, worked on command line
 * bundle preview when in workbench
 * incoming / outgoing marks
 * show related local repositories, and their configured paths
+* post-update behavior and configuration
 
 == Patches ==
 

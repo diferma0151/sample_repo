@@ -21,6 +21,7 @@ This is where you register features that are unimplemented or badly implemented 
 * need an svg for grep and manifest task tabs, load all, show output log, and show repo registry toolbar toggles
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench
+* remember toggle status of View->Show Paths
 * Multi-selection and intelligent changeset context menu:
 ** 1 sel : base menu
 ** 2 sel : merge, range menu, compress history

@@ -21,6 +21,10 @@ This is where you register features that are unimplemented or badly implemented 
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench
 * remember toggle status of View->Show Paths
+* file dialogs
+** fix reload (crashes horribly)
+** remove quit/close toolbar button
+** remember geometry
 * Multi-selection and intelligent changeset context menu:
 ** 1 sel : base menu
 ** 2 sel : merge, range menu, compress history

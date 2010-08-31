@@ -18,8 +18,7 @@ This is where you register features that are unimplemented or badly implemented 
 * commit message history is not being refreshed properly after commits inside the workbench
 * remember toggle status of View->Show Paths
 * file dialogs
-** fix reload (crashes horribly)
-** remove quit/close toolbar button
+** fix column resizing
 ** remember geometry
 * Multi-selection and intelligent changeset context menu:
 ** 1 sel : base menu

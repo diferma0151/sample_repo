@@ -123,6 +123,8 @@ Safe chunk select / "move to patch" implementation:
 * incoming / outgoing marks
 * show related local repositories, and their configured paths
 * post-update behavior and configuration
+* keyring help
+* need a mechanism for clearing username/passwords from URLs
 
 == Patches ==
 

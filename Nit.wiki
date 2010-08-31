@@ -7,10 +7,6 @@ This is where you register features that are unimplemented or badly implemented 
 * python-svn bindings missing
 * unstable packages are not signed
 
-== guess ==
-
-* rename guessing is not finding any obvious matches, arguments to hg look correct
-
 == thgrepo work ==
 
 * nuke csinfo caches, keep that kind of data in thgrepo, or don't cache at all (remove self.ctx?)

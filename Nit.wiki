@@ -19,7 +19,7 @@ This is where you register features that are unimplemented or badly implemented 
 * need an svg for grep and manifest task tabs
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (wiring up is done; needs implementing reload methods in grep.py, sync.py, and commit.py)
 * commit message history is not being refreshed properly after commits inside the workbench
-* remember toggle status of View->Show Paths
+* remember toggle status of View->Show Paths (in progress -- Johan)
 * file dialogs
 ** fix column resizing
 ** remember geometry

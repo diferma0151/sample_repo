@@ -117,7 +117,6 @@ Safe chunk select / "move to patch" implementation:
 
 == Sync ==
 
-* use signal to emit outgoing changesets, incoming bundles, invalidates
 * drop URLs into top section or not-yet-added "related repos" list
 * Problem adding new keys to keyring on Mac, worked on command line
 * bundle preview when in workbench

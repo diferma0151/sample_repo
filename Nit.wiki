@@ -13,6 +13,8 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
+* workbench needs a global progress bar on the bottom status bar
+* log/progress dockwidget needs a mechanism for clearing progress bars
 * need an svg for grep and manifest task tabs, load all, show output log, and show repo registry toolbar toggles
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (in progress - Johan)
 * commit message history is not being refreshed properly after commits inside the workbench

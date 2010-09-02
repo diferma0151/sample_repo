@@ -13,7 +13,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* purge is not deleting empty folders
 * workbench needs a global progress bar on the bottom status bar
 * log/progress dockwidget needs a mechanism for clearing progress bars
 * log messages / progress signals should route from task tabs to repowidget to workbench log widget

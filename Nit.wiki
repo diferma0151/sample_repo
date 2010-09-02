@@ -16,10 +16,10 @@ This is where you register features that are unimplemented or badly implemented 
 * purge is not deleting empty folders
 * workbench needs a global progress bar on the bottom status bar
 * log/progress dockwidget needs a mechanism for clearing progress bars
+* log messages / progress signals should route from task tabs to repowidget to workbench log widget
 * need an svg for grep and manifest task tabs
 * need a way to just refresh the commit tool (How about making shift-F5 refresh only the active task-tab ? - sjb good idea!) (wiring up is done; needs implementing reload methods in grep.py, sync.py, and commit.py)
 * commit message history is not being refreshed properly after commits inside the workbench
-* remember toggle status of View->Show Paths (in progress -- Johan)
 * file dialogs
 ** fix column resizing
 ** remember geometry
@@ -167,5 +167,3 @@ Safe chunk select / "move to patch" implementation:
 ** SJB - I've started work on this.  Apps can get the user's configured font from qtlib and connect to a signal emitted when the font is changed.  The settings tool in turn will emit the signal when the user picks a new font and selects 'ok' in the font editor.  Two things need to happen:
 ## We must use this font interface consistently in all our tools
 ## Someone should look into connecting to the live updates that come out of the selection dialog
-
-* Qt Settings: save column widths along with geometry/splitter settings (changelog, status, email, etc).

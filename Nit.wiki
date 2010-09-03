@@ -78,7 +78,6 @@ Has a lot of potential:
 * qnew/shelve-patch creation dialog (in another file)
 * spell check / tab completion
 * in-memory patching / committing chunk selected files
-* checkmarked file count not updated after reload w/ 0 files available for commit
 
 Safe chunk select / "move to patch" implementation:
 # Teach hgshelve to parse non-git diffs, drop git diffs everywhere, detect binary/perm/copies ourselves

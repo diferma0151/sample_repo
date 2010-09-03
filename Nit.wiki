@@ -21,7 +21,6 @@ This is where you register features that are unimplemented or badly implemented 
 * support tortoisehg.tabwidth in Qsci
 * workbench needs a global progress bar on the bottom status bar
 * log messages / progress signals should route from task tabs to repowidget to workbench log widget
-* need an svg for grep and manifest task tabs
 * fix revdetailswidget.reload(), don't emit error if refresh with wctx selected
 * file dialogs
 ** fix column resizing

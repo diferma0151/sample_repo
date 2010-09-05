@@ -150,6 +150,7 @@ Safe chunk select / "move to patch" implementation:
 == run ==
 
 * Catch certain Mercurial errors (RepoLookupError, etc) and provide a non-bug-report fallback for them.
+* Recovery from bunch of repeated exception.
 
 == usability ==
 

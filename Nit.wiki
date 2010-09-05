@@ -68,6 +68,8 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 * change filename color by status (see the status view).
 * support 'unknown' and 'ignored' files for working copy.
 * subrepo?
+* flat view for files list
+* ability to show changeset description
 
 == Commit ==
 

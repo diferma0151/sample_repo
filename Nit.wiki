@@ -20,7 +20,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 * workbench needs a global progress bar on the bottom status bar
 * log messages / progress signals should route from task tabs to repowidget to workbench log widget
-* fix revdetailswidget.reload(), don't emit error if refresh with wctx selected
 * file dialogs
 ** fix column resizing
 ** remember geometry
@@ -73,10 +72,8 @@ Has a lot of potential:
 
 == Commit ==
 
-* qrefresh support, checkbox for -D option
 * threaded / wrapped commit (need a CmdRunner equivalent)
 * +1 / -1 head indication (not as important with workbench integration)
-* pushafterci (not necessary if we fully support hooks)
 * qnew/shelve-patch creation dialog (in another file)
 * spell check / tab completion
 * in-memory patching / committing chunk selected files

@@ -58,7 +58,6 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 
 * GOAL: merge functionality with revDetailsWidget
 
-* draggable filenames
 * context menu for: open in editor, file history, annotate, etc
 ** right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision

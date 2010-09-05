@@ -72,7 +72,6 @@ Has a lot of potential:
 
 == Commit ==
 
-* threaded / wrapped commit (need a CmdRunner equivalent)
 * +1 / -1 head indication (not as important with workbench integration)
 * qnew/shelve-patch creation dialog (in another file)
 * spell check / tab completion

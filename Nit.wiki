@@ -13,8 +13,8 @@ This is where you register features that are unimplemented or badly implemented 
 
 == repo registry ==
 
-* double click should open existing
-* context menu open should always create new
+* double click should open existing (done)
+* context menu open should always create new (= ok)
 
 == Workbench ==
 

@@ -56,19 +56,17 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 
 == Manifest Viewer ==
 
-Has a lot of potential:
+* GOAL: merge functionality with revDetailsWidget
 
 * draggable filenames
 * context menu for: open in editor, file history, annotate, etc
+** right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision
 * Complete the annotate view with the hovering info as in the separate annotate dialog ?
-* filter files by name, status, etc.
+* filter files by name.
 * search file content.
-* Indication of what was changed in the revision shown :
-** Show a separate column, left of the names, and for affected folders show indicators like the 'Changes' column in the Gtk version. (Or if that is too much, show folders in bold because they could contain a mixture of add/mod/del.)
-** Show affected filenames in the appropriate color (see the status view).
-** Right-clicking on files should allow a diff-to-parent for affected files only.
-** Maybe even a toolbar toggle to collapse the tree to only affected folders/files ?
+* indicate affected folders by overlay icon or font style, like the 'Changes' column in the Gtk version.
+* change filename color by status (see the status view).
 
 == Commit ==
 

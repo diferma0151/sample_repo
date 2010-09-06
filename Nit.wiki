@@ -13,8 +13,9 @@ This is where you register features that are unimplemented or badly implemented 
 
 == repo registry ==
 
-* double click should open existing (done)
-* context menu open should always create new (= ok)
+* make reordering of groups possible
+* add option to save open repo tabs when window closes, and reopen repos as saved on next restart
+* open new repo to the group where the rightclick happened
 
 == Workbench ==
 

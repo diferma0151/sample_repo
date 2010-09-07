@@ -10,7 +10,7 @@ This is where you register features that are unimplemented or badly implemented 
 == thgrepo work ==
 
 * nuke csinfo caches, keep that kind of data in thgrepo, or don't cache at all (remove self.ctx?)
-* refresh loop when repo does not have an .hgrc file
+* configChanged refresh loop when repo does not have an .hgrc file
 
 == repo registry ==
 

@@ -21,6 +21,7 @@ This is where you register features that are unimplemented or badly implemented 
 == Workbench ==
 
 * workbench needs a global progress bar on the bottom status bar
+* revdetails: investigate hgview's recent support for reST in changelog messages
 * log messages / progress signals should route from task tabs to repowidget to workbench log widget
 * file dialogs
 ** fix column resizing

@@ -10,6 +10,7 @@ This is where you register features that are unimplemented or badly implemented 
 == thgrepo work ==
 
 * nuke csinfo caches, keep that kind of data in thgrepo, or don't cache at all (remove self.ctx?)
+* refresh loop when repo does not have an .hgrc file
 
 == repo registry ==
 
@@ -90,10 +91,6 @@ Safe chunk select / "move to patch" implementation:
 
 * "smart update" feature (incomplete)
 
-== Quickop ==
-
-* "No appropriate files" warning, when launched deep in a repo from shell extension
-
 == Merge ==
 
 * detect unresolved conflicts in WD
@@ -102,6 +99,7 @@ Safe chunk select / "move to patch" implementation:
 
 == Settings ==
 
+* unicode decode issues
 * path validation for ui.editor and similar fields
 * port extensions page from hgtk
 * new generic extension registration

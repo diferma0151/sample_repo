@@ -40,7 +40,7 @@ This is where you register features that are unimplemented or badly implemented 
 ** per filename.
 ** per username.
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
-* Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?  (debatable, bring it up on the list).
+* Authorcoloring: is it intentionally that not the whole line is colored (as in the gtk version), or is this a todo ?  (debatable, bring it up on the list). (mailed a [RFC] to the list on sep 1)
 * History compression feature (I'll tackle this, Johan)
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.
 ** It will update to the parent of A (if necessary), hg revert --all --rev B, then open the commit tool with the concatenated commit messages of revisions between A and B (both inclusive).  User can then edit the message and make the commit.  There should be an option to then strip the changesets

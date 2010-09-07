@@ -14,9 +14,9 @@ This is where you register features that are unimplemented or badly implemented 
 
 == repo registry ==
 
-* make reordering of groups possible
+* make reordering of groups (along with their content) possible
 * add option to save open repo tabs when window closes, and reopen repos as saved on next restart
-* open new repo to the group where the rightclick happened
+* open cmenu: add the new repo into the group where the rightclick happened
 
 == Workbench ==
 

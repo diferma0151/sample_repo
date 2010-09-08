@@ -75,7 +75,6 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 
 == Commit ==
 
-* In standalone mode, the cmdrunner output widget does not get error messages
 * +1 / -1 head indication (not as important with workbench integration)
 * qnew/shelve-patch creation dialog (in another file)
 * spell check / tab completion

@@ -22,7 +22,7 @@ This is where you register features that are unimplemented or badly implemented 
 * file dialogs
 ** fix column resizing
 ** remember geometry
-* Multi-selection and intelligent changeset context menu:
+* Multi-selection (<-done) and intelligent changeset context menu:
 ** 1 sel : base menu
 ** 2 sel : merge, range menu, compress history
 ** >2 sel: patch/email menu
@@ -51,6 +51,7 @@ that were compressed.
 thgrepo? certainly to util.something). Steve suggest making a special dialog for this one. Yes, if we have a list/tree of all unapplied patches in that dialog, we could even use d&d to reorder them.
 ** push/pop - all or individual. Push individual is useful when you don't think a series is going to apply and want to try each patch at a time. Push/pop all is useful when "rebasing" applied patches on a new downloaded tip. These don't really belong on a context menu (push/pop on an individual patch is just goto). On the main workbench toolbar is most obvious place.
 ** Unnaplied patches should use italic font
+** Add support for multiple mq patch queues (hg qqueue).
 
 == Manifest Viewer ==
 
@@ -120,10 +121,6 @@ Safe chunk select / "move to patch" implementation:
 * show related local repositories, and their configured paths
 * keyring help
 * need a mechanism for clearing username/passwords from URLs
-
-== Patches ==
-
-* Add support for multiple mq patch queues (hg qqueue).
 
 == Grep ==
 

@@ -17,9 +17,7 @@ This is where you register features that are unimplemented or badly implemented 
 == Workbench ==
 
 * toolbar buttons for in/out/push/pull (use default for in/pull, default-push for out/push)
-* workbench needs a global progress bar on the bottom status bar (move from dock-log to workbench)
 * revdetails: investigate hgview's recent support for reST in changelog messages
-* log messages / progress signals should route from task tabs to repowidget to workbench log widget
 * file dialogs
 ** fix column resizing
 ** remember geometry

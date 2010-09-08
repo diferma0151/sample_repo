@@ -79,6 +79,7 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 * qnew/shelve-patch creation dialog (in another file)
 * spell check / tab completion
 * in-memory patching / committing chunk selected files
+* emit progress reports for the status widget refresh time, create a spinner in the status bar
 
 Safe chunk select / "move to patch" implementation:
 # Teach hgshelve to parse non-git diffs, drop git diffs everywhere, detect binary/perm/copies ourselves

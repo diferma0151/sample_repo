@@ -19,7 +19,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* purge function does not know about empty folders, unless it makes them empty.  it needs to use a walker
 * toolbar buttons for in/out/push/pull (use default for in/pull, default-push for out/push)
 * revdetails: investigate hgview's recent support for reST in changelog messages
 * file dialogs

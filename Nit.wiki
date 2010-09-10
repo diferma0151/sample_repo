@@ -121,7 +121,6 @@ Safe chunk select / "move to patch" implementation:
 * Problem adding new keys to keyring on Mac, worked on command line
 * bundle preview when in workbench
 * incoming / outgoing marks
-* show related local repositories, and their configured paths
 * keyring help
 * need a mechanism for clearing username/passwords from URLs
 

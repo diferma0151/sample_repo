@@ -120,7 +120,6 @@ Safe chunk select / "move to patch" implementation:
 * bundle preview when in workbench
 * incoming / outgoing marks
 * keyring help
-* need a mechanism for clearing username/passwords from URLs
 
 * Problem adding new keys to keyring on Mac, worked on command line
 ** This problem is bizarre, and may be local to my macbook (sjb).  I've verified we're passing the exact same arguments to osx_keychain.so as command line hg, but for some unknown reason the .so file cannot parse them.  It emits {{{password_set() must be called as (servicename,username,password)}}} and bails.  I've also verified hg and thg are using the exact same Python interpreter and osx_keychain.so location.  I'm not going to look any further unless I hear this is an issue on Windows or Unix.

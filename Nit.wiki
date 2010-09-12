@@ -55,6 +55,10 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 ** Unnaplied patches should use italic font
 ** Add support for multiple mq patch queues (hg qqueue).
 
+== RevDetailsWidget ==
+
+* When doubleclicking on a repo in the registry to open it, the diff for the (first) file of the tip is not shown in the revdetailswidget.
+
 == Manifest Viewer ==
 
 * GOAL: merge functionality with revDetailsWidget

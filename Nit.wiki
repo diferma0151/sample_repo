@@ -10,7 +10,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == repo registry ==
 
-* make reordering of groups (along with their content) possible
+* make reordering of groups (along with their content) possible (in progress, Johan)
 
 == cmdui ==
 

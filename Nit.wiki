@@ -53,7 +53,6 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 ** push/pop - all or individual. Push individual is useful when you don't think a series is going to apply and want to try each patch at a time. Push/pop all is useful when "rebasing" applied patches on a new downloaded tip. These don't really belong on a context menu (push/pop on an individual patch is just goto). On the main workbench toolbar is most obvious place.
 ** Unnaplied patches should use italic font
 ** Add support for multiple mq patch queues (hg qqueue).
-* add option to save open repo tabs when window closes, and reopen repos as saved on next restart
 
 == RevDetailsWidget ==
 

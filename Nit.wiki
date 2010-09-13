@@ -18,7 +18,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* toolbar buttons for in/out/push/pull (use default for in/pull, default-push for out/push)
 * revdetails: investigate hgview's recent support for reST in changelog messages
 * file dialogs
 ** fix column resizing
@@ -88,6 +87,12 @@ Safe chunk select / "move to patch" implementation:
 # To revert chunks, backup file to "trashcan" with timestamp in name, revert contents then apply remaining chunks
 # To "move to patch", revert then apply remaining, then do diff against original raw file > patch file
 
+== Status ==
+
+* Status tool should emit progress events, not begin/end load
+* Standalone status tool needs a status bar
+* Switch to Qsci
+
 == Update ==
 
 * "smart update" feature (incomplete)
@@ -133,7 +138,7 @@ Safe chunk select / "move to patch" implementation:
 
 == Grep ==
 
-* add history for include and exclude names (also possible for regexp itself) as done for the latest 10 messages in the commit widget
+* add history for include and exclude names also regexp itself, as done for the latest 10 messages in the commit widget
 
 == Annotate ==
 

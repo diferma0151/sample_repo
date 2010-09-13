@@ -120,6 +120,7 @@ Safe chunk select / "move to patch" implementation:
 == Sync ==
 
 * details dialog (similar to commit) for --force, --new-branch, --rev, --remotecmd, etc
+* explore, terminal, etc context menu for paths trees
 * bundle preview when in workbench
 * incoming / outgoing marks
 * keyring help

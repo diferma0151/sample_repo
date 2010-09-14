@@ -89,7 +89,6 @@ Safe chunk select / "move to patch" implementation:
 
 == Status ==
 
-* Set static sizes on checkbox and status columns, or resize to minimum hints
 * Switch to Qsci
 
 == Update ==

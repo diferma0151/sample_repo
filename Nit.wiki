@@ -19,6 +19,7 @@ This is where you register features that are unimplemented or badly implemented 
 == Workbench ==
 
 * Shift-Ctrl-S, Shift-Ctrl-T shortcuts for "explore", and "terminal"
+* Session management; QApplication::commitData()
 * revdetails: investigate hgview's recent support for reST in changelog messages
 * file dialogs
 ** fix column resizing

@@ -123,6 +123,7 @@ Safe chunk select / "move to patch" implementation:
 == Sync ==
 
 * explore, terminal, etc context menu for paths trees
+* parse output messages on success, get real counts for status messages
 * bundle preview when in workbench
 * incoming / outgoing marks
 * keyring help

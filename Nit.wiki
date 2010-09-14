@@ -89,8 +89,6 @@ Safe chunk select / "move to patch" implementation:
 
 == Status ==
 
-* Status tool should emit progress events, not begin/end load
-* Standalone status tool needs a status bar
 * Set static sizes on checkbox and status columns, or resize to minimum hints
 * Switch to Qsci
 

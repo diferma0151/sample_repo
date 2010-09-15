@@ -15,6 +15,7 @@ This is where you register features that are unimplemented or badly implemented 
 == cmdui ==
 
 * Optional run() argument to use a subprocess instead of a thread
+* Username/Password prompts should be parented and be Qt.Sheets
 
 == Workbench ==
 

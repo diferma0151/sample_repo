@@ -22,8 +22,6 @@ This is where you register features that are unimplemented or badly implemented 
 * purge needs a progress bar
 * Session management; QApplication::commitData()
 * Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
-* revdetails: investigate hgview's recent support for reST in changelog messages
-* revdetails: word wrap or scrollbars - current behavior is broken
 * file dialogs
 ** fix column resizing
 ** remember geometry
@@ -60,6 +58,8 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 == RevDetailsWidget ==
 
 * When doubleclicking on a repo in the registry to open it, the diff for the (first) file of the tip is not shown in the revdetailswidget.
+* investigate hgview's recent support for reST in changelog messages
+* word wrap or scrollbars - current behavior is broken
 
 == Manifest Viewer ==
 

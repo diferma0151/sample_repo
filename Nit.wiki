@@ -93,10 +93,6 @@ Safe chunk select / "move to patch" implementation:
 
 * Switch to Qsci
 
-== quickop ==
-
-* repo.ui.config('tortoisehg', 'immediate') = [add remove forget]
-
 == Update ==
 
 * "smart update" feature (incomplete)

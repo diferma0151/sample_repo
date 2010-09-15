@@ -23,6 +23,7 @@ This is where you register features that are unimplemented or badly implemented 
 * Session management; QApplication::commitData()
 * Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
 * revdetails: investigate hgview's recent support for reST in changelog messages
+* revdetails: word wrap or scrollbars - current behavior is broken
 * file dialogs
 ** fix column resizing
 ** remember geometry

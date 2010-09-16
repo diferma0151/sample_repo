@@ -18,7 +18,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* purge needs a progress bar
 * Session management; QApplication::commitData()
 * Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
 * file dialogs

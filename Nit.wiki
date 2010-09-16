@@ -123,7 +123,6 @@ Safe chunk select / "move to patch" implementation:
 
 == Sync ==
 
-* abort when no URL is available
 * explore, terminal, etc context menu for paths trees
 * parse output messages on success, get real counts for status messages
 * bundle preview when in workbench

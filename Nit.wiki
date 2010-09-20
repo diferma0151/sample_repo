@@ -90,7 +90,7 @@ Safe chunk select / "move to patch" implementation:
 
 == Status ==
 
-* Switch to Qsci
+* Qsci widget eats ESC keypresses and possibly others.
 
 == Update ==
 

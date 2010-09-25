@@ -148,6 +148,14 @@ Safe chunk select / "move to patch" implementation:
 * Switch to QSci for lexers and consistent look and feel (could make per-line coloring difficult)
 * Text widget should emit cmenu signal instead of action signals (just like repoview/repowidget)
 
+== docklog (ConsoleWidget) ==
+
+* command completion by TAB key
+* command history by up/down key
+* pager for long outputs
+* sophisticated 'thg' command, e.g. 'thg grep' to switch task tab.
+* arbitrary shell commands
+
 == qtlib ==
 
 * replace 'yellow' with some reasonable default, like 'lightbrown'

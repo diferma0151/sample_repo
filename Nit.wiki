@@ -155,6 +155,7 @@ Safe chunk select / "move to patch" implementation:
 * pager for long outputs
 * sophisticated 'thg' command, e.g. 'thg grep' to switch task tab.
 * arbitrary shell commands
+* connect to progress monitor on status bar
 
 == qtlib ==
 

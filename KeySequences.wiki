@@ -13,7 +13,7 @@ http://doc.qt.nokia.com/4.7/qkeysequence.html
 * QKeySequence.Open - Open repo in new tab
 * QKeySequence.HelpContents - Open repo in new tab
 
-i= Annotate =
+= Annotate =
 * QKeySequence.Find 
 * QKeySequence.FindNext 
 * QKeySequence.FindPrev

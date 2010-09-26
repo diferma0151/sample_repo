@@ -80,6 +80,7 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 
 == Commit ==
 
+* add support for tortoisehg.ciexclude
 * qnew/shelve-patch creation dialog (in another file)
 * spell check / tab completion
 * in-memory patching / committing chunk selected files

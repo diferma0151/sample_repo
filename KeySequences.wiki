@@ -13,8 +13,8 @@ http://doc.qt.nokia.com/4.7/qkeysequence.html
 * QKeySequence.Open - Open repo in new tab
 * QKeySequence.HelpContents - Open repo in new tab
 
-= RepoView (graph) =
-* QKeySequence.Cut - copy current revision's hash to clipboard
+= htmllistview =
+* QKeySequence.Cut - copy selected rows to clipboard
 * QKeySequence.Copy - ""
 
 = Annotate =

@@ -1,34 +1,33 @@
 http://doc.qt.nokia.com/4.7/qkeysequence.html
 
-Workbench:
-Shift+Ctrl+T - Open Terminal
-Shift+Ctrl+S - Open Shell Explorer
-CTRL+L - Open log dock widget
-QKeySequence.Quit - Exit workbench
-QKeySequence.Refresh - Refresh current repo
-Shift+QKeySequence.Refresh - Refresh current task tab
-QKeySequence.Preferences - Open settings tool for current repo
-QKeySequence.Close - Close repo tab
-QKeySequence.New - Create new repo, open in new tab
-QKeySequence.Open - Open repo in new tab
-QKeySequence.HelpContents - Open repo in new tab
+= Workbench =
+* Shift+Ctrl+T - Open Terminal
+* Shift+Ctrl+S - Open Shell Explorer
+* CTRL+L - Open log dock widget
+* QKeySequence.Quit - Exit workbench
+* QKeySequence.Refresh - Refresh current repo
+* Shift+QKeySequence.Refresh - Refresh current task tab
+* QKeySequence.Preferences - Open settings tool for current repo
+* QKeySequence.Close - Close repo tab
+* QKeySequence.New - Create new repo, open in new tab
+* QKeySequence.Open - Open repo in new tab
+* QKeySequence.HelpContents - Open repo in new tab
 
-Annotate:
-QKeySequence.Find 
-QKeySequence.FindNext 
-QKeySequence.FindPrev
+i= Annotate =
+* QKeySequence.Find 
+* QKeySequence.FindNext 
+* QKeySequence.FindPrev
 
-FileDialogs:
-QKeySequence.Refresh
-QKeySequence.Close
+= FileDialogs =
+* QKeySequence.Refresh
+* QKeySequence.Close
 
-Quickbar:
-QKeySequence.Find
-QKeySequence.FindNext
+= Quickbar =
+* QKeySequence.Find
+* QKeySequence.FindNext
 
-Status:
-QKeySequence.Refresh
+= Status =
+* QKeySequence.Refresh - Refresh view of working directory
 
-Sync:
-QKeySequence.Delete
-                    
+= Sync =
+* QKeySequence.Delete - Remove selected Alias/URL from .hg/hgrc

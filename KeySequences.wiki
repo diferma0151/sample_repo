@@ -3,6 +3,7 @@ http://doc.qt.nokia.com/4.7/qkeysequence.html
 = Workbench =
 * Shift+Ctrl+T - Open Terminal
 * Shift+Ctrl+S - Open Shell Explorer
+* Shift+Ctrl+G - Goto revision
 * CTRL+L - Open log dock widget
 * QKeySequence.Quit - Exit workbench
 * QKeySequence.Refresh - Refresh current repo

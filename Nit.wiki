@@ -156,7 +156,7 @@ Safe chunk select / "move to patch" implementation:
 * command history by up/down key
 * pager for long outputs
 * sophisticated 'thg' command, e.g. 'thg grep' to switch task tab.
-* arbitrary shell commands
+* accept ctrl+c for command termination
 * delay repo switch while running command
 
 == qtlib ==

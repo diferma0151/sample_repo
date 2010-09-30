@@ -169,6 +169,7 @@ Safe chunk select / "move to patch" implementation:
 
 == usability ==
 
+* Set coherent tab order in all dialogs:  http://doc.qt.nokia.com/4.6/focus.html
 * More Mac OS X goodies: http://www.crossplatform.ru/?q=node/298
 
 * Fonts

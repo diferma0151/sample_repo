@@ -7,6 +7,7 @@ This is where you register features that are unimplemented or badly implemented 
 * python-svn bindings missing
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)
+* email dialog broken in packages built on one PC
 
 == repo registry ==
 
@@ -15,6 +16,7 @@ This is where you register features that are unimplemented or badly implemented 
 == cmdui ==
 
 * Optional run() argument to use a subprocess instead of a thread
+* Use Qt.BlockingQueuedConnection for thread output?
 
 == Workbench ==
 
@@ -23,6 +25,7 @@ This is where you register features that are unimplemented or badly implemented 
 * add support for tortoisehg.longsummary
 * Session management; QApplication::commitData()
 * Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
+* Cursoring between patches, WC, and top revisions does strange things to focus
 * file dialogs
 ** fix column resizing
 ** remember geometry

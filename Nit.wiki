@@ -94,10 +94,6 @@ Safe chunk select / "move to patch" implementation:
 # To revert chunks, backup file to "trashcan" with timestamp in name, revert contents then apply remaining chunks
 # To "move to patch", revert then apply remaining, then do diff against original raw file > patch file
 
-== Status ==
-
-* Qsci widget eats ESC keypresses and possibly others.
-
 == Update ==
 
 * "smart update" feature (incomplete)
@@ -141,10 +137,6 @@ Safe chunk select / "move to patch" implementation:
 ** It also doesn't work on KDE (with KWallet). It looks threading issue. See
    http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-using
 
-== Grep ==
-
-* add history for include and exclude names also regexp itself, as done for the latest 10 messages in the commit widget
-
 == Annotate ==
 
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
@@ -167,7 +159,6 @@ Safe chunk select / "move to patch" implementation:
 
 * replace 'yellow' with some reasonable default, like 'lightbrown'
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
-* more general means for showing or previewing the generated hg command (see archive dialog) (log widget)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() ?
 

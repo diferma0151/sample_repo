@@ -20,6 +20,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
+* thgrepo polling - skip poll if wlock file exists
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)

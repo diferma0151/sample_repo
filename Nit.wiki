@@ -105,6 +105,10 @@ Safe chunk select / "move to patch" implementation:
 * shelve feature
 * temporary patch name
 
+== Import ==
+
+* import to MQ
+
 == Settings ==
 
 * unicode decode issues

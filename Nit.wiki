@@ -17,6 +17,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 * Optional run() argument to use a subprocess instead of a thread
 * Use Qt.BlockingQueuedConnection for thread output?
+** instead of Queue object? - Yuya
 
 == Workbench ==
 
@@ -121,12 +122,12 @@ Safe chunk select / "move to patch" implementation:
 
 == Email ==
 
-* missing progress of "sending" dialog ... fixed by real ui.progress support in Mercurial, 1ed2dc9d4368.
 * bundle support
 * threaded preview
 * rename module 'hgemail' to 'email' ?
 * replace to/from/cc combo boxes with entry and [...] that opens address book style dialog
 * perhaps changeset list could be in a second tab, before preview
+* drag and drop revisions from RepoWidget to email dialog.
 
 == Sync ==
 

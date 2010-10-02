@@ -118,6 +118,7 @@ Safe chunk select / "move to patch" implementation:
 * more font settings
 * new [color] page
 * connect to thgrepo.configChanged and refresh
+* edited lines contain ^M (CR) even on Unix ?
 
 == Email ==
 

@@ -80,6 +80,7 @@ thgrepo? certainly to util.something). Steve suggest making a special dialog for
 * subrepo?
 * flat view for files list
 * ability to show changeset description
+* merge with annotate dialog? with optional filetree dock.
 
 == Commit ==
 

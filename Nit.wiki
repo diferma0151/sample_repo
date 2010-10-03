@@ -17,6 +17,7 @@ This is where you register features that are unimplemented or badly implemented 
 * Optional run() argument to use a subprocess instead of a thread
 * Use Qt.BlockingQueuedConnection for thread output?
 ** instead of Queue object? - Yuya
+** instead of Qt.QueuedConnection - sjb
 
 == Workbench ==
 
@@ -53,8 +54,7 @@ that were compressed.
 ** rename - should be easy
 ** fold - should be easy to implement. Could benefit from a dialog confirming what will be folded and a --keep option checkbox.
 ** delete - needs multi-select in the log.
-** reorder - up/top/down/bottom. Needs thgmq code migrating (perhaps to
-thgrepo? certainly to util.something). Steve suggest making a special dialog for this one. Yes, if we have a list/tree of all unapplied patches in that dialog, we could even use d&d to reorder them.
+** reorder - up/top/down/bottom. Needs thgmq code migrating (perhaps to thgrepo? certainly to util.something). Steve suggest making a special dialog for this one. Yes, if we have a list/tree of all unapplied patches in that dialog, we could even use d&d to reorder them.
 ** push/pop - all or individual. Push individual is useful when you don't think a series is going to apply and want to try each patch at a time. Push/pop all is useful when "rebasing" applied patches on a new downloaded tip. These don't really belong on a context menu (push/pop on an individual patch is just goto). On the main workbench toolbar is most obvious place.
 ** Unnaplied patches should use italic font
 ** Add support for multiple mq patch queues (hg qqueue).
@@ -109,6 +109,10 @@ Safe chunk select / "move to patch" implementation:
 == Import ==
 
 * import to MQ
+
+== visdiff ==
+
+* revisit rename source handling in qt and gtk versions
 
 == Settings ==
 

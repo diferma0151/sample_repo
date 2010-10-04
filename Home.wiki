@@ -41,7 +41,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 | hgignore | mostly done |
 | web serve | mostly done |
 | update | done |
-| strip | in progress: **Yuki** |
+| strip | done |
 | merge | mostly done |
 | pbranch | in progress: **Peer** |
 | quickop | done |

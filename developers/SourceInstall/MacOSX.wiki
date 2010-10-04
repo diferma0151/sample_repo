@@ -121,11 +121,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> app.exec_()
 }}}
 
-=== Other Dependencies ===
+=== Optional Dependencies ===
 
-==== Install iniparse ====
-
-TODO
+* Install iniparse - allows thg to modify your configuration files
+* install pygments - enables auto-completion of source in commit tool
 
 === Get Latest Mercurial and TortoiseHg ===
 

@@ -22,6 +22,7 @@ This is where you register features that are unimplemented or badly implemented 
 == Workbench ==
 
 * changeset summaries must be xml escaped (" -> &quot;) in graph
+* Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)

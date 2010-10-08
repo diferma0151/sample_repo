@@ -4,6 +4,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == installer ==
 
+* 64bit installer
 * python-svn bindings missing
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)

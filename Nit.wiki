@@ -15,7 +15,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == import ==
 
-* warn of uncommitted changes at startup
+* cslist should support re-order and removal
 * in condensed mode, remove padding between rows
 
 == cmdui ==
@@ -27,7 +27,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* changeset summaries must be xml escaped (" -> &quot;) in graph
+* changeset summaries must be xml escaped (" -> &quot;) in graph (might be a win32 problem only)
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Go through hglib and move applicable routines to thgrepo, fix hgqt usage

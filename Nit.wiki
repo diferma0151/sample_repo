@@ -13,6 +13,11 @@ This is where you register features that are unimplemented or badly implemented 
 
 * make reordering of groups (along with their content) possible (in progress, Johan)
 
+== import ==
+
+* warn of uncommitted changes at startup
+* in condensed mode, remove padding between rows
+
 == cmdui ==
 
 * Optional run() argument to use a subprocess instead of a thread

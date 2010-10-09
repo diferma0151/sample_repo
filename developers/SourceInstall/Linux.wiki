@@ -21,7 +21,8 @@ $ python thg log
 == Debian sid/testing ==
 
 {{{
-$ apt-get install mercurial pyqt4-dev-tools python-qscintilla2 python-iniparse
+$ apt-get install mercurial pyqt4-dev-tools python-qscintilla2 python-iniparse python-pygments
 }}}
+(python-iniparse and python-pygments are optional)
 
 If the packaged mercurial isn't 1.6 or later, try getting it from source by {{{hg clone http://selenic.com/repo/hg}}}

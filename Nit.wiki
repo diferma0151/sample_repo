@@ -104,6 +104,9 @@ Safe chunk select / "move to patch" implementation:
 # To revert chunks, backup file to "trashcan" with timestamp in name, revert contents then apply remaining chunks
 # To "move to patch", revert then apply remaining, then do diff against original raw file > patch file
 
+* QScintilla: Bad support for Japanese (and possibly Chinese?) Imput Method (IM) on Linux, Windows (and Mac?)
+** I'm trying a workaround: http://bitbucket.org/yuja/playground/src/tip/pyqt/sciim.py
+
 == Update ==
 
 * "smart update" feature (incomplete)

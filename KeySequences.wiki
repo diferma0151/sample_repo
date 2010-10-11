@@ -1,4 +1,4 @@
-http://doc.qt.nokia.com/4.7/qkeysequence.html
+[[http://doc.qt.nokia.com/4.7/qkeysequence.html#standard-shortcuts|Qt's standard shortcuts]]
 
 = Workbench =
 * Shift+Ctrl+T - Open Terminal

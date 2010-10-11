@@ -115,7 +115,8 @@ Safe chunk select / "move to patch" implementation:
 == Merge ==
 
 * detect unresolved conflicts in WD
-* shelve feature
+* update parent csinfo after commit
+* delay merge tool scan until combo opened
 * temporary patch name
 
 == Import ==

@@ -71,6 +71,7 @@ that were compressed.
 
 * When doubleclicking on a repo in the registry to open it, the diff for the (first) file of the tip is not shown in the revdetailswidget.
 * investigate hgview's recent support for reST in changelog messages
+* space-efficient diff viewer like one of hgtk
 
 == Manifest Viewer ==
 

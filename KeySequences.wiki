@@ -40,12 +40,10 @@ http://doc.qt.nokia.com/4.7/qkeysequence.html
 = revdetails =
 * Alt+Down - next diff
 * Alt+Up   - prev diff
-* Right    - next file
-* Left     - prev file
 * Shift+Key_Down - next line
 * Shift+Key_Up   - prev line
 * Shift+Key_Right- next column?
-* Shift+Key_Left - prev column
+* Shift+Key_Left - prev column?
 * Alt+KeyReturn  - activate file
 
 = repowidget =

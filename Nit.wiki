@@ -9,6 +9,11 @@ This is where you register features that are unimplemented or badly implemented 
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)
 
+== bookmarks ==
+
+* add/move/rename/remove (already present in TortoiseHg)
+* bookmark selection for push/pull/incoming/outgoing (missing in TortoiseHg)
+
 == repo registry ==
 
 * make reordering of groups (along with their content) possible (in progress, Johan)

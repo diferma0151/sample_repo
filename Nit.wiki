@@ -18,11 +18,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 * make reordering of groups (along with their content) possible (in progress, Johan)
 
-== import ==
-
-* cslist should support re-order and removal
-* in condensed mode, remove padding between rows
-
 == cmdui ==
 
 * Optional run() argument to use a subprocess instead of a thread
@@ -90,7 +85,7 @@ that were compressed.
 
 * add support for tortoisehg.ciexclude
 * qnew/shelve-patch creation dialog (in another file)
-* spell check / tab completion
+* spell check
 * in-memory patching / committing chunk selected files
 
 Safe chunk select / "move to patch" implementation:
@@ -117,7 +112,8 @@ Safe chunk select / "move to patch" implementation:
 
 == Import ==
 
-* import to MQ
+* cslist should support re-order and removal
+* in condensed mode, remove padding between rows
 
 == visdiff ==
 

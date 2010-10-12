@@ -30,11 +30,8 @@ This is where you register features that are unimplemented or badly implemented 
 * changeset summaries must be xml escaped (" -> &quot;) in graph (might be a win32 problem only)
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
-* Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)
 * add support for tortoisehg.longsummary
-* Session management; QApplication::commitData()
-* Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
 * Cursoring between patches, WC, and top revisions does strange things to focus
 * file dialogs
 ** fix column resizing
@@ -45,11 +42,7 @@ This is where you register features that are unimplemented or badly implemented 
 ** >2 sel: patch/email menu
 * Changeset file list menu, just like repository explorer
 * Drag file names from changeset file list to editor
-* Inline searching searches only for matches from the beginning of the line, not for whether a commit contains said text
-* Filter csets (will be revset based, with smart completions)
-** per cset type (all, tagged, ancestry, parents, heads, merge, non-merge).
-** per filename.
-** per username.
+* Filter graph on revset matches, clear filter correctly on push/refresh
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
 * History compression feature (I'll tackle this, Johan)
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.
@@ -58,13 +51,11 @@ that were compressed.
 ** Could be done as a single dialog.
 * Extensions that are only enabled in a particularly repo don't work correctly at the moment. If I have two repos, one with and one without MQ, then the repo I start in seems to control whether I get MQ facilities across all repos displayed in the workbench, regardless of an individual repo's MQ status.  [sjb - please retest]
 * MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
-** view in revision details tab - George is looking at this
 ** rename - should be easy
 ** fold - should be easy to implement. Could benefit from a dialog confirming what will be folded and a --keep option checkbox.
 ** delete - needs multi-select in the log.
-** reorder - up/top/down/bottom. Needs thgmq code migrating (perhaps to thgrepo? certainly to util.something). Steve suggest making a special dialog for this one. Yes, if we have a list/tree of all unapplied patches in that dialog, we could even use d&d to reorder them.
-** push/pop - all or individual. Push individual is useful when you don't think a series is going to apply and want to try each patch at a time. Push/pop all is useful when "rebasing" applied patches on a new downloaded tip. These don't really belong on a context menu (push/pop on an individual patch is just goto). On the main workbench toolbar is most obvious place.
-** Unnaplied patches should use italic font
+** reorder - wire up qreorder dialog, improve it
+** push/pop - push-all is accomplished by pushing top patch.  pop-all is a menu item of qparent
 ** Add support for multiple mq patch queues (hg qqueue).
 
 == RevDetailsWidget ==
@@ -195,6 +186,9 @@ Safe chunk select / "move to patch" implementation:
 
 == usability ==
 
+* Go through hglib and move applicable routines to thgrepo, fix hgqt usage
+* Session management; QApplication::commitData()
+* Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
 * Set coherent tab order in all dialogs:  http://doc.qt.nokia.com/4.7/focus.html
 * More Mac OS X goodies: http://www.crossplatform.ru/?q=node/298
 

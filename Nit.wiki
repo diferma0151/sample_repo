@@ -27,6 +27,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
+* Filter graph on revset matches, clear filter correctly on push/refresh
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)
@@ -40,8 +41,6 @@ This is where you register features that are unimplemented or badly implemented 
 ** 2 sel : merge, range menu, compress history
 ** >2 sel: patch/email menu
 * Changeset file list menu, just like repository explorer
-* Drag file names from changeset file list to editor
-* Filter graph on revset matches, clear filter correctly on push/refresh
 * Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
 * History compression feature (I'll tackle this, Johan)
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.

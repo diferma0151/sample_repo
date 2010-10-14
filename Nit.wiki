@@ -27,7 +27,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* changeset summaries must be xml escaped (" -> &quot;) in graph (might be a win32 problem only)
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)
@@ -59,9 +58,8 @@ that were compressed.
 
 == RevDetailsWidget ==
 
-* When doubleclicking on a repo in the registry to open it, the diff for the (first) file of the tip is not shown in the revdetailswidget.
 * investigate hgview's recent support for reST in changelog messages
-* space-efficient diff viewer like one of hgtk
+* space-efficient diff viewer like one of hgtk (this needs to be more specific -sjb)
 
 == Manifest Viewer ==
 

@@ -109,15 +109,6 @@ Safe chunk select / "move to patch" implementation:
 * delay merge tool scan until combo opened
 * temporary patch name
 
-== Import ==
-
-* cslist should support re-order and removal
-* in condensed mode, remove padding between rows
-
-== visdiff ==
-
-* revisit rename source handling in qt and gtk versions
-
 == Settings ==
 
 * unicode decode issues

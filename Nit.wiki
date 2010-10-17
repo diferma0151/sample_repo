@@ -43,7 +43,10 @@ This is where you register features that are unimplemented or badly implemented 
 ** 2 sel : merge, range menu, compress history
 ** >2 sel: patch/email menu
 * Changeset file list menu, just like repository explorer
-* Bisect view (idea) ... it shows good/bad icon alongside each changeset; tested changesets are grayed-out.
+* Bisect dialog
+** opened from workbench repository menu, like import
+** bisect needs one good, one bad revision to start.  workbench clicks can provide input
+** once started, the dialog drives the process.  bisect updates to a revision for test, dialog has good/bad/skip buttons.  User presses button, process repeats.  Entire history of choices is kept in console.
 * History compression feature (I'll tackle this, Johan)
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.
 ** It will update to the parent of A (if necessary), hg revert --all --rev B, then open the commit tool with the concatenated commit messages of revisions between A and B (both inclusive).  User can then edit the message and make the commit.  There should be an option to then strip the changesets

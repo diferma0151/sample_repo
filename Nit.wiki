@@ -79,7 +79,6 @@ that were compressed.
 * interface to grep at revision
 * Complete the annotate view with the hovering info as in the separate annotate dialog ?
 * filter files by name.
-* search file content.
 * indicate affected folders by overlay icon or font style, like the 'Changes' column in the Gtk version.
 * change filename color by status (see the status view).
 * support 'unknown' and 'ignored' files for working copy.
@@ -87,6 +86,7 @@ that were compressed.
 * flat view for files list
 * ability to show changeset description
 * merge with annotate dialog? with optional filetree dock.
+* annotation of working copy (None) revision isn't supported
 
 == Commit ==
 

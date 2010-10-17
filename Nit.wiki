@@ -27,7 +27,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == Workbench ==
 
-* goto toolbar needs to be rooted, probably next to revset bar
+* goto toolbar needs to be parented, probably next to revset bar
 * bundle preview for incoming changesets and other bundles
 * toggle for revset graph filter, clear filter correctly on push/refresh
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.

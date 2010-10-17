@@ -67,7 +67,6 @@ that were compressed.
 
 * Connect repoview clicks to dialog input events
 * Get ESC keys from cmdui.Widget
-* i18n proof detection of bisect completion
 * annotate graph with .hg/bisect.state (low priority)
 
 == Manifest Viewer ==

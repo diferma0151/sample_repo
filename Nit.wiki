@@ -110,7 +110,6 @@ Safe chunk select / "move to patch" implementation:
 == Merge ==
 
 * QObject::killTimers: timers cannot be stopped from another thread warning on Windows during merge
-* 'Go back' from commit page will discard changes without warning, if resolves were required
 * temporary patch name
 * launching commit tool from merge, when merge is launched from workbench, causes bad behavior
 * the cmdui.Widget console will not grow in size in the resolve page, no idea why

@@ -109,6 +109,7 @@ Safe chunk select / "move to patch" implementation:
 
 == Merge ==
 
+* commit page is advancing to the merge page instead of the results page, wtf?
 * QObject::killTimers: timers cannot be stopped from another thread warning on Windows during merge
 * temporary patch name
 * launching commit tool from merge causes interesting traceback

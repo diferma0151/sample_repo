@@ -72,7 +72,7 @@ that were compressed.
 
 == Manifest Viewer ==
 
-* GOAL: merge functionality with revDetailsWidget
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} GOAL: merge functionality with revDetailsWidget
 
 * context menu for: open in editor, file history, annotate, etc
 ** {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
@@ -102,9 +102,6 @@ that were compressed.
 # To revert chunks, backup file to "trashcan" with timestamp in name, revert contents then apply remaining chunks
 # To "move to patch", revert then apply remaining, then do diff against original raw file > patch file
 
-* QScintilla: Bad support for Japanese (and possibly Chinese?) Imput Method (IM) on Linux, Windows (and Mac?)
-** I'm trying a workaround: http://bitbucket.org/yuja/playground/src/tip/pyqt/sciim.py
-
 == Update ==
 
 * "smart update" feature (incomplete)
@@ -125,11 +122,11 @@ that were compressed.
 * more font settings
 * new [color] page
 * connect to thgrepo.configChanged and refresh
-* edited lines contain ^M (CR) even on Unix ?
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} somehow edited lines contain ^M (CR) even on Unix; not always ?
 
-== {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Email ==
+== Email ==
 
-* bundle support
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bundle support
 * threaded preview
 * rename module 'hgemail' to 'email' ?
 * replace to/from/cc combo boxes with entry and [...] that opens address book style dialog
@@ -173,10 +170,13 @@ that were compressed.
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() ?
 
-== {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} i18n ==
+== i18n ==
 
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update i18n message catalog for PyQt port
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Fix possible unicode-related issues
 * Need an encode fail dialog that prompts for an encoding, sets HGENCODING, then retries
 * Need functions to convert between unicode<->UTF-8
+* Content encoding for diff / annotate view; Maybe it has fallback list by locale, e.g. 'utf-8, cp932, euc-jp, iso-2022-jp' for ja_JP.
 
 == usability ==
 

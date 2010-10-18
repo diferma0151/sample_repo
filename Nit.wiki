@@ -112,6 +112,8 @@ Safe chunk select / "move to patch" implementation:
 * QObject::killTimers: timers cannot be stopped from another thread warning on Windows during merge
 * button count and titles on resolve page are "odd".  after a command runs, they're all modified.
 * temporary patch name
+* launching commit tool from merge, when merge is launched from workbench, causes bad behavior
+* the cmdui.Widget console will not grow in size in the resolve page, no idea why
 
 == Settings ==
 
@@ -135,7 +137,7 @@ Safe chunk select / "move to patch" implementation:
 
 == Sync ==
 
-* auth save does not respect file's eoln
+* auth save does not respect file's eoln (same as last settings nit)
 * explore, terminal, etc context menu for paths trees
 * parse output messages on success, get real counts for status messages
 * keyring help
@@ -150,7 +152,6 @@ Safe chunk select / "move to patch" implementation:
 
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
 
-* Text widget should emit cmenu signal instead of action signals (just like repoview/repowidget)
 * Better assignment of annotation colours:
 ** "collect all of the usernames in all of the revisions and assign them hue 0..7, so some users will share hues.  For each hue, you split the age range of revisions given that hue into quarters - giving you 32 colors."
   

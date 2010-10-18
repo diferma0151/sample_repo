@@ -33,6 +33,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
+* limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * goto toolbar needs to be parented, probably next to revset bar
 * bundle preview for incoming changesets and other bundles
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.

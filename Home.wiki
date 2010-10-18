@@ -62,6 +62,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 | archive | done |
 | tags | done |
 | backout | done |
+| bisect | done |
 | email | partially done: **Yuya** |
 | clone | done |
 | hgignore | mostly done |
@@ -74,7 +75,8 @@ If people are looking for places to get started, from easiest to hardest, there'
 | visdiff | done |
 | guess renames | done |
 | settings/thgconfig | mostly done |
-| Workbench patches | task tab or registry feature, or both |
-| Workbench status/commit - chunk selection on hold till > hg-1.7: **Steve** |
+| Workbench - patches task tab | ? |
+| Workbench - patches registry | ? |
+| chunk selection on hold till > hg-1.7 | **Steve** |
 
 Please send an e-mail to thg-dev if you start working on something so we do not duplicate effort.

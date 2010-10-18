@@ -23,15 +23,18 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == cmdui ==
 
 * Optional run() argument to use a subprocess instead of a thread
-* Use Qt.BlockingQueuedConnection for thread output?
-** instead of Queue object? - Yuya
-** instead of Qt.QueuedConnection - sjb
+* cleanup passing of parent widgets
+
+== revset ==
+
+* toggle for filtering graph
+* clear filter correctly on push/refresh
+* add fromsvn() and svn() to list if hgsubversion in repo.extensions()
 
 == Workbench ==
 
 * goto toolbar needs to be parented, probably next to revset bar
 * bundle preview for incoming changesets and other bundles
-* toggle for revset graph filter, clear filter correctly on push/refresh
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)

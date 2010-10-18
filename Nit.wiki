@@ -66,7 +66,6 @@ that were compressed.
 == Bisect Dialog ==
 
 * Connect repoview clicks to dialog input events
-* Get ESC keys from cmdui.Widget
 * annotate graph with .hg/bisect.state (low priority)
 
 == Manifest Viewer ==

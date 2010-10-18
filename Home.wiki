@@ -12,6 +12,8 @@ Future official home of the TortoiseHg development repository; currently the hom
 
 Be aware that the PyQt port of TortoiseHg is being developed against the tip of Mercurial's default branch.  We are not trying to support older releases of Mercurial.
 
+Screenshots and semi-regular snapshot packages on the downloads page.
+
 == Road Map ==
 
 TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (March 1, 2011).  When Mercurial 1.7 is released on November 1, 2010, we will release hgtk based TortoiseHg 1.1.5-hg-1.7 installers, and BETA versions of the PyQt installers (version numbers TBD).

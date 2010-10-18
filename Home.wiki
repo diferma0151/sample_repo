@@ -10,21 +10,47 @@ Future official home of the TortoiseHg development repository; currently the hom
 * For Mac users: see [[developers/SourceInstall/MacOSX]]
 * For Linux users: see [[developers/SourceInstall/Linux]]
 
-== Grand Plans ==
+Be aware that the PyQt port of TortoiseHg is being developed against the tip of Mercurial's default branch.  We are not trying to support older releases of Mercurial.
 
-TortoiseHg 2.0, scheduled for November 1, 2010, is slated to have PyQt replacements for all PyGtk dialogs
+== Road Map ==
 
-=== Main Application ===
+TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (March 1, 2011).  When Mercurial 1.7 is released on November 1, 2010, we will release hgtk based TortoiseHg 1.1.5-hg-1.7 installers, and BETA versions of the PyQt installers (version numbers TBD).
 
-As part of this rewrite, we would like to perform a few cleanups in the design.  The changelog browser, grep and annotate (datamine) tools, and the commit tool should be combined into a single "main application" with a tabbed interface.  This app should be usable from a desktop icon or start menu link, offering a repository list if the cwd is not within a repository.
+TODO for beta release:
+
+* incoming preview
+* multi-selection menus in repowidget
+* track down as many SEGV issues as possible
+* manifest and revdetails things
+* brush up initial window state (running with no config files)
+* finish basic MQ support
+
+TODO for general release:
+
+* Chunk selection
+* Patch manipulation
+* Full bookmark support
+* Show diffs between arbitrary changesets
+* Subrepo support in reporegistry, grep, sync
+* Updated documentation
+* extension settings page
+* email bundle
+* manifest subrepo
+* unicode things and i18n messages
+
+=== Workbench ===
+
+The Qt port combines changelog browser, grep and annotate (datamine) tools, and the commit tool into a single "main application" with a tabbed interface.  This app is intended to be usable from a desktop icon or start menu link, offering a repository list if the cwd is not within a repository.  Essentially all of TortoiseHg is available to users without the use of explorer shell extensions.
 
 === "Sync" Widget ===
 
-A "task" tab of the workbench should replace the "paths" page of the settings tool and the sync bar of the repository explorer.  It should show all configured paths for the repository, allow this list to be modified, and support sync operations with each remote target.. including preview incoming w/ bundle (perhaps creating a new changelog tab), annotating outgoing changes, etc.  We could also put a console pane and progress bar on this tab to show running operations.  Some operations could be banned for certain URLs (p4, svn, git, etc).
+A "task" tab of the workbench has replaced the "paths" page of the settings tool and the sync bar of the repository explorer.  It shows all configured paths for the repository and paths configured in local related repositories, allows the local list to be modified, and supports sync operations with each remote target.. including preview incoming w/ bundle, annotating outgoing changes, etc.  It uses the Workbench's console dock widget and progress bar to show running operations.  The sync tool is also available as a standalone window.
 
 === Simplify Commit, Drop Shelve ===
 
-I prefer to not port the shelve tool.  Instead, the commit tool should allow change hunks to be moved into patches (or just reverted).  In fact, qnew should simply be the act of moving changes into a patch, then pushing it.  The commit tool should always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory should be tasks for a patches widget.
+The shelve tool will not be ported to Qt.  Instead, the commit tool will allow change hunks to be moved into patches (or just reverted).  In fact, qnew should simply be the act of moving changes into a patch, then pushing it.  The commit tool should always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory should be tasks for a patches widget (TBD).
+
+This approach works around some of the well-known problems with shelve - it does not record adds, deletes, etc.
 
 == Would you like to help? ==
 
@@ -48,10 +74,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 | visdiff | done |
 | guess renames | done |
 | settings/thgconfig | mostly done |
-| Workbench annotate | integrate into workbench |
 | Workbench patches | task tab or registry feature, or both |
-| Workbench status/commit - better workbench integration | chunk selection on hold: **Steve** |
-
-Plus basic details like common keyboard accelerators, app icons
+| Workbench status/commit - chunk selection on hold till > hg-1.7: **Steve** |
 
 Please send an e-mail to thg-dev if you start working on something so we do not duplicate effort.

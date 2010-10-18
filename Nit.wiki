@@ -2,6 +2,8 @@ Feel free to add new categories as necessary.
 
 This is where you register features that are unimplemented or badly implemented in the new Qt dialogs
 
+Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} must be implemented before TortoiseHg 2.0 is out of beta.
+
 == installer ==
 
 * 64bit installer
@@ -9,7 +11,7 @@ This is where you register features that are unimplemented or badly implemented 
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)
 
-== bookmarks ==
+== {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
 
 * add/move/rename/remove (already present in TortoiseHg)
 * bookmark selection for push/pull/incoming/outgoing (missing in TortoiseHg)
@@ -48,7 +50,7 @@ This is where you register features that are unimplemented or badly implemented 
 ** It will update to the parent of A (if necessary), hg revert --all --rev B, then open the commit tool with the concatenated commit messages of revisions between A and B (both inclusive).  User can then edit the message and make the commit.  There should be an option to then strip the changesets
 that were compressed.
 ** Could be done as a single dialog.
-* MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
 ** rename - should be easy
 ** fold - should be easy to implement. Could benefit from a dialog confirming what will be folded and a --keep option checkbox.
 ** delete - needs multi-select in the log.
@@ -63,7 +65,7 @@ that were compressed.
 ** combine RevMessage and HgFileView (diff view) so that RevMessage can be scrolled out; current diff view is too small.
 ** provide a way to show all diffs at once, like "[All Files]" of hgtk. - yuja
 
-== Bisect Dialog ==
+=={{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Bisect Dialog ==
 
 * Connect repoview clicks to dialog input events (must be non-modal, low priority)
 * annotate graph with .hg/bisect.state (low priority)
@@ -73,14 +75,14 @@ that were compressed.
 * GOAL: merge functionality with revDetailsWidget
 
 * context menu for: open in editor, file history, annotate, etc
-** right-clicking on files should allow a diff-to-parent for affected files only.
+** {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision
 * Complete the annotate view with the hovering info as in the separate annotate dialog ?
 * filter files by name.
 * indicate affected folders by overlay icon or font style, like the 'Changes' column in the Gtk version.
 * change filename color by status (see the status view).
 * support 'unknown' and 'ignored' files for working copy.
-* subrepo?
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} subrepo?
 * flat view for files list
 * ability to show changeset description
 * merge with annotate dialog? with optional filetree dock.
@@ -89,11 +91,11 @@ that were compressed.
 == Commit ==
 
 * add support for tortoisehg.ciexclude
-* qnew/shelve-patch creation dialog (in another file)
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check
 * in-memory patching / committing chunk selected files
 
-Safe chunk select / "move to patch" implementation:
+{{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Safe chunk select / "move to patch" implementation:
 # Teach hgshelve to parse non-git diffs, drop git diffs everywhere, detect binary/perm/copies ourselves
 # When chunk select dialog is opened, record hash of raw contents
 # When revert or "move to patch" is selected, re-read file and compare hash
@@ -118,14 +120,14 @@ Safe chunk select / "move to patch" implementation:
 
 * unicode decode issues
 * path validation for ui.editor and similar fields
-* port extensions page from hgtk
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} port extensions page from hgtk
 * new generic extension registration
 * more font settings
 * new [color] page
 * connect to thgrepo.configChanged and refresh
 * edited lines contain ^M (CR) even on Unix ?
 
-== Email ==
+== {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Email ==
 
 * bundle support
 * threaded preview
@@ -171,7 +173,7 @@ Safe chunk select / "move to patch" implementation:
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() ?
 
-== i18n ==
+== {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} i18n ==
 
 * Need an encode fail dialog that prompts for an encoding, sets HGENCODING, then retries
 * Need functions to convert between unicode<->UTF-8
@@ -189,3 +191,7 @@ Safe chunk select / "move to patch" implementation:
 ** SJB - I've started work on this.  Apps can get the user's configured font from qtlib and connect to a signal emitted when the font is changed.  The settings tool in turn will emit the signal when the user picks a new font and selects 'ok' in the font editor.  Two things need to happen:
 ## We must use this font interface consistently in all our tools
 ## Someone should look into connecting to the live updates that come out of the selection dialog
+
+== Documentation ==
+
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation

@@ -48,7 +48,11 @@
 
 = repowidget =
 * Shift+KeyReturn - activate revision
+* Ctrl+P - Goto Working Dir parent changeset (TBD)
 
 = filedialogs =
 * Alt+Down - next diff
 * Alt+Up   - prev diff
+
+= Commit =
+* Ctrl+E - Reflow current paragraph

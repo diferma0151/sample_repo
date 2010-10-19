@@ -28,7 +28,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == revset ==
 
 * toggle for filtering graph
-* clear filter correctly on push/refresh
+* clear filter correctly on push/refresh (refresh defeats branch filter as well)
 * add fromsvn() and svn() to list if hgsubversion in repo.extensions()
 
 == Workbench ==

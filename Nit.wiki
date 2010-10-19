@@ -107,6 +107,11 @@ that were compressed.
 # To revert chunks, backup file to "trashcan" with timestamp in name, revert contents then apply remaining chunks
 # To "move to patch", revert then apply remaining, then do diff against original raw file > patch file
 
+== Clone ==
+
+* history is not saved
+* clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh
+
 == Update ==
 
 * "smart update" feature (incomplete)
@@ -115,7 +120,6 @@ that were compressed.
 
 * QObject::killTimers: timers cannot be stopped from another thread warning on Windows during merge
 * temporary patch name
-* launching commit tool from merge causes interesting traceback
 * the cmdui.Widget console will not grow in size in the resolve page, no idea why
 
 == Settings ==

@@ -78,6 +78,7 @@ that were compressed.
 
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} GOAL: merge functionality with revDetailsWidget
 
+* annotate qsci does not respect tortoisehg.tabwith
 * context menu for: open in editor, file history, annotate, etc
 ** {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision

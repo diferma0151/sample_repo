@@ -43,6 +43,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * file dialogs
 ** fix column resizing
 ** remember geometry
+** file history diff marking margin seems to use .:rev diffs rather than change(rev)
 * Multi-selection (<-done) and intelligent changeset context menu:
 ** 1 sel : base menu
 ** 2 sel : merge, range menu, compress history

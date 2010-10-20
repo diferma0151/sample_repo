@@ -26,7 +26,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == revset ==
 
-* clear filter correctly on push/refresh (refresh defeats branch filter as well)
+* QTimer errors after revset queries
 * add fromsvn() and svn() to list if hgsubversion in repo.extensions()
 
 == Workbench ==

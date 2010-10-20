@@ -23,11 +23,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == cmdui ==
 
 * Optional run() argument to use a subprocess instead of a thread
-* cleanup passing of parent widgets
 
 == revset ==
 
-* toggle for filtering graph
 * clear filter correctly on push/refresh (refresh defeats branch filter as well)
 * add fromsvn() and svn() to list if hgsubversion in repo.extensions()
 

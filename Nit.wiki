@@ -4,6 +4,10 @@ This is where you register features that are unimplemented or badly implemented 
 
 Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} must be implemented before TortoiseHg 2.0 is out of beta.
 
+== Backout ==
+
+* Backout default behavior has changed on tip hg stable.  it no makes an automated commit.  Instead it applies the reverse change then updates back to the original working parent (using hg's merge/resolve features)
+
 == installer ==
 
 * 64bit installer

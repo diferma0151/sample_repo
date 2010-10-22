@@ -11,6 +11,12 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)
 
+== rebase ==
+
+* turn into a QWizard that can handle rebase merge conflicts and --continue
+* support all the various rebase options (--detached, etc)
+* hgsubversion adds rebase --svn, I believe
+
 == {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
 
 * add/move/rename/remove (already present in TortoiseHg)

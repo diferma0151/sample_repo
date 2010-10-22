@@ -206,6 +206,9 @@ that were compressed.
 ## We must use this font interface consistently in all our tools
 ## Someone should look into connecting to the live updates that come out of the selection dialog
 
+* Respect Windows font setting like modern apps:
+  http://groups.google.co.jp/group/thg-dev/browse_thread/thread/5f9bb7141e4f66e3
+
 == Documentation ==
 
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation

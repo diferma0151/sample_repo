@@ -167,7 +167,8 @@ that were compressed.
 
 * Better assignment of annotation colours:
 ** "collect all of the usernames in all of the revisions and assign them hue 0..7, so some users will share hues.  For each hue, you split the age range of revisions given that hue into quarters - giving you 32 colors."
-  
+
+* Replace HgView's annotator by thg's. Hook at fileview.HgFileView.
 
 == docklog (ConsoleWidget) ==
 

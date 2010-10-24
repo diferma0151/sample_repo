@@ -98,7 +98,6 @@ that were compressed.
 * flat view for files list
 * ability to show changeset description
 * merge with annotate dialog? with optional filetree dock.
-* annotation of working copy (None) revision isn't supported
 
 == Commit ==
 
@@ -169,6 +168,8 @@ that were compressed.
 ** "collect all of the usernames in all of the revisions and assign them hue 0..7, so some users will share hues.  For each hue, you split the age range of revisions given that hue into quarters - giving you 32 colors."
 
 * Replace HgView's annotator by thg's. Hook at fileview.HgFileView.
+
+* support annotation of working copy (rev=None); needs changes on Mercurial-side.
 
 == docklog (ConsoleWidget) ==
 

@@ -11,6 +11,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)
 
+== grep ==
+
+* --all display of matches needs xml escaping - tricky since we're encoding labels as html
+
 == rebase ==
 
 * hgsubversion adds rebase --svn, I believe

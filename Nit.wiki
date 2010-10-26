@@ -111,7 +111,7 @@ that were compressed.
 
 == Update ==
 
-* "smart update" feature (incomplete)
+* save to patch unimplemented (waiting for Qt patch library)
 
 == Merge ==
 

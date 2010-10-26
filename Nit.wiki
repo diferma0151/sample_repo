@@ -41,7 +41,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* something is seriously wrong with tab rename signals..
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * goto toolbar needs to be parented, probably next to revset bar
 * bundle preview for incoming changesets and other bundles

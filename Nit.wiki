@@ -14,10 +14,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * --all display of matches needs xml escaping - tricky since we're encoding labels as html
 
-== rebase ==
-
-* hgsubversion adds rebase --svn, I believe
-
 == {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
 
 * add/move/rename/remove (already present in TortoiseHg)
@@ -31,15 +27,11 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * Optional run() argument to use a subprocess instead of a thread
 
-== revset ==
-
-* QTimer errors after revset queries or goto bar search
-* add fromsvn() and svn() to list if hgsubversion in repo.extensions()
-
 == Workbench ==
 
-* limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * bundle preview for incoming changesets and other bundles
+* QTimer errors after revset queries or goto bar search
+* limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)

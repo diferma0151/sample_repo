@@ -18,8 +18,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == rebase ==
 
 * hgsubversion adds rebase --svn, I believe
-* early exit validation
-* connect rebase and resolve to: pull --rebase and pull --update respectively
 
 == {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
 

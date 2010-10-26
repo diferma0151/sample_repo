@@ -33,7 +33,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == revset ==
 
-* QTimer errors after revset queries
+* QTimer errors after revset queries or goto bar search
 * add fromsvn() and svn() to list if hgsubversion in repo.extensions()
 
 == Workbench ==

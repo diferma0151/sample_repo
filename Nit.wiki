@@ -7,7 +7,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == installer ==
 
 * 64bit installer
-* python-svn bindings missing
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)
 
@@ -40,7 +39,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Workbench ==
 
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
-* goto toolbar needs to be parented, probably next to revset bar
 * bundle preview for incoming changesets and other bundles
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap

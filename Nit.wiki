@@ -23,13 +23,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * make reordering of groups (along with their content) possible (in progress, Johan)
 
-== cmdui ==
-
-* Optional run() argument to use a subprocess instead of a thread
-
 == Workbench ==
 
-* bundle preview for incoming changesets and other bundles
 * QTimer errors after revset queries or goto bar search
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.

@@ -32,14 +32,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)
 * add support for tortoisehg.longsummary
 * Cursoring between patches, WC, and top revisions does strange things to focus
-* file dialogs
-** fix column resizing
-** remember geometry
-** file history diff marking margin seems to use .:rev diffs rather than change(rev)
-* Multi-selection (<-done) and intelligent changeset context menu:
-** 1 sel : base menu
-** 2 sel : merge, range menu, compress history
-** >2 sel: patch/email menu
 * Changeset file list menu, just like repository explorer
 * History compression feature (I'll tackle this, Johan)
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.

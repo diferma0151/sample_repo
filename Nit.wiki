@@ -31,7 +31,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * Horizontal scrollbars are always on w/ Qsci - I suspect we need to enable word-wrap
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)
 * add support for tortoisehg.longsummary
-* Cursoring between patches, WC, and top revisions does strange things to focus
 * Changeset file list menu, just like repository explorer
 * History compression feature (I'll tackle this, Johan)
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.

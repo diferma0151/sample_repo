@@ -23,8 +23,7 @@ TODO for beta release:
 * incoming preview
 * multi-selection menus in repowidget
 * track down as many SEGV issues as possible
-* manifest and revdetails things
-* brush up initial window state (running with no config files)
+* brush up initial window state (running with no config files) - mostly done
 * finish basic MQ support
 
 TODO for general release:
@@ -37,6 +36,7 @@ TODO for general release:
 * Updated documentation
 * extension settings page
 * email bundle
+* Merge manifest and revdetails
 * manifest subrepo
 * unicode things and i18n messages
 

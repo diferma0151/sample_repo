@@ -45,7 +45,6 @@ that were compressed.
 ** reorder - wire up qreorder dialog, improve it
 ** push/pop - push-all is accomplished by pushing top patch.  pop-all is a menu item of qparent
 ** Add support for multiple mq patch queues (hg qqueue).
-* RepoWidget: Add Ctrl+P to go to the Working directory parent changeset.
 
 == RevDetailsWidget ==
 

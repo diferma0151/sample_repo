@@ -49,7 +49,7 @@ that were compressed.
 == RevDetailsWidget ==
 
 * investigate hgview's recent support for reST in changelog messages
-* space-efficient diff viewer like one of hgtk (this needs to be more specific -sjb)
+* space-efficient diff viewer like one of hgtk
 ** combine RevMessage and HgFileView (diff view) so that RevMessage can be scrolled out; current diff view is too small. (i'm not convinced this would be an improvement, please discuss on list first - sjb)
 ** provide a way to show all diffs at once, like "[All Files]" of hgtk. - yuja
 

@@ -60,7 +60,7 @@ If people are looking for places to get started, from easiest to hardest, there'
 
 | about | done |
 | init | done |
-| rename / move / copy | partially done: **Johan** |
+| rename / move / copy | done |
 | archive | done |
 | tags | done |
 | backout | done |

@@ -33,7 +33,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Workbench ==
 
 * Changeset file list menu, just like repository explorer
-* History compression feature (I'll tackle this, Johan)
+* History compression feature
 ** Select rev A and descendant rev B.  cmenu should offer 'Compress history'.
 ** It will update to the parent of A (if necessary), hg revert --all --rev B, then open the commit tool with the concatenated commit messages of revisions between A and B (both inclusive).  User can then edit the message and make the commit.  There should be an option to then strip the changesets
 that were compressed.
@@ -154,6 +154,9 @@ that were compressed.
 * sophisticated 'thg' command, e.g. 'thg grep' to switch task tab.
 * accept ctrl+c for command termination
 * delay repo switch while running command
+
+== Rename dialog ==
+* implement enhancements from issues 1124 + 1186
 
 == qtlib ==
 

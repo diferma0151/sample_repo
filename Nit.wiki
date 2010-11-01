@@ -92,7 +92,6 @@ that were compressed.
 
 == Clone ==
 
-* history is not saved
 * clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh
 
 == Update ==

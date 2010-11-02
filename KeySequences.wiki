@@ -48,7 +48,7 @@
 
 = repowidget =
 * Shift+KeyReturn - activate revision
-* Ctrl+P - Goto Working Dir parent changeset (TBD)
+* Ctrl+P - Goto Working Dir parent changeset
 
 = filedialogs =
 * Alt+Down - next diff

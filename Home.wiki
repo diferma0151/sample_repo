@@ -54,27 +54,16 @@ This approach works around some of the well-known problems with shelve - it does
 
 If people are looking for places to get started, from easiest to hardest, there's:
 
-| about | done |
-| init | done |
-| rename / move / copy | done |
-| archive | done |
-| tags | done |
-| backout | done |
-| bisect | done |
 | email | partially done: **Yuya** |
-| clone | done |
-| hgignore | mostly done |
 | web serve | mostly done |
-| update | done |
-| strip | done |
 | merge | mostly done |
 | pbranch | in progress: **Peer** |
-| quickop | done |
-| visdiff | done |
-| guess renames | done |
 | settings/thgconfig | mostly done |
 | Workbench - patches task tab | ? |
 | Workbench - patches registry | ? |
+| Workbench - subrepo registry | ? |
 | chunk selection on hold till > hg-1.7 | **Steve** |
+
+See the [[Nit]] page for a list of smaller tasks that anyone can pick up and run with.  See also enhancement requests in the issue tracker.
 
 Please send an e-mail to thg-dev if you start working on something so we do not duplicate effort.

@@ -20,10 +20,6 @@ TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (March 1, 2
 
 TODO for beta release:
 
-* incoming preview
-* multi-selection menus in repowidget
-* track down as many SEGV issues as possible
-* brush up initial window state (running with no config files) - mostly done
 * finish basic MQ support
 
 TODO for general release:

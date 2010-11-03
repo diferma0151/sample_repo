@@ -10,6 +10,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * unstable packages are not signed
 * global exception handler for overlay server, safe log file writing (find writeable folder)
 
+== merge ==
+
+* on commit page, ctrl-enter is not working, initial focus is not set on message
+
 == grep ==
 
 * --all display of matches needs xml escaping - tricky since we're encoding labels as html

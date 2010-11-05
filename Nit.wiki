@@ -8,11 +8,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * 64bit installer
 
-== grep ==
-
-* --all display of matches needs xml escaping - tricky since we're encoding labels as html
-* --all include/exclude paths do not work correctly if not in repo root
-
 == {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
 
 * add/move/rename/remove (already present in TortoiseHg)

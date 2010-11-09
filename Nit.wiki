@@ -26,6 +26,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
+* patch csinfo in revpanel should show path to patch
 * visual diff of selected pair seems to use wrong revisions
 * Changeset file list menu, just like repository explorer
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]

@@ -99,7 +99,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * unicode decode issues
 * path validation for ui.editor and similar fields
-* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} port extensions page from hgtk
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} port extensions page from hgtk (working on this, Johan)
 * new generic extension registration
 * more font settings
 * new [color] page

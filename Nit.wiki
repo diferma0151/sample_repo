@@ -28,8 +28,11 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * Dragging of filenames does not work into Visual Studio (wrong URI type?)
 * patch csinfo in revpanel should show path to patch
-* visual diff of selected pair seems to use wrong revisions
 * Changeset file list menu, just like repository explorer
+** visual diff file
+** visual diff to local
+** view at revision
+** revert file to revision
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
 ** rename - should be easy
 ** fold - should be easy to implement. Could benefit from a dialog confirming what will be folded and a --keep option checkbox.

@@ -92,6 +92,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Merge ==
 
+* clear last-message.txt after merge commit, add to commit/history-repoid
 * temporary patch name
 
 == Settings ==

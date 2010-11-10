@@ -86,11 +86,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh
 
-== init ==
-
-* hg 1.7 introduced a new repo format, we should offer to create repos for <=1.6
-* it's probably safe to now drop dialog support for creating <=1.0 repositories
-
 == Update ==
 
 * save to patch unimplemented (waiting for Qt patch library)

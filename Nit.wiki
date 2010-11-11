@@ -99,6 +99,13 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * temporary patch name
 * qnew needs --repository argument, will not work outside repo root
 
+== Resolve ==
+
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\resolve.pyo", line 330, in mouseMoveEvent
+  File "tortoisehg\hgqt\resolve.pyo", line 307, in dragObject
+AttributeError: 'PathsModel' object has no attribute 'getRow'
+
 == Settings ==
 
 * unicode decode issues

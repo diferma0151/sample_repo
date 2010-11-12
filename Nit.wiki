@@ -113,16 +113,6 @@ LookupError: foo@d1cb761bb0d9: not found in manifest
 * temporary patch name
 * qnew needs --repository argument, will not work outside repo root
 
-== Resolve ==
-
-* row drag failure
-{{{
-Traceback (most recent call last):
-  File "tortoisehg\hgqt\resolve.pyo", line 330, in mouseMoveEvent
-  File "tortoisehg\hgqt\resolve.pyo", line 307, in dragObject
-AttributeError: 'PathsModel' object has no attribute 'getRow'
-}}}
-
 == Settings ==
 
 * unicode decode issues
@@ -177,7 +167,9 @@ AttributeError: 'PathsModel' object has no attribute 'getRow'
 * delay repo switch while running command
 
 == Rename dialog ==
+
 * implement enhancements from issues 1124 + 1186
+* enhancement #1604
 
 == qtlib ==
 

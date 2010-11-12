@@ -73,20 +73,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
-* Clicking on a "missing" added file:
-{{{
-Traceback (most recent call last):
-  File "tortoisehg\hgqt\status.pyo", line 299, in rowSelected
-  File "tortoisehg\hgqt\fileview.pyo", line 294, in displayFile
-  File "tortoisehg\hgqt\fileview.pyo", line 514, in __init__
-  File "tortoisehg\hgqt\fileview.pyo", line 605, in readStatus
-  File "mercurial\context.pyo", line 84, in __getitem__
-  File "mercurial\context.pyo", line 172, in filectx
-  File "mercurial\context.pyo", line 161, in filenode
-  File "mercurial\context.pyo", line 149, in _fileinfo
-LookupError: foo@d1cb761bb0d9: not found in manifest
-}}}
-
 * add support for tortoisehg.ciexclude
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check

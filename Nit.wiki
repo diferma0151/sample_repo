@@ -115,10 +115,13 @@ LookupError: foo@d1cb761bb0d9: not found in manifest
 
 == Resolve ==
 
+* row drag failure
+{{{
 Traceback (most recent call last):
   File "tortoisehg\hgqt\resolve.pyo", line 330, in mouseMoveEvent
   File "tortoisehg\hgqt\resolve.pyo", line 307, in dragObject
 AttributeError: 'PathsModel' object has no attribute 'getRow'
+}}}
 
 == Settings ==
 

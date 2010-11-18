@@ -95,6 +95,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * save to patch unimplemented (waiting for Qt patch library)
 
+== Resolve ==
+
+* Button sensitivity is not always correctly updated with selection status
+
 == Merge ==
 
 * clear last-message.txt after merge commit and imports, add to commit/history-repoid

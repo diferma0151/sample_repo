@@ -117,9 +117,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Email ==
 
+* show output/progress by default
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bundle support
 * threaded preview
-* rename module 'hgemail' to 'email' ?
+* rename module 'hgemail' to 'email' (please - sjb)
 * replace to/from/cc combo boxes with entry and [...] that opens address book style dialog
 * perhaps changeset list could be in a second tab, before preview
 * drag and drop revisions from RepoWidget to email dialog.

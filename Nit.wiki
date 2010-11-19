@@ -79,6 +79,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} in-memory patching / committing chunk selected files
+* hard crash after using details widget and committing
 
 {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Safe chunk select / "move to patch" implementation:
 # Teach hgshelve to parse non-git diffs, drop git diffs everywhere, detect binary/perm/copies ourselves

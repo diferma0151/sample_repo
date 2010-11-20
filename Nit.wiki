@@ -26,7 +26,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* fileview needs to check for symlinks, report symlink contents not linked contents
 * transplant to local changeset cmenu option
 * Dragging of filenames does not work into Visual Studio (wrong URI type?)
 * patch csinfo in revpanel should show path to patch
@@ -59,7 +58,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} GOAL: merge functionality with revDetailsWidget
 
-* annotate qsci does not respect tortoisehg.tabwith
 * context menu for: open in editor, file history, annotate, etc
 ** {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision

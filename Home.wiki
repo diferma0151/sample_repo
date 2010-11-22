@@ -16,21 +16,17 @@ Screenshots and semi-regular snapshot packages on the downloads page.
 
 == Road Map ==
 
-TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (March 1, 2011).  When Mercurial 1.7 is released on November 1, 2010, we will release hgtk based TortoiseHg 1.1.5-hg-1.7 installers, and soon after BETA versions of the PyQt installers (version numbers TBD).
-
-TODO for beta release:
-
-* finish basic MQ support
+TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (March 1, 2011).  We will keep releasing monthly stable releases of the PyGtk based packages.
 
 TODO for general release:
 
+* finish basic MQ support
 * Chunk selection
 * Patch manipulation
 * Full bookmark support
 * Show diffs between arbitrary changesets
 * Subrepo support in reporegistry, grep, sync
 * Updated documentation
-* extension settings page
 * email bundle
 * Merge manifest and revdetails
 * manifest subrepo

@@ -74,6 +74,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
+* switch back to original text file for in-progress commit messages, do not use the same filename as Mercurial.  Instead, read Mercurial's file and offer it in the message drop-down.
 * add support for tortoisehg.ciexclude
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check
@@ -101,7 +102,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Merge ==
 
-* clear last-message.txt after merge commit and imports, add to commit/history-repoid
 * temporary patch name
 
 == Settings ==

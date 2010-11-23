@@ -130,6 +130,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Sync ==
 
+* pass current URL to p4pending dialog
 * ignore workbench button press events while widget is running another command
 * auth save does not respect file's eoln (same as last settings nit)
 * explore, terminal, etc context menu for paths trees

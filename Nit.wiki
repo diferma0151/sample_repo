@@ -126,7 +126,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Sync ==
 
-* ignore workbench button press events while widget is running another command
 * explore, terminal, etc context menu for paths trees
 * keyring help
 

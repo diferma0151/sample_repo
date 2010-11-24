@@ -28,12 +28,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Workbench ==
 
 * generic progress bars for most operations, to show busy state
-* transplant to local changeset cmenu option
-* Dragging of filenames does not work into Visual Studio (wrong URI type?)
+* Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
 * Changeset file list menu, just like repository explorer
-** visual diff file
-** visual diff to local
 ** view at revision
 ** revert file to revision
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
@@ -74,6 +71,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
+* selection change with cursor keys does not change fileview (status)
 * add support for tortoisehg.ciexclude
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check

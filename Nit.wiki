@@ -20,7 +20,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == General ==
 
 * QTimer errors after revset queries or goto bar search
-* thgbranchhead() needs to be a cached property, this is killing perf
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Qsci generic context menu to toggle wrap and white space visibility
@@ -74,7 +73,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
-* switch back to original text file for in-progress commit messages, do not use the same filename as Mercurial.  Instead, read Mercurial's file and offer it in the message drop-down.
 * add support for tortoisehg.ciexclude
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check

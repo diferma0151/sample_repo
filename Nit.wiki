@@ -27,6 +27,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
+* generic progress bars for most operations, to show busy state
 * transplant to local changeset cmenu option
 * Dragging of filenames does not work into Visual Studio (wrong URI type?)
 * patch csinfo in revpanel should show path to patch
@@ -94,10 +95,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * save to patch unimplemented (waiting for Qt patch library)
 
-== Resolve ==
-
-* Button sensitivity is not always correctly updated with selection status
-
 == Search/grep ==
 
 * No activity display, so can't tell it is actually searching. More controls should probably disable when searching.
@@ -129,11 +126,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Sync ==
 
-* pass current URL to p4pending dialog
 * ignore workbench button press events while widget is running another command
-* auth save does not respect file's eoln (same as last settings nit)
 * explore, terminal, etc context menu for paths trees
-* parse output messages on success, get real counts for status messages
 * keyring help
 
 * Problem adding new keys to keyring on Mac, worked on command line

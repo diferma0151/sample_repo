@@ -104,6 +104,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Settings ==
 
+* startup seems to be much slower since extensions page was added
 * unicode decode issues
 * path validation for ui.editor and similar fields
 * new generic extension registration

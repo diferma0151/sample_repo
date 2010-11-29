@@ -20,7 +20,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == General ==
 
-* QTimer errors after revset queries or goto bar search or file history dialogs
+* QTimer errors after revset queries or goto bar search
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Qsci generic context menu to toggle wrap and white space visibility
@@ -139,9 +139,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Annotate ==
 
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
-
-* Better assignment of annotation colours [in-progress - yuya]:
-** "collect all of the usernames in all of the revisions and assign them hue 0..7, so some users will share hues.  For each hue, you split the age range of revisions given that hue into quarters - giving you 32 colors."
 
 * Replace HgView's annotator by thg's. Hook at fileview.HgFileView.
 

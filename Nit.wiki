@@ -131,7 +131,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * Problem adding new keys to keyring on Mac, worked on command line
 ** This problem is bizarre, and may be local to my macbook (sjb).  I've verified we're passing the exact same arguments to osx_keychain.so as command line hg, but for some unknown reason the .so file cannot parse them.  It emits {{{password_set() must be called as (servicename,username,password)}}} and bails.  I've also verified hg and thg are using the exact same Python interpreter and osx_keychain.so location.  I'm not going to look any further unless I hear this is an issue on Windows or Unix.
-** may have been fixed by <<cset: a672ce84bb18>>, needs retesting
+** may have been fixed by <<cset a672ce84bb18>>, needs retesting
 ** I've verified this is not a problem on Windows.  Control Panel -> User Accounts -> Credential Manager.  You'll see keys stored for Mercurial under "Generic Credentials".  I deleted my bitbucket credentials and was able to re-generate them by pushing from our sync tool.
 ** It also doesn't work on KDE (with KWallet). It looks threading issue. See
    http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-using

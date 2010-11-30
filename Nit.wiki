@@ -70,7 +70,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
-* selection change with cursor keys does not change fileview (status)
 * add support for tortoisehg.ciexclude
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check

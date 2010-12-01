@@ -35,7 +35,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
 ** rename - should be easy
 ** fold - should be easy to implement. Could benefit from a dialog confirming what will be folded and a --keep option checkbox.
-** delete - *Are you sure? prompt*, ask to keep, needs to use multi-select in the log.
 ** reorder - wire up qreorder dialog, improve it (working on this - Johan)
 ** Add support for multiple mq patch queues (hg qqueue).
 

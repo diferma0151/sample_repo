@@ -7,7 +7,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == installer ==
 
 * kdiff3 x64 (requires VC built x64 PyQt package from Riverbank)
-* x64 svn SWIG bindings or subvertpy
 
 == {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
 

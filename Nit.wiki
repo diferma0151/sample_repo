@@ -101,7 +101,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Settings ==
 
-* startup seems to be much slower since extensions page was added - Windows frozen builds only, seams caused by fixfrozenexts extracting extensions from library.zip
 * unicode decode issues
 * expose ui.traceback as a debugging aid
 * path validation for ui.editor and similar fields

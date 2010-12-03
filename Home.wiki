@@ -13,7 +13,7 @@ Future official home of the TortoiseHg development repository; currently the hom
 Be aware that the PyQt port of TortoiseHg is being developed against the tip of Mercurial's default branch.  We are not trying to support older releases of Mercurial.
 
 Screenshots and semi-regular snapshot packages on the downloads page.
-** The x64 packages are native 64-bit Python applications.  Currently the shipped kdiff3.exe does not work, so you will need to supply your own visual merge tool.  Also, the x64 packages do not contain subversion SWIG bindings (these bindings are not available for download as x64), so extensions like hgsubversion will not work **
+** The x64 packages are native 64-bit Python applications.  The kdiff3.exe shipped with x64 does not work, so you will need to supply your own visual merge tool.**
 
 == Road Map ==
 

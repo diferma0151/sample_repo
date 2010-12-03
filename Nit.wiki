@@ -26,6 +26,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * Qsci generic context menu to toggle wrap and white space visibility
 * Fix tag use (Mercurial APIs return non-local tags in UTF-8)
 
+== Visdiff ==
+
+* snapshot folders should be created read-only to give a hint to editors that edits to the history files are quite useless.  The cleanup code in atexit must be improved to make the files read/write again so they can be deleted.
+
 == Workbench ==
 
 * CTRL-D filelistview shortcut hides the changeset CTRL-D shortcut

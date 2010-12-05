@@ -8,6 +8,37 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * kdiff3 x64 (requires VC built x64 PyQt package from Riverbank)
 
+==
+{{{
+#!python
+** Please report this bug to http://bitbucket.org/tortoisehg/thg/issues
+** Mercurial version (1.7.2+3-8c6b7a5f38c4).  TortoiseHg version (1.9+15-3392f4fe90bc)
+** Command: 
+** CWD: C:\Windows
+** Extensions loaded: fixfrozenexts, perfarce, mq, rebase, bookmarks, purge, mercurial_keyring, hgsubversion
+** Python version: 2.6.6 (r266:84297, Aug 24 2010, 18:13:38) [MSC v.1500 64 bit (AMD64)]
+** Windows version: (6, 1, 7600, 2, '')
+** Processor architecture: x64
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\repowidget.pyo", line 959, in updateToRevision
+  File "tortoisehg\hgqt\update.pyo", line 154, in __init__
+  File "tortoisehg\hgqt\update.pyo", line 159, in update_info
+  File "tortoisehg\hgqt\csinfo.pyo", line 438, in update
+  File "tortoisehg\hgqt\csinfo.pyo", line 337, in update
+  File "tortoisehg\hgqt\thgrepo.pyo", line 478, in getcontext
+  File "tortoisehg\hgqt\thgrepo.pyo", line 224, in changectx
+  File "mercurial\localrepo.pyo", line 556, in changectx
+  File "mercurial\localrepo.pyo", line 198, in __getitem__
+  File "mercurial\context.pyo", line 27, in __init__
+  File "hgext\bookmarks.pyo", line 268, in lookup
+  File "mercurial\localrepo.pyo", line 518, in lookup
+  File "mercurial\revlog.pyo", line 951, in _partialmatch
+LookupError: 00changelog.i@000000000000: ambiguous identifier
+
+}}}
+==
+
+
 == {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
 
 * add/move/rename/remove (already present in TortoiseHg)

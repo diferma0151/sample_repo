@@ -8,7 +8,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * kdiff3 x64 (requires VC built x64 PyQt package from Riverbank)
 
-==
 {{{
 #!python
 ** Please report this bug to http://bitbucket.org/tortoisehg/thg/issues
@@ -36,7 +35,6 @@ Traceback (most recent call last):
 LookupError: 00changelog.i@000000000000: ambiguous identifier
 
 }}}
-==
 
 
 == {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
@@ -54,8 +52,7 @@ LookupError: 00changelog.i@000000000000: ambiguous identifier
 * QTimer errors after revset queries or goto bar search
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
-* Qsci generic context menu to toggle wrap and white space visibility
-* Fix tag use (Mercurial APIs return non-local tags in UTF-8)
+* Qsci generic context menu to toggle wrap
 
 == Visdiff ==
 

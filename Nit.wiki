@@ -154,19 +154,21 @@ LookupError: 00changelog.i@000000000000: ambiguous identifier
 
 == Sync ==
 
+* turn top line edit into QLabel
+* use toolbar buttons for push/pull/in/out
+* add a bookmark combo, graph selection should update the combo
 * disallow url drops to line-entries, force drop on parent widget
 * write keyring/auth help
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See
   http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-
 using
-** (sjb - there's been recent improvements to Python-keyring-lib, I recommend a retest)
 
 == Annotate ==
 
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
 
 * Replace HgView's annotator by thg's. Hook at fileview.HgFileView.
-
+* username margin
 * support annotation of working copy (rev=None); needs changes on Mercurial-side.
 
 == docklog (ConsoleWidget) ==
@@ -195,16 +197,15 @@ using
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update i18n message catalog for PyQt port
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Fix possible unicode-related issues
 * Need an encode fail dialog that prompts for an encoding, sets HGENCODING, then retries
-* Need functions to convert between unicode<->UTF-8
 * Utilize Mercurial's localstr if possible: http://selenic.com/repo/hg/rev/7cc4263e07a9
 * Content encoding for diff / annotate view; Maybe it has fallback list by locale, e.g. 'utf-8, cp932, euc-jp, iso-2022-jp' for ja_JP.
 
 == usability ==
 
+* Set coherent tab order in all dialogs:  http://doc.qt.nokia.com/4.7/focus.html
 * Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * Session management; QApplication::commitData()
 * Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
-* Set coherent tab order in all dialogs:  http://doc.qt.nokia.com/4.7/focus.html
 * More Mac OS X goodies: http://www.crossplatform.ru/?q=node/298
 
 * Fonts

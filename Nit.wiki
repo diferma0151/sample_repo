@@ -125,7 +125,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Sync ==
 
-* turn top line edit into QLabel
 * use toolbar buttons for push/pull/in/out
 * add a bookmark combo, graph selection should update the combo
 * disallow url drops to line-entries, force drop on parent widget

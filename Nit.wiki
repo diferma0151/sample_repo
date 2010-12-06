@@ -127,7 +127,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * use toolbar buttons for push/pull/in/out
 * add a bookmark combo, graph selection should update the combo
-* disallow url drops to line-entries, force drop on parent widget
 * write keyring/auth help
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See
   http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-

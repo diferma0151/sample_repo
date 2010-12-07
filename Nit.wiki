@@ -98,11 +98,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * save to patch unimplemented (waiting for Qt patch library)
 
-== Search/grep ==
-
-* No activity display, so can't tell it is actually searching. More controls should probably disable when searching.
-* Should be able to cancel a search.
-
 == Merge ==
 
 * temporary patch name

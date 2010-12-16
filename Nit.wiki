@@ -31,11 +31,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Visdiff ==
 
-* snapshot folders should be created read-only to give a hint to editors that edits to the history files are quite useless.  The cleanup code in atexit must be improved to make the files read/write again so they can be deleted.
+* snapshot folders should be created read-only to give a hint to editors that edits to the history files are quite useless.  The cleanup code in atexit must be improved to make the files read/write again so they can be deleted (already does this on non-Windows platforms, where deletions don't care about permissions)
 
 == Workbench ==
 
-* repo.status() progress bar for purge, so dialog opens immediately
 * CTRL-D filelistview shortcut hides the changeset CTRL-D shortcut
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)

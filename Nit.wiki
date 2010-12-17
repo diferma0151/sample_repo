@@ -13,10 +13,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * add/move/rename/remove (already present in TortoiseHg)
 * bookmark selection for push/pull/incoming/outgoing (missing in TortoiseHg)
 
-== tags ==
-
-* adding a (real) tag that has been deleted as a local tag causes hilarity
-
 == repo registry ==
 
 * make reordering of groups (along with their content) possible

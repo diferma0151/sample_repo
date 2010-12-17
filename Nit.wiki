@@ -74,10 +74,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * ability to show changeset description
 * merge with annotate dialog? with optional filetree dock.
 
-== tag ==
-
-* warn if creating a permanent tag when repo.parents() is not a head (tag commit will create a new head)
-
 == Commit ==
 
 * add support for tortoisehg.ciexclude

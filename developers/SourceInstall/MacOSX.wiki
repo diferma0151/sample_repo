@@ -4,10 +4,6 @@
 
 === Dependencies: PyQt and QScintilla ===
 
-For Snow Leopard (10.6) users: python2.6 is now run on 64-bit environment by default.
-BUT, since Qt4 is shipped as 32-bit binary, you need to run python2.6 as 32-bit.
-See http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/python.1.html
-
 ==== 0. Install Apple Development Tools (Xcode) ====
 
 http://developer.apple.com/technologies/tools/
@@ -15,6 +11,8 @@ http://developer.apple.com/technologies/tools/
 ==== 1. Install Qt4 (Qt SDK for Mac) ====
 
 http://qt.nokia.com/downloads
+
+For Snow Leopard (10.6) users: python2.6 is now run on 64-bit environment by default. Please install 64-bit Qt binary, "Cocoa: Mac binary package for Mac OS X 10.5 - 10.6 (32-bit and 64-bit)".
 
 ==== 2. Install QScintilla (from source) ====
 
@@ -53,12 +51,12 @@ http://www.riverbankcomputing.co.uk/software/sip/download
 
 {{{
 ~/Downloads/sip-4.10.2
-$ python configure.py -n --arch i386
+$ python configure.py
 $ make
 $ sudo make install
 }}}
 
-For Snow Leopard (10.6) users: {{{-n --arch i386}}} is required. See http://old.nabble.com/PyQt4,-Qt-on-osx-SnowLeopard-td26394590.html
+For Snow Leopard (10.6) users: If you installed 32-bit Qt, append {{{-n --arch i386}}} to {{{configure.py}}}. See http://old.nabble.com/PyQt4,-Qt-on-osx-SnowLeopard-td26394590.html
 
 installed files:
 * /System/Library/Frameworks/Python.framework/Versions/2.6/bin/sip
@@ -110,7 +108,10 @@ installed files:
 ==== 6. Test installation ====
 
 {{{
-$ VERSIONER_PYTHON_PREFER_32_BIT=yes python
+# Only for Snow Leopard (10.6) users who installed 32bit Qt:
+$ export VERSIONER_PYTHON_PREFER_32_BIT=yes
+
+$ python
 Python 2.6.1 (r261:67515, Feb 11 2010, 00:51:29) 
 [GCC 4.2.1 (Apple Inc. build 5646)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -145,7 +146,10 @@ $ ln -s ../mercurial/hgext
 
 Run it:
 {{{
-$ VERSIONER_PYTHON_PREFER_32_BIT=yes ./thg log
+# Only for Snow Leopard (10.6) users who installed 32bit Qt:
+$ export VERSIONER_PYTHON_PREFER_32_BIT=yes
+
+$ thg log
 }}}
 
 Happy Hacking!

@@ -25,10 +25,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
 * Qsci generic context menu to toggle wrap
 
-== Visdiff ==
-
-* snapshot folders should be created read-only to give a hint to editors that edits to the history files are quite useless.  The cleanup code in atexit must be improved to make the files read/write again so they can be deleted (already does this on non-Windows platforms, where deletions don't care about permissions)
-
 == Workbench ==
 
 * CTRL-D filelistview shortcut hides the changeset CTRL-D shortcut

@@ -3,7 +3,7 @@
 = Workbench =
 * Shift+Ctrl+T - Open Terminal
 * Shift+Ctrl+S - Open Shell Explorer
-* Shift+Ctrl+G - Goto revision
+* Ctrl+T - Goto revision
 * CTRL+S - Open Filter/Revset toolbar
 * CTRL+L - Toggle log dock widget
 * QKeySequence.Quit - Exit workbench
@@ -39,6 +39,11 @@
 * QKeySequence.Delete - Remove selected Alias/URL from .hg/hgrc
 
 = revdetails =
+* Ctrl+D - visual diff
+* Shift+Ctrl+D - visual diff to local
+* Ctrl+Alt+E - view at revision
+* Shift+Ctrl+E - edit local file
+* Ctrl+Alt+T - revert to revision
 * Alt+Down - next diff
 * Alt+Up   - prev diff
 * Shift+Key_Down - next line

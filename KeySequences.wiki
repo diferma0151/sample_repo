@@ -4,7 +4,8 @@
 * Shift+Ctrl+T - Open Terminal
 * Shift+Ctrl+S - Open Shell Explorer
 * Shift+Ctrl+G - Goto revision
-* CTRL+L - Open log dock widget
+* CTRL+S - Open Filter/Revset toolbar
+* CTRL+L - Toggle log dock widget
 * QKeySequence.Quit - Exit workbench
 * QKeySequence.Refresh - Refresh current repo
 * Shift+QKeySequence.Refresh - Refresh current task tab

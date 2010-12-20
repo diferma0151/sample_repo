@@ -17,7 +17,7 @@ Screenshots and semi-regular snapshot packages on the downloads page.
 
 == Road Map ==
 
-TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (Feb 1, 2011).  We will keep releasing monthly stable releases of the PyGtk based packages.
+TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (Mar 1, 2011).  We will keep releasing monthly stable releases of the PyGtk based packages.
 
 TODO for general release:
 

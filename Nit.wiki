@@ -32,7 +32,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * patch csinfo in revpanel should show path to patch
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
 ** fold - should be easy to implement. Could benefit from a dialog confirming what will be folded and a --keep option checkbox. (in progress - Johan)
-** reorder - improve qreorder dialog, it should warn if any comments or guards are in use, as they will be lost if you allow the dialog to write a new status file
+** reorder - improve qreorder dialog, it should warn if any comments or guards are in use, as they will be lost if you allow the dialog to write a new status file (todo - Johan)
 ** Add support for multiple mq patch queues (hg qqueue).
 
 == RevDetailsWidget ==

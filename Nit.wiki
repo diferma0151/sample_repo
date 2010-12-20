@@ -148,6 +148,7 @@ using
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() (we should probably adopt a standardized naming scheme first)?
+* SharedWidget: ability to reconnect signals based on the current owner ([[https://groups.google.com/group/thg-dev/browse_thread/thread/c6f8a4844c452b1f|see this thread]]) - yuya
 
 == i18n ==
 

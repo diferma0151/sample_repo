@@ -65,6 +65,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
+* use cmdui.Runner to set branch name, so hooks are executed
 * add support for tortoisehg.ciexclude
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check

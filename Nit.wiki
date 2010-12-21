@@ -91,6 +91,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Settings ==
 
+* on repo tab, the "invalid" extensions are not grayed out until one is clicked
 * if you add multiple items to a section that did not previously exist, it creates N new sections each with one new item (functional but messy)
 * unicode decode issues
 * path validation for ui.editor and similar fields

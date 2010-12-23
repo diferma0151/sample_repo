@@ -8,11 +8,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * kdiff3 x64 (requires VC built x64 PyQt package from Riverbank)
 
-== {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} bookmarks ==
-
-* add/move/rename/remove (already present in TortoiseHg)
-* bookmark selection for push/pull/incoming/outgoing (missing in TortoiseHg)
-
 == repo registry ==
 
 * make reordering of groups (along with their content) possible

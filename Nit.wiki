@@ -33,11 +33,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 ** combine RevMessage and HgFileView (diff view) so that RevMessage can be scrolled out; current diff view is too small. (i'm not convinced this would be an improvement, please discuss on list first - sjb)
 ** provide a way to show all diffs at once, like "[All Files]" of hgtk. - yuja
 
-=={{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Bisect Dialog ==
-
-* Connect repoview clicks to dialog input events (must be non-modal, low priority)
-* annotate graph with .hg/bisect.state (low priority)
-
 == Manifest Viewer ==
 
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} GOAL: merge functionality with revDetailsWidget
@@ -142,6 +137,11 @@ using
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() (we should probably adopt a standardized naming scheme first)?
 * SharedWidget: ability to reconnect signals based on the current owner ([[https://groups.google.com/group/thg-dev/browse_thread/thread/c6f8a4844c452b1f|see this thread]]) - yuya
+
+== Bisect Dialog ==
+
+* Connect repoview clicks to dialog input events (must be non-modal, low priority)
+* annotate graph with .hg/bisect.state (low priority)
 
 == i18n ==
 

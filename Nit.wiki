@@ -101,7 +101,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Sync ==
 
-* add a bookmark combo, graph selection should update the combo
 * --subrepo/-S in 'more options'
 * write keyring/auth help
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See

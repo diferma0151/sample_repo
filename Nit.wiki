@@ -135,12 +135,16 @@ using
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() (we should probably adopt a standardized naming scheme first)?
-* SharedWidget: ability to reconnect signals based on the current owner ([[https://groups.google.com/group/thg-dev/browse_thread/thread/c6f8a4844c452b1f|see this thread]]) - yuya
 
 == Bisect Dialog ==
 
 * Connect repoview clicks to dialog input events (must be non-modal, low priority)
 * annotate graph with .hg/bisect.state (low priority)
+
+== About ==
+
+* Freeze on closing dialog until urllib2.urlopen() finishes (uthread.wait() blocks main thread)
+** In this case, thread2._async_raise() trick does not work. Needs unblocking io or short timeout value, at least.
 
 == i18n ==
 
@@ -149,6 +153,7 @@ using
 * Need an encode fail dialog that prompts for an encoding, sets HGENCODING, then retries
 * Utilize Mercurial's localstr if possible: http://selenic.com/repo/hg/rev/7cc4263e07a9
 * Content encoding for diff / annotate view; Maybe it has fallback list by locale, e.g. 'utf-8, cp932, euc-jp, iso-2022-jp' for ja_JP.
+* Switch language from userconfig dialog (working - yuya)
 
 == usability ==
 

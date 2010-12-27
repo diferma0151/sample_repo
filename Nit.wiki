@@ -6,7 +6,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == repo registry ==
 
-* make reordering of groups (along with their content) possible
+* make reordering of groups (along with their content) possible (see also #52)
 * multi-selection menu with 'Pull from default', 'Pull -u from default'
 
 == General ==

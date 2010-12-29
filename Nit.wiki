@@ -78,7 +78,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Settings ==
 
-* if you add multiple items to a section that did not previously exist, it creates N new sections each with one new item (functional but messy) (this is somehow related to iniparse-0.4)
 * unicode decode issues
 * path validation for ui.editor and similar fields
 * new generic extension registration

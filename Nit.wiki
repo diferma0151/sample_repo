@@ -23,7 +23,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
-** Add support for multiple mq patch queues (hg qqueue). (todo - Johan)
+** Add support for multiple mq patch queues (hg qqueue). (in progress - Johan)
 * qreorder: rewrite series file without loosing comments and/or guards (in progress - Johan)
 
 == RevDetailsWidget ==

@@ -17,7 +17,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * QTimer errors after revset queries or goto bar search
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
-* Qsci tab stops suffer from off-by-one when showing diffs.  Might not be much we can do about it, beyond moving the +/- column into a margin.
+* Qsci tab stops suffer from off-by-one when showing diffs.  Expand tabs to spaces manually when displaying diffs, accounting for the leading char.
 * Qsci generic context menu to toggle wrap
 
 == Workbench ==

@@ -13,6 +13,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * "Diff to Other" calls revpair ('otherrev', '.') which for some reason is comparing the second parent to the first parent instead of the second parent to the working directory.  Need to investigate why and fix.
 
+== thread ==
+
+* catch and parse various SSL exceptions and report them in a sane fashion.
+
 == General ==
 
 * QTimer errors after revset queries or goto bar search

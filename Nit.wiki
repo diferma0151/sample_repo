@@ -97,6 +97,11 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * connect to thgrepo.configChanged and refresh
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} somehow edited lines contain ^M (CR) even on Unix; not always ?
 
+== SSL ==
+
+Look into leveraging http://doc.trolltech.com/4.7/qsslsocket.html for extracting
+CA certificates from Windows.
+
 == Email ==
 
 * show output/progress by default

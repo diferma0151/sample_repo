@@ -98,7 +98,7 @@ $ for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../System/Library/Fr
 $ cd Python
 $ python configure.py
 $ make
-$ make install
+$ sudo make install
 }}}
 
 installed files:

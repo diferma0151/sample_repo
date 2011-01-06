@@ -18,9 +18,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* workbench sync buttons should match behavior of sync widget
-** expose default-push in some way
-** fix message connection race condition, perhaps start sync from a timer
 * CTRL+T shortcut for goto bar does not work on Windows
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
@@ -106,6 +103,8 @@ CA certificates from Windows.
 
 == Sync ==
 
+* expose default-push in some way
+* fix message connection race condition, perhaps start sync from a timer
 * --subrepo/-S in 'more options'
 * write keyring/auth help
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See

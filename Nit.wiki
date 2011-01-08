@@ -67,7 +67,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Clone ==
 
 * clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings.
-* do not hide the clone button if the clone failed.  Allow retries.
 
 == Update ==
 

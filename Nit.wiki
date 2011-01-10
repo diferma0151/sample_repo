@@ -18,7 +18,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* CTRL+T shortcut for goto bar does not work on Windows
+* CTRL+T shortcut for goto bar does not work on Windows (QAction::eventFilter: Ambiguous shortcut overload: Ctrl+T)
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch

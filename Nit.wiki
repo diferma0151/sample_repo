@@ -156,7 +156,6 @@ using
 * Need an encode fail dialog that prompts for an encoding, sets HGENCODING, then retries
 * Utilize Mercurial's localstr if possible: http://selenic.com/repo/hg/rev/7cc4263e07a9
 * Content encoding for diff / annotate view; Maybe it has fallback list by locale, e.g. 'utf-8, cp932, euc-jp, iso-2022-jp' for ja_JP.
-* Switch language from userconfig dialog (working - yuya)
 
 == usability ==
 

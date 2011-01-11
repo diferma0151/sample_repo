@@ -104,8 +104,8 @@ CA certificates from Windows.
 
 == Sync ==
 
+* ensure pull from bundle works as expected after latest changes
 * expose default-push in some way
-* fix message connection race condition, perhaps start sync from a timer
 * write keyring/auth help
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See
   http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-

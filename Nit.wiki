@@ -133,7 +133,6 @@ using
 
 == qtlib ==
 
-* replace 'yellow' with some reasonable default, like 'lightbrown'
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() (we should probably adopt a standardized naming scheme first)?
@@ -168,7 +167,6 @@ using
 ** I would like to have a really good way to change fonts in the TortoiseHg qt dialogs. Mostly for enlarging fonts, but in small steps, so each can find their own "best setting". All fonts means both for dialog fonts and for content widgets. This is necessary f.i. for people not having the good sight of a youngster anymore (like me). (Also because changing screen resolution and/or OS settings cannot solve everything.) I'm willing to help with this, of course. My reference for this is the NoSquint Firefox add-on ;-).
 ** SJB - I've started work on this.  Apps can get the user's configured font from qtlib and connect to a signal emitted when the font is changed.  The settings tool in turn will emit the signal when the user picks a new font and selects 'ok' in the font editor.  Two things need to happen:
 ## We must use this font interface consistently in all our tools
-## Someone should look into connecting to the live updates that come out of the selection dialog
 
 * Respect Windows font setting like modern apps:
   http://groups.google.co.jp/group/thg-dev/browse_thread/thread/5f9bb7141e4f66e3

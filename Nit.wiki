@@ -9,6 +9,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * make reordering of groups (along with their content) possible (see also #52)
 * multi-selection menu with 'Pull from default', 'Pull -u from default'
 
+== archive ==
+
+* the "include files in this revision" option does not work when archive isn't launched from the repo root.  It either needs to os.chdir(repo.root) or provide full paths to each file (repo.wjoin(file)).
+
 == General ==
 
 * QTimer errors after revset queries or goto bar search

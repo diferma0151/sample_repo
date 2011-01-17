@@ -59,7 +59,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Commit ==
 
 * add support for tortoisehg.ciexclude
-* spell check
+* spell check (perhaps there's an http service we can use for post-validation?)
 * in-memory patching / committing chunk selected files
 
 == Clone ==

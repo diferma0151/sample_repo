@@ -59,28 +59,12 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Commit ==
 
 * add support for tortoisehg.ciexclude
-* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} qnew/shelve-patch creation dialog (in another file)
 * spell check
-* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} in-memory patching / committing chunk selected files
-
-{{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Safe chunk select / "move to patch" implementation:
-# Teach hgshelve to parse non-git diffs, drop git diffs everywhere, detect binary/perm/copies ourselves
-# When chunk select dialog is opened, record hash of raw contents
-# When revert or "move to patch" is selected, re-read file and compare hash
-# To revert chunks, backup file to "trashcan" with timestamp in name, revert contents then apply remaining chunks
-# To "move to patch", revert then apply remaining, then do diff against original raw file > patch file
+* in-memory patching / committing chunk selected files
 
 == Clone ==
 
 * clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings.
-
-== Update ==
-
-* save to patch unimplemented (waiting for Qt patch library)
-
-== Merge ==
-
-* temporary patch name
 
 == Settings ==
 
@@ -153,7 +137,7 @@ using
 == About ==
 
 * Freeze on closing dialog until urllib2.urlopen() finishes (uthread.wait() blocks main thread)
-** In this case, thread2._async_raise() trick does not work. Needs unblocking io or short timeout value, at least.
+** In this case, thread2._async_raise() trick does not work. Needs unblocking io or short timeout value, at least. (SJB this is a Python limitation, not likely to be fixed by our code).
 
 == i18n ==
 

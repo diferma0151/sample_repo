@@ -37,6 +37,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * space-efficient diff viewer like one of hgtk
 ** combine RevMessage and HgFileView (diff view) so that RevMessage can be scrolled out; current diff view is too small. (i'm not convinced this would be an improvement, please discuss on list first - sjb)
 ** provide a way to show all diffs at once, like "[All Files]" of hgtk. - yuja
+* The file view modes should be supported by a button for each, like in {{{<File> <Diff> ^ v  <Annotate>}}} (see also #86).
 
 == Manifest Viewer ==
 

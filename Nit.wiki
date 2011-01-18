@@ -32,6 +32,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 ** when a reorder was done, and you rename a patch via the cmenu of the list, the reordering is undone
 ** make the dialog show the summary with min 80 chars
 
+== visdiff ==
+
+* offer to launch settings tool if no diff tool is configured
+
 == RevDetailsWidget ==
 
 * investigate hgview's recent support for reST in changelog messages

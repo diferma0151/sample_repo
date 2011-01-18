@@ -131,6 +131,7 @@ using
 
 == qtlib ==
 
+* Ctrl-Q quit globally on Windows
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
 * utilize QIcon.fromTheme() (we should probably adopt a standardized naming scheme first)?

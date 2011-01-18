@@ -18,6 +18,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
+* delete item from revset history if <del> pressed while item is highlighted
 * fileview's FileData class should use mdiff.unidiff() which respects repo diffopts
 * special file list view menus for workingctx and patchctx
 * generic progress bars for most operations, to show busy state
@@ -68,6 +69,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Settings ==
 
+* editor factory default size is too small
 * unicode decode issues
 * path validation for ui.editor and similar fields
 * new generic extension registration

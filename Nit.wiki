@@ -84,8 +84,15 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * more font settings
 * new [color] page
 * connect to thgrepo.configChanged and refresh
-* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} somehow edited lines contain ^M (CR) even on Unix; not always ?
 * 'issue tracking' page
+
+== update ==
+
+* use cmdui.Runner when running from the workbench
+
+== purge ==
+
+* make initial geometry larger than the progress bar grows to
 
 == SSL ==
 

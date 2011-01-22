@@ -77,7 +77,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Settings ==
 
-* editor factory default size is too small
 * unicode decode issues
 * path validation for ui.editor and similar fields
 * new generic extension registration
@@ -89,10 +88,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == update ==
 
 * use cmdui.Runner when running from the workbench
-
-== purge ==
-
-* make initial geometry larger than the progress bar grows to
 
 == SSL ==
 

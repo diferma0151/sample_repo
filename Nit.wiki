@@ -147,6 +147,7 @@ using
 
 * Freeze on closing dialog until urllib2.urlopen() finishes (uthread.wait() blocks main thread)
 ** In this case, thread2._async_raise() trick does not work. Needs unblocking io or short timeout value, at least. (SJB this is a Python limitation, not likely to be fixed by our code).
+*** Yes, but some workarounds are necessary IMO. It always freezes 10sec or so where internet connection needs http proxy. - yuya
 
 == i18n ==
 

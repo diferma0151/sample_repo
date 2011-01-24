@@ -50,7 +50,6 @@ This approach works around some of the well-known problems with shelve - it does
 
 If people are looking for places to get started, from easiest to hardest, there's:
 
-| email | partially done: **Yuya** |
 | web serve | mostly done |
 | merge | mostly done |
 | pbranch | in progress: **Peer** |

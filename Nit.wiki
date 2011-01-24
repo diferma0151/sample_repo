@@ -80,7 +80,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == grep ==
 
 * [del] to remove completions
-* give match context menus a default action (annotate or edit)
+* give match line context menus a default action (annotate or edit)
+* include/exclude textboxes should mention file paths
 
 == Clone ==
 
@@ -117,6 +118,7 @@ CA certificates from Windows.
 
 == Sync ==
 
+* incoming twice to same host causes unlink() to fail (use mktemp)
 * ensure pull from bundle works as expected after latest changes
 * expose default-push in some way
 * write keyring/auth help

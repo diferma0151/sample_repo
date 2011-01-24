@@ -48,10 +48,16 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 ** provide a way to show all diffs at once, like "[All Files]" of hgtk. - yuja
 * The file view modes should be supported by a button for each, like in {{{<File> <Diff> ^ v  <Annotate>}}} (see also #86).
 
+== Compress ==
+
+* warn if compressing a merge
+
 == Manifest Viewer ==
 
 * GOAL: merge functionality with revDetailsWidget (after 2.0 release)
 
+* context menus for view, edit local
+* margins grow as you change revisions
 * context menu for: open in editor, file history, annotate, etc
 ** {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision
@@ -70,6 +76,11 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * add support for tortoisehg.ciexclude
 * spell check (perhaps there's an http service we can use for post-validation?)
 * in-memory patching / committing chunk selected files
+
+== grep ==
+
+* [del] to remove completions
+* give match context menus a default action (annotate or edit)
 
 == Clone ==
 

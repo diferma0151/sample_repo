@@ -83,13 +83,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * [del] to remove completions
 * give match line context menus a default action (annotate or edit)
 * include/exclude textboxes should mention file paths
-*
-{{{
-Traceback (most recent call last):
-  File "tortoisehg\hgqt\grep.pyo", line 475, in <lambda>
-  File "tortoisehg\hgqt\grep.pyo", line 496, in ctx
-NotImplementedError
-}}}
 
 == Clone ==
 

@@ -4,10 +4,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} must be implemented before TortoiseHg 2.0 is out of beta.
 
-== shelve ==
-
-* moving chunks from a patch can leave an extra line feed in the source patch, making the parser bail when reading the patch.
-
 == repo registry ==
 
 * make reordering of groups (along with their content) possible (see also #52)

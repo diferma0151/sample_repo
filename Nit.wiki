@@ -19,22 +19,20 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * QTimer errors after revset queries or goto bar search
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs, see rejects.py for potential workaround.
-* Qsci generic context menu to toggle wrap
 
 == Workbench ==
 
-* tortoisehg.tasktabs should be a tri-state:  False, east, west
 * LookupError from fileview readStatus:591 after rebase and redraw (view file being rebased)
 * delete item from revset history if <del> pressed while item is highlighted
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
-* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} MQ patches remaining work - see [[http://groups.google.com/group/thg-dev/browse_thread/thread/3c9dd639c1c54b58|discussion]]
-** qreorder dialog: (in progress - Johan)
-*** rewrite series file without loosing comments and/or guards
-*** allow more than one patch to be selected for reordering as a group
-*** when a reorder was done, and you rename a patch via the cmenu of the list, the reordering is undone
-*** make the dialog show the summary with min 80 chars
+
+== qreorder ==
+
+* allow more than one patch to be selected for reordering as a group
+* when a reorder was done, and you rename a patch via the cmenu of the list, the reordering is undone
+* make the dialog show the summary with min 80 chars
 
 == visdiff ==
 
@@ -56,7 +54,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * GOAL: merge functionality with revDetailsWidget (after 2.0 release)
 
-* context menus for view, edit local
+* load/save settings of annotate qsci
 * margins grow as you change revisions
 * context menu for: open in editor, file history, annotate, etc
 ** {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
@@ -73,7 +71,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
-* remove MQ support, simply disable commit button when repo['.'] is applied patch
+* smarter commit button enabled logic
 * add support for tortoisehg.ciexclude
 * spell check (perhaps there's an http service we can use for post-validation?)
 * in-memory patching / committing chunk selected files
@@ -177,20 +175,18 @@ using
 == usability ==
 
 * Set coherent tab order in all dialogs:  http://doc.qt.nokia.com/4.7/focus.html
-* Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * Session management; QApplication::commitData()
 * Enforce standard accelerators: http://doc.qt.nokia.com/4.6/accelerators.html
 * More Mac OS X goodies: http://www.crossplatform.ru/?q=node/298
 
 * Fonts
-** I would like to have a really good way to change fonts in the TortoiseHg qt dialogs. Mostly for enlarging fonts, but in small steps, so each can find their own "best setting". All fonts means both for dialog fonts and for content widgets. This is necessary f.i. for people not having the good sight of a youngster anymore (like me). (Also because changing screen resolution and/or OS settings cannot solve everything.) I'm willing to help with this, of course. My reference for this is the NoSquint Firefox add-on ;-).
-** SJB - I've started work on this.  Apps can get the user's configured font from qtlib and connect to a signal emitted when the font is changed.  The settings tool in turn will emit the signal when the user picks a new font and selects 'ok' in the font editor.  Two things need to happen:
-## We must use this font interface consistently in all our tools
-
+** use qtlib.getfont interface consistently in all our tools
+** add runtime font scaling mechanism
 * Respect Windows font setting like modern apps:
   http://groups.google.co.jp/group/thg-dev/browse_thread/thread/5f9bb7141e4f66e3
 
 == Documentation ==
 
+* Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation
 * Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya

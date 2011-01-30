@@ -44,7 +44,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * space-efficient diff viewer like one of hgtk
 ** combine RevMessage and HgFileView (diff view) so that RevMessage can be scrolled out; current diff view is too small. (i'm not convinced this would be an improvement, please discuss on list first - sjb)
 ** provide a way to show all diffs at once, like "[All Files]" of hgtk. - yuja
-* The file view modes should be supported by a button for each, like in {{{<File> <Diff> ^ v  <Annotate>}}} (see also #86).
 
 == Compress ==
 
@@ -54,10 +53,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * GOAL: merge functionality with revDetailsWidget (after 2.0 release)
 
-* load/save settings of annotate qsci
 * margins grow as you change revisions
-* context menu for: open in editor, file history, annotate, etc
-** {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
+* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision
 * Complete the annotate view with the hovering info as in the separate annotate dialog ?
 * filter files by name.
@@ -94,7 +91,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * more font settings
 * new [color] page
 * connect to thgrepo.configChanged and refresh
-* 'issue tracking' page
+* 'issue tracking' page (bugtraq)
 
 == update ==
 
@@ -117,7 +114,6 @@ CA certificates from Windows.
 
 == Sync ==
 
-* incoming twice to same host causes unlink() to fail (use mktemp)
 * ensure pull from bundle works as expected after latest changes
 * expose default-push in some way
 * write keyring/auth help

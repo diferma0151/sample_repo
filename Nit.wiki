@@ -18,7 +18,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* LookupError from fileview readStatus:591 after rebase and redraw (view file being rebased)
+* fix fileview/annotate search feature
+* combine fileview annotate/sci widgets into one Qsci instance
 * delete item from revset history if <del> pressed while item is highlighted
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
@@ -36,6 +37,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == RevDetailsWidget ==
 
+* fix 'show all' merge changeset behavior
 * investigate hgview's recent support for reST in changelog messages
 * space-efficient diff viewer like one of hgtk
 ** combine RevMessage and HgFileView (diff view) so that RevMessage can be scrolled out; current diff view is too small. (i'm not convinced this would be an improvement, please discuss on list first - sjb)

@@ -11,7 +11,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == General ==
 
-* Showing MQ patches in the graph causes them to be read (_files is called), why?
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs, see rejects.py for potential workaround.
 

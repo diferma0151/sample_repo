@@ -16,7 +16,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* combine fileview annotate/sci widgets into one Qsci instance
 * delete item from revset history if <del> pressed while item is highlighted
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
@@ -47,7 +46,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * GOAL: merge functionality with revDetailsWidget (after 2.0 release)
 
-* margins grow as you change revisions
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision
 * Complete the annotate view with the hovering info as in the separate annotate dialog ?

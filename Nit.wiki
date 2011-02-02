@@ -16,6 +16,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
+* cloning from workbench menu does not reliably add new clone to registry
 * delete item from revset history if <del> pressed while item is highlighted
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)

@@ -25,6 +25,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * connect to annotation signals from HgFileView, update the graph
 
+== merge ==
+
+* the merge commit message editor wraps text artificially (use a real message editor)
+
 == qreorder ==
 
 * allow more than one patch to be selected for reordering as a group

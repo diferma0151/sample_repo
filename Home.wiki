@@ -16,21 +16,7 @@ Screenshots and semi-regular snapshot packages on the downloads page.
 
 == Road Map ==
 
-TortoiseHg 2.0 has been pushed out to be released with Mercurial 1.8 (Mar 1, 2011).  We will keep releasing monthly stable releases of the PyGtk based packages.
-
-TODO for general release:
-
-* finish basic MQ support
-* Chunk selection
-* Patch manipulation
-* Full bookmark support
-* Show diffs between arbitrary changesets
-* Subrepo support in reporegistry, grep, sync
-* Updated documentation
-* email bundle
-* Merge manifest and revdetails
-* manifest subrepo
-* unicode things and i18n messages
+TortoiseHg 2.0 will be released with Mercurial 1.8 (Mar 1, 2011).
 
 === Workbench ===
 
@@ -40,25 +26,12 @@ The Qt port combines changelog browser, grep and annotate (datamine) tools, and 
 
 A "task" tab of the workbench has replaced the "paths" page of the settings tool and the sync bar of the repository explorer.  It shows all configured paths for the repository and paths configured in local related repositories, allows the local list to be modified, and supports sync operations with each remote target.. including preview incoming w/ bundle, annotating outgoing changes, etc.  It uses the Workbench's console dock widget and progress bar to show running operations.  The sync tool is also available as a standalone window.
 
-=== Simplify Commit, Drop Shelve ===
+=== Simplify Commit ===
 
-The shelve tool will not be ported to Qt.  Instead, the commit tool will allow change hunks to be moved into patches (or just reverted).  In fact, qnew should simply be the act of moving changes into a patch, then pushing it.  The commit tool should always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory should be tasks for a patches widget (TBD).
-
-This approach works around some of the well-known problems with shelve - it does not record adds, deletes, etc.
+The commit tool will always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory is performed via the shelve tool.  MQ functionality is handled by a dedicated task tab and Workbench context menus.
 
 == Would you like to help? ==
 
-If people are looking for places to get started, from easiest to hardest, there's:
-
-| web serve | mostly done |
-| merge | mostly done |
-| pbranch | in progress: **Peer** |
-| settings/thgconfig | mostly done |
-| Workbench - patches task tab | ? |
-| Workbench - patches registry | ? |
-| Workbench - subrepo registry | ? |
-| chunk selection on hold till > hg-1.7 | **Steve** |
-
-See the [[Nit]] page for a list of smaller tasks that anyone can pick up and run with.  See also enhancement requests in the issue tracker.
+See the [[Nit]] page for a list of tasks that anyone can pick up and run with.  See also enhancement requests in the issue tracker.
 
 Please send an e-mail to thg-dev if you start working on something so we do not duplicate effort.

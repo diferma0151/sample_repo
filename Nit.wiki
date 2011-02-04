@@ -8,15 +8,35 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * make reordering of groups (along with their content) possible (see also #52)
 * multi-selection menu with 'Pull from default', 'Pull -u from default'
+* ask for name of new group at creation
+* CTRL+drag looks like a copy, but actually performs a move
+* 'all' is perhaps an unfortunate default group name
 
 == General ==
 
+* minimize/maximize buttons on all appropriate dialogs and main windows
+* QScintilla option menus should be checkable
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs, see rejects.py for potential workaround.
 * qtlib.ExpanderLabel needs to manage its own sub-layout
 
+== chunks/shelve ==
+
+* file/diff toolbar buttons
+* can we add a toolbar dock to a QDialog?
+* multi-select file list
+* add shelve toolbar button to HgFileView toolbar (as an opt-in button)
+
+== Revset/Filter toolbar ==
+
+* remember successful revset queries until exit (even if not saved)
+* hitting return with empty revset entry line edit should clear the filter
+* entries in branch combo should have the configured branch color
+
 == Workbench ==
 
+* Load all revisions should just be a menu item with shortcut, nix the toolbar icon
+* commit tab SVG should match shell extension icon
 * Open repo dialog should open in current repo root parent
 * cloning from workbench menu does not reliably add new clone to registry
 * delete item from revset history if <del> pressed while item is highlighted
@@ -116,6 +136,7 @@ CA certificates from Windows.
 
 == Sync ==
 
+* parse push/pull output for indication of work done
 * ensure pull from bundle works as expected after latest changes
 * expose default-push in some way
 * write keyring/auth help
@@ -188,3 +209,4 @@ using
 * Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation
 * Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya
+* Upgrade docs should mention moving Workbench to promoted cmenu item list

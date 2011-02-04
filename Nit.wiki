@@ -87,7 +87,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
-* commit revision info widget is not selectable like revdetails is.
 * disable fileview mode toggles when model is empty, or set _filename to None (not commit specific, can be done in revdetails when browsing an empty revision, just toggle the mode buttons to get the previous file's content).
 * smarter commit button enabled logic
 * add support for tortoisehg.ciexclude

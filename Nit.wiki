@@ -92,6 +92,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * flat view for files list
 * ability to show changeset description
 * merge with annotate dialog? with optional filetree dock.
+* move filter bar to be on the content side of the splitter, like commit & revdetails
 
 == Commit ==
 

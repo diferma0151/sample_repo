@@ -15,6 +15,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == General ==
 
 * minimize/maximize buttons on all appropriate dialogs and main windows
+* be more verbose in window titles
 * thread.py - catch more errors, like Mercurial's dispatch.py:71
 * QScintilla option menus should be checkable
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
@@ -23,15 +24,24 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == chunks/shelve ==
 
-* file/diff toolbar buttons
-* can we add a toolbar dock to a QDialog?
+* file/diff toolbar buttons (file mode only available on workingctx until in-memory patching is ready)
+* add a clear button next to patch button
 * multi-select file list
 * add shelve toolbar button to HgFileView toolbar (as an opt-in button)
+* separator line between chunks with background marker
+* include parent revision number in default shelf name
+
+== cmemu ==
+
+* detect an 1.0 upgrade and add Workbench to promoted list
 
 == Revset/Filter toolbar ==
 
-* remember successful revset queries until exit (even if not saved)
+* remember last N successful revset queries, like commit message history
 * hitting return with empty revset entry line edit should clear the filter
+* delete item from revset history if <del> pressed while item is highlighted
+* rename 'store' to 'delete' when highlighted text is in revset history (selectionChanged signal)
+* a query with no '(' should be turned into keyword(*)
 * entries in branch combo should have the configured branch color
 
 == Workbench ==
@@ -40,14 +50,16 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * commit tab SVG should match shell extension icon
 * Open repo dialog should open in current repo root parent
 * cloning from workbench menu does not reliably add new clone to registry
-* delete item from revset history if <del> pressed while item is highlighted
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
+* diff to local revision menu option
+* working directory revision could be "%d+" % repo['.'].rev()
 
 == file history dialog ==
 
 * connect to annotation signals from HgFileView, update the graph
+* diff to local revision menu option
 
 == qreorder ==
 

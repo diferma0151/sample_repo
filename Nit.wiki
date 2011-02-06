@@ -39,24 +39,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * delete item from revset history if <del> pressed while item is highlighted
 * entries in branch combo should have the configured branch color
 
-== resolve ==
-
-* use commit.MessageEditor (and in rebase)
-* traceback from diff to p0 after backout 
-
-{{{
-#!python
-Traceback (most recent call last):
-  File "C:\thg-winbuild\thg\tortoisehg\hgqt\resolve.py", line 201, in vp0
-    dlg = visdiff.visualdiff(self.repo.ui, self.repo, paths, opts)
-  File "C:\thg-winbuild\thg\tortoisehg\hgqt\visdiff.py", line 179, in visualdiff
-    n1, n2 = cmdutil.revpair(repo, revs)
-...
-  File "C:\Python26\lib\site-packages\mercurial\revset.py", line 116, in getset
-    raise error.ParseError(_("missing argument"))
-ParseError: missing argument
-}}}
-
 == Workbench ==
 
 * diff to local revision menu option

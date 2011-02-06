@@ -37,7 +37,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Revset/Filter toolbar ==
 
-* entries in branch combo should have the configured branch color
+* entries in branch combo should have the configured branch color (not for 2.0)
 
 == Workbench ==
 

@@ -41,6 +41,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == resolve ==
 
+* use commit.MessageEditor (and in rebase)
 * traceback from diff to p0 after backout 
 
 {{{

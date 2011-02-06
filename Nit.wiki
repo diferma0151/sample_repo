@@ -14,6 +14,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == General ==
 
+* annotate context menu should offer toggle between revision number, username or both
 * minimize/maximize buttons on all appropriate dialogs and main windows
 * be more verbose in window titles
 * thread.py - catch more errors, like Mercurial's dispatch.py:71

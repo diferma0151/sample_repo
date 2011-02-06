@@ -14,7 +14,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == General ==
 
-* annotate context menu should offer toggle between revision number, username or both
 * minimize/maximize buttons on all appropriate dialogs and main windows
 * be more verbose in window titles
 * thread.py - catch more errors, like Mercurial's dispatch.py:71
@@ -37,24 +36,19 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Revset/Filter toolbar ==
 
-* remember last N successful revset queries, like commit message history
-* hitting return with empty revset entry line edit should clear the filter
 * delete item from revset history if <del> pressed while item is highlighted
-* rename 'store' to 'delete' when highlighted text is in revset history (selectionChanged signal)
-* a query with no '(' should be turned into keyword(*)
 * entries in branch combo should have the configured branch color
 
 == Workbench ==
 
-* Load all revisions should just be a menu item with shortcut, nix the toolbar icon
+* diff to local revision menu option
+* working directory revision could be "%d+" % repo['.'].rev()
 * commit tab SVG should match shell extension icon
 * Open repo dialog should open in current repo root parent
 * cloning from workbench menu does not reliably add new clone to registry
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
-* diff to local revision menu option
-* working directory revision could be "%d+" % repo['.'].rev()
 
 == file history dialog ==
 
@@ -157,10 +151,10 @@ using
 
 == Annotate ==
 
+* context menu should offer toggle between revision number, username or both
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
 
 * Replace HgView's annotator by thg's. Hook at fileview.HgFileView.
-* username margin
 * support annotation of working copy (rev=None); needs changes on Mercurial-side.
 
 == docklog (ConsoleWidget) ==

@@ -41,10 +41,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* diff to local revision menu option
-* working directory revision could be "%d+" % repo['.'].rev()
+* 'visual diff' and 'diff to local' changeset menu options
 * commit tab SVG should match shell extension icon
-* Open repo dialog should open in current repo root parent
 * cloning from workbench menu does not reliably add new clone to registry
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
@@ -52,8 +50,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == file history dialog ==
 
-* connect to annotation signals from HgFileView, update the graph
+* handle menu events from repoview
 * diff to local revision menu option
+* handle search/edit events from HgFileView
+* interface to grep at revision or disable those menus
 
 == qreorder ==
 

@@ -24,7 +24,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == chunks/shelve ==
 
-* file/diff toolbar buttons (file mode only available on workingctx until in-memory patching is ready)
+* file/diff toolbar buttons (not for 2.0)
 * add a clear button next to patch button
 * multi-select file list
 * add shelve toolbar button to HgFileView toolbar (as an opt-in button)
@@ -95,7 +95,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Commit ==
 
-* disable fileview mode toggles when model is empty, or set _filename to None (not commit specific, can be done in revdetails when browsing an empty revision, just toggle the mode buttons to get the previous file's content).
 * smarter commit button enabled logic
 * add support for tortoisehg.ciexclude
 * spell check (perhaps there's an http service we can use for post-validation?)
@@ -215,4 +214,3 @@ using
 * Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation
 * Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya
-* Upgrade docs should mention moving Workbench to promoted cmenu item list

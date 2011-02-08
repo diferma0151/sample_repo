@@ -43,7 +43,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * 'visual diff' and 'diff to local' changeset menu options
 * commit tab SVG should match shell extension icon
-* cloning from workbench menu does not reliably add new clone to registry
+* cloning from workbench menu does not reliably add new clone to registry (if details is opened, dialog returns failure on close)
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch

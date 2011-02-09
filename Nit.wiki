@@ -142,6 +142,7 @@ CA certificates from Windows.
 == Sync ==
 
 * parse push/pull output for indication of work done
+* check for [auth] and URL conflict or username/pw redundancy, suggest cleanup
 * ensure pull from bundle works as expected after latest changes
 * expose default-push in some way
 * write keyring/auth help

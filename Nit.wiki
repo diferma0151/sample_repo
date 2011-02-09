@@ -12,6 +12,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * CTRL+drag looks like a copy, but actually performs a move
 * 'all' is perhaps an unfortunate default group name
 
+== cmdui ==
+
+* Runner showing errors from a subprocess displays a blank window
+
 == General ==
 
 * minimize/maximize buttons on all appropriate dialogs and main windows

@@ -6,6 +6,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
+* bookmarks are now a core feature, remove extension checks, use new APIs
 * sync: write keyring/auth help
 * chunks: separator line between chunks with background marker
 * sync: check for [auth] and URL conflict or username/pw redundancy, suggest cleanup

@@ -6,12 +6,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
-* update: use cmdui.Runner when running from the workbench
-* cloning from workbench menu does not reliably add new clone to registry (if details is opened, dialog returns failure on close)
-* thread: catch more errors, like Mercurial's dispatch.py:71
+* sync: write keyring/auth help
 * chunks: separator line between chunks with background marker
 * sync: check for [auth] and URL conflict or username/pw redundancy, suggest cleanup
-* sync: write keyring/auth help
 * grep: give match line context menus a default action (annotate or edit)
 
 == repo registry ==

@@ -4,6 +4,16 @@ This is where you register features that are unimplemented or badly implemented 
 
 Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} must be implemented before TortoiseHg 2.0 is out of beta.
 
+== SJB short term TODO ==
+
+* update: use cmdui.Runner when running from the workbench
+* cloning from workbench menu does not reliably add new clone to registry (if details is opened, dialog returns failure on close)
+* thread: catch more errors, like Mercurial's dispatch.py:71
+* chunks: separator line between chunks with background marker
+* sync: check for [auth] and URL conflict or username/pw redundancy, suggest cleanup
+* sync: write keyring/auth help
+* grep: give match line context menus a default action (annotate or edit)
+
 == repo registry ==
 
 * make reordering of groups (along with their content) possible (see also #52)
@@ -16,7 +26,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * minimize/maximize buttons on all appropriate dialogs and main windows
 * be more verbose in window titles
-* thread.py - catch more errors, like Mercurial's dispatch.py:71
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs, see rejects.py for potential workaround.
 * qtlib.ExpanderLabel needs to manage its own sub-layout
@@ -24,16 +33,14 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == chunks/shelve ==
 
-* file/diff toolbar buttons (not for 2.0)
+* include parent revision number in default shelf name
 * add a clear button next to patch button
 * multi-select file list
-* add shelve toolbar button to HgFileView toolbar (as an opt-in button)
-* separator line between chunks with background marker
-* include parent revision number in default shelf name
+* file/diff toolbar buttons (not for 2.0)
 
 == cmemu ==
 
-* detect an 1.0 upgrade and add Workbench to promoted list
+* detect a 1.0 upgrade and add Workbench to promoted list
 
 == Revset/Filter toolbar ==
 
@@ -41,9 +48,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* 'visual diff' and 'diff to local' changeset menu options
 * commit tab SVG should match shell extension icon
-* cloning from workbench menu does not reliably add new clone to registry (if details is opened, dialog returns failure on close)
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
@@ -103,7 +108,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == grep ==
 
 * [del] to remove completions
-* give match line context menus a default action (annotate or edit)
 * include/exclude textboxes should mention file paths
 
 == Clone ==
@@ -120,15 +124,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * connect to thgrepo.configChanged and refresh
 * 'issue tracking' page (bugtraq)
 
-== update ==
-
-* use cmdui.Runner when running from the workbench
-
-== SSL ==
-
-Look into leveraging http://doc.trolltech.com/4.7/qsslsocket.html for extracting
-CA certificates from Windows.
-
 == Email ==
 
 * show output/progress by default
@@ -141,11 +136,9 @@ CA certificates from Windows.
 
 == Sync ==
 
-* parse push/pull output for indication of work done
-* check for [auth] and URL conflict or username/pw redundancy, suggest cleanup
-* ensure pull from bundle works as expected after latest changes
 * expose default-push in some way
-* write keyring/auth help
+* verification prompt before push to non-local URL
+* parse push/pull output for indication of work done
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See
   http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-
 using
@@ -154,7 +147,6 @@ using
 
 * context menu should offer toggle between revision number, username or both
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
-
 * Replace HgView's annotator by thg's. Hook at fileview.HgFileView.
 * support annotation of working copy (rev=None); needs changes on Mercurial-side.
 

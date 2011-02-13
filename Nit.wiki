@@ -26,7 +26,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs, see rejects.py for potential workaround.
 * qtlib.ExpanderLabel needs to manage its own sub-layout
-* when we enforce hg-1.8, use p1() and p2() revsets to describe working parents
 
 == chunks/shelve ==
 

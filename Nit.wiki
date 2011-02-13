@@ -6,10 +6,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
-* grep: give match line context menus a default action (annotate or edit)
-* grep: [del] to remove completions
-* grep: include/exclude textboxes should mention file paths
-* add a clear button next to patch button
+* shelve: add a clear button next to patch button
 * sync: check for [auth] and URL conflict (needs mercurial patch)
 * qpush output parsing for reject files
 * import output parsing for reject files

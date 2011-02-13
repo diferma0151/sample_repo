@@ -6,8 +6,13 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
-* sync: check for [auth] and URL conflict or username/pw redundancy, suggest cleanup
 * grep: give match line context menus a default action (annotate or edit)
+* grep: [del] to remove completions
+* grep: include/exclude textboxes should mention file paths
+* add a clear button next to patch button
+* sync: check for [auth] and URL conflict (needs mercurial patch)
+* qpush output parsing for reject files
+* import output parsing for reject files
 
 == repo registry ==
 
@@ -29,7 +34,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == chunks/shelve ==
 
 * include parent revision number in default shelf name
-* add a clear button next to patch button
 * multi-select file list
 * file/diff toolbar buttons (not for 2.0)
 
@@ -100,11 +104,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * spell check (perhaps there's an http service we can use for post-validation?)
 * in-memory patching / committing chunk selected files
 
-== grep ==
-
-* [del] to remove completions
-* include/exclude textboxes should mention file paths
-
 == Clone ==
 
 * clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings.
@@ -115,7 +114,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * path validation for ui.editor and similar fields
 * new generic extension registration
 * more font settings
-* new [color] page
 * connect to thgrepo.configChanged and refresh
 * 'issue tracking' page (bugtraq)
 
@@ -132,7 +130,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Sync ==
 
 * expose default-push in some way
-* verification prompt before push to non-local URL
 * parse push/pull output for indication of work done
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See
   http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-
@@ -142,7 +139,7 @@ using
 
 * context menu should offer toggle between revision number, username or both
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
-* Replace HgView's annotator by thg's. Hook at fileview.HgFileView.
+* merge annotate.Annotate with fileview.HgFileView (after 2.0)
 * support annotation of working copy (rev=None); needs changes on Mercurial-side.
 
 == docklog (ConsoleWidget) ==

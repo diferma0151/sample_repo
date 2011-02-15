@@ -6,7 +6,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
-* shelve: shelved new files are not deleted
+* shelve: shelved added files are not deleted
 * mq: refresh button, revdetails refresh
 * mq: show unknown files in file list, handle them being checked
 * mq: qpush output parsing for reject files

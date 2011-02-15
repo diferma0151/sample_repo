@@ -7,7 +7,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == SJB short term TODO ==
 
 * shelve: add a clear button next to delete patch button
-* sync: check for [auth] and URL conflict (needs mercurial patch)
 * qpush output parsing for reject files
 * import output parsing for reject files
 
@@ -26,10 +25,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * Qsci tab stops suffer from off-by-one when showing diffs, see rejects.py for potential workaround.
 * qtlib.ExpanderLabel needs to manage its own sub-layout
+* Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 
 == chunks/shelve ==
 
-* include parent revision number in default shelf name
 * multi-select file list
 * file/diff toolbar buttons (not for 2.0)
 
@@ -43,8 +42,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Workbench ==
 
-* commit tab SVG should match shell extension icon
-* generic progress bars for most operations, to show busy state
+* commit tab SVG should match shell extension icon (or vice-versa)
+* generic progress bars for most operations, to show busy state (incoming first)
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
 
@@ -60,10 +59,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * allow more than one patch to be selected for reordering as a group
 * when a reorder was done, and you rename a patch via the cmenu of the list, the reordering is undone
 * make the dialog show the summary with min 80 chars
-
-== visdiff ==
-
-* offer to launch settings tool if no diff tool is configured
 
 == RevDetailsWidget ==
 
@@ -192,6 +187,5 @@ using
 
 == Documentation ==
 
-* Go through hglib and move applicable routines to thgrepo, fix hgqt usage
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation
 * Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya

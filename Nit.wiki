@@ -6,6 +6,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
+* resolve: use refresh toolbar button, add cancel button
 * shelve: shelved added files are not deleted
 * mq: refresh button, revdetails refresh
 * mq: show unknown files in file list, handle them being checked

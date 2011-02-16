@@ -101,6 +101,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Clone ==
 
 * clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings.
+* Add a textbox for the 'Include patch queue' option, so the user can enter a path herself (implements the '-P <repo>' option of qclone). Maybe even add a 'Browse' button for selecting a folder.
+* Add a 'Hg command' textbox, as in the init dialog.
 
 == Settings ==
 

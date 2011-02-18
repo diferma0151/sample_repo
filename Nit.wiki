@@ -6,10 +6,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
-* mq: refresh button for file list and contents
-* email: look into reported crashes
 * repowidget: add qgoto back to cmenu
 * repowidget: add qpush --move to cmenu of unapplied patches.
+* mq: clean up refresh behavior, reselect previous patch and/or file
 * qreorder: show patch numbers (in series), and rev numbers of applied
 * qreorder: jump to nearest patch after qdelete
 * patchctx: display patch parsing errors clearly

@@ -8,10 +8,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * mq: clean up refresh behavior, reselect previous patch and/or file
 * qreorder: show patch numbers (in series), and rev numbers of applied
-* qreorder: jump to nearest patch after qdelete
-* patchctx: display patch parsing errors clearly
+* repowidget: jump to next patch after qdelete, not tip
 * import output parsing for reject files
-* revdetails: always select one file if changeset has files
 * manifest: disable menu entries that are not connected, finish in 2.1
 
 == repo registry ==
@@ -134,8 +132,12 @@ using
 
 == Annotate ==
 
+* nix the standalone annotate dialog, always use manifest but open to a given file
 * context menu should offer toggle between revision number, username or both
-* In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog ? That would be another bit of consistency in the product. I could also add an extra page to the setting dialog, for assigning colors to usernames ? I also see the hgqt changelog does not yet use those username color settings. I could look into that too ? (If you agree with the idea(s) Steve, I (Johan) am willing to give this a stab.) -- sjb sounds like a solid idea
+* In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? (SJB - this is now complicated by the 32-color restriction in Qsci)
+** And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog
+** I could also add an extra page to the setting dialog, for assigning colors to usernames?
+** I also see the hgqt changelog does not yet use those username color settings. I could look into that too?
 * merge annotate.Annotate with fileview.HgFileView (after 2.0)
 * support annotation of working copy (rev=None); needs changes on Mercurial-side.
 

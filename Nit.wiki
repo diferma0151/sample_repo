@@ -19,6 +19,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * ask for name of new group at creation
 * CTRL+drag looks like a copy, but actually performs a move
 * 'all' is perhaps an unfortunate default group name
+* RepoTreeModel should emit dataChanged signal when repo.shortname changed.
 
 == General ==
 
@@ -205,4 +206,4 @@ using
 == Documentation ==
 
 * {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation
-* Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya
+* Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya (after 2.0 release?)

@@ -97,6 +97,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * restrict action sensitivity based on selected files
 * give status/wctxactions a cmdui.Runner()
 * switch commit and quickop to use status' Runner
+* add a 'second parent' toggle toolbar button to fileview, remove from filelistmodel
 
 == Commit ==
 

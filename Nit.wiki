@@ -8,10 +8,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * mq: clean up refresh behavior, reselect previous patch and/or file
 * sync: incoming progress bar
-* qreorder: show patch numbers (in series), and rev numbers of applied
 * repowidget: jump to next patch after qdelete, not tip
-* import output parsing for reject files
 * manifest: disable menu entries that are not connected, finish in 2.1
+* cmenu: detect a 1.0 upgrade and add Workbench to promoted list
 
 == repo registry ==
 
@@ -35,10 +34,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * multi-select file list
 * file/diff toolbar buttons (not for 2.0)
 
-== cmemu ==
-
-* detect a 1.0 upgrade and add Workbench to promoted list
-
 == Revset/Filter toolbar ==
 
 * entries in branch combo should have the configured branch color (not for 2.0)
@@ -46,7 +41,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Workbench ==
 
 * commit tab SVG should match shell extension icon (or vice-versa)
-* generic progress bars for most operations, to show busy state (incoming first)
+* generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
 
@@ -59,6 +54,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == qreorder ==
 
+* show patch numbers (in series), and rev numbers of applied
 * allow more than one patch to be selected for reordering as a group
 * when a reorder was done, and you rename a patch via the cmenu of the list, the reordering is undone
 * make the dialog show the summary with min 80 chars
@@ -90,6 +86,15 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * ability to show changeset description
 * merge with annotate dialog? with optional filetree dock.
 * move filter bar to be on the content side of the splitter, like commit & revdetails
+
+== status / wctxactions ==
+
+(after 2.0 release)
+* switch wctxactions to generate QActions for parent widget
+* QActions should be given shortcuts and icons
+* restrict action sensitivity based on selected files
+* give status/wctxactions a cmdui.Runner()
+* switch commit and quickop to use status' Runner
 
 == Commit ==
 

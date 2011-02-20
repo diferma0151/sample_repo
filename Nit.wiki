@@ -7,6 +7,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == SJB short term TODO ==
 
 * mq: clean up refresh behavior, reselect previous patch and/or file
+* sync: incoming progress bar
 * qreorder: show patch numbers (in series), and rev numbers of applied
 * repowidget: jump to next patch after qdelete, not tip
 * import output parsing for reject files

@@ -6,6 +6,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
+* repowidget: qgoto should use MQ widget so it can scan for rejects
 * mq: clean up refresh behavior, reselect previous patch and/or file
 * qreorder: show patch numbers (in series), and rev numbers of applied
 * repowidget: jump to next patch after qdelete, not tip

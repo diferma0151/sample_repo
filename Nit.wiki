@@ -6,8 +6,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == SJB short term TODO ==
 
-* mq: clean up refresh behavior, reselect previous patch and/or file
+* revset: if no parens, try a revision lookup
 * sync: incoming progress bar
+* mq: clean up refresh behavior, reselect previous patch and/or file
 * repowidget: jump to next patch after qdelete, not tip
 * manifest: disable menu entries that are not connected, finish in 2.1
 * cmenu: detect a 1.0 upgrade and add Workbench to promoted list

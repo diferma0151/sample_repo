@@ -97,6 +97,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * give status/wctxactions a cmdui.Runner()
 * switch commit and quickop to use status' Runner
 * add a 'second parent' toggle toolbar button to fileview, remove from filelistmodel
+* use Qt's filesystem monitor to report when the working folder is dirty
 
 == Commit ==
 

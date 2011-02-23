@@ -99,6 +99,12 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * add a 'second parent' toggle toolbar button to fileview, remove from filelistmodel
 * use Qt's filesystem monitor to report when the working folder is dirty
 
+== backout, compress, rebase, bisect ==
+
+(after 2.0 release)
+* turn into a QWizard based dialogs
+* clean up merge wizard
+
 == Commit ==
 
 * smarter commit button enabled logic

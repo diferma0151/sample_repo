@@ -16,7 +16,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * multi-selection menu with 'Pull from default', 'Pull -u from default'
 * ask for name of new group at creation
 * CTRL+drag looks like a copy, but actually performs a move
-* 'all' is perhaps an unfortunate default group name
 * RepoTreeModel should emit dataChanged signal when repo.shortname changed.
 
 == General ==

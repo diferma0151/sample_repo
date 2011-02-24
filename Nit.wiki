@@ -40,8 +40,10 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 == Workbench ==
 
 * commit tab SVG should match shell extension icon (or vice-versa)
+* paint tag names on right side of description
+* longsummary() should take a width and use a glyph when supported
 * generic progress bars for most operations, to show busy state
-* Dragging of filenames does not work into Visual Studio (wrong URI type?, permissions?)
+* Dragging of filenames does not work into Visual Studio or Skype (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
 
 == file history dialog ==

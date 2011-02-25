@@ -1,0 +1,17 @@
+TortoiseHg 2.0 is scheduled to be release on March 1, or on the same day as Mercurial 1.8.
+
+Following the 2.0 release, a number of improvements are planned for 2.1.
+
+* Merge wizard refactor to not use a QStackedWidget
+* Refactor bisect, compress, rebase and backout as QWizard dialogs
+* Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner
+* Merge HgFileView and AnnotateWidget into a single class and file
+* Switch ManifestWidget to use an HgFileView
+* Remove standalone annotate dialog, use manifest dialog for that purpose
+* Move 'other parent' feature from filelistmodel to HgFileView
+* filelistview should forward menu events to parent repowidget or chunks widget
+* Use Qt's filesystem monitor to inform user when status view is dirty
+* Also use Qt's filesystem monitor to replace poll functions in thgrepo, etc
+* Investigate whether HgFileView can be used as an editor for wctx in status widget
+* Investigate a per-repository tab log console
+* Subrepository support in Repository Registry

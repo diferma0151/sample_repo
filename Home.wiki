@@ -4,7 +4,8 @@ Future official home of the TortoiseHg development repository; currently the hom
 
 * Mailing list: http://groups.google.com/group/thg-dev
 * File a bug/nit on our [[Nit]] list
-* [[KeySequences]]
+* [[RoadMap]]
+* [[KeySequences]] shortcuts used in various dialogs
 * [[OpenAtLine]] new feature
 * For Windows users: see [[developers/SourceInstall/Windows]]
 * For Mac users: see [[developers/SourceInstall/MacOSX]]

@@ -3,8 +3,8 @@
 = Workbench =
 * Shift+Ctrl+T - Open Terminal
 * Shift+Ctrl+S - Open Shell Explorer
-* Ctrl+T - Goto revision
-* CTRL+S - Open Filter/Revset toolbar
+* Shift+Ctrl+O - Toggle repository registry
+* CTRL+S - Toggle Filter/Revset toolbar
 * CTRL+L - Toggle log dock widget
 * QKeySequence.Quit - Exit workbench
 * QKeySequence.Refresh - Refresh current repo
@@ -15,10 +15,6 @@
 * QKeySequence.Open - Open repo in new tab
 * QKeySequence.HelpContents - Open repo in new tab
 
-= htmllistview =
-* QKeySequence.Cut - copy selected rows to clipboard
-* QKeySequence.Copy - ""
-
 = Annotate =
 * QKeySequence.Find 
 * QKeySequence.FindNext 
@@ -28,7 +24,7 @@
 * QKeySequence.Refresh
 * QKeySequence.Close
 
-= Quickbar =
+= FindBar =
 * QKeySequence.Find
 * QKeySequence.FindNext
 
@@ -46,10 +42,6 @@
 * Ctrl+Alt+T - revert to revision
 * Alt+Down - next diff
 * Alt+Up   - prev diff
-* Shift+Key_Down - next line
-* Shift+Key_Up   - prev line
-* Shift+Key_Right- next column?
-* Shift+Key_Left - prev column?
 * Alt+KeyReturn  - activate file
 
 = repowidget =
@@ -62,4 +54,5 @@
 
 = Commit =
 * Ctrl+E - Reflow current paragraph
-* Ctrl+A, Space - select all filtered files
+* Ctrl+A - select all filtered files
+* Space - toggle selected files

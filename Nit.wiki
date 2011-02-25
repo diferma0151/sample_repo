@@ -8,6 +8,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * merge/resolve: deal with subrepositories that may require resolves
 * issue #103
+* test shelve tool against DOS eoln text files
 * manifest: disable menu entries that are not connected, finish in 2.1
 
 == repo registry ==

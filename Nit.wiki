@@ -45,6 +45,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * generic progress bars for most operations, to show busy state
 * Dragging of filenames does not work into Visual Studio or Skype (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
+* make graph use the branch colors from the settings config (not for 2.0)
 
 == file history dialog ==
 

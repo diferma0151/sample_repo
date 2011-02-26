@@ -167,6 +167,13 @@ using
 * accept ctrl+c for command termination
 * delay repo switch while running command
 
+== MQ ==
+
+(all 3 post 2.0 afaic)
+* The widget provides buttons for pushing/popping one or all patches. I miss the two that do 'push/pop up to selected patch' (=qgoto).
+* It should be possible to perform qreorder from this widget, by dragging patches in the list.
+* It should be possible to call qfold.py from this widget.
+
 == Rename dialog ==
 
 * implement enhancements from issues 1124 + 1186

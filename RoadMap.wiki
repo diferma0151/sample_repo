@@ -5,8 +5,10 @@ Following the 2.0 release, a number of improvements are planned for 2.1 (July 1,
 * Merge wizard refactor to not use a QStackedWidget
 * Refactor bisect, compress, rebase and backout as QWizard dialogs
 * Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner
+* Use status widget's file tree in MQ widget
 * Merge HgFileView and AnnotateWidget into a single class and file
 * Switch ManifestWidget to use an HgFileView
+* Add a file filter to manifest widget, same as status
 * Remove standalone annotate dialog, use manifest dialog for that purpose
 * Move 'other parent' feature from filelistmodel to HgFileView
 * filelistview should forward menu events to parent repowidget or chunks widget

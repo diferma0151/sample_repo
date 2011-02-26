@@ -183,9 +183,6 @@ using
 * Connect repoview clicks to dialog input events (must be non-modal, low priority)
 * annotate graph with .hg/bisect.state (low priority)
 
-== MQ ==
-* qqueue dialog : When attempting to activate another patch queue when there are still patches applied, there is an error message given. But when the qqueue dialog is run from the mq tasktab (insgtead of from the command line), that message almost instantly disapears. (SJB - I think I fixed this, can you verify?)
-
 == About ==
 
 * Freeze on closing dialog until urllib2.urlopen() finishes (uthread.wait() blocks main thread)

@@ -46,7 +46,8 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * Dragging of filenames does not work into Visual Studio or Skype (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
 * make graph use the branch colors from the settings config (not for 2.0)
-
+* Should the command line honor the '--limit n' option, like the gtk version does ?
+ 
 == file history dialog ==
 
 * handle menu events from repoview

@@ -1,0 +1,95 @@
+= TortoiseHg for SVN Users =
+
+This page is intended as a compendium of links and helpful notes for Subversion users who are converting to, or at least trying out, Mercurial and TortoiseHg.
+
+When learning Mercurial the first stop should be the [[http://hgbook.red-bean.com/|hgbook]], available in 
+[[http://tortoisehg.bitbucket.org/hgbook/1.6/index.html|html]].
+Mercurial's [[http://mercurial.selenic.com/wiki/|wiki]] is also a key source.
+
+== Links from projects which have converted from SVN to Mercurial ==
+
+* http://lucumr.pocoo.org/2008/1/28/mercurial-for-subversion-users
+* http://wiki.pylonshq.com/display/pylonscookbook/Mercurial+for+Subversion+Users
+* http://www.python.org/dev/peps/pep-0385/
+
+== Tutorials/Comparison links ==
+
+* http://mercurial.aragost.com/kick-start/
+* http://hginit.com/
+* http://nedbatchelder.com/text/hgsvn.html
+* http://wiki.geeklog.net/index.php/Mercurial_for_SVN_Users
+
+== Using TortoiseHg with a Subversion like work flow ==
+
+As you first begin using TortoiseHg, you may want to configure some of these optional features to approach a more subversion like work flow.  See the [[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|settings]] tool manual to learn how to configure these settings either globally or per-repository.
+
+=== Post-Pull Operations ===
+
+After changesets are pulled from a remote repository, TortoiseHg can perform an automated function.  In the settings tool, this option can be found at the top of the Sync tab.
+
+# Update - checkout the new tip changeset on your current branch.  If you have uncommitted changes, this can result in a three way merge if changes in the new tip conflict with your changes (rare, but possible).
+# Fetch - automatically merge your local changesets with the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/FetchExtension|fetch]] extension to be enabled.  Does not perform any merge if your repository has uncommitted changes.
+# Rebase - automatically rebase your local changesets onto the top of the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/RebaseExtension|rebase]] extension to be enabled.  Does not perform a rebase if your repository has uncommitted changes.
+
+This setting can also be changed on the fly in the Repository Explorer before you perform a pull, in case you want to change your default behavior for a single operation.
+
+=== Post-Commit Push ===
+
+This setting can be found on the commit tab of the settings tool.  When
+enabled, TortoiseHg will attempt to push your local changesets to your
+default upstream repository after every successful commit.
+
+=== Merges ===
+
+By default, TortoiseHg will use [[http://kdiff3.sourceforge.net/|kdiff3]] (a graphical three way merge tool) to resolve merge conflicts.  You have a number of other options.  On the TortoiseHg tab of the settings tool, you will find a 'Three-way Merge Tool' configurable.
+
+# If you have TortoiseSVN installed and prefer TortoiseMerge you can
+select TortoiseMerge from the drop-down list.
+# If you prefer P4Merge, or some other tool supported by Mercurial, it will
+automatically show up in the drop-down list.
+# If you want Mercurial to write the .BASE .LOCAL .OTHER versions for
+you to manually merge, chose internal:dump
+# If you want Mercurial to prompt you whether to keep either the local
+or other version, chose internal:prompt
+# If you want Mercurial to perform trivial merges internally, and leave
+conflict markers in place on conflicts, chose internal:merge
+
+See
+[[http://www.selenic.com/mercurial/hgrc.5.html#merge-tools|merge-tools]]
+for a description of how to configure an external merge tool that was
+not supported "out of the box."
+
+== Using TortoiseHg as a client for a Subversion server ==
+
+* http://mercurial.selenic.com/wiki/HgSubversion
+* http://bitbucket.org/durin42/hgsubversion/wiki/Home
+
+hgsubversion should work with TortoiseHg "out of the box", since TortoiseHg Windows installers include the SVN python bindings required by hgsubversion.  Simply clone the extension to your machine, enable it, read its documentation. then clone your subversion repository.
+
+{{{
+mkdir C:\repos
+hg clone http://bitbucket.org/durin42/hgsubversion/ C:\repos\hgsubversion
+}}}
+
+Add lines like these to your Mercurial.ini file
+
+{{{
+[extensions]
+hgsubversion = C:\repos\hgsubversion
+}}}
+
+Make a test clone:
+
+{{{
+hg clone svn+http://svn.python.org/projects/python python-hg
+}}}
+
+== Mercurial Wiki links ==
+
+* http://mercurial.selenic.com/wiki/WorkingWithSubversion
+* http://mercurial.selenic.com/wiki/ConvertExtension
+
+See also
+
+* http://code.google.com/p/support/wiki/ConvertingSvnToHg
+* http://www.antwerkz.com/migrating-from-subversion-to-mercurial/

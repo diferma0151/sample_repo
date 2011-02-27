@@ -1,0 +1,1 @@
+Future home of TortoiseHg 2.0 release notes

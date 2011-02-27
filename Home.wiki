@@ -28,7 +28,7 @@ platforms.
 == Supported Platforms ==
 
 * Microsoft Windows XP, Vista, Windows 7
-* Command line support via [[hgtk]]
+* Command line support via [[thg]]
 * Debian and RedHat distributions, see [[http://tortoisehg.bitbucket.org/download/index.html|Download]]
 * [[developers/MacOSX|Mac OS X]] is supported via source install
 

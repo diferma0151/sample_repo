@@ -1,36 +1,80 @@
-= TortoiseHg PyQt Port =
+{{http://tortoisehg.bitbucket.org/css/img/logo.png|}}
 
-Future official home of the TortoiseHg development repository; currently the home of the PyQt port.
+TortoiseHg is a Windows shell extension and a series of applications for
+the [[http://www.selenic.com/mercurial/wiki/index.cgi|Mercurial]] distributed
+revision control system. It also includes a Gnome/Nautilus extension and a CLI
+wrapper application so the TortoiseHg tools can be used on non-Windows
+platforms.
 
-* Mailing list: http://groups.google.com/group/thg-dev
-* File a bug/nit on our [[Nit]] list
-* [[RoadMap]]
+//Acknowledgement//: The TortoiseHg installer for Windows includes the TortoiseOverlays handler, as provided by the [[http://tortoisesvn.net|TortoiseSVN project]].
+
+**[[http://tortoisehg.bitbucket.org/download/index.html|Download]]** | 
+**[[http://tortoisehg.bitbucket.org/docs.html|Documentation]]** |
+**[[http://tortoisehg.bitbucket.org/manual/1.1/faq.html|FAQ]]** |
+**[[ReleaseNotes]]** |  **[[RoadMap]]**
+
+<<toc>>
+
+== News ==
+
+* 2011-02-01: TortoiseHg 1.1.9 (with Mercurial 1.7.5) released
+* 2011-01-01: TortoiseHg 1.1.8 (with Mercurial 1.7.3) released
+* 2010-12-01: TortoiseHg 1.1.7 (with Mercurial 1.7.2) released
+* 2010-11-16: TortoiseHg 1.1.6.1 (with Mercurial 1.7.1) released
+* 2010-11-01: TortoiseHg 1.1.5 (with Mercurial 1.7) released
+* 2010-10-02: TortoiseHg 1.1.4 (with Mercurial 1.6.4) released
+
+[[OldNews|Older News]]
+
+
+== Supported Platforms ==
+
+* Microsoft Windows XP, Vista, Windows 7
+* Command line support via [[hgtk]]
+* Gnome/[[nautilus|Nautilus]] integration
+* [[MacOSX|Mac OS X]] port is in progress
+
+Please note that like TortoiseSVN, [[http://www.selenic.com/pipermail/mercurial/2010-January/029680.html|we recommend]] to turn off the indexing service on the working copies and repositories, and exclude them from virus scans (on Windows).
+
+== Documentation ==
+
+[[http://tortoisehg.bitbucket.org/docs.html|Manuals]]
+
+TortoiseHg for [[SVN]] Users
+
+For the mercurial.ini configuration files, see [[http://www.selenic.com/mercurial/hgrc.5.html|hgrc.5.html]], for the 'hg' command see [[http://www.selenic.com/mercurial/hg.1.html|hg.1.html]]
+(also available in the 'docs' subdirectory inside the install directory)
+
 * [[KeySequences]] shortcuts used in various dialogs
 * [[OpenAtLine]] new feature
-* [[developers/Hacking|Hacking]]
 
-Be aware that the PyQt port of TortoiseHg is being developed against the tip of Mercurial's default branch.  We are not trying to support older releases of Mercurial.
+==== A Gentle [[http://tortoisehg.bitbucket.org/manual/1.1/quick.html|Introduction]] to Using TortoiseHG on Windows ====
 
-Screenshots and semi-regular snapshot packages on the downloads page.
+And another one [[http://draketo.de/licht/freie-software/mercurial/kurze-einf-hrung-mercurial-und-tortoisehg|in German]] and [[http://draketo.de/light/english/mercurial/short-introduction-mercurial-tortoisehg|in English]]. 
 
-== Road Map ==
+== Bugs and Feature Requests ==
 
-TortoiseHg 2.0 will be released with Mercurial 1.8 (Mar 1, 2011).
+Please use the Bitbucket issue tracker (above tab) to submit bugs and feature requests.  See [[developers/Home|developers]] wiki for details on contributing patches or other work.
 
-=== Workbench ===
+Before submitting new bugs, please consult the open [[http://bitbucket.org/tortoisehg/stable/issues/?kind=bug&status=open|open bug list]] and [[FixedBugs]] for the list of bugs fixed since the last stable release.
 
-The Qt port combines changelog browser, grep and annotate (datamine) tools, and the commit tool into a single "main application" with a tabbed interface.  This app is intended to be usable from a desktop icon or start menu link, offering a repository list if the cwd is not within a repository.  Essentially all of TortoiseHg is available to users without the use of explorer shell extensions.
+== Mailing Lists ==
 
-=== "Sync" Widget ===
+For any questions or comments on TortoiseHg, please post to TortoiseHg's mailing [[http://sourceforge.net/mail/?group_id=199155|lists]]:
 
-A "task" tab of the workbench has replaced the "paths" page of the settings tool and the sync bar of the repository explorer.  It shows all configured paths for the repository and paths configured in local related repositories, allows the local list to be modified, and supports sync operations with each remote target.. including preview incoming w/ bundle, annotating outgoing changes, etc.  It uses the Workbench's console dock widget and progress bar to show running operations.  The sync tool is also available as a standalone window.
+* TortoiseHg [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-discuss|discussion]] list: for general questions on TortoiseHg ([[http://news.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user|gmane archive]])
+* TortoiseHg [[http://groups.google.com/group/thg-dev|developers]] list: for development on TortoiseHg
+* TortoiseHg [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-issues|issues]] list: for issue notifications
 
-=== Simplify Commit ===
+== Other Languages ==
 
-The commit tool will always show working diffs, even if there are patches applied.  Moving hunks between patches or the working directory is performed via the shelve tool.  MQ functionality is handled by a dedicated task tab and Workbench context menus.
+[[http://bitbucket.org/kuy/thg-ja/wiki/Home|日本語 (Japanese)]]
 
-== Would you like to help? ==
+== Contribution ==
 
-See the [[Nit]] page for a list of tasks that anyone can pick up and run with.  See also enhancement requests in the issue tracker.
+For details on contributing to TortoiseHg, visit the **[[Nit]]** page and the
+**[[developers/Hacking|Hacking]]** wiki and [[upcoming-release-notes|upcoming release notes]].
 
-Please send an e-mail to thg-dev if you start working on something so we do not duplicate effort.
+For contributing to translations, please visit our page on [[https://translations.launchpad.net/tortoisehg|Launchpad]]
+
+For contributing to the wiki, look [[wiki|here]].

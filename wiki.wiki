@@ -1,0 +1,47 @@
+== Wiki Details
+
+This is a community supported web page. Please fix any errors and typos
+you find and add any content you feel is missing.
+
+This wiki uses the [[http://www.wikicreole.org/|Creole]] syntax, and is fully
+compatible with the 1.0 specification.
+
+The wiki itself is actually a hg repository, which means you can clone it, edit
+it locally/offline, add images or any other file type.
+
+Go ahead and try:
+
+{{{
+$ hg clone http://bitbucket.org/tortoisehg/stable/wiki/
+}}}
+
+Wiki pages are normal files, with the .wiki extension. You can edit them locally, as well as creating new ones.
+
+[[highlighting|Highlighting Example]]
+
+To test your changes, you can try this Creole [[http://nyctergatis.com/creole/sandbox.creole|sandbox]]
+
+When your changes are complete, commit them locally and then publish those changes to the 
+[[mailto:tortoisehg-develop@lists.sourceforge.net |tortoisehg-develop@lists.sourceforge.net]] 
+[[https://lists.sourceforge.net/lists/listinfo/tortoisehg-develop|mailing list]].   There are several 
+methods for doing this:
+
+=== Using SMTP (preferred for simple changes when possible)
+* start the synchronize dialog, or run hgtk push
+* click email
+* launch configuration dialog to configure SMTP settings
+* fill in To: and From: fields
+* Send
+
+=== Using patches
+* start changelog dialog, or run hgtk log
+* select your change, right-click for context menu
+* select 'export patch'
+* attach this patch to an email to the developer list
+
+=== Bitbucket method (good for bulk changes, or when adding binaries)
+* Open an account at http://bitbucket.org (if you don't have one)
+* Create a new repository called thg-wiki or similar
+* Push your local wiki repository to this bitbucket repo\\
+{{{ hg push https://bitbucket.org/myuser/thg-wiki }}}
+* Post the URL to your repository to the developer list.

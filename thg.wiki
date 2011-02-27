@@ -12,22 +12,25 @@ page.  If not, please use the source install method.
 
 == From Source ==
 
-# Install Mercurial (consult the chart at the bottom of [[ReleaseNotes]] for version info)
+**Do NOT run setup.py, it is unnecessary**
+
+# Install Mercurial (consult the chart at [[ReleaseNotes]] for version info)
 # Clone the TortoiseHg repository:  {{{hg clone http://bitbucket.org/tortoisehg/thg tortoisehg}}}
 # Symlink the thg script into your path:  {{{ln -s /path/to/tortoisehg/thg ~/bin}}}
 
-That is usually all you have to do. You should now be able to launch the TortoiseHg dialogs.  If you move
-the tortoisehg repository, just remember to update the ~/bin/thg symlink.
+That is usually all you have to do. You should now be able to launch the TortoiseHg dialogs.  If you move the tortoisehg repository, just remember to update the ~/bin/thg symlink.
 
-**Do NOT run setup.py, it is unnecessary**
 * If you want to use the stable branch, run (inside the repository):  {{{hg update stable}}}
 * If you want translations, run (inside the repository): {{{python setup.py build_mo}}}
 
 To use the settings tool (repoconfig, userconfig) you must have http://code.google.com/p/iniparse/ installed.
 
+If pygments is installed, the commit tool will provide completions for variable
+names in the source file you are previewing.
+
 == Visual Diffs ==
 
-You should %include our mergetools.rc into your ~~/.hgrc file.
+It is recommended %include our mergetools.rc into your ~~/.hgrc file, especially if you use KDiff3 as your merge tool.
 
 {{{
 %include /path/to/tortoisehg/contrib/mergetools.rc
@@ -39,10 +42,10 @@ We do not suggest that you run from a tarball, even though we make one available
 
 == Using thg ==
 
-Running thg without any arguments tells you what dialogs are available. For instance:
+Running thg without any arguments launches the Workbench.  To see what commands are available, use:
 
 {{{
-# thg
+# thg --help
 thg - TortoiseHg's GUI tools for Mercurial SCM (Hg)
 
 basic commands:

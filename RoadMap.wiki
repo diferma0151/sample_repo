@@ -1,6 +1,34 @@
-TortoiseHg 2.0 is scheduled to be released on March 1, or on the same day as Mercurial 1.8.
+TortoiseHg follows [[http://www.selenic.com/mercurial/wiki/index.cgi/TimeBasedReleasePlan|Mercurial's]] release schedule for major feature releases.
+We try to do stable releases at least once a month to push bug fixes out
+to users in a timely fashion.
 
-A number of improvements are planned for 2.1 (July 1, 2011)
+=== Release Numbering ===
+
+Roughly every four months (thrice a year), we will take the development
+branch (default), merge it to the stable branch, and release it as a new
+feature release.  In between these feature releases, there will be
+multiple maintenance releases since most of our users install our binary
+packages and cannot easily get bug fixes any other way.
+
+The first incremental release after a feature release may contain
+behavioral or layout changes as we provide polish to the new features
+added in that feature release.  The following incremental releases
+should be pure bug-fix releases.
+
+=== Lockdown ===
+
+Before each feature release, we will progressively lock down the code:
+
+* -2 weeks  - feature freeze, merge default to stable, bug fixes only
+* -1 week   - no new translatable strings on stable
+* -3 days   - code freeze on stable.  Documentation and installer changes only
+
+=== Release 2.0 (Targeted March 1, 2011): ===
+
+* PyQt based tools and dialogs
+* Native 64bit applications
+
+=== Release 2.1 (Targeted July 1, 2011): ===
 
 * Merge wizard refactor to not use a QStackedWidget
 * Refactor bisect, compress, rebase and backout as QWizard dialogs

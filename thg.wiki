@@ -1,0 +1,68 @@
+== THG ==
+
+TortoiseHg comes with a simple python application, thg, which allows you to
+launch the TortoiseHg dialogs on any platform that supports Mercurial and
+PyGtk. This is the easiest way to start using TortoiseHg on Linux and [[MacOSX|Mac OS X]].
+
+== Packages ==
+
+You may be able to find RPM and DEB packages on the 
+[[http://tortoisehg.bitbucket.org/download/index.html|download]]
+page.  If not, please use the source install method.
+
+== From Source ==
+
+# Install Mercurial (consult the chart at the bottom of [[ReleaseNotes]] for version info)
+# Clone the TortoiseHg repository:  {{{hg clone http://bitbucket.org/tortoisehg/thg tortoisehg}}}
+# Symlink the thg script into your path:  {{{ln -s /path/to/tortoisehg/thg ~/bin}}}
+
+That is usually all you have to do. You should now be able to launch the TortoiseHg dialogs.  If you move
+the tortoisehg repository, just remember to update the ~/bin/thg symlink.
+
+**Do NOT run setup.py, it is unnecessary**
+* If you want to use the stable branch, run (inside the repository):  {{{hg update stable}}}
+* If you want translations, run (inside the repository): {{{python setup.py build_mo}}}
+
+To use the settings tool (repoconfig, userconfig) you must have http://code.google.com/p/iniparse/ installed.
+
+== Visual Diffs ==
+
+You should %include our mergetools.rc into your ~~/.hgrc file.
+
+{{{
+%include /path/to/tortoisehg/contrib/mergetools.rc
+}}}
+
+== Tarballs ==
+
+We do not suggest that you run from a tarball, even though we make one available for download.  The tarball is only intended for use by distribution packagers.  We prefer you use a local clone of TortoiseHg instead.   If you do use a tarball, you may need to delete thgutil/config.py* to remove the hard-coded paths.  If you run setup.py from a tarball, you will likely need to edit the installed thgutil/config.py.
+
+== Using thg ==
+
+Running thg without any arguments tells you what dialogs are available. For instance:
+
+{{{
+# thg
+thg - TortoiseHg's GUI tools for Mercurial SCM (Hg)
+
+basic commands:
+
+ about        about TortoiseHg
+ add          add files
+...
+}}}
+
+thg uses Mercurial's command matching logic to support abbreviated command names.
+For instance, //thg ci// will launch the commit dialog.
+
+See the Debugging Dialogs section of [[developers/Debugging]] for debug hints.
+
+== Prerequisites, Versions ==
+
+TortoiseHg Windows packages include Python 2.6.6, Qt 4.7.1, and PyQt 4.8.2
+
+We require a minimum PyQt version of 4.6
+
+TortoiseHg should work on Python 2.4 or later, the same restriction as Mercurial.
+ 
+Consult the chart at the bottom of [[ReleaseNotes]] for Mercurial version info

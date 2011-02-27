@@ -1,0 +1,38 @@
+== TortoiseHg Development Repositories ==
+
+=== Main ===
+
+The main repository hosted on bitbucket that only Steve Borho and a few contributors can push
+to. This is the official repository that everyone should clone:
+
+http://bitbucket.org/tortoisehg/thg/
+
+It has two named branches:
+
+* *stable* contains only released code and reasonably well tested bug fixes. All official release binary installers are built from this repository.
+
+* *default*  This is where development occurs between releases, and is the basis for nightly builds.
+
+A mirror of the main repo is kept at: https://hg01.codeplex.com/tortoisehg/
+
+=== Installer ===
+
+The installer repository, based on a subrepo tree of source repositories and an intelligent setup script.  This repository is used to build TortoiseHg and Mercurial packages for Windows.
+
+http://bitbucket.org/tortoisehg/thg-winbuild/
+
+== TortoiseHg Project Layout ==
+
+High level layout of the TortoiseHg repositories:
+
+|=Path |=Purpose |
+| win32/ | Windows shell extension code and installer scripts |
+| doc/ | reST and sphinx based documentation |
+| tortoisehg/util/ | TortoiseHg utilities used by PyGtk, PyQt, and nautilus |
+| tortoisehg/hgtk/ | TortoiseHg portable PyGtk dialogs |
+| tortoisehg/hgqt/ | TortoiseHg portable PyQt dialogs |
+| contrib/ | location for misc helper scripts |
+| icons/ | Icons shared by context menus and applications |
+| hgtk | Launcher python applet for pygtk dialogs, used by context menus |
+| thg | Launcher python applet for PyQt dialogs, used by context menus |
+| setup.py | Distutils script |

@@ -138,6 +138,7 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * replace to/from/cc combo boxes with entry and [...] that opens address book style dialog
 * perhaps changeset list could be in a second tab, before preview
 * drag and drop revisions from RepoWidget to email dialog.
+* Maybe we should add the possibility of collapsing all csets into one patch to the Email dialog? See http://thread.gmane.org/gmane.comp.version-control.mercurial.general/25328/focus=25340
 
 == Sync ==
 

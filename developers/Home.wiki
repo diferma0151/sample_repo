@@ -1,0 +1,15 @@
+== TortoiseHg Developer Wiki ==
+
+The developer wiki is where new TortoiseHG contributors learn the ropes and
+where all contributors can keep track of ongoing work.  For more user-centric
+information, please visit the [[Home|main]] wiki.  Bug reports and feature
+requests should go in the repository's issue tracker.
+
+=== [[developers/repositories|Repository Overview]] | [[developers/contributing|Submitting Patches]] | [[developers/installer|Building an Installer]] |  [[developers/Debugging|Debugging]]  | [[developers/Translation|Translation]] | [[developers/SourceInstall|Source Install]] ===
+
+Contributors are encouraged to join the
+[[http://groups.google.com/group/thg-dev/topics?hl=en|tortoisehg-develop]] and
+[[https://lists.sourceforge.net/lists/listinfo/tortoisehg-issues|tortoisehg-issues]]
+mailing lists, and should also be aware of
+[[http://www.selenic.com/mercurial/wiki/index.cgi/API_Changes|API changes]]
+within Mercurial itself.

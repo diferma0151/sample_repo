@@ -13,8 +13,6 @@ platforms.
 **[[http://tortoisehg.bitbucket.org/manual/1.1/faq.html|FAQ]]** |
 **[[ReleaseNotes]]** |  **[[RoadMap]]**
 
-<<toc>>
-
 == News ==
 
 * 2011-02-01: TortoiseHg 1.1.9 (with Mercurial 1.7.5) released

@@ -48,7 +48,7 @@ For the mercurial.ini configuration files, see [[http://www.selenic.com/mercuria
 * [[KeySequences]] shortcuts used in various dialogs
 * [[OpenAtLine]] new feature
 
-==== A Gentle [[http://tortoisehg.bitbucket.org/manual/1.1/quick.html|Introduction]] to Using TortoiseHG on Windows ====
+=== A Gentle [[http://tortoisehg.bitbucket.org/manual/1.1/quick.html|Introduction]] to Using TortoiseHG on Windows ===
 
 And another one [[http://draketo.de/licht/freie-software/mercurial/kurze-einf-hrung-mercurial-und-tortoisehg|in German]] and [[http://draketo.de/light/english/mercurial/short-introduction-mercurial-tortoisehg|in English]]. 
 

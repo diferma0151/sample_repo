@@ -1,0 +1,4 @@
+== Building a windows installer ==
+
+These instructions are now located in the thg-winbuild repository at
+http://bitbucket.org/tortoisehg/thg-winbuild/wiki/Home

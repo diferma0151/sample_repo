@@ -1,0 +1,51 @@
+There are several ways to contribute to TortoiseHg translations:
+
+# Testing translations and reporting issues at bitbucket
+# Contributing translations via Launchpad [either via web or by uploading .po files]
+# Approve uploaded .po files [only if you are unhappy with what other contribute]
+# Maintain translation infrastructure (upload .pot files) [this is the boring part that allows everybody else to work]
+
+The general principle is that all translations are coordinated through Launchpad, issues are tracked at bitbucket, and messages use the tortoisehg-discuss mail list.
+
+=== Contributing translations  ===
+
+Please visit our page on 
+[[https://translations.launchpad.net/tortoisehg|Launchpad]]
+
+About TortoiseHg Translation Team:
+[[http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/1813]]
+
+=== Testing translations on Windows ===
+
+# Install TortoiseHg via the binary installer
+# Download a translation in MO format from Launchpad
+# Copy the .mo file to %ProgramFiles%\TortoiseHg\locale\XX\LC_MESSAGES\tortoisehg.mo where XX is the locale
+# Set environment variable LANG=XX
+# Launch TortoiseHg
+
+=== Translating Explorer Context Menu ===
+
+Context menu items are translated using the same process as the rest of the source code.  The strings in tortoisehg/util/menuthg.py are translated on launchpad.   As part of the installer building process, the translations for those strings is extracted into registry files which are then included in the installer.
+
+=== Testing translations on Unix ===
+
+# Clone tortoisehg to your machine and symlink hgtk into your path (See hgtk wiki page on main wiki)
+# run python setup.py build_mo
+# Download a translation in MO format from Launchpad
+# Copy the .mo file to tortoisehg\locale\XX\LC_MESSAGES\tortoisehg.mo where XX is the locale
+# Set environment variable LANG=XX
+
+try hgtk user or some other commands.
+
+=== Contributing translations on the unstable branch ===
+
+Note that this is only for advanced translators as it require more steps and your translations may be discarded before released.
+
+# Generate .pot file from default branch
+# Upload .pot to launchpad unstable series
+# Download .po from launchpad unstable series
+# Translate
+# Upload changed .po to launchpad unstable series
+# Commit .po to default branch
+
+You may want to skip steps as appropriate. In particular, it is possible to work without using launchpad. In this case it is your responsibility that your .po file is uploaded to launchpad before the next release of TortoiseHg.

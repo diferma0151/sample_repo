@@ -1,0 +1,73 @@
+== Contributing
+
+If your changes are simple enough to be contained within a few changesets, it
+is preferable for patches to be sent to the
+[[http://groups.google.com/group/thg-dev/about?hl=en|thg-devel]] mailing list.
+This expedites the review of the patches, and allows other developers to
+comment directly on your changes.  If possible, please //also// attach your
+patches. This makes importing patches easier for developers that rely on
+webmail service.
+
+It is typically easier for everyone (including yourself) if you proceed as follows:
+* check in your fix locally, give it a meaningful commit message explaining what you are fixing, 
+* then use the email tool (from the TortoiseHG synchronize dialog) to send it to this list.
+
+Remember to use git patches if you are submitting binary files, symlinks, or
+permission changes. Setting **[diff] git = 1** in your Mercurial.ini or .hgrc makes this selection permanent and global.
+
+You should indicate to which branch your patch applies (stable or default).
+Bug fix patches should be based on stable unless the bug they address is only
+on the default branch.
+
+Large changes that do not fit within a few patches could be published in a
+public repository. If you don't have your own server, you can use one of the
+[[http://www.selenic.com/mercurial/wiki/index.cgi/MercurialHosting|free hosting services]] on the net.  Obviously we prefer Bitbucket.  Just open an
+account, fork the appropriate repository, and start hacking.
+
+Please also note that TortoiseHg has adopted the **unix line end** style of the
+Mercurial sources, even though we are targeting the Windows platform.
+
+== General Guidelines
+
+The Mercurial wiki has a good page with [[http://www.selenic.com/mercurial/wiki/index.cgi/SuccessfulPatch|suggestions]] for contributing patches.  In general these are also applicable for TortoiseHg.
+
+== Guidelines For Commit Messages
+
+* If your change is in response to an issue in the bug tracker, you should use [[http://trac.edgewall.org/browser/trunk/contrib/trac-post-commit-hook|trac style]] commands in your commit message:
+** Syntax:  //verb// [# or issue or nothing] //number//
+** Verbs:   close(s), fix(es), reopen(s)
+** Examples: fixes #12, closes #20, reopen issue 15
+** The Bitbucket issue will get updated when your change pushed
+* Make sure your commit message starts with a reasonable one-line summary.
+* Keep all lines, especially the summary line, below 80 (72 preferred) characters.
+* If you are going to give more detail in the commit message, please keep a blank line below the summary line, right before the start of the detail.
+* Prefix the commit summary with a short text identifying the area the patch is targeting (see below).
+* We prefer no capitalization in the summary line, unless required by quoted variable or file names.
+
+Here's some examples by peso to help illustrate the guidelines:
+
+* http://bitbucket.org/tortoisehg/thg/changeset/160e2fef05e9/
+* http://bitbucket.org/tortoisehg/thg/changeset/959fb18266a7/
+
+=== Summary Prefixes
+
+The standard prefixes we've used so far (extracted from the revision history) :
+* cmenu - context menu extension
+* overlay - overlay icons extension
+* thg - generic change that affects thg
+* <module> - changes made to <module> in tortoisehg/thg/ subdir
+* contrib/<module> - changes made to <module> in contrib subdir
+* wix - on binary installer (WiX, config files, etc)
+* setup - changes in setup.py
+* py2exe - related to py2exe (in setup.py)
+* icons - icon maintenance
+* doc - contributions to the documentation
+* nautilus - nautilus integration
+
+Please note that there's no standard per se, just use your common sense if you
+encounter a new area, or even revise an existing one. Please refer to the
+changelog of TortoiseHg if in doubt, or consult the mailing lists.
+
+The general idea is to be able to identify the areas that a patch targets,
+while consuming the minimum amount of characters on the summary line.
+

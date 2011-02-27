@@ -1,0 +1,63 @@
+= Debugging Dialogs =
+
+Debugging dialogs usually requires running the thg command from a command line window
+
+* set THGDEBUG in your environment
+* disable 'Fork GUI' and 'Capture stderr' in your global settings
+* launch thg from the command line
+
+To get full dumps of all exceptions, including those that are possibly expected,
+add these two lines to your global settings file.
+
+{{{
+[ui] traceback=1
+}}}
+
+If you have a bit of python knowledge, you can also use:  thg --debugger <command>
+
+=Debugging the shell extension=
+
+==Windows==
+#Enable Debugging (below)
+#start a new explorer or restart the explorer:
+** new explorer: {{{explorer /separate}}} (no path!)
+** kill all explorer in the task manager (desktop disapears) and execute explorer (in a dos window or on the start entry of the task manager)  or
+** log off and log on
+
+See also http://msdn.microsoft.com/en-us/library/cc144064(VS.85).aspx for some info bits about Running and Testing Shell Extensions on Windows
+
+== Enabling Debug Output on Windows ==
+Debug output for the shell extension is now disabled by default (see ddce4294c9ef, which is in 0.9).
+
+It needs to be enabled in the registry by setting:
+
+  [HKEY_CURRENT_USER\Software\TortoiseHg]
+  "DebugShellExt"="1"
+
+There is a file
+
+  win32/shellext/DebugShellExt.reg
+
+in the sources which does this. Just double click it to load it into the registry or start regedit and do 'Import...' from the file menu.
+
+Information about developing and testing the shell extension can be found in the document **win32/shellext/README.txt** in the sources.  README.txt has a section "Testing" which mentions this.
+
+==Nautilus==
+set the environment variable DEBUG_THG for nautulus:
+* testing in separate process: {{{DEBUG_THG=Ne TMPDIR=/tmp/anydir/ --no-desktop nautilus [path]}}}
+* testing with main instance: {{{nautilus -q; DEBUG_THG=NOe nautilus}}} (Quits all nautilus windows!)
+* permanent: set DEBUG_THG in a file which is read on session start (~/.profile, ~/.xprofile)
+
+===Values of DEBUG_THG===
+Uppercase letters for modules, lowercase letters for specific parts of them
+|= |=Module|
+|O|OverlayCache|
+|N|Nautilus|
+ 
+
+|= |=part|
+|e|Error (in module)|
+
+===restart nautilus===
+* killall nautilus (the session restarts nautilus automatically, stdin and stdout go to ~/.xsession-errors)
+* nautilus -q; nautilus (stdin and stdout are on the console)

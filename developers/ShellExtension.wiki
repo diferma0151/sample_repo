@@ -1,0 +1,5 @@
+This information has been moved into the file:\\
+
+http://bitbucket.org/tortoisehg/thg/src/tip/win32/shellext/README.txt
+
+(reference: <<changeset b09c95acd56e>>)

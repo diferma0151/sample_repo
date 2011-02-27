@@ -5,7 +5,7 @@ where all contributors can keep track of ongoing work.  For more user-centric
 information, please visit the [[Home|main]] wiki.  Bug reports and feature
 requests should go in the repository's issue tracker.
 
-=== [[developers/repositories|Repository Overview]] | [[developers/contributing|Submitting Patches]] | [[developers/installer|Building an Installer]] |  [[developers/Debugging|Debugging]]  | [[developers/Translation|Translation]] | [[developers/SourceInstall|Source Install]] ===
+=== [[developers/repositories|Repository Overview]] | [[developers/contributing|Submitting Patches]] | [[developers/installer|Building an Installer]] |  [[developers/Debugging|Debugging]]  | [[developers/Translation|Translation]] ===
 
 Contributors are encouraged to join the
 [[http://groups.google.com/group/thg-dev/topics?hl=en|tortoisehg-develop]] and
@@ -13,3 +13,9 @@ Contributors are encouraged to join the
 mailing lists, and should also be aware of
 [[http://www.selenic.com/mercurial/wiki/index.cgi/API_Changes|API changes]]
 within Mercurial itself.
+
+=== [[developers/SourceInstall|Source Install]] ===
+
+* For Windows users: see [[developers/Windows]]
+* For Mac users: see [[developers/MacOSX]]
+* For Linux users: see [[developers/Linux]]

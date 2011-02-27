@@ -1,12 +1,6 @@
 Feel free to add new categories as necessary.
 
-This is where you register features that are unimplemented or badly implemented in the new Qt dialogs
-
-Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} must be implemented before TortoiseHg 2.0 is out of beta.
-
-== SJB short term TODO ==
-
-* test shelve tool against DOS eoln text files
+This is where you register features that are unimplemented or badly implemented in the new Qt dialogs.
 
 == repo registry ==
 
@@ -21,18 +15,18 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * minimize/maximize buttons on all appropriate dialogs and main windows
 * be more verbose in window titles
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
-* Qsci tab stops suffer from off-by-one when showing diffs, see rejects.py for potential workaround.
 * qtlib.ExpanderLabel needs to manage its own sub-layout
 * Go through hglib and move applicable routines to thgrepo, fix hgqt usage
+* Dragging of filenames does not work into Visual Studio or Skype (wrong URI type?, permissions?)
 
 == chunks/shelve ==
 
-* multi-select file list (not for 2.0)
-* file/diff toolbar buttons (not for 2.0)
+* multi-select file list
+* file/diff toolbar buttons
 
 == Revset/Filter toolbar ==
 
-* entries in branch combo should have the configured branch color (not for 2.0)
+* entries in branch combo should have the configured branch color
 
 == Workbench ==
 
@@ -40,7 +34,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 * paint tag names on right side of description
 * longsummary() should take a width and use a glyph when supported
 * generic progress bars for most operations, to show busy state
-* Dragging of filenames does not work into Visual Studio or Skype (wrong URI type?, permissions?)
 * patch csinfo in revpanel should show path to patch
 * make graph use the branch colors from the settings config (not for 2.0)
 * Should the command line honor the '--limit n' option, like the gtk version does ?
@@ -75,9 +68,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == Manifest Viewer ==
 
-* GOAL: merge functionality with revDetailsWidget (after 2.0 release)
+* GOAL: merge functionality with revDetailsWidget
 
-* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} right-clicking on files should allow a diff-to-parent for affected files only.
+* right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision
 * Complete the annotate view with the hovering info as in the separate annotate dialog ?
 * filter files by name.
@@ -92,7 +85,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == status / wctxactions ==
 
-(after 2.0 release)
 * switch wctxactions to generate QActions for parent widget
 * QActions should be given shortcuts and icons
 * restrict action sensitivity based on selected files
@@ -103,7 +95,6 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 == backout, compress, rebase, bisect ==
 
-(after 2.0 release)
 * turn into a QWizard based dialogs
 * clean up merge wizard
 
@@ -156,7 +147,7 @@ using
 ** And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog
 ** I could also add an extra page to the setting dialog, for assigning colors to usernames?
 ** I also see the hgqt changelog does not yet use those username color settings. I could look into that too?
-* merge annotate.Annotate with fileview.HgFileView (after 2.0)
+* merge annotate.Annotate with fileview.HgFileView
 * support annotation of working copy (rev=None); needs changes on Mercurial-side.
 
 == docklog (ConsoleWidget) ==
@@ -170,7 +161,6 @@ using
 
 == MQ ==
 
-(all 3 post 2.0 afaic)
 * The widget provides buttons for pushing/popping one or all patches. I miss the two that do 'push/pop up to selected patch' (=qgoto).
 * It should be possible to perform qreorder from this widget, by dragging patches in the list.
 * It should be possible to call qfold.py from this widget.
@@ -220,5 +210,4 @@ using
 
 == Documentation ==
 
-* {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0 blocker}} Update documentation
-* Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya (after 2.0 release?)
+* Update localized documents (as possible) ... I heard Sphinx 1.1 introduces gettext-based i18n system - yuya

@@ -10,7 +10,8 @@ To get full dumps of all exceptions, including those that are possibly expected,
 add these two lines to your global settings file.
 
 {{{
-[ui] traceback=1
+[ui]
+traceback=1
 }}}
 
 If you have a bit of python knowledge, you can also use:  thg --debugger <command>

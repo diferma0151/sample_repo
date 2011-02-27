@@ -12,7 +12,7 @@ it locally/offline, add images or any other file type.
 Go ahead and try:
 
 {{{
-$ hg clone http://bitbucket.org/tortoisehg/stable/wiki/
+$ hg clone http://bitbucket.org/tortoisehg/thg/wiki/
 }}}
 
 Wiki pages are normal files, with the .wiki extension. You can edit them locally, as well as creating new ones.

@@ -1,6 +1,6 @@
-TortoiseHg 2.0 is scheduled to be release on March 1, or on the same day as Mercurial 1.8.
+TortoiseHg 2.0 is scheduled to be released on March 1, or on the same day as Mercurial 1.8.
 
-Following the 2.0 release, a number of improvements are planned for 2.1 (July 1, 2011)
+A number of improvements are planned for 2.1 (July 1, 2011)
 
 * Merge wizard refactor to not use a QStackedWidget
 * Refactor bisect, compress, rebase and backout as QWizard dialogs

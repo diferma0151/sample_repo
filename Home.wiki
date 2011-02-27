@@ -7,9 +7,9 @@ Future official home of the TortoiseHg development repository; currently the hom
 * [[RoadMap]]
 * [[KeySequences]] shortcuts used in various dialogs
 * [[OpenAtLine]] new feature
-* For Windows users: see [[developers/SourceInstall/Windows]]
-* For Mac users: see [[developers/SourceInstall/MacOSX]]
-* For Linux users: see [[developers/SourceInstall/Linux]]
+* For Windows users: see [[developers/Windows]]
+* For Mac users: see [[developers/MacOSX]]
+* For Linux users: see [[developers/Linux]]
 
 Be aware that the PyQt port of TortoiseHg is being developed against the tip of Mercurial's default branch.  We are not trying to support older releases of Mercurial.
 

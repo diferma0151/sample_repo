@@ -56,8 +56,9 @@ Features marked with {{http://jira.atlassian.com/images/icons/newfeature.gif|2.0
 
 * show patch numbers (in series), and rev numbers of applied
 * allow more than one patch to be selected for reordering as a group
-* when a reorder was done, and you rename a patch via the cmenu of the list, the reordering is undone
+* when a reorder was done, and you rename a patch via the cmenu of the list, the reordering shouldn't be undone
 * make the dialog show the summary with min 80 chars
+* make the patch description a second column
 
 == RevDetailsWidget ==
 

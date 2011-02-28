@@ -31,6 +31,7 @@ Before each feature release, we will progressively lock down the code:
 === Release 2.1 (Targeted July 1, 2011): ===
 
 * Merge wizard refactor to not use a QStackedWidget
+* patchctx refactor - use patch.py for initial parse, then record only for shelve
 * Refactor bisect, compress, rebase and backout as QWizard dialogs
 * Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner
 * Use status widget's file tree in MQ widget

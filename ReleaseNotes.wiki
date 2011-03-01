@@ -38,8 +38,8 @@ Released March 1, 2011
 This is a major feature release.  All of the TortoiseHg applications
 have been converted from PyGtk to PyQt.
 
-http://tortoisehg.bitbucket.org/manual/2.0/whatsnew.html
-http://tortoisehg.bitbucket.org/screenshots.html
+* http://tortoisehg.bitbucket.org/manual/2.0/whatsnew.html
+* http://tortoisehg.bitbucket.org/screenshots.html
 
 == Packaged Versions ==
 

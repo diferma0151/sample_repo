@@ -25,6 +25,31 @@ an older version of Mercurial, please consult the following chart:
 | 1.4.x | 0.9.n |
 | 1.5.x | 1.0.n |
 | 1.6.x | 1.1.n |
-| 1.7.x | 1.1.8 |
+| 1.7.x | 1.1.9.1 |
 | 1.8.x | 2.0.n |
 | hg-main tip | thg default tip |
+
+----
+
+= TortoiseHg 2.0 =
+
+Released March 1, 2011
+
+This is a major feature release.  All of the TortoiseHg applications
+have been converted from PyGtk to PyQt.
+
+http://tortoisehg.bitbucket.org/manual/2.0/whatsnew.html
+http://tortoisehg.bitbucket.org/screenshots.html
+
+== Packaged Versions ==
+
+* Mercurial 1.8
+* dulwich 0.7.0
+* Qt 4.7.1
+* PyQt 4.8.2
+
+== Installer ==
+
+* x64 installers now provide 64bit native PyQt applications
+
+----

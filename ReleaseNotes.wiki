@@ -44,9 +44,9 @@ have been converted from PyGtk to PyQt.
 == Packaged Versions ==
 
 * Mercurial 1.8
-* dulwich 0.7.0
 * Qt 4.7.1
 * PyQt 4.8.2
+* dulwich 0.7.0
 
 == Installer ==
 

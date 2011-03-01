@@ -51,5 +51,6 @@ http://tortoisehg.bitbucket.org/screenshots.html
 == Installer ==
 
 * x64 installers now provide 64bit native PyQt applications
+* hg.exe and thg.exe are not in %PATH%, we add a bin\ folder with short batch files
 
 ----

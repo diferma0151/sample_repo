@@ -92,6 +92,7 @@ This is where you register features that are unimplemented or badly implemented 
 * switch commit and quickop to use status' Runner
 * add a 'second parent' toggle toolbar button to fileview, remove from filelistmodel
 * use Qt's filesystem monitor to report when the working folder is dirty
+* an action for files ending with .rej that opens rejects tool
 
 == backout, compress, rebase, bisect ==
 

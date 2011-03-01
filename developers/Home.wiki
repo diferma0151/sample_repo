@@ -14,7 +14,7 @@ mailing lists, and should also be aware of
 [[http://www.selenic.com/mercurial/wiki/index.cgi/API_Changes|API changes]]
 within Mercurial itself.
 
-=== [[developers/SourceInstall|Source Install]] ===
+=== Source Install ===
 
 * For Windows users: see [[developers/Windows]]
 * For Mac users: see [[developers/MacOSX]]

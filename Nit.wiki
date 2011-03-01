@@ -45,6 +45,10 @@ This is where you register features that are unimplemented or badly implemented 
 * handle search/edit events from HgFileView
 * interface to grep at revision or disable those menus
 
+== thgimport ==
+
+* browse dialogs should be rooted to repo.root, not cwd
+
 == qreorder ==
 
 * show patch numbers (in series), and rev numbers of applied

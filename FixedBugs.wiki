@@ -1,1 +1,13 @@
-Not yet applicable
+== Fixed since 2.0 ==
+
+These bugs are fixed in the latest [[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|nightly builds]]
+
+* #183
+* #187
+* #194
+* #181
+* #173
+* #204
+* #177 (partially fixed)
+* #202
+* #203

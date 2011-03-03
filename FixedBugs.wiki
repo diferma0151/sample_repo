@@ -8,6 +8,7 @@ These bugs are fixed in the latest [[http://bitbucket.org/tortoisehg/thg-winbuil
 * #183 - visdiff: TypeError: argument of type 'NoneType' is not iterable
 * #187 - documentation fix (f.i.)
 * #194 - qtlib: TypeError: signal clicked(bool) has 1 argument(s)
+* #198 - compare file history: convert file data to unicode before displaying
 * #202 - workbench: Abort: no username supplied (see "hg help config")
 * #203 - compress: AttributeError: 'Widget' object has no attribute 'stbar'
 * #204 - commit: "No files found for this operation"

@@ -1,6 +1,6 @@
 == Fixed since 2.0 ==
 
-These bugs are fixed in the latest [[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|nightly builds]]
+These bugs are fixed on the tip of the stable branch.
 
 * #173 - manifest: IndexError: list index out of range
 * #177 (partially fixed) - show bookmarks in update dialog
@@ -13,3 +13,5 @@ These bugs are fixed in the latest [[http://bitbucket.org/tortoisehg/thg-winbuil
 * #203 - compress: AttributeError: 'Widget' object has no attribute 'stbar'
 * #204 - commit: "No files found for this operation"
 * #212 - shelve: AttributeError: 'ChunksWidget' object has no attribute 'mtime'
+
+Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

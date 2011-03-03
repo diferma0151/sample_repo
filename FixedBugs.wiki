@@ -11,3 +11,4 @@ These bugs are fixed in the latest [[http://bitbucket.org/tortoisehg/thg-winbuil
 * #202 - workbench: Abort: no username supplied (see "hg help config")
 * #203 - compress: AttributeError: 'Widget' object has no attribute 'stbar'
 * #204 - commit: "No files found for this operation"
+* #212 - shelve: AttributeError: 'ChunksWidget' object has no attribute 'mtime'

@@ -51,9 +51,10 @@ And another one [[http://draketo.de/licht/freie-software/mercurial/kurze-einf-hr
 
 == Bugs and Feature Requests ==
 
+Before submitting new bugs, please consult the open [[http://bitbucket.org/tortoisehg/thg/issues/?kind=bug&status=open|open bug list]] and **[[FixedBugs]]** for the list of bugs fixed since the last stable release.
+
 Please use the Bitbucket issue tracker (above tab) to submit bugs and feature requests.  See [[developers/Home|developers]] wiki for details on contributing patches or other work.
 
-Before submitting new bugs, please consult the open [[http://bitbucket.org/tortoisehg/thg/issues/?kind=bug&status=open|open bug list]] and [[FixedBugs]] for the list of bugs fixed since the last stable release.
 
 == Mailing Lists ==
 

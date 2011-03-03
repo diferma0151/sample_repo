@@ -1,4 +1,4 @@
-== Hacking TortoiseHg on Mac OS X ==
+== TortoiseHg on Mac OS X ==
 
 <<toc>>
 

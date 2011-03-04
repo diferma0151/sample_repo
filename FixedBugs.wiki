@@ -14,5 +14,6 @@ These bugs are fixed on the tip of the stable branch.
 * #204 - commit: "No files found for this operation"
 * #212 - shelve: AttributeError: 'ChunksWidget' object has no attribute 'mtime'
 * #214 - settings: UnicodeDecodeError from username
+* #229 - x86 packages did not have all the SVN SWIG DLLs
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

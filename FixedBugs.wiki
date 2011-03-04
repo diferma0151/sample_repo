@@ -13,5 +13,6 @@ These bugs are fixed on the tip of the stable branch.
 * #203 - compress: AttributeError: 'Widget' object has no attribute 'stbar'
 * #204 - commit: "No files found for this operation"
 * #212 - shelve: AttributeError: 'ChunksWidget' object has no attribute 'mtime'
+* #214 - settings: UnicodeDecodeError from username
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

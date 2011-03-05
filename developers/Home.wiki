@@ -19,3 +19,12 @@ within Mercurial itself.
 * For Windows users: see [[developers/Windows]]
 * For Mac users: see [[developers/MacOSX]]
 * For Linux users: see [[developers/Linux]]
+
+=== Planned Features ===
+
+* [[Nit]] list
+* [[upcoming-release-notes|upcoming release notes]]
+
+=== Internals ===
+
+* [[developers/EncodingStrategy]] - how to handle character encoding

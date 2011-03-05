@@ -4,11 +4,12 @@ These bugs are fixed on the tip of the stable branch.
 
 * #173 - manifest: IndexError: list index out of range
 * #177 (partially fixed) - show bookmarks in update dialog
+* #178 - visdiff: KeyError from toolSelect
 * #181 - visdiff: TypeError: p1dirdiff() takes exactly 2 arguments (1 given)
 * #183 - visdiff: TypeError: argument of type 'NoneType' is not iterable
 * #187 - documentation fix (f.i.)
 * #189 - settings: no configuration for issue tracker linking
-* #194 - qtlib: TypeError: signal clicked(bool) has 1 argument(s)
+* #194 - qtlib: TypeError: signal clicked(bool) has 1 argument(s)Key
 * #197 - fileview: fix diff markers in file mode
 * #198 - compare file history: convert file data to unicode before displaying
 * #202 - workbench: Abort: no username supplied (see "hg help config")

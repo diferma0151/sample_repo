@@ -1,0 +1,13 @@
+== Encoding Strategy ==
+
+* All Mercurial inputs and outputs are in local encoding
+* All QStrings are in unicode
+* All strings passed to Qt are converted to a QString
+* All strings returned by Qt APIs are QString
+* All strings emitted through signals are converted to QString
+* Our gettext wrapper _() returns unicode strings
+* Configuration files are assumed to be in local encoding by Mercurial
+
+=== See also ===
+
+* http://mercurial.selenic.com/wiki/EncodingStrategy

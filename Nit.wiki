@@ -1,4 +1,4 @@
-Feel free to add new categories as necessary.
+Feel free to add new categories as necessary.  See **[[FixedBugs]]**
 
 This is where you register features that are unimplemented or badly implemented in the new Qt dialogs.
 

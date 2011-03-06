@@ -3,7 +3,7 @@
 These bugs are fixed on the tip of the stable branch.
 
 * #173 - manifest: IndexError: list index out of range
-* #177 (partially fixed) - show bookmarks in update dialog
+* #177 - show bookmarks in update dialog
 * #178 - visdiff: KeyError from toolSelect
 * #181 - visdiff: TypeError: p1dirdiff() takes exactly 2 arguments (1 given)
 * #183 - visdiff: TypeError: argument of type 'NoneType' is not iterable

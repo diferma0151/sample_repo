@@ -25,5 +25,6 @@ These bugs are fixed on the tip of the stable branch.
 * #231 - AttributeError: 'SyncWidget' object has no attribute 'targetargs'
 * #233 - sync: keep bundle file in local encoding
 * #234 - clipboard: fix encoding of data sent to the clipboard
+* #246 - merge: AttributeError: 'ResultPage' object has no attribute 'reject'
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

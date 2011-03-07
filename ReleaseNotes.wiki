@@ -50,7 +50,7 @@ have been converted from PyGtk to PyQt.
 
 == Installer ==
 
-* x64 installers now provide 64bit native PyQt applications
+* x64 installers now provide 64bit native PyQt applications, which means they no longer install in Program Files (x86), they install in Program Files.
 * hg.exe and thg.exe are not in %PATH%, we add a bin\ folder with short batch files
 
 ----

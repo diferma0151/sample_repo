@@ -35,7 +35,8 @@ This is where you register features that are unimplemented or badly implemented 
 * generic progress bars for most operations, to show busy state
 * patch csinfo in revpanel should show path to patch
 * make graph use the branch colors from the settings config (not for 2.0)
-* Should the command line honor the '--limit n' option, like the gtk version does ?
+* Should the command line honor the '--limit n' option, like the gtk version does?
+** I don't see a need, but it could generate a limit() revision set filter - sjb
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
  
 == file history dialog ==

@@ -41,10 +41,8 @@ This is where you register features that are unimplemented or badly implemented 
  
 == file history dialog ==
 
-* handle menu events from repoview
+* handle menu events from repoview (#260)
 * diff to local revision menu option
-* handle search/edit events from HgFileView
-* interface to grep at revision or disable those menus
 
 == qreorder ==
 

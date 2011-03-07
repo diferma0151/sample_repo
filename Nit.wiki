@@ -16,12 +16,7 @@ This is where you register features that are unimplemented or badly implemented 
 
 == General ==
 
-* minimize/maximize buttons on all appropriate dialogs and main windows
-* be more verbose in window titles
-* limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
 * qtlib.ExpanderLabel needs to manage its own sub-layout
-* Go through hglib and move applicable routines to thgrepo, fix hgqt usage
-* Dragging of filenames does not work into Visual Studio or Skype (wrong URI type?, permissions?)
 
 == chunks/shelve ==
 
@@ -41,6 +36,7 @@ This is where you register features that are unimplemented or badly implemented 
 * patch csinfo in revpanel should show path to patch
 * make graph use the branch colors from the settings config (not for 2.0)
 * Should the command line honor the '--limit n' option, like the gtk version does ?
+* limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
  
 == file history dialog ==
 

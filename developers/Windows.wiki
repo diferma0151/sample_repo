@@ -15,7 +15,7 @@ Once all of that is in place, you should be able to cd into the clone and start 
 python thg
 }}}
 
-To see the list of commands available, use **thg --help**
+To see the list of commands available, use **python thg --help**
 
 == 64bit ==
 

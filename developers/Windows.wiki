@@ -3,7 +3,7 @@
 To be able to evaluate, test, or hack on TortoiseHg on Windows, you need to install:
 
 * TortoiseHg binary installer (for shell extension and bootstrap) [[https://bitbucket.org/tortoisehg/thg/downloads|download]]
-* Python 2.6.6 [[http://www.python.org/download/releases/2.6.6/|download]]
+* Python 2.6.6 [[http://www.python.org/download/releases/2.6.6/|download python-2.6.6.msi]]
 * Mercurial 1.8 or later Python source package [[https://bitbucket.org/tortoisehg/thg-winbuild/downloads/|download mercurial-1.8.win32-py2.6.exe]]
 * pywin32 [[http://sourceforge.net/projects/pywin32/files/pywin32/Build216/|download pywin32-216.win32-py2.6.exe]]
 * PyQt >= 4.7, includes Qt and QSci [[http://www.riverbankcomputing.co.uk/software/pyqt/download|download PyQt-Py2.6-x86-gpl-4.8.3-1.exe]]

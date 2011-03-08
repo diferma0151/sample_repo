@@ -6,8 +6,8 @@ To be able to evaluate, test, or hack on TortoiseHg on Windows, you need to inst
 * Python 2.6.6 [[http://www.python.org/download/releases/2.6.6/|download]]
 * Mercurial 1.8 or later Python source package [[https://bitbucket.org/tortoisehg/thg-winbuild/downloads/|download mercurial-1.8.win32-py2.6.exe]]
 * pywin32 [[http://sourceforge.net/projects/pywin32/files/pywin32/Build216/|download]]
-* PyQt >=  4.7 (Qt>=4.6) (includes Qsci) from [[http://www.riverbankcomputing.co.uk/software/pyqt/download|download]]
-* A TortoiseHg clone: {{{ hg clone http://bitbucket.org/tortoisehg/thg thg }}}
+* PyQt >= 4.7, includes Qt and QSci [[http://www.riverbankcomputing.co.uk/software/pyqt/download|download PyQt-Py2.6-x86-gpl-4.8.3-1.exe]]
+* Clone the TortoiseHg source repo: {{{ hg clone http://bitbucket.org/tortoisehg/thg thg }}}
 
 Once all of that is in place, you should be able to cd into the clone and start the Workbench with:
 

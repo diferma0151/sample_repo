@@ -1,42 +1,24 @@
-== Hacking TortoiseHg Qt on Windows ==
+== Hacking TortoiseHg on Windows ==
 
-To be able to evaluate, test, or hack on the TortoiseHg Qt port, you need to install:
+To be able to evaluate, test, or hack on TortoiseHg on Windows, you need to install:
 
-* Python 2.6.X
-* pywin32
-* iniparse >= 0.3.1 (optional)
-* pygments (optional)
-* PyQt >=  4.7 (Qt>=4.6) (includes Qsci) from [[http://www.riverbankcomputing.co.uk/software/pyqt/download|riverbank]]
-* TortoiseHg >= 1.1 binary installer (for shell extension)
+* TortoiseHg binary installer (for shell extension and bootstrap) [[https://bitbucket.org/tortoisehg/thg/downloads|download]]
+* Python 2.6.6 [[http://www.python.org/download/releases/2.6.6/|download]]
+* Mercurial 1.8 or later Python source package [[https://bitbucket.org/tortoisehg/thg-winbuild/downloads/|download mercurial-1.8.win32-py2.6.exe]]
+* pywin32 [[http://sourceforge.net/projects/pywin32/files/pywin32/Build216/|download]]
+* PyQt >=  4.7 (Qt>=4.6) (includes Qsci) from [[http://www.riverbankcomputing.co.uk/software/pyqt/download|download]]
+* A TortoiseHg clone: {{{ hg clone http://bitbucket.org/tortoisehg/thg thg }}}
 
-Then you:
-* Clone the Mercurial default repo from http://selenic.com/repo/hg
-* Get the 6 *.pyd files from the mercurial folder from the library.zip file from your TortoiseHg installation, and copy them into the mercurial folder in the cloned default Hg repo.
-* Clone the TortoiseHg thg (qt port) repo from http://bitbucket.org/tortoisehg/thg
+Once all of that is in place, you should be able to cd into the clone and start the Workbench with:
 
-Add the following thg.cmd script into the root folder of your TortoiseHg Qt clone :
 {{{
-@echo off
-rem
-rem thg.cmd
-rem
-setlocal
-set HGPATH=<path\to>\hg-default
-set cmdpath=<path\to>\thg-qt
-echo --- running thg from %cmdpath%
-python "%cmdpath%\thg" %*
-rem set THGDEBUG=1
-rem python "%cmdpath%\thg" --nofork %
-endlocal
+python thg
 }}}
 
-Make sure your python.exe is in de execution path, and from the root folder of  the cloned TortoiseHg qt clone, with
-{{{
-thg <command>
-}}}
-you can start evaluating/testing/hacking.
+== Extras ==
 
-To work with a test repo other than the thg-qt repo itself, just make sure the /path/to/thg-qt is in the path, so your thg.cmd script is found.
+* iniparse >= 0.3.1 (optional, allows you to edit configuration files)
+* pygments (optional, allows the commit tool to offer variable completions)
 
 For URLs and other helpful info, see:
 

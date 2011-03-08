@@ -28,7 +28,7 @@ To use the settings tool (repoconfig, userconfig) you must have http://code.goog
 If pygments is installed, the commit tool will provide completions for variable
 names in the source file you are previewing.
 
-Here is a blog [[http://g0blin.co.uk/programming/installing-tortoisehg-2-0-under-ubuntu-10-10/|post]] about installing TortoiseHg 2.0 as source on Ubuntu 10.10
+Here is a blog **[[http://g0blin.co.uk/programming/installing-tortoisehg-2-0-under-ubuntu-10-10/|post]]** about installing TortoiseHg 2.0 as source on Ubuntu 10.10
 
 == Visual Diffs ==
 

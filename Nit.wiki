@@ -2,10 +2,6 @@ Feel free to add new categories as necessary.  See **[[FixedBugs]]**
 
 This is where you register features that are unimplemented or badly implemented in the new Qt dialogs.
 
-== visdiff ==
-
-* visdiff dialog throws off QTimer deletion errors, perhaps it needs a parent
-
 == repo registry ==
 
 * make reordering of groups (along with their content) possible (see also #52)
@@ -14,7 +10,7 @@ This is where you register features that are unimplemented or badly implemented 
 * CTRL+drag looks like a copy, but actually performs a move
 * RepoTreeModel should emit dataChanged signal when repo.shortname changed.
 
-== General ==
+== qtlib ==
 
 * qtlib.ExpanderLabel needs to manage its own sub-layout
 

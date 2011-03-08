@@ -15,6 +15,10 @@ Once all of that is in place, you should be able to cd into the clone and start 
 python thg
 }}}
 
+== 64bit ==
+
+If it is your preference, you can download and install the 64bit Python, Mercurial, PyQt, pywin32, etc and run TortoiseHg as a 64 bit application.  In fact, you can have both 32bit and 64bit packages installed at the same time.  Except for the TortoiseHg binary installer, you must install the x64 package on an x64 O/S because of the shell extension.
+
 == Extras ==
 
 * iniparse >= 0.3.1 (optional, allows you to edit configuration files)

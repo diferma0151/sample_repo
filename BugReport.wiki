@@ -7,9 +7,9 @@ The first step should be to consult the list of **[[FixedBugs]]** that are alrea
 If your bug is truly new, or if you have an idea for an enhancement, report it to our issue
 [[https://bitbucket.org/tortoisehg/thg/issues/new|tracker]].  Since 2.0.1, the bug report
 dialog has a **Copy** button that copies the bug text to the clipboard.  Simply paste the
-report into the entry form.
+report into the entry form.  If the bug report is more than a screen full of text, feel free to save it from the dialog and attach it to the new issue.
 
-Frequently, information about the context of what was happening when the bug report was issued is much more important than the stack trace itself.  So if you remember what you were doing when the bug occurred, please add this to the bug report.
+Frequently, information about the context of what was happening when the bug occurred is much more important than the stack trace itself.  So if you remember what you were doing at the time, please add this to the bug report.
 
 Please leave new issues assigned to the 'tortoisehg' user.  This ensures emails for the issue are distributed to the appropriate mailing list.
 

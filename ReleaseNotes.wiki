@@ -33,7 +33,7 @@ an older version of Mercurial, please consult the following chart:
 
 = TortoiseHg 2.0.1 =
 
-Released March 9, 2011
+Released March 10, 2011
 
 This is a bug fix release with minor improvements
 

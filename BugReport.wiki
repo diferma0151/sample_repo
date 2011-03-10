@@ -1,6 +1,6 @@
 == Reporting Bugs and Feature Enhancements ==
 
-First of all, if you have arrived at this wiki page from the link on our bug report dialog, **thank you** for spending the time to report this bug to us.
+First of all, **thank you** for spending the time to report this bug to us.
 
 The first step should be to consult the list of **[[FixedBugs]]** that are already fixed on the tip of the stable branch, and are likely already in the [[http://bitbucket.org/tortoisehg/thg-winbuild/downloads|nightly builds]]. Also consult the [[http://bitbucket.org/tortoisehg/thg/issues/?kind=bug&status=open|open bug list]].
 

@@ -1,10 +1,11 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.0.1 ==
+== Fixed since 2.0.2 ==
 
 These bugs are fixed on the tip of the stable branch.
 
-N/A
+* #306 - outgoing can cause IndexError in setRevisionSet
+* #311 - UnicodeDecodeError in rename dialog
 
 Improvements:
 

@@ -31,6 +31,12 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.0.2 =
+
+Released March 10, 2011
+
+This is a quick fix build for a regression (#309) in 2.0.1.
+
 = TortoiseHg 2.0.1 =
 
 Released March 10, 2011

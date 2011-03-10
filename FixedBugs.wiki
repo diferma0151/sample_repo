@@ -9,6 +9,7 @@ These bugs are fixed on the tip of the stable branch.
 * #178 - visdiff: KeyError from toolSelect
 * #181 - visdiff: TypeError: p1dirdiff() takes exactly 2 arguments (1 given)
 * #183 - visdiff: TypeError: argument of type 'NoneType' is not iterable
+* #185 - settings: extensions page was confused by 'hgext.' prefixes
 * #187 - documentation fix (f.i.)
 * #189 - settings: no configuration for issue tracker linking
 * #194 - qtlib: TypeError: signal clicked(bool) has 1 argument(s)Key
@@ -33,6 +34,7 @@ These bugs are fixed on the tip of the stable branch.
 * #246 - merge: AttributeError: 'ResultPage' object has no attribute 'reject'
 * #264 - sync: catch errors from fingerprint query
 * #268 - show clean file contents
+* #276 - unshelve not applying chunks to dos EOLN files
 * Fix file dragging into applications like VisualStudio
 
 Improvements:

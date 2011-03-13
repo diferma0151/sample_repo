@@ -54,8 +54,7 @@ This is where you register features that are unimplemented or badly implemented 
 * filelistview: forward menu events to parent (revdetails or chunks)
 * investigate hgview's recent support for reST in changelog messages
 * space-efficient diff viewer like one of hgtk
-** combine RevMessage and HgFileView (diff view) so that RevMessage can be scrolled out; current diff view is too small. (i'm not convinced this would be an improvement, please discuss on list first - sjb)
-** provide a way to show all diffs at once, like "[All Files]" of hgtk. - yuja
+* create a standalone changeset or changeset DAG range viewer
 
 == Compress ==
 
@@ -76,7 +75,6 @@ This is where you register features that are unimplemented or badly implemented 
 * flat view for files list
 * ability to show changeset description
 * merge with annotate dialog? with optional filetree dock.
-* move filter bar to be on the content side of the splitter, like commit & revdetails
 
 == status / wctxactions ==
 
@@ -167,7 +165,6 @@ using
 
 * pre-defined colors (like gtklib) (most colors will be user-configurable - steve)
 * appropriate use of QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
-* utilize QIcon.fromTheme() (we should probably adopt a standardized naming scheme first)?
 
 == Bisect Dialog ==
 

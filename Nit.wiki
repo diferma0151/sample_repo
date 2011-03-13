@@ -80,9 +80,6 @@ This is where you register features that are unimplemented or badly implemented 
 
 == status / wctxactions ==
 
-* switch wctxactions to generate QActions for parent widget
-* QActions should be given shortcuts and icons
-* restrict action sensitivity based on selected files
 * give status/wctxactions a cmdui.Runner()
 * switch commit and quickop to use status' Runner
 * add a 'second parent' toggle toolbar button to fileview, remove from filelistmodel

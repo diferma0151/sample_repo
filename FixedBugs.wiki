@@ -20,6 +20,7 @@ These bugs are fixed on the tip of the stable branch.
 * #340 - grep: catch I/O errors while scanning working directory
 * Workbench: properly show search bar state at startup
 * #319 - Workbench: update sync tooltips to reflect their current behavior
+* #346 - UnicodeDecodeError in bug report dialog save function
 
 Improvements:
 

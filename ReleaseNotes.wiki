@@ -97,6 +97,7 @@ This is a bug fix release with minor improvements
 * x64 installers now provide 64bit native PyQt applications, which means they no longer install in Program Files (x86), they install in Program Files.
 * hg.exe and thg.exe are in the %PATH% again, unlike the 2.0 installers.  The bin/ folder has been removed.
 * kdiff3.exe is again in the %PATH%
+* kdiff3.exe was upgraded from the 1.1 release to the 2.0 release.  It appears to have a bug when reading its old configuration files that cause it to save merge results in DOS EOLN.  If you are upgrading a 1.1 install or have run KDiff3 in the past, it is suggested to run the new KDiff3 and check this configurable.
 
 = TortoiseHg 2.0 =
 
@@ -120,5 +121,6 @@ have been converted from PyGtk to PyQt.
 * x64 installers now provide 64bit native PyQt applications, which means they no longer install in Program Files (x86), they install in Program Files.
 * hg.exe and thg.exe are not in %PATH%, we add a bin\ folder with short batch files.  TortoisePlink and Pageant.exe are also in the bin\ folder so they remain in the path.
 * kdiff3.exe is not in the system path, since it uses the same QT dlls as TortoiseHg it needs to be in the root folder.
+* kdiff3.exe was upgraded from the 1.1 release to the 2.0 release.  It appears to have a bug when reading its old configuration files that cause it to save merge results in DOS EOLN.  If you are upgrading a 1.1 install or have run KDiff3 in the past, it is suggested to run the new KDiff3 and check this configurable.
 
 ----

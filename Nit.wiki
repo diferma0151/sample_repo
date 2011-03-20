@@ -1,6 +1,6 @@
 Feel free to add new categories as necessary.  See **[[FixedBugs]]**
 
-This is where you register features that are unimplemented or badly implemented in the new Qt dialogs.
+This is the list of left-over TODOs from the initial port, and some long term ideas.  We should be placing new TODOs in the issue tracker.
 
 == repo registry ==
 
@@ -29,8 +29,7 @@ This is where you register features that are unimplemented or badly implemented 
 * paint tag names on right side of description
 * longsummary() should take a width and use a glyph when supported
 * generic progress bars for most operations, to show busy state
-* patch csinfo in revpanel should show path to patch
-* make graph use the branch colors from the settings config (not for 2.0)
+* make graph use the branch colors from the settings config
 * Should the command line honor the '--limit n' option, like the gtk version does?
 ** I don't see a need, but it could generate a limit() revision set filter - sjb
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
@@ -50,10 +49,8 @@ This is where you register features that are unimplemented or badly implemented 
 
 == RevDetailsWidget ==
 
-* add 'other parent' toggle action to fileview, remove from revdetails
 * filelistview: forward menu events to parent (revdetails or chunks)
 * investigate hgview's recent support for reST in changelog messages
-* space-efficient diff viewer like one of hgtk
 * create a standalone changeset or changeset DAG range viewer
 
 == Compress ==
@@ -80,14 +77,12 @@ This is where you register features that are unimplemented or badly implemented 
 
 * give status/wctxactions a cmdui.Runner()
 * switch commit and quickop to use status' Runner
-* add a 'second parent' toggle toolbar button to fileview, remove from filelistmodel
 * use Qt's filesystem monitor to report when the working folder is dirty
 * an action for files ending with .rej that opens rejects tool
 
 == backout, compress, rebase, bisect ==
 
 * turn into a QWizard based dialogs
-* clean up merge wizard
 
 == Commit ==
 

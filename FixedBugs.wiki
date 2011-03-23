@@ -29,9 +29,9 @@ These bugs are fixed on the tip of the stable branch.
 * #348 - Assign "changelog" font to revisioned text without a lexer
 * #359 - LookupError from ambiguous revision set query
 * #364 - qfold: fix patch message decoding
-* #369 - backout: improve UI at the end of the operation
 * #373 - Fix abort when command needs a repository but was not within one
 * #378 - dropping a patch on the MQ tab was broken
+* #379 - backout: improve UI at the end of the operation
 * #387 - ignore: fix context menu behavior
 * #391 - status: prevent errors on button presses when model is empty
 * #393 - update: check subrepo status before using update --clean

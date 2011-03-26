@@ -68,10 +68,9 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * indicate affected folders by overlay icon or font style, like the 'Changes' column in the Gtk version.
 * change filename color by status (see the status view).
 * support 'unknown' and 'ignored' files for working copy.
-* show also subrepo tree
+* show also subrepo tree (at least show subrepo roots)
 * flat view for files list
 * ability to show changeset description
-* merge with annotate dialog? with optional filetree dock.
 
 == status / wctxactions ==
 
@@ -127,13 +126,11 @@ using
 
 == Annotate ==
 
-* nix the standalone annotate dialog, always use manifest but open to a given file
 * context menu should offer toggle between revision number, username or both
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? (SJB - this is now complicated by the 32-color restriction in Qsci)
 ** And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog
 ** I could also add an extra page to the setting dialog, for assigning colors to usernames?
 ** I also see the hgqt changelog does not yet use those username color settings. I could look into that too?
-* merge annotate.Annotate with fileview.HgFileView
 * support annotation of working copy (rev=None); needs changes on Mercurial-side.
 
 == docklog (ConsoleWidget) ==

@@ -7,36 +7,48 @@ This page is intended as a compendium of links and helpful notes for Subversion 
 When learning Mercurial the first step should be [[http://hgbook.red-bean.com/|the hgbook]], available in 
 [[http://tortoisehg.bitbucket.org/hgbook/1.6/index.html|html]].
 [[http://mercurial.selenic.com/wiki/|Mercurial's wiki]] is also a key source.
-学习Mercurial(分布式版本管理,//Google翻译里面有解释“水银”这一项，因此可以理解TortoiseHg（乌龟汞）的由来//)的第一步应该从《[[http://hgbook.red-bean.com/|Mercurial: The Definitive Guide]]》这篇指南看起；或者浏览[[http://mercurial.selenic.com/wiki/|Mercurial的WIKI]]也是个好主意。
+学习Mercurial
+(分布式版本管理,//Google翻译里面有解释“水银”这一项，因此可以理解TortoiseHg（乌龟汞）的由来//)
+的第一步应该从《[[http://hgbook.red-bean.com/|Mercurial: The Definitive Guide]]》这篇指南看起；或者浏览[[http://mercurial.selenic.com/wiki/|Mercurial的WIKI]]也是个好主意。
 
-== Links from projects which have converted from SVN to Mercurial ==
+== Links for projects which have converted from SVN to Mercurial ==
+== 以下是那些已经成功从SVN转换到Mercurial的文章链接 ==
 
 * http://lucumr.pocoo.org/2008/1/28/mercurial-for-subversion-users
 * http://wiki.pylonshq.com/display/pylonscookbook/Mercurial+for+Subversion+Users
 * http://www.python.org/dev/peps/pep-0385/
 
 == Tutorials/Comparison links ==
+== 相关教程与比较的文章链接 ==
 
 * http://mercurial.aragost.com/kick-start/
 * http://hginit.com/
 * http://nedbatchelder.com/text/hgsvn.html
 * http://wiki.geeklog.net/index.php/Mercurial_for_SVN_Users
 
-== Using TortoiseHg with a Subversion like work flow ==
+== Using TortoiseHg with a Subversion like workflow ==
+== 使用乌龟汞(TortoiseHg)进行工作流式的版本管理 ==
 
 As you first begin using TortoiseHg, you may want to configure some of these optional features to approach a more subversion like work flow.  See the [[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|settings]] tool manual to learn how to configure these settings either globally or per-repository.
+当你第一次使用使用乌龟汞(TortoiseHg)的时候，你可能需要配置一些可选的功能使得你的版本管理就像工作流一样。请参阅乌龟汞(TortoiseHg)的[[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|设置界面的帮助手册]]，学习如何去修改它的全局设置或子库设置。
 
 === Post-Pull Operations ===
+=== 拉取操作 ===
 
 After changesets are pulled from a remote repository, TortoiseHg can perform an automated function.  In the settings tool, this option can be found at the top of the Sync tab.
+当修改集从远程库被拉取下来之后，乌龟汞(TortoiseHg)可以执行一些自动化功能。这个选项在设置工具的同步选项卡中找到。
 
 # Update - checkout the new tip changeset on your current branch.  If you have uncommitted changes, this can result in a three way merge if changes in the new tip conflict with your changes (rare, but possible).
+#更新 - 检出最新的修改集到你的当前分支。假如你有未提交的修改，并且最新修改集和你的修改有冲突，那就会导致一个三路合并的操作（很少出现，但还是有可能）。
 # Fetch - automatically merge your local changesets with the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/FetchExtension|fetch]] extension to be enabled.  Does not perform any merge if your repository has uncommitted changes.
+#拉取 - 这将会把你的本地修改集和拉取的修改集进行自动合并。必须启用[[http://mercurial.selenic.com/wiki/FetchExtension|**fetch**]]程序扩展，否则不自动进行任何合并操作。
 # Rebase - automatically rebase your local changesets onto the top of the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/RebaseExtension|rebase]] extension to be enabled.  Does not perform a rebase if your repository has uncommitted changes.
-
+#变基 - 自动改变你本地修改集的父版本为最近拉取的修改集。必须启用[[http://mercurial.selenic.com/wiki/RebaseExtension|**rebase**]]程序扩展，否则不自动执行任何变基操作。
 This setting can also be changed on the fly in the Repository Explorer before you perform a pull, in case you want to change your default behavior for a single operation.
+这些设置同样也可以在拉取的时候在仓库浏览器中修改，假如你想改变单一的默认行为的话。
 
 === Post-Commit Push ===
+===  ===
 
 This setting can be found on the commit tab of the settings tool.  When
 enabled, TortoiseHg will attempt to push your local changesets to your

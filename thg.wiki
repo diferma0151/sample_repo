@@ -2,7 +2,7 @@
 
 TortoiseHg comes with a simple python application, thg, which allows you to
 launch the TortoiseHg dialogs on any platform that supports Mercurial and
-PyGtk. This is the easiest way to start using TortoiseHg on [[developers/Linux|Linux]] and [[developers/MacOSX|Mac OS X]].
+PyQt. This is the easiest way to start using TortoiseHg on [[developers/Linux|Linux]] and [[developers/MacOSX|Mac OS X]].
 
 == Packages ==
 

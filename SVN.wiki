@@ -63,23 +63,23 @@ By default, TortoiseHg will use [[http://kdiff3.sourceforge.net/|kdiff3]] (a gra
 
 # If you have TortoiseSVN installed and prefer TortoiseMerge you can
 select TortoiseMerge from the drop-down list.
-# 假如你已经安装了TortoiseSVN，并且更喜欢使用TortoiseMerge 工具的话，你同样可以在下拉框中选择它。
+假如你已经安装了TortoiseSVN，并且更喜欢使用TortoiseMerge 工具的话，你同样可以在下拉框中选择它。
 
 # If you prefer P4Merge, or some other tool supported by Mercurial, it will
 automatically show up in the drop-down list.
-# 假如你更喜欢P4Merge，或者别的支持Mercurial的工具，都会自动显示在下拉框中。
+假如你更喜欢P4Merge，或者别的支持Mercurial的工具，都会自动显示在下拉框中。
 
 # If you want Mercurial to write the .BASE .LOCAL .OTHER versions for
 you to manually merge, chose internal:dump
-# 假如你想让Mercurial在手动合并的时候能修改 .BASE .LOCAL .OTHER 版本，请选择internal:dump.
+假如你想让Mercurial在手动合并的时候能修改 .BASE .LOCAL .OTHER 版本，请选择internal:dump.
  
 # If you want Mercurial to prompt you whether to keep either the local
 or other version, chose internal:prompt
-# 假如你想让 Mercurial 提示你是否保留本地版本或其它版本，请选择internal:prompt
+假如你想让 Mercurial 提示你是否保留本地版本或其它版本，请选择internal:prompt
 
 # If you want Mercurial to perform trivial merges internally, and leave
 conflict markers in place on conflicts, chose internal:merge
-# 假如你想让 Mercurial 能够执行琐碎的内部合并，并且在出现冲突的地方留下标记，请选择internal:merge
+假如你想让 Mercurial 能够执行琐碎的内部合并，并且在出现冲突的地方留下标记，请选择internal:merge
 
 See
 [[http://www.selenic.com/mercurial/hgrc.5.html#merge-tools|merge-tools]]

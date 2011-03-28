@@ -27,7 +27,7 @@ When learning Mercurial the first step should be [[http://hgbook.red-bean.com/|t
 * http://wiki.geeklog.net/index.php/Mercurial_for_SVN_Users
 
 == Using TortoiseHg with a Subversion like workflow ==
-== 使用乌龟汞(TortoiseHg)进行工作流式的版本管理 ==
+== 使用乌龟汞(TortoiseHg)实现工作流式的版本管理 ==
 
 As you first begin using TortoiseHg, you may want to configure some of these optional features to approach a more subversion like work flow.  See the [[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|settings]] tool manual to learn how to configure these settings either globally or per-repository.
 \\当你第一次使用使用乌龟汞(TortoiseHg)的时候，你可能需要配置一些可选的功能使得你的版本管理就像工作流一样。请参阅乌龟汞(TortoiseHg)的[[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|设置界面的帮助手册]]，学习如何去修改它的全局设置或子库设置。

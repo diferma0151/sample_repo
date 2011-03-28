@@ -2,9 +2,9 @@
 
 This page is intended as a compendium of links and helpful notes for Subversion users who are converting to, or at least trying out, Mercurial and TortoiseHg.
 
-When learning Mercurial the first stop should be the [[http://hgbook.red-bean.com/|hgbook]], available in 
+When learning Mercurial the first step should be [[http://hgbook.red-bean.com/|the hgbook]], available in 
 [[http://tortoisehg.bitbucket.org/hgbook/1.6/index.html|html]].
-Mercurial's [[http://mercurial.selenic.com/wiki/|wiki]] is also a key source.
+[[http://mercurial.selenic.com/wiki/|Mercurial's wiki]] is also a key source.
 
 == Links from projects which have converted from SVN to Mercurial ==
 

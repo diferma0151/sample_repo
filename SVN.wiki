@@ -39,11 +39,11 @@ After changesets are pulled from a remote repository, TortoiseHg can perform an 
 当修改集从远程库被拉取下来之后，乌龟汞(TortoiseHg)可以执行一些自动化功能。这个选项在设置工具的同步选项卡中找到。
 
 # Update - checkout the new tip changeset on your current branch.  If you have uncommitted changes, this can result in a three way merge if changes in the new tip conflict with your changes (rare, but possible).
-#更新 - 检出最新的修改集到你的当前分支。假如你有未提交的修改，并且最新修改集和你的修改有冲突，那就会导致一个三路合并的操作（很少出现，但还是有可能）。
+更新 - 检出最新的修改集到你的当前分支。假如你有未提交的修改，并且最新修改集和你的修改有冲突，那就会导致一个三路合并的操作（很少出现，但还是有可能）。
 # Fetch - automatically merge your local changesets with the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/FetchExtension|fetch]] extension to be enabled.  Does not perform any merge if your repository has uncommitted changes.
-#拉取 - 这将会把你的本地修改集和拉取的修改集进行自动合并。必须启用[[http://mercurial.selenic.com/wiki/FetchExtension|**fetch**]]程序扩展，否则不自动进行任何合并操作。
+拉取 - 这将会把你的本地修改集和拉取的修改集进行自动合并。必须启用[[http://mercurial.selenic.com/wiki/FetchExtension|**fetch**]]程序扩展，否则不自动进行任何合并操作。
 # Rebase - automatically rebase your local changesets onto the top of the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/RebaseExtension|rebase]] extension to be enabled.  Does not perform a rebase if your repository has uncommitted changes.
-#变基 - 自动改变你本地修改集的父版本为最近拉取的修改集。必须启用[[http://mercurial.selenic.com/wiki/RebaseExtension|**rebase**]]程序扩展，否则不自动执行任何变基操作。
+变基 - 自动改变你本地修改集的父版本为最近拉取的修改集。必须启用[[http://mercurial.selenic.com/wiki/RebaseExtension|**rebase**]]程序扩展，否则不自动执行任何变基操作。
 This setting can also be changed on the fly in the Repository Explorer before you perform a pull, in case you want to change your default behavior for a single operation.
 这些设置同样也可以在拉取的时候在仓库浏览器中修改，假如你想改变单一的默认行为的话。
 
@@ -64,19 +64,15 @@ By default, TortoiseHg will use [[http://kdiff3.sourceforge.net/|kdiff3]] (a gra
 # If you have TortoiseSVN installed and prefer TortoiseMerge you can
 select TortoiseMerge from the drop-down list.
 假如你已经安装了TortoiseSVN，并且更喜欢使用TortoiseMerge 工具的话，你同样可以在下拉框中选择它。
-
 # If you prefer P4Merge, or some other tool supported by Mercurial, it will
 automatically show up in the drop-down list.
 假如你更喜欢P4Merge，或者别的支持Mercurial的工具，都会自动显示在下拉框中。
-
 # If you want Mercurial to write the .BASE .LOCAL .OTHER versions for
 you to manually merge, chose internal:dump
 假如你想让Mercurial在手动合并的时候能修改 .BASE .LOCAL .OTHER 版本，请选择internal:dump.
- 
 # If you want Mercurial to prompt you whether to keep either the local
 or other version, chose internal:prompt
 假如你想让 Mercurial 提示你是否保留本地版本或其它版本，请选择internal:prompt
-
 # If you want Mercurial to perform trivial merges internally, and leave
 conflict markers in place on conflicts, chose internal:merge
 假如你想让 Mercurial 能够执行琐碎的内部合并，并且在出现冲突的地方留下标记，请选择internal:merge

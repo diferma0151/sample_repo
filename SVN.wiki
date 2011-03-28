@@ -48,22 +48,31 @@ This setting can also be changed on the fly in the Repository Explorer before yo
 这些设置同样也可以在拉取的时候在仓库浏览器中修改，假如你想改变单一的默认行为的话。
 
 === Post-Commit Push ===
-===  ===
+=== 提交 推 操作 ===
 
 This setting can be found on the commit tab of the settings tool.  When
 enabled, TortoiseHg will attempt to push your local changesets to your
 default upstream repository after every successful commit.
+这个设置可以在设置工具中的“提交”选项卡中找到。当启用之后，乌龟汞(TortoiseHg)会在你每次成功提交之后尝试推出你的修改集到上级库中。
 
 === Merges ===
+=== 合并 ===
 
 By default, TortoiseHg will use [[http://kdiff3.sourceforge.net/|kdiff3]] (a graphical three way merge tool) to resolve merge conflicts.  You have a number of other options.  On the TortoiseHg tab of the settings tool, you will find a 'Three-way Merge Tool' configurable.
+默认情况下，乌龟汞(TortoiseHg)使用的是[[http://kdiff3.sourceforge.net/|kdiff3]]（一个图形化的三路合并工具）来解决合并冲突。你还有很多别的选择，在设置工具的的“TortoiseHG”选项卡中，你可以在三路合并工具（Three-way Merge Tool）的下拉框中进行选择。
 
 # If you have TortoiseSVN installed and prefer TortoiseMerge you can
 select TortoiseMerge from the drop-down list.
+# 假如你已经安装了TortoiseSVN，并且更喜欢使用TortoiseMerge 工具的话，你同样可以在下拉框中选择它。
+
 # If you prefer P4Merge, or some other tool supported by Mercurial, it will
 automatically show up in the drop-down list.
+# 假如你更喜欢P4Merge，或者别的支持Mercurial的工具，都会自动显示在下拉框中。
+
 # If you want Mercurial to write the .BASE .LOCAL .OTHER versions for
 you to manually merge, chose internal:dump
+# 假如你想让Mercurial在手动合并的时候能修改 .BASE .LOCAL .OTHER 版本，请选择internal:dump.
+ 
 # If you want Mercurial to prompt you whether to keep either the local
 or other version, chose internal:prompt
 # If you want Mercurial to perform trivial merges internally, and leave

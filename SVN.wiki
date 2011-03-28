@@ -1,10 +1,13 @@
 = TortoiseHg for SVN Users =
+= 至SVN的用户 =
 
 This page is intended as a compendium of links and helpful notes for Subversion users who are converting to, or at least trying out, Mercurial and TortoiseHg.
+这篇文章是给那些想从SVN转到HG的，或者正在尝试使用HG的用户准备的一份提纲和备注。
 
 When learning Mercurial the first step should be [[http://hgbook.red-bean.com/|the hgbook]], available in 
 [[http://tortoisehg.bitbucket.org/hgbook/1.6/index.html|html]].
 [[http://mercurial.selenic.com/wiki/|Mercurial's wiki]] is also a key source.
+学习Mercurial(分布式版本管理,//Google翻译里面有解释“水银”这一项，因此可以理解TortoiseHg（乌龟汞）的由来//)的第一步应该从《[[http://hgbook.red-bean.com/|Mercurial: The Definitive Guide]]》这篇指南看起；或者浏览[[http://mercurial.selenic.com/wiki/|Mercurial的WIKI]]也是个好主意。
 
 == Links from projects which have converted from SVN to Mercurial ==
 

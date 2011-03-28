@@ -75,20 +75,26 @@ you to manually merge, chose internal:dump
  
 # If you want Mercurial to prompt you whether to keep either the local
 or other version, chose internal:prompt
+# 假如你想让 Mercurial 提示你是否保留本地版本或其它版本，请选择internal:prompt
+
 # If you want Mercurial to perform trivial merges internally, and leave
 conflict markers in place on conflicts, chose internal:merge
+# 假如你想让 Mercurial 能够执行琐碎的内部合并，并且在出现冲突的地方留下标记，请选择internal:merge
 
 See
 [[http://www.selenic.com/mercurial/hgrc.5.html#merge-tools|merge-tools]]
 for a description of how to configure an external merge tool that was
 not supported "out of the box."
+请参阅[[http://www.selenic.com/mercurial/hgrc.5.html|合并工具（merge-tools）]]网页上的描述，来配置那些不支持“开箱即用”的合并工具。
 
 == Using TortoiseHg as a client for a Subversion server ==
+== 使用乌龟汞(TortoiseHg)作为Subversion（SVN）服务器的客户端 ==
 
 * http://mercurial.selenic.com/wiki/HgSubversion
 * http://bitbucket.org/durin42/hgsubversion/wiki/Home
 
 hgsubversion should work with TortoiseHg "out of the box", since TortoiseHg Windows installers include the SVN python bindings required by hgsubversion.  Simply clone the extension to your machine, enable it, read its documentation. then clone your subversion repository.
+hgsubversion 应该和乌龟汞(TortoiseHg)一样能够开箱即用，因为乌龟汞(TortoiseHg)的Windows安装包已经包含了hgsubversion所必须的SVN python bindings，所以只需要将这个扩展工具克隆（clone）到你的机子，启用它，阅读它的相关文档，然后就可以克隆你的SVN（subversion）版本库了。
 
 {{{
 mkdir C:\repos
@@ -96,6 +102,7 @@ hg clone http://bitbucket.org/durin42/hgsubversion/ C:\repos\hgsubversion
 }}}
 
 Add lines like these to your Mercurial.ini file
+将下面的几行添加到你的Mercurial.ini文件中
 
 {{{
 [extensions]
@@ -103,17 +110,20 @@ hgsubversion = C:\repos\hgsubversion
 }}}
 
 Make a test clone:
+进行一次测试性克隆操作
 
 {{{
 hg clone svn+http://svn.python.org/projects/python python-hg
 }}}
 
 == Mercurial Wiki links ==
+== Mercurial(分布式版本管理) 的WIKI 链接 ==
 
 * http://mercurial.selenic.com/wiki/WorkingWithSubversion
 * http://mercurial.selenic.com/wiki/ConvertExtension
 
 See also
+同样参见
 
 * http://code.google.com/p/support/wiki/ConvertingSvnToHg
 * http://www.antwerkz.com/migrating-from-subversion-to-mercurial/

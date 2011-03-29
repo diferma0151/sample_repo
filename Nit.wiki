@@ -79,7 +79,7 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * use Qt's filesystem monitor to report when the working folder is dirty
 * an action for files ending with .rej that opens rejects tool
 
-== backout, compress, rebase, bisect ==
+== compress, rebase, bisect ==
 
 * turn into a QWizard based dialogs
 
@@ -92,6 +92,7 @@ This is the list of left-over TODOs from the initial port, and some long term id
 
 == Clone ==
 
+* Add --insecure option for https
 * clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings.
 * Add a textbox for the 'Include patch queue' option, so the user can enter a path herself (implements the '-P <repo>' option of qclone). Maybe even add a 'Browse' button for selecting a folder.
 * Add a 'Hg command' textbox, as in the init dialog.
@@ -103,7 +104,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * new generic extension registration
 * more font settings
 * connect to thgrepo.configChanged and refresh
-* 'issue tracking' page (bugtraq)
 
 == Email ==
 

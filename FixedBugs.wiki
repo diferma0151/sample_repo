@@ -1,58 +1,13 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.0.2 ==
+== Fixed since 2.0.3 ==
 
 These bugs are fixed on the tip of the stable branch.
 
-* #81 - improve labels of merge buttons in resolve dialog
-* #229 - libsasl.dll was missing from x86 packages
-* #282 - validate the correct postreview extension is in use
-* #295 - shelve: fix race condition in detecting shelf file changes
-* #300 - hgignore: catch errors during repo.status() call
-* #302 - sync widget could show the lock button for local urls
-* #306 - outgoing can cause IndexError in setRevisionSet
-* #307 - fix crash in templatefilters caused by bad patches
-* #311 - UnicodeDecodeError in rename dialog
-* #318 - dragging URLs from registry to sync tab should not delete URL from registry
-* #319 - Workbench: update sync tooltips to reflect their current behavior
-* #325 - TypeError raised by os.path.isfile() in thgrepo.changectx()
-* #328 - chunks: UnicodeDecodeError while moving chunks
-* #330 - wctxactions: UnicodeDecodeError while showing warnings/errors
-* #331 - sync: ignore .hg/rebasestate if --rebase was not used in command
-* #335 - enforce maxdiffsize when displaying deleted files
-* #336 - commit: clear branch operation after every successful commit
-* #338 - grep: prevent AttributeError after stopping a search
-* #340 - grep: catch I/O errors while scanning working directory
-* #342 - repotreemodel: validate internalPointer(), prevent a TypeError
-* #346 - UnicodeDecodeError in bug report dialog save function
-* #347 - registry: fix deletion behavior
-* #348 - Assign "changelog" font to revisioned text without a lexer
-* #359 - LookupError from ambiguous revision set query
-* #364 - qfold: fix patch message decoding
-* #373 - Fix abort when command needs a repository but was not within one
-* #378 - dropping a patch on the MQ tab was broken
-* #379 - backout: improve UI at the end of the operation
-* #387 - ignore: fix context menu behavior
-* #391 - status: prevent errors on button presses when model is empty
-* #393 - update: check subrepo status before using update --clean
-* #402 - fileview: catch generic file and lookup errors
-* #406 - sync: cast exceptions to strings before converting to unicode
-* #408 - commit: prevent IndexError in message history maintenance
-* #410 - guess: fix unicode decode errors in path display
-* #411 - workbench: add unicode conversion when openRepo fails
-* #412 - settings: add unicode conversion when repo does not exist
-* #417 - repotreeitem: catch RepoError more cleanly
-* Workbench: properly show search bar state at startup
+N/A
 
 Improvements:
 
-* #247, #297 - commit: show progress bar, disable commit button, add a stop button during commit
-* #366 - archive: support subrepositories
-* grep: recursively scan Mercurial subrepositories when searching the working directory
-* status: share status button with manifest tool
-* serve: improve support for subrepositories
-* sync: more effectively filter duplicate paths from related paths list
-* Workbench: improve graph resize logic
-* Workbench: close repository tabs by middle-click
+N/A
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

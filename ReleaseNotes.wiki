@@ -31,6 +31,104 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.0.3 =
+
+Released April 1, 2011
+
+This is a scheduled bug fix release with a number of minor improvements
+
+== Packaged Versions ==
+
+* Mercurial 1.8.2
+
+== Bug Fixes ==
+
+* #81 - improve labels of merge buttons in resolve dialog
+* #161 - prevent qrename from using an existing patch name
+* #174 - prevent file history from being launched from shelve dialog
+* #193 - open visual diffs on double-click
+* #229 - libsasl.dll was missing from x86 packages
+* #269 - give quickop dialog the ability to delete unversioned files
+* #282 - validate the correct postreview extension is in use
+* #295 - shelve: fix race condition in detecting shelf file changes
+* #300 - hgignore: catch errors during repo.status() call
+* #302 - sync widget could show the lock button for local urls
+* #306 - outgoing can cause IndexError in setRevisionSet
+* #307 - fix crash in templatefilters caused by bad patches
+* #311 - UnicodeDecodeError in rename dialog
+* #318 - dragging URLs from registry to sync tab should not delete URL from registry
+* #319 - Workbench: update sync tooltips to reflect their current behavior
+* #325 - TypeError raised by os.path.isfile() in thgrepo.changectx()
+* #328 - chunks: UnicodeDecodeError while moving chunks
+* #330 - wctxactions: UnicodeDecodeError while showing warnings/errors
+* #331 - sync: ignore .hg/rebasestate if --rebase was not used in command
+* #335 - enforce maxdiffsize when displaying deleted files
+* #336 - commit: clear branch operation after every successful commit
+* #338 - grep: prevent AttributeError after stopping a search
+* #340 - grep: catch I/O errors while scanning working directory
+* #342 - repotreemodel: validate internalPointer(), prevent a TypeError
+* #346 - UnicodeDecodeError in bug report dialog save function
+* #347 - registry: fix deletion behavior
+* #348 - Assign "changelog" font to revisioned text without a lexer
+* #359 - LookupError from ambiguous revision set query
+* #360 - Prevent certain tracebacks in file history dialogs
+* #361 - shelve: catch environment errors while patching
+* #364 - qfold: fix patch message decoding
+* #371 - shelve: catch an empty patch being applied
+* #373 - Fix abort when command needs a repository but was not within one
+* #378 - dropping a patch on the MQ tab was broken
+* #379 - backout: improve UI at the end of the operation
+* #381 - commit: do not pre-check unknown files even when they match filter
+* #387 - ignore: fix context menu behavior
+* #391 - status: prevent errors on button presses when model is empty
+* #393 - update: check subrepo status before using update --clean
+* #401 - fix repeated visual diffs of working folder
+* #402 - fileview: catch generic file and lookup errors
+* #405 - sync: catch environment errors when opening a terminal
+* #406 - sync: cast exceptions to strings before converting to unicode
+* #408 - commit: prevent IndexError in message history maintenance
+* #410 - guess: fix unicode decode errors in path display
+* #411 - workbench: add unicode conversion when openRepo fails
+* #412 - settings: add unicode conversion when repo does not exist
+* #417 - repotreeitem: catch RepoError more cleanly
+* #422 - hgemail: prevent exceptions on empty change messages
+* #423 - annotate: properly handle bundle previews
+* #429 - generically capture exceptions while gathering graph data
+* #431 - sync: use the given port when querying server certificate
+* #442 - shelve: respect user's patch.eol configuration
+* #453 - fix translation of Filenames column
+* #460 - status: catch more errors during refresh
+* #467 - rejects: preserve eoln state of patch chunks
+* #469 - prevent race conditions after pulling from a bundle
+* #472 - fix color extension use from shells opened by THG
+* #473 - displayed revision sets should respect current branch filter
+* #474 - purge: give purge thread its own repo object, prevents hazards
+* #478 - remember selected revision when toggling filter mode
+* #489 - disable the hiding of the file history toolbars
+* #493 - fix progress signals from output log widget
+* Workbench: properly show search bar state at startup
+
+== Improvements ==
+
+* #247, #297 - commit: show progress bar, disable commit button, add a stop button during commit
+* #313 - add transplant menu option to multiple-selection menus
+* #366 - archive: support subrepositories
+* #385 - merge: improve default merge message for named branch merges
+* #436 - hide filter bar if cleared twice or return pressed on empty entry
+* #458 - resolve: show local and other revision summaries
+* grep: recursively scan Mercurial subrepositories when searching the working directory
+* status: share status button with manifest tool
+* serve: improve support for subrepositories
+* sync: more effectively filter duplicate paths from related paths list
+* Workbench: improve graph resize logic
+* Workbench: close repository tabs by middle-click
+* Workbench: display modified subrepositories in revision details tab
+* fileview: add eoln visibility toggle to context menus
+* Free entire repository tab widget when it is closed
+* Better use of user configured Windows fonts
+
+== Installer ==
+
 = TortoiseHg 2.0.2 =
 
 Released March 10, 2011

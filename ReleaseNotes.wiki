@@ -129,6 +129,8 @@ This is a scheduled bug fix release with a number of minor improvements
 
 == Installer ==
 
+* Added a number of new translations
+
 = TortoiseHg 2.0.2 =
 
 Released March 10, 2011

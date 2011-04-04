@@ -4,7 +4,9 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 These bugs are fixed on the tip of the stable branch.
 
-N/A
+* #509 - Merge and backout dialogs did not respect push-after-commit
+* #512 - handle non-ascii repository name during export and archive
+* #516 - shelve buttons not disabled when a patch was empty
 
 Improvements:
 

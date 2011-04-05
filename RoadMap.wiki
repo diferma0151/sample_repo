@@ -23,11 +23,6 @@ Before each feature release, we will progressively lock down the code:
 * -1 week   - no new translatable strings on stable
 * -3 days   - code freeze on stable.  Documentation and installer changes only
 
-=== Release 2.0 (Targeted March 1, 2011): ===
-
-* PyQt based tools and dialogs
-* Native 64bit applications
-
 === Release 2.1 (Targeted July 1, 2011): ===
 
 * Merge wizard refactor to not use a QStackedWidget (done)

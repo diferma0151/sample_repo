@@ -49,13 +49,13 @@ This is the list of left-over TODOs from the initial port, and some long term id
 
 == RevDetailsWidget ==
 
-* filelistview: forward menu events to parent (revdetails or chunks)
 * investigate hgview's recent support for reST in changelog messages
 * create a standalone changeset or changeset DAG range viewer
 
 == Compress ==
 
 * warn if compressing a merge
+* refactor as QWizard
 
 == Manifest Viewer ==
 
@@ -79,7 +79,7 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * use Qt's filesystem monitor to report when the working folder is dirty
 * an action for files ending with .rej that opens rejects tool
 
-== compress, rebase, bisect ==
+== rebase, bisect ==
 
 * turn into a QWizard based dialogs
 

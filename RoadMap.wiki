@@ -40,7 +40,7 @@ Before each feature release, we will progressively lock down the code:
 * Add a file filter to manifest widget, same as status
 * Remove standalone annotate dialog, use manifest dialog for that purpose (done)
 * Move 'other parent' feature from filelistmodel to HgFileView (done)
-* filelistview should forward menu events to parent repowidget or chunks widget
+* filelistview should forward menu events to parent repowidget or chunks widget (done)
 * Use Qt's filesystem monitor to inform user when status view is dirty
 * Also use Qt's filesystem monitor to replace poll functions in thgrepo, etc
 * Investigate whether HgFileView can be used as an editor for wctx in status widget

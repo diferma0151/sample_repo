@@ -4,14 +4,21 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 These bugs are fixed on the tip of the stable branch.
 
+* #446 - fix visual diffs of incoming changesets
+* #462 - avoid encoding errors in the shelve tool by avoiding unicode round trip
 * #504 - fix incompatibility with Google Pinyin input method
 * #509 - Merge and backout dialogs did not respect push-after-commit
 * #512 - handle non-ascii repository name during export and archive
 * #514 - disallow consecutive clones to the same destination folder
 * #516 - shelve buttons not disabled when a patch was empty
+* #517 - fix shelving of chunks that have the same starting line
+* #541 - do not create annotate menus if annotation thread has not reached current line
+* #542 - fix branch name encoding mixup
+* #547 - validate index in filelistview before generating a context menu
 
 Improvements:
 
-* status/commit - double click opens visual diffs for single file
+* #275 - status/commit: allow fileview to be compressed beyond file name
+* status/commit: double click opens visual diffs for single file
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

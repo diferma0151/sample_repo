@@ -35,9 +35,11 @@ Before each feature release, we will progressively lock down the code:
 * Subrepository support in manifest (done, but still improving)
 * Refactor bisect, compress, rebase and backout as QWizard dialogs (backout completed)
 * Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner (started)
+* Subrepository support in Repository Registry
 * Add a file filter to manifest widget, same as status
 * Use status widget's file tree in MQ widget
+* Investigate whether HgFileView can be used as an editor for wctx
+
+Initially planned, may not be feasible
 * Use Qt's filesystem monitor to inform user when status view is dirty
-* Investigate whether HgFileView can be used as an editor for wctx in status widget
 * Investigate a per-repository tab log console
-* Subrepository support in Repository Registry

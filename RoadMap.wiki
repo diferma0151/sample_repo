@@ -26,19 +26,18 @@ Before each feature release, we will progressively lock down the code:
 === Release 2.1 (Targeted July 1, 2011): ===
 
 * Merge wizard refactor to not use a QStackedWidget (done)
-* patchctx refactor - use patch.py for initial parse, then record only for shelve (tried, did not help)
-* Refactor bisect, compress, rebase and backout as QWizard dialogs (backout completed)
-* Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner (started)
-* Use status widget's file tree in MQ widget
 * Merge HgFileView and AnnotateWidget into a single file (done)
 * Switch ManifestWidget to use an HgFileView (done)
-* Add a file filter to manifest widget, same as status
 * Remove standalone annotate dialog, use manifest dialog for that purpose (done)
 * Move 'other parent' feature from filelistmodel to HgFileView (done)
 * filelistview should forward menu events to parent repowidget or chunks widget (done)
+* Use Qt's filesystem monitor to replace poll functions in thgrepo (done)
+* Subrepository support in manifest (done, but still improving)
+* Refactor bisect, compress, rebase and backout as QWizard dialogs (backout completed)
+* Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner (started)
+* Add a file filter to manifest widget, same as status
+* Use status widget's file tree in MQ widget
 * Use Qt's filesystem monitor to inform user when status view is dirty
-* Also use Qt's filesystem monitor to replace poll functions in thgrepo, etc
 * Investigate whether HgFileView can be used as an editor for wctx in status widget
 * Investigate a per-repository tab log console
 * Subrepository support in Repository Registry
-* Subrepository support in manifest

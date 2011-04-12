@@ -16,11 +16,16 @@ These bugs are fixed on the tip of the stable branch.
 * #541 - do not create annotate menus if annotation thread has not reached current line
 * #542 - fix branch name encoding mixup
 * #547 - validate index in filelistview before generating a context menu
+* #558 - workbench: do not try to open ssh:// URLs as local repositories
+* #562 - hgignore: better handle wctx errors in the refresh function
+* #570 - fix UnicodeDecodeErrors in annotation view
+* sync: disable host&port when showing a local URL, since they can no longer be hidden
 
 Improvements:
 
 * #275 - status/commit: allow fileview to be compressed beyond file name
 * status/commit: double click opens visual diffs for single file
 * clone - use a subprocess to perform perforce clones (using the perfarce extension)
+* #569 - bundle distutils in binary packages, fixes pygments including the lexer used to generate completion strings in the commit tool.
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

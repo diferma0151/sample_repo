@@ -8,7 +8,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * multi-selection menu with 'Pull from default', 'Pull -u from default'
 * ask for name of new group at creation
 * CTRL+drag looks like a copy, but actually performs a move
-* RepoTreeModel should emit dataChanged signal when repo.shortname changed.
 
 == qtlib ==
 
@@ -33,11 +32,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * Should the command line honor the '--limit n' option, like the gtk version does?
 ** I don't see a need, but it could generate a limit() revision set filter - sjb
 * limit the size (in MB) of the graph data cache.  Perhaps an LRU of revisions.
- 
-== file history dialog ==
-
-* handle menu events from repoview (#260)
-* diff to local revision menu option
 
 == qreorder ==
 
@@ -63,21 +57,19 @@ This is the list of left-over TODOs from the initial port, and some long term id
 
 * right-clicking on files should allow a diff-to-parent for affected files only.
 * interface to grep at revision
-* Complete the annotate view with the hovering info as in the separate annotate dialog ?
 * filter files by name.
 * indicate affected folders by overlay icon or font style, like the 'Changes' column in the Gtk version.
 * change filename color by status (see the status view).
 * support 'unknown' and 'ignored' files for working copy.
-* show also subrepo tree (at least show subrepo roots)
 * flat view for files list
 * ability to show changeset description
 
 == status / wctxactions ==
 
+* an action for files ending with .rej that opens rejects tool
 * give status/wctxactions a cmdui.Runner()
 * switch commit and quickop to use status' Runner
 * use Qt's filesystem monitor to report when the working folder is dirty
-* an action for files ending with .rej that opens rejects tool
 
 == rebase, bisect ==
 
@@ -86,9 +78,9 @@ This is the list of left-over TODOs from the initial port, and some long term id
 == Commit ==
 
 * smarter commit button enabled logic (message entered, file selected, etc)
-* add support for tortoisehg.ciexclude
-* spell check (perhaps there's an http service we can use for post-validation?)
-* in-memory patching / committing chunk selected files
+* add support for tortoisehg.ciexclude (there is a bug for this now)
+* spell check (perhaps there's an http service we can use for post-validation?, there is a bug for this)
+* in-memory patching / committing chunk selected files (there is a bug for this)
 
 == Clone ==
 

@@ -72,6 +72,6 @@ For any questions or comments on TortoiseHg, please post to TortoiseHg's mailing
 For details on contributing to TortoiseHg, visit the **[[Nit]]** page and the
 **[[developers/Home|developers]]** wiki and [[upcoming-release-notes|upcoming release notes]].
 
-For contributing to translations, please visit our page on [[https://translations.launchpad.net/tortoisehg|Launchpad]]
+For [[developers/Translation|contributing to translations]], please visit our page on [[https://translations.launchpad.net/tortoisehg|Launchpad]]
 
 For contributing to the wiki, look [[wiki|here]].

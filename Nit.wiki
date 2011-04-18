@@ -4,7 +4,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 
 == repo registry ==
 
-* make reordering of groups (along with their content) possible (see also #52)
 * multi-selection menu with 'Pull from default', 'Pull -u from default'
 * ask for name of new group at creation
 * CTRL+drag looks like a copy, but actually performs a move

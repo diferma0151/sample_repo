@@ -23,6 +23,7 @@ These bugs are fixed on the tip of the stable branch.
 
 Improvements:
 
+* #52 - allow reordering of groups in the reporegistry, along with their content
 * #275 - status/commit: allow fileview to be compressed beyond file name
 * status/commit: double click opens visual diffs for single file
 * clone - use a subprocess to perform perforce clones (using the perfarce extension)

@@ -28,5 +28,6 @@ Improvements:
 * status/commit: double click opens visual diffs for single file
 * clone - use a subprocess to perform perforce clones (using the perfarce extension)
 * #569 - bundle distutils in binary packages, fixes pygments including the lexer used to generate completion strings in the commit tool.
+* clone - it's now possible to select another patch queue than the default one for qclone
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

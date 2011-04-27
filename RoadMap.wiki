@@ -35,6 +35,7 @@ Before each feature release, we will progressively lock down the code:
 * Subrepository support in manifest (done)
 * Refactor backout as QWizard dialog (done)
 * Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner (started)
+* Merge dialog needs a cancel button, when appropriate
 * Refactor bisect, compress, and rebase as QWizard dialogs
 * Add a file filter to manifest widget, same as status
 * Use status widget's file tree in MQ widget

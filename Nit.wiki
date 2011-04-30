@@ -168,8 +168,6 @@ using
 * Fonts
 ** use qtlib.getfont interface consistently in all our tools
 ** add runtime font scaling mechanism
-* Respect Windows font setting like modern apps:
-  http://groups.google.co.jp/group/thg-dev/browse_thread/thread/5f9bb7141e4f66e3
 
 == Documentation ==
 

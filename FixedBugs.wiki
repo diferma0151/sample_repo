@@ -1,53 +1,13 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.0.3 ==
+== Fixed since 2.0.4 ==
 
 These bugs are fixed on the tip of the stable branch.
 
-* #42  - cmdui: make sure newly opened prompt line is visible
-* #446 - fix visual diffs of incoming changesets
-* #462 - avoid encoding errors in the shelve tool by avoiding unicode round trip
-* #504 - fix incompatibility with Google Pinyin input method
-* #509 - Merge and backout dialogs did not respect push-after-commit
-* #512 - handle non-ascii repository name during export and archive
-* #514 - disallow consecutive clones to the same destination folder
-* #516 - shelve buttons not disabled when a patch was empty
-* #517 - fix shelving of chunks that have the same starting line
-* #531 - prevent hard crashes seen after previewing incoming changesets
-* #541 - do not create annotate menus if annotation thread has not reached current line
-* #542 - fix branch name encoding mixup
-* #547 - validate index in filelistview before generating a context menu
-* #552 - rebase: disable buttons during wctx check
-* #555 - cmenu: add annotate to file selection context menu
-* #558 - workbench: do not try to open ssh:// URLs as local repositories
-* #562 - hgignore: better handle wctx errors in the refresh function
-* #570 - fix UnicodeDecodeErrors in annotation view
-* #576 - fix UnboundLocalError in hgignore
-* #579 - do not needlessly insert a newline between shelved patches
-* #595 - add missing import for _() in qtlib
-* #599 - catch environment errors when repowidgets are closed
-* #608 - prevent IndexError during refresh of file history dialogs
-* #612 - serve: respect repo's configured http port
-* #614 - rename: fix display of non-ascii paths
-* #623 - sync: properly handle ssh urls that have '@' in the username
-* sync: disable host&port when showing a local URL, since they can no longer be hidden
-* fix support for Python2.4
+N/A
 
 Improvements:
 
-* #52 - allow reordering of groups in the reporegistry, along with their content
-* sync - display currently selected push/pull options
-* #275 - status/commit: allow fileview to be compressed beyond file name
-* status/commit: double click opens visual diffs for single file
-* #565 - status/commit: support auto-excludes
-* clone - use a subprocess to perform perforce clones (using the perfarce extension)
-* clone - it's now possible to select another patch queue than the default one for qclone
-* #601 - add --keepbranches option to rebase dialog
-* #610 - allow use of numeric keypad Enter key for most shortcuts
-* #326 - offer 'default' and 'default-push' as drop-down options for 'push after commit'
-* #569 - bundle distutils in binary packages, fixes pygments including the lexer used to generate completion strings in the commit tool.
-* rename - use repository manifest as line edit completer
-* installer - package Qt translations for standard buttons, etc
-* installer - many other improvements to translations
+N/A
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

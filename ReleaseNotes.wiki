@@ -27,7 +27,71 @@ an older version of Mercurial, please consult the following chart:
 | 1.6.x | 1.1.n |
 | 1.7.x | 1.1.9.1 |
 | 1.8.x | 2.0.n |
-| hg-main tip | thg default tip |
+| hg default tip | thg default tip |
+
+----
+
+= TortoiseHg 2.0.4 =
+
+Released May 1, 2011
+
+This is a scheduled bug fix release with a number of minor improvements
+
+== Packaged Versions ==
+
+* Mercurial 1.8.3
+* Pygments 1.4
+
+== Bug Fixes ==
+
+* #42  - cmdui: make sure newly opened prompt line is visible
+* #446 - fix visual diffs of incoming changesets
+* #462 - avoid encoding errors in the shelve tool by avoiding unicode round trip
+* #504 - fix incompatibility with Google Pinyin input method
+* #509 - Merge and backout dialogs did not respect push-after-commit
+* #512 - handle non-ascii repository name during export and archive
+* #514 - disallow consecutive clones to the same destination folder
+* #516 - shelve buttons not disabled when a patch was empty
+* #517 - fix shelving of chunks that have the same starting line
+* #531 - prevent hard crashes seen after previewing incoming changesets
+* #541 - do not create annotate menus if annotation thread has not reached current line
+* #542 - fix branch name encoding mixup
+* #547 - validate index in filelistview before generating a context menu
+* #552 - rebase: disable buttons during wctx check
+* #555 - cmenu: add annotate to file selection context menu
+* #558 - workbench: do not try to open ssh:// URLs as local repositories
+* #562 - hgignore: better handle wctx errors in the refresh function
+* #570 - fix UnicodeDecodeErrors in annotation view
+* #576 - fix UnboundLocalError in hgignore
+* #579 - do not needlessly insert a newline between shelved patches
+* #595 - add missing import for _() in qtlib
+* #599 - catch environment errors when repowidgets are closed
+* #608 - prevent IndexError during refresh of file history dialogs
+* #612 - serve: respect repo's configured http port
+* #614 - rename: fix display of non-ascii paths
+* #623 - sync: properly handle ssh urls that have '@' in the username
+* fix support for Python2.4
+
+== Improvements ==
+
+* #52 - allow reordering of groups in the reporegistry, along with their content
+* sync - display currently selected push/pull options
+* #275 - status/commit: allow fileview to be compressed beyond file name
+* status/commit: double click opens visual diffs for single file
+* #565 - status/commit: support auto-excludes
+* clone - use a subprocess to perform perforce clones (using the perfarce extension)
+* clone - it's now possible to select another patch queue than the default one for qclone
+* #601 - add --keepbranches option to rebase dialog
+* #610 - allow use of numeric keypad Enter key for most shortcuts
+* #326 - offer 'default' and 'default-push' as drop-down options for 'push after commit'
+* #569 - bundle distutils in binary packages, fixes pygments including the lexer used to generate completion strings in the commit tool.
+* rename - use repository manifest as line edit completer
+
+== Installer ==
+
+* package Qt translations for standard buttons, etc
+* many translation improvements
+* Updated TortoisePlink to the current version shipped with TortoiseCVS
 
 ----
 
@@ -131,6 +195,8 @@ This is a scheduled bug fix release with a number of minor improvements
 
 * Added a number of new translations
 
+----
+
 = TortoiseHg 2.0.2 =
 
 Released March 10, 2011
@@ -199,6 +265,8 @@ This is a bug fix release with minor improvements
 * kdiff3.exe is again in the %PATH%
 * kdiff3.exe was upgraded from the 1.1 release to the 2.0 release.  It appears to have a bug when reading its old configuration files that cause it to save merge results in DOS EOLN.  If you are upgrading a 1.1 install or have run KDiff3 in the past, it is suggested to run the new KDiff3 and check this configurable.
 
+----
+
 = TortoiseHg 2.0 =
 
 Released March 1, 2011
@@ -222,5 +290,3 @@ have been converted from PyGtk to PyQt.
 * hg.exe and thg.exe are not in %PATH%, we add a bin\ folder with short batch files.  TortoisePlink and Pageant.exe are also in the bin\ folder so they remain in the path.
 * kdiff3.exe is not in the system path, since it uses the same QT dlls as TortoiseHg it needs to be in the root folder.
 * kdiff3.exe was upgraded from the 1.1 release to the 2.0 release.  It appears to have a bug when reading its old configuration files that cause it to save merge results in DOS EOLN.  If you are upgrading a 1.1 install or have run KDiff3 in the past, it is suggested to run the new KDiff3 and check this configurable.
-
-----

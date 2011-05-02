@@ -4,7 +4,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 These bugs are fixed on the tip of the stable branch.
 
-N/A
+* #637 - (clone) TypeError: coercing to Unicode: need string or buffer, NoneType found
 
 Improvements:
 

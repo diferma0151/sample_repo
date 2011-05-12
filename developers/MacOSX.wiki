@@ -2,6 +2,8 @@
 
 <<toc>>
 
+Note: A faster way via MacPorts is described at the end.
+
 === Dependencies: PyQt and QScintilla ===
 
 ==== 0. Install Apple Development Tools (Xcode) ====
@@ -153,3 +155,38 @@ $ thg log
 }}}
 
 Happy Hacking!
+
+=== Alternative: Install via MacPorts ===
+
+* Install XCode (Version 3.x is free and works)
+
+* Install Java Developer Package Update 4 (https://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=20719)
+
+* Install MacPorts (http://www.macports.org/install.php)
+
+* Install Python and PyQt from ports:
+
+{{{
+$ sudo port install python27 python_select
+# Make this the default version
+$ sudo python_select python27
+
+$ sudo port install py27-pygt4 py27-qscintilla
+}}}
+
+* Set " /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin" to your Path (edit //~/.bash_profile//)
+
+
+* Install pip (if not present)
+
+{{{
+$ curl -O http://python-distribute.org/distribute_setup.py
+$ sudo python distribute_setup.py
+$ sudo easy_install pip
+}}}
+
+* Install the easy_installable thg fork
+
+{{{
+$ sudo pip install thg-mac
+}}}

@@ -4,13 +4,27 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 These bugs are fixed on the tip of the stable branch.
 
+* #206 - (detect renames) fix keyboard navigation
+* #502 - (workbench) warn if export would append an existing patch file
+* #632 - (commit) fix performance issues when toggling a large number of files
 * #637 - (clone) TypeError: coercing to Unicode: need string or buffer, NoneType found
 * #638 - (merge) use the same fallback methods as the commit tool to get a username
+* #641 - catch ConfigError globally and try to help user recover
 * #652 - fix performance when viewing large files
+* #661 - filedata: catch aborts while checking for binary status
+* #662 - (manifest) disable context menu if no rows are selected
+* #676 - validate --repository argument before use
+* #682 - (import) avoid string decoding errors by using QDir native methods
 
 Improvements:
 
 * (Workbench) CTRL+W shortcut for closing tabs on Windows
 * (update) persist some options
+* (detect renames) improvements to dialog workflow
+* (commit) auto-refresh when the repository's working parents are changed
+* (revset) show a clearer message when no matches were found
+* (shelve) sort shelve files by their modification times
+* (filterbar) improve clear and close behavior
+* filedata: improve the display of subrepositories in some uncommon states
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

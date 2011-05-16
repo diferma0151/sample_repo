@@ -4,6 +4,8 @@
 
 Note: A faster way via MacPorts is described at the end.
 
+Note: Also if you already use Homebrew there are steps at the end. 
+
 === Dependencies: PyQt and QScintilla ===
 
 ==== 0. Install Apple Development Tools (Xcode) ====
@@ -189,4 +191,46 @@ $ sudo easy_install pip
 
 {{{
 $ sudo pip install thg-mac
+}}}
+
+=== Alternative: Install via Homebrew ===
+
+* Install XCode (Version 3.x is free and works)
+
+* Install Homebrew - http://mxcl.github.com/homebrew/
+
+* Install Python and PyQt from homebrew(This installs qt, sip and pyqt):
+
+{{{
+$ brew install python
+# Add this version to your path
+$ export PATH=/usr/local/share/python:/usr/local/bin/:/usr/local/sbin:$PATH
+#(also edit ~/.bash_profile)
+
+$ brew install pyqt
+# Follow the caveats instructions
+# i.e Add /usr/local/lib/python to the PYTHONPATH
+$ export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+#(also edit ~/.bash_profile)
+}}}
+
+* Follow steps 2 and 5 above to install QScintilla from source
+
+* Install pip (if not present) & pygments
+{{{
+$ /usr/local/share/python/easy_install pip
+$ /usr/local/share/python/pip install Pygments
+}}}
+
+* Install iniparse
+
+{{{
+~/Downloads/iniparse-0.4
+$ python ./setup.py install
+}}}
+
+* Use the above steps to get Tortoisehg and Latest Mercurial(tip) (Note that for cloning you need mercurial, so if you don't have it use pip) 
+
+{{{
+$ pip install Mercurial
 }}}

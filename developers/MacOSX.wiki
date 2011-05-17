@@ -173,7 +173,7 @@ $ sudo port install python27 python_select
 # Make this the default version
 $ sudo python_select python27
 
-$ sudo port install py27-pygt4 py27-qscintilla
+$ sudo port install py27-pyqt4 py27-qscintilla
 }}}
 
 * Set " /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin" to your Path (edit //~/.bash_profile//)

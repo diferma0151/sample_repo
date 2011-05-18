@@ -34,12 +34,13 @@ Before each feature release, we will progressively lock down the code:
 * Use Qt's filesystem watcher to replace QTimer poll functions in thgrepo (done)
 * Subrepository support in manifest (done)
 * Refactor backout as QWizard dialog (done)
+* Use status widget's file tree in MQ widget (done)
+* Subrepository (and generic nested repo) support in Repository Registry (done)
 * Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner (started)
 * Merge dialog needs a cancel button, when appropriate
+* user Mercurial.ini file no longer polled by thgrepo.  Needs a file watcher, I guess
 * Refactor bisect, compress, and rebase as QWizard dialogs
 * Add a file filter to manifest widget, same as status
-* Use status widget's file tree in MQ widget
-* Subrepository (and generic nested repo) support in Repository Registry
 * Investigate whether HgFileView can be used as an editor for wctx
 * Add bundle creation features (#265)
 

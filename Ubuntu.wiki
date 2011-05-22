@@ -6,3 +6,5 @@ sudo apt-get update
 sudo apt-get install tortoisehg
 thg
 }}}
+
+Or see [[thg]] for how to run from source.

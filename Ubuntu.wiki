@@ -1,0 +1,8 @@
+== Installing on Ubuntu ==
+
+{{{
+sudo apt-add-repository ppa:tortoisehg-ppa/releases
+sudo apt-get update
+sudo apt-get install tortoisehg
+thg
+}}}

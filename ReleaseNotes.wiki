@@ -31,6 +31,63 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.0.5 =
+
+Released June 1, 2011
+
+This is a scheduled bug fix release with a number of minor improvements
+
+== Packaged Versions ==
+
+* Mercurial 1.8.4
+* Dulwich 0.7.1
+
+== Bug Fixes ==
+
+* #206 - (detect renames) fix keyboard navigation
+* #433 - (visdiff) prevent UnicodeDecodeError while launching diff tool
+* #502 - (Workbench) warn if export would append an existing patch file
+* #632 - (commit) fix performance issues when toggling a large number of files
+* #637 - (clone) TypeError: coercing to Unicode: need string or buffer, NoneType found
+* #638 - (merge) use the same fallback methods as the commit tool to get a username
+* #641 - (Workbench) catch ConfigError globally and try to help user recover
+* #637 - (shelve) fix unshelve behavior on merged working directories
+* #652 - (Workbench) fix performance when viewing large files
+* #653 - (filehistory) prevent tracebacks from clicking on the background
+* #661 - filedata: catch aborts while checking for binary status
+* #662 - (manifest) disable context menu if no rows are selected
+* #676 - validate --repository argument before use
+* #682 - (import) avoid string decoding errors by using QDir native methods
+* #701 - (setup) fix path manipulation on POSIX platforms
+* #710 - (shelve) catch AttributeError tracebacks from patch parser
+* #712 - (commit) ignore autoinc when committing a merge
+* #738 - (ignore) fix multiple selection behavior
+* #745 - (tag) fix tracebacks from certain error conditions
+* #754 - (Workbench) fix traceback when viewing empty filter
+* #755 - (annotate)  prevent UnicodeDecodeError when annotating files
+* #756 - (Workbench) prevent KeyError when configuring columns without an open repo
+* #759 - (Workbench) catch zlib.error globally and request a refresh
+
+== Improvements ==
+
+* (Workbench) CTRL+W shortcut for closing tabs on Windows
+* (Workbench) do not try to parse dragged binary files as patches
+* (update) persist some options
+* (detect renames) improvements to dialog workflow
+* (commit) auto-refresh when the repository's working parents are changed
+* (revset) show a clearer message when no matches were found
+* (shelve) sort shelve files by their modification times
+* (filterbar) improve clear and close behavior
+* (qimport) improved behavior when patch names would conflict
+* filedata: improve the display of subrepositories in some uncommon states
+
+== Installer ==
+
+* hgcr extension (Qt version) is now bundled again
+* library.zip now includes json #736 
+
+----
+
 = TortoiseHg 2.0.4 =
 
 Released May 1, 2011

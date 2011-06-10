@@ -18,6 +18,10 @@ http://qt.nokia.com/downloads
 
 For Snow Leopard (10.6) users: python2.6 is now run on 64-bit environment by default. Please install 64-bit Qt binary, "Cocoa: Mac binary package for Mac OS X 10.5 - 10.6 (32-bit and 64-bit)".
 
+Do not install Qt version 4.7.1 or 4.7.2. These versions generate crashes in some cases.
+
+Note: Qt 4.7.0 does not crash but you will not be able to use keyboard shortcuts corresponding to contextual menu items. This version could be found on [[ftp://ftp.qt.nokia.com/qt/source/qt-mac-opensource-4.7.0.dmg]] with all other versions.
+ 
 ==== 2. Install QScintilla (from source) ====
 
 http://www.riverbankcomputing.co.uk/software/qscintilla/download
@@ -65,7 +69,7 @@ For Snow Leopard (10.6) users: If you installed 32-bit Qt, append {{{-n --arch i
 installed files:
 * /System/Library/Frameworks/Python.framework/Versions/2.6/bin/sip
 * /Library/Python/2.6/site-packages/sip.so
-* /System/Library/Frameworks/Python.framework/Version/2.6/include/python2.6/sip.h
+* /System/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6/sip.h
 * /Library/Python/2.6/site-packages/sipconfig.py
 * /Library/Python/2.6/site-packages/sipdistutils.py
 

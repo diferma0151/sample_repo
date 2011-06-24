@@ -2,7 +2,9 @@
 
 <<toc>>
 
-Note: A faster way via MacPorts is described at the end.
+Note: tortoisehg is now available in [[http://www.finkproject.org/|fink]]'s unstable tree, as tortoisehg-py27 (or 25 or 26 if you are using an older python for some reason).
+
+Note: A way via MacPorts is described at the end.
 
 Note: Also if you already use Homebrew there are steps at the end. 
 

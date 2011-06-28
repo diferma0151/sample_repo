@@ -15,7 +15,7 @@ page.  If not, please use the source install method.
 **Do NOT run setup.py, it is unnecessary**
 
 # Install Mercurial (consult the chart at [[ReleaseNotes]] for version info)
-# Clone the TortoiseHg repository:  {{{hg clone http://bitbucket.org/tortoisehg/thg tortoisehg}}}
+# Clone the TortoiseHg repository:  {{{hg clone https://bitbucket.org/tortoisehg/thg tortoisehg}}}
 # Symlink the thg script into your path:  {{{ln -s /path/to/tortoisehg/thg ~/bin}}}
 
 That is usually all you have to do. You should now be able to launch the TortoiseHg dialogs.  If you move the tortoisehg repository, just remember to update the ~~/bin/thg symlink.

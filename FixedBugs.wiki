@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.0.5 ==
+== Fixed since 2.1 ==
 
 These bugs are fixed on the tip of the stable branch.
 

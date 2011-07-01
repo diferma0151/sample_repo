@@ -25,6 +25,7 @@ Before each feature release, we will progressively lock down the code:
 
 === Release 2.2 (Targeted November 1, 2011): ===
 
+* Support filesets in status/commit filter
 * Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner (started)
 * Merge dialog needs a cancel button, when appropriate
 * Refactor bisect, compress, and rebase as QWizard dialogs

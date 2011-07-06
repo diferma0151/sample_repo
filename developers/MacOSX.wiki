@@ -177,7 +177,9 @@ Happy Hacking!
 {{{
 $ sudo port install python27 python_select
 # Make this the default version
-$ sudo python_select python27
+# Old version: $ sudo python_select python27
+# New version:
+$ sudo port select python python27
 
 $ sudo port install py27-pyqt4 py27-qscintilla
 }}}

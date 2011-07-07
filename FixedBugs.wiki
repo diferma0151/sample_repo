@@ -1,11 +1,10 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.1 ==
+== Fixed since 2.1.1 ==
 
 These bugs are fixed on the tip of the stable branch.
 
-* hgcrutil: add missing import of _() (closes #852)
-* NameError: global name 'paths' is not defined (#853)
+N/A
 
 Improvements:
 

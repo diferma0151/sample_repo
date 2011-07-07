@@ -29,6 +29,35 @@ an older version of Mercurial, please consult the following chart:
 | 1.9.x | 2.1.n |
 | hg default tip | thg default tip |
 
+----
+
+= TortoiseHg 2.1.1 =
+
+Released July 7, 2011
+
+This is a bug fix release.  All users of 2.1 are recommended to upgrade
+
+== Packaged Versions ==
+
+* Mercurial 1.9+10 (tip of stable branch)
+* Updated perfarce extension, now hg-1.9 compatible
+
+== Bug Fixes ==
+
+* sync: move import of paths to top of the file (fixes #853, etc)
+* hgcrutil: add missing import of _() (closes #852)
+* NameError: global name 'paths' is not defined (#853)
+* wctxactions: give parent to transient menus (closes #716)
+* repomodel: reorder colors in Changes column (refs #776)
+* sync: do not use --bookmark argument for target in in/out commands (refs #901)
+* wctxactions: fix rename from status/commit dialogs (fixes #902)
+* thg: workaround for resolve tool bug (fixes #891)
+* archive: fix bad handling of non-ascii path (fixes #883)
+* thg: reintroduce stderr capture (closes #856)
+* shelve: fix shelf creation when .hg/shelves must be created
+* visdiff: fix possible unicode error at launchtool (fixes #796)
+* fileview: avoid unwanted unicode issue at timerBuildDiffMarkers (fixes #857)
+* shellext: additionally use GetDriveType for local disks check (closes #842)
 
 ----
 

@@ -165,6 +165,7 @@ $ thg log
 Happy Hacking!
 
 === Alternative: Install via MacPorts ===
+**Warning:** Installing TortoiseHg this way usually takes //a couple of hours// because Qt is compiled from its sources.
 
 * Install XCode (Version 3.x is free and works)
 

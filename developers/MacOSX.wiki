@@ -2,11 +2,11 @@
 
 <<toc>>
 
-Note: tortoisehg is now available in [[http://www.finkproject.org/|fink]]'s unstable tree, as tortoisehg-py27 (or 25 or 26 if you are using an older python for some reason).
+**Note:** tortoisehg is now available in [[http://www.finkproject.org/|fink]]'s unstable tree, as tortoisehg-py27 (or 25 or 26 if you are using an older python for some reason).
 
-Note: A way via MacPorts is described at the end.
+**Note:** A way via MacPorts is described at the end.
 
-Note: Also if you already use Homebrew there are steps at the end. 
+**Note:** Also if you already use Homebrew there are steps at the end. 
 
 === Dependencies: PyQt and QScintilla ===
 
@@ -203,43 +203,107 @@ $ sudo pip install thg-mac
 }}}
 
 === Alternative: Install via Homebrew ===
+**Warning:** Installing TortoiseHg this way usually takes //a couple of hours// because Qt is compiled from its sources. This may no longer be true, when [[https://github.com/mxcl/homebrew/issues/6417|Homebrew ticket #6417]] is fixed.
 
-* Install XCode (Version 3.x is free and works)
+* Install [[http://developer.apple.com/xcode/|XCode]] (Version 3.2.6 is free and works)
 
-* Install Homebrew - http://mxcl.github.com/homebrew/
+* Install [[http://mxcl.github.com/homebrew/|Homebrew]] - https://github.com/mxcl/homebrew/wiki/installation
 
-* Install Python and PyQt from homebrew(This installs qt, sip and pyqt):
+ * Add Homebrew's paths to ##$PATH## and ##$PYTHONPATH##:
 
 {{{
-$ brew install python
-# Add this version to your path
-$ export PATH=/usr/local/share/python:/usr/local/bin/:/usr/local/sbin:$PATH
-#(also edit ~/.bash_profile)
-
-$ brew install pyqt
-# Follow the caveats instructions
-# i.e Add /usr/local/lib/python to the PYTHONPATH
-$ export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
-#(also edit ~/.bash_profile)
+#!sh
+# Edit ~/.bash_profile or ~/.bashrc
+# Add these lines (or adjust them)
+BREW_PREFIX=`brew --prefix`
+export PATH=$BREW_PREFIX/share/python:$BREW_PREFIX/bin/:$BREW_PREFIX/sbin:$PATH
+export PYTHONPATH=$BREW_PREFIX/lib/python:$PYTHONPATH
 }}}
 
-* Follow steps 2 and 5 above to install QScintilla from source
+* Install PyQt via homebrew (this also installs qt and sip):
 
-* Install pip (if not present) & pygments
 {{{
-$ /usr/local/share/python/easy_install pip
-$ /usr/local/share/python/pip install Pygments
+$ sudo brew install pyqt
 }}}
 
-* Install iniparse
+**Note:** This may take an hour or two to compile.
+
+* Install QScintilla via homebrew. Note: Until [[https://github.com/mxcl/homebrew/issues/6431|ticket #6431]] is implemented, you need to create the Homebrew Formula yourself. Here is the formular (##qscintilla.rb##):
 
 {{{
-~/Downloads/iniparse-0.4
-$ python ./setup.py install
+#!ruby
+require 'formula'
+
+class Qscintilla < Formula
+  url 'http://www.riverbankcomputing.co.uk/static/Downloads/QScintilla2/QScintilla-gpl-2.5.1.tar.gz'
+  homepage 'http://www.riverbankcomputing.co.uk/software/qscintilla/intro'
+  md5 'dd7edef5ff674d307057a3c12dbd8fce'
+
+  depends_on 'pyqt'
+  depends_on 'sip'
+
+  def install
+    ENV.prepend 'PYTHONPATH', "#{HOMEBREW_PREFIX}/lib/python", ':'
+
+    Dir.chdir 'Qt4'
+
+    inreplace 'qscintilla.pro' do |s|
+      s.gsub! '$$[QT_INSTALL_LIBS]', lib
+      s.gsub! "$$[QT_INSTALL_HEADERS]", include
+      s.gsub! "$$[QT_INSTALL_TRANSLATIONS]", "#{prefix}/trans"
+      s.gsub! "$$[QT_INSTALL_DATA]", "#{prefix}/data"
+    end
+
+    system "qmake", "qscintilla.pro"
+    system "make"
+    system "make", "install"
+
+    Dir.chdir '../Python'
+
+    system 'python', 'configure.py', "-o", lib, "-n", include, "--apidir=#{prefix}/qsci", "--destdir=#{lib}/python/PyQt4", "--sipdir=#{share}/sip"
+    system 'make'
+    system 'make', 'install'
+  end
+  
+  def caveats; <<-EOS
+This formula won't function until you amend your PYTHONPATH like so:
+    export PYTHONPATH=#{HOMEBREW_PREFIX}/lib/python:$PYTHONPATH
+EOS
+  end
+end
 }}}
 
-* Use the above steps to get Tortoisehg and Latest Mercurial(tip) (Note that for cloning you need mercurial, so if you don't have it use pip) 
+Place this file in your Formula directory:
 
 {{{
-$ pip install Mercurial
+$ sudo cp qscintilla.rb `brew --prefix`/Library/Formula/
+}}}
+
+Now install QScintilla:
+
+{{{
+$ sudo brew install qscintilla
+}}}
+
+* Install required Python packages:
+{{{
+$ sudo easy_install pip
+$ sudo pip install Pygments
+$ sudo pip install iniparse
+}}}
+
+* Install Mercurial:
+{{{
+$ sudo pip install Mercurial
+}}}
+
+* Checkout TortoiseHg (using Mercurial):
+{{{
+$ hg clone http://bitbucket.org/tortoisehg/thg/ ~/Documents/TortoiseHg
+}}}
+
+Now you should be able to start TortoiseHg:
+{{{
+$ cd ~/Documents/TortoiseHg
+$ ./thg log
 }}}

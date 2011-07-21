@@ -101,6 +101,8 @@ You may need to add /System/Library/Frameworks/Python.framework/Versions/2.6/bin
 $ for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/$name; done
 }}}
 
+Also, PyQt4 will install versions of pyuic4 for both Python 2 and Python 3, and py2app will find the wrong version when both are present.  To work around this problem, simply delete the /Library/Python/2.6/site-packages/PyQt4/uic/port_v3 directory.  If you see an error in proxy_base.py when attempting to build, you most likely did not delete the port_v3 directory.
+
 ==== 5. Install Python binding for QScintilla ====
 
 {{{

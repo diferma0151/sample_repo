@@ -6,7 +6,7 @@
 
 **Note:** A way via MacPorts is described at the end.
 
-**Note:** Also if you already use Homebrew there are steps at the end. 
+**Note:** Also if you already use Homebrew there are steps at the end. These steps have been confirmed to work with TortoiseHg 2.1.1. They also create an app for your ##Applications## folder.
 
 === Dependencies: PyQt and QScintilla ===
 
@@ -309,3 +309,7 @@ Now you should be able to start TortoiseHg:
 $ cd ~/Documents/TortoiseHg
 $ ./thg log
 }}}
+
+The next steps create a "wrapper application" for your Mac OS X applications folder. You can download the necessary files here: http://manski.net/files/TortoiseHg.zip (Alternatively you can follow the instructions [[http://sixohthree.com/1314/shell-scripts-as-applications-in-mac-os-x|here]].)
+
+The zip file contains just the wrapper app. If you've checked out TortoiseHg to ##~/Documents/TortoiseHg##, this app should work out of the box. Otherwise you need to edit the file ##Content/MacOS/run.sh## inside the application bundle. To do this, just right click the app and click "Show Package Contents".

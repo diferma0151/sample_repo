@@ -27,4 +27,4 @@ $ apt-get install mercurial pyqt4-dev-tools python-qscintilla2 python-iniparse p
 }}}
 (python-iniparse and python-pygments are optional)
 
-If the packaged mercurial isn't 1.6 or later, try getting it from source by {{{hg clone http://selenic.com/repo/hg}}}
+If the packaged mercurial isn't new enough, try getting it from source by {{{hg clone http://selenic.com/repo/hg}}}

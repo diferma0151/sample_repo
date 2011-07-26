@@ -3,7 +3,7 @@
 Users, please add sections here for your favorite distribution.
 
 * Python 2.4 or later
-* Mercurial 1.6 or later
+* Mercurial 1.9 or later
 * Python development headers, etc
 * Qt 4.6 and PyQt 4.7 or later
 * iniparse 0.3.1 or later (optional)

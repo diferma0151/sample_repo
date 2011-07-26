@@ -2,8 +2,8 @@
 
 Prerequisites:
 
-* Python 2.4 or later
-* Mercurial 1.9 or later
+* Python 2.4 or later (but not Python 3.x)
+* Mercurial 1.9 or later, see [[ReleaseNotes]]
 * Python development headers, etc
 * Qt 4.6 and PyQt 4.7 or later
 * iniparse 0.3.1 or later (optional)

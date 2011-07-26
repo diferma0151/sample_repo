@@ -1,6 +1,6 @@
-== Hacking TortoiseHg Qt on Linux ==
+== Running TortoiseHg 2.x from source on Linux ==
 
-Users, please add sections here for your favorite distribution.
+Prerequisites:
 
 * Python 2.4 or later
 * Mercurial 1.9 or later
@@ -17,6 +17,8 @@ $ hg clone http://bitbucket.org/tortoisehg/thg thg
 $ cd thg
 $ python thg log
 }}}
+
+** Users, please add sections here for your favorite distribution. **
 
 == Debian sid/testing ==
 

@@ -31,6 +31,62 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.1.2 =
+
+Released August 1, 2011
+
+This is a bug fix release.  All users of 2.1.n are recommended to upgrade
+
+== Packaged Versions ==
+
+* Mercurial 1.9.1
+* Dulwich 0.8.0
+
+== Bug Fixes ==
+
+* fileview: catch mode changes while diff marker thread is active (fixes #921)
+* fileview: fix syntax error (close #922)
+* repowidget: clear filter text in clearRevisionSet() (closes #925)
+* qtlib: HgRepoView.forward() must forward keyword parameters
+* reporegistry: fix unicode handling at addSubrepo() (fixes #947)
+* filedata: handle 'removed and dirty' subrepo state (closes #934)
+* repowidget: abort bundle pulls if self.bundle is None (closes #959)
+* commit: catch TypeError from guess_lexer_for_filename (closes #962)
+* repoview: ensure that revision being selected is visible (fixes #946)
+* manifestdialog: only pass a Workbench window as repoviewer (fixes #938)
+* status: update check box to match file check states (fixes #960)
+* revset: respond to the arrow keys (fixes #833)
+* qtlib: open only existing paths in terminal
+* manifest: do not crash when calling revert on the working directory
+* revert: throw a ValueError, rather than crashing, when reverting to the None rev
+* reporegistry: better common path extraction on Windows
+* messageentry: allow resizing commit message box down to one line (fixes #44)
+* sync: require that port be numeric and in the appropriate range (fixes #994)
+* workbench: showRepo() takes a QString or Unicode string (closes #1003)
+* manifestdialog: set ignorecase during init, fixes highlighting on Annotate File in search
+* workbench: do not reopen repos during startup until subrepos have been loaded into the registry (closes #1017)
+* qtlib: make InfoBar word-wrap long status/error message (fixes #1031)
+* grep: convert ctx search results to unicode before dispalying in tableview
+* thgrepo: add option not to monitor changes on network drives (refs #889)
+* repoview: fixes ctrl click behavior reported in #1019
+
+== Improvements ==
+
+* backout: add support for backing out merge revisions
+* many layout improvements
+* add background-color support to diff lexer
+* update: add checkbox for --verbose
+* registry: Add keyboard shortcut for delete (Suppr) and rename(F2)
+* sync: allow username to be edited in ssh hostentry (closes #964)
+* bugreport: include encoding value in report text
+* cmdui: show red error message if command fails
+* status: hide check boxes in standalone status browser
+* several usability improvements to the settings tool
+* reporegistry: mark .hgsub file for add when it is created
+* reporegistry: Make sure that the item corresponding to the active tab is visible
+
+----
+
 = TortoiseHg 2.1.1 =
 
 Released July 7, 2011

@@ -26,7 +26,7 @@ http://bitbucket.org/tortoisehg/thg-winbuild/
 High level layout of the TortoiseHg repositories:
 
 |=Path |=Purpose |
-| win32/ | Windows shell extension code and installer scripts |
+| win32/ | Windows installer sources  (the [[https://bitbucket.org/tortoisehg/shellext/wiki/Home|shell extension]] is in a separate repo) |
 | doc/ | reST and sphinx based documentation |
 | tortoisehg/util/ | TortoiseHg utilities used by PyGtk, PyQt, and nautilus |
 | tortoisehg/hgtk/ | TortoiseHg portable PyGtk dialogs |

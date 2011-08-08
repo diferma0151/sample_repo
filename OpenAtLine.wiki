@@ -30,6 +30,10 @@ editor = <path\to\>TextPad.exe [$FILE($LINENUM)]
 # (G)VIM, must be in %PATH%
 [tortoisehg]
 editor = gvim -f [-c":set hls" -c"/$SEARCH/"] [+$LINENUM $FILE]
+
+# Sublime Text 2
+[tortoisehg]
+editor = <path\to\>sublime_text.exe [$FILE:$LINENUM]
 }}}
 
 === Linux / Unix ===

@@ -4,7 +4,8 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 These bugs are fixed on the tip of the stable branch.
 
-<<issue 1080>> - KeyError 'ignorecase' in manifestdialog.py
+* #1080 - KeyError 'ignorecase' in manifestdialog.py
+* #999 - UnicodeDecodeError in Annotation files dialog
 
 Improvements:
 

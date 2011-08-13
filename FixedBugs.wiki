@@ -6,6 +6,7 @@ These bugs are fixed on the tip of the stable branch.
 
 * #1080 - KeyError 'ignorecase' in manifestdialog.py
 * #999 - UnicodeDecodeError in Annotation files dialog
+* #1050, #1057 - goto revision not work (nodeid hyperlink / after-pull focus)
 
 Improvements:
 

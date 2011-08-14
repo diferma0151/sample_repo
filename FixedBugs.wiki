@@ -8,6 +8,9 @@ These bugs are fixed on the tip of the stable branch.
 * #999 - UnicodeDecodeError in Annotation files dialog
 * #1050, #1057 - goto revision not work (nodeid hyperlink / after-pull focus)
 * #1088 - branch filter fails to display non-ascii characters
+* #1049 - missing last character of history search result
+* #1036 - UnicodeDecodeError when export a commit to patch
+* #1000 - Visual diff with local fails on stand-alone annotation dialog
 
 Improvements:
 

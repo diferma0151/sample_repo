@@ -310,6 +310,6 @@ $ cd ~/Documents/TortoiseHg
 $ ./thg log
 }}}
 
-The next steps create a "wrapper application" for your Mac OS X applications folder. You can download the necessary files here: http://manski.net/files/TortoiseHg.zip (Alternatively you can follow the instructions [[http://sixohthree.com/1314/shell-scripts-as-applications-in-mac-os-x|here]].)
+The final step is to "create" a "wrapper app bundle" for your Mac OS X applications folder. Simply checkout [[https://bitbucket.org/skrysmanski/thg-mac-app|this repository]] and copy the app bundle it contains to your Applications folder.
 
-The zip file contains just the wrapper app. If you've checked out TortoiseHg to ##~/Documents/TortoiseHg##, this app should work out of the box. Otherwise you need to edit the file ##Content/MacOS/run.sh## inside the application bundle. To do this, just right click the app and click "Show Package Contents".
+//Note:// If you've checked out TortoiseHg to ##~/Documents/TortoiseHg##, this app should work out of the box. Otherwise you need to read the readme file included in the repository.

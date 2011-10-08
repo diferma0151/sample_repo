@@ -1,24 +1,13 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.1.3 ==
+== Fixed since 2.1.4 ==
 
 These bugs are fixed on the tip of the stable branch.
 
-* filedata: normalize add/rename checks for binary files (fixes #1152)
-* repotreeitem: Handle all exceptions that may happen during appendSubrepos (closes #1175)
-* chunks: handle perm errors from revert() calls that delete files (fixes #1215)
-* sync: no parent is available in parseurl (fixes #1216)
-* repofilter: ignore errors in saveSettings (fixes #1235)
-* reporegistry: Do not try to show subrepos for non mercurial repositories (closes #1085)
-* repowidget: do not allow visualDiffToLocal to use the working dir (fixes #1247)
-* mq: fix calls to QuestionMsgBox (closes #1257)
-* sync: use str.split instead of QString.split at ssh url parsing (fixes #1280)
-* mergetools: add regkeyalt for BeyondCompare (closes #1264)
-* repowidget: catch ValueError from rebuildGraph() (closes #1269)
+* visdiff: properly detect copies/renames on Windows (closes #742, #679)
 
 Improvements:
 
-* export: set the default patch name to the rev number when exporting a single revision <<changeset f6f4546dd6da>>
-* hgignore: add context menu for {{{**}}} <<changeset 0e16f7eb45c7>> and double click action <<changeset 66cc70957f66>>
+N/A
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

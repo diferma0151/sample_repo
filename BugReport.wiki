@@ -1,17 +1,44 @@
-== Reporting Bugs and Feature Enhancements ==
+during clone the following error appeared, seeking for help
+{{{
+#!python
+** Mercurial version (1.9.1).  TortoiseHg version (2.1.2)
+** Command: 
+** CWD: C:\Users\dell\Desktop
+** Encoding: cp936
+** Extensions loaded: 
+** Python version: 2.6.6 (r266:84297, Aug 24 2010, 18:13:38) [MSC v.1500 64 bit (AMD64)]
+** Windows version: (6, 1, 7601, 2, 'Service Pack 1')
+** Processor architecture: x64
+** Qt-4.7.1 PyQt-4.8.3
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\thread.pyo", line 274, in run
+  File "tortoisehg\util\hglib.pyo", line 719, in dispatch
+  File "mercurial\dispatch.pyo", line 679, in _dispatch
+  File "mercurial\dispatch.pyo", line 454, in runcommand
+  File "mercurial\dispatch.pyo", line 733, in _runcommand
+  File "mercurial\dispatch.pyo", line 687, in checkargs
+  File "mercurial\dispatch.pyo", line 676, in <lambda>
+  File "mercurial\util.pyo", line 385, in check
+  File "mercurial\commands.pyo", line 1041, in clone
+  File "mercurial\hg.pyo", line 334, in clone
+  File "mercurial\localrepo.pyo", line 1946, in clone
+  File "mercurial\localrepo.pyo", line 1376, in pull
+  File "mercurial\localrepo.pyo", line 1741, in addchangegroup
+  File "mercurial\revlog.pyo", line 1155, in addgroup
+  File "mercurial\changegroup.pyo", line 187, in deltachunk
+  File "mercurial\changegroup.pyo", line 152, in chunklength
+  File "mercurial\changegroup.pyo", line 17, in readexactly
+  File "mercurial\util.pyo", line 825, in read
+  File "mercurial\util.pyo", line 803, in splitbig
+  File "mercurial\httprepo.pyo", line 18, in zgenerator
+  File "mercurial\util.pyo", line 857, in filechunkiter
+  File "mercurial\keepalive.pyo", line 427, in read
+  File "httplib.pyo", line 522, in read
+  File "mercurial\keepalive.pyo", line 465, in _read_chunked
+  File "httplib.pyo", line 619, in _safe_read
+  File "socket.pyo", line 377, in read
+  File "ssl.pyo", line 215, in recv
+  File "ssl.pyo", line 136, in read
+error: [Errno 10054] 
 
-First of all, **thank you** for spending the time to report this bug to us.
-
-The first step should be to consult the list of **[[FixedBugs]]** that are already fixed on the tip of the stable branch, and are likely already in the [[http://bitbucket.org/tortoisehg/thg-winbuild/downloads|nightly builds]]. Also consult the [[http://bitbucket.org/tortoisehg/thg/issues/?kind=bug&status=open|open bug list]].
-
-If your bug is truly new, or if you have an idea for an enhancement, report it to our issue
-**[[https://bitbucket.org/tortoisehg/thg/issues/new|tracker]]**.
-
-Since 2.0.1, the bug report dialog has a **Copy** button that copies the bug text to the clipboard.  Simply paste the report into the entry form.  If the bug report is more than a screen full of text, feel free to save it from the dialog and attach it to the new issue.
-
-If you remember what you were doing at the time the bug occurred, please add this to the bug report, as this is frequently much more important than the stack trace itself.  
-
-Please leave new issues assigned to the 'tortoisehg' user as this ensures emails for the issue are distributed to the appropriate mailing list.
-
-See our **[[developers/Home|developers]]** wiki for details on contributing patches or other work.
-
+}}}

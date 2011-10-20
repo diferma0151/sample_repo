@@ -284,7 +284,7 @@ $ sudo cp qscintilla.rb `brew --prefix`/Library/Formula/
 Now install QScintilla:
 
 {{{
-$ sudo brew install qscintilla
+$ brew install qscintilla
 }}}
 
 * Install required Python packages:

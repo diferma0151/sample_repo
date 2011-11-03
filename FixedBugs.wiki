@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.1.4 ==
+== Fixed since 2.1.4 (stable) ==
 
 These bugs are fixed on the tip of the stable branch.
 
@@ -24,3 +24,11 @@ Improvements:
 * settings: add setting to open new tabs next to the curren tab
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**
+
+== Improvements since 2.1 (default) ==
+
+* fileview: better appearance of horizontal scroll bar
+* largefiles/kbfiles: add support for largefiles and kbfiles extensions
+* reporegistry: allow dragging groups into groups
+* reporegistry: close the relative tab when repository is removed from registry
+* sync: added support for pushing or pulling a specific branch (fixes #1012)

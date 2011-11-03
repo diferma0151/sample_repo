@@ -22,10 +22,11 @@ within Mercurial itself.
 
 In TortoiseHg 2.0, the **thg** command will start the Workbench if it is run without arguments.  To see the list of commands available, use **thg --help**
 
-=== Planned Features ===
+=== Planned Features / Improvements ===
 
 * [[Nit]] list
 * [[upcoming-release-notes|upcoming release notes]]
+* [[FixedBugs]] list
 
 === Internals ===
 

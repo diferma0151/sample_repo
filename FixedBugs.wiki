@@ -4,10 +4,23 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 These bugs are fixed on the tip of the stable branch.
 
+* backout: verify the working parent (fixes #1304)
+* chunks, thgrepo: catch race conditions querying mtime (fixes #1327)
+* export: fix unicode error when exporting a single changeset (fixes #1352)
+* hgstrip: allow revision 0 to be stripped
+* manifest: handle non-ascii filename passed from command-line (fixes #1167)
+* mmerge: catch EnvironmentError from wctx.dirty() in check thread (fixes #1336)
+* repomodel: remove circular reference to self from _columnmap (fixes #1254)
+* reporegistry: Add subrepos could fail due to case and forward/backward slash differences
+* repoview: trap EnvironmentError in saveSettings() (fixes #1330)
+* settings: pass non-ascii filename correctly to file editor
 * visdiff: properly detect copies/renames on Windows (closes #742, #679)
 
 Improvements:
 
-N/A
+* hgignore: prompt to add newly created .hgignore file
+* i18n: add Indonesian and Javanese translations
+* qscilib: make autocomplete configurable, disabled by default
+* settings: add setting to open new tabs next to the curren tab
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

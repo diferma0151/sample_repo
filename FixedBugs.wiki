@@ -19,7 +19,7 @@ These bugs are fixed on the tip of the stable branch.
 Improvements:
 
 * hgignore: prompt to add newly created .hgignore file
-* i18n: add Indonesian and Javanese translations
+* i18n: add Arabic, Indonesian and Javanese translations
 * qscilib: make autocomplete configurable, disabled by default
 * settings: add setting to open new tabs next to the curren tab
 

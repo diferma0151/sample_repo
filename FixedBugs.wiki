@@ -18,7 +18,7 @@ These bugs are fixed on the tip of the stable branch.
 
 Improvements:
 
-* commit: add setting to automatically refresh the status list when it is shown
+* commit: add setting to automatically refresh the status list when it is shown (#143)
 * hgignore: prompt to add newly created .hgignore file
 * i18n: add Arabic, Indonesian and Javanese translations
 * qscilib: make autocomplete configurable, disabled by default

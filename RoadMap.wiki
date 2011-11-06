@@ -23,12 +23,11 @@ Before each feature release, we will progressively lock down the code:
 * -1 week   - no new translatable strings on stable
 * -3 days   - code freeze on stable.  Documentation and installer changes only
 
-=== Release 2.2 (Targeted November 1, 2011): ===
+=== Release 2.3 (Targeted March 1, 2011): ===
 
 * Support filesets in status/commit filter
-* Refactor wctxactions, actions should be owned by StatusWidget and use cmdui.Runner (started)
+* Refactor wctxactions to use cmdui.Runner
 * Merge dialog needs a cancel button, when appropriate
-* Refactor bisect, compress, and rebase as QWizard dialogs
 * Add a file filter to manifest widget, same as status
 * Investigate whether HgFileView can be used as an editor for wctx
 * Investigate a per-repository tab log console

@@ -1,35 +1,7 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.1.4 (stable) ==
+== Fixed since 2.2 ==
 
-These bugs are fixed on the tip of the stable branch.
-
-* backout: verify the working parent (fixes #1304)
-* chunks, thgrepo: catch race conditions querying mtime (fixes #1327)
-* export: fix unicode error when exporting a single changeset (fixes #1352)
-* hgstrip: allow revision 0 to be stripped
-* manifest: handle non-ascii filename passed from command-line (fixes #1167)
-* mmerge: catch EnvironmentError from wctx.dirty() in check thread (fixes #1336)
-* repomodel: remove circular reference to self from _columnmap (fixes #1254)
-* reporegistry: Add subrepos could fail due to case and forward/backward slash differences
-* repoview: trap EnvironmentError in saveSettings() (fixes #1330)
-* settings: pass non-ascii filename correctly to file editor
-* visdiff: properly detect copies/renames on Windows (closes #742, #679)
-
-Improvements:
-
-* commit: add setting to automatically refresh the status list when it is shown (#143)
-* hgignore: prompt to add newly created .hgignore file
-* i18n: add Arabic, Indonesian and Javanese translations
-* qscilib: make autocomplete configurable, disabled by default
-* settings: add setting to open new tabs next to the curren tab
+N/A
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**
-
-== Improvements since 2.1 (default) ==
-
-* fileview: better appearance of horizontal scroll bar
-* largefiles/kbfiles: add support for largefiles and kbfiles extensions
-* reporegistry: allow dragging groups into groups
-* reporegistry: close the relative tab when repository is removed from registry
-* sync: added support for pushing or pulling a specific branch (fixes #1012)

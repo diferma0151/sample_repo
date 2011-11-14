@@ -23,7 +23,7 @@ Before each feature release, we will progressively lock down the code:
 * -1 week   - no new translatable strings on stable
 * -3 days   - code freeze on stable.  Documentation and installer changes only
 
-=== Release 2.3 (Targeted March 1, 2011): ===
+=== Release 2.3 (Targeted March 1, 2012): ===
 
 * Support filesets in status/commit filter
 * Refactor wctxactions to use cmdui.Runner

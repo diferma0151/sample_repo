@@ -18,6 +18,9 @@ http://developer.apple.com/technologies/tools/
 
 http://qt.nokia.com/downloads
 
+Direct access via
+http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x/
+
 For Snow Leopard (10.6) users: python2.6 is now run on 64-bit environment by default. Please install 64-bit Qt binary, "Cocoa: Mac binary package for Mac OS X 10.5 - 10.6 (32-bit and 64-bit)".
 
 Do not install Qt version 4.7.1 or 4.7.2. These versions generate crashes in some cases.

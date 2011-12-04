@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.2 ==
+== Fixed since 2.2.1 ==
 
 N/A
 

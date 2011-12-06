@@ -1,6 +1,8 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.2 ==
+= Fixed since 2.2 =
+
+== Bug Fixes ==
 
 * chunks: catch ValueError from internalpatch (fixes #1249)
 * commit: use command runner for rollback (fixes #1436)
@@ -17,7 +19,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * visdiff: use os.makedirs() to re-create diff folder when necessary (fixes #1151)
 * wctxactions: fix encoding of warning messages coming from hg
 
-Improvements:
+== Improvements ==
 
 * commit: add several actions to subrepo context menu
 * commit: make stand-alone dialog support mq
@@ -29,5 +31,7 @@ Improvements:
 * revdetails: add "Copy Path" in pop-up menu
 * sync: add support for the --mq option in the sync tool
 * workbench: add "Goto revision" command
+
+----
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

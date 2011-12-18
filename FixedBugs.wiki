@@ -1,36 +1,14 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Fixed since 2.2 =
+= Fixed since 2.2.1 =
 
 == Bug Fixes ==
 
-* chunks: catch ValueError from internalpatch (fixes #1249)
-* commit: use command runner for rollback (fixes #1436)
-* hgignore: catch IndexError while building pats list (fixes #1204)
-* filedata: fix mode-only change detection on working dir
-* grep: fix #1428 rev and line are now sorted numerical
-* manifest: don't test file status of directory node on doubleclick (fixes #1408)
-* manifest: fix error while displaying subrepo (fixes #1386)
-* reporegistry: show proper short path when common group path ends with slash
-* repowidget: capture commit widget output (#1379)
-* repowidget: manually reverse compress arguments (fixes #1344)
-* shlib: call close() instead of rename() on Mercurial 2.0+ (fixes #1397)
-* update: wctx.modified() is prone to throw EnvironmentError (closes #1435)
-* visdiff: use os.makedirs() to re-create diff folder when necessary (fixes #1151)
-* wctxactions: fix encoding of warning messages coming from hg
+TBD
 
 == Improvements ==
 
-* commit: add several actions to subrepo context menu
-* commit: make stand-alone dialog support mq
-* rebase: add collapse rebased changesets option (fixes #1381)
-* repomodel: more stable branch colors
-* reporegistry: improve error handling while adding a subrepository
-* repowidget: make double clicking an applied patch qgoto that patch (closes #1044)
-* repowidget: add "Goto common ancestor" command in pop-up menu
-* revdetails: add "Copy Path" in pop-up menu
-* sync: add support for the --mq option in the sync tool
-* workbench: add "Goto revision" command
+TBD
 
 ----
 

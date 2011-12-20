@@ -36,7 +36,7 @@ an older version of Mercurial, please consult the following chart:
 
 Released December 3, 2011
 
-This is a bugfix release
+This is a bug fix release.  All users of 2.2.n are recommended to upgrade
 
 == Packaged Versions ==
 
@@ -49,29 +49,32 @@ This is a bugfix release
 * repowidget: manually reverse compress arguments (fixes #1344)
 * thgrepo: wrap changectx.sub() to return thgrepo-aware subrepo obj (fixes #1386)
 * chunks: catch ValueError from internalpatch (fixes #1249)
+* commit: use command runner for rollback (fixes #1436)
 * hgignore: catch IndexError while building pats list (fixes #1204)
-* visdiff: use os.makedirs() to re-create diff folder when necessary (fixes #1151)
+* grep: fix #1428 rev and line are now sorted numerical
 * manifest: don't test file status of directory node on doubleclick (fixes #1408)
-* reporegistry: improve error handling while adding a subrepository
+* manifest: fix error while displaying subrepo (fixes #1386)
+* repowidget: capture commit widget output (#1379)
+* repowidget: manually reverse compress arguments (fixes #1344)
 * shlib: call close() instead of rename() on Mercurial 2.0+ (fixes #1397)
 * filedata: fix mode-only change detection on working dir
 * grep: fix #1428 rev and line are now sorted numerical
 * update: wctx.modified() is prone to throw EnvironmentError (closes #1435)
+* visdiff: use os.makedirs() to re-create diff folder when necessary (fixes #1151)
+* wctxactions: fix encoding of warning messages coming from hg
 
 == Improvements ==
 
-* commit: report errors to workbench notification bar
 * commit: add several actions to subrepo context menu
-* commit: add "Copy path" action to subrepo items
+* commit: make stand-alone dialog support mq
 * rebase: add collapse rebased changesets option (fixes #1381)
-* workbench: add "Goto revision" command
+* repomodel: more stable branch colors
+* reporegistry: improve error handling while adding a subrepository
+* repowidget: make double clicking an applied patch qgoto that patch (closes #1044)
 * repowidget: add "Goto common ancestor" command in pop-up menu
-* repowidget: Make double clicking an applied patch qgoto that patch (closes #1044)
 * revdetails: add "Copy Path" in pop-up menu
-* reporegistry: show proper short path when common group path ends with slash
-* repomodel: initialize the branch colors in alphabetical order to make them more stable
-* run: add st as alias for status
 * sync: add support for the --mq option in the sync tool
+* workbench: add "Goto revision" command
 
 ----
 

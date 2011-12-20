@@ -1,7 +1,15 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-== Fixed since 2.2.1 ==
+= Fixed since 2.2.1 =
 
-N/A
+== Bug Fixes ==
+
+TBD
+
+== Improvements ==
+
+TBD
+
+----
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

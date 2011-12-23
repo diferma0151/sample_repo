@@ -1,0 +1,42 @@
+{{{
+#!python
+** Mercurial version (1.9.2).  TortoiseHg version (2.1.3)
+** Command: --nofork workbench
+** CWD: C:\Users\wangchao\Desktop
+** Encoding: cp936
+** Extensions loaded: 
+** Python version: 2.6.6 (r266:84297, Aug 24 2010, 18:46:32) [MSC v.1500 32 bit (Intel)]
+** Windows version: (6, 1, 7601, 2, 'Service Pack 1')
+** Processor architecture: x86
+** Qt-4.7.1 PyQt-4.8.3
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\thread.pyo", line 274, in run
+  File "tortoisehg\util\hglib.pyo", line 725, in dispatch
+  File "mercurial\dispatch.pyo", line 688, in _dispatch
+  File "mercurial\dispatch.pyo", line 463, in runcommand
+  File "mercurial\dispatch.pyo", line 742, in _runcommand
+  File "mercurial\dispatch.pyo", line 696, in checkargs
+  File "mercurial\dispatch.pyo", line 685, in <lambda>
+  File "mercurial\util.pyo", line 385, in check
+  File "mercurial\commands.pyo", line 3266, in incoming
+  File "mercurial\hg.pyo", line 480, in incoming
+  File "mercurial\hg.pyo", line 439, in _incoming
+  File "mercurial\bundlerepo.pyo", line 338, in getremotechanges
+  File "mercurial\changegroup.pyo", line 95, in writebundle
+  File "mercurial\changegroup.pyo", line 32, in getchunk
+  File "mercurial\changegroup.pyo", line 17, in readexactly
+  File "mercurial\changegroup.pyo", line 143, in read
+  File "mercurial\util.pyo", line 825, in read
+  File "mercurial\util.pyo", line 803, in splitbig
+  File "mercurial\httprepo.pyo", line 18, in zgenerator
+  File "mercurial\util.pyo", line 857, in filechunkiter
+  File "mercurial\keepalive.pyo", line 427, in read
+  File "httplib.pyo", line 522, in read
+  File "mercurial\keepalive.pyo", line 456, in _read_chunked
+  File "httplib.pyo", line 619, in _safe_read
+  File "socket.pyo", line 377, in read
+  File "ssl.pyo", line 215, in recv
+  File "ssl.pyo", line 136, in read
+error: [Errno 10054] 
+
+}}}

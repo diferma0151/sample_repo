@@ -3,7 +3,7 @@
 To be able to evaluate, test, or hack on TortoiseHg on Windows, you need to install:
 
 * TortoiseHg binary installer (for shell extension and bootstrap) [[https://bitbucket.org/tortoisehg/thg/downloads|download]]
-* Python 2.6.6 [[http://www.python.org/download/releases/2.6.6/|download python-2.6.6.msi]]
+* Python 2.6.6 [[http://www.python.org/download/releases/2.6.6/|download python-2.6.6.msi]] (add {{{C:\Python26}}} to your path after instalation)
 * Mercurial 1.8 or later Python source package [[https://bitbucket.org/tortoisehg/thg-winbuild/downloads/|download mercurial-1.8.win32-py2.6.exe]]
 * pywin32 [[http://sourceforge.net/projects/pywin32/files/pywin32/Build216/|download pywin32-216.win32-py2.6.exe]]
 * PyQt >= 4.8.6, includes Qt and QSci [[http://www.riverbankcomputing.co.uk/software/pyqt/download|download PyQt-Py2.6-x86-gpl-4.8.6-1.exe]]
@@ -22,9 +22,10 @@ To see the list of commands available, use **python thg --help**
 If it is your preference, you can download and install the 64bit Python, Mercurial, PyQt, pywin32, etc and run TortoiseHg as a 64 bit application.  In fact, you can have both 32bit and 64bit packages installed at the same time.  Except for the TortoiseHg binary installer, you must install the x64 package on an x64 O/S because of the shell extension.
 
 == Extras ==
+Extras are optional and require setuptools from http://pypi.python.org/pypi/setuptools#windows
 
-* iniparse >= 0.3.1 (optional, allows you to edit configuration files)
-* pygments (optional, allows the commit tool to offer variable completions)
+* iniparse >= 0.3.1 (allows you to edit configuration files - {{{c:\Python26\Scripts\easy_install.exe iniparse}}})
+* pygments (allows the commit tool to offer variable completions - {{{c:\Python26\Scripts\easy_install.exe pygments}}})
 
 For URLs and other helpful info, see:
 

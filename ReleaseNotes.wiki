@@ -32,6 +32,35 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.2.2 =
+
+Released January 2, 2012
+
+This is a bug fix release.  All users of 2.2.n are recommended to upgrade
+
+== Packaged Versions ==
+
+* Mercurial 2.0.2
+
+== Bug Fixes ==
+
+* update: fixes for non-ascii branch names
+* desktop: fix icon name (closes #1387)
+* reporegistry, etc: allow non-ascii names to be submitted to clipboard
+* visdiff: catch environment errors from snapshot file creation (closes #1499)
+* rupdate: fix error when thg is run outside of the repository
+* run: handle duplicated exceptions of the same type gracefully (fixes #1464)
+* wconfig: translate ParsingError of iniparse to error.ParseError (refs #1512)
+
+== Improvements ==
+
+* repomodel: allow all patches to be reordered
+* quickop: improved large file support
+* quickop: improvements to initial check status
+* status:  context menu for checking/unchecking selected files
+
+----
+
 = TortoiseHg 2.2.1 =
 
 Released December 3, 2011

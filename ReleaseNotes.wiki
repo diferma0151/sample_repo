@@ -32,6 +32,64 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.3-rc =
+
+Released February 5, 2012
+
+This is a major feature release
+
+== Packaged Versions ==
+
+* Mercurial 2.1
+* Python keyring 0.7.2
+* Mercurial_keyring 0.5
+* Dulwich 0.8.3
+* TortoiseOverlays 1.1.3.21564
+
+== Bug Fixes ==
+
+* shelve: prevent the use of bad characters in shelf files (fixes #765)
+* sync: emit a message when outgoing --subrepo completes (closes #1564)
+* qimport: check for existing patches (fixes #1569)
+* commit: ensure autoinc files are included (closes #737)
+* shelve: verify chunks are non-empty before proceeding (closes #1552)
+* repotreeitem: sort subrepos by name by default (closes #1251)
+* status: don't use thgrepo in thread (refs #1505)
+* branchop, etc: fix encoding of repo.namedbranches in branchop dialog comboBox
+* update: default the confirmation to "cancel" (closes #1325)
+* thread: catch socket errors including SSLError (closes #1520)
+
+== Improvements ==
+
+* supprt for Mercurial phases in repowidget
+* shellext - support for largefile extension
+* new registry keys for DiffMerge 3.3
+* settings: add defaultpush configuration setting
+* "Go To Revision" button with shortcut CTRL+/
+* workbench: add shortcut for "rollback" command (Ctrl-u)
+* reporegistry: add cmenu sort actions for groups (closes #1189)
+* repofilter: add "author(username)" permanent query
+* repofilter: add "bookmark()" permanent query
+* settings: add defaultpush configuration setting
+* manifestmodel: add method to filter files by glob pattern
+* manifest: add filter box to file tree
+* commit: show selected options (closes #1491)
+* filedialogs, manifest: add "save at revision" to cmenu (closes #1500)
+* commit: support --subprepos option in DetailsDialog (closes #1379)
+* commit: handle tolocal conversion failures more gracefully (closes #1516)
+* revpanel: add source revision item for converted changesets
+* repomodel: add column for source revision of converted changesets
+
+== Installer ==
+
+* hgfold extension removed, it no longer worked with modern Mercurial
+* added projrc extension - https://bitbucket.org/aragost/projrc/
+* pulled latest TortoisePlink executables from TortoiseSVN, x64 and x86 versions
+* upgraded to most recent TortoiseOverlay merge modules
+* upgraded to most recent diff/merge scripts
+
+----
+
 = TortoiseHg 2.2.2 =
 
 Released January 2, 2012

@@ -28,7 +28,35 @@ an older version of Mercurial, please consult the following chart:
 | 1.8.x | 2.0.n |
 | 1.9.x | 2.1.n |
 | 2.0.x | 2.2.n |
+| 2.1.x | 2.3.n |
 | hg default tip | thg default tip |
+
+----
+
+= TortoiseHg 2.3 =
+
+Released February 14, 2012
+
+This is a major feature release.  See 2.3-rc notes for full changes from 2.2
+
+== Packaged Versions ==
+
+* Mercurial 2.1
+* Python keyring 0.7.2
+* Mercurial_keyring 0.5
+* Dulwich 0.8.3
+* TortoiseOverlays 1.1.3.21564
+
+== Bug Fixes ==
+
+* revdetails: fall back to tip on reload if current rev is unknown (fixes #1581)
+* visdiff: do not translate a debug message (closes #1595)
+* settings: fix phase support detection
+* manifestmodel: fix possible infinite-recursion of _buildrootentry
+
+== Improvements ==
+
+* qscilib: give the filEditor dialog a maximize button
 
 ----
 

@@ -221,7 +221,7 @@ $ sudo pip install thg-mac
 # Add these lines (or adjust them)
 BREW_PREFIX=`brew --prefix`
 export PATH=$BREW_PREFIX/share/python:$BREW_PREFIX/bin/:$BREW_PREFIX/sbin:$PATH
-export PYTHONPATH=$BREW_PREFIX/lib/python:$PYTHONPATH
+export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 }}}
 
 * Install PyQt via homebrew (this also installs qt and sip):
@@ -230,11 +230,13 @@ export PYTHONPATH=$BREW_PREFIX/lib/python:$PYTHONPATH
 $ brew install pyqt
 }}}
 
-* Install QScintilla via homebrew. Note: Until [[https://github.com/mxcl/homebrew/issues/8140|ticket #8140]] is implemented, you need to pull the Homebrew Formula yourself. 
+* Install QScintilla via homebrew.
 
 {{{
-$ brew pull 8140 --install
+$ brew install qscintilla2
 }}}
+
+//Note:// This formula is currently broke, see [[https://github.com/mxcl/homebrew/issues/10366|homebrew issue 10366]].
 
 If there is an error about missing git repository, try to update Homebrew first:
 

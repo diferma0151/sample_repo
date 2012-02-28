@@ -5,6 +5,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 == Bug Fixes ==
 
 * TypeError on reload (after config changed, pushed, etc.) #1617
+* sync: convert character encoding on load/save settings (fixes #1688)
 
 == Improvements ==
 

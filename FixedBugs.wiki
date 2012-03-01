@@ -11,6 +11,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 == Improvements ==
 
 * Now workbench shows almost all errors on infobar area
+* sync: recognize git:// url if hggit extension is enabled
 
 ----
 

@@ -83,7 +83,7 @@ This is the list of left-over TODOs from the initial port, and some long term id
 
 == Clone ==
 
-* clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings. (will try - Johan)
+* clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings.
 
 == Settings ==
 
@@ -138,7 +138,7 @@ using
 
 == Rename dialog ==
 
-* implement enhancements from issues 1124 + 1186
+* implement enhancements from issues #1124 + #1186
 * enhancement #1604
 
 == qtlib ==

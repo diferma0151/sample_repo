@@ -109,8 +109,7 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * expose default-push in some way
 * parse push/pull output for indication of work done
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See
-  http://bitbucket.org/tortoisehg/stable/issue/1437/gui-freeze-on-suse-linux-after-
-using
+ https://bitbucket.org/tortoisehg/hgtk/issue/1437/gui-freeze-on-suse-linux-after-using
 
 == Annotate ==
 
@@ -138,8 +137,8 @@ using
 
 == Rename dialog ==
 
-* implement enhancements from issues #1124 + #1186
-* enhancement #1604
+* enhancement 1186 (see https://bitbucket.org/tortoisehg/hgtk/issue/1186)
+* enhancement 1604 (see https://bitbucket.org/tortoisehg/hgtk/issue/1604)
 
 == qtlib ==
 

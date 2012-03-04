@@ -33,6 +33,33 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.3.1 =
+
+Released March 4, 2012
+
+This is a bug fix release.  Users of 2.3 should upgrade
+
+== Packaged Versions ==
+
+* Mercurial 2.1.1
+
+== Bug Fixes ==
+
+* revdetails: don't test revison existence for workingctx (fixes #1617)
+* sync: convert character encoding on load/save settings (fixes #1688)
+* commit: display only whitelisted options (fixes #1647)
+* repowidget: don't clearSelection in gotoParent (fixes #1673)
+
+== Improvements ==
+
+* qscilib: give the filEditor dialog a maximize button
+* repowidget: limit infobar error messages to 2 lines of up to 140 chars by default
+* repowidget: show all errors on infobar
+* sync: improve support for hg-git extension
+* largefiles: improve support of largefile extension
+
+----
+
 = TortoiseHg 2.3 =
 
 Released February 14, 2012

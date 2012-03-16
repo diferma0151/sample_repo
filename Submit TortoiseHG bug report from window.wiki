@@ -1,0 +1,20 @@
+{{{
+#!python
+** Mercurial version (2.1).  TortoiseHg version (2.3)
+** Command: 
+** CWD: C:\Windows\system32
+** Encoding: cp1250
+** Extensions loaded: 
+** Python version: 2.6.6 (r266:84297, Aug 24 2010, 18:46:32) [MSC v.1500 32 bit (Intel)]
+** Windows version: (6, 0, 6002, 2, 'Service Pack 2')
+** Processor architecture: x86
+** Qt-4.7.4 PyQt-4.8.6
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\repowidget.pyo", line 943, in configChanged
+  File "tortoisehg\hgqt\revdetails.pyo", line 298, in reload
+  File "mercurial\localrepo.pyo", line 234, in __contains__
+  File "mercurial\localrepo.pyo", line 596, in lookup
+  File "mercurial\revlog.pyo", line 710, in _match
+TypeError: object of type 'NoneType' has no len()
+
+}}}

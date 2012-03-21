@@ -23,6 +23,16 @@ About TortoiseHg Translation Team:
 # Set environment variable LANG=XX
 # Launch TortoiseHg
 
+You can also test translations from a source install on Windows:
+
+# Create the folder structure locale\XX\LC_MESSAGE\ in the repo root of your source install (as a sibling to the tortoisehg folder that is).
+# Download a translation in MO format from Launchpad (or use the one you just produced yourself, if you happen to be a translator).
+# Copy the .mo file to <repo root>\locale\XX\LC_MESSAGE\tortoisehg.mo where XX is the locale.
+# Set the language:
+## Set the environment variable LANG=XX.
+## An alternative to setting the language as an environment variable, is to set it in your startup script for running TortoiseHg from source. Simply add line "set LANG=XX" in that script, and you're done.
+# Launch TortoiseHg from source.
+
 === Translating Explorer Context Menu ===
 
 Context menu items are translated using the same process as the rest of the source code.  The strings in tortoisehg/util/menuthg.py are translated on launchpad.   As part of the installer building process, the translations for those strings is extracted into registry files which are then included in the installer.

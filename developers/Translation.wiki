@@ -30,7 +30,7 @@ You can also test translations from a source install on Windows:
 # Copy the .mo file to <repo root>\locale\XX\LC_MESSAGE\tortoisehg.mo where XX is the locale.
 # Set the language:
 ## Set the environment variable LANG=XX.
-## An alternative to setting the language as an environment variable, is to set it in your startup script for running TortoiseHg from source. Simply add line "set LANG=XX" in that script, and you're done.
+## An alternative to setting the language as an environment variable, is to set it in your startup script for running TortoiseHg from source. Simply add or uncomment line "set LANG=XX" in that script, and you're done. (see [[developers/Windows|here]] for an example thg.cmd startup script)
 # Launch TortoiseHg from source.
 
 === Translating Explorer Context Menu ===

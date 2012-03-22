@@ -20,7 +20,6 @@ To see the list of commands available, use **python thg --help**
 Depending on where you put the content of all those packages, you might or might not be able to execute 'python thg' with success. There is a rather simple solution for that. Just create a {{{thg.cmd}}} file with the following content, and put in the same folder as the {{{thg}}} source file in your TortoiseHg source install. (It was originally provided by Adrian Buehlmann I think, in the early weeks of the Qt port.)
 
 {{{
-:: thg.cmd
 @echo off
 ::
 :: thg.cmd

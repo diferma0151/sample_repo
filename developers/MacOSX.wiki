@@ -208,6 +208,7 @@ $ sudo pip install thg-mac
 }}}
 
 === Alternative: Install via Homebrew ===
+**Warning:** Installing TortoiseHg this way usually takes //a couple of hours// because Qt is compiled from its sources.
 
 * Install [[http://developer.apple.com/xcode/|XCode]] (Version 3.2.6 is free and works)
 

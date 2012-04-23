@@ -33,6 +33,51 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.3.2 =
+
+Released April 23, 2012
+
+This is a bug fix release.  Users of 2.3.n should upgrade
+
+== Packaged Versions ==
+
+* Mercurial 2.1.2
+
+== Bug Fixes ==
+
+* commit: fix traceback when issue.bugtraqparameters is not set (closes #1736)
+* commit: prompt if user tries to close window while committing
+* commit: truncate selected options label if needed (fixes #1731)
+* icons: fix missing projrc icon (move settings-projrc.svg icon into icons/scalable)
+* import: show the Import button when import fails
+* manifest: do not try to edit folders except on the working directory
+* manifest: handle revision links in dialog mode
+* merge: do not close the wizard if a command is running (fixes #1338)
+* patchctx: make phase info available for patches
+* qtlib: fix handling of UNC paths (fixes #1798)
+* reporegistry: improve accuracy of subrepo detection when adding a repository (refs #1672)
+* reporegistry: warn if adding non-repository folder as subrepo (fixes #1830)
+* repoview: forcibly clear selection on goto(rev) (fixes #1673)
+* sync: disable save button when alias name is blank
+* sync: hg push returns 1 if no changes found (fixes #1717)
+* sync: prompt if user tries to close window while synchronizing
+* tag: disable actions if a command is still running
+* thgrepo: update timestamp only if changes detected successfully (fixes #1728)
+* several fixes for unicode issue (#1651, #1754, #1770, #1774, #1822)
+
+== Improvements ==
+
+* commit: delay the bugtraq button setup to speed up the commit widget creation (closes #1734)
+* commit: expand environment variables on tortoisehg.bugtraqparameters setting (closes #1733)
+* compress: store/restore geometry
+* nautilus: GNOME 3.2 compatibility update for nautilus-thg
+* sync: improve pull/push behavior when no remote path is set
+* sync: add support for editing aliases
+* update: keep the state of the option expander and its expander button in sync
+* workbench: improve push infobar message
+
+----
+
 = TortoiseHg 2.3.1 =
 
 Released March 4, 2012

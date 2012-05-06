@@ -1,17 +1,10 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Fixed since 2.3 =
+= Fixed since 2.4 =
 
 == Bug Fixes ==
 
-* TypeError on reload (after config changed, pushed, etc.) #1617
-* sync: convert character encoding on load/save settings (fixes #1688)
-* rebase: show failure on immutable changesets #1610
-
 == Improvements ==
-
-* Now workbench shows almost all errors on infobar area
-* sync: recognize {{{git://}}} url if hggit extension is enabled
 
 ----
 

@@ -40,4 +40,16 @@ My explorations:
 
 Hopefully, Tovim
 
+Heureka three days later: 
+
+The cause of my problem was clearly declared: I have not the workstion service installed.
+The solution of this problem in Windows XP Pro - SP3 is as follows:
+{{{
+Control Panel > Network Connections > Local Network Connection 
+here right click on Properties > Install > Client > Add > 
+Client for Microsoft Networks / OK
+}}}
+Easy going with TorotiseHg Workbench again!
+Tovim
+
 

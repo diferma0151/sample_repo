@@ -19,6 +19,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Improvements ==
 
+* commit: automatically set 'close branch' commit message
 * graft: display graft source in changeset info when available
 * repofilter: show the 'default' branch as the first branch on the branch combobox
 * repowidget: make links (addresses and paths) on the infobar clickable

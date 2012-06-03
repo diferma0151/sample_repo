@@ -11,6 +11,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * repowidget: correct parameter for shell_notify()
 * repowidget: fix 'Push all' revision context menu (was doing 'Push to here' instead)
 * repowidget: refresh wctx status of commit widget by tab change (fixes #1657)
+* repowidget: take into account the tortoisehg.branchcolors setting (refs #1644)
 * revdetails: do not crash on visual diff for unapplied patches (fixes #1772)
 * sync: convert non-ascii alias/url correctly at editurl action
 * sync: fix several unicode issues at SaveDialog (fixes #1883)

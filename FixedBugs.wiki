@@ -13,6 +13,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * repowidget: refresh wctx status of commit widget by tab change (fixes #1657)
 * repowidget: take into account the tortoisehg.branchcolors setting (refs #1644)
 * revdetails: do not crash on visual diff for unapplied patches (fixes #1772)
+* sync: append svn+https and git schemes to urlparse.uses_netloc
 * sync: convert non-ascii alias/url correctly at editurl action
 * sync: fix several unicode issues at SaveDialog (fixes #1883)
 * sync: fix URL displayed on direct pull

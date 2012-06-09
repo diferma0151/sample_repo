@@ -1,33 +1,15 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Fixed since 2.4 =
+= Fixed since 2.4.1 =
 
 == Bug Fixes ==
 
-* qrename: fix unicode error when displaying patch name (fixes #1914)
-* rejects: ensure editing doesn't start before first line (fixes #1424, #369)
-* remove unused tortoisehg/util/hgshelve.py, refs #1908
-* repoview: hide "drop line" when dragging an unapplied patch to an invalid drop location
-* repowidget: correct parameter for shell_notify()
-* repowidget: fix 'Push all' revision context menu (was doing 'Push to here' instead)
-* repowidget: refresh wctx status of commit widget by tab change (fixes #1657)
-* repowidget: take into account the tortoisehg.branchcolors setting (refs #1644)
-* revdetails: do not crash on visual diff for unapplied patches (fixes #1772)
-* sync: append svn+https and git schemes to urlparse.uses_netloc
-* sync: convert non-ascii alias/url correctly at editurl action
-* sync: fix several unicode issues at SaveDialog (fixes #1883)
-* sync: fix URL displayed on direct pull
-* update: fix target information when updating to null revision
-* workbench: fix unicode error while loading the last session
+N/A
 
 == Improvements ==
 
-* commit: automatically set 'close branch' commit message
-* graft: display graft source in changeset info when available
-* repofilter: show the 'default' branch as the first branch on the branch combobox
-* repowidget: make links (addresses and paths) on the infobar clickable
-* sync: basic support for default push URL
-* workbench: activate the tab that was active on the previous session
+
+N/A
 
 ----
 

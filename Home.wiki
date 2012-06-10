@@ -69,7 +69,7 @@ For any questions or comments on TortoiseHg, please post to TortoiseHg's mailing
 
 == Other Languages ==
 
-[[http://bitbucket.org/troter/thg-ja/wiki/Home|日本語 (Japanese)]]
+[[http://bitbucket.org/mercurialjp/thg-ja/wiki/Home|日本語 (Japanese)]]
 
 == Contribution ==
 

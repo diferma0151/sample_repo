@@ -2,14 +2,27 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Fixed since 2.4.1 =
 
+(up to 27a55ca28910)
+
+== Packaged Versions ==
+
+* Python2.7 ?
+* svn 1.7.5
+
 == Bug Fixes ==
 
-N/A
+* bugtraq: improve error handling
+* commit: allow committing a merge that does not change a file
+* lfprompt: catch ValueError from int() (fixes #1901)
+* repofilter: don't disable branch options menu at all (fixes #1962)
+* sync: check if curalias is not None before using it (fixes #1950)
+
+* fix several unicode errors
 
 == Improvements ==
 
-
-N/A
+* annotate: take into account annotate settings
+* graft: add basic support of graft core command
 
 ----
 

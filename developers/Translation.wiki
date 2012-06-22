@@ -16,8 +16,8 @@ About TortoiseHg Translation Team:
 [[http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/1813]]
 
 ==== Language specific ====
-German:
-[[/mg/hg-i18n/src/tip/i18n/de.po#cl-12|Übersetzungshilfen]] (guidelines from hg, [[/tortoisehg/thg/issue/890/german-translation#comment-1432524 | also used in thg]])
+German: 
+[[http://mercurial.selenic.com/wiki/GermanTranslation|Übersetzungshilfen]] (guidelines from hg, [[/tortoisehg/thg/issue/890/german-translation#comment-1432524 | also used in thg]])
 
 === Testing translations on Windows ===
 

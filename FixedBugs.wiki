@@ -2,11 +2,9 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Fixed since 2.4.1 =
 
-(up to 9241b78a12d4)
-
 == Packaged Versions ==
 
-* Python2.7 ?
+* Python2.7
 * svn 1.7.5
 
 == Bug Fixes ==

@@ -34,6 +34,37 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+== Packaged Versions ==
+
+* Mercurial 2.2.3
+* Python 2.7.3
+* svn 1.7.5 (x86) 1.6.6 (x64)
+
+== Bug Fixes ==
+
+* bugtraq: improve error handling
+* commit: allow committing a merge that does not change a file
+* commit: exclude all files on new/close branch if no file selected (fixes #1985)
+* hgignore: ignore largefiles when scanning for untracked files (fixes #1978)
+* lfprompt: catch ValueError from int() (fixes #1901)
+* outgoing: fix push all command and improve outgoing infobar
+* repofilter: don't disable branch options menu at all (fixes #1962)
+* repowidget: bring back 'Browse at revision' menu action (closes #1920)
+* sync: check if curalias is not None before using it (fixes #1950)
+* tortoisehgtools: do not crash when command cannot be executed
+* wctxactions: allow to overwrite existing file on copy (fixes #1983)
+
+* fix several unicode errors
+
+== Improvements ==
+
+* annotate: take into account annotate settings
+* graft: add basic support of graft core command
+* mergetools: add support for Devart Code Compare and Code Compare 3 (Free and Pro)
+* workbench: bring to front when opening a repo on Single Workbench mode
+
+----
+
 = TortoiseHg 2.4.1 =
 
 Released June 8, 2012

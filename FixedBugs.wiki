@@ -7,6 +7,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * commit: escape from mqPerformAction if canceled (fixes #2010)
 * filectxactions: descend into sub-repository if necessary (fixes #2035)
 * fileview: also preserve cursor position on reloading the same file (fixes #1803)
+* guess: do not show unmodified largefiles as candidates for rename
 * hgqt: use setShortcuts() to preserve secondary key of StandardKey (refs #2045)
 * nautilus: Fix issue #869 [1]. Nautilus extension now works
 * rename: use getSaveFileName to select non-existent file for dest path
@@ -15,6 +16,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * revset: display "fromsvn" and "svnrev" items 0 or 1 time
 * shortcuts: change all "Ctrl+Alt" shortcuts into "Ctrl+Shift" shortcuts (closes #1976)
 * sync: don't show "new branch" confirmation endlessly (fixes #1615)
+* sync: warn invalid port number at getfingerprint (refs #1910)
 
 = Improvements since 2.4 =
 

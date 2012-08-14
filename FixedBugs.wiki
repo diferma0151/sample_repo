@@ -7,7 +7,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * commit: escape from mqPerformAction if canceled (fixes #2010)
 * fileview: also preserve cursor position on reloading the same file (fixes #1803)
 * guess: do not show unmodified largefiles as candidates for rename
-* rename: use getSaveFileName to select non-existent file for dest path
+* archive, rename: use getSaveFileName to select non-existent file for dest path
 * reporegistry: fix unicode handling at open() called thru openClone()
 * repowidget: don't clear revset text by request from filterbar (fixes #2020)
 * revset: display "fromsvn" and "svnrev" items 0 or 1 time

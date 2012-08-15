@@ -13,6 +13,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * repowidget: don't clear revset text by request from filterbar (fixes #2020)
 * repowidget: update menuselection even while bundle/outgoing (fixes #2052)
 * revset: display "fromsvn" and "svnrev" items 0 or 1 time
+* serve: minimal support for paths containing space or comma (fixes #2082)
 * sync: correct logic whether to read defaultpush setting (fixes #2022)
 * sync: don't show "new branch" confirmation endlessly (fixes #1615)
 * sync: warn invalid port number at getfingerprint (refs #1910)

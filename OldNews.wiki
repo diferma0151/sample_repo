@@ -1,3 +1,10 @@
+* 2012-01-02: TortoiseHg 2.2.2 (with Mercurial 2.0.2) released
+* 2011-12-03: TortoiseHg 2.2.1 (with Mercurial 2.0.1) released
+* 2011-11-06: TortoiseHg 2.2 (with Mercurial 2.0) released
+* 2011-10-05: TortoiseHg 2.1.4 (with Mercurial 1.9.3) released
+* 2011-08-28: TortoiseHg 2.1.3 (with Mercurial 1.9.2) released
+* 2011-08-01: TortoiseHg 2.1.2 (with Mercurial 1.9.1) released
+* 2011-07-07: TortoiseHg 2.1.1 (with Mercurial 1.9+10) released
 * 2011-07-01: TortoiseHg 2.1 (with Mercurial 1.9) released
 * 2011-06-01: TortoiseHg 2.0.5 (with Mercurial 1.8.4) released
 * 2011-05-01: TortoiseHg 2.0.4 (with Mercurial 1.8.3) released

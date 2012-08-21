@@ -46,7 +46,7 @@ This is a scheduled minor release of TortoiseHG (2.4.3), but a major release of 
 
 Mercurial 2.3 breaks hgsubversion, so you must pull and update your hgsubversion clone before upgrading to this release.  If you get an error message "unable to open module repo!", then you have this problem and you must update hgsubversion.
 
-= Fixed since 2.4.2 =
+== Bug Fixes ==
 
 * bugtraq: add missing import of COMError (fixes #2013)
 * commit: allow amending a revision without selecting any files

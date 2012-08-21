@@ -44,7 +44,9 @@ This is a scheduled minor release of TortoiseHG (2.4.3), but a major release of 
 
 * Mercurial 2.3
 
-Mercurial 2.3 breaks hgsubversion, so you must pull and update your hgsubversion clone before upgrading to this release.  If you get an error message "unable to open module repo!", then you have this problem and you must update hgsubversion.
+Mercurial 2.3 breaks hgsubversion, so you must pull and update your hgsubversion clone before upgrading to this release.  If you get an error message "unable to open module repo!", then you have this problem and you must update hgsubversion.  The same is true for hg-git, it must be updated before you upgrade to Mercurial 2.3.
+
+If you fail to update your extensions before upgrading, you must disable the extensions in your Mercurial.ini file, then pull and update them, then finally re-enable them.
 
 == Bug Fixes ==
 

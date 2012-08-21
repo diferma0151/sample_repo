@@ -34,6 +34,44 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.4.3 =
+
+Released August 20, 2012
+
+This is a scheduled minor release of TortoiseHG (2.4.3), but a major release of Mercurial (2.3)
+
+== Packaged Versions ==
+
+* Mercurial 2.3
+
+Mercurial 2.3 breaks hgsubversion, so you must pull and update your hgsubversion clone before upgrading to this release.  If you get an error message "unable to open module repo!", then you have this problem and you must update hgsubversion.
+
+= Fixed since 2.4.2 =
+
+* bugtraq: add missing import of COMError (fixes #2013)
+* commit: allow amending a revision without selecting any files
+* commit: escape from mqPerformAction if canceled (fixes #2010)
+* fileview: also preserve cursor position on reloading the same file (fixes #1803)
+* mq: enable qreorder button if unapplied patch exists (refs #2064)
+* guess: do not show unmodified largefiles as candidates for rename
+* archive, rename: use getSaveFileName to select non-existent file for dest path
+* reporegistry: fix unicode handling at open() called thru openClone()
+* repowidget: don't clear revset text by request from filterbar (fixes #2020)
+* repowidget: update menuselection even while bundle/outgoing (fixes #2052)
+* revset: display "fromsvn" and "svnrev" items 0 or 1 time
+* serve: minimal support for paths containing space or comma (fixes #2082)
+* sync: correct logic whether to read defaultpush setting (fixes #2022)
+* sync: don't show "new branch" confirmation endlessly (fixes #1615)
+* sync: warn invalid port number at getfingerprint (refs #1910)
+* wctxactions: do not offer the forget command for added files
+* wctxactions: do not ask for revert --discard if files are not modified
+
+== Installer ==
+
+* Includes sspi package from pywin32
+
+----
+
 = TortoiseHg 2.4.2 =
 
 Released July 2, 2012

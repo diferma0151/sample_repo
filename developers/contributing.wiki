@@ -31,6 +31,8 @@ Mercurial sources, even though we are targeting the Windows platform.
 
 The Mercurial wiki has a good page with [[http://www.selenic.com/mercurial/wiki/index.cgi/SuccessfulPatch|suggestions]] for contributing patches.  In general these are also applicable for TortoiseHg.
 
+TortoiseHg specific guidelines can be found in [[https://bitbucket.org/tortoisehg/thg/src/tip/CONTRIBUTING.txt|CONTRIBUTING.txt]]
+
 == Guidelines For Commit Messages
 
 * If your change is in response to an issue in the bug tracker, you should use [[http://trac.edgewall.org/browser/trunk/contrib/trac-post-commit-hook|trac style]] commands in your commit message:
@@ -70,4 +72,3 @@ changelog of TortoiseHg if in doubt, or consult the mailing lists.
 
 The general idea is to be able to identify the areas that a patch targets,
 while consuming the minimum amount of characters on the summary line.
-

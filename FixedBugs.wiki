@@ -2,6 +2,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Fixed since 2.4.3 =
 
+* filedata: ctx.sub() can throw a KeyError (refs #2115)
 * filectxactions: descend into sub-repository if necessary (fixes #2035)
 * hgqt: use setShortcuts() to preserve secondary key of StandardKey (refs #2045)
 * nautilus: Fix issue #869 [1]. Nautilus extension now works

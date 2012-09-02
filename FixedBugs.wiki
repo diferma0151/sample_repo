@@ -1,40 +1,33 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Fixed since 2.4.2 =
-
-* bugtraq: add missing import of COMError (fixes #2013)
-* commit: allow amending a revision without selecting any files
-* commit: escape from mqPerformAction if canceled (fixes #2010)
-* fileview: also preserve cursor position on reloading the same file (fixes #1803)
-* mq: enable qreorder button if unapplied patch exists (refs #2064)
-* guess: do not show unmodified largefiles as candidates for rename
-* archive, rename: use getSaveFileName to select non-existent file for dest path
-* reporegistry: fix unicode handling at open() called thru openClone()
-* repowidget: don't clear revset text by request from filterbar (fixes #2020)
-* repowidget: update menuselection even while bundle/outgoing (fixes #2052)
-* revset: display "fromsvn" and "svnrev" items 0 or 1 time
-* serve: minimal support for paths containing space or comma (fixes #2082)
-* sync: correct logic whether to read defaultpush setting (fixes #2022)
-* sync: don't show "new branch" confirmation endlessly (fixes #1615)
-* sync: warn invalid port number at getfingerprint (refs #1910)
-
-== in default branch ==
+= Fixed since 2.4.3 =
 
 * filectxactions: descend into sub-repository if necessary (fixes #2035)
 * hgqt: use setShortcuts() to preserve secondary key of StandardKey (refs #2045)
 * nautilus: Fix issue #869 [1]. Nautilus extension now works
+* revset: fix return key behavior (closes #2104)
+* repowidget, status: delete old model on reload (refs #2119, #702)
 * shortcuts: change all "Ctrl+Alt" shortcuts into "Ctrl+Shift" shortcuts (closes #1976)
+* strip: fix compatibility with hg 2.3
+* sync: reload the list of paths when a path is saved
+* wctxactions: provide 'all' flag so that subrepo revert works (fixes #2122)
 
-= Improvements since 2.4 (in default branch) =
+= Improvements since 2.4 =
 
+* compare: show "Editor Options" in menus, show horizontal scrollbars
 * customtools: settings: add 'Tools' panel
   (includes format change of config file, 2f71b15196e9)
 * docklog: add command history (closes #1779)
 * docklog: add 'hg/thg command' completion
 * filectxactions: add "Folder history" command
+* filedata: add new binary detection heuristic, based on the max line length
 * fileview: add 'Annotate Options' context submenu (fixes #1861)
+* manifest: expand the file tree when "return" is pressed
+* repofilter: restore previously selected branch (closes #1009, #1927)
+* repofilter: show current working branch first (closes #2042)
 * reporegistry: ensure that the selected tab item is visible
 * settings: add "New Commit Phase" setting
+* wctxactions: add a confirmation for revert of file types SAR! (closes #2102)
 * workbench: make the task toolbar buttons configurable
 
 

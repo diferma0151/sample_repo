@@ -1,0 +1,36 @@
+After "blue screen" on my computer in time of pull, i see this picture in Hg Workbench of my repository:
+http://s2.ipicture.ru/uploads/20120903/V2BTj1z5.png
+
+Any action invokes this bug report message:
+
+{{{
+#!python
+** Mercurial version (2.2.3).  TortoiseHg version (2.4.2)
+** Command: --nofork workbench
+** CWD: D:\Documents\!Projects\Inpipe
+** Encoding: cp1251
+** Extensions loaded: 
+** Python version: 2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)]
+** Windows version: sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1')
+** Processor architecture: x64
+** Qt-4.8.0 PyQt-4.9.1
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\run.pyo", line 554, in __call__
+  File "tortoisehg\hgqt\workbench.pyo", line 1232, in run
+  File "tortoisehg\hgqt\workbench.pyo", line 570, in showRepo
+  File "tortoisehg\hgqt\workbench.pyo", line 891, in _openRepo
+  File "tortoisehg\hgqt\workbench.pyo", line 733, in addRepoTab
+  File "tortoisehg\hgqt\repowidget.pyo", line 119, in __init__
+  File "tortoisehg\hgqt\repowidget.pyo", line 171, in setupUi
+  File "tortoisehg\hgqt\repofilter.pyo", line 112, in __init__
+  File "tortoisehg\hgqt\repofilter.pyo", line 304, in refresh
+  File "tortoisehg\hgqt\repofilter.pyo", line 257, in _updatebranchfilter
+  File "mercurial\util.pyo", line 237, in __get__
+  File "tortoisehg\hgqt\thgrepo.pyo", line 455, in namedbranches
+  File "mercurial\localrepo.pyo", line 523, in branchtags
+  File "mercurial\changelog.pyo", line 195, in read
+  File "mercurial\revlog.pyo", line 931, in revision
+  File "mercurial\revlog.pyo", line 940, in _checkhash
+RevlogError: integrity check failed on 00changelog.i:883
+
+}}}

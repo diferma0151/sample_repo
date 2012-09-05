@@ -30,7 +30,50 @@ an older version of Mercurial, please consult the following chart:
 | 2.0.x | 2.2.n |
 | 2.1.x | 2.3.n |
 | 2.2.x | 2.4.n |
+| 2.3.x | 2.5.n |
 | hg default tip | thg default tip |
+
+----
+
+= TortoiseHg 2.5 =
+
+TortoiseHg 2.5 is a major feature release
+
+== Packaged Versions ==
+
+* Mercurial 2.3
+
+
+== Bug Fixes ==
+
+* filedata: ctx.sub() can throw a KeyError (refs #2115)
+* filectxactions: descend into sub-repository if necessary (fixes #2035)
+* hgqt: use setShortcuts() to preserve secondary key of StandardKey (refs #2045)
+* nautilus: Fix issue #869 [1]. Nautilus extension now works
+* revset: fix return key behavior (closes #2104)
+* repowidget, status: delete old model on reload (refs #2119, #702)
+* shortcuts: change all "Ctrl+Alt" shortcuts into "Ctrl+Shift" shortcuts (closes #1976)
+* strip: fix compatibility with hg 2.3
+* sync: reload the list of paths when a path is saved
+* wctxactions: provide 'all' flag so that subrepo revert works (fixes #2122)
+
+== Improvements over 2.4 ==
+
+* compare: show "Editor Options" in menus, show horizontal scrollbars
+* customtools: settings: add 'Tools' panel
+  (includes format change of config file, 2f71b15196e9)
+* docklog: add command history (closes #1779)
+* docklog: add 'hg/thg command' completion
+* filectxactions: add "Folder history" command
+* filedata: add new binary detection heuristic, based on the max line length
+* fileview: add 'Annotate Options' context submenu (fixes #1861)
+* manifest: expand the file tree when "return" is pressed
+* repofilter: restore previously selected branch (closes #1009, #1927)
+* repofilter: show current working branch first (closes #2042)
+* reporegistry: ensure that the selected tab item is visible
+* settings: add "New Commit Phase" setting
+* wctxactions: add a confirmation for revert of file types SAR! (closes #2102)
+* workbench: make the task toolbar buttons configurable
 
 ----
 

@@ -41,7 +41,7 @@ TortoiseHg 2.5 is a major feature release
 
 == Packaged Versions ==
 
-* Mercurial 2.3
+* Mercurial 2.3.1
 
 
 == Bug Fixes ==

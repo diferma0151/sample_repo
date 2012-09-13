@@ -4,7 +4,7 @@ to users in a timely fashion.
 
 === Release Numbering ===
 
-Roughly every four months (thrice a year), we will take the development
+Roughly every three months (four times a year), we will take the development
 branch (default), merge it to the stable branch, and release it as a new
 feature release.  In between these feature releases, there will be
 multiple maintenance releases since most of our users install our binary
@@ -22,12 +22,3 @@ Before each feature release, we will progressively lock down the code:
 * -2 weeks  - feature freeze, merge default to stable, bug fixes only
 * -1 week   - no new translatable strings on stable
 * -3 days   - code freeze on stable.  Documentation and installer changes only
-
-=== Release 2.3 (Targeted March 1, 2012): ===
-
-* Support filesets in status/commit filter
-* Refactor wctxactions to use cmdui.Runner
-* Merge dialog needs a cancel button, when appropriate
-* Add a file filter to manifest widget, same as status
-* Investigate whether HgFileView can be used as an editor for wctx
-* Investigate a per-repository tab log console

@@ -8,6 +8,7 @@ Nothing (no changes yet).
 Now I THINK I went back to workbench and the fileserver repo showed up.
 I clicked on "Check for incoming changes" and got dialog 1.
 Dismissed and clicked on "Detect outgoing chagnes" and got dialog 2.
+This is repeatable.
 
 Dialog 1:
 <<<<<<<<<

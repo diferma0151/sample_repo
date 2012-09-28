@@ -1,0 +1,47 @@
+Created a repo on a fileserver.
+Cloned it locally.
+Navigated Explorer to the repo on fileserver.
+Right click to workbench, fileserver repo was not there.
+Exit workbench.
+Right click and check file status.
+Nothing (no changes yet).
+Now I THINK I went back to workbench and the fileserver repo showed up.
+I clicked on "Check for incoming changes" and got dialog 1.
+Dismissed and clicked on "Detect outgoing chagnes" and got dialog 2.
+
+Dialog 1:
+<<<<<<<<<
+---------------------------
+No remote repository URL or path set
+---------------------------
+<b>No valid <i>default</i> remote repository URL or path has been configured for this repository.<p>Please type and save a remote repository path on the Sync widget.</b>
+---------------------------
+<nobr></nobr><br />
+---------------------------
+OK   
+---------------------------
+>>>>>>>>>>
+
+Dialog 2:
+<<<<<<<<<
+{{{
+#!python
+** Mercurial version (2.2.2).  TortoiseHg version (2.4.1)
+** Command: --nofork workbench
+** CWD: \\smb1.rchland.ibm.com\afshome\dev2000\iop\m04.minn\usr\cmvc\base.pgm
+** Encoding: cp1252
+** Extensions loaded: 
+** Python version: 2.6.6 (r266:84297, Aug 24 2010, 18:13:38) [MSC v.1500 64 bit (AMD64)]
+** Windows version: (6, 1, 7601, 2, 'Service Pack 1')
+** Processor architecture: x64
+** Qt-4.7.4 PyQt-4.8.6
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\workbench.pyo", line 815, in forwarder
+  File "tortoisehg\hgqt\repowidget.pyo", line 1066, in outgoing
+  File "tortoisehg\hgqt\sync.pyo", line 845, in outgoing
+  File "tortoisehg\hgqt\sync.pyo", line 981, in outclicked
+  File "tortoisehg\hgqt\sync.pyo", line 774, in run
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+}}}
+>>>>>>>>>>

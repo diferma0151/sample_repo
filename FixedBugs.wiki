@@ -20,7 +20,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Packaged versions =
 
-* wix: package x64 Pageant for 64bit Windows (fixes #2415)
+* wix: package x64 Pageant for 64bit Windows (fixes #2145)
 
 ----
 

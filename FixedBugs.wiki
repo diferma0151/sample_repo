@@ -1,26 +1,8 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Fixed since 2.5 =
+= Fixed since 2.5.1 =
 
-* filedialogs: only allow single selection (refs #1871)
-* graft: sort graft source revisions from lowest to highest revision number (fixes #2159)
-* hglib: make getDeepestSubrepoContainingFile() compatible with patchctx (fixes #2163)
-* manifest: have fileIcon() handle unknown subrepo type gracefully (fixes #2174)
-* repowidget: switch to outgoing context menu only if outgoing nodes exist (fixes #982)
-* status: fix unicode handling at setFilter() (fixes #2168)
-* sync: replace hg.islocal() on reload by lightweight alternative (fixes #2153)
-* workbench: fix unicode error when opening repo via IPC channel (fixes #2135)
-* workbench: work around QObject.sender() bug of PyQt 4.7.3 (fixes #2170)
-
-= Improvements =
-
-* filedialogs: improve context menu descriptions
-* repowidget: allow REVID as additional customtools command variable
-* workbench: add help menu link to explorer help
-
-= Packaged versions =
-
-* wix: package x64 Pageant for 64bit Windows (fixes #2145)
+N/A
 
 ----
 

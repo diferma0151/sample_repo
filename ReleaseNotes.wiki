@@ -56,7 +56,7 @@ TortoiseHg 2.5.1 is a minor bug fix release
 * workbench: fix unicode error when opening repo via IPC channel (fixes #2135)
 * workbench: work around QObject.sender() bug of PyQt 4.7.3 (fixes #2170)
 
-= Improvements =
+== Improvements ==
 
 * filedialogs: improve context menu descriptions
 * repowidget: allow REVID as additional customtools command variable

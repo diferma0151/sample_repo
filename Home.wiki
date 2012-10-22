@@ -75,4 +75,4 @@ For details on contributing to TortoiseHg, visit the **[[Nit]]** page and the
 
 For [[developers/Translation|contributing to translations]], please visit our page on [[https://translations.launchpad.net/tortoisehg|Launchpad]]
 
-For contributing to the wiki, look [[wiki|here]]
+For contributing to the wiki, look [[wiki|here]].

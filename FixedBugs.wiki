@@ -7,6 +7,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * cmdui, qscilib: avoid CTRL+L key binding collision (fixes #2205)
 * commit: ignore IOError when saving state (fixes #2202)
 * filectxactions: fix parent of vdiff warning dialog (fixes #2252)
+* filectxactions: set up initial state of actions correctly (fixes #2255)
 * fileview: fix possible TypeError on AnnotateThread.abort (fixes #2188)
 * qtlib: check if user input can be converted to local encoding (fixes #2196)
 * repomodel: avoid filled.emit() of destroyed HgRepoListModel (fixes #1267)

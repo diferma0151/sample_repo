@@ -50,6 +50,10 @@ editor = emacs [+$LINENUM $FILE] [--eval '(highlight-regexp "$SEARCH")']
 # Scite
 [tortoisehg]
 editor = scite [-open:$FILE -goto:$LINENUM] ["-find:$SEARCH"]
+
+# gedit
+[tortoisehg]
+editor = gedit [+$LINENUM]
 }}}
 
 === OS X Editors ===

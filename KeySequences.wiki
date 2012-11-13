@@ -56,3 +56,4 @@
 * Ctrl+E - Reflow current paragraph
 * Ctrl+A - select all filtered files
 * Space - toggle selected files
+* Ctrl-Enter - trigger the commit

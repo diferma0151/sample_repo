@@ -1,0 +1,28 @@
+{{{
+#!python
+** Mercurial version (2.3.2).  TortoiseHg version (2.5.1)
+** Command: --nofork commit --listfile C:\Users\mrickey\AppData\Local\Temp\THGFAA2.tmp
+** CWD: D:\SBN
+** Encoding: cp1252
+** Extensions loaded: 
+** Python version: 2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)]
+** Windows version: sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1')
+** Processor architecture: x64
+** Qt-4.8.0 PyQt-4.9.1
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\status.pyo", line 447, in run
+  File "mercurial\localrepo.pyo", line 1639, in status
+  File "mercurial\context.pyo", line 974, in flags
+  File "mercurial\util.pyo", line 245, in __get__
+  File "mercurial\context.pyo", line 831, in _flagfunc
+  File "mercurial\dirstate.pyo", line 166, in flagfunc
+  File "mercurial\context.pyo", line 805, in _buildflagfunc
+  File "mercurial\context.pyo", line 171, in manifest
+  File "mercurial\util.pyo", line 245, in __get__
+  File "mercurial\context.pyo", line 141, in _manifest
+  File "mercurial\manifest.pyo", line 56, in read
+  File "mercurial\revlog.pyo", line 906, in revision
+  File "mercurial\revlog.pyo", line 915, in _checkhash
+RevlogError: integrity check failed on 00manifest.i:9
+
+}}}

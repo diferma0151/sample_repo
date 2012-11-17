@@ -31,7 +31,47 @@ an older version of Mercurial, please consult the following chart:
 | 2.1.x | 2.3.n |
 | 2.2.x | 2.4.n |
 | 2.3.x | 2.5.n |
+| 2.4.x | 2.6.n |
 | hg default tip | thg default tip |
+
+----
+
+= TortoiseHg 2.6 =
+
+This is a major feature release
+
+== Packaged Versions ==
+
+* Mercurial 2.4+6-35ba170c0f82
+
+== Bug Fixes ==
+
+* cmdui, qscilib: avoid CTRL+L key binding collision (fixes #2205)
+* commit: ignore IOError when saving state (fixes #2202)
+* filectxactions: fix parent of vdiff warning dialog (fixes #2252)
+* filectxactions: set up initial state of actions correctly (fixes #2255)
+* fileview: fix possible TypeError on AnnotateThread.abort (fixes #2188)
+* qtlib: check if user input can be converted to local encoding (fixes #2196)
+* repomodel: avoid filled.emit() of destroyed HgRepoListModel (fixes #1267)
+* repofilter: restore index of revset combobox to avoid extra activated signal
+* repotreeitem: cast possible QString to unicode at setShortName (fixes #2227)
+* revdetails: have message widget honor user-specified font
+* reporegistry: activate the current repository entry after a model reload
+* rollback: remove unwanted restriction of undo desc
+* thg: make sure to load threading module by main thread (fixes #1894)
+* workbench: use windows-safe getuser() to build IPC socket name (fixes #2238)
+* grep: fix unicode handling of several context menu actions (fixes #2274)
+
+== Improvements ==
+
+* commit: prompt the user to set a default username on commit if necessary
+* filedialogs: add multi-selection menu (fixes #1871)
+* menu: add shelve to menuthg so it shows up in shellconf (fixes #2209)
+* repomodel: add Latest tags column
+* repowidget, status, manifest: change background color when a filter is applied
+* resolve: add context-menu in resolve window (fixes #2200)
+* settings: add 'phases.publish' support
+* RTF file support in docdiff
 
 ----
 
@@ -222,273 +262,3 @@ This is a scheduled minor release
 * sync: basic support for default push URL
 * workbench: activate the tab that was active on the previous session
 
-----
-
-= TortoiseHg 2.4 =
-
-Released May 5, 2012
-
-This is a major feature release
-
-== Packaged Versions ==
-
-* Mercurial 2.2.1
-* dulwich 0.8.5
-* keyring 0.9
-* Updated pageant.exe
-
-== Bug Fixes ==
-
-* merge: move initial focus to Next button (fixes #1868)
-* update: improved bookmarks support
-* openshell: show error if failed to execute shell command (fixes #1833)
-* reporegistry: normalize paths of added repositories (fixes #1837)
-* grep: convert filename column to unicode (fixes #1774)
-
-== Improvements ==
-
-* Workbench: new custom toolbar for custom commands
-* Workbench: new "similar revisions.." dialog
-* Workbench: optional "Single Wokbench Window" mode
-* Workbench: startup progress bar
-* Workbench: many more lexers enabled
-* Workbench: add GitHub/BitBucket-like "README" file detection
-* reporegistry: use a different icon for repositories located on UNC paths
-* repowidget: keep URL of incoming bundle source as instance variable (refs #1118)
-* repowidget: improve incoming pull infobar messages (fixes #1118)
-* reporegistry: improve accuracy of subrepo detection when adding a repository (refs #1672)
-* sync: in-place editing of URLs and aliases
-* commit: add commit --amend support
-* revdetails: improved display of tags and bug links
-
-----
-
-= TortoiseHg 2.3.2 =
-
-Released April 23, 2012
-
-This is a bug fix release.  Users of 2.3.n should upgrade
-
-== Packaged Versions ==
-
-* Mercurial 2.1.2
-
-== Bug Fixes ==
-
-* commit: fix traceback when issue.bugtraqparameters is not set (closes #1736)
-* commit: prompt if user tries to close window while committing
-* commit: truncate selected options label if needed (fixes #1731)
-* icons: fix missing projrc icon (move settings-projrc.svg icon into icons/scalable)
-* import: show the Import button when import fails
-* manifest: do not try to edit folders except on the working directory
-* manifest: handle revision links in dialog mode
-* merge: do not close the wizard if a command is running (fixes #1338)
-* patchctx: make phase info available for patches
-* qtlib: fix handling of UNC paths (fixes #1798)
-* reporegistry: improve accuracy of subrepo detection when adding a repository (refs #1672)
-* reporegistry: warn if adding non-repository folder as subrepo (fixes #1830)
-* repoview: forcibly clear selection on goto(rev) (fixes #1673)
-* sync: disable save button when alias name is blank
-* sync: hg push returns 1 if no changes found (fixes #1717)
-* sync: prompt if user tries to close window while synchronizing
-* tag: disable actions if a command is still running
-* thgrepo: update timestamp only if changes detected successfully (fixes #1728)
-* several fixes for unicode issue (#1651, #1754, #1770, #1774, #1822)
-
-== Improvements ==
-
-* commit: delay the bugtraq button setup to speed up the commit widget creation (closes #1734)
-* commit: expand environment variables on tortoisehg.bugtraqparameters setting (closes #1733)
-* compress: store/restore geometry
-* nautilus: GNOME 3.2 compatibility update for nautilus-thg
-* sync: improve pull/push behavior when no remote path is set
-* sync: add support for editing aliases
-* update: keep the state of the option expander and its expander button in sync
-* workbench: improve push infobar message
-
-----
-
-= TortoiseHg 2.3.1 =
-
-Released March 4, 2012
-
-This is a bug fix release.  Users of 2.3 should upgrade
-
-== Packaged Versions ==
-
-* Mercurial 2.1.1
-
-== Bug Fixes ==
-
-* revdetails: don't test revison existence for workingctx (fixes #1617)
-* sync: convert character encoding on load/save settings (fixes #1688)
-* commit: display only whitelisted options (fixes #1647)
-* repowidget: don't clearSelection in gotoParent (fixes #1673)
-
-== Improvements ==
-
-* qscilib: give the filEditor dialog a maximize button
-* repowidget: limit infobar error messages to 2 lines of up to 140 chars by default
-* repowidget: show all errors on infobar
-* sync: improve support for hg-git extension
-* largefiles: improve support of largefile extension
-
-----
-
-= TortoiseHg 2.3 =
-
-Released February 14, 2012
-
-This is a major feature release.  See 2.3-rc notes for full changes from 2.2
-
-== Packaged Versions ==
-
-* Mercurial 2.1
-* Python keyring 0.7.2
-* Mercurial_keyring 0.5
-* Dulwich 0.8.3
-* TortoiseOverlays 1.1.3.21564
-
-== Bug Fixes ==
-
-* revdetails: fall back to tip on reload if current rev is unknown (fixes #1581)
-* visdiff: do not translate a debug message (closes #1595)
-* settings: fix phase support detection
-* manifestmodel: fix possible infinite-recursion of _buildrootentry
-
-== Improvements ==
-
-* qscilib: give the filEditor dialog a maximize button
-
-----
-
-= TortoiseHg 2.3-rc =
-
-Released February 5, 2012
-
-This is a major feature release
-
-== Packaged Versions ==
-
-* Mercurial 2.1
-* Python keyring 0.7.2
-* Mercurial_keyring 0.5
-* Dulwich 0.8.3
-* TortoiseOverlays 1.1.3.21564
-
-== Bug Fixes ==
-
-* shelve: prevent the use of bad characters in shelf files (fixes #765)
-* sync: emit a message when outgoing --subrepo completes (closes #1564)
-* qimport: check for existing patches (fixes #1569)
-* commit: ensure autoinc files are included (closes #737)
-* shelve: verify chunks are non-empty before proceeding (closes #1552)
-* repotreeitem: sort subrepos by name by default (closes #1251)
-* status: don't use thgrepo in thread (refs #1505)
-* branchop, etc: fix encoding of repo.namedbranches in branchop dialog comboBox
-* update: default the confirmation to "cancel" (closes #1325)
-* thread: catch socket errors including SSLError (closes #1520)
-
-== Improvements ==
-
-* supprt for Mercurial phases in repowidget
-* shellext - support for largefile extension
-* new registry keys for DiffMerge 3.3
-* settings: add defaultpush configuration setting
-* "Go To Revision" button with shortcut CTRL+/
-* workbench: add shortcut for "rollback" command (Ctrl-u)
-* reporegistry: add cmenu sort actions for groups (closes #1189)
-* repofilter: add "author(username)" permanent query
-* repofilter: add "bookmark()" permanent query
-* settings: add defaultpush configuration setting
-* manifestmodel: add method to filter files by glob pattern
-* manifest: add filter box to file tree
-* commit: show selected options (closes #1491)
-* filedialogs, manifest: add "save at revision" to cmenu (closes #1500)
-* commit: support --subprepos option in DetailsDialog (closes #1379)
-* commit: handle tolocal conversion failures more gracefully (closes #1516)
-* revpanel: add source revision item for converted changesets
-* repomodel: add column for source revision of converted changesets
-
-== Installer ==
-
-* hgfold extension removed, it no longer worked with modern Mercurial
-* added projrc extension - https://bitbucket.org/aragost/projrc/
-* pulled latest TortoisePlink executables from TortoiseSVN, x64 and x86 versions
-* upgraded to most recent TortoiseOverlay merge modules
-* upgraded to most recent diff/merge scripts
-
-----
-
-= TortoiseHg 2.2.2 =
-
-Released January 2, 2012
-
-This is a bug fix release.  All users of 2.2.n are recommended to upgrade
-
-== Packaged Versions ==
-
-* Mercurial 2.0.2
-
-== Bug Fixes ==
-
-* update: fixes for non-ascii branch names
-* desktop: fix icon name (closes #1387)
-* reporegistry, etc: allow non-ascii names to be submitted to clipboard
-* visdiff: catch environment errors from snapshot file creation (closes #1499)
-* rupdate: fix error when thg is run outside of the repository
-* run: handle duplicated exceptions of the same type gracefully (fixes #1464)
-* wconfig: translate ParsingError of iniparse to error.ParseError (refs #1512)
-
-== Improvements ==
-
-* repomodel: allow all patches to be reordered
-* quickop: improved large file support
-* quickop: improvements to initial check status
-* status:  context menu for checking/unchecking selected files
-
-----
-
-= TortoiseHg 2.2.1 =
-
-Released December 3, 2011
-
-This is a bug fix release.  All users of 2.2.n are recommended to upgrade
-
-== Packaged Versions ==
-
-* Mercurial 2.0.1
-
-== Bug Fixes ==
-
-* commit: use cmd runner for rollback operations (fixes #1436)
-* desktop: fix icon name (closes #1387)
-* repowidget: manually reverse compress arguments (fixes #1344)
-* thgrepo: wrap changectx.sub() to return thgrepo-aware subrepo obj (fixes #1386)
-* chunks: catch ValueError from internalpatch (fixes #1249)
-* commit: use command runner for rollback (fixes #1436)
-* hgignore: catch IndexError while building pats list (fixes #1204)
-* grep: fix #1428 rev and line are now sorted numerical
-* manifest: don't test file status of directory node on doubleclick (fixes #1408)
-* manifest: fix error while displaying subrepo (fixes #1386)
-* repowidget: capture commit widget output (#1379)
-* repowidget: manually reverse compress arguments (fixes #1344)
-* shlib: call close() instead of rename() on Mercurial 2.0+ (fixes #1397)
-* filedata: fix mode-only change detection on working dir
-* grep: fix #1428 rev and line are now sorted numerical
-* update: wctx.modified() is prone to throw EnvironmentError (closes #1435)
-* visdiff: use os.makedirs() to re-create diff folder when necessary (fixes #1151)
-* wctxactions: fix encoding of warning messages coming from hg
-
-== Improvements ==
-
-* commit: add several actions to subrepo context menu
-* commit: make stand-alone dialog support mq
-* rebase: add collapse rebased changesets option (fixes #1381)
-* repomodel: more stable branch colors
-* reporegistry: improve error handling while adding a subrepository
-* repowidget: make double clicking an applied patch qgoto that patch (closes #1044)
-* repowidget: add "Goto common ancestor" command in pop-up menu
-* revdetails: add "Copy Path" in pop-up menu
-* sync: add support for the --mq option in the sync tool
-* workbench: add "Goto revision" command

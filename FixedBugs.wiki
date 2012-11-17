@@ -1,33 +1,10 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Fixed since 2.5.1 =
+= Changes since 2.6 =
 
 == Bug Fixes ==
 
-* cmdui, qscilib: avoid CTRL+L key binding collision (fixes #2205)
-* commit: ignore IOError when saving state (fixes #2202)
-* filectxactions: fix parent of vdiff warning dialog (fixes #2252)
-* filectxactions: set up initial state of actions correctly (fixes #2255)
-* fileview: fix possible TypeError on AnnotateThread.abort (fixes #2188)
-* qtlib: check if user input can be converted to local encoding (fixes #2196)
-* repomodel: avoid filled.emit() of destroyed HgRepoListModel (fixes #1267)
-* repofilter: restore index of revset combobox to avoid extra activated signal
-* repotreeitem: cast possible QString to unicode at setShortName (fixes #2227)
-* revdetails: have message widget honor user-specified font
-* reporegistry: activate the current repository entry after a model reload
-* rollback: remove unwanted restriction of undo desc
-* thg: make sure to load threading module by main thread (fixes #1894)
-* workbench: use windows-safe getuser() to build IPC socket name (fixes #2238)
-
-== Improvements over 2.5 ==
-
-* commit: prompt the user to set a default username on commit if necessary
-* filedialogs: add multi-selection menu (fixes #1871)
-* menu: add shelve to menuthg so it shows up in shellconf (fixes #2209)
-* repomodel: add Latest tags column
-* repowidget, status, manifest: change background color when a filter is applied
-* resolve: add context-menu in resolve window (fixes #2200)
-* settings: add 'phases.publish' support
+== Improvements ==
 
 ----
 

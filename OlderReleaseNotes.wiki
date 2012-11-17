@@ -1,3 +1,5 @@
+<<toc>>
+
 = TortoiseHg 2.4 =
 
 Released May 5, 2012

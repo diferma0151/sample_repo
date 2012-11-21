@@ -1,0 +1,128 @@
+= TortoiseHg for SVN Users =
+= 至SVN的用户 =
+
+This page is intended as a compendium of links and helpful notes for Subversion users who are converting to, or at least trying out, Mercurial and TortoiseHg.
+\\这篇文章是给那些想从SVN转到HG的，或者正在尝试使用HG的用户准备的一份提纲和备注。
+
+When learning Mercurial the first step should be [[http://hgbook.red-bean.com/|the hgbook]], available in 
+[[http://tortoisehg.bitbucket.org/hgbook/1.6/index.html|html]].
+[[http://mercurial.selenic.com/wiki/|Mercurial's wiki]] is also a key source.
+\\学习Mercurial
+(分布式版本管理,//Google翻译里面有解释“水银”这一项，因此可以理解TortoiseHg（乌龟汞）的由来//)
+的第一步应该从《[[http://hgbook.red-bean.com/|Mercurial: The Definitive Guide]]》这篇指南看起；或者浏览[[http://mercurial.selenic.com/wiki/|Mercurial的WIKI]]也是个好主意。
+
+== Links for projects which have converted from SVN to Mercurial ==
+== 以下是那些已经成功从SVN转换到Mercurial的文章链接 ==
+
+* http://lucumr.pocoo.org/2008/1/28/mercurial-for-subversion-users
+* http://wiki.pylonshq.com/display/pylonscookbook/Mercurial+for+Subversion+Users
+* http://www.python.org/dev/peps/pep-0385/
+
+== Tutorials/Comparison links ==
+== 相关教程与比较的文章链接 ==
+
+* http://mercurial.aragost.com/kick-start/
+* http://hginit.com/
+* http://nedbatchelder.com/text/hgsvn.html
+* http://wiki.geeklog.net/index.php/Mercurial_for_SVN_Users
+
+== Using TortoiseHg with a Subversion like workflow ==
+== 使用乌龟汞(TortoiseHg)实现工作流式的版本管理 ==
+
+As you first begin using TortoiseHg, you may want to configure some of these optional features to approach a more subversion like work flow.  See the [[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|settings]] tool manual to learn how to configure these settings either globally or per-repository.
+\\当你第一次使用使用乌龟汞(TortoiseHg)的时候，你可能需要配置一些可选的功能使得你的版本管理就像工作流一样。请参阅乌龟汞(TortoiseHg)的[[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|设置界面的帮助手册]]，学习如何去修改它的全局设置或子库设置。
+
+=== Post-Pull Operations ===
+=== 拉取操作 ===
+
+After changesets are pulled from a remote repository, TortoiseHg can perform an automated function.  In the settings tool, this option can be found at the top of the Sync tab.
+\\当修改集从远程库被拉取下来之后，乌龟汞(TortoiseHg)可以执行一些自动化功能。这个选项在设置工具的同步选项卡中找到。
+
+# Update - checkout the new tip changeset on your current branch.  If you have uncommitted changes, this can result in a three way merge if changes in the new tip conflict with your changes (rare, but possible).
+\\更新 - 检出最新的修改集到你的当前分支。假如你有未提交的修改，并且最新修改集和你的修改有冲突，那就会导致一个三路合并的操作（很少出现，但还是有可能）。
+# Fetch - automatically merge your local changesets with the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/FetchExtension|fetch]] extension to be enabled.  Does not perform any merge if your repository has uncommitted changes.
+\\拉取 - 这将会把你的本地修改集和拉取的修改集进行自动合并。必须启用[[http://mercurial.selenic.com/wiki/FetchExtension|**fetch**]]程序扩展，否则不自动进行任何合并操作。
+# Rebase - automatically rebase your local changesets onto the top of the pulled changesets.  Requires the [[http://mercurial.selenic.com/wiki/RebaseExtension|rebase]] extension to be enabled.  Does not perform a rebase if your repository has uncommitted changes.
+\\变基 - 自动改变你本地修改集的父版本为最近拉取的修改集。必须启用[[http://mercurial.selenic.com/wiki/RebaseExtension|**rebase**]]程序扩展，否则不自动执行任何变基操作。
+
+This setting can also be changed on the fly in the Repository Explorer before you perform a pull, in case you want to change your default behavior for a single operation.
+\\这些设置同样也可以在拉取的时候在仓库浏览器中修改，假如你想改变单一的默认行为的话。
+
+=== Post-Commit Push ===
+=== 提交 推 操作 ===
+
+This setting can be found on the commit tab of the settings tool.  When
+enabled, TortoiseHg will attempt to push your local changesets to your
+default upstream repository after every successful commit.
+\\这个设置可以在设置工具中的“提交”选项卡中找到。当启用之后，乌龟汞(TortoiseHg)会在你每次成功提交之后尝试推出你的修改集到上级库中。
+
+=== Merges ===
+=== 合并 ===
+
+By default, TortoiseHg will use [[http://kdiff3.sourceforge.net/|kdiff3]] (a graphical three way merge tool) to resolve merge conflicts.  You have a number of other options.  On the TortoiseHg tab of the settings tool, you will find a 'Three-way Merge Tool' configurable.
+\\默认情况下，乌龟汞(TortoiseHg)使用的是[[http://kdiff3.sourceforge.net/|kdiff3]]（一个图形化的三路合并工具）来解决合并冲突。你还有很多别的选择，在设置工具的的“TortoiseHG”选项卡中，你可以在三路合并工具（Three-way Merge Tool）的下拉框中进行选择。
+
+# If you have TortoiseSVN installed and prefer TortoiseMerge you can
+select TortoiseMerge from the drop-down list.
+\\假如你已经安装了TortoiseSVN，并且更喜欢使用TortoiseMerge 工具的话，你同样可以在下拉框中选择它。
+# If you prefer P4Merge, or some other tool supported by Mercurial, it will
+automatically show up in the drop-down list.
+\\假如你更喜欢P4Merge，或者别的支持Mercurial的工具，都会自动显示在下拉框中。
+# If you want Mercurial to write the .BASE .LOCAL .OTHER versions for
+you to manually merge, chose internal:dump
+\\假如你想让Mercurial在手动合并的时候能修改 .BASE .LOCAL .OTHER 版本，请选择internal:dump.
+# If you want Mercurial to prompt you whether to keep either the local
+or other version, chose internal:prompt
+\\假如你想让 Mercurial 提示你是否保留本地版本或其它版本，请选择internal:prompt
+# If you want Mercurial to perform trivial merges internally, and leave
+conflict markers in place on conflicts, chose internal:merge
+\\假如你想让 Mercurial 能够执行琐碎的内部合并，并且在出现冲突的地方留下标记，请选择internal:merge
+
+See
+[[http://www.selenic.com/mercurial/hgrc.5.html#merge-tools|merge-tools]]
+for a description of how to configure an external merge tool that was
+not supported "out of the box."
+\\请参阅[[http://www.selenic.com/mercurial/hgrc.5.html|合并工具（merge-tools）]]网页上的描述，来配置那些不支持“开箱即用”的合并工具。
+
+== Using TortoiseHg as a client for a Subversion server ==
+== 使用乌龟汞(TortoiseHg)作为Subversion（SVN）服务器的客户端 ==
+
+* http://mercurial.selenic.com/wiki/HgSubversion
+* http://bitbucket.org/durin42/hgsubversion/wiki/Home
+
+hgsubversion should work with TortoiseHg "out of the box", since TortoiseHg Windows installers include the SVN python bindings required by hgsubversion.  Simply clone the extension to your machine, enable it, read its documentation. then clone your subversion repository.
+\\hgsubversion 应该和乌龟汞(TortoiseHg)一样能够开箱即用，因为乌龟汞(TortoiseHg)的Windows安装包已经包含了hgsubversion所必须的SVN python bindings，所以只需要将这个扩展工具克隆（clone）到你的机子，启用它，阅读它的相关文档，然后就可以克隆你的SVN（subversion）版本库了。
+
+{{{
+mkdir C:\repos
+hg clone http://bitbucket.org/durin42/hgsubversion/ C:\repos\hgsubversion
+}}}
+
+Add lines like these to your Mercurial.ini file
+\\将下面的几行添加到你的Mercurial.ini文件中
+
+{{{
+[extensions]
+hgsubversion = C:\repos\hgsubversion
+}}}
+
+Make a test clone:
+\\进行一次测试性克隆操作
+
+{{{
+hg clone svn+http://svn.python.org/projects/python python-hg
+}}}
+
+== Mercurial Wiki links ==
+== Mercurial(分布式版本管理) 的WIKI 链接 ==
+
+* http://mercurial.selenic.com/wiki/WorkingWithSubversion
+* http://mercurial.selenic.com/wiki/ConvertExtension
+
+See also
+\\同样参见
+
+* http://code.google.com/p/support/wiki/ConvertingSvnToHg
+* http://www.antwerkz.com/migrating-from-subversion-to-mercurial/
+
+* http://tortoisehg.bitbucket.org/manual/2.3/quick.html

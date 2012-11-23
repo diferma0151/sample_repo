@@ -6,6 +6,12 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Improvements ==
 
+== Bug Fixes in Third-party Modules ==
+
+QScintilla 2.7 (unreleased):
+* #1999: crash "Assertion failed" in lexlib\CharacterSet.h
+* #2271: Workbench hangs while refreshing
+
 ----
 
 Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

@@ -9,6 +9,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 == Bug Fixes in Third-party Modules ==
 
 pygments 1.5.1 or 1.6 (unreleased):
+* #2026: Workbench hangs when trying to view changes of specific file
 * #2176: Problem with XQuery file when committing
 
 QScintilla 2.6.3 or 2.7 (unreleased):

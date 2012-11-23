@@ -8,7 +8,10 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Bug Fixes in Third-party Modules ==
 
-QScintilla 2.7 (unreleased):
+pygments 1.5.1 or 1.6 (unreleased):
+* #2176: Problem with XQuery file when committing
+
+QScintilla 2.6.3 or 2.7 (unreleased):
 * #1999: crash "Assertion failed" in lexlib\CharacterSet.h
 * #2271: Workbench hangs while refreshing
 

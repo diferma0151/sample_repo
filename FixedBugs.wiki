@@ -6,6 +6,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 * commit: hide the 'autoinc' option when merging
 * copypatch: have dummy Writable object acts like a string (fixes #2280)
+* hgignore: use util.expandpath() to expand env vars of ui.ignore (fixes #2306)
 * manifestdialog: fix possible unicode error at cset link handler (fixes #2289)
 * merge: refresh csinfo of commit page so that it can show two parents
 * rejects: earlybytes fix (fixes #2295)

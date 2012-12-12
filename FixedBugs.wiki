@@ -1,31 +1,10 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 2.6 =
+= Changes since 2.6.1 =
 
 == Bug Fixes ==
 
-* commit: hide the 'autoinc' option when merging
-* copypatch: have dummy Writable object acts like a string (fixes #2280)
-* copypatch: support internal lossless export/import via clipboard (fixes #841)
-* hgignore: use util.expandpath() to expand env vars of ui.ignore (fixes #2306)
-* manifestdialog: fix possible unicode error at cset link handler (fixes #2289)
-* merge: refresh csinfo of commit page so that it can show two parents
-* rejects: earlybytes fix (fixes #2295)
-* rename: actually overwrite existing file if requested
-* repofilter: use case-sensitive completion for revsets (fixes #2276)
-* reporegistory: restore original behavior of setActiveTabRepo('') (fixes #2279)
-* resolve: normalize paths before calling resolve
-* update: correct default behavior of updating to bookmark to 'prompt'
-* workbench: pushes new branch without failing if --pushafter set (fixes #1986)
-
 == Improvements ==
-
-* merge: improve Commit/Cancel buttons and merge "cancel" message (refs #1727)
-* merge: let the user change the commit options on the merge wizard commit page (fixes #1727)
-* resolve: add "diff to common ancestor" cmenu actions in resolve window (fixes #2201)
-* resolve: add doubleclick actions in resolve window (fixes #2236)
-* settings: completed helptext for 'Diff and Annotate' -> 'MQ Git Format'
-* wctxactions: use RenameDialog for copy action
 
 == Bug Fixes in Third-party Modules ==
 

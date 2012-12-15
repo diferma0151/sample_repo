@@ -1,0 +1,27 @@
+= User Interface Text Guideline =
+
+== In short ==
+
+* use "Title Caps" for window titles, menu items, push buttons, etc.
+* use "Sentence caps" for radio buttons, checkboxes, or dialog messages.
+* assign "&" access keys to almost all menu items.
+* append ellipsis "..." to menu items only when additional information is
+  required to perform the action. For example,
+** "Update..." will open dialog to select which revision to update.
+** "Diff to Parent" will open diff window immediately.
+
+== References ==
+
+=== Capitalization ===
+
+* [[http://msdn.microsoft.com/en-us/library/windows/desktop/aa974176.aspx#capitalization|Microsoft - User Interface Text - Guidelines - Capitalization]]
+** "Title Caps" for window title.
+** "Sentence caps" for others, but "Title Caps" is acceptable for buttons,  menus and headings.
+* [[http://developer.apple.com/library/mac/#documentation/userexperience/conceptual/applehiguidelines/TextStyle/TextStyle.html#//apple_ref/doc/uid/TP30000365-BABDIBBH|OS X Human Interface Guidelines - Text Style - Capitalizing Labels and Text]]
+** "Title Caps" for menus, buttons and labels that aren't full sentences.
+** "Sentence caps" for radio buttons, check boxes, dialog messages, etc.
+
+=== Menus ===
+
+* [[http://msdn.microsoft.com/en-us/library/windows/desktop/aa511502.aspx#accessKeys|Microsoft - Menus - Guidelines - Access keys]]
+* [[http://msdn.microsoft.com/en-us/library/windows/desktop/aa511502.aspx#ellipses|Microsoft - Menus - Guidelines - Using ellipsis]]

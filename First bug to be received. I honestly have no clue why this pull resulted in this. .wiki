@@ -1,0 +1,28 @@
+{{{
+#!python
+** Mercurial version (2.3.1).  TortoiseHg version (2.5)
+** Command: 
+** CWD: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TortoiseHg
+** Encoding: cp1252
+** Extensions loaded: purge, rebase
+** Python version: 2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)]
+** Windows version: sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1')
+** Processor architecture: x64
+** Qt-4.8.0 PyQt-4.9.1
+Traceback (most recent call last):
+  File "tortoisehg\hgqt\status.pyo", line 471, in run
+  File "mercurial\context.pyo", line 896, in status
+  File "mercurial\localrepo.pyo", line 1576, in status
+  File "mercurial\context.pyo", line 159, in __contains__
+  File "mercurial\util.pyo", line 245, in __get__
+  File "mercurial\context.pyo", line 141, in _manifest
+  File "mercurial\util.pyo", line 245, in __get__
+  File "mercurial\context.pyo", line 137, in _changeset
+  File "mercurial\changelog.pyo", line 193, in read
+  File "mercurial\revlog.pyo", line 901, in revision
+  File "mercurial\revlog.pyo", line 824, in _chunkbase
+  File "mercurial\revlog.pyo", line 821, in _chunk
+  File "mercurial\revlog.pyo", line 92, in decompress
+RevlogError: unknown compression type ')'
+
+}}}

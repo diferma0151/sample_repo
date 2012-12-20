@@ -28,3 +28,13 @@ $ apt-get install mercurial pyqt4-dev-tools python-qscintilla2 python-iniparse p
 (python-iniparse and python-pygments are optional)
 
 If the packaged mercurial isn't new enough, try getting it from source by {{{hg clone http://selenic.com/repo/hg}}}
+
+== Ubuntu ==
+
+For 12.04 and 12.10 (most likely other releases too) use the same packages as for Debian:
+
+{{{
+$ apt-get install mercurial pyqt4-dev-tools python-qscintilla2 python-iniparse python-pygments
+}}}
+
+Fresh Mercurial compatible with recent TortoiseHG is available from [[https://launchpad.net/~tortoisehg-ppa/+archive/releases|TortoiseHG PPA]]

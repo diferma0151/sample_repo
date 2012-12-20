@@ -37,4 +37,4 @@ For 12.04 and 12.10 (most likely other releases too) use the same packages as fo
 $ apt-get install mercurial pyqt4-dev-tools python-qscintilla2 python-iniparse python-pygments
 }}}
 
-Fresh Mercurial compatible with recent TortoiseHG is available from [[https://launchpad.net/~tortoisehg-ppa/+archive/releases|TortoiseHG PPA]]
+Ubuntu provides Mercurial. Also, recent  Mercurial compatible with recent TortoiseHG is available from [[https://launchpad.net/~tortoisehg-ppa/+archive/releases|TortoiseHG PPA]]

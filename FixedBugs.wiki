@@ -4,6 +4,12 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Bug Fixes ==
 
+* chunks: use regexp to capture .rej filename from non-English message
+* clone: handle location of source patch repository as full path
+* cmdui: always set percentage to QProgressBar (fixes #2261)
+* rejects: handle non-ascii path correctly
+* rename: remove workaround for case-changing rename on Windows
+
 == Improvements ==
 
 == Bug Fixes in Third-party Modules ==

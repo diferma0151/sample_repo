@@ -6,6 +6,10 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Improvements ==
 
+== Installer ==
+
+* Upgraded PyQt to 2.9.6 (from 2.9.1)
+
 == Bug Fixes in Third-party Modules ==
 
 pygments 1.5.1 or 1.6 (unreleased):

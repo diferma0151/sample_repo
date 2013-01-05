@@ -4,7 +4,15 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Bug Fixes ==
 
+* update: fix unicode error on confirmation of bookmarks (fixes #2341)
+* repotreemodel: recover from missing <allgroup> element (closes #1075)
+* status: respect filter text when the file list is refreshed
+
 == Improvements ==
+
+* change selection in the commit tool
+* startup performance improvements
+* cleanup menu and title strings
 
 == Installer ==
 

@@ -11,7 +11,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 == Improvements ==
 
 * change selection in the commit tool
-* startup performance improvements
+* startup performance improvements (closes #940)
 * cleanup menu and title strings
 
 == Installer ==

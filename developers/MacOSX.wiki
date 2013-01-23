@@ -254,11 +254,12 @@ $ pip install Pygments iniparse Mercurial
 * Checkout TortoiseHg (using Mercurial):
 {{{
 $ hg clone http://bitbucket.org/tortoisehg/thg/ ~/Documents/TortoiseHg
+$ cd ~/Documents/TortoiseHg
+$ hg update stable  # or hg update <version-number>
 }}}
 
 Now you should be able to start TortoiseHg:
 {{{
-$ cd ~/Documents/TortoiseHg
 $ ./thg log
 }}}
 

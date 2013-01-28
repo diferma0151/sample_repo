@@ -53,3 +53,9 @@ Extras are optional and require setuptools from http://pypi.python.org/pypi/setu
 For URLs and other helpful info, see:
 
 http://bitbucket.org/tortoisehg/thg-winbuild/src/tip/README.txt
+
+== FAQ ==
+
+I get //Cannot mix incompatible Qt library (version 0×40701) with this library (version 0×40702)// after source install. What to do?
+
+As described in [[http://qt-project.org/wiki/PySide_FAQ|Qt Project]] just restart your {{{cmd}}} window. **PATH** is probably not updated and you have some conflicts.

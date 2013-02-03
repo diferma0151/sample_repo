@@ -12,6 +12,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * qtlib: make sure getCurrentUsername() not fall back to system value
 * purge: move completed() handlers to instance to avoid GC issue (fixes #2386)
 * bisect: ask cmdui.Widget() to create a status bar (fixes #2390)
+* guess: keep similarity as raw value for sorting (fixes #1332)
 
 == Improvements ==
 

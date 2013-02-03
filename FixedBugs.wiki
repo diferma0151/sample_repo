@@ -1,40 +1,12 @@
-See **[[ReleaseNotes]]** for bugs fixed in previous releases.
+﻿See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 2.6.2 =
+= Changes since 2.7 =
 
 == Bug Fixes ==
 
-* update: fix unicode error on confirmation of bookmarks (fixes #2341)
-* repotreemodel: recover from missing <allgroup> element (closes #1075)
-* repotreemodel: remove unsafe processEvents() during loadSubrepos() (fixes #2256)
-* status: respect filter text when the file list is refreshed
-* bookmark, branchop, tag: work around case-insensitive completion of QComboBox
-* qtlib: make sure getCurrentUsername() not fall back to system value
-* purge: move completed() handlers to instance to avoid GC issue (fixes #2386)
-* bisect: ask cmdui.Widget() to create a status bar (fixes #2390)
-* guess: keep similarity as raw value for sorting (fixes #1332)
-
 == Improvements ==
 
-* change selection in the commit tool
-* startup performance improvements (closes #940)
-* cleanup menu and title strings
-
-* blockmatcher: make BlockList clickable
-* commit, revdetails: change splitter style to make it easier to see on Windows
-* cmdui: prettify command-line string for display (closes #1529)
-* fileview, shelve: add 'Display the file anyway' link when files or patches are not shown
-* infobar: convert revision id hashes into links
-* infobar: convert subrepo references and subrepo revision id hashes into links
-  (needs Mercurial 2.5)
-* mergetools: add a kdiff3-noauto merge tool disabling automated merge
-* mergetools: add Windows support for "meld"
-* serve: show balloon when minimizing running server to tray (refs #1845)
-* settings: synchronize and remember the active page of all settings forms
-
 == Installer ==
-
-* Upgraded PyQt to 2.9.6 (from 2.9.1), which includes QScintilla 2.7
 
 == Bug Fixes in Third-party Modules ==
 

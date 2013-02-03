@@ -1,1 +1,0 @@
-Main page with links.

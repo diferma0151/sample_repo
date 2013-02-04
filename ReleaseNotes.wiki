@@ -38,7 +38,7 @@ an older version of Mercurial, please consult the following chart:
 
 = TortoiseHg 2.7 =
 
-TortoiseHg is a major feature release.  Because of the ammount of churn in
+TortoiseHg is a major feature release.  Because of the amount of churn in
 both TortoiseHg and Mercurial, we are taking the unusual step of shipping 2.7 with the tip of Mercurial's stable branch prior to their feature freeze for the 2.5 release.  TortoiseHg 2.7.1 will be shipped with 2.5.1
 
 == Bug Fixes ==

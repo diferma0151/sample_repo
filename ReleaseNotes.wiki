@@ -41,6 +41,8 @@ an older version of Mercurial, please consult the following chart:
 TortoiseHg is a major feature release.  Because of the amount of churn in
 both TortoiseHg and Mercurial, we are taking the unusual step of shipping 2.7 with the tip of Mercurial's stable branch prior to their feature freeze for the 2.5 release.  TortoiseHg 2.7.1 will be shipped with 2.5.1
 
+* Includes Mercurial version 7648b87e76dbf89c9cdfb7993c52479480ff43c7 (2.4.2 + fixes)
+
 == Bug Fixes ==
 
 * update: fix unicode error on confirmation of bookmarks (fixes #2341)

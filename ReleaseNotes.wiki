@@ -75,7 +75,7 @@ both TortoiseHg and Mercurial, we are taking the unusual step of shipping 2.7 wi
 
 == Installer ==
 
-* Upgraded PyQt to 2.9.6 (from 2.9.1), which includes QScintilla 2.7
+* Upgraded PyQt to 2.9.6 (from 2.9.1), which includes QScintilla 2.7 (fixes #2340)
 * Upgraded python-keyring to 1.2
 
 ----

@@ -1,4 +1,4 @@
-{{http://tortoisehg.bitbucket.org/css/img/logo.png|}}
+﻿{{http://tortoisehg.bitbucket.org/css/img/logo.png|}}
 
 
 TortoiseHg is a Windows shell extension and a series of applications for
@@ -39,7 +39,7 @@ platforms.
 * Command line support via [[thg]]
 * Debian and RedHat distributions, see [[http://tortoisehg.bitbucket.org/download/index.html|Download]]
 * [[developers/MacOSX|Mac OS X]] is supported via source install
-* [[Ubuntu]]
+* [[Ubuntu]] [[CentOS]]
 
 Please note that like TortoiseSVN, [[http://www.selenic.com/pipermail/mercurial/2010-January/029680.html|we recommend]] to turn off the indexing service on the working copies and repositories, and exclude them from virus scans (on Windows).
 

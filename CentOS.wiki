@@ -1,0 +1,44 @@
+﻿== Installing on CentOS 6.3 ==
+
+The tip of TortoiseHg stable (post 2.7) is now mostly functional on CentOS 6.3.  Use these instructions to get a source install:
+
+{{{
+# get prereq packages
+yum install PyQt4-devel python-devel python-iniparse gcc gettext
+yum --enablerepo=epel install qscintilla-python python-keyring python-sphinx Django
+
+# install Mercurial from source to bootstrap
+mkdir ~/repos
+mkdir ~/bin
+cd ~/repos
+wget http://mercurial.selenic.com/release/mercurial-2.4.2.tar.gz
+tar xzvf mercurial-2.4.2.tar.gz
+cd mercurial-2.4.2/
+make local
+
+# now get a Mercurial clone, to stay up to date
+./hg clone http://selenic.com/hg#stable ../hg
+cd ../hg
+make local
+cd ~/bin
+ln -s ~/repos/hg/hg .
+
+# now get a TortoiseHg clone
+hg clone https://bitbucket.org/tortoisehg/thg
+cd thg
+ln -s ../hg/mercurial/
+ln -s ../hg/hgext/
+cd ~/bin
+ln -s ~/repos/thg/thg .
+
+# cleanup
+rm -rf ~/repos/mercurial-2.4.2/ ~/repos/mercurial-2.4.2.tar.gz
+}}}
+
+The biggest problem with CentOS 6.3 is that PyQt is a bit too old, so the reporegistry code that recovers its configuration from XML cannot work properly, so the registry will always be empty at startup, or will only contain the repository from the working directory.  Patches welcome for this.
+
+Also, the settings dialog needs work to make it safe for PyQt 4.6.  Patches welcome here as well.
+
+Also beware I had one XServer lockup while using the workbench full screen.  The mouse disappeared and the keyboard became unresponsive.  Could just be my machine, but it's something to be aware of.
+
+I have no idea if the nautilus extension works on CentOS 6.3

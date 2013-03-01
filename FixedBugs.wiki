@@ -4,7 +4,30 @@
 
 == Bug Fixes ==
 
+* annotate: show annotate menu even if no character exists under mouse cursor
+* branchop: fix unicode and localstr comparison of wctx branch (fixes #1288)
+* chunks, fileview: delay force-display until mouse release (fixes #2427)
+* commit: skip pygments parsing when auto-complete is disabled (fixes #2407)
+* commit, status: don't eliminate too many chars from repo link (fixes #2401)
+* fileview: disable strikeout of excluded chunks by default (refs #2442)
+* mergetools: force a check of p4merge outputs (refs #2415)
+* repofilter: increase number of max visible branches on Windows (closes #2262)
+* reporegistry: don't normcase subrepo path to be added (fixes #2251)
+* reporegistry: fix AttributeError on open all, sort and Del key with no selection
+* shortcuts: remove conflicted key bind from "open subrepository" (fixes #2443)
+* status: forget checked state only after pctx changed (fixes #2376)
+* status: postpone overlapped refreshWctx() request (fixes #2406)
+* sync: target selection should override tortoisehg.defaultpush (refs #2411)
+
+* several GC fixes causing "C++ object has been deleted" exception (fixes #2425)
+
 == Improvements ==
+
+* mergetools: improve Code Compare 3-way merge configuration
+* graph: only show "visible" revisions
+* postreview: enable reviewboard context menu for mq patches
+
+* pyqt: make workbench and commit tool work with PyQt 4.6 (CentOs 6.3)
 
 == Installer ==
 

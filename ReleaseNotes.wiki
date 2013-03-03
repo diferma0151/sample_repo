@@ -32,13 +32,45 @@ an older version of Mercurial, please consult the following chart:
 | 2.2.x | 2.4.n |
 | 2.3.x | 2.5.n |
 | 2.4.x | 2.6.n |
+| 2.5.x | 2.7.n |
 | hg default tip | thg default tip |
 
 ----
 
+= TortoiseHg 2.7.1 =
+
+TortoiseHg 2.7.1 is a bug fix release with minor improvements
+
+* Includes Mercurial 2.5.2
+
+== Bug Fixes ==
+
+* annotate: show annotate menu even if no character exists under mouse cursor
+* branchop: fix unicode and localstr comparison of wctx branch (fixes #1288)
+* chunks, fileview: delay force-display until mouse release (fixes #2427)
+* commit: skip pygments parsing when auto-complete is disabled (fixes #2407)
+* commit, status: don't eliminate too many chars from repo link (fixes #2401)
+* fileview: disable strikeout of excluded chunks by default (refs #2442)
+* mergetools: force a check of p4merge outputs (refs #2415)
+* repofilter: increase number of max visible branches on Windows (closes #2262)
+* reporegistry: don't normcase subrepo path to be added (fixes #2251)
+* reporegistry: fix AttributeError on open all, sort and Del key with no selection
+* shortcuts: remove conflicted key bind from "open subrepository" (fixes #2443)
+* status: forget checked state only after pctx changed (fixes #2376)
+* status: postpone overlapped refreshWctx() request (fixes #2406)
+* sync: target selection should override tortoisehg.defaultpush (fixes #2411)
+* several GC fixes causing "C++ object has been deleted" exception (fixes #2425)
+
+== Improvements ==
+
+* mergetools: improve Code Compare 3-way merge configuration
+* graph: only show "visible" revisions (early support for evolution extension)
+* postreview: enable reviewboard context menu for mq patches
+* pyqt: make workbench and commit tool work with PyQt 4.6 (CentOs 6.3)
+
 = TortoiseHg 2.7 =
 
-TortoiseHg is a major feature release.  Because of the amount of churn in
+TortoiseHg 2.7 is a major feature release.  Because of the amount of churn in
 both TortoiseHg and Mercurial, we are taking the unusual step of shipping 2.7 with the tip of Mercurial's stable branch prior to their feature freeze for the 2.5 release.  TortoiseHg 2.7.1 will be shipped with 2.5.1
 
 * Includes Mercurial version 7648b87e76dbf89c9cdfb7993c52479480ff43c7 (2.4.2 + fixes)
@@ -166,194 +198,5 @@ This is a major feature release
 * resolve: add context-menu in resolve window (fixes #2200)
 * settings: add 'phases.publish' support
 * RTF file support in docdiff
-
-----
-
-= TortoiseHg 2.5.1 =
-
-TortoiseHg 2.5.1 is a minor bug fix release
-
-== Packaged Versions ==
-
-* Mercurial 2.3.2
-* wix: package x64 Pageant for 64bit Windows (fixes #2145)
-
-== Bug Fixes ==
-
-* filedialogs: only allow single selection (refs #1871)
-* graft: sort graft source revisions from lowest to highest revision number (fixes #2159)
-* hglib: make getDeepestSubrepoContainingFile() compatible with patchctx (fixes #2163)
-* manifest: have fileIcon() handle unknown subrepo type gracefully (fixes #2174)
-* repowidget: switch to outgoing context menu only if outgoing nodes exist (fixes #982)
-* status: fix unicode handling at setFilter() (fixes #2168)
-* sync: replace hg.islocal() on reload by lightweight alternative (fixes #2153)
-* workbench: fix unicode error when opening repo via IPC channel (fixes #2135)
-* workbench: work around QObject.sender() bug of PyQt 4.7.3 (fixes #2170)
-
-== Improvements ==
-
-* filedialogs: improve context menu descriptions
-* repowidget: allow REVID as additional customtools command variable
-* workbench: add help menu link to explorer help
-
-----
-
-= TortoiseHg 2.5 =
-
-TortoiseHg 2.5 is a major feature release
-
-== Packaged Versions ==
-
-* Mercurial 2.3.1
-
-
-== Bug Fixes ==
-
-* filedata: ctx.sub() can throw a KeyError (refs #2115)
-* filectxactions: descend into sub-repository if necessary (fixes #2035)
-* hgqt: use setShortcuts() to preserve secondary key of StandardKey (refs #2045)
-* nautilus: Fix issue #869 [1]. Nautilus extension now works
-* revset: fix return key behavior (closes #2104)
-* repowidget, status: delete old model on reload (refs #2119, #702)
-* shortcuts: change all "Ctrl+Alt" shortcuts into "Ctrl+Shift" shortcuts (closes #1976)
-* strip: fix compatibility with hg 2.3
-* sync: reload the list of paths when a path is saved
-* wctxactions: provide 'all' flag so that subrepo revert works (fixes #2122)
-
-== Improvements over 2.4 ==
-
-* compare: show "Editor Options" in menus, show horizontal scrollbars
-* customtools: settings: add 'Tools' panel
-  (includes format change of config file, 2f71b15196e9)
-* docklog: add command history (closes #1779)
-* docklog: add 'hg/thg command' completion
-* filectxactions: add "Folder history" command
-* filedata: add new binary detection heuristic, based on the max line length
-* fileview: add 'Annotate Options' context submenu (fixes #1861)
-* manifest: expand the file tree when "return" is pressed
-* repofilter: restore previously selected branch (closes #1009, #1927)
-* repofilter: show current working branch first (closes #2042)
-* reporegistry: ensure that the selected tab item is visible
-* settings: add "New Commit Phase" setting
-* wctxactions: add a confirmation for revert of file types SAR! (closes #2102)
-* workbench: make the task toolbar buttons configurable
-
-----
-
-= TortoiseHg 2.4.3 =
-
-Released August 20, 2012
-
-This is a scheduled minor release of TortoiseHG (2.4.3), but a major release of Mercurial (2.3)
-
-== Packaged Versions ==
-
-* Mercurial 2.3
-
-Mercurial 2.3 breaks hgsubversion, so you must pull and update your hgsubversion clone before upgrading to this release.  If you get an error message "unable to open module repo!", then you have this problem and you must update hgsubversion.  The same is true for hg-git, it must be updated before you upgrade to Mercurial 2.3.
-
-If you fail to update your extensions before upgrading, you must disable the extensions in your Mercurial.ini file, then pull and update them, then finally re-enable them.
-
-== Bug Fixes ==
-
-* bugtraq: add missing import of COMError (fixes #2013)
-* commit: allow amending a revision without selecting any files
-* commit: escape from mqPerformAction if canceled (fixes #2010)
-* fileview: also preserve cursor position on reloading the same file (fixes #1803)
-* mq: enable qreorder button if unapplied patch exists (refs #2064)
-* guess: do not show unmodified largefiles as candidates for rename
-* archive, rename: use getSaveFileName to select non-existent file for dest path
-* reporegistry: fix unicode handling at open() called thru openClone()
-* repowidget: don't clear revset text by request from filterbar (fixes #2020)
-* repowidget: update menuselection even while bundle/outgoing (fixes #2052)
-* revset: display "fromsvn" and "svnrev" items 0 or 1 time
-* serve: minimal support for paths containing space or comma (fixes #2082)
-* sync: correct logic whether to read defaultpush setting (fixes #2022)
-* sync: don't show "new branch" confirmation endlessly (fixes #1615)
-* sync: warn invalid port number at getfingerprint (refs #1910)
-* wctxactions: do not offer the forget command for added files
-* wctxactions: do not ask for revert --discard if files are not modified
-
-== Installer ==
-
-* Includes sspi package from pywin32
-
-----
-
-= TortoiseHg 2.4.2 =
-
-Released July 2, 2012
-
-This is a scheduled minor release, with some large packaging changes
-
-== Packaged Versions ==
-
-* Mercurial 2.2.3
-* Python 2.7.3
-* svn 1.7.5 (x86) 1.6.6 (x64)
-* Installers and binaries have code signing signatures again
-
-== Bug Fixes ==
-
-* bugtraq: improve error handling
-* commit: allow committing a merge that does not change a file
-* commit: exclude all files on new/close branch if no file selected (fixes #1985)
-* hgignore: ignore largefiles when scanning for untracked files (fixes #1978)
-* lfprompt: catch ValueError from int() (fixes #1901)
-* outgoing: fix push all command and improve outgoing infobar
-* repofilter: don't disable branch options menu at all (fixes #1962)
-* repowidget: bring back 'Browse at revision' menu action (closes #1920)
-* sync: check if curalias is not None before using it (fixes #1950)
-* tortoisehgtools: do not crash when command cannot be executed
-* wctxactions: allow to overwrite existing file on copy (fixes #1983)
-
-* fix several unicode errors
-
-== Improvements ==
-
-* annotate: take into account annotate settings
-* graft: add basic support of graft core command
-* mergetools: add support for Devart Code Compare and Code Compare 3 (Free and Pro)
-* workbench: bring to front when opening a repo on Single Workbench mode
-
-----
-
-= TortoiseHg 2.4.1 =
-
-Released June 8, 2012
-
-This is a scheduled minor release
-
-== Packaged Versions ==
-
-* Mercurial 2.2.2
-* hgcr-gui fixes
-
-== Bug Fixes ==
-
-* qrename: fix unicode error when displaying patch name (fixes #1914)
-* rejects: ensure editing doesn't start before first line (fixes #1424, #369)
-* remove unused tortoisehg/util/hgshelve.py, refs #1908
-* repoview: hide "drop line" when dragging an unapplied patch to an invalid drop location
-* repowidget: correct parameter for shell_notify()
-* repowidget: fix 'Push all' revision context menu (was doing 'Push to here' instead)
-* repowidget: refresh wctx status of commit widget by tab change (fixes #1657)
-* repowidget: take into account the tortoisehg.branchcolors setting (refs #1644)
-* revdetails: do not crash on visual diff for unapplied patches (fixes #1772)
-* sync: append svn+https and git schemes to urlparse.uses_netloc
-* sync: convert non-ascii alias/url correctly at editurl action
-* sync: fix several unicode issues at SaveDialog (fixes #1883)
-* sync: fix URL displayed on direct pull
-* update: fix target information when updating to null revision
-* workbench: fix unicode error while loading the last session
-
-== Improvements ==
-
-* commit: automatically set 'close branch' commit message
-* graft: display graft source in changeset info when available
-* repofilter: show the 'default' branch as the first branch on the branch combobox
-* repowidget: make links (addresses and paths) on the infobar clickable
-* sync: basic support for default push URL
-* workbench: activate the tab that was active on the previous session
 
 [[OlderReleaseNotes]]

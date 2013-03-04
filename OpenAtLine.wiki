@@ -21,7 +21,7 @@ editor = <path\to\>Scite.exe ["-open:$FILE" -goto:$LINENUM] ["-find:$SEARCH"]
 
 # NotePad++ :
 [tortoisehg]
-editor = <path\to\>Notepad++.exe ["$FILE" -n$LINENUM] -multiInst -nosession
+editor = <path\to\>Notepad++.exe [$FILE -n$LINENUM] -multiInst -nosession
 
 # TextPad :
 [tortoisehg]

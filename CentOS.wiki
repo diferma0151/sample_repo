@@ -37,8 +37,6 @@ rm -rf ~/repos/mercurial-2.4.2/ ~/repos/mercurial-2.4.2.tar.gz
 
 The biggest problem with CentOS 6.3 is that PyQt is a bit too old, so the reporegistry code that recovers its configuration from XML cannot work properly, so the registry will always be empty at startup, or will only contain the repository from the working directory.  Patches welcome for this.
 
-Also, the settings dialog needs work to make it safe for PyQt 4.6.  Patches welcome here as well.
-
-Also beware I had one XServer lockup while using the workbench full screen.  The mouse disappeared and the keyboard became unresponsive.  Could just be my machine, but it's something to be aware of.
+Also beware I had one XServer lockup while using the workbench full screen.  The mouse disappeared and the keyboard became unresponsive.  It could just be a problem on my machine, but it's something to be aware of.
 
 I have no idea if the nautilus extension works on CentOS 6.3

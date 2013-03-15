@@ -210,11 +210,10 @@ $ sudo pip install thg-mac
 === Alternative: Install via Homebrew ===
 **Note:** Qt now comes pre-compiled with homebrew. So installing TortoiseHg is much faster than it used to be.
 
-* Install via [[http://itunes.apple.com/us/app/xcode/id497799835|AppStore]] (free)
-
-* Install [[http://mxcl.github.com/homebrew/|Homebrew]] - https://github.com/mxcl/homebrew/wiki/installation
-
- * Add Homebrew's paths to ##$PATH## and ##$PYTHONPATH##:
+* Install XCode via [[http://itunes.apple.com/us/app/xcode/id497799835|AppStore]] (required by Homebrew)
+* Install XCode command line tools via [[https://developer.apple.com/downloads/]] (required by Homebrew)
+* Install [[http://mxcl.github.com/homebrew/|Homebrew]]
+* Add Homebrew's paths to ##$PATH## and ##$PYTHONPATH##:
 
 {{{
 #!sh
@@ -246,8 +245,8 @@ $ brew update
 
 * Install required Python packages:
 {{{
-$ easy_install pip
-$ pip install Pygments iniparse Mercurial
+$ sudo easy_install pip
+$ sudo pip install -U Pygments iniparse Mercurial
 }}}
 
 

@@ -236,12 +236,6 @@ $ brew install pyqt
 $ brew install qscintilla2
 }}}
 
-If there is an error about missing git repository, try to update Homebrew first:
-
-{{{
-$ brew update
-}}}
-
 
 * Install required Python packages:
 {{{
@@ -265,3 +259,8 @@ $ ./thg log
 The final step is to "create" a "wrapper app bundle" for your Mac OS X applications folder. Simply checkout [[https://bitbucket.org/skrysmanski/thg-mac-app|this repository]] and copy the app bundle it contains to your Applications folder.
 
 //Note:// If you've checked out TortoiseHg to ##~/Documents/TortoiseHg##, this app should work out of the box. Otherwise you need to read the readme file included in the repository.
+
+==== Troubleshooting the Homebrew alternative ====
+* If there is an error about missing git repository, try to update Homebrew first: ##$ brew update##
+* If you get ##ImportError: No module named PyQt4.uic.Compiler##, make sure Homebrew's Python path is in ##$PYTHONPATH##.
+

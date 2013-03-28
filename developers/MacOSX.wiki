@@ -239,8 +239,8 @@ $ brew install qscintilla2
 
 * Install required Python packages:
 {{{
-$ sudo easy_install pip
-$ sudo pip install -U Pygments iniparse Mercurial
+$ easy_install pip
+$ pip install -U Pygments iniparse Mercurial
 }}}
 
 

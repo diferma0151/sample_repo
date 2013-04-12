@@ -37,6 +37,35 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.7.2 =
+
+TortoiseHg 2.7.2 is a bug fix release with minor improvements
+
+* Includes Mercurial 2.5.4
+
+== Bug Fixes ==
+
+* backout: manage connection from CheckThread in C++ layer (fixes #2471)
+* commit: make sure to drop untranslatable character (fixes #2475)
+* filedata: prepend diff header only if diff text is not empty (fixes #2462)
+* icons: include 8bit alpha channel and use 16x16 for system tray icon (fixes #2464)
+* infobar: use lambda to replace hash-like string by subrepo link (fixes #2484)
+* manifest: move to the specified line even if path isn't changed (fixes #2501)
+* mergetools: add a beyondcompare3-noauto merge tool (fixes #2073)
+* mergetools: fix kdiff3-noauto detection
+* pyqt: fix incompatibility with PyQt 4.10 (ArchLinux and Fedora) (fixes #2467)
+* postreview: accept non-ascii summary text (fixes #2476)
+* repowidget: do not allow a revision to be merged with itself (fixes #2455)
+* sync: reload the list of paths explicitly on edit or remove (fixes #2473)
+* thg: cleanup sys.stdin when launched as thgw.exe (fixes #484)
+
+== Improvements ==
+
+* filedata: distinguish between file copies and file renames
+* pyqt: make settings dialog work with PyQt 4.6 (CentOs 6.3)
+
+----
+
 = TortoiseHg 2.7.1 =
 
 TortoiseHg 2.7.1 is a bug fix release with minor improvements

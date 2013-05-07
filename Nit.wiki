@@ -122,8 +122,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 
 == docklog (ConsoleWidget) ==
 
-* command completion by TAB key
-* command history by up/down key
 * pager for long outputs
 * sophisticated 'thg' command, e.g. 'thg grep' to switch task tab.
 * accept ctrl+c for command termination

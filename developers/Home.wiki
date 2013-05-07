@@ -29,5 +29,6 @@ In TortoiseHg 2.0, the **thg** command will start the Workbench if it is run wit
 
 === Internals ===
 
-* [[developers/UITextGuideline|User Interface Text Guideline]]
 * [[developers/EncodingStrategy|Encoding Strategy]] - how to handle character encoding
+* [[developers/RepositoryAccess|Repository Access API (Planned)]]
+* [[developers/UITextGuideline|User Interface Text Guideline]]

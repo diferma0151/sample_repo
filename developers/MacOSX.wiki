@@ -2,7 +2,7 @@
 
 <<toc>>
 
-**Note:** tortoisehg is now available in [[http://www.finkproject.org/|fink]]'s unstable tree, as tortoisehg-py27 (or 25 or 26 if you are using an older python for some reason).
+**Note:** tortoisehg is now available in [[http://www.finkproject.org/|fink]]'s unstable tree, as tortoisehg-py27 (or 25 or 26 if you are using an older python for some reason). You can get it prebuilt for 10.8 from @brendan's unofficial apt repository for fink by adding {{{deb http://brendan.users.finkproject.org/10.8 stable main}}} to {{{/sw/etc/apt/sources.conf}}}. After adding the repository, {{{apt-get update}}} and {{{apt-get install tortoisehg-py27}}}. 
 
 **Note:** A way via MacPorts is described at the end.
 

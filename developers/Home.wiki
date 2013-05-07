@@ -30,4 +30,4 @@ In TortoiseHg 2.0, the **thg** command will start the Workbench if it is run wit
 === Internals ===
 
 * [[developers/UITextGuideline|User Interface Text Guideline]]
-* [[developers/EncodingStrategy]] - how to handle character encoding
+* [[developers/EncodingStrategy|Encoding Strategy]] - how to handle character encoding

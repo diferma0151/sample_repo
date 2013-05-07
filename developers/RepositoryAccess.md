@@ -32,6 +32,12 @@
 
 ## Related Issues
 
+file-system monitoring:
+
+* #2470 - hg push in command line (to SVN with hgsubversion)
+
+threading:
+
 * #2071 - crash when pushing with mercurial_keyring
 * #1661 - "abort: Interrupted system" call during push with subrepos
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread

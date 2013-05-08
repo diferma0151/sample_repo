@@ -34,6 +34,7 @@
 
 file-system monitoring:
 
+* #1469 - integrity check failed (probably) on strip or rebase
 * #2470 - hg push in command line (to SVN with hgsubversion)
 
 threading:

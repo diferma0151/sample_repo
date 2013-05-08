@@ -33,15 +33,65 @@ an older version of Mercurial, please consult the following chart:
 | 2.3.x | 2.5.n |
 | 2.4.x | 2.6.n |
 | 2.5.x | 2.7.n |
+| 2.6.x | 2.8.n |
 | hg default tip | thg default tip |
 
 ----
+
+= TortoiseHg 2.8 =
+
+TortoiseHg 2.8 is a major feature release
+
+== Bug Fixes ==
+
+* commit: convert options string to a HTML string (fixes #2543)
+* manifest: report invalid --line option as error instead of traceback
+* repotreeitem: have RepoItem respond to EditRole (fixes #2550)
+* repoview: disable hover effect of column header because it has no click action
+* run: forcibly use bundled Qt plugins in frozen environment (fixes #2513)
+
+* several GC fixes causing "C++ object has been deleted" (fixes #2554, #2564)
+
+== Installer ==
+
+* enable mercurial_keyring by default on Windows
 
 = TortoiseHg 2.7.2 =
 
 TortoiseHg 2.7.2 is a bug fix release with minor improvements
 
 * Includes Mercurial 2.5.4
+
+== Improvements ==
+
+* annotate: group related context menu items
+* annotate: 'Go to Original revision' on Ctrl+click or double click on margin
+* commit: allow amending merge revisions when mercurial >= 2.6
+* customtools: add 'workingdir' setting, {FILES} and {ALLFILES} variables
+* customtools: add a "Custom Tools" submenu to the commit file context dialogs
+* customtools: list available icons in setting dialog
+* email: remember patch attachment (body, inline, attach) and diffstate options
+* fileview: load selected text into searchbar when searchbar is shown
+* graph: show graft relations (closes #2008)
+* infobar: overlay infobar on top of revision graph (closes #2113)
+* lexers: allow user configuration of lexers by file extension
+* messageentry: make the lexer optional
+* messageentry: improved "Apply Format" behavior
+* qscilib: improve the multi-selection behavior
+* repomodel: use monospace font for Node and Converted columns
+* repofilter: add "Show/Hide hidden changesets" (and visual effect in graph)
+* repofilter: better revset detection and visual effect (closes #2019)
+* repofilter: remember working branch as special symbol (refs #2206)
+* repofilter: show progress/error messages loudly in infobar (closes #344)
+* repoview: add option to show full author name (closes #2434)
+* repowidget: add menu to copy patch of multi-select to clipboard (closes #2504)
+* repowidget: show the actual number of outgoing changesets
+* revdetails: add revision details dialog
+* settings: improved detection and selection of editor and terminal applications
+* sync: add option to push without confirmation dialog (closes #190)
+* workbench: allow clone dialog to be non-modal
+* workbench: add combobox to select push/pull target
+* workbench: don't display icons in menu on Mac OS X
 
 == Bug Fixes ==
 

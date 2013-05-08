@@ -87,6 +87,8 @@ TortoiseHg 2.8 is a major feature release
 * workbench: add combobox to select push/pull target
 * workbench: don't display icons in menu on Mac OS X
 
+----
+
 = TortoiseHg 2.7.2 =
 
 TortoiseHg 2.7.2 is a bug fix release with minor improvements
@@ -146,6 +148,8 @@ TortoiseHg 2.7.1 is a bug fix release with minor improvements
 * graph: only show "visible" revisions (early support for evolution extension)
 * postreview: enable reviewboard context menu for mq patches
 * pyqt: make workbench and commit tool work with PyQt 4.6 (CentOs 6.3)
+
+----
 
 = TortoiseHg 2.7 =
 

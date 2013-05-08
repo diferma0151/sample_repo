@@ -56,12 +56,6 @@ TortoiseHg 2.8 is a major feature release
 
 * enable mercurial_keyring by default on Windows
 
-= TortoiseHg 2.7.2 =
-
-TortoiseHg 2.7.2 is a bug fix release with minor improvements
-
-* Includes Mercurial 2.5.4
-
 == Improvements ==
 
 * annotate: group related context menu items
@@ -92,6 +86,12 @@ TortoiseHg 2.7.2 is a bug fix release with minor improvements
 * workbench: allow clone dialog to be non-modal
 * workbench: add combobox to select push/pull target
 * workbench: don't display icons in menu on Mac OS X
+
+= TortoiseHg 2.7.2 =
+
+TortoiseHg 2.7.2 is a bug fix release with minor improvements
+
+* Includes Mercurial 2.5.4
 
 == Bug Fixes ==
 

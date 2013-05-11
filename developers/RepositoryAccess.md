@@ -30,12 +30,17 @@
 * While running commands, RepoAgent disables RepoWatcher. This will resolve
   temporary LookupError while rebasing, qrefresh, etc.
 
-## Related Issues
+## Issues to Consider
 
 file-system monitoring:
 
 * #1469 - integrity check failed (probably) on strip or rebase
 * #2470 - hg push in command line (to SVN with hgsubversion)
+
+repo object:
+
+* #588 - Unified diff view doesn't work well with EOL extension
+  → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
 
 threading:
 

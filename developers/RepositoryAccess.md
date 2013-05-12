@@ -30,6 +30,22 @@
 * While running commands, RepoAgent disables RepoWatcher. This will resolve
   temporary LookupError while rebasing, qrefresh, etc.
 
+## TODOs
+
+short-term:
+
+1. eliminate backward dependencies to `run` module from widgets (IN PROGRESS)
+1. redesign command API so that it can receive per-repository object
+1. implement stubs for new classes
+1. have Workbench use new classes (manager layer?)
+1. pass stubs to all widgets
+
+long-term:
+
+1. implement per-repository command queue
+1. drop `thgrepository` extension
+1. use command server via `QProcess`
+
 ## Issues to Consider
 
 file-system monitoring:

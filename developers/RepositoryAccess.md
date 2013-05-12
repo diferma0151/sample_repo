@@ -42,10 +42,11 @@ short-term:
 
 long-term:
 
-1. implement per-repository command queue
-1. drop `thgrepository` extension
-1. use command server via `QProcess`
-1. ...
+* implement per-repository command queue
+* drop `thgrepository` extension
+* use command server via `QProcess`
+* better control of `refreshWctx()`
+* ...
 
 ## Issues to Consider
 

@@ -45,6 +45,7 @@ long-term:
 1. implement per-repository command queue
 1. drop `thgrepository` extension
 1. use command server via `QProcess`
+1. ...
 
 ## Issues to Consider
 
@@ -53,10 +54,11 @@ file-system monitoring:
 * #1469 - integrity check failed (probably) on strip or rebase
 * #2470 - hg push in command line (to SVN with hgsubversion)
 
-repo object:
+repo/ui object:
 
 * #588 - Unified diff view doesn't work well with EOL extension
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
+* #2208 - Support --config argument for 'thg workbench'
 
 threading:
 

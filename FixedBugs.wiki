@@ -12,7 +12,7 @@ N/A
 
 == Installer ==
 
-N/A
+* pywin32 build 218
 
 == Bug Fixes in Third-party Modules ==
 

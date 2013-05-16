@@ -11,7 +11,7 @@ Contributors are encouraged to join the
 [[http://groups.google.com/group/thg-dev/topics?hl=en|tortoisehg-develop]] and
 [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-issues|tortoisehg-issues]]
 mailing lists, and should also be aware of
-[[http://www.selenic.com/mercurial/wiki/index.cgi/API_Changes|API changes]]
+[[http://mercurial.selenic.com/wiki/ApiChanges|API changes]]
 within Mercurial itself.
 
 === Source Install ===

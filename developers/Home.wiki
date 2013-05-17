@@ -1,6 +1,6 @@
 == TortoiseHg Developer Wiki ==
 
-The developer wiki is where new TortoiseHG contributors learn the ropes and
+The developer wiki is where new TortoiseHg contributors learn the ropes and
 where all contributors can keep track of ongoing work.  For more user-centric
 information, please visit the [[Home|main]] wiki.  Bug reports and feature
 requests should go in the repository's issue tracker.

@@ -52,7 +52,7 @@ long-term:
 
 file-system monitoring:
 
-* #1469 - integrity check failed (probably) on strip or rebase
+* #812, #1469 - RevlogError on strip, rebase, collapse, etc.
 * #1594, #2604 - error after qpop
 * #1783 - thg keeps a ref to a folderrepo for too long ?
 * #2470 - hg push in command line (to SVN with hgsubversion)

@@ -1,12 +1,14 @@
-== TortoiseHg on Mac OS X ==
+= Installing on Mac OS X =
 
-<<toc>>
+<<toc 2>>
 
 **Note:** tortoisehg is now available in [[http://www.finkproject.org/|fink]]'s unstable tree, as tortoisehg-py27 (or 25 or 26 if you are using an older python for some reason). You can get it prebuilt for 10.8 from @brendan's unofficial apt repository for fink by adding {{{deb http://brendan.users.finkproject.org/10.8 stable main}}} to {{{/sw/etc/apt/sources.conf}}}. After adding the repository, {{{apt-get update}}} and {{{apt-get install tortoisehg-py27}}}. 
 
 **Note:** A way via MacPorts is described at the end.
 
 **Note:** Also if you already use Homebrew there are steps at the end. These steps have been confirmed to work with TortoiseHg 2.2.2. They also create an app for your ##Applications## folder. Homebrew does not install Qt from source anymore, so this should be the fastest way.
+
+== Source Install ==
 
 === Dependencies: PyQt and QScintilla ===
 

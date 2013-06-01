@@ -177,46 +177,6 @@ TortoiseHg is now available in [[http://www.finkproject.org/|fink]]'s unstable t
 
 ----
 
-== Install via MacPorts ==
-**Warning:** Installing TortoiseHg this way usually takes //a couple of hours// because Qt is compiled from its sources.
-
-* Install XCode (Version 3.x is free and works)
-
-* Install Java Developer Package Update 4 (https://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=20719)
-
-* Install MacPorts (http://www.macports.org/install.php)
-
-* Install Python and PyQt from ports:
-
-{{{
-$ sudo port install python27 python_select
-# Make this the default version
-# Old version: $ sudo python_select python27
-# New version:
-$ sudo port select python python27
-
-$ sudo port install py27-pyqt4 py27-qscintilla
-}}}
-
-* Set " /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin" to your Path (edit //~/.bash_profile//)
-
-
-* Install pip (if not present)
-
-{{{
-$ curl -O http://python-distribute.org/distribute_setup.py
-$ sudo python distribute_setup.py
-$ sudo easy_install pip
-}}}
-
-* Install the easy_installable thg fork
-
-{{{
-$ sudo pip install thg-mac
-}}}
-
-----
-
 == Install via Homebrew ==
 **Note:** Qt now comes pre-compiled with homebrew. So installing TortoiseHg is much faster than it used to be.
 
@@ -275,3 +235,42 @@ The final step is to "create" a "wrapper app bundle" for your Mac OS X applicati
 * If there is an error about missing git repository, try to update Homebrew first: ##$ brew update##
 * If you get ##ImportError: No module named PyQt4.uic.Compiler##, make sure Homebrew's Python path is in ##$PYTHONPATH##.
 
+----
+
+== Install via MacPorts ==
+**Warning:** Installing TortoiseHg this way usually takes //a couple of hours// because Qt is compiled from its sources.
+
+* Install XCode (Version 3.x is free and works)
+
+* Install Java Developer Package Update 4 (https://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=20719)
+
+* Install MacPorts (http://www.macports.org/install.php)
+
+* Install Python and PyQt from ports:
+
+{{{
+$ sudo port install python27 python_select
+# Make this the default version
+# Old version: $ sudo python_select python27
+# New version:
+$ sudo port select python python27
+
+$ sudo port install py27-pyqt4 py27-qscintilla
+}}}
+
+* Set " /opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin" to your Path (edit //~/.bash_profile//)
+
+
+* Install pip (if not present)
+
+{{{
+$ curl -O http://python-distribute.org/distribute_setup.py
+$ sudo python distribute_setup.py
+$ sudo easy_install pip
+}}}
+
+* Install the easy_installable thg fork
+
+{{{
+$ sudo pip install thg-mac
+}}}

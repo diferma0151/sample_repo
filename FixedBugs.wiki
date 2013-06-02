@@ -4,15 +4,39 @@
 
 == Bug Fixes ==
 
-N/A
+* bookmark: option to activate if adding or moving to current node (fixes #2605)
+* branchop: strip leading/trailing spaces from branch name (fixes #2568)
+* clone: deselect history before setting src/dest paths (fixes #394)
+* commit: exclude removed and missing files by default during amend (fixes #2567)
+* filedialogs: do not override goto-ed revision on modelFilled
+* filelist: remove invalid setResizeMode() (fixes #2573)
+* grep: look up parent revision of subrepo when annotating wctx of subrepo
+* manifest, reporegistry: sort paths case-insensitively on Windows
+  (fixes #2618, #2180)
+* messageentry: fix Apply Format when paragraph has a single line (closes #2597)
+* patchctx: implement {{{__iter__()}}} for compatibility (fixes #2602)
+* repowidget: refresh active commit widget when shelve dialog closed (fixes #1933)
+* repowidget: work around unwanted rejectBundle during pull to here (fixes #2596)
+* sync: override defaultpush of outgoing preview if target specified (fixes #2609)
+* sync: reassign finishfunc before retrying push --new-branch
+* sync: reject empty host name before opening SecureDialog (fixes #684)
+* run: export missing thgstatus command
+* thgrepo: don't list related repositories of null node (fixes #2576)
 
 == Improvements ==
 
-N/A
+* nautilus: overlay icons update
+* repofilter: save "include all ancestors" setting (refs #2559)
+* revdetails: add filter editbox
+* settings: add 'Hooks' panel
+* sync, workbench: improve ordering of push/pull URLs
+* sync: show target on the infobar if specified
+* workbench: add shortcuts for task tabs.
 
 == Installer ==
 
 * pywin32 build 218
+* win32: re-enable default editor for command line Mercurial
 
 == Bug Fixes in Third-party Modules ==
 
@@ -25,4 +49,5 @@ QScintilla 2.7.1:
 
 ----
 
-Nightly builds of the stable branch can be found at **[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**
+Nightly builds of the stable branch can be found at
+**[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**

@@ -66,8 +66,9 @@ repo/ui object:
 
 threading:
 
-* #2071 - crash when pushing with mercurial_keyring
+* #1507 - Stop button for pull that hangs
 * #1661 - "abort: Interrupted system" call during push with subrepos
+* #2071 - crash when pushing with mercurial_keyring
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
 
 ## See Also

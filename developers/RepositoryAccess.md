@@ -34,8 +34,8 @@
 
 short-term:
 
-1. eliminate backward dependencies to `run` module from widgets (IN PROGRESS)
-1. redesign command API so that it can receive per-repository object
+1. eliminate backward dependencies to `run` module from widgets (DONE)
+1. redesign command API so that it can receive per-repository object (DONE)
 1. implement stubs for new classes
 1. have Workbench use new classes (manager layer?)
 1. pass stubs to all widgets
@@ -43,6 +43,7 @@ short-term:
 long-term:
 
 * implement per-repository command queue
+* how to call workbench from sub dialogs?
 * drop `thgrepository` extension
 * use command server via `QProcess`
 * better control of `refreshWctx()`

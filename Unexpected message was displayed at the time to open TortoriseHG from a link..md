@@ -1,7 +1,8 @@
 This is the log the the application displayed when I was opening TortoiseHG.
 
 ### Prerequisites: ###
-* Have the TortoiseHG pinned into the applications bar on Windows 7
+* Have the TortoiseHG installed on Windows 7.
+* Have the TortoiseHG Workbench pinned into the applications bar.
 
 
 ```

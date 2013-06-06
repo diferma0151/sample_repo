@@ -53,7 +53,7 @@ long-term:
 
 file-system monitoring:
 
-* #812, #1305, #1426, #1469 - RevlogError on strip, rebase, collapse, etc.
+* #812, #1305, #1426, #1469, #1758 - RevlogError on strip, rebase, collapse, etc.
 * #1594, #2604 - error after qpop
 * #1783 - thg keeps a ref to a folderrepo for too long ?
 * #2470 - hg push in command line (to SVN with hgsubversion)

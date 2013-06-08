@@ -58,6 +58,7 @@ an older version of Mercurial, please consult the following chart:
 * sync: override defaultpush of outgoing preview if target specified (fixes #2609)
 * sync: reassign finishfunc before retrying push --new-branch
 * sync: reject empty host name before opening SecureDialog (fixes #684)
+* sync: tone down new-branch error because it is handled specially (fixes #1137)
 * run: export missing thgstatus command
 * thgrepo: don't list related repositories of null node (fixes #2576)
 
@@ -67,6 +68,7 @@ an older version of Mercurial, please consult the following chart:
 * repofilter: save "include all ancestors" setting (refs #2559)
 * revdetails: add filter editbox
 * settings: add 'Hooks' panel
+* settings: check enabled extensions if they are not changeable
 * sync, workbench: improve ordering of push/pull URLs
 * sync: show target on the infobar if specified
 * workbench: add shortcuts for task tabs.

@@ -19,7 +19,7 @@ This page describes Qt signals commonly used in our code briefly.
 ### Command Execution
 
 The following signals may be deprecated or moved by
-[redesign of repository access API](developers/RepositoryAccess).
+[redesign of repository access API](RepositoryAccess).
 
 * `output(message, label)` - forward Mercurial `ui.write` or `ui.write_err`
   message

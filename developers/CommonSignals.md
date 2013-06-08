@@ -1,12 +1,13 @@
 # Common Qt Signals
 
-This page describes Qt signals commonly used in our code briefly.
+This page briefly describes Qt signals commonly used in our code.
 
 ## Repository
 
 * `configChanged()` - user/repository config changed
-* `repositoryChanged()` - repository metadata cahnged
+* `repositoryChanged()` - repository metadata changed
 * `repositoryDestroyed()` - repository has been removed from file-system
+  (won't be emitted on Windows because open files cannot be removed)
 * `workingDirectoryChanged()` - parent revision of working directory changed
 * `workingBranchChanged()` - current named branch changed
 
@@ -24,8 +25,8 @@ The following signals may be deprecated or moved by
 * `output(message, label)` - forward Mercurial `ui.write` or `ui.write_err`
   message
 * `makeLogVisible(visible)` - request to change visibility of "Output Log"
-* `beginSuppressPrompt()`, `endSuppressPrompt()` - suppress prompt line of
-  "Output Log" dock
+* `beginSuppressPrompt()`, `endSuppressPrompt()` - request to suppress prompt
+  line of "Output Log" dock
 * `progress(topic, pos, item, unit, total)` - forward Mercurial
   `ui.progress` message
 

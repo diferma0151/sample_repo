@@ -1,0 +1,28 @@
+digraph g {
+    node [shape=box, style=filled, fillcolor="#f8f8a0", color="#dddddd",
+          fontsize=8];
+    edge [fontsize=7, penwidth=0.5];
+
+    { rank=same; Workbench QtRunner RepoManager }
+    { rank=same; Widget RepoAgent RepoWatcher }
+    Widget [label="Widget(s)"];
+    repository;
+    RepoWatcher;
+    CommandSession [label="CommandSession\n(like cmdui.Core)"];
+
+    RepoManager -> RepoAgent [label=create];
+
+    QtRunner -> Workbench [label=create];
+    QtRunner -> Widget [label=create];
+    QtRunner -> RepoManager [label=use];
+
+    Workbench -> RepoManager [label=use];
+    Workbench -> Widget [label=create];
+    Widget -> RepoAgent [label=use];
+    Widget -> repository [label=use];
+    Widget -> CommandSession [label=use];
+
+    RepoAgent -> repository [arrowtail=diamond, dir=both];
+    RepoAgent -> RepoWatcher [arrowtail=diamond, dir=both];
+    RepoAgent -> CommandSession [label="create (per Widget)"];
+}

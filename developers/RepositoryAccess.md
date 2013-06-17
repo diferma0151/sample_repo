@@ -4,15 +4,16 @@
 
 ## Overview
 
-* introduces a wrapper to repository object, called RepoAgent
+* introduces a wrapper to repository object, called `RepoAgent`
 
 ![](fig/repository-classes.png)
 
-* RepoAgent owns repository object instead of extending it to thgrepository.
-* RepoAgent will receive all command requests and run them in sequence.
+* `RepoManager` manages life-cycle of `RepoAgent` and its filesystem monitor.
+* `RepoAgent` owns `repository` object instead of extending it to thgrepository.
+* `RepoAgent` will receive all command requests and run them in sequence.
   It may use cmdserver process to address thread issues [1].
-* While running commands, RepoAgent disables RepoWatcher. This will resolve
-  temporary LookupError while rebasing, qrefresh, etc.
+* While running commands, `RepoAgent` disables filesystem monitor. This will resolve
+  temporary `LookupError` while rebasing, qrefresh, etc.
 
 ## TODOs
 

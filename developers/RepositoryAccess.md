@@ -1,6 +1,6 @@
 # Repository Access and Command Execution (Planned)
 
-**This feature is NOT implemented yet.**
+**This feature is UNDER DEVELOPMENT.**
 
 ## Overview
 
@@ -21,7 +21,7 @@ short-term:
 1. eliminate backward dependencies to `run` module from widgets (DONE)
 1. redesign command API so that it can receive per-repository object (DONE)
 1. implement stubs for new classes
-1. have Workbench use new classes (manager layer?)
+1. have Workbench and RepoWidgetuse new classes
 1. pass stubs to all widgets
 
 long-term:

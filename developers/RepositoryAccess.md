@@ -6,23 +6,7 @@
 
 * introduces a wrapper to repository object, called RepoAgent
 
-~~~~
-    +-------------+
-    |  Widget(s)  |
-    +-----+-------+
-  +-------+--------------------------------+
-  |       |use                             |
-  | +-----v-------+                        |use
-  | |  RepoAgent  |                        |
-  | +-------------+                        |
-  |   (aka ThgRepoWrapper)                 |
-  |       +-------------------+------------|----+
-  |use    |own                |own         |    |create (per Widget)
-  | +-----v------+     +------v------+  +--v----v-------+
-  +-> repository |     | RepoWatcher |  | CommandRunner |
-    +------------+     +-------------+  +---------------+
-                                          (like cmdui.Core)
-~~~~
+![](fig/repository-classes.png)
 
 * RepoAgent owns repository object instead of extending it to thgrepository.
 * RepoAgent will receive all command requests and run them in sequence.

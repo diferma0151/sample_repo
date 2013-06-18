@@ -23,3 +23,10 @@ occured when mucking about with a broken makefile making a Prolog project with a
 If you're considering becoming Amish after looking at this, now's a good time, they're about to harvest.
 
 Moo!
+
+===========
+
+ok - cleaned up my local repo by stashing the change, removing the repo, cloning and reapplying change.
+
+new commit also had problem - turns out the issue is that my commit message was ☺   (the unicode smiley)
+

@@ -11,7 +11,7 @@
 * `RepoManager` manages life-cycle of `RepoAgent` and its filesystem monitor.
 * `RepoAgent` owns `repository` object instead of extending it to thgrepository.
 * `RepoAgent` will receive all command requests and run them in sequence.
-  It may use cmdserver process to address thread issues [1].
+  It may use cmdserver process to address thread issues.
 * While running commands, `RepoAgent` disables filesystem monitor. This will resolve
   temporary `LookupError` while rebasing, qrefresh, etc.
 
@@ -22,7 +22,7 @@ short-term:
 1. eliminate backward dependencies to `run` module from widgets (DONE)
 1. redesign command API so that it can receive per-repository object (DONE)
 1. implement stubs for new classes (WIP)
-1. have Workbench and RepoWidgetuse new classes (WIP)
+1. have Workbench and RepoWidget use new classes (WIP)
 1. pass stubs to all widgets
 
 long-term:

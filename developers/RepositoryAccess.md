@@ -23,11 +23,12 @@ short-term:
 1. redesign command API so that it can receive per-repository object (DONE)
 1. implement stubs for new classes (WIP)
 1. have Workbench and RepoWidget use new classes (WIP)
+1. implement per-repository command queue
 1. pass stubs to all widgets
+1. have all widgets run commands via RepoAgent
 
 long-term:
 
-* implement per-repository command queue
 * how to call workbench from sub dialogs?
 * drop `thgrepository` extension
 * use command server via `QProcess`

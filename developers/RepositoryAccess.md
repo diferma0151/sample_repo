@@ -24,6 +24,7 @@ short-term:
 1. implement stubs for new classes (WIP)
 1. have Workbench and RepoWidget use new classes (WIP)
 1. implement per-repository command queue
+1. have cmdui accept RepoAgent as command runner
 1. pass stubs to all widgets
 1. have all widgets run commands via RepoAgent
 

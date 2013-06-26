@@ -8,7 +8,7 @@ digraph g {
     Widget [label="Widget(s)"];
     repository;
     RepoWatcher;
-    CommandSession [label="CommandSession\n(like cmdui.Core)"];
+    cmdui [label="cmdui.Core,\netc."];
 
     RepoManager -> RepoAgent [label=create];
 
@@ -20,9 +20,9 @@ digraph g {
     Workbench -> Widget [label=create];
     Widget -> RepoAgent [label=use];
     Widget -> repository [label=use];
-    Widget -> CommandSession [label=use];
+    Widget -> cmdui [label=use];
 
     RepoAgent -> repository [arrowtail=diamond, dir=both];
     RepoAgent -> RepoWatcher [arrowtail=diamond, dir=both];
-    RepoAgent -> CommandSession [label="create (per Widget)"];
+    cmdui -> RepoAgent [label="queue request / receive responses"];
 }

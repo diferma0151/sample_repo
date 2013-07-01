@@ -1,12 +1,21 @@
-The first step should be to consult the list of **[[FixedBugs]]** that are already fixed on the tip of the stable branch, and are likely already in the [[http://bitbucket.org/tortoisehg/thg-winbuild/downloads|nightly builds]]. Also consult the [[http://bitbucket.org/tortoisehg/thg/issues/?kind=bug&status=open|open bug list]].
-
-If your bug is truly new, or if you have an idea for an enhancement, report it to our issue
-**[[https://bitbucket.org/tortoisehg/thg/issues/new|tracker]]**.
-
-Since 2.0.1, the bug report dialog has a **Copy** button that copies the bug text to the clipboard.  Simply paste the report into the entry form.  If the bug report is more than a screen full of text, feel free to save it from the dialog and attach it to the new issue.
-
-If you remember what you were doing at the time the bug occurred, please add this to the bug report, as this is frequently much more important than the stack trace itself.  
-
-Please leave new issues assigned to the 'tortoisehg' user as this ensures emails for the issue are distributed to the appropriate mailing list.
-
-See our **[[developers/Home|developers]]** wiki for details on contributing patches or other work.
+    #!python
+    ** Mercurial version (2.6.2).  TortoiseHg version (2.8.1)
+    ** Command: 
+    ** CWD: C:\Windows\system32
+    ** Encoding: cp950
+    ** Extensions loaded: mercurial_keyring
+    ** Python version: 2.7.3 (default, Apr 10 2012, 23:24:47) [MSC v.1500 64 bit (AMD64)]
+    ** Windows version: sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1')
+    ** Processor architecture: x64
+    ** Qt-4.8.4 PyQt-4.9.6 QScintilla-2.7
+    Traceback (most recent call last):
+      File "tortoisehg\hgqt\clone.pyo", line 287, in composeCommand
+      File "tortoisehg\hgqt\clone.pyo", line 236, in getSrc
+      File "tortoisehg\util\hglib.pyo", line 70, in fromunicode
+    UnicodeEncodeError: 'cp950' codec can't encode character u'\u200b' in position 0: illegal multibyte sequence
+    Traceback (most recent call last):
+      File "tortoisehg\hgqt\clone.pyo", line 468, in onUrlHttps
+      File "tortoisehg\hgqt\clone.pyo", line 236, in getSrc
+      File "tortoisehg\util\hglib.pyo", line 70, in fromunicode
+    UnicodeEncodeError: 'cp950' codec can't encode character u'\u200b' in position 0: illegal multibyte sequence
+    

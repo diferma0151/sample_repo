@@ -25,6 +25,8 @@
 
 == Installer ==
 
+* not enable mercurial_keyring by default for now (fixes #2587)
+
 == Bug Fixes in Third-party Modules ==
 
 Pygments 1.6:

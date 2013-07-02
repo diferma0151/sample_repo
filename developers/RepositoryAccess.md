@@ -53,11 +53,12 @@ repo/ui object:
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
 * #2208 - Support --config argument for 'thg workbench'
 
-threading:
+thread/process:
 
 * #1507 - Stop button for pull that hangs
 * #1661 - "abort: Interrupted system" call during push with subrepos
 * #2071 - crash when pushing with mercurial_keyring
+* #2614 - `util.hgexecutable()` returns wrong path
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
 
 ## See Also

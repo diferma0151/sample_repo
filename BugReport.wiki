@@ -1,12 +1,12 @@
 = Report Bugs =
 
-<<toc 2>>
+//Wiki isn't [[/tortoisehg/thg/issues|a issue tracker]].//
 
 == Make sure the bug hasn't already been reported ==
 
 The first step should be to consult the list of **[[FixedBugs]]** that are already fixed on the tip of the stable branch, and are likely already in the [[/tortoisehg/thg-winbuild/downloads|nightly builds]].
 
-Also consult the [[/tortoisehg/thg/issues/?kind=bug&status=new&status=open|open bug list]].
+Also consult the [[/tortoisehg/thg/issues?kind=bug&status=new&status=open|open bug list]].
 
 == Creating a new issue ==
 

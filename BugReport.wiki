@@ -1,5 +1,7 @@
 = Report Bugs =
 
+<<toc 2>>
+
 == Make sure the bug hasn't already been reported ==
 
 The first step should be to consult the list of **[[FixedBugs]]** that are already fixed on the tip of the stable branch, and are likely already in the [[/tortoisehg/thg-winbuild/downloads|nightly builds]].

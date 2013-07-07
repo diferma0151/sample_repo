@@ -1,6 +1,6 @@
 When I clone repository A to repo B throw error!
 But my repo A have problems: some files "in manifests not found" (after check %hg verify) because those files grow old and I removed them.
-So here source error:
+So here source of error:
 
 
 ```

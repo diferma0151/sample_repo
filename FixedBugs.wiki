@@ -15,6 +15,7 @@
 * shelve: allow to resize name combobox smaller than content length (fixes #2637)
 * shelve: double-check platform-specific bad filenames (fixes #2640)
 * status: fix Python 2.5 compatibility (fixes #3252)
+* status: refresh after menu action only if necessary (fixes #3222)
 * sync: use built-in drag-and-drop infrastructure (fixes #744)
 
 == Improvements ==

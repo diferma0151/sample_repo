@@ -1,33 +1,12 @@
 ﻿See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 2.8.1 =
+= Changes since 2.8.2 =
 
 == Bug Fixes ==
 
-* bookmark: don't sort in reversed order
-* chunks: keep permission of working-copy file by atomictemp (fixes #2414)
-* commit: avoid double refreshWctx when creating commit widget (refs #3227)
-* grep: do not start search in constructor (fixes #2639)
-* lexers: use the C++ Lexer for .cc and .hh files (fixes #3240)
-* repowidget: unapply all patches through MQWidget (--force option) (fixes #1766)
-* settings: add 'never' option to 'Monitor Repo Changes' setting (refs #3227)
-* settings: do not clear description text on focus out (fixes #1429)
-* shelve: allow to resize name combobox smaller than content length (fixes #2637)
-* shelve: double-check platform-specific bad filenames (fixes #2640)
-* status: fix Python 2.5 compatibility (fixes #3252)
-* status: refresh after menu action only if necessary (fixes #3222)
-* sync: use built-in drag-and-drop infrastructure (fixes #744)
-
 == Improvements ==
 
-* customtools: add "Custom Tools" context menu to revdetails and manifest widgets
-* graft: add GUI options for --currentuser, --currentdate and --log (refs #2328)
-* sync: add 'Update subrepo paths' checkbox to save dialog
-* workbench: improved tooltip of sync toolbar
-
 == Installer ==
-
-* not enable mercurial_keyring by default for now (fixes #2587)
 
 == Bug Fixes in Third-party Modules ==
 

@@ -8,14 +8,14 @@
 
 == Installer ==
 
+* PyQt 4.10.2
+  (includes fix for #1999: crash "Assertion failed" in lexlib\CharacterSet.h)
+
 == Bug Fixes in Third-party Modules ==
 
 Pygments 1.6:
 * #2026: Workbench hangs when trying to view changes of specific file
 * #2176: Problem with XQuery file when committing
-
-QScintilla 2.7.1:
-* #1999: crash "Assertion failed" in lexlib\CharacterSet.h
 
 ----
 

@@ -20,9 +20,6 @@
 * repowidget: test existence of mqDemand explicitly (fixes #2048)
 * thgrepo: disable filesystem monitor while busy (refs #1469)
 * thgrepo: start/stop filesystem monitor by open state of repo (fixes #1783)
-* workbench: assign shortcut keys to incoming/outgoing actions (closes #3243)
-* workbench: hide urlCombo if there isn't more than 1 alias (fixes #2600)
-* workbench: keep single instance of ServeDialog by DialogKeeper (closes #1845)
 
 == Improvements ==
 
@@ -40,6 +37,9 @@
 * repowidget: reuse existing ManifestDialog if shift key isn't pressed
 * sign: add sign dialog
 * sync: add new mode in postpull: update or rebase (closes #2551)
+* workbench: assign shortcut keys to incoming/outgoing actions (closes #3243)
+* workbench: hide urlCombo if there isn't more than 1 alias (fixes #2600)
+* workbench: keep single instance of ServeDialog by DialogKeeper (closes #1845)
 * workbench: place the sync task button next to the sync toolbar by default
 
 == Installer ==

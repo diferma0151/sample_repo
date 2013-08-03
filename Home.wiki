@@ -11,11 +11,12 @@ platforms.
 
 **[[http://tortoisehg.bitbucket.org/download/index.html|Download]]** | 
 **[[http://tortoisehg.bitbucket.org/docs.html|Documentation]]** |
-**[[http://tortoisehg.bitbucket.org/manual/2.5/faq.html|FAQ]]** |
+**[[http://tortoisehg.bitbucket.org/manual/2.9/faq.html|FAQ]]** |
 **[[ReleaseNotes]]** |  **[[RoadMap]]**
 
 == News ==
 
+* 2013-08-01: TortoiseHg 2.9 (with Mercurial 2.7) released
 * 2013-07-10: TortoiseHg 2.8.2 (with Mercurial 2.6.3) released
 * 2013-06-02: TortoiseHg 2.8.1 (with Mercurial 2.6.2) released
 * 2013-05-03: TortoiseHg 2.8 (with Mercurial 2.6) released

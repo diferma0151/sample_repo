@@ -34,7 +34,59 @@ an older version of Mercurial, please consult the following chart:
 | 2.4.x | 2.6.n |
 | 2.5.x | 2.7.n |
 | 2.6.x | 2.8.n |
+| 2.7.x | 2.9.n |
 | hg default tip | thg default tip |
+
+----
+
+= TortoiseHg 2.9 =
+
+TortoiseHg 2.9 is a major feature release
+
+== Bug Fixes ==
+
+* archive/bisect: handle ambiguous/unknown revision gracefully
+* archive/sync: getOpen/SaveFileName without keyword argument (CentOs 6.3)
+* cmdui: keep running state just before emitting commandFinished (fixes #2611)
+* docklog: move focus only when shown by toolbar/keyboard action (fixes #492)
+* guess: try to abort RenameSearchThread by exception on cancel (fixes #1990)
+* import: disable -p0 checkbox for qimport and shelve (fixes #3267)
+* openshell: parse command string by shlex.split()
+* overlay: cache icon handle (fixes #3223)
+* purge: prevent "local variable 'f' referenced before assignment"
+* qtapp: correct exception mapping of revlog decompress error
+* quickop: use helper to build cmdline of common operation (fixes #1313)
+* rejects: report I/O error on save file (refs #3284)
+* repowidget: allow graft or rebase of applied patches
+* repowidget: test existence of mqDemand explicitly (fixes #2048)
+* thgrepo: disable filesystem monitor while busy (refs #1469)
+* thgrepo: start/stop filesystem monitor by open state of repo (fixes #1783)
+
+== Improvements ==
+
+* annotate: use FileLogDialog instead of ManifestDialog
+* archive: prefer symbolic label than revision number
+* csinfo: add ellipsis to summary field if the rev description spans several lines
+* csinfo: add "obsolete" field
+* docklog: assign console per repository (closes #120)
+* docklog: move title bar to left if console is spanned horizontally
+* graph: improve revision graph appearance when revset specified
+* graph: build color table incrementally (fixes #2559)
+* guess: edit unrevisioned file on double click
+* messageentry: make "Paste Filenames" separate filenames with EOL (fixes #3230)
+* repowidget: open merge and shelve dialog modelessly
+* repowidget: reuse existing ManifestDialog if shift key isn't pressed
+* sign: add sign dialog
+* sync: add new mode in postpull: update or rebase (closes #2551)
+* workbench: assign shortcut keys to incoming/outgoing actions (closes #3243)
+* workbench: hide urlCombo if there isn't more than 1 alias (fixes #2600)
+* workbench: keep single instance of ServeDialog by DialogKeeper (closes #1845)
+* workbench: place the sync task button next to the sync toolbar by default
+
+== Installer ==
+
+* PyQt 4.10.2
+  (includes fix for #1999: crash "Assertion failed" in lexlib\CharacterSet.h)
 
 ----
 

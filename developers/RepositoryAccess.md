@@ -27,10 +27,10 @@ short-term:
 1. pass stubs to all widgets (mostly done)
 1. implement queued command runner by using cmdui.Core (WIP)
 1. implement per-repository command queue (WIP)
-1. have cmdui (optionally) accept RepoAgent as command runner
-1. have RepoWidget use new command runner
+1. have cmdui (optionally) accept RepoAgent as command runner (WIP)
+1. have RepoWidget use new command runner (WIP)
 1. have all widgets run commands via RepoAgent
-1. move shortname and displayname
+1. move shortname and displayname (WIP)
 
 long-term:
 

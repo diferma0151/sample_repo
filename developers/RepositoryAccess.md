@@ -37,6 +37,7 @@ long-term:
 * keep dirstate/wctx up-to-date by RepoAgent?
 * better control of `refreshWctx()`
 * provide read/write config API
+* bundlerepo and `--hidden` flag
 * reload root ui object when global setting is changed?
 * how to call workbench from sub dialogs?
 * drop `thgrepository` extension

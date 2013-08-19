@@ -63,3 +63,11 @@ Note that this is only for advanced translators as it require more steps and you
 # Commit .po to default branch
 
 You may want to skip steps as appropriate. In particular, it is possible to work without using launchpad. In this case it is your responsibility that your .po file is uploaded to launchpad before the next release of TortoiseHg.
+
+=== Getting the latest .po file ===
+
+You can [[https://translations.launchpad.net/tortoisehg/stable/+export|export .po files manually]] or use [[https://code.launchpad.net/~tortoisehg-i18n/tortoisehg/stable-po|the daily bzr export]].
+
+{{{
+% bzr branch lp:~tortoisehg-i18n/tortoisehg/stable-po
+}}}

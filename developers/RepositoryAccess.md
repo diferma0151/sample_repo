@@ -24,7 +24,7 @@ Example:
 ~~~~{.py}
     def runUpdate(self):
         sess = self._repoagent.runCommand(hglib.buildcmdargs('update', rev='.'))
-        sess.commandFinished(self._onUpdateFinished)
+        sess.commandFinished.connect(self._onUpdateFinished)
 
     @pyqtSlot(int)
     def _onUpdateFinished(self, ret):

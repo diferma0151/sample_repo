@@ -15,7 +15,7 @@
 
 ## Command Execution
 
-`RepoAgent` (and its backend, `CmdAgent`) provide the same APIs to execute Mercurial commands asynchronously.
+`RepoAgent` and its backend, `CmdAgent`, provide the same APIs to execute Mercurial commands asynchronously.
 
 `runCommand(cmdline)` or `runCommandSequence([cmdline, ...])` start or queue the specified command and return new `CmdSession` object which will provide notification signals.
 

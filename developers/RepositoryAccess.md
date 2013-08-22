@@ -2,6 +2,8 @@
 
 **This feature is UNDER DEVELOPMENT.**
 
+[TOC]
+
 ## Overview
 
 * introduces a wrapper to repository object, called `RepoAgent`

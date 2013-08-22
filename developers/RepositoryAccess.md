@@ -1,4 +1,4 @@
-# Repository Access and Command Execution (Planned)
+# Repository Access and Command Execution
 
 **This feature is UNDER DEVELOPMENT.**
 
@@ -9,6 +9,7 @@
 * `RepoManager` manages life-cycle of `RepoAgent` and its filesystem monitor.
 * `RepoAgent` owns `repository` object instead of extending it to thgrepository.
 * `RepoAgent` (and `CmdAgent`) will receive all command requests and run them in sequence.
+* Provides consistent *unicode APIs*
 
 ![](fig/repository-classes.png)
 
@@ -59,7 +60,7 @@ In 2.9:
 * introduce `RepoManager` and stub for `RepoAgent`
 * redesign command API of `tortoisehg.hgqt.run`
 
-## TODOs
+### TODOs
 
 short-term:
 

@@ -15,6 +15,46 @@
 * While running commands, `RepoAgent` disables filesystem monitor. This will resolve
   temporary `LookupError` while rebasing, qrefresh, etc.
 
+## Command Execution
+
+`RepoAgent` (and its backend, `CmdAgent`) provide the same APIs to execute Mercurial commands asynchronously.
+
+`runCommand(cmdline)` or `runCommandSequence([cmdline, ...])` start or queue the specified command and return new `CmdSession` object which will provide notification signals.
+
+Example:
+
+~~~~{.py}
+    def runUpdate(self):
+        sess = self._repoagent.runCommand(hglib.buildcmdargs('update', rev='.'))
+        sess.commandFinished(self._onUpdateFinished)
+
+    @pyqtSlot(int)
+    def _onUpdateFinished(self, ret):
+        if ret != 0:
+            # update failed
+...
+~~~~
+
+The relation between `CmdAgent` and `CmdSession` is similar to the one between `QNetworkAccessManager` and `QNetworkReply`.
+
+### Executors
+
+**CmdThread** (default)
+
+* lightweight and feature-rich
+* cannot abort on I/O stall, #1507
+* has several thread issues like #1661 or #2071
+
+**CmdProc**
+
+* high overhead (especially on Windows)
+* no interactive prompt
+* no `ui.label`
+
+**Command Server Client** (planned)
+
+* not implemented
+
 ## TODOs
 
 short-term:

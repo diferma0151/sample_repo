@@ -57,13 +57,17 @@ The relation between `CmdAgent` and `CmdSession` is similar to the one between `
 
 * not implemented
 
+## Change History
+
+In 2.9:
+
+* introduce `RepoManager` and stub for `RepoAgent`
+* redesign command API of `tortoisehg.hgqt.run`
+
 ## TODOs
 
 short-term:
 
-1. eliminate backward dependencies to `run` module from widgets (DONE)
-1. redesign command API so that it can receive per-repository object (DONE)
-1. have Workbench use new classes (DONE)
 1. have RepoWidget use new classes (mostly done)
 1. implement stubs for new classes (mostly done)
 1. pass stubs to all widgets (mostly done)

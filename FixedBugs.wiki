@@ -10,6 +10,7 @@
 * purge: match API has changed WRT directory traversal
 * qscilib: avoid extra encoding conversion in detection of eol (refs #3314)
 * qtapp: unlink dead server socket on ECONNREFUSED for recovery (fixes #3290)
+* repowidget: "Unapply Patch" should only effect on applied patches (closes #3330)
 * settings: catch OSError to show warning dialog (closes #3313)
 * settings: performing refresh no matter if the setting file is modified
 * thgrepo: recreate QFileSystemWatcher to restart monitoring (fixes #3298)

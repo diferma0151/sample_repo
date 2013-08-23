@@ -4,7 +4,23 @@
 
 == Bug Fixes ==
 
+* contrib: name the .desktop file thg so it matches WM_CLASS
+* fontcache, settings: fix handling of non-ascii font name
+* graft: disallow to close dialog while CheckThread is running (fixes #3291)
+* purge: match API has changed WRT directory traversal
+* qscilib: avoid extra encoding conversion in detection of eol (refs #3314)
+* qtapp: unlink dead server socket on ECONNREFUSED for recovery (fixes #3290)
+* settings: catch OSError to show warning dialog (closes #3313)
+* settings: performing refresh no matter if the setting file is modified
+* thgrepo: recreate QFileSystemWatcher to restart monitoring (fixes #3298)
+* thread: fix compatibility with ui.promptchoice of hg 2.7 (fixes #3293)
+* workbench: reload MQ dock on manual refresh (refs #3274)
+* workbench: unmark _runSyncAction as slot to avoid sender bug (fixes #3320)
+
 == Improvements ==
+
+* messageentry: sort the filenames when using the "Paste Filenames" command
+* status: show error dialog on refresh failure (closes #1867)
 
 == Installer ==
 

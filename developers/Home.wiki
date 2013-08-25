@@ -32,5 +32,5 @@ In TortoiseHg 2.0, the **thg** command will start the Workbench if it is run wit
 * [[developers/CommonSignals|Common Qt Signals]]
   - Qt signals commonly used in our widgets
 * [[developers/EncodingStrategy|Encoding Strategy]] - how to handle character encoding
-* [[developers/RepositoryAccess|Repository Access API (Planned)]]
+* [[developers/RepositoryAccess|Repository Access and Command Execution]]
 * [[developers/UITextGuideline|User Interface Text Guideline]]

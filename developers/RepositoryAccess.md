@@ -46,12 +46,13 @@ The relation between `CmdAgent` and `CmdSession` is similar to the one between `
 **CmdProc**
 
 * high overhead (especially on Windows)
+* cannot abort *safely* (`kill -KILL` or `TerminateProcess` is used)
 * no interactive prompt
-* no `ui.label`
+* no progress and `ui.label`
 
 **Command Server Client** (planned)
 
-* not implemented
+* *not implemented*
 
 ## Change History
 
@@ -71,7 +72,7 @@ short-term:
 1. implement per-repository command queue (WIP)
 1. have cmdui (optionally) accept RepoAgent as command runner (WIP)
 1. have RepoWidget use new command runner (WIP)
-1. have all widgets run commands via RepoAgent
+1. have all widgets run commands via RepoAgent (WIP)
 1. move shortname and displayname (WIP)
 
 long-term:

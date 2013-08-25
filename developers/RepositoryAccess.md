@@ -110,6 +110,10 @@ thread/process:
 * #2614 - `util.hgexecutable()` returns wrong path
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
 
+unicode:
+
+* #3246 - better handling of UnicodeEncodeError of command-line parameters
+
 ## See Also
 
 * [[PATCH 0 of 7 RFC] rough idea to address instability of async command execution and polling](https://groups.google.com/d/msg/thg-dev/r2cWqYDg4iQ/JVg12dP1O1AJ)

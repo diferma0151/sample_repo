@@ -101,6 +101,7 @@ repo/ui object:
 * #588 - Unified diff view doesn't work well with EOL extension
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
 * #2208 - Support --config argument for 'thg workbench'
+* #3343 - Blackbox extension not working when using hg from within TortoiseHg
 
 thread/process:
 

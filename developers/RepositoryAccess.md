@@ -47,6 +47,7 @@ The relation between `CmdAgent` and `CmdSession` is similar to the one between `
 
 * high overhead (especially on Windows)
 * cannot abort *safely* (`kill -KILL` or `TerminateProcess` is used)
+* cannot terminate if `hg` is a batch file
 * no interactive prompt
 * no progress and `ui.label`
 

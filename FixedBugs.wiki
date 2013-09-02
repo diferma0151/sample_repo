@@ -13,6 +13,7 @@
 * repowidget: "Unapply Patch" should only effect on applied patches (closes #3330)
 * settings: catch OSError to show warning dialog (closes #3313)
 * settings: performing refresh no matter if the setting file is modified
+* thgrepo: check mtime of bookmarks.current to detect update (fixes #3332)
 * thgrepo: recreate QFileSystemWatcher to restart monitoring (fixes #3298)
 * thread: fix compatibility with ui.promptchoice of hg 2.7 (fixes #3293)
 * workbench: reload MQ dock on manual refresh (refs #3274)
@@ -20,6 +21,7 @@
 
 == Improvements ==
 
+* bookmark: set active text dependent on selected changeset
 * messageentry: sort the filenames when using the "Paste Filenames" command
 * status: show error dialog on refresh failure (closes #1867)
 

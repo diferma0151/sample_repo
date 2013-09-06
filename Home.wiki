@@ -16,6 +16,7 @@ platforms.
 
 == News ==
 
+* 2013-09-05: TortoiseHg 2.9.1 (with Mercurial 2.7.1) released
 * 2013-08-01: TortoiseHg 2.9 (with Mercurial 2.7) released
 * 2013-07-10: TortoiseHg 2.8.2 (with Mercurial 2.6.3) released
 * 2013-06-02: TortoiseHg 2.8.1 (with Mercurial 2.6.2) released

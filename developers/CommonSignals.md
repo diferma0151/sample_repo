@@ -26,8 +26,6 @@ The following signals may be deprecated or moved by
 * `output(message, label)` - forward Mercurial `ui.write` or `ui.write_err`
   message
 * `makeLogVisible(visible)` - request to change visibility of "Output Log"
-* `beginSuppressPrompt()`, `endSuppressPrompt()` - request to suppress prompt
-  line of "Output Log" dock
 * `progress(topic, pos, item, unit, total)` - forward Mercurial
   `ui.progress` message
 

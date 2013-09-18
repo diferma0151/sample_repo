@@ -98,7 +98,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * show output/progress by default
 ** I'm thinking of single-line status, which shows the current activity, e.g.  "Sending [PATCH 0/1] xxxx". Maybe I should provide more details, though. - yuja
 * clean implementation for --bundle
-* threaded preview
 * replace to/from/cc combo boxes with entry and [...] that opens address book style dialog
 * perhaps changeset list could be in a second tab, before preview
 * drag and drop revisions from RepoWidget to email dialog.
@@ -106,14 +105,11 @@ This is the list of left-over TODOs from the initial port, and some long term id
 
 == Sync ==
 
-* expose default-push in some way
-* parse push/pull output for indication of work done
 * keyring doesn't work on KDE (with KWallet). It looks threading issue. See
  https://bitbucket.org/tortoisehg/hgtk/issue/1437/gui-freeze-on-suse-linux-after-using
 
 == Annotate ==
 
-* context menu should offer toggle between revision number, username or both
 * In the gtk version there's a possibility to assign colors to the usernames in the changelog. Maybe those same colors could be used per user in the annotate window too ? (SJB - this is now complicated by the 32-color restriction in Qsci)
 ** And the colors in the annotate dialog for not configured users perhaps could be assigned with the same 'logic' as in the changelog
 ** I could also add an extra page to the setting dialog, for assigning colors to usernames?
@@ -125,12 +121,10 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * pager for long outputs
 * sophisticated 'thg' command, e.g. 'thg grep' to switch task tab.
 * accept ctrl+c for command termination
-* delay repo switch while running command
 
 == MQ ==
 
 * The widget provides buttons for pushing/popping one or all patches. I miss the two that do 'push/pop up to selected patch' (=qgoto).
-* It should be possible to perform qreorder from this widget, by dragging patches in the list.
 * It should be possible to call qfold.py from this widget.
 
 == Rename dialog ==

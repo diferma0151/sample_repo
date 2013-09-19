@@ -24,6 +24,7 @@ cd ~/bin
 ln -s ~/repos/hg/hg .
 
 # now get a TortoiseHg clone
+cd ~/repos
 hg clone https://bitbucket.org/tortoisehg/thg
 cd thg
 ln -s ../hg/mercurial/

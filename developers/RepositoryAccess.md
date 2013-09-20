@@ -112,6 +112,7 @@ thread/process:
 * #2614 - `util.hgexecutable()` returns wrong path
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
 - #3370 - Workbench UI getting dispresponsive on certain operations
+- #3381 - Locked folders/files on Windows (again)
 
 unicode:
 

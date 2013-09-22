@@ -22,14 +22,21 @@
 Example:
 
 ~~~~{.py}
+    def __init__(self, ...):
+        ...
+        self._cmdsession = cmdcore.nullCmdSession()
+
     def runUpdate(self):
-        sess = self._repoagent.runCommand(hglib.buildcmdargs('update', rev='.'))
+        if not self._cmdsession.isFinished():
+            return  # command still running
+        cmdline = hglib.buildcmdargs('update', rev='.')
+        self._cmdsession = sess = self._repoagent.runCommand(cmdline, self)
         sess.commandFinished.connect(self._onUpdateFinished)
 
     @pyqtSlot(int)
     def _onUpdateFinished(self, ret):
         if ret != 0:
-            # update failed
+            cmdui.errorMessageBox(self._cmdsession, self)
 ...
 ~~~~
 

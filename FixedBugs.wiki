@@ -4,9 +4,23 @@
 
 == Bug Fixes ==
 
+* filedata: use ctx2 to calculate subrepo's "from" revision
+* filedialogs: fix initial page step of diffblock
+* lexers: invert lightness of low-contrast colors (refs #810)
+* hglib: check name conflicts in getrevisionlabel (fixes #3339)
+* qqueue: fix handling of non-ascii name in queue list widget
+* qscilib: don't pass negative int as argument 2 of SendScintilla (fixes #3358)
+* qtapp: fix KeyboardInterrupt handler not to open exception dialog
+* wconfig: fix AttributeError on translation of pure ParsingError (fixes #3353)
+
 == Improvements ==
 
+* lexers: disable advanced recognition of c++ conditional preprocessor block
+* revdetails: do not resize the revision description automatically
+
 == Installer ==
+
+* setup: include .desktop file in sdist again (fixes #3357)
 
 == Bug Fixes in Third-party Modules ==
 

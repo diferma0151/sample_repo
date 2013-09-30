@@ -4,6 +4,7 @@
 
 == Bug Fixes ==
 
+* commit: properly set the file list "defcheck" when amend is selected (fixes #2567)
 * filedata: use ctx2 to calculate subrepo's "from" revision
 * filedialogs: fix initial page step of diffblock
 * lexers: invert lightness of low-contrast colors (refs #810)

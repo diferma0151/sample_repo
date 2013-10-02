@@ -68,7 +68,7 @@ In 2.9:
 
 * introduce `RepoManager` and stub for `RepoAgent`
 * redesign command API of `tortoisehg.hgqt.run`
-* #1783 - thg keeps a ref to a folderrepo for too long ?
+* \#1783 - thg keeps a ref to a folderrepo for too long ?
 
 ### TODOs
 

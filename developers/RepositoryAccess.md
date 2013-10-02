@@ -100,30 +100,30 @@ long-term:
 
 file-system monitoring:
 
-* #812, #1305, #1426, #1469, #1571, #1758, #2565 - RevlogError on strip, rebase, collapse, etc.
-* #1594, #2604 - error after qpop
-* #2470 - hg push in command line (to SVN with hgsubversion)
+* \#812, #1305, #1426, #1469, #1571, #1758, #2565 - RevlogError on strip, rebase, collapse, etc.
+* \#1594, #2604 - error after qpop
+* \#2470 - hg push in command line (to SVN with hgsubversion)
 
 repo/ui object:
 
-* #588 - Unified diff view doesn't work well with EOL extension
+* \#588 - Unified diff view doesn't work well with EOL extension
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
-* #2208 - Support --config argument for 'thg workbench'
-* #3343 - Blackbox extension not working when using hg from within TortoiseHg
+* \#2208 - Support --config argument for 'thg workbench'
+* \#3343 - Blackbox extension not working when using hg from within TortoiseHg
 
 thread/process:
 
-* #1507 - Stop button for pull that hangs
-* #1661 - "abort: Interrupted system" call during push with subrepos
-* #2071 - crash when pushing with mercurial_keyring
-* #2614 - `util.hgexecutable()` returns wrong path
+* \#1507 - Stop button for pull that hangs
+* \#1661 - "abort: Interrupted system" call during push with subrepos
+* \#2071 - crash when pushing with mercurial_keyring
+* \#2614 - `util.hgexecutable()` returns wrong path
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
-- #3370 - Workbench UI getting dispresponsive on certain operations
-- #3381 - Locked folders/files on Windows (again)
+- \#3370 - Workbench UI getting dispresponsive on certain operations
+- \#3381 - Locked folders/files on Windows (again)
 
 unicode:
 
-* #3246 - better handling of UnicodeEncodeError of command-line parameters
+* \#3246 - better handling of UnicodeEncodeError of command-line parameters
 
 ## See Also
 

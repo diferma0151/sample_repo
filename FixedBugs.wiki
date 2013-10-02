@@ -16,6 +16,7 @@
 
 == Improvements ==
 
+* commit: remember last amend/qrefresh message until the next commit
 * lexers: disable advanced recognition of c++ conditional preprocessor block
 * revdetails: do not resize the revision description automatically
 

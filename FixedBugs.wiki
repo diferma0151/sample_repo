@@ -18,6 +18,7 @@
 
 * commit: remember last amend/qrefresh message until the next commit
 * lexers: disable advanced recognition of c++ conditional preprocessor block
+* repotreemodel: make XML reader work with PyQt 4.6 (CentOs 6.3)
 * revdetails: do not resize the revision description automatically
 
 == Installer ==

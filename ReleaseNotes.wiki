@@ -39,6 +39,35 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.9.2 =
+
+TortoiseHg 2.9.2 is a regularly scheduled bug fix release
+
+== Bug Fixes ==
+
+* commit: properly set the file list "defcheck" when amend is selected (fixes #2567)
+* filedata: use ctx2 to calculate subrepo's "from" revision
+* filedialogs: fix initial page step of diffblock
+* lexers: invert lightness of low-contrast colors (refs #810)
+* hglib: check name conflicts in getrevisionlabel (fixes #3339)
+* qqueue: fix handling of non-ascii name in queue list widget
+* qscilib: don't pass negative int as argument 2 of SendScintilla (fixes #3358)
+* qtapp: fix KeyboardInterrupt handler not to open exception dialog
+* wconfig: fix AttributeError on translation of pure ParsingError (fixes #3353)
+
+== Improvements ==
+
+* commit: remember last amend/qrefresh message until the next commit
+* lexers: disable advanced recognition of c++ conditional preprocessor block
+* repotreemodel: make XML reader work with PyQt 4.6 (CentOs 6.3)
+* revdetails: do not resize the revision description automatically
+
+== Installer ==
+
+* setup: include .desktop file in sdist again (fixes #3357)
+
+----
+
 = TortoiseHg 2.9.1 =
 
 TortoiseHg 2.9.1 is a regularly scheduled bug fix release

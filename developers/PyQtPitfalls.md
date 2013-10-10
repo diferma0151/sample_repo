@@ -83,7 +83,7 @@ Workarounds:
 
 See http://www.riverbankcomputing.com/pipermail/pyqt/2010-August/027557.html
 
-### sender() returns wrong object if initiated by pyqtSlot-decorated slot of the same object
+### sender() returns wrong object if initiated by decorated slot of the same object
 
 *In all versions of PyQt, Issue #3320, #3393*
 

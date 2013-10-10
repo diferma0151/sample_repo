@@ -95,7 +95,7 @@ def editSettings(self):
 
 #@pyqtSlot(unicode)
 def _updateRepoTabTitle(self, title):
-    # self.sender() will return unrelated object during `editSettings()`
+    # self.sender() will return the sender of editSettings() during editSettings()
     ...
 ~~~~
 

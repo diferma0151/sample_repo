@@ -88,9 +88,39 @@ rw.titleChanged.connect(mapper.map)
 ~~~~
 
 Workaround: use old-style connection
+
 ~~~~{.py}
 QObject.connect(rw, SIGNAL('titleChanged(QString)'),
                 mapper, SLOT('map()'))
 ~~~~
 
 See http://www.riverbankcomputing.com/pipermail/pyqt/2010-March/026113.html
+
+
+## QString
+
+### Equality check fails if left-hand side is non-ascii unicode
+
+*Changeset 5719b55f4f26, ...*
+
+~~~~{.py}
+>>> QString(u'é') == u'é'
+True
+>>> u'é' == QString(u'é')
+UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode
+- interpreting them as being unequal
+False
+~~~~
+
+Workaround: cast to `unicode` ASAP
+
+### Incompatible with unicode in dict and set key because of different hash value
+
+*Issue #1883, ...*
+
+~~~~{.py}
+>>> 'foo' in {QString('foo'): 0}
+False
+~~~~
+
+Workaround: cast to `unicode` ASAP

@@ -99,6 +99,8 @@ See http://www.riverbankcomputing.com/pipermail/pyqt/2010-March/026113.html
 
 ## QString
 
+*NOTE: QString is removed in PyQt5 an PySide.*
+
 ### Equality check fails if left-hand side is non-ascii unicode
 
 *Changeset 5719b55f4f26, ...*
@@ -112,7 +114,7 @@ UnicodeWarning: Unicode equal comparison failed to convert both arguments to Uni
 False
 ~~~~
 
-Workaround: cast to `unicode` ASAP
+Don't use `QString`. Cast to `unicode` ASAP.
 
 ### Incompatible with unicode in dict and set key because of different hash value
 
@@ -123,4 +125,4 @@ Workaround: cast to `unicode` ASAP
 False
 ~~~~
 
-Workaround: cast to `unicode` ASAP
+Don't use `QString`. Cast to `unicode` ASAP.

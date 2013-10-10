@@ -4,6 +4,32 @@
 
 ## Signals & Slots
 
+### lambda slot cannot be disconnected even if underlying QObject is destoryed
+
+*Issue #1267, #2386, ..., Changeset 1f16cc87f8a9, ...*
+
+BAD:
+~~~~{.py}
+def __init__(self):
+    def applyFilter():
+        self.le.text()
+        ...
+    self.le.textEdited.connect(applyFilter)
+    # made reference cycle. self will be half-dead if deleted by Qt object tree
+~~~~
+
+GOOD:
+~~~~{.py}
+def __init__(self):
+    self.le.textEdited.connect(self._applyFilter)
+
+@pyqtSlot()
+def _applyFilter(self):
+    self.le.text()
+    ...
+~~~~
+
+
 ### QTimer.singleShot cannot be connected to signal by new-style connection
 
 *In PyQt < 4.7.5, Issue #2239*

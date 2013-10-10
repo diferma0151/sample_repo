@@ -29,6 +29,7 @@ In TortoiseHg 2.0, the **thg** command will start the Workbench if it is run wit
 
 === Internals ===
 
+* [[developers/PyQtPitfalls|Bugs and Pitfalls of PyQt]]
 * [[developers/CommonSignals|Common Qt Signals]]
   - Qt signals commonly used in our widgets
 * [[developers/EncodingStrategy|Encoding Strategy]] - how to handle character encoding

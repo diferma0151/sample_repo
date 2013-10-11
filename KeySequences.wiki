@@ -6,6 +6,8 @@
 * Shift+Ctrl+O - Toggle repository registry
 * CTRL+S - Toggle Filter/Revset toolbar
 * CTRL+L - Toggle log dock widget
+* Ctrl+. - Go to Working Dir parent changeset
+* Ctrl+/ - Go to the specified revision
 * QKeySequence.Quit - Exit workbench
 * QKeySequence.Refresh - Refresh current repo
 * Shift+QKeySequence.Refresh - Refresh current task tab
@@ -46,7 +48,7 @@
 
 = repowidget =
 * Shift+KeyReturn - activate revision
-* Ctrl+P - Goto Working Dir parent changeset
+* Ctrl+P (REMOVED by bede68c70bcb)
 
 = filedialogs =
 * Alt+Down - next diff

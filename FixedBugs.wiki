@@ -4,6 +4,10 @@
 
 == Bug Fixes ==
 
+* settings: failure of unicode to QString comparison
+* workbench: unmark editSettings as slot to avoid sender bug (fixes #3393)
+
+
 == Improvements ==
 
 == Installer ==

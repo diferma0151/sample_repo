@@ -152,3 +152,16 @@ False
 ~~~~
 
 Don't use `QString`. Cast to `unicode` ASAP.
+
+
+## Widgets
+
+### Editable QComboBox does not allow case-sensitive input
+
+*Issue #165, #2276*
+
+> By default, for an editable combo box, a QCompleter that performs case
+> insensitive inline completion is automatically created.
+> -- [QComboBox::setCompleter](http://qt-project.org/doc/qt-4.8/qcombobox.html#setCompleter)
+
+Workaround: use `qtlib.allowCaseChangingInput(combo)`

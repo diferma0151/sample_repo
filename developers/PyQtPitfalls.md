@@ -1,6 +1,8 @@
-# Bugs and Pitfalls of PyQt
+# Bugs and Pitfalls of PyQt4
 
 [TOC]
+
+----
 
 ## Common
 
@@ -20,6 +22,7 @@ filename = QFileDialog.getOpenFileName(self, caption, ...)
 
 See http://pyqt.sourceforge.net/Docs/PyQt4/keyword_arguments.html
 
+----
 
 ## Signals & Slots
 
@@ -165,6 +168,7 @@ or specify signal type explicitly if available
 
 See http://www.riverbankcomputing.com/pipermail/pyqt/2010-March/026113.html
 
+----
 
 ## QString
 
@@ -196,6 +200,7 @@ False
 
 Don't use `QString`. Cast to `unicode` ASAP.
 
+----
 
 ## Widgets
 

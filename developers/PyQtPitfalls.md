@@ -104,9 +104,32 @@ Workarounds:
 * Mark/unmark both slots as `@pyqtSlot`
 * use [QSignalMapper](http://qt-project.org/doc/qt-4.8/qsignalmapper.html)
 
+### New-style connection may fail to resolve the best matching slot
+
+*In PyQt 4.6, Changeset 97d063521574*
+
+~~~~{.py}
+@pyqtSlot()
+def popPatch(self, patch=None):
+    return self._runPop(patch)
+
+# fail to find SLOT(popPatch()) and connect triggered(checked) to
+# popPatch(patch) via proxy object
+qpopAct.triggered.connect(self.patchActions.popPatch)
+~~~~
+
+Workaround: specify signal type explicitly
+~~~~{.py}
+qpopAct.triggered[()].connect(self.patchActions.popPatch)
+~~~~
+
+or use old-style connection
+
+See http://www.riverbankcomputing.com/pipermail/pyqt/2010-March/026113.html
+
 ### New-style connection to QSignalMapper.map silently ignored
 
-*In PyQt 4.6, 4.7.x?*
+*In PyQt 4.6*
 
 ~~~~{.py}
 # not work because connection made via proxy object
@@ -114,11 +137,12 @@ rw.titleChanged.connect(mapper.map)
 ~~~~
 
 Workaround: use old-style connection
-
 ~~~~{.py}
 QObject.connect(rw, SIGNAL('titleChanged(QString)'),
                 mapper, SLOT('map()'))
 ~~~~
+
+or specify signal type explicitly if available
 
 See http://www.riverbankcomputing.com/pipermail/pyqt/2010-March/026113.html
 

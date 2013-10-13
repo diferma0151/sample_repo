@@ -2,6 +2,25 @@
 
 [TOC]
 
+## Common
+
+### Qt functions don't accept keyword arguments
+
+*In PyQt 4.6, Changeset 8d357e3ae4d8, ...*
+
+BAD:
+~~~~{.py}
+filename = QFileDialog.getOpenFileName(parent=self, caption=...)
+~~~~
+
+GOOD:
+~~~~{.py}
+filename = QFileDialog.getOpenFileName(self, caption, ...)
+~~~~
+
+See http://pyqt.sourceforge.net/Docs/PyQt4/keyword_arguments.html
+
+
 ## Signals & Slots
 
 ### lambda slot cannot be disconnected even if underlying QObject is destoryed

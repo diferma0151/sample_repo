@@ -70,19 +70,22 @@ In 2.9:
 * redesign command API of `tortoisehg.hgqt.run`
 * \#1783 - thg keeps a ref to a folderrepo for too long ?
 
+In 2.10:
+
+* new per-repository command runner which manages busy state and command queue
+* `cmdui.Runner` and `cmdui.Dialog` has been replaced by the new command runner
+* run web server in separate process
+
 ### TODOs
 
-short-term:
+short-term (in 2.11?):
 
-1. have RepoWidget use new classes (mostly done)
-1. implement stubs for new classes (mostly done)
-1. pass stubs to all widgets (mostly done)
-1. implement queued command runner by using cmdui.Core (done)
-1. implement per-repository command queue (done)
-1. replace cmdui.Widget and Runner by new command runner (WIP)
-1. have RepoWidget use new command runner (WIP)
-1. have all widgets run commands via RepoAgent (WIP)
+1. pass `RepoAgent` to all widgets (mostly done)
 1. move shortname and displayname (WIP)
+1. replace `cmdui.Widget` by new command runner (WIP)
+1. pass `ui` to `cmdcore.CmdAgent` so that it can read user configuration
+1. extract reusable `QtUi` from thread.py
+1. add experimental command server client which uses `QProcess`
 
 long-term:
 
@@ -93,7 +96,6 @@ long-term:
 * reload root ui object when global setting is changed?
 * how to call workbench from sub dialogs?
 * drop `thgrepository` extension
-* use command server via `QProcess`
 * ...
 
 ## Issues to Consider

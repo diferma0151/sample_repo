@@ -60,15 +60,17 @@
 * settings: show human-readable font description
 * thg: do not suppress stderr except for frozen windows exe
 
-MQ:
+=== Improvements in MQ ===
 
-* MQ task widget has been removed
+//MQ task widget has been removed.//
 
 * use "Commit" widget to create/refresh patches
 * use "Patch Queue" dock to switch/create/delete queues
-  (separate QQueueDialog has been removed)
+  -- separate QQueueDialog has been removed
 * use "Patch Queue" dock or revision graph to reorder patches
-  (separate QReorderDialog has been removed (closes #441)
+  -- separate QReorderDialog has been removed (closes #441)
+
+other changes:
 
 * mqdock: add icon in front of the patch to highlight the patch
 * mqdock: allow to delete and reorder more than one patches

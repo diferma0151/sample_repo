@@ -83,6 +83,9 @@ other changes:
 
 * add sqlite3 to Windows TortoiseHg Python package (closes #2519)
 
+
+----
+
 == Bug Fixes in Third-party Modules ==
 
 Pygments 1.6:

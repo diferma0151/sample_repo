@@ -27,7 +27,7 @@
 * sync: fix comparison of unicode and localstr in related paths (fixes #3401)
 * workbench: fix non-ascii revset built from command-line filenames
 * workbench: send files specified by command-line to open instance (fixes #3402)
-* workbench: unmark editSettings as slot to avoid sender bug (fixes #3393)
+* workbench: work around sender bug (fixes #3393, #3440)
 
 == Improvements ==
 

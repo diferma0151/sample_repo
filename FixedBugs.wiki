@@ -1,88 +1,12 @@
 ﻿See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 2.9.2 =
+= Changes since 2.10 =
 
 == Bug Fixes ==
 
-* clone: connect checkbox and lineedit without using lambda (refs #3397)
-* clone: do not touch self after dialog closed (refs #3397)
-* filedata: handle clean like modified so that size limit enforced (fixes #3425)
-* graph: avoid invalid comparison of unapplied patch revision (fixes #1182)
-* mq: fix availability of patch actions after reload
-* mq: fix loss of guards and comments on drag-and-drop patches (refs #441)
-* mq: show all command outputs in Output Log (fixes #2164, #2165)
-* qrename: fix handling of non-ascii patch name in checkPatchname
-* qscilib: memleak in context menu handler
-* reporegistry: fix detection of existing subrepos on addSubrepo()
-* repowatcher: watch patches/status to invalidate stale applied (fixes #1094)
-* repowidget: do not reload while phase command is running
-* repowidget: remove redundant shortcut Ctrl+P for goto parent action
-  (use Ctrl+. instead)
-* run: fix exit code handling
-* settings: don't listen to events of orphan widgets causing invalid memory access
-* settings: failure of unicode to QString comparison
-* shelve: disallow to select the same patch/shelve by both sides (fixes #3411)
-* status: enable tristate of all/none checkbox only if applicable (fixes #3398)
-* status: sync partials table to model on updateModel (fixes #3406)
-* sync: fix comparison of unicode and localstr in related paths (fixes #3401)
-* workbench: fix non-ascii revset built from command-line filenames
-* workbench: send files specified by command-line to open instance (fixes #3402)
-* workbench: work around sender bug (fixes #3393, #3440)
-
 == Improvements ==
 
-* annotate: add diff menus to annotate view
-* cmdcore: postpone queued command requests until current one finishes
-* commit: keep cursor position when the current paragraph is reformatted
-* commit: make possible to select hunk by space key
-* csinfo: show 'Original Parent' field for patches when necessary
-* docklog: add "Clear Log" context menu
-* filedata: improve subrepo info
-* filedialogs: show insertion markers to mark the plus/minus start of lines
-* filelist: mark added and removed subrepos with an icon overlay
-* rebase: add support for --base modifier (refs #3322)
-* rebase: allow swapping source and destination (closes #3322)
-* rebase: by selecting both source and destination (refs #3322)
-* repofilter: toggle graft relations visibility (closes #2622)
-* reporegistry: add 'Remove Subrepository...' command to subrepo context menu
-* repoview: set X primary selection to short node ID on revClicked
-* repowatcher: reduce number of files to be monitored by OS
-* resolve: execute 3 way diff when resolved file is double clicked
-* revert: allow reverting files to any of the selected revision parents
-  (fixes #2590)
-* revpanel: add changeset.link config to customize the target of cset links
-  (fixes #3373)
-* serve: run hgweb server in separate process
-* settings: do not validate extensions for each checkbox on refresh
-  (saves ~1sec)
-* settings: add SSH command to sync page
-* settings: separate push/pull options to new sync page
-* settings: show human-readable font description
-* thg: do not suppress stderr except for frozen windows exe
-
-=== Improvements in MQ ===
-
-//MQ task widget has been removed.//
-
-* use "Commit" widget to create/refresh patches
-* use "Patch Queue" dock to switch/create/delete queues
-  -- separate QQueueDialog has been removed
-* use "Patch Queue" dock or revision graph to reorder patches
-  -- separate QReorderDialog has been removed (closes #441)
-
-other changes:
-
-* mqdock: add icon in front of the patch to highlight the patch
-* mqdock: allow to delete and reorder more than one patches
-* mqdock: disable inline qrename so that qgoto can be triggered by double click
-* mqdock: synchronize the patch selection with revision graph
-* repowidget: add 'Apply onto original parent' to the unapplied patch context menu
-* repowidget: support for --keep-changes option
-
 == Installer ==
-
-* add sqlite3 to Windows TortoiseHg Python package (closes #2519)
-
 
 ----
 

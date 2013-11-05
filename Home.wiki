@@ -1,4 +1,4 @@
-﻿{{http://tortoisehg.bitbucket.org/css/img/logo.png|}}
+[[http://tortoisehg.bitbucket.org/|﻿{{http://tortoisehg.bitbucket.org/css/img/logo.png|TortoiseHg Website}}]]
 
 
 TortoiseHg is a Windows shell extension and a series of applications for

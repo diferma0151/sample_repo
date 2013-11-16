@@ -13,7 +13,6 @@ This page briefly describes Qt signals commonly used in our code.
 
 ## Widgets
 
-* `finished(result)` - the window is closed (implemented in `QDialog`)
 * `grepRequested(pattern, {all, rev})` - forward grep request
 * `linkActivated(url)` - forward arbitrary request (see "Internal URLs")
 * `showMessage(msg)` - forward status message

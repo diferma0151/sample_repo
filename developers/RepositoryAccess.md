@@ -67,6 +67,19 @@ between `QNetworkAccessManager` and `QNetworkReply`.
 
 * *not implemented*
 
+### GUI
+
+* `CmdControlDialog` for one-shot command with configurable parameters  
+  (e.g. "archive", "clone", "update")
+* `CmdSessionDialog` for log window of started command  
+  (e.g. "verify", hidden log window of "quickop")
+* `CmdSessionControlWidget` to implement dialog which needs unusual handling  
+  (e.g. "compress", "import", "rebase")
+* bare `LogWidget` and `ThgStatusBar` for others  
+  (e.g. "commit", "sync")
+
+* TODO: add utility for tag-like dialogs?
+
 ## Change History
 
 In 2.9:

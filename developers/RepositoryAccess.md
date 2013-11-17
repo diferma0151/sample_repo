@@ -8,16 +8,20 @@
 
 * `RepoManager` manages life-cycle of `RepoAgent` and its filesystem monitor.
 * `RepoAgent` owns `repository` object instead of extending it to thgrepository.
-* `RepoAgent` (and `CmdAgent`) will receive all command requests and run them in sequence.
+* `RepoAgent` (and `CmdAgent`) will receive all command requests and run them
+  in sequence.
 * Provides consistent *unicode APIs*
 
 ![](fig/repository-classes.png)
 
 ## Command Execution
 
-`RepoAgent` and its backend, `CmdAgent`, provide the same APIs to execute Mercurial commands asynchronously.
+`RepoAgent` and its backend, `CmdAgent`, provide the same APIs to execute
+Mercurial commands asynchronously.
 
-`runCommand(cmdline)` or `runCommandSequence([cmdline, ...])` start or queue the specified command and return new `CmdSession` object which will provide notification signals.
+`runCommand(cmdline)` or `runCommandSequence([cmdline, ...])` start or queue
+the specified command and return new `CmdSession` object which will provide
+notification signals.
 
 Example:
 
@@ -40,7 +44,8 @@ Example:
 ...
 ~~~~
 
-The relation between `CmdAgent` and `CmdSession` is similar to the one between `QNetworkAccessManager` and `QNetworkReply`.
+The relation between `CmdAgent` and `CmdSession` is similar to the one
+between `QNetworkAccessManager` and `QNetworkReply`.
 
 ### Executors
 
@@ -102,7 +107,8 @@ long-term:
 
 file-system monitoring:
 
-* \#812, #1305, #1426, #1469, #1571, #1758, #2565 - RevlogError on strip, rebase, collapse, etc.
+* \#812, #1305, #1426, #1469, #1571, #1758, #2565 - RevlogError on strip,
+  rebase, collapse, etc.
 * \#1594, #2604 - error after qpop
 * \#2470 - hg push in command line (to SVN with hgsubversion)
 

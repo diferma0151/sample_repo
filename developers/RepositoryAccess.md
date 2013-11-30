@@ -100,7 +100,7 @@ short-term (in 2.11?):
 
 1. pass `RepoAgent` to all widgets (mostly done)
 1. move shortname and displayname (WIP)
-1. replace `cmdui.Widget` by new command runner (WIP)
+1. replace `cmdui.Widget` by new command runner (DONE)
 1. pass `ui` to `cmdcore.CmdAgent` so that it can read user configuration
 1. extract reusable `QtUi` from thread.py
 1. add experimental command server client which uses `QProcess`

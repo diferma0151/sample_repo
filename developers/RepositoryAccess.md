@@ -94,14 +94,18 @@ In 2.10:
 * `cmdui.Runner` and `cmdui.Dialog` has been replaced by the new command runner
 * run web server in separate process
 
+In 2.11:
+
+* replace `cmdui.Widget` by new command runner
+* remove manual busy counting, `increment/decrementBusyCount()`
+
 ### TODOs
 
 short-term (in 2.11?):
 
 1. pass `RepoAgent` to all widgets (mostly done)
 1. move shortname and displayname (WIP)
-1. replace `cmdui.Widget` by new command runner (DONE)
-1. pass `ui` to `cmdcore.CmdAgent` so that it can read user configuration
+1. pass `ui` to `cmdcore.CmdAgent` so that it can read user configuration (WIP)
 1. extract reusable `QtUi` from thread.py
 1. add experimental command server client which uses `QProcess`
 

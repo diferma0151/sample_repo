@@ -94,7 +94,7 @@ In 2.10:
 * `cmdui.Runner` and `cmdui.Dialog` has been replaced by the new command runner
 * run web server in separate process
 
-In 2.11:
+In 2.11 (unreleased):
 
 * replace `cmdui.Widget` by new command runner
 * remove manual busy counting, `increment/decrementBusyCount()`

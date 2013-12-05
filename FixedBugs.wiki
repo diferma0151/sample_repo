@@ -1,18 +1,8 @@
 ﻿See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 2.10 =
+= Changes since 2.10.1 =
 
 == Bug Fixes ==
-
-* commit: make sure to clear last amend message on repository change (fixes #3467)
-* commit: preserve user name on amend
-* import, rename: several compatibility fixes for CentOs 6.3
-* import: fix handling of unicode path in browsefiles/dir
-* messageentry: fix "Apply Format" crash when the message contains an empty line
-* openshell: show error if configured command contains invalid spec (fixes #3454)
-* patchctx: don't fail on reading original parent from missing file (fixes #3462)
-* sync: actually show rebase dialog on conflict during pull --rebase
-* update: fix handling of non-ascii bookmark in activate/deactivate confirmation
 
 == Improvements ==
 

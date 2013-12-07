@@ -98,14 +98,14 @@ In 2.11 (unreleased):
 
 * replace `cmdui.Widget` by new command runner
 * remove manual busy counting, `increment/decrementBusyCount()`
+* almost all widgets receive `RepoAgent` in place of raw `repo`
+* move shortname and displayname to `RepoAgent`
+* pass `ui` to `cmdcore.CmdAgent` so that it can read user configuration
 
 ### TODOs
 
 short-term (in 2.11?):
 
-1. pass `RepoAgent` to all widgets (mostly done)
-1. move shortname and displayname (WIP)
-1. pass `ui` to `cmdcore.CmdAgent` so that it can read user configuration (WIP)
 1. extract reusable `QtUi` from thread.py
 1. add experimental command server client which uses `QProcess`
 

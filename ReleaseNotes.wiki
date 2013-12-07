@@ -53,6 +53,7 @@ TortoiseHg 2.10.1 is a minor scheduled release
 * messageentry: fix "Apply Format" crash when the message contains an empty line
 * openshell: show error if configured command contains invalid spec (fixes #3454)
 * patchctx: don't fail on reading original parent from missing file (fixes #3462)
+* rejects: use monospace (or configured) font even if no lexer found (fixes #3500)
 * sync: actually show rebase dialog on conflict during pull --rebase
 * update: fix handling of non-ascii bookmark in activate/deactivate confirmation
 

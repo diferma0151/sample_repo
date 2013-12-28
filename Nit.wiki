@@ -50,19 +50,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * warn if compressing a merge
 * refactor as QWizard
 
-== Manifest Viewer ==
-
-* GOAL: merge functionality with revDetailsWidget
-
-* right-clicking on files should allow a diff-to-parent for affected files only.
-* interface to grep at revision
-* filter files by name.
-* indicate affected folders by overlay icon or font style, like the 'Changes' column in the Gtk version.
-* change filename color by status (see the status view).
-* support 'unknown' and 'ignored' files for working copy.
-* flat view for files list
-* ability to show changeset description
-
 == status / wctxactions ==
 
 * an action for files ending with .rej that opens rejects tool

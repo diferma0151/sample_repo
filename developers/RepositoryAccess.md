@@ -107,6 +107,7 @@ In 2.11 (unreleased):
 
 short-term (in 2.11?):
 
+1. subrepo API
 1. extract reusable `QtUi` from thread.py
 1. add experimental command server client which uses `QProcess`
 

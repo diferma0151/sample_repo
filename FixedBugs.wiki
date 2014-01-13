@@ -22,6 +22,9 @@ Pygments 1.6:
 * #2026: Workbench hangs when trying to view changes of specific file
 * #2176: Problem with XQuery file when committing
 
+Pygments (unreleased):
+* [[https://bitbucket.org/birkenfeld/pygments-main/issue/891/|PrologLexer may freeze with triple backslashes]]
+
 ----
 
 Nightly builds of the stable branch can be found at

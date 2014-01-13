@@ -25,6 +25,10 @@ Pygments 1.6:
 Pygments (unreleased):
 * [[https://bitbucket.org/birkenfeld/pygments-main/issue/891/|PrologLexer may freeze with triple backslashes]]
 
+Python:
+* #3309: Attempting to revert causes maximum recursion depth to be exceeded (fixed in Python 2.7.4)
+* #3546: Upgrade python to 2.7.6+ (security issues)
+
 ----
 
 Nightly builds of the stable branch can be found at

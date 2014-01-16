@@ -108,6 +108,9 @@ In 2.11 (unreleased):
 short-term (in 2.11?):
 
 1. subrepo API
+
+short-term (in 3.0?):
+
 1. extract reusable `QtUi` from thread.py
 1. add experimental command server client which uses `QProcess`
 
@@ -147,6 +150,10 @@ thread/process:
 - \#3370 - Workbench UI getting dispresponsive on certain operations
 - \#3381 - Locked folders/files on Windows (again)
 * \#3533 - 'generator already executing' during Update / Pull
+
+child to workbench:
+
+* \#2354 - "Folder History" in revision browser does nothing
 
 unicode:
 

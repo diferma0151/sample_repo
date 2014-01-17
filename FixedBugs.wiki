@@ -1,15 +1,9 @@
 ﻿See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 2.10.1 =
+= Changes since 2.10.2 =
 
 == Bug Fixes ==
 
-* commit: disable chunk selection by space key if nothing available (fixes #3532)
-* grep: bring back window attributes and missing status bar in stand-alone dialog
-* grep: make repo accessible before updateRecurse (fixes #3522)
-* manifest: fix drag of non-ascii file names
-* rebase: hide "swap link" during rebase
-* reporegistry, workbench: fix handling of non-ascii name and path on openshell
 == Improvements ==
 
 == Installer ==

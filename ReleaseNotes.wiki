@@ -40,6 +40,31 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.10.2 =
+
+TortoiseHg 2.10.2 is a regularly scheduled bug fix release
+
+== Bug Fixes ==
+
+* commit: disable chunk selection by space key if nothing available (fixes #3532)
+* grep: bring back window attributes and missing status bar in stand-alone dialog
+* grep: make repo accessible before updateRecurse (fixes #3522)
+* manifest: fix drag of non-ascii file names
+* rebase: hide "swap link" during rebase
+* reporegistry, workbench: fix handling of non-ascii name and path on openshell
+
+== Improvements ==
+
+N/A
+
+== Installer ==
+
+* Python 2.7.6
+* PyQt 4.10.3
+* pygments 1.6
+
+----
+
 = TortoiseHg 2.10.1 =
 
 TortoiseHg 2.10.1 is a minor scheduled release

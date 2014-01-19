@@ -54,7 +54,7 @@ Please note that like TortoiseSVN, [[http://www.selenic.com/pipermail/mercurial/
 For the mercurial.ini configuration files, see [[http://www.selenic.com/mercurial/hgrc.5.html|hgrc.5.html]], for the 'hg' command see [[http://www.selenic.com/mercurial/hg.1.html|hg.1.html]]
 (also available in the 'docs' subdirectory inside the install directory)
 
-=== A Gentle [[http://tortoisehg.bitbucket.org/manual/2.3/quick.html|Introduction]] to Using TortoiseHG on Windows ===
+=== A Gentle [[http://tortoisehg.readthedocs.org/en/latest/quick.html|Introduction]] to Using TortoiseHG on Windows ===
 
 And another one [[http://draketo.de/licht/freie-software/mercurial/kurze-einf-hrung-mercurial-und-tortoisehg|in German]] and [[http://draketo.de/light/english/mercurial/short-introduction-mercurial-tortoisehg|in English]]. 
 

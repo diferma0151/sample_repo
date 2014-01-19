@@ -46,7 +46,7 @@ core:
 * fileview: use the same color as block list to colorize replaced lines
 * graph: show a line to obsolescence parents
 * manifest/revdetails: add support for fileset query
-* repomodel: allow tags other than 'global' (hg 0c22257388d6)
+* repomodel: allow tags other than 'global'
 * revdetails: remove Shift+cursor shortcuts because they conflict with selection
 * strip: make it possible to keep the local changes during strip
 * workbench: reorder repository menu and add update action

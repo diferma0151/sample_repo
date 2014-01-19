@@ -102,24 +102,21 @@ In 2.11 (unreleased):
 * move shortname and displayname to `RepoAgent`
 * pass `ui` to `cmdcore.CmdAgent` so that it can read user configuration
 * \#2208 - Support --config argument for 'thg workbench'
+* obtain `RepoAgent` of subrepo through main's
 
 ### TODOs
-
-short-term (in 2.11?):
-
-1. subrepo API
 
 short-term (in 3.0?):
 
 1. extract reusable `QtUi` from thread.py
 1. add experimental command server client which uses `QProcess`
+1. bundlerepo (or unionrepo) and `--hidden` flag
 
 long-term:
 
 * keep dirstate/wctx up-to-date by RepoAgent?
 * better control of `refreshWctx()`
 * provide read/write config API
-* bundlerepo and `--hidden` flag
 * reload root ui object when global setting is changed?
 * how to call workbench from sub dialogs?
 * drop `thgrepository` extension

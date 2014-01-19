@@ -21,6 +21,8 @@
 * wctxactions: request to refresh only if copy/rename finished successfully
 * workbench: do not assign Alt+n shortcut to separator or hidden task view action
 
+core:
+
 * cmdui: fix several bugs in error/status handling
 * dialogs: fix several GC issues
 * hglib: do not try utf-8 when converting localstr to unicode (fixes #3299)
@@ -49,7 +51,7 @@
 * strip: make it possible to keep the local changes during strip
 * workbench: reorder repository menu and add update action
 
-=== unified revdetails/manifest view ===
+unified revdetails/manifest view:
 
 //Manifest task tab was merged to revision details.//
 

@@ -18,6 +18,7 @@
 * settings: disable web.name in global tab (refs #1113)
 * settings: update smtp.tls options for current Mercurial version
 * strip: keep local changes unless the current revision will be stripped
+* sync: ignore defaultpush if branch is specified by OptionsDialog (fixes #3547)
 * wctxactions: request to refresh only if copy/rename finished successfully
 * workbench: do not assign Alt+n shortcut to separator or hidden task view action
 
@@ -62,6 +63,8 @@ unified revdetails/manifest view:
 * revdetails: add menu to switch status filters
 
 == Installer ==
+
+N/A
 
 ----
 

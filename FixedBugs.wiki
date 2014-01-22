@@ -6,6 +6,7 @@
 
 * archive: use fileset to filter modified/created files (closes #2595)
 * clone: do not select first history item of src/dest combo on enter key
+* customtools: work around erratic type of value in settings dialog (fixes #3548)
 * filectxactions: disable several invalid actions according to the context
 * filedata: check renamed state even if larger than maxdiff (fixes #3531)
 * fileview: disable annotation of removed files

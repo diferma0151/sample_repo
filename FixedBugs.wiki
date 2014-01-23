@@ -7,11 +7,14 @@
 * archive: use fileset to filter modified/created files (closes #2595)
 * clone: do not select first history item of src/dest combo on enter key
 * customtools: work around erratic type of value in settings dialog (fixes #3548)
+* dialogs: fix several GC issues
 * filectxactions: disable several invalid actions according to the context
 * filedata: check renamed state even if larger than maxdiff (fixes #3531)
 * fileview: disable annotation of removed files
 * fileview: do not override chunk markers by annotation colors
 * fileview: fix deletion of translated "excluded" chunk message
+* fileview: restore lost mode even if all modes are not enabled
+* fileview: update availability of next/prev diffs according to cursor position
 * grep, init, rename: do not bury unknown exception
 * init: lay out dialog buttons according to the widget style (fixes #3555)
 * manifest/revdetails: fix subrepo status to compare to parent revision of main repo
@@ -27,11 +30,10 @@
 core:
 
 * cmdui: fix several bugs in error/status handling
-* dialogs: fix several GC issues
+* docklog: show command output of all dialogs
 * hglib: do not try utf-8 when converting localstr to unicode (fixes #3299)
 * hglib: ignore global web.name which was probably set by accident (fixes #1113)
 * repowatcher: do not monitor network/removable drives by default (closes #889)
-* run: parse --config option like Mercurial (closes #2208)
 * thgrepo: remove manual busy count handling (closes #3376)
 * windows: use GetDriveType to check if repo is on local drive (closes #2521)
 
@@ -39,18 +41,15 @@ core:
 
 * annotate: use cached data when annotating the same content
 * bisect: add option to discard local changes
-* docklog: show command output of all dialogs
 * filedata: show diff of directory
 * fileview: add `Go to line` action
-* fileview: display file path relative to the main repository
-* fileview: restore lost mode even if all modes are not enabled
 * fileview: show parent revision information on first and second parent buttons
-* fileview: update availability of next/prev diffs according to cursor position
 * fileview: use the same color as block list to colorize replaced lines
 * graph: show a line to obsolescence parents
 * manifest/revdetails: add support for fileset query
 * repomodel: allow tags other than 'global'
 * revdetails: remove Shift+cursor shortcuts because they conflict with selection
+* run: parse {{{--config}}} option like Mercurial (closes #2208)
 * strip: make it possible to keep the local changes during strip
 * workbench: reorder repository menu and add update action
 

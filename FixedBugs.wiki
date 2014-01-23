@@ -15,6 +15,7 @@
 * grep, init, rename: do not bury unknown exception
 * init: lay out dialog buttons according to the widget style (fixes #3555)
 * manifest/revdetails: fix subrepo status to compare to parent revision of main repo
+* merge: do not skip merge result if there was a warning
 * rupdate: remove unused check boxes and dangling widgets
 * settings: disable web.name in global tab (refs #1113)
 * settings: update smtp.tls options for current Mercurial version

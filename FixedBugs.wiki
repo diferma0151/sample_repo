@@ -19,7 +19,9 @@
 * init: lay out dialog buttons according to the widget style (fixes #3555)
 * manifest/revdetails: fix subrepo status to compare to parent revision of main repo
 * merge: do not skip merge result if there was a warning
+* rejects: add menu to specify encoding of file content (closes #3314)
 * rupdate: remove unused check boxes and dangling widgets
+* settings, ignore: convert to local encoding on reading/writing file (fixes #1719)
 * settings: disable web.name in global tab (refs #1113)
 * settings: update smtp.tls options for current Mercurial version
 * strip: keep local changes unless the current revision will be stripped
@@ -33,6 +35,7 @@ core:
 * docklog: show command output of all dialogs
 * hglib: do not try utf-8 when converting localstr to unicode (fixes #3299)
 * hglib: ignore global web.name which was probably set by accident (fixes #1113)
+* paths: import config in full spelling for demandimport.ignore (fixes #3542)
 * repowatcher: do not monitor network/removable drives by default (closes #889)
 * thgrepo: remove manual busy count handling (closes #3376)
 * windows: use GetDriveType to check if repo is on local drive (closes #2521)
@@ -44,6 +47,7 @@ core:
 * filedata: show diff of directory
 * fileview: add `Go to line` action
 * fileview: show parent revision information on first and second parent buttons
+* fileview: specify encoding of file content by menu or {{{web.encoding}}}
 * fileview: use the same color as block list to colorize replaced lines
 * graph: show a line to obsolescence parents
 * manifest/revdetails: add support for fileset query

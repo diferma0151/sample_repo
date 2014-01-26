@@ -19,14 +19,13 @@ This page briefly describes Qt signals commonly used in our code.
 
 ### Command Execution
 
-The following signals may be deprecated or moved by
-[redesign of repository access API](RepositoryAccess).
-
-* `output(message, label)` - forward Mercurial `ui.write` or `ui.write_err`
-  message
-* `makeLogVisible(visible)` - request to change visibility of "Output Log"
-* `progress(topic, pos, item, unit, total)` - forward Mercurial
+* `commandFinished(ret)`
+* `outputReceived(message, label)` - forward Mercurial `ui.write` or
+  `ui.write_err` message
+* `progressReceived(topic, pos, item, unit, total)` - forward Mercurial
   `ui.progress` message
+
+See also [Repository Access and Command Execution](RepositoryAccess).
 
 ### Internal URLs
 

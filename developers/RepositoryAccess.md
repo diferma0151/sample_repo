@@ -87,6 +87,7 @@ In 2.9:
 * introduce `RepoManager` and stub for `RepoAgent`
 * redesign command API of `tortoisehg.hgqt.run`
 * \#1783 - thg keeps a ref to a folderrepo for too long ?
+* \#1571 - disable filesystem monitor while command running
 
 In 2.10:
 
@@ -126,7 +127,7 @@ long-term:
 
 file-system monitoring:
 
-* \#812, #1305, #1426, #1469, #1571, #1758, #2565 - RevlogError on strip,
+* \#812, #1305, #1426, #1469, #1758, #2565 - RevlogError on strip,
   rebase, collapse, etc.
 * \#1594, #2604 - error after qpop
 * \#2470 - hg push in command line (to SVN with hgsubversion)

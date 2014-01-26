@@ -1,4 +1,4 @@
-﻿<<toc 1>>
+<<toc 1>>
 
 = TortoiseHg 2.5.1 =
 

@@ -19,7 +19,7 @@ This page briefly describes Qt signals commonly used in our code.
 
 ### Command Execution
 
-* `commandFinished(ret)`
+* `commandFinished(ret)` or `commandFinished(cmdsession)`
 * `outputReceived(message, label)` - forward Mercurial `ui.write` or
   `ui.write_err` message
 * `progressReceived(topic, pos, item, unit, total)` - forward Mercurial

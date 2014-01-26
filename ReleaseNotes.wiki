@@ -59,9 +59,9 @@ N/A
 
 == Installer ==
 
-* Python 2.7.6
+* Python 2.7.6 (includes fix for #3309, #3546)
 * PyQt 4.10.3
-* pygments 1.6
+* pygments 1.6 (includes fix for #2026, #2176)
 
 ----
 
@@ -99,7 +99,8 @@ TortoiseHg 2.10 is a major feature release
 * filedata: handle clean like modified so that size limit enforced (fixes #3425)
 * graph: avoid invalid comparison of unapplied patch revision (fixes #1182)
 * mq: fix availability of patch actions after reload
-* mq: fix loss of guards and comments on drag-and-drop patches (refs #441)
+* mq: fix loss of guards and comments on drag-and-drop patches
+  (refs #441, fixes #2173)
 * mq: show all command outputs in Output Log (fixes #2164, #2165)
 * qrename: fix handling of non-ascii patch name in checkPatchname
 * qscilib: memleak in context menu handler

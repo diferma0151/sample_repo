@@ -19,6 +19,7 @@
 * init: lay out dialog buttons according to the widget style (fixes #3555)
 * manifest/revdetails: fix subrepo status to compare to parent revision of main repo
 * merge: do not skip merge result if there was a warning
+* mq: check rejects according to exit code of qpush/qgoto command (fixes #1310)
 * rejects: add menu to specify encoding of file content (closes #3314)
 * rupdate: remove unused check boxes and dangling widgets
 * settings, ignore: convert to local encoding on reading/writing file (fixes #1719)

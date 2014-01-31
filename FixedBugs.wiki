@@ -45,7 +45,7 @@ core:
 
 * annotate: use cached data when annotating the same content
 * bisect: add option to discard local changes
-* filedata: show diff of directory
+* filedata: show unified diff of directory in tree view
 * fileview: add `Go to line` action
 * fileview: show parent revision information on first and second parent buttons
 * fileview: specify encoding of file content by menu or {{{web.encoding}}}
@@ -61,8 +61,9 @@ core:
 unified revdetails/manifest view:
 
 //Manifest task tab was merged to revision details.//
+//Click "Manifest Mode" button to switch to the so-called manifest view.//
 
-* manifest: replace stand-alone ManifestDialog by RevDetailsDialog
+* manifest: replace stand-alone ManifestDialog by RevDetailsDialog (closes #1634)
 * repowidget: delete manifest task tab
 * revdetails: add button to enable so-called manifest file list by one tap
 * revdetails: add menu to switch tree/flat view

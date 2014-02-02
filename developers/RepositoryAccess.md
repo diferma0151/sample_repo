@@ -138,6 +138,10 @@ repo/ui object:
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
 * \#3343 - Blackbox extension not working when using hg from within TortoiseHg
 
+hidden, union repo:
+
+* \#2552 - compare branch from different repos
+
 thread/process:
 
 * \#1507 - Stop button for pull that hangs

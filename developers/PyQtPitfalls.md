@@ -213,3 +213,14 @@ Don't use `QString`. Cast to `unicode` ASAP.
 > -- [QComboBox::setCompleter](http://qt-project.org/doc/qt-4.8/qcombobox.html#setCompleter)
 
 Workaround: use `qtlib.allowCaseChangingInput(combo)`
+
+### Dialog that is resizable only in horizontal direction
+
+*Changeset 709bcfb9c860*
+
+1. set appropriate size policy to child widgets
+2. restrict the size of the top-level layout by `setSizeConstraint(QLayout.SetMinAndMaxSize)`
+
+As of Qt 4.8, `QFormLayout` needs to be wrapped by `QWidget` because `QFormLayout` does not calculate the `maximumSize()`.
+
+See https://bugreports.qt-project.org/browse/QTBUG-17730

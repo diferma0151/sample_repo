@@ -82,6 +82,10 @@ N/A
 Pygments (unreleased):
 * [[https://bitbucket.org/birkenfeld/pygments-main/issue/891/|PrologLexer may freeze with triple backslashes]]
 
+QScintilla (2.8, no Windows binary yet):
+* //NOT EVALUATED:// Input methods are now properly supported
+* //NOT EVALUATED:// #2429 - Annotate view: author not correctly displayed
+
 ----
 
 Random builds of the stable branch can be found at

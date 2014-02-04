@@ -36,7 +36,83 @@ an older version of Mercurial, please consult the following chart:
 | 2.6.x | 2.8.n |
 | 2.7.x | 2.9.n |
 | 2.8.x | 2.10.n |
+| 2.9.x | 2.11.n |
 | hg default tip | thg default tip |
+
+----
+
+= TortoiseHg 2.11 =
+
+TortoiseHg 2.11 is a major feature release with many visible and internal changes to improve future stability and usability.
+
+== Bug Fixes ==
+
+* archive: use fileset to filter modified/created files (closes #2595)
+* clone: do not select first history item of src/dest combo on enter key
+* customtools: work around erratic type of value in settings dialog (fixes #3548)
+* dialogs: fix several GC issues
+* filectxactions: disable several invalid actions according to the context
+* filedata: check renamed state even if larger than maxdiff (fixes #3531)
+* fileview: disable annotation of removed files
+* fileview: do not override chunk markers by annotation colors
+* fileview: fix deletion of translated "excluded" chunk message
+* fileview: restore lost mode even if all modes are not enabled
+* fileview: update availability of next/prev diffs according to cursor position
+* grep, init, rename: do not bury unknown exception
+* init: lay out dialog buttons according to the widget style (fixes #3555)
+* manifest/revdetails: fix subrepo status to compare to parent revision of main repo
+* merge: do not skip merge result if there was a warning
+* mq: check rejects according to exit code of qpush/qgoto command (fixes #1310)
+* rejects: add menu to specify encoding of file content (closes #3314)
+* rupdate: remove unused check boxes and dangling widgets
+* settings, ignore: convert to local encoding on reading/writing file (fixes #1719)
+* settings: disable web.name in global tab (refs #1113)
+* settings: update smtp.tls options for current Mercurial version
+* strip: keep local changes unless the current revision will be stripped
+* sync: ignore defaultpush if branch is specified by OptionsDialog (fixes #3547)
+* update: allow to resize horizontally while having fixed height (fixes #3575)
+* visdiff: make invalid merge-tools priority fall back to default (fixes #3585)
+* wctxactions: request to refresh only if copy/rename finished successfully
+* workbench: do not assign Alt+n shortcut to separator or hidden task view action
+
+core:
+
+* cmdui: fix several bugs in error/status handling
+* docklog: show command output of all dialogs
+* hglib: do not try utf-8 when converting localstr to unicode (fixes #3299)
+* hglib: ignore global web.name which was probably set by accident (fixes #1113)
+* paths: import config in full spelling for demandimport.ignore (fixes #3542)
+* repowatcher: do not monitor network/removable drives by default (closes #889)
+* thgrepo: remove manual busy count handling (closes #3376)
+* windows: use GetDriveType to check if repo is on local drive (closes #2521)
+
+== Improvements ==
+
+* annotate: use cached data when annotating the same content
+* bisect: add option to discard local changes
+* filedata: show unified diff of directory in tree view
+* fileview: add `Go to line` action
+* fileview: show parent revision information on first and second parent buttons
+* fileview: specify encoding of file content by menu or {{{web.encoding}}}
+* fileview: use the same color as block list to colorize replaced lines
+* graph: show a line to obsolescence parents
+* manifest/revdetails: add support for fileset query
+* repomodel: allow tags other than 'global'
+* revdetails: remove Shift+cursor shortcuts because they conflict with selection
+* run: parse {{{--config}}} option like Mercurial (closes #2208)
+* strip: make it possible to keep the local changes during strip
+* workbench: reorder repository menu and add update action
+
+unified revdetails/manifest view:
+
+//Manifest task tab was merged to revision details.//
+//Click "Manifest Mode" button to switch to the so-called manifest view.//
+
+* manifest: replace stand-alone ManifestDialog by RevDetailsDialog (closes #1634)
+* repowidget: delete manifest task tab
+* revdetails: add button to enable so-called manifest file list by one tap
+* revdetails: add menu to switch tree/flat view
+* revdetails: add menu to switch status filters
 
 ----
 

@@ -224,3 +224,15 @@ Workaround: use `qtlib.allowCaseChangingInput(combo)`
 As of Qt 4.8, `QFormLayout` needs to be wrapped by `QWidget` because `QFormLayout` does not calculate the `maximumSize()`.
 
 See https://bugreports.qt-project.org/browse/QTBUG-17730
+
+### Status tip of context menu is not propagated without QWidget-type parent
+
+*Changeset ffc5458e92e8*
+
+Unfortunately, `QStatusTipEvent` is not sent to the parent of the `QMenu`,
+but to the parent of `QAction`, if populated in a popup menu.
+And unhandled `QStatusTipEvent` is not propagated to the parent if it isn't a widget type.
+
+Workaround: own `QAction` by `QWidget`
+
+See https://bugreports.qt-project.org/browse/QTBUG-16114

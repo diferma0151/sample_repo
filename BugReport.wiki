@@ -8,6 +8,11 @@ The first step should be to consult the list of **[[FixedBugs]]** that are alrea
 
 Also consult the [[/tortoisehg/thg/issues?kind=bug&status=new&status=open|open bug list]].
 
+== Make sure you don't have incompatible third-party extensions ==
+
+In general, you'll need to upgrade [[/durin42/hgsubversion/issues|hgsubversion]],
+[[/durin42/hg-git/issues|hggit]], etc. at major release.
+
 == Creating a new issue ==
 
 If your bug is truly new, or if you have an idea for an enhancement,

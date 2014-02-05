@@ -108,7 +108,7 @@ unified revdetails/manifest view:
 //Manifest task tab was merged to revision details.//
 //Click "Manifest Mode" button to switch to the so-called manifest view.//
 
-* manifest: replace stand-alone ManifestDialog by RevDetailsDialog (closes #1634)
+* manifest: replace stand-alone ManifestDialog by RevDetailsDialog
 * repowidget: delete manifest task tab
 * revdetails: add button to enable so-called manifest file list by one tap
 * revdetails: add menu to switch tree/flat view

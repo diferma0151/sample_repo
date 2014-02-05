@@ -114,6 +114,10 @@ unified revdetails/manifest view:
 * revdetails: add menu to switch tree/flat view
 * revdetails: add menu to switch status filters
 
+== Installer ==
+
+* hgcr-gui 30ef0802e8ba (closes #3562)
+
 ----
 
 = TortoiseHg 2.10.2 =

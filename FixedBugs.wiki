@@ -30,6 +30,9 @@ QScintilla 2.8 (no Windows binary yet):
 * //NOT EVALUATED:// Input methods are now properly supported
 * //NOT EVALUATED:// #2429 - Annotate view: author not correctly displayed
 
+QScintilla 2.8.1 (unreleased):
+* #3573 - Commit message input does not permit all unicode characters
+
 ----
 
 Random builds of the stable branch can be found at

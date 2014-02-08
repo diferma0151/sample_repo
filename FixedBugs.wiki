@@ -4,11 +4,16 @@
 
 == Bug Fixes ==
 
-N/A
+* filectxactions: reenable file log actions for working directory (closes #3613)
+* manifestmodel: do not ignore reload request of uncommitted changes
+  (fixes #3595 - shelve not refresh)
+* sync: fix list index to override pull command by fetch (fixes #3612)
+* update: do not eat up enter key to complete wrong revision from history
 
 == Improvements ==
 
-N/A
+* archive, clone, rename: allow to resize horizontally while having fixed height
+* settings: list well-known smtp ports in combobox
 
 == Installer ==
 

@@ -6,6 +6,8 @@
 
 * commit: say "nothing changed" instead of "code: 1" on empty amend (refs #3599)
 * filectxactions: reenable file log actions for working directory (closes #3613)
+* manifestmodel: disable lookup of file-type icons from system
+  (fixes #3594 - double overlay icons)
 * manifestmodel: do not ignore reload request of uncommitted changes
   (fixes #3595 - shelve not refresh)
 * sync: fix list index to override pull command by fetch (fixes #3612)

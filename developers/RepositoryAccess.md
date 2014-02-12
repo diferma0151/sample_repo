@@ -152,6 +152,10 @@ thread/process:
 * \#3370 - Workbench UI getting dispresponsive on certain operations
 * \#3381 - Locked folders/files on Windows (again)
 
+workingctx:
+
+* \#3621 - Shelve tool does not always know about added/removed files
+
 child to workbench:
 
 * \#2354 - "Folder History" in revision browser does nothing

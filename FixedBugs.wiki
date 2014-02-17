@@ -19,6 +19,7 @@
 == Improvements ==
 
 * archive, clone, rename: allow to resize horizontally while having fixed height
+* mergetools: copy TortoiseMerge entry for the one of TortoiseGit (refs #1952)
 * settings: list well-known smtp ports in combobox
 
 == Installer ==

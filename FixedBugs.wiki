@@ -8,6 +8,7 @@
 * commit: do not restore last amend message on repository change (fixes #3605)
 * commit: say "nothing changed" instead of "code: 1" on empty amend (refs #3599)
 * filectxactions: reenable file log actions for working directory (closes #3613)
+* init: catch filesystem error while creating repository (fixes #3630)
 * manifestmodel: disable lookup of file-type icons from system
   (fixes #3594 - double overlay icons)
 * manifestmodel: do not ignore reload request of uncommitted changes

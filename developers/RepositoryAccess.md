@@ -67,6 +67,7 @@ between `QNetworkAccessManager` and `QNetworkReply`.
 **Command Server Client**
 
 * *under development*
+* need to manage server process
 * http://mercurial.selenic.com/wiki/CommandServer#Known_issues
 
 

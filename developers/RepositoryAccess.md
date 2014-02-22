@@ -58,14 +58,17 @@ between `QNetworkAccessManager` and `QNetworkReply`.
 **CmdProc**
 
 * high overhead (especially on Windows)
-* cannot abort *safely* (`kill -KILL` or `TerminateProcess` is used)
+* ~~cannot abort *safely* (`kill -KILL` or `TerminateProcess` is used)~~
+  (possible by win32ill extension)
 * cannot terminate if `hg` is a batch file
 * no interactive prompt
 * no progress and `ui.label`
 
-**Command Server Client** (planned)
+**Command Server Client**
 
-* *not implemented*
+* *under development*
+* http://mercurial.selenic.com/wiki/CommandServer#Known_issues
+
 
 ### GUI
 

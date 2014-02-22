@@ -64,7 +64,7 @@ between `QNetworkAccessManager` and `QNetworkReply`.
 * no interactive prompt
 * no progress and `ui.label`
 
-**Command Server Client**
+**CmdServer** (Command Server Client)
 
 * *under development*
 * need to manage server process

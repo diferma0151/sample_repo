@@ -95,7 +95,7 @@ In 2.10:
 * `cmdui.Runner` and `cmdui.Dialog` has been replaced by the new command runner
 * run web server in separate process
 
-In 2.11 (unreleased):
+In 2.11:
 
 * replace `cmdui.Widget` by new command runner
 * remove manual busy counting, `increment/decrementBusyCount()`
@@ -151,6 +151,7 @@ thread/process:
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
 * \#3370 - Workbench UI getting dispresponsive on certain operations
 * \#3381 - Locked folders/files on Windows (again)
+* \#3637 - Redirect hook stdout, stderr to Output log
 
 workingctx:
 

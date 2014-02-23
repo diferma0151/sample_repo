@@ -113,8 +113,8 @@ In 2.11:
 
 short-term (in 3.0?):
 
-1. extract reusable `QtUi` from thread.py
-1. add experimental command server client which uses `QProcess`
+1. extract reusable `QtUi` from thread.py (WIP)
+1. add experimental command server client which uses `QProcess` (WIP)
 1. bundlerepo (or unionrepo) and `--hidden` flag
 
 long-term:

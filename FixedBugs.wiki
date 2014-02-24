@@ -13,6 +13,7 @@
   (fixes #3594 - double overlay icons)
 * manifestmodel: do not ignore reload request of uncommitted changes
   (fixes #3595 - shelve not refresh)
+* manifestmodel: instantiate subrepo only when necessary (fixes #3638)
 * quickop: chdir to repo root so that status widget can filter file (fixes #3634)
 * sync: fix list index to override pull command by fetch (fixes #3612)
 * update: do not eat up enter key to complete wrong revision from history

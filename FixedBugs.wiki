@@ -15,6 +15,7 @@
   (fixes #3595 - shelve not refresh)
 * manifestmodel: instantiate subrepo only when necessary (fixes #3638)
 * quickop: chdir to repo root so that status widget can filter file (fixes #3634)
+* repowidget: refresh active commit tab when purge dialog closed (closes #3643)
 * sync: fix list index to override pull command by fetch (fixes #3612)
 * update: do not eat up enter key to complete wrong revision from history
 * wctxactions: clear propertycache of cwd for each command execution (fixes #3603)

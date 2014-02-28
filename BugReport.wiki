@@ -10,8 +10,8 @@ Also consult the [[/tortoisehg/thg/issues?kind=bug&status=new&status=open|open b
 
 == Make sure you don't have incompatible third-party extensions ==
 
-In general, you'll need to upgrade [[/durin42/hgsubversion/issues|hgsubversion]],
-[[/durin42/hg-git/issues|hggit]], etc. at major release.
+In general, you'll need to **upgrade [[/durin42/hgsubversion/issues|hgsubversion]],
+[[/durin42/hg-git/issues|hggit]]**, etc. at major release.
 
 == Creating a new issue ==
 

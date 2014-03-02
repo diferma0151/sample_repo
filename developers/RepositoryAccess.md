@@ -157,6 +157,12 @@ thread/process:
 * \#3381 - Locked folders/files on Windows (again)
 * \#3637 - Redirect hook stdout, stderr to Output log
 
+direct command call:
+
+* InitDialog calls `hg.repository(..., create=1)`
+* \#1347 - Add support for pre-<command> and post-<command> hooks
+* \#2217 - Adding files to source control in the separate thread
+
 workingctx:
 
 * \#3621 - Shelve tool does not always know about added/removed files

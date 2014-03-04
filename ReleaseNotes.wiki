@@ -41,6 +41,37 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.11.1 =
+
+TortoiseHg 2.11.1 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* chunks: bypass copy protection of repo.ui that drops eol settings (fixes #3600)
+* cmdui: disown temporary progress widgets so that they can be deleted (fixes memleak)
+* commit: do not restore last amend message on repository change (fixes #3605)
+* commit: say "nothing changed" instead of "code: 1" on empty amend (refs #3599)
+* filectxactions: reenable file log actions for working directory (closes #3613)
+* init: catch filesystem error while creating repository (fixes #3630)
+* manifestmodel: disable lookup of file-type icons from system
+  (fixes #3594 - double overlay icons)
+* manifestmodel: do not ignore reload request of uncommitted changes
+  (fixes #3595 - shelve not refresh)
+* manifestmodel: instantiate subrepo only when necessary (fixes #3638)
+* quickop: chdir to repo root so that status widget can filter file (fixes #3634)
+* repowidget: refresh active commit tab when purge dialog closed (closes #3643)
+* sync: fix list index to override pull command by fetch (fixes #3612)
+* update: do not eat up enter key to complete wrong revision from history
+* wctxactions: clear propertycache of cwd for each command execution (fixes #3603)
+
+== Improvements ==
+
+* archive, clone, rename: allow to resize horizontally while having fixed height
+* mergetools: copy TortoiseMerge entry for the one of TortoiseGit (refs #1952)
+* settings: list well-known smtp ports in combobox
+
+----
+
 = TortoiseHg 2.11 =
 
 TortoiseHg 2.11 is a major feature release with many visible and internal changes to improve future stability and usability.

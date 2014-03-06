@@ -88,7 +88,7 @@ See http://thread.gmane.org/gmane.comp.python.pyqt-pykde/19836
 
 ### sender() returns wrong object if decorated as pyqtSlot
 
-*In PyQt < 4.7.4, Issue #2170*
+*In PyQt < 4.7.4, Issue #2170, Changeset d95dff50c7f2, ...*
 
 ~~~~{.py}
 @pyqtSlot(unicode)
@@ -100,7 +100,7 @@ def _updateRepoTabTitle(self, title):
 
 Workarounds:
 
-* comment out `@pyqtSlot`
+* ~~comment out `@pyqtSlot`~~ use `@qtlib.senderSafeSlot@`
 * use [QSignalMapper](http://qt-project.org/doc/qt-4.8/qsignalmapper.html)
 
 See http://www.riverbankcomputing.com/pipermail/pyqt/2010-August/027557.html

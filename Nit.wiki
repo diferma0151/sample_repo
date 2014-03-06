@@ -68,10 +68,6 @@ This is the list of left-over TODOs from the initial port, and some long term id
 * spell check (perhaps there's an http service we can use for post-validation?, there is a bug for this)
 * in-memory patching / committing chunk selected files (there is a bug for this)
 
-== Clone ==
-
-* clone --pull's progress bars cause the dialog to grow horizontally dynamically.. ugh.  I propose we filter the progress events and elipsize (is that a verb?) the progress strings.
-
 == Settings ==
 
 * unicode decode issues

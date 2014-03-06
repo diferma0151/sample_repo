@@ -109,12 +109,17 @@ In 2.11:
 * \#2208 - Support --config argument for 'thg workbench'
 * obtain `RepoAgent` of subrepo through main's
 
+In 3.0 (unreleased):
+
+* extract reusable `QtUi` from thread.py
+* add experimental command server client which uses `QProcess`
+
 ### TODOs
 
 short-term (in 3.0?):
 
-1. extract reusable `QtUi` from thread.py (WIP)
-1. add experimental command server client which uses `QProcess` (WIP)
+1. remaining issues of command-server client: d02cfaed8676
+1. update document of command APIs (in separate Wiki page?)
 1. bundlerepo (or unionrepo) and `--hidden` flag
 
 long-term:

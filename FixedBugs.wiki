@@ -6,11 +6,12 @@
 
 * copypatch: make revision 0 exportable to clipboard (fixes #3652)
 * shellconf: the label is utf8 encoding. Convert to unicode by decode()
+* sync: open email dialog with numeric revs so that they can be sorted correctly
 * wctxactions: refresh status when ignore dialog closed (fixes #3657)
 
 == Improvements ==
 
-N/A
+* qfold: accept command by Ctrl+Return like commit or email dialog (closes #3650)
 
 == Installer ==
 

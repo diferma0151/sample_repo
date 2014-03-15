@@ -33,6 +33,9 @@ QScintilla 2.8 (no Windows binary yet):
 QScintilla 2.8.1 (unreleased):
 * #3573 - Commit message input does not permit all unicode characters
 
+Qt 4.8.6:
+* #2300 - Workbench always opens on primary monitor when maximized
+
 ----
 
 Random builds of the stable branch can be found at

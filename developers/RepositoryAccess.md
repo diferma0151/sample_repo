@@ -119,10 +119,7 @@ In 3.0 (unreleased):
 short-term (in 3.0?):
 
 1. remaining issues of command-server client (WIP)
-    * shut down server process cleanly
-    * restart server on configChanged, and rerun if pending session available
     * `ui.error` label
-    * abort pending sessions if server failed to start
     * read timeout of partial channeled data
 1. update document of command APIs (in separate Wiki page?)
 1. bundlerepo (or unionrepo) and `--hidden` flag

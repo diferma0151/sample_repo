@@ -62,11 +62,10 @@ between `QNetworkAccessManager` and `QNetworkReply`.
   (possible by win32ill extension)
 * cannot terminate if `hg` is a batch file
 * no interactive prompt
-* no progress and `ui.label`
+* ~~no progress and `ui.label`~~
 
 **CmdServer** (Command Server Client)
 
-* known issues: d02cfaed8676
 * need to manage server process
 * http://mercurial.selenic.com/wiki/CommandServer#Known_issues
 

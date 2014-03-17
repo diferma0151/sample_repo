@@ -8,6 +8,7 @@
 * copypatch: make revision 0 exportable to clipboard (fixes #3652)
 * shellconf: the label is utf8 encoding. Convert to unicode by decode()
 * sync: open email dialog with numeric revs so that they can be sorted correctly
+* wctxactions: refresh status after "renamed from" action (fixes #3671)
 * wctxactions: refresh status when ignore dialog closed (fixes #3657)
 
 == Improvements ==

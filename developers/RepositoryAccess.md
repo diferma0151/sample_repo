@@ -122,6 +122,8 @@ short-term (in 3.0?):
     * read timeout of partial channeled data
 1. update document of command APIs (in separate Wiki page?)
 1. bundlerepo (or unionrepo) and `--hidden` flag
+1. add API to capture raw command output without emitting `outputReceived()`
+   (for email preview, revset query, etc.)
 
 long-term:
 

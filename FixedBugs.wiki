@@ -14,6 +14,7 @@
 == Improvements ==
 
 * fileview: save last selected encoding as widget's default (refs #3620)
+* mergetools: add BeyondCompare 4 support (closes #3679)
 * qfold: accept command by Ctrl+Return like commit or email dialog (closes #3650)
 
 == Installer ==

@@ -1,5 +1,3 @@
-[TOC]
-
 [[http://tortoisehg.bitbucket.org/|{{http://tortoisehg.bitbucket.org/css/img/logo.png|TortoiseHg Website}}]]
 
 

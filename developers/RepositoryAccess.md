@@ -117,13 +117,11 @@ In 3.0 (unreleased):
 
 short-term (in 3.0?):
 
-1. remaining issues of command-server client (WIP)
-    * `ui.error` label
-    * read timeout of partial channeled data
+1. missing `ui.error` label in command server
 1. update document of command APIs (in separate Wiki page?)
 1. bundlerepo (or unionrepo) and `--hidden` flag
 1. add API to capture raw command output without emitting `outputReceived()`
-   (for email preview, revset query, etc.)
+   (for email preview, revset query, export to clipboard, etc.)
 
 long-term:
 

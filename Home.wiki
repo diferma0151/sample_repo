@@ -61,11 +61,15 @@ See **[[BugReport]]**
 
 == Mailing Lists ==
 
-For any questions or comments on TortoiseHg, please post to TortoiseHg's mailing lists:
+For any questions or comments on TortoiseHg, please post to mailing lists:
 
-* TortoiseHg [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-discuss|discussion]] list: for general questions on TortoiseHg ([[http://news.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user|gmane archive]])
-* TortoiseHg [[http://groups.google.com/group/thg-dev|developers]] list: for development on TortoiseHg
-* TortoiseHg [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-issues|issues]] list: for issue notifications (read-only)
+* [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-discuss|discussion list]]:
+  for general questions on TortoiseHg
+  ([[http://news.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user|gmane archive]])
+* [[http://groups.google.com/group/thg-dev|developers list]]:
+  for development on TortoiseHg
+* [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-issues|issues list]]:
+  for issue notifications (read-only)
 
 == Other Languages ==
 

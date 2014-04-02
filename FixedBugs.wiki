@@ -1,23 +1,14 @@
 ﻿See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 2.11.1 =
+= Changes since 2.11.2 =
 
 == Bug Fixes ==
 
-* chunks: honor file encoding when displaying diffs (fixes #3660)
-* copypatch: make revision 0 exportable to clipboard (fixes #3652)
-* repoagent: fix comparison of subrepo path starting from root path (fixes #3688)
-* shellconf: the label is utf8 encoding. Convert to unicode by decode()
-* sync: open email dialog with numeric revs so that they can be sorted correctly
-* thg: remove the -psn argument supplied by launchd only if present (refs #3437)
-* wctxactions: refresh status after "renamed from" action (fixes #3671)
-* wctxactions: refresh status when ignore dialog closed (fixes #3657)
+N/A
 
 == Improvements ==
 
-* fileview: save last selected encoding as widget's default (refs #3620)
-* mergetools: add BeyondCompare 4 support (closes #3679)
-* qfold: accept command by Ctrl+Return like commit or email dialog (closes #3650)
+N/A
 
 == Installer ==
 

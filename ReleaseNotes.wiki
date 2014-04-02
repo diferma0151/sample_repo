@@ -41,6 +41,29 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 2.11.2 =
+
+TortoiseHg 2.11.2 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* chunks: honor file encoding when displaying diffs (fixes #3660)
+* copypatch: make revision 0 exportable to clipboard (fixes #3652)
+* repoagent: fix comparison of subrepo path starting from root path (fixes #3688)
+* shellconf: the label is utf8 encoding. Convert to unicode by decode()
+* sync: open email dialog with numeric revs so that they can be sorted correctly
+* thg: remove the -psn argument supplied by launchd only if present (refs #3437)
+* wctxactions: refresh status after "renamed from" action (fixes #3671)
+* wctxactions: refresh status when ignore dialog closed (fixes #3657)
+
+== Improvements ==
+
+* fileview: save last selected encoding as widget's default (refs #3620)
+* mergetools: add BeyondCompare 4 support (closes #3679)
+* qfold: accept command by Ctrl+Return like commit or email dialog (closes #3650)
+
+----
+
 = TortoiseHg 2.11.1 =
 
 TortoiseHg 2.11.1 is a regularly scheduled bug-fix release

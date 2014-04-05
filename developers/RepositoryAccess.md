@@ -161,7 +161,12 @@ thread/process:
 * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
 * \#3370 - Workbench UI getting dispresponsive on certain operations
 * \#3381 - Locked folders/files on Windows (again)
+
+pipe:
+
+* \#484 - Can't update to any revision (SVN subrepo)
 * \#3637 - Redirect hook stdout, stderr to Output log
+* \#3670 - WindowsError 6 in pipe decode/encode filter
 
 direct command call:
 

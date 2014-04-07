@@ -115,7 +115,7 @@ In 3.0 (unreleased):
 
 ### TODOs
 
-short-term (in 3.0?):
+short-term (in 3.1?):
 
 1. missing `ui.error` label in command server
 1. update document of command APIs (in separate Wiki page?)

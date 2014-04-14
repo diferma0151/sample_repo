@@ -18,6 +18,9 @@ N/A
 
 == Bug Fixes in Third-party Modules ==
 
+Dulwich (unreleased > 0.9.5):
+* [[https://groups.google.com/d/msg/thg-dev/lq3xlrOh19Y/Ni3y9v1gafwJ|fixes for GitHub]]
+
 Pygments (unreleased):
 * [[https://bitbucket.org/birkenfeld/pygments-main/issue/891/|PrologLexer may freeze with triple backslashes]]
 

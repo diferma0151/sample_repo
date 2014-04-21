@@ -1,6 +1,6 @@
-== Encoding Strategy ==
+# Encoding Strategy
 
-=== Overview ===
+## Overview
 
 * All Mercurial inputs and outputs are in local encoding
 * All QStrings are in unicode
@@ -10,13 +10,13 @@
 * Our gettext wrapper _() returns unicode strings
 * Configuration files are assumed to be in local encoding by Mercurial
 
-=== API ===
+## API
 
-* **hglib.tounicode()** converts local string to unicode (Mercurial to Qt)
-* **hglib.fromunicode()** converts unicode or QString to local string (Qt to Mercurial)
-* Built-in **unicode()** can be used to convert QString to unicode
+* `hglib.tounicode()` converts local string to unicode (Mercurial to Qt)
+* `hglib.fromunicode()` converts unicode or QString to local string (Qt to Mercurial)
+* Built-in `unicode()` can be used to convert QString to unicode
 
-=== See also ===
+## See also
 
 * http://mercurial.selenic.com/wiki/EncodingStrategy
 * http://pyqt.sourceforge.net/Docs/PyQt4/incompatible_apis.html

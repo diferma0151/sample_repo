@@ -7,7 +7,7 @@
 * All strings passed to Qt are converted to a QString (in API 1)
 * All strings returned by Qt APIs are QString (in API 1)
 * All strings emitted through signals are converted to QString (in API 1)
-* Our gettext wrapper _() returns unicode strings
+* Our gettext wrapper `_()` returns unicode strings
 * Configuration files are assumed to be in local encoding by Mercurial
 * Repository contents may be saved in arbitrary encoding
 

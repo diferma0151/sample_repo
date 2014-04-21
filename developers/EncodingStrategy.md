@@ -9,12 +9,15 @@
 * All strings emitted through signals are converted to QString (in API 1)
 * Our gettext wrapper _() returns unicode strings
 * Configuration files are assumed to be in local encoding by Mercurial
+* Repository contents may be saved in arbitrary encoding
 
 ## API
 
 * `hglib.tounicode()` converts local string to unicode (Mercurial to Qt)
 * `hglib.fromunicode()` converts unicode or QString to local string (Qt to Mercurial)
 * Built-in `unicode()` can be used to convert QString to unicode
+* `fileencoding.guessencoding()` can be used to select possible encoding for
+  file
 
 ## See also
 

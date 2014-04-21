@@ -19,6 +19,18 @@
 * `fileencoding.guessencoding()` can be used to select possible encoding for
   file
 
+## Known issues
+
+command:
+
+TODO
+
+file content:
+
+* \#3596 - Missing handling of content encoding in FileDiffDialog
+* \#3715 - MQ: Edit patch reject: "Could not translate the file content from
+  native encoding."
+
 ## See also
 
 * http://mercurial.selenic.com/wiki/EncodingStrategy

@@ -4,11 +4,40 @@
 
 == Bug Fixes ==
 
-N/A
+* backout: remove support for merges deprecated since Mercurial 2.0 (refs #3416)
+* commit: do not create recent message menu more than once (fixes memleak)
+* filectxactions: save files in working-copy line endings (fixes #3696)
+* graft: merge source csinfo and cslist to save vertical space (closes #3655)
 
 == Improvements ==
 
-N/A
+* bisect: open as modeless dialog in workbench
+* bisect: follow candidate changeset in workbench
+* clone: suggest new destination on source changed or existing dest selected
+* cmdui: switch detail button text to show what will happen (closes #3666)
+* commit: automatically set merge commit message
+* email: allow to omit introduction email even if more than one patches
+  available
+* filectxactions: add filter action to file context menu
+* filectxactions: run "hg cat" by asynchronous command runner
+* fileview: add option to guess encoding from its content on load (closes #3620)
+* fileview: add shift-clicking feature on chunk selection (ref #3672)
+* merge: remember autoresolve check, run internal:merge (autoresolve) by default
+* reporegistry: save expanded state in settings (closes #2132)
+* repoview: allow drag-and-drop of column headers (closes #2544)
+* shelve: confirm to delete selected chunks (closes #2493)
+* update: add 'Pull subrepos from:' combobox
+* workbench, filelog: give standard shortcuts to go-back/forward actions
+
+core:
+
+* cmdcore: add experimental command-server client enabled by
+  `--config tortoisehg.cmdworker=server`
+  (refs #1507, #1661, #2071, #2614, #3343, #3370, #3637)
+* graph: assign same color to edges in first ancestors line
+* graph: do not assign gray to normal line because gray means `inactive`
+* graph: draw starting edge of topo branch in same color as its descendants
+* graph: narrow margin around graph edges to save horizontal space
 
 == Installer ==
 

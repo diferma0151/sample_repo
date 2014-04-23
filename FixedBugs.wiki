@@ -22,6 +22,7 @@
 * filectxactions: run "hg cat" by asynchronous command runner
 * fileview: add option to guess encoding from its content on load (closes #3620)
 * fileview: add shift-clicking feature on chunk selection (ref #3672)
+* graft: save/restore boolean command options
 * merge: remember autoresolve check, run internal:merge (autoresolve) by default
 * reporegistry: save expanded state in settings (closes #2132)
 * repoview: allow drag-and-drop of column headers (closes #2544)

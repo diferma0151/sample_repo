@@ -32,7 +32,7 @@
 core:
 
 * cmdcore: add experimental command-server client enabled by
-  `--config tortoisehg.cmdworker=server`
+  {{{--config tortoisehg.cmdworker=server}}}\\
   (refs #1507, #1661, #2071, #2614, #3343, #3370, #3637)
 * graph: assign same color to edges in first ancestors line
 * graph: do not assign gray to normal line because gray means `inactive`

@@ -10,6 +10,7 @@
 * filectxactions: save files in working-copy line endings (fixes #3696)
 * graft: merge source csinfo and cslist to save vertical space (closes #3655)
 * qtapp: font placement is wrong with OSX 10.9
+* shellext: context menus icons NOT properly displayed on Windows XP (fixes #1364)
 
 == Improvements ==
 

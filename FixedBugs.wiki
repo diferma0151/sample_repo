@@ -47,7 +47,7 @@ core:
 == Installer ==
 
 * bundle hg-git and hgsubversion extensions
-* dulwich 0.9.6 (inclues [[https://groups.google.com/d/msg/thg-dev/lq3xlrOh19Y/Ni3y9v1gafwJ|fixes for GitHub]])
+* dulwich 0.9.6 (inclues [[https://groups.google.com/d/msg/thg-dev/lq3xlrOh19Y/Ni3y9v1gafwJ|fixes for GitHub]], #3653)
 * keyring 3.7 and hgkeyring 0.6.2
 
 ----

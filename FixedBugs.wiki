@@ -6,8 +6,10 @@
 
 * backout: remove support for merges deprecated since Mercurial 2.0 (refs #3416)
 * commit: do not create recent message menu more than once (fixes memleak)
+* email: preview is empty if patchbomb extension is not loaded
 * filectxactions: save files in working-copy line endings (fixes #3696)
 * graft: merge source csinfo and cslist to save vertical space (closes #3655)
+* qtapp: font placement is wrong with OSX 10.9
 
 == Improvements ==
 
@@ -24,6 +26,7 @@
 * fileview: add shift-clicking feature on chunk selection (ref #3672)
 * graft: save/restore boolean command options
 * merge: remember autoresolve check, run internal:merge (autoresolve) by default
+* qdelete: remember last state of --keep option
 * reporegistry: save expanded state in settings (closes #2132)
 * repoview: allow drag-and-drop of column headers (closes #2544)
 * shelve: confirm to delete selected chunks (closes #2493)

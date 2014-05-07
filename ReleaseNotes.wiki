@@ -44,7 +44,7 @@ an older version of Mercurial, please consult the following chart:
 
 = TortoiseHg 3.0 =
 
-TortoiseHg 3.0 is a timed feature release.  With 3.0, TortoiseHg is synchronizing its release numbers with Mercurial.
+TortoiseHg 3.0 is a timed feature release.  With 3.0, TortoiseHg is synchronizing its release numbers with Mercurial.  The Windows installers for 3.0 come with a patched version of Mercurial 3.0; we've taken the first three stable commits following the 3.0 tag in order to fix a file permission regression.
 
 == Bug Fixes ==
 

@@ -151,6 +151,7 @@ repo/ui object:
 hidden, union repo:
 
 * \#2552 - compare branch from different repos
+* \#3735 - obosoleted changeset appears as "Child:" field unexpectedly
 
 thread/process:
 

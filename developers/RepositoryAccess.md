@@ -108,7 +108,7 @@ In 2.11:
 * \#2208 - Support --config argument for 'thg workbench'
 * obtain `RepoAgent` of subrepo through main's
 
-In 3.0 (unreleased):
+In 3.0:
 
 * extract reusable `QtUi` from thread.py
 * add experimental command server client which uses `QProcess`
@@ -117,7 +117,7 @@ In 3.0 (unreleased):
 
 short-term (in 3.1?):
 
-1. missing `ui.error` label in command server
+1. missing `ui.error` label in command server (WIP)
 1. update document of command APIs (in separate Wiki page?)
 1. bundlerepo (or unionrepo) and `--hidden` flag
 1. add API to capture raw command output without emitting `outputReceived()`

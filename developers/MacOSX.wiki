@@ -4,13 +4,9 @@ There are several ways to install TortoiseHg on Mac OS X.
 
 <<toc 2>>
 
-You can also [[https://s3.amazonaws.com/kiln-tortoisehg-nightlies/index.htm|get nightly builds]],
-but it seems //no longer updated//.
-(maintained by @kevingessner → [[https://groups.google.com/d/msg/thg-dev/StsdthOV3c4/oUfxvO3yAoIJ|announce]])
-
-For Mavericks (10.9) users:
-Currently nightly builds do not start correctly, #3437.
-Please [[/tortoisehg/thg/issue/3437/#comment-7718529|try this workaround]].
+You can also try [[/tortoisehg/thg/issue/3437/#comment-10136320|application bundles]] made by @Weeds2000.
+It seems [[https://s3.amazonaws.com/kiln-tortoisehg-nightlies/index.htm|nightly builds]]
+by @kevingessner are no longer updated.
 
 ----
 

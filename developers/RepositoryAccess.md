@@ -137,6 +137,7 @@ short-term (in 3.1?):
 
 long-term:
 
+* remove `CmdThread` and redesign `ui.error` and `dispatch` wrapper
 * keep dirstate/wctx up-to-date by RepoAgent?
 * better control of `refreshWctx()`
 * provide read/write config API

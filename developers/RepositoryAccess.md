@@ -113,11 +113,23 @@ In 3.0:
 * extract reusable `QtUi` from thread.py
 * add experimental command server client which uses `QProcess`
 
+In 3.1 (unreleased):
+
+* missing `ui.error` label in command server
+* \#3343 - Blackbox extension not working when using hg from within TortoiseHg
+* \#1661 - "abort: Interrupted system" call during push with subrepos
+* \#2071 - crash when pushing with mercurial_keyring
+* \#2614 - `util.hgexecutable()` returns wrong path
+* 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
+* \#3370 - Workbench UI getting dispresponsive on certain operations
+* \#484 - Can't update to any revision (SVN subrepo)
+* \#3637 - Redirect hook stdout, stderr to Output log
+* \#3670 - WindowsError 6 in pipe decode/encode filter
+
 ### TODOs
 
 short-term (in 3.1?):
 
-1. missing `ui.error` label in command server (WIP)
 1. update document of command APIs (in separate Wiki page?)
 1. bundlerepo (or unionrepo) and `--hidden` flag
 1. add API to capture raw command output without emitting `outputReceived()`
@@ -146,7 +158,6 @@ repo/ui object:
 
 * \#588 - Unified diff view doesn't work well with EOL extension
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
-* \#3343 - Blackbox extension not working when using hg from within TortoiseHg
 
 hidden, union repo:
 
@@ -156,18 +167,7 @@ hidden, union repo:
 thread/process:
 
 * \#1507 - Stop button for pull that hangs
-* \#1661 - "abort: Interrupted system" call during push with subrepos
-* \#2071 - crash when pushing with mercurial_keyring
-* \#2614 - `util.hgexecutable()` returns wrong path
-* 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
-* \#3370 - Workbench UI getting dispresponsive on certain operations
 * \#3381 - Locked folders/files on Windows (again)
-
-pipe:
-
-* \#484 - Can't update to any revision (SVN subrepo)
-* \#3637 - Redirect hook stdout, stderr to Output log
-* \#3670 - WindowsError 6 in pipe decode/encode filter
 
 direct command call:
 

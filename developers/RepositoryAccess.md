@@ -137,6 +137,7 @@ short-term (in 3.1?):
 
 long-term:
 
+* remove global cache of `thgrepository` instances
 * remove `CmdThread` and redesign `ui.error` and `dispatch` wrapper
 * keep dirstate/wctx up-to-date by RepoAgent?
 * better control of `refreshWctx()`

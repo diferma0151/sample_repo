@@ -49,7 +49,7 @@ between `QNetworkAccessManager` and `QNetworkReply`.
 
 ### Executors
 
-**CmdThread** (default)
+**CmdThread** (default < 3.1)
 
 * lightweight and feature-rich
 * cannot abort on I/O stall, #1507
@@ -64,7 +64,7 @@ between `QNetworkAccessManager` and `QNetworkReply`.
 * no interactive prompt
 * ~~no progress and `ui.label`~~
 
-**CmdServer** (Command Server Client)
+**CmdServer** (default in 3.1)
 
 * need to manage server process
 * http://mercurial.selenic.com/wiki/CommandServer#Known_issues

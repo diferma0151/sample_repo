@@ -130,8 +130,9 @@ In 3.1 (unreleased):
 
 short-term (in 3.1?):
 
+1. bundlerepo (and unionrepo) (WIP)
+1. `--hidden` flag
 1. update document of command APIs (in separate Wiki page?)
-1. bundlerepo (or unionrepo) and `--hidden` flag
 1. add API to capture raw command output without emitting `outputReceived()`
    (for email preview, revset query, export to clipboard, etc.)
 

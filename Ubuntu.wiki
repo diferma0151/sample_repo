@@ -8,5 +8,3 @@ thg
 }}}
 
 Or see [[thg]] for how to run from source.
-
-Note: the TortoiseHg nautilus extension is very old and no longer works with newer Linux releases.  The command line thg tool works just fine.

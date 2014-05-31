@@ -4,6 +4,13 @@
 
 == Bug Fixes ==
 
+* commit: do not crash by invalid issue.regex expression (fixes #3732)
+* graph: fix problem about `showgraftsource` and `branch`
+* repowidget: resize columns only when model is initially loaded (fixes #3742)
+* wctxactions: resurrect 'forget' action for added files (closes #3748)
+* commit: clear unmodified message, including the default merge message,
+  when repository changed (fixes #3755)
+
 == Improvements ==
 
 == Installer ==

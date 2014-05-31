@@ -1,6 +1,6 @@
 = Report Bugs =
 
-//Do not "Create" wiki page to report bugs. Use [[/tortoisehg/thg/issues|issue tracker]].//
+//Do not "Create page" to report bugs. Use [[/tortoisehg/thg/issues|issue tracker]].//
 
 == Make sure the bug hasn't already been reported ==
 

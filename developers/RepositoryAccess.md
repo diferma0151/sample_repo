@@ -125,13 +125,14 @@ In 3.1 (unreleased):
 * \#484 - Can't update to any revision (SVN subrepo)
 * \#3637 - Redirect hook stdout, stderr to Output log
 * \#3670 - WindowsError 6 in pipe decode/encode filter
+* switch bundlerepo (and unionrepo) globally by RepoAgent
+* manage `--hidden` flag globally by RepoAgent
+* \#3735 - obosoleted changeset appears as "Child:" field unexpectedly
 
 ### TODOs
 
 short-term (in 3.1?):
 
-1. bundlerepo (and unionrepo) (WIP)
-1. `--hidden` flag
 1. update document of command APIs (in separate Wiki page?)
 1. add API to capture raw command output without emitting `outputReceived()`
    (for email preview, revset query, export to clipboard, etc.)
@@ -165,7 +166,6 @@ repo/ui object:
 hidden, union repo:
 
 * \#2552 - compare branch from different repos
-* \#3735 - obosoleted changeset appears as "Child:" field unexpectedly
 
 thread/process:
 

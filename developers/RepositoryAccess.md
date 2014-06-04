@@ -133,9 +133,10 @@ In 3.1 (unreleased):
 
 short-term (in 3.1?):
 
-1. update document of command APIs (in separate Wiki page?)
-1. add API to capture raw command output without emitting `outputReceived()`
+1. add API to capture raw command output without emitting `outputReceived()` (WIP)
    (for email preview, revset query, export to clipboard, etc.)
+1. replace threaded revset query, etc.
+1. update document of command APIs (in separate Wiki page?)
 
 long-term:
 

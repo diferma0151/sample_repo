@@ -32,6 +32,29 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 3.0.1 =
+
+TortoiseHg 3.0.1 is a regularly scheduled bug-fix release.
+
+If you had installed 3.0 and were using the newly bundled hg-svn or hg-git, you must change the name of those extensions to hgsubversion and hggit respectively.  The method of their bundling has been changed because of issue #3768.  Post-upgrade, you should be able to de-select "hg-git" and/or "hg-svn" from the settings dialog and select the new "hggit" and/or "hgsubversion" respectively.
+
+== Bug Fixes ==
+
+* commit: do not crash by invalid issue.regex expression (fixes #3732)
+* customtools: separate arguments before running external commands (fixes #3752)
+* graph: fix problem about `showgraftsource` and `branch`
+* repowidget: resize columns only when model is initially loaded (fixes #3742)
+* wctxactions: resurrect 'forget' action for added files (closes #3748)
+* commit: clear unmodified message, including the default merge message,
+  when repository changed (fixes #3755)
+
+== Installer ==
+
+* bundled hgsubversion moved from hg-svn to hgsubversion
+* bundled hg-git moved from hg-git to hggit
+
+----
+
 = TortoiseHg 3.0 =
 
 TortoiseHg 3.0 is a timed feature release.  With 3.0, TortoiseHg is synchronizing its release numbers with Mercurial.  The Windows installers for 3.0 come with a patched version of Mercurial 3.0; we've taken the first three stable commits following the 3.0 tag in order to fix a file permission regression.

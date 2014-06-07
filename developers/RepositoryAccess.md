@@ -47,6 +47,19 @@ Example:
 The relation between `CmdAgent` and `CmdSession` is similar to the one
 between `QNetworkAccessManager` and `QNetworkReply`.
 
+### Capturing Output
+
+By default, all command outputs are propagated through `outputReceived` signal.
+This is very inefficient for transferring large chunks.
+
+There are two alternative APIs:
+
+* `sess.setCaptureOutput(True)` enables in-memory output buffer.  All data
+  outputs (excluding ui messages) are buffered by `CmdSession` and can later
+  be read by `QIODevice`-like interface.
+* `sess.setOutputDevice(device)` redirects all data outputs to the specified
+  `QIODevice`.  It can be used to write outputs to `QFile`.
+
 ### Executors
 
 **CmdThread** (default < 3.1)

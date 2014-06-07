@@ -144,12 +144,17 @@ In 3.1 (unreleased):
 
 ### TODOs
 
-short-term (in 3.1?):
+short-term (in 3.1):
 
 1. add API to capture raw command output without emitting `outputReceived()` (WIP)
    (for email preview, revset query, export to clipboard, etc.)
 1. replace threaded revset query, etc.
-1. update document of command APIs (in separate Wiki page?)
+
+short-term (in 3.2):
+
+1. remove `CmdThread`
+1. add API to connect `QIODevice` to "I" channel of command server
+   (in order to replace use of temporary files)
 
 long-term:
 

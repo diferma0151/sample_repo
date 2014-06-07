@@ -1,16 +1,8 @@
-﻿See **[[ReleaseNotes]]** for bugs fixed in previous releases.
+See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.0 =
+= Changes since 3.0.1 =
 
 == Bug Fixes ==
-
-* commit: do not crash by invalid issue.regex expression (fixes #3732)
-* customtools: separate arguments before running external commands (fixes #3752)
-* graph: fix problem about `showgraftsource` and `branch`
-* repowidget: resize columns only when model is initially loaded (fixes #3742)
-* wctxactions: resurrect 'forget' action for added files (closes #3748)
-* commit: clear unmodified message, including the default merge message,
-  when repository changed (fixes #3755)
 
 == Improvements ==
 

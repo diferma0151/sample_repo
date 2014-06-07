@@ -153,13 +153,13 @@ short-term (in 3.1):
 short-term (in 3.2):
 
 1. remove `CmdThread`
+1. redesign `ui.error` and `dispatch` wrapper
 1. add API to connect `QIODevice` to "I" channel of command server
    (in order to replace use of temporary files)
 
 long-term:
 
 * remove global cache of `thgrepository` instances
-* remove `CmdThread` and redesign `ui.error` and `dispatch` wrapper
 * keep dirstate/wctx up-to-date by RepoAgent?
 * better control of `refreshWctx()`
 * provide read/write config API

@@ -144,11 +144,13 @@ In 3.1 (unreleased):
 
 ### TODOs
 
-short-term (in 3.1):
+short-term (in 3.1?):
 
 1. add API to capture raw command output without emitting `outputReceived()` (WIP)
    (for email preview, revset query, export to clipboard, etc.)
 1. replace threaded revset query, etc.
+1. pool `CmdAgent` instances for clone/init diag
+   (and replace service management in `RepoManager`)
 
 short-term (in 3.2):
 

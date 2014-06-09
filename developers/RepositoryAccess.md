@@ -124,6 +124,11 @@ In 3.0:
 * extract reusable `QtUi` from thread.py
 * add experimental command server client which uses `QProcess`
 
+In 3.0.2 (unreleased):
+
+* \#588 - Unified diff view doesn't work well with EOL extension
+  → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
+
 In 3.1 (unreleased):
 
 * missing `ui.error` label in command server
@@ -178,11 +183,6 @@ file-system monitoring:
   rebase, collapse, etc.
 * \#1594, #2604 - error after qpop
 * \#2470 - hg push in command line (to SVN with hgsubversion)
-
-repo/ui object:
-
-* \#588 - Unified diff view doesn't work well with EOL extension
-  → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
 
 hidden, union repo:
 

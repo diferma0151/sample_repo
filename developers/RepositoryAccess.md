@@ -145,14 +145,14 @@ In 3.1 (unreleased):
 * switch bundlerepo (and unionrepo) globally by RepoAgent
 * manage `--hidden` flag globally by RepoAgent
 * \#3735 - obosoleted changeset appears as "Child:" field unexpectedly
+* add API to capture raw command output without emitting `outputReceived()`
+  (for email preview, revset query, export to clipboard, etc.)
+* replace threaded revset query
 
 ### TODOs
 
 short-term (in 3.1?):
 
-1. add API to capture raw command output without emitting `outputReceived()` (WIP)
-   (for email preview, revset query, export to clipboard, etc.)
-1. replace threaded revset query, etc.
 1. reimplement wctxactions by using command APIs
 1. pool `CmdAgent` instances for clone/init diag
    (and replace service management in `RepoManager`)

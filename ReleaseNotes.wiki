@@ -38,6 +38,8 @@ TortoiseHg 3.0.1 is a regularly scheduled bug-fix release.
 
 If you had installed 3.0 and were using the newly bundled hg-svn or hg-git, you must change the name of those extensions to hgsubversion and hggit respectively.  The method of their bundling has been changed because of issue #3768.  Post-upgrade, you should be able to de-select "hg-git" and/or "hg-svn" from the settings dialog and select the new "hggit" and/or "hgsubversion" respectively.
 
+Also note that now that TortoiseHg and Mercurial have synchronized revision numbers, the names of the TortoiseHg installers for Windows have been simplified to include just a single version number.  These installer packages still include TortoiseHg and Mercurial (it would be quite impossible to package one without the other).
+
 == Bug Fixes ==
 
 * commit: do not crash by invalid issue.regex expression (fixes #3732)
@@ -52,6 +54,7 @@ If you had installed 3.0 and were using the newly bundled hg-svn or hg-git, you 
 
 * bundled hgsubversion moved from hg-svn to hgsubversion
 * bundled hg-git moved from hg-git to hggit
+* package naming simplified, now that thg and hg version numbers are synchronized
 
 ----
 

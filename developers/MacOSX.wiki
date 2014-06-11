@@ -4,7 +4,7 @@ There are several ways to install TortoiseHg on Mac OS X.
 
 <<toc 2>>
 
-You can also try [[/tortoisehg/thg/issue/3437/#comment-10136320|application bundles]] made by @Weeds2000.
+You can also try [[/tortoisehg/thg/issue/3437/#comment-10649957|application bundles]] made by @Weeds2000.
 It seems [[https://s3.amazonaws.com/kiln-tortoisehg-nightlies/index.htm|nightly builds]]
 by @kevingessner are no longer updated.
 

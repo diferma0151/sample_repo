@@ -43,7 +43,9 @@ Also note that now that TortoiseHg and Mercurial have synchronized revision numb
 == Bug Fixes ==
 
 * commit: do not crash by invalid issue.regex expression (fixes #3732)
-* customtools: separate arguments before running external commands (fixes #3752)
+* customtools: separate arguments before running external commands (fixes #3752) \\
+  the specified command will be executed through the system shell, so
+  use {{{start}}} to open new command window (see #3783 for details.)
 * graph: fix problem about `showgraftsource` and `branch`
 * repowidget: resize columns only when model is initially loaded (fixes #3742)
 * wctxactions: resurrect 'forget' action for added files (closes #3748)

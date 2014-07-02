@@ -18,7 +18,9 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Improvements ==
 
+* commit: allow amending non-head if obsolete is enabled
 * repomodel: do not truncate description if longsummary is enabled (fixes #3776)
+
 
 == Installer ==
 

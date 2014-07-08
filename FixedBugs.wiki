@@ -1,26 +1,10 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.0.1 =
+= Changes since 3.0.2 =
 
 == Bug Fixes ==
 
-* cmdthread: map empty promptchoice response to default value \\
-  (fixes #3785 - crash on email preview with diffstat)
-* grep: fix list of urls to include all dragged files
-* grep, status: fix several unicode errors in drag-and-drop handler
-* status: fix handling of non-ascii file name in drag-and-drop handler
-* purge: make sure to not include deselected statuses \\
-  (fixes #3786 - ignored files can be deleted even if checkbox is off)
-* settings: remove outdated details of default authorcolor behavior
-  (fixes #3789)
-* thgrepo: preserve config values that are internally set \\
-  (fixes #588 - random failure of unified diff with eol extension)
-
 == Improvements ==
-
-* commit: allow amending non-head if obsolete is enabled
-* repomodel: do not truncate description if longsummary is enabled (fixes #3776)
-
 
 == Installer ==
 

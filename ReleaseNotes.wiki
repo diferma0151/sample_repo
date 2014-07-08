@@ -60,6 +60,12 @@ Also note that now that TortoiseHg and Mercurial have synchronized revision numb
 * repomodel: do not truncate description if longsummary is enabled (fixes #3776)
 * reduce workbench toolbar icon size on Mac to match size on Windows
 
+== Installer ==
+
+* update python keyring library to 3.8
+* update dulwich to 0.9.7
+* update hg-git to current tip (ab8562b11c4f)
+
 ----
 
 = TortoiseHg 3.0.1 =

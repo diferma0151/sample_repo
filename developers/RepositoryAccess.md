@@ -201,7 +201,7 @@ direct command call:
 
 graph, status updates:
 
-* #532 - Long operations block UI (Qt)
+* \#532 - Long operations block UI (Qt)
 
 workingctx:
 

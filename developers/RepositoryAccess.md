@@ -199,6 +199,10 @@ direct command call:
 * \#1347 - Add support for pre-<command> and post-<command> hooks
 * \#2217 - Adding files to source control in the separate thread
 
+graph, status updates:
+
+* #532 - Long operations block UI (Qt)
+
 workingctx:
 
 * \#3621 - Shelve tool does not always know about added/removed files

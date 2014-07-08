@@ -32,6 +32,36 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 3.0.2 =
+
+TortoiseHg 3.0.2 is a regularly scheduled bug-fix release.
+
+If you had installed 3.0 and were using the newly bundled hg-svn or hg-git, you must change the name of those extensions to hgsubversion and hggit respectively.  The method of their bundling has been changed because of issue #3768.  Post-upgrade, you should be able to de-select "hg-git" and/or "hg-svn" from the settings dialog and select the new "hggit" and/or "hgsubversion" respectively.
+
+Also note that now that TortoiseHg and Mercurial have synchronized revision numbers, the names of the TortoiseHg installers for Windows have been simplified to include just a single version number.  These installer packages still include TortoiseHg and Mercurial (it would be quite impossible to package one without the other).
+
+== Bug Fixes ==
+
+* cmdthread: map empty promptchoice response to default value \\
+  (fixes #3785 - crash on email preview with diffstat)
+* grep: fix list of urls to include all dragged files
+* grep, status: fix several unicode errors in drag-and-drop handler
+* status: fix handling of non-ascii file name in drag-and-drop handler
+* purge: make sure to not include deselected statuses \\
+  (fixes #3786 - ignored files can be deleted even if checkbox is off)
+* settings: remove outdated details of default authorcolor behavior
+  (fixes #3789)
+* thgrepo: preserve config values that are internally set \\
+  (fixes #588 - random failure of unified diff with eol extension)
+
+== Improvements ==
+
+* commit: allow amending non-head if obsolete is enabled
+* repomodel: do not truncate description if longsummary is enabled (fixes #3776)
+* reduce workbench toolbar icon size on Mac to match size on Windows
+
+----
+
 = TortoiseHg 3.0.1 =
 
 TortoiseHg 3.0.1 is a regularly scheduled bug-fix release.

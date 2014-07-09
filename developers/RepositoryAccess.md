@@ -148,12 +148,11 @@ In 3.1 (unreleased):
 * add API to capture raw command output without emitting `outputReceived()`
   (for email preview, revset query, export to clipboard, etc.)
 * replace threaded revset query
+* reimplement wctxactions by using command APIs (WIP)
+    * \#1347 - Add support for pre-<command> and post-<command> hooks
+    * \#2217 - Adding files to source control in the separate thread
 
 ### TODOs
-
-short-term (in 3.1?):
-
-1. reimplement wctxactions by using command APIs (WIP)
 
 short-term (in 3.2):
 
@@ -196,9 +195,6 @@ thread/process:
 direct command call:
 
 * InitDialog calls `hg.repository(..., create=1)`
-* \#1347 - Add support for pre-<command> and post-<command> hooks
-* \#2217 - Adding files to source control in the separate thread
-
 graph, status updates:
 
 * \#532 - Long operations block UI (Qt)

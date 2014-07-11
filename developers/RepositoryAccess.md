@@ -165,6 +165,7 @@ short-term (in 3.2):
 
 long-term:
 
+* fetch log and calculate revision graph asynchronously
 * remove global cache of `thgrepository` instances
 * keep dirstate/wctx up-to-date by RepoAgent?
 * better control of `refreshWctx()`

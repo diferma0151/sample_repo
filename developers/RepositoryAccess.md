@@ -163,6 +163,7 @@ short-term (in 3.2):
 1. redesign `ui.error` and `dispatch` wrapper
 1. add API to connect `QIODevice` to "I" channel of command server
    (in order to replace use of temporary files)
+1. factor out change notification signals
 
 long-term:
 
@@ -187,6 +188,7 @@ file-system monitoring:
   rebase, collapse, etc.
 * \#1594, #2604 - error after qpop
 * \#2470 - hg push in command line (to SVN with hgsubversion)
+* \#3697 - No workbench refresh when first commit is rolled back
 
 hidden, union repo:
 

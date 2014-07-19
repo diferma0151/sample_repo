@@ -218,6 +218,7 @@ child to workbench:
 unicode:
 
 * \#3246 - better handling of UnicodeEncodeError of command-line parameters
+* \#3453 - Cannot commit
 
 ## See Also
 

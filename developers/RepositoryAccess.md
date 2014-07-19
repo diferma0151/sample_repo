@@ -189,6 +189,7 @@ file-system monitoring:
 * \#1594, #2604 - error after qpop
 * \#2470 - hg push in command line (to SVN with hgsubversion)
 * \#3697 - No workbench refresh when first commit is rolled back
+* \#2572 - Doesn't auto refresh when update and discard new branch
 
 hidden, union repo:
 

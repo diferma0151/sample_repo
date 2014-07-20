@@ -53,9 +53,9 @@ command runner:
 
 graph and log view:
 
-* graphdelegate: update row height to actual value prior to painting
+* graphdelegate: update row height to actual value prior to painting \\
   (refs #3690 - Tortoisehg on high dpi displays)
-* repomodel: render description column without using HTMLDelegate
+* repomodel: render description column without using HTMLDelegate \\
   (fixes #1590 - description column contents aligned 1px upper)
 
 obsolete changeset:

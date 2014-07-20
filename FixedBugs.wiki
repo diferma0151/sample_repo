@@ -15,6 +15,9 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 Pygments (unreleased):
 * [[https://bitbucket.org/birkenfeld/pygments-main/issue/891/|PrologLexer may freeze with triple backslashes]]
 
+OpenSSL 1.0.1g:
+* #3702 - Client Heartbleed vulnerability (possibly with libsvn_ra-1.dll)
+
 QScintilla 2.8:
 * Input methods are now properly supported
 

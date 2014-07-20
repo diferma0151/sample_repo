@@ -4,7 +4,82 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Bug Fixes ==
 
+* commit: do not bulk-add unknown files when all selected files are largefiles
+* commit, filectxactions: escape paths prior to command execution \\
+  (fixes #2108 - files with some special names can't be added or commited)
+* commit: take "autoinc" list as glob pattern again
+* filectxactions: redesign visualDiffRevs to show diff between baseRev and rev \\
+  (fixes #2313 - diff selected file revisions not working after move/rename)
+* filectxactions: make "copy patch" generate diff between base and target revs
+* grep, status: use built-in drag-and-drop infrastructure
+* postreview: correctly set parent of first selected revision (fixes #3538)
+* repofilter: do no run revset query by focus out during history completion
+* repofilter: do not steal focus when window is restored from minimized state
+* repowatcher: invalidate cache if dirstate file is modified \\
+  (fixes #3647 - file renaming inconsistencies)
+* run: continue without fork if new process can't be spawned (fixes #1949, #3800)
+* run: promote rev to common annotate/log option (fixes #3799)
+* wctxactions: delegate "file history" action to filectxactions \\
+  (fixes #2591 - No shortcut for "File history" command on files in Working
+  Directory)
+* wctxactions: make visual diff compare to base revision, add "diff local" in
+  place \\
+  (fixes #2001 - diff does not work on MQ patches)
+* wctxcleaner: invalidate changelog on each check of dirstate \\
+  (fixes #3826 - commit do not work properly in the merge dialog)
+* widgets: use small icon size defined by platform style (fixes #3690)
+* workbench: do not change window icon (closes #3737)
+
+command runner:
+
+* cmdcore: enable command-server client by default in 3.1 \\
+  fixes the following issues:
+** #3343 - Blackbox extension not working when using hg from within TortoiseHg
+** #1661 - "abort: Interrupted system" call during push with subrepos
+** #2071 - crash when pushing with mercurial_keyring
+** #2614 - `util.hgexecutable()` returns wrong path
+** 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
+** #3370 - Workbench UI getting dispresponsive on certain operations
+** #484 - Can't update to any revision (SVN subrepo)
+** #788 - Can't use git repo
+** #3637 - Redirect hook stdout, stderr to Output log
+** #3670 - WindowsError 6 in pipe decode/encode filter
+* wctxactions: reimplement by using command APIs \\
+  fixes the following issues:
+** #1347 - Add support for pre-<command> and post-<command> hooks
+** #2217 - Adding files to source control in the separate thread
+** #1953 - largefiles treated wrong when added by tortoise contextmenu-entry
+   "add large..."
+
+graph and log view:
+
+* graphdelegate: update row height to actual value prior to painting
+  (refs #3690 - Tortoisehg on high dpi displays)
+* repomodel: render description column without using HTMLDelegate
+  (fixes #1590 - description column contents aligned 1px upper)
+
+obsolete changeset:
+
+* repowidget: switch visibility of hidden changesets globally \\
+  (fixes #3735 - obosoleted changeset appears as "Child:" field unexpectedly)
+* thgrepo: start with filtered repo because it is the default of Mercurial
+* repoagent: append --hidden option while hidden changesets are visible
+
 == Improvements ==
+
+* blockmatcher: improve visibility of narrow markers
+* filelog: export `thg filelog [-r REV] [--compare] FILE` command
+* fileview: remember chunk selection on view mode switch
+* mergetools: port gvimdiff from Mercurial's mergetools.hgrc
+* repowidget: replace pseudo "incoming()" filter by "bundle()" (refs #3535)
+* repowidget: run "Export Diff" and "Copy Patch" in command process for stability
+* revset: run query in command process for stability
+* toolbars: use toolbar icon size defined by QApplication.style() except on Mac
+  (see 8d6212194e21 for details)
+
+graph:
+
+* graph: implement family line feature (see 891146f5a9bb for details)
 
 == Installer ==
 

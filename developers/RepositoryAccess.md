@@ -148,7 +148,7 @@ In 3.1 (unreleased):
 * add API to capture raw command output without emitting `outputReceived()`
   (for email preview, revset query, export to clipboard, etc.)
 * replace threaded revset query
-* reimplement wctxactions by using command APIs (WIP)
+* reimplement wctxactions by using command APIs
     * \#1347 - Add support for pre-<command> and post-<command> hooks
     * \#2217 - Adding files to source control in the separate thread
     * \#1953 - largefiles treated wrong when added by tortoise contextmenu-entry "add large..."

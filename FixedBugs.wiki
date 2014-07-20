@@ -68,7 +68,7 @@ obsolete changeset:
 == Improvements ==
 
 * blockmatcher: improve visibility of narrow markers
-* filelog: export `thg filelog [-r REV] [--compare] FILE` command
+* filelog: export {{{thg filelog [-r REV] [--compare] FILE}}} command
 * fileview: remember chunk selection on view mode switch
 * mergetools: port gvimdiff from Mercurial's mergetools.hgrc
 * repowidget: replace pseudo "incoming()" filter by "bundle()" (refs #3535)

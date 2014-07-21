@@ -50,11 +50,11 @@ commit/status widget:
 * wctxactions: delegate "file history" action to filectxactions \\
   (fixes #2591 - No shortcut for "File history" command on files in Working
   Directory)
+* wctxcleaner: invalidate changelog on each check of dirstate \\
+  (fixes #3826 - commit do not work properly in the merge dialog)
 * wctxactions: make visual diff compare to base revision, add "diff local" in
   place \\
   (fixes #2001 - diff does not work on MQ patches)
-* wctxcleaner: invalidate changelog on each check of dirstate \\
-  (fixes #3826 - commit do not work properly in the merge dialog)
 * wctxactions: reimplement by using command APIs, fixes:
 ** #1347 - Add support for pre-<command> and post-<command> hooks
 ** #2217 - Adding files to source control in the separate thread

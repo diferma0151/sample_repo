@@ -91,7 +91,8 @@ obsolete changeset:
 
 graph:
 
-* graph: implement family line feature (see 891146f5a9bb for details)
+* graph: draw ancestor-descendant relations in filtered graph
+  (see 891146f5a9bb for details)
 
 == Installer ==
 

@@ -2,6 +2,14 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Changes since 3.0.2 =
 
+Since TortoiseHg 3.1, Mercurial commands are run in separate
+[[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
+This change generally contributes to reliablity, but if you have a faulty
+extension or Python hook, it can corrupt the communication channel between
+TortoiseHg and the command server. \\
+If you see an error message like "cmdserver: timeout while reading...",
+please report it with the list of enabled extensions.
+
 == Bug Fixes ==
 
 * commit: do not bulk-add unknown files when all selected files are largefiles

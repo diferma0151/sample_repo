@@ -19,9 +19,10 @@ If you see an error message like "cmdserver: timeout while reading...",
 * postreview: correctly set parent of first selected revision (fixes #3538)
 * repofilter: do no run revset query by focus out during history completion
 * repofilter: do not steal focus when window is restored from minimized state
+* repomodel: render description column without using HTMLDelegate \\
+  (fixes #1590 - description column contents aligned 1px upper)
 * run: continue without fork if new process can't be spawned (fixes #1949, #3800)
 * run: promote rev to common annotate/log option (fixes #3799)
-* widgets: use small icon size defined by platform style (fixes #3690)
 * workbench: do not change window icon (closes #3737)
 
 command runner:
@@ -61,12 +62,11 @@ commit/status widget:
 ** #1953 - largefiles treated wrong when added by tortoise contextmenu-entry
    "add large..."
 
-graph and log view:
+high dpi issues:
 
 * graphdelegate: update row height to actual value prior to painting \\
-  (refs #3690 - Tortoisehg on high dpi displays)
-* repomodel: render description column without using HTMLDelegate \\
-  (fixes #1590 - description column contents aligned 1px upper)
+  (refs #3690)
+* widgets: use small icon size defined by platform style (fixes #3690)
 
 obsolete changeset:
 

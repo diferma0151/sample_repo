@@ -26,8 +26,7 @@ If you see an error message like "cmdserver: timeout while reading...",
 
 command runner:
 
-* cmdcore: enable command-server client by default in 3.1 \\
-  fixes the following issues:
+* cmdcore: enable command-server client by default in 3.1, fixes:
 ** #3343 - Blackbox extension not working when using hg from within TortoiseHg
 ** #1661 - "abort: Interrupted system" call during push with subrepos
 ** #2071 - crash when pushing with mercurial_keyring
@@ -56,8 +55,7 @@ commit/status widget:
   (fixes #2001 - diff does not work on MQ patches)
 * wctxcleaner: invalidate changelog on each check of dirstate \\
   (fixes #3826 - commit do not work properly in the merge dialog)
-* wctxactions: reimplement by using command APIs \\
-  fixes the following issues:
+* wctxactions: reimplement by using command APIs, fixes:
 ** #1347 - Add support for pre-<command> and post-<command> hooks
 ** #2217 - Adding files to source control in the separate thread
 ** #1953 - largefiles treated wrong when added by tortoise contextmenu-entry

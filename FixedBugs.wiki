@@ -74,6 +74,7 @@ obsolete changeset:
 * repowidget: replace pseudo "incoming()" filter by "bundle()" (refs #3535)
 * repowidget: run "Export Diff" and "Copy Patch" in command process for stability
 * revset: run query in command process for stability
+* searchtoolbar: make next/prev shortcuts available in owner widget (fixes #3819)
 * toolbars: use toolbar icon size defined by QApplication.style() except on Mac
   (see 8d6212194e21 for details)
 

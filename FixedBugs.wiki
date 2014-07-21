@@ -38,6 +38,9 @@ command runner:
 ** #788 - Can't use git repo
 ** #3637 - Redirect hook stdout, stderr to Output log
 ** #3670 - WindowsError 6 in pipe decode/encode filter
+* repowidget: run "Export Diff" and "Copy Patch" in command process for
+  stability
+* revset: run query in command process for stability
 
 commit/status widget:
 
@@ -71,6 +74,7 @@ high dpi issues:
 obsolete changeset:
 
 * repoagent: append --hidden option while hidden changesets are visible
+* repowidget: replace pseudo "incoming()" filter by "bundle()" (refs #3535)
 * repowidget: switch visibility of hidden changesets globally \\
   (fixes #3735 - obosoleted changeset appears as "Child:" field unexpectedly)
 * thgrepo: start with filtered repo because it is the default of Mercurial
@@ -81,9 +85,6 @@ obsolete changeset:
 * filelog: export {{{thg filelog [-r REV] [--compare] FILE}}} command
 * fileview: remember chunk selection on view mode switch
 * mergetools: port gvimdiff from Mercurial's mergetools.hgrc
-* repowidget: replace pseudo "incoming()" filter by "bundle()" (refs #3535)
-* repowidget: run "Export Diff" and "Copy Patch" in command process for stability
-* revset: run query in command process for stability
 * searchtoolbar: make next/prev shortcuts available in owner widget (fixes #3819)
 * toolbars: use toolbar icon size defined by QApplication.style() except on Mac
   (see 8d6212194e21 for details)

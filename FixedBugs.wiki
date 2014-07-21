@@ -70,10 +70,10 @@ high dpi issues:
 
 obsolete changeset:
 
+* repoagent: append --hidden option while hidden changesets are visible
 * repowidget: switch visibility of hidden changesets globally \\
   (fixes #3735 - obosoleted changeset appears as "Child:" field unexpectedly)
 * thgrepo: start with filtered repo because it is the default of Mercurial
-* repoagent: append --hidden option while hidden changesets are visible
 
 == Improvements ==
 

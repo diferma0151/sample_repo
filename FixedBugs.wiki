@@ -15,7 +15,7 @@ If you see an error message like "cmdserver: timeout while reading...",
 
 * cmdui: add hidden button to close prompt dialog with no response \\
   (fixes #1317 - merge has no cancel option)
-* filectxactions: redesign visualDiffRevs to show diff between baseRev and rev \\
+* filectxactions: redesign to show diff between baseRev and rev \\
   (fixes #2313 - diff selected file revisions not working after move/rename)
 * grep, status: use built-in drag-and-drop infrastructure
 * postreview: correctly set parent of first selected revision (fixes #3538)
@@ -23,22 +23,22 @@ If you see an error message like "cmdserver: timeout while reading...",
 * repofilter: do not steal focus when window is restored from minimized state
 * repomodel: render description column without using HTMLDelegate \\
   (fixes #1590 - description column contents aligned 1px upper)
-* run: continue without fork if new process can't be spawned (fixes #1949, #3800)
+* run: continue without fork if new process can't be spawned
+  (fixes #1949, #3800)
 * run: promote rev to common annotate/log option (fixes #3799)
 * workbench: do not change window icon (closes #3737)
 
 command runner:
 
 * cmdcore: enable command-server client by default in 3.1, fixes:
-** #3343 - Blackbox extension not working when using hg from within TortoiseHg
+** #3343 - blackbox extension not working
 ** #1661 - "abort: Interrupted system" call during push with subrepos
 ** #2071 - crash when pushing with mercurial_keyring
 ** #2614 - `util.hgexecutable()` returns wrong path
 ** 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
 ** #3370 - Workbench UI getting dispresponsive on certain operations
-** #484 - Can't update to any revision (SVN subrepo)
-** #788 - Can't use git repo
-** #3637 - Redirect hook stdout, stderr to Output log
+** #484, #788 - can't use git/subversion subrepo
+** #3637 - redirect hook stdout, stderr to Output log
 ** #3670 - WindowsError 6 in pipe decode/encode filter
 * repowidget: run "Export Diff" and "Copy Patch" in command process for
   stability
@@ -62,10 +62,9 @@ commit/status widget:
   place \\
   (fixes #2001 - diff does not work on MQ patches)
 * wctxactions: reimplement by using command APIs, fixes:
-** #1347 - Add support for pre-<command> and post-<command> hooks
-** #2217 - Adding files to source control in the separate thread
-** #1953 - largefiles treated wrong when added by tortoise contextmenu-entry
-   "add large..."
+** #1347 - add support for `pre-<command>` and `post-<command>` hooks
+** #2217 - adding files to source control in the separate thread
+** #1953 - largefiles treated wrong when added by "add large..." menu
 
 high dpi issues:
 

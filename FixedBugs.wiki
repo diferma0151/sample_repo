@@ -5,8 +5,8 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 Since 3.1, Mercurial commands are run in separate
 [[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
 It generally contributes to reliablity, but if you have a faulty extension
-or a Python hook, it can corrupt the communication channel between TortoiseHg
-and the command server.
+or an in-process Python hook, it can corrupt the communication channel between
+TortoiseHg and the command server.
 
 If you see an error message like "cmdserver: timeout while reading...",
 [[BugReport|please report it]] with the list of enabled extensions.

@@ -13,6 +13,8 @@ If you see an error message like "cmdserver: timeout while reading...",
 
 == Bug Fixes ==
 
+* cmdui: add hidden button to close prompt dialog with no response \\
+  (fixes #1317 - merge has no cancel option)
 * filectxactions: redesign visualDiffRevs to show diff between baseRev and rev \\
   (fixes #2313 - diff selected file revisions not working after move/rename)
 * grep, status: use built-in drag-and-drop infrastructure
@@ -86,6 +88,7 @@ obsolete changeset:
 * fileview: remember chunk selection on view mode switch
 * mergetools: port gvimdiff from Mercurial's mergetools.hgrc
 * searchtoolbar: make next/prev shortcuts available in owner widget (fixes #3819)
+* status: open merge tool on double-click for unresolved file (closes #1230)
 * toolbars: use toolbar icon size defined by QApplication.style() except on Mac
   (see 8d6212194e21 for details)
 
@@ -95,6 +98,8 @@ graph:
   (see 891146f5a9bb for details)
 
 == Installer ==
+
+* wix: remove i18n source files (.po) from installer package (closes #2566)
 
 ----
 

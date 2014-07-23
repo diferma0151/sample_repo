@@ -23,6 +23,7 @@ If you see an error message like "cmdserver: timeout while reading...",
 * repofilter: do not steal focus when window is restored from minimized state
 * repomodel: render description column without using HTMLDelegate \\
   (fixes #1590 - description column contents aligned 1px upper)
+* repotreemodel: work around unicode error on XML parse failure (fixes #3820)
 * run: continue without fork if new process can't be spawned
   (fixes #1949, #3800)
 * run: promote rev to common annotate/log option (fixes #3799)

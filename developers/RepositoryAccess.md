@@ -69,11 +69,7 @@ There are two alternative APIs:
 **CmdProc**
 
 * high overhead (especially on Windows)
-* ~~cannot abort *safely* (`kill -KILL` or `TerminateProcess` is used)~~
-  (possible by win32ill extension)
-* cannot terminate if `hg` is a batch file
 * no interactive prompt
-* ~~no progress and `ui.label`~~
 
 **CmdServer** (default in 3.1)
 

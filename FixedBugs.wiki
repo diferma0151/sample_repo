@@ -18,6 +18,8 @@ If you see an error message like "cmdserver: timeout while reading...",
 * filectxactions: redesign to show diff between baseRev and rev \\
   (fixes #2313 - diff selected file revisions not working after move/rename)
 * grep, status: use built-in drag-and-drop infrastructure
+* patchctx: use patch name give by repo if it is an MQ patch \\
+  (fixes #3831 - patch name is ambiguous when using directories)
 * postreview: correctly set parent of first selected revision (fixes #3538)
 * repofilter: do no run revset query by focus out during history completion
 * repofilter: do not steal focus when window is restored from minimized state

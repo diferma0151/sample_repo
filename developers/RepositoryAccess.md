@@ -124,7 +124,7 @@ In 3.0:
 * extract reusable `QtUi` from thread.py
 * add experimental command server client which uses `QProcess`
 
-In 3.0.2 (unreleased):
+In 3.0.2:
 
 * \#588 - Unified diff view doesn't work well with EOL extension
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
@@ -164,10 +164,12 @@ short-term (in 3.2):
 1. add API to connect `QIODevice` to "I" channel of command server
    (in order to replace use of temporary files)
 1. factor out change notification signals
+1. reimplement `movemqpatches` as extension
 
 long-term:
 
 * fetch log and calculate revision graph asynchronously
+* template-based log columns (e.g. `{date|localdate|isodatesec}`)
 * replace `visdiff.snapshot()` by `hg archive` ?
 * replace `StatusThread`
 * make `ManifestModel` fetch status asynchronously
@@ -204,9 +206,12 @@ direct command call:
 
 * InitDialog calls `hg.repository(..., create=1)`
 
-graph, status updates:
+repomodel:
 
 * \#532 - Long operations block UI (Qt)
+* \#2038 - Local Time log column should be MY local time
+* \#3832 - Sync target is reset after detecting outgoing changesets
+...
 
 workingctx:
 

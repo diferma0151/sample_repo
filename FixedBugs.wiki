@@ -10,7 +10,8 @@ TortoiseHg and the command server.
 
 If you see an error message like "cmdserver: timeout while reading...",
 [[BugReport|please report it]] with the list of enabled third-party extensions
-and their versions.
+and their versions.  Currently, reviewboard extension is known to have this
+issue. #3841
 
 == Bug Fixes ==
 

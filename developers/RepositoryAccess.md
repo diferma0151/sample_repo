@@ -125,7 +125,7 @@ In 3.0.2:
 * \#588 - Unified diff view doesn't work well with EOL extension
   → [discussion](http://thread.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user/3341/focus=3345)
 
-In 3.1 (unreleased):
+In 3.1:
 
 * missing `ui.error` label in command server
 * \#3343 - Blackbox extension not working when using hg from within TortoiseHg
@@ -153,14 +153,14 @@ In 3.1 (unreleased):
 
 short-term (in 3.2):
 
+1. remove `CmdThread` (WIP)
+1. reimplement `movemqpatches` as extension
+1. factor out change notification signals
 1. pool `CmdAgent` instances for clone/init diag
    (and replace service management in `RepoManager`)
-1. remove `CmdThread`
 1. redesign `ui.error` and `dispatch` wrapper
 1. add API to connect `QIODevice` to "I" channel of command server
    (in order to replace use of temporary files)
-1. factor out change notification signals
-1. reimplement `movemqpatches` as extension
 
 long-term:
 

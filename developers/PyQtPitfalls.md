@@ -202,6 +202,22 @@ Don't use `QString`. Cast to `unicode` ASAP.
 
 ----
 
+## Item Views
+
+### Cannot access to QStyleOptionViewItemV<n> attributes from initStyleOption
+
+*In PyQt < 4.7.1*
+
+No workaround.  `sip.cast` will cause segfault.
+
+> v4.7.1 17th March 2010
+>   - A QStyleOption instance will be wrapped as a specific sub-class where
+>     possible.
+
+See http://www.riverbankcomputing.com/pipermail/pyqt/2010-March/026021.html
+
+----
+
 ## Widgets
 
 ### Editable QComboBox does not allow case-sensitive input

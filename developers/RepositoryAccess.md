@@ -60,7 +60,7 @@ There are two alternative APIs:
 
 ### Executors
 
-**CmdThread** (default < 3.1)
+**CmdThread** (default < 3.1, removed at 3.2)
 
 * lightweight and feature-rich
 * cannot abort on I/O stall, #1507
@@ -71,7 +71,7 @@ There are two alternative APIs:
 * high overhead (especially on Windows)
 * no interactive prompt
 
-**CmdServer** (default in 3.1)
+**CmdServer** (default >= 3.1)
 
 * need to manage server process
 * http://mercurial.selenic.com/wiki/CommandServer#Known_issues
@@ -149,12 +149,15 @@ In 3.1:
     * \#2217 - Adding files to source control in the separate thread
     * \#1953 - largefiles treated wrong when added by tortoise contextmenu-entry "add large..."
 
+In 3.2 (unreleased):
+
+* remove `CmdThread`
+* reimplement `movemqpatches` as extension command, `hg qreorder`
+
 ### TODOs
 
 short-term (in 3.2):
 
-1. remove `CmdThread` (WIP)
-1. reimplement `movemqpatches` as extension
 1. factor out change notification signals
 1. pool `CmdAgent` instances for clone/init diag
    (and replace service management in `RepoManager`)

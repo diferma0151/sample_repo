@@ -45,8 +45,8 @@ TortoiseHg and the command server.
 
 If you see an error message like "cmdserver: timeout while reading...",
 [[BugReport|please report it]] with the list of enabled third-party extensions
-and their versions.  Currently, reviewboard extension is known to have this
-issue. #3841
+and their versions.  Currently, reviewboard (#3841) and hg-git (#3862) are
+known to have this issue.
 
 Note the Windows installers include Mercurial version 3.1 plus two stable commits
 which addressed Windows platform-specific bugs.

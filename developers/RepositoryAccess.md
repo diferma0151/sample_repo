@@ -158,7 +158,8 @@ In 3.2 (unreleased):
 
 short-term (in 3.2):
 
-1. factor out change notification signals
+1. factor out change notification signals (WIP)
+1. fine-tune change notification for MQ
 1. pool `CmdAgent` instances for clone/init diag
    (and replace service management in `RepoManager`)
 1. redesign `ui.error` and `dispatch` wrapper

@@ -173,6 +173,8 @@ long-term:
 
 * fetch log and calculate revision graph asynchronously
 * template-based log columns (e.g. `{date|localdate|isodatesec}`)
+* reimplement `purge.CheckThread` which isn't thread-safe
+* reimplement `visdiff.visualdiff` which isn't thread-safe
 * replace `visdiff.snapshot()` by `hg archive` ?
 * replace `StatusThread`
 * make `ManifestModel` fetch status asynchronously

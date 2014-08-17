@@ -213,6 +213,7 @@ repomodel:
 
 * \#532 - Long operations block UI (Qt)
 * \#2038 - Local Time log column should be MY local time
+* \#3304 - Changing branch name or options for MQ patch resets description
 * \#3832 - Sync target is reset after detecting outgoing changesets
 ...
 

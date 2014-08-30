@@ -20,6 +20,7 @@ issue. #3841
   (fixes #3864 - RuntimeError on detect outgoing changes to empty path)
 * filectxactions: do not try 3-way diff if p2 is explicitly selected \\
   (fixes #3854 - "Diff to parent" options only diff to the left parent)
+* hgignore: disable auto-default of all buttons (fixes #3889)
 * repomodel: make sure to render labels by using the same font as view
 * status: do not set "remove filter" button as auto-default (fixes #3876)
 * sync: outgoing {node} might be prefixed with white space \\

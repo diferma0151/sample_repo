@@ -162,9 +162,11 @@ In 3.2 (unreleased):
 
 short-term (in 3.2):
 
+1. busy progress and global abort button (#1186)
 1. fine-tune change notification for MQ
 1. pool `CmdAgent` instances for clone/init diag
    (and replace service management in `RepoManager`)
+1. shutdown app gracefully by `SIGINT`
 1. redesign `ui.error` and `dispatch` wrapper
 1. add API to connect `QIODevice` to "I" channel of command server
    (in order to replace use of temporary files)

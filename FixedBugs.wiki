@@ -15,7 +15,12 @@ issue. #3841
 
 == Bug Fixes ==
 
-N/A
+* commit: correct boundary value to disable pygments parsing (refs #3910)
+* commit: do not show username prompt if ui.user is set (fixes #3901)
+* obsolete: look for markers even if intermediate revisions are hidden
+* repomodel, sync: fix performance regression on repo having many named
+  branches (fixes #3912)
+* tag: propagate --force option properly on remove
 
 == Improvements ==
 

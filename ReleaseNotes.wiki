@@ -73,7 +73,7 @@ issue. #3841
 == Installer ==
 
 * update hg-git to current tip (c68edf83bfbc), fixes SSH issue (#3862)
-* pyre2 is now bundled, for must improved regexp performance
+* pyre2 is now bundled, for much improved regexp performance
 
 ----
 

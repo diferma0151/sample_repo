@@ -158,11 +158,13 @@ In 3.2 (unreleased):
     * \#3697 - No workbench refresh when first commit is rolled back
     * \#2572 - Doesn't auto refresh when update and discard new branch
 
+* global abort button (#1186)
+
 ### TODOs
 
-short-term (in 3.2):
+short-term (in 3.3):
 
-1. busy progress and global abort button (#1186)
+1. busy progress (#1186)
 1. fine-tune change notification for MQ
 1. pool `CmdAgent` instances for clone/init diag
    (and replace service management in `RepoManager`)

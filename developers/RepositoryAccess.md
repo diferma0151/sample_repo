@@ -211,7 +211,7 @@ thread/process:
 
 direct command call:
 
-* InitDialog calls `hg.repository(..., create=1)`
+* InitDialog calls `hg.repository(..., create=1)` - #3931
 
 repomodel:
 

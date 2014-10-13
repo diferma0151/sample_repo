@@ -33,9 +33,35 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 3.1.2 =
+
+TortoiseHg 3.1.2 is a regularly scheduled bug-fix release.
+
+Since 3.1, Mercurial commands are run in separate
+[[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
+It generally contributes to reliability, but if you have a faulty extension
+or an in-process Python hook, it can corrupt the communication channel between
+TortoiseHg and the command server.
+
+If you see an error message like "cmdserver: timeout while reading...",
+[[BugReport|please report it]] with the list of enabled third-party extensions
+and their versions.  Currently, reviewboard (#3841) and onsub (#3924) extensions
+are known to have this issue.
+
+== Bug Fixes ==
+
+* commit: correct boundary value to disable pygments parsing (refs #3910)
+* commit: do not show username prompt if ui.user is set (fixes #3901)
+* obsolete: look for markers even if intermediate revisions are hidden
+* repomodel, sync: fix performance regression on repo having many named
+  branches (fixes #3912)
+* tag: propagate --force option properly on remove
+
+----
+
 = TortoiseHg 3.1.1 =
 
-TortoiseHg 3.1 is a regularly scheduled bug-fix release.
+TortoiseHg 3.1.1 is a regularly scheduled bug-fix release.
 
 Since 3.1, Mercurial commands are run in separate
 [[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.

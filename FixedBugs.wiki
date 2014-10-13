@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.1.1 =
+= Changes since 3.1.2 =
 
 Since 3.1, Mercurial commands are run in separate
 [[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
@@ -15,12 +15,7 @@ are known to have this issue.
 
 == Bug Fixes ==
 
-* commit: correct boundary value to disable pygments parsing (refs #3910)
-* commit: do not show username prompt if ui.user is set (fixes #3901)
-* obsolete: look for markers even if intermediate revisions are hidden
-* repomodel, sync: fix performance regression on repo having many named
-  branches (fixes #3912)
-* tag: propagate --force option properly on remove
+N/A
 
 == Improvements ==
 

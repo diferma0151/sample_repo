@@ -14,21 +14,9 @@ platforms.
 **[[http://tortoisehg.bitbucket.org/manual/2.10/faq.html|FAQ]]** |
 **[[ReleaseNotes]]** |  **[[RoadMap]]**
 
-== News ==
+== Releases ==
 
-* 2014-09-04: TortoiseHg 3.1.1 (with Mercurial 3.1.1) released
-* 2014-08-03: TortoiseHg 3.1 (with Mercurial 3.1+2) released
-* 2014-07-08: TortoiseHg 3.0.2 (with Mercurial 3.0.2) released
-* 2014-06-05: TortoiseHg 3.0.1 (with Mercurial 3.0.1) released
-* 2014-05-06: TortoiseHg 3.0 (with Mercurial 3.0+3) released
-* 2014-03-04: TortoiseHg 2.11.1 (with Mercurial 2.9.1) released
-* 2014-02-04: TortoiseHg 2.11 (with Mercurial 2.9) released
-* 2014-01-14: TortoiseHg 2.10.2 (with Mercurial 2.8.2) released
-* 2013-12-05: TortoiseHg 2.10.1 (with Mercurial 2.8.1) released
-* 2013-11-04: TortoiseHg 2.10 (with Mercurial 2.8) released
-
-[[OldNews|Older News]]
-
+TortoiseHg has monthly releases, roughly at the same time as Mercurial releases. Our packages have the same version as the most recent Mercurial tag.  Every three months is a new feature release, the other releases are for bug fixes and minor improvements.  The .2 releases are suggested for optimum stability.
 
 == Supported Platforms ==
 

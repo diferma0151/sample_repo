@@ -30,6 +30,8 @@ are known to have this issue.
 * repowidget: move focus to history view when window gets visible (fixes #3917)
 * repowidget: remove unused _reload_rev and _last_series (fixes #3923)
 * repowidget: switch to commit tab if working-dir row is selected (fixes #1913)
+* sync: bypass bundle overlay on fetch just like pull \\
+  (fixes #3946 - fetch after check incoming fails)
 * sync: rebuild target bookmarks/branches only when changelog updated
   (refs #3912)
 

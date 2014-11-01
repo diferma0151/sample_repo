@@ -63,6 +63,9 @@ graph style:
 Pygments (unreleased):
 * [[https://bitbucket.org/birkenfeld/pygments-main/issue/891/|PrologLexer may freeze with triple backslashes]]
 
+Python:
+* #3938 - Update bundled Python (HTTPS issues)
+
 OpenSSL 1.0.1g:
 * #3702 - Client Heartbleed vulnerability (possibly with libsvn_ra-1.dll)
 
@@ -74,6 +77,9 @@ QScintilla 2.8.1:
 
 Qt 4.8.6:
 * #2300 - Workbench always opens on primary monitor when maximized
+
+libsvn:
+* #3745 - error 175009 - libsvn 1.6 sometimes fails to talk to svn 1.8 server
 
 ----
 

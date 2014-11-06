@@ -38,8 +38,6 @@ an older version of Mercurial, please consult the following chart:
 
 TortoiseHg 3.2 is a regularly scheduled feature release
 
-= Changes since 3.1.2 =
-
 Since 3.1, Mercurial commands are run in separate
 [[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
 It generally contributes to reliability, but if you have a faulty extension

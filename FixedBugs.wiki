@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.1.2 =
+= Changes since 3.2 =
 
 Since 3.1, Mercurial commands are run in separate
 [[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
@@ -15,44 +15,7 @@ are known to have this issue.
 
 == Bug Fixes ==
 
-* commit: do not reload patch description if parent is unchanged (fixes #3304)
-* qreorder: have drag-and-drop patches run extension command in worker process
-* paths: resolve root directory from frozen executable path
-* repowatcher: detect removal of repository files (fixes #3697)
-* repoagent: unify workingBranchChanged with repositoryChanged \\
-  (fixes #2572 - doesn't auto refresh when update and discard new branch)
-* repofilter: grab focus only if shown by user action (refs #3917)
-* repomodel: do not clear status message on filter option change (fixes #3887)
-* repomodel: restore current/selected indexes by model on reload (refs #1913)
-* repowatcher: check mtime of obsolescence markers (fixes #3913)
-* repowidget: do not overwrite browse history by revset result (refs #3832)
-* repowidget: do not re-create model on repository or revset changed
-* repowidget: move focus to history view when window gets visible (fixes #3917)
-* repowidget: remove unused _reload_rev and _last_series (fixes #3923)
-* repowidget: switch to commit tab if working-dir row is selected (fixes #1913)
-* sync: bypass bundle overlay on fetch just like pull \\
-  (fixes #3946 - fetch after check incoming fails)
-* sync: rebuild target bookmarks/branches only when changelog updated
-  (refs #3912)
-
 == Improvements ==
-
-* make output log a task tab, remove class LogDockWidget
-* cmdcore: propagate --config options to command process
-* debugruncommand: add command that runs hg command in dialog (closes #3934)
-* infobar: clear status message with slight delay if command finished
-  (refs #3308)
-* prune: add dialog that prunes the specified revs
-* qtapp: use wake-up fd to notice SIGINT on Unix
-* strip: add --keep checkbox (closes #1865)
-* workbench: add toolbar button that aborts any running commands
-
-graph style:
-
-* evolution: also fadeout obsolete changeset
-* repomodel: branches color rework, with new colors stolen from Mathematica 10
-* repomodel: use lighter version of the usual color when a revision is hidden
-* repomodel: use red as the default text color for troubled changeset
 
 == Installer ==
 

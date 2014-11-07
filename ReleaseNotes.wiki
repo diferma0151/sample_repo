@@ -86,7 +86,6 @@ are known to have this issue.
 graph style:
 
 * evolution: also fadeout obsolete changeset
-* repomodel: branches color rework, with new colors stolen from Mathematica 10
 * repomodel: use lighter version of the usual color when a revision is hidden
 * repomodel: use red as the default text color for troubled changeset
 

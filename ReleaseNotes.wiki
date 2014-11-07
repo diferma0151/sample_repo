@@ -59,7 +59,8 @@ are known to have this issue.
   (fixes #2572 - doesn't auto refresh when update and discard new branch)
 * repofilter: grab focus only if shown by user action (refs #3917)
 * repomodel: do not clear status message on filter option change (fixes #3887)
-* repomodel: restore current/selected indexes by model on reload (refs #1913)
+* repomodel: restore current/selected indexes by model on reload
+  (refs #1913, fixes #3897)
 * repowatcher: check mtime of obsolescence markers (fixes #3913)
 * repowidget: do not overwrite browse history by revset result (refs #3832)
 * repowidget: do not re-create model on repository or revset changed

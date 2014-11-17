@@ -7,7 +7,7 @@ requests should go in the repository's issue tracker.
 
 === [[developers/repositories|Repository Overview]] | [[developers/contributing|Submitting Patches]] | [[developers/installer|Building an Installer]] |  [[developers/Debugging|Debugging]]  | [[developers/Translation|Translation]] ===
 
-Contributors are encouraged to join the
+Contributors are encouraged to join  the
 [[http://groups.google.com/group/thg-dev/topics?hl=en|tortoisehg-develop]] and
 [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-issues|tortoisehg-issues]]
 mailing lists, and should also be aware of

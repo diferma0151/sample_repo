@@ -149,7 +149,7 @@ In 3.1:
     * \#2217 - Adding files to source control in the separate thread
     * \#1953 - largefiles treated wrong when added by tortoise contextmenu-entry "add large..."
 
-In 3.2 (unreleased):
+In 3.2:
 
 * remove `CmdThread`
 * reimplement `movemqpatches` as extension command, `hg qreorder`
@@ -169,6 +169,7 @@ short-term (in 3.3):
 1. pool `CmdAgent` instances for clone/init diag
    (and replace service management in `RepoManager`)
 1. shutdown app gracefully by `SIGINT`
+1. use `hg annotate -Tjson` for thread safety
 1. redesign `ui.error` and `dispatch` wrapper
 1. add API to connect `QIODevice` to "I" channel of command server
    (in order to replace use of temporary files)

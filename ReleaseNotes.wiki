@@ -13,24 +13,10 @@ have been added in the current version.
 == Matching Versions ==
 
 If you are using TortoiseHG from source, we recommend you use the most
-recent stable releases of TortoiseHG and Mercurial together.  If you must use
-an older version of Mercurial, please consult the following chart:
-
-|= Mercurial Release |= TortoiseHg Release |
-| 2.0.x | 2.2.n |
-| 2.1.x | 2.3.n |
-| 2.2.x | 2.4.n |
-| 2.3.x | 2.5.n |
-| 2.4.x | 2.6.n |
-| 2.5.x | 2.7.n |
-| 2.6.x | 2.8.n |
-| 2.7.x | 2.9.n |
-| 2.8.x | 2.10.n |
-| 2.9.x | 2.11.n |
-| 3.0.x | 3.0.n |
-| 3.1.x | 3.1.n |
-| 3.2.x | 3.2.n |
-| hg default tip | thg default tip |
+recent stable releases of TortoiseHG and Mercurial together. TortoiseHg synchronized
+version numbers with Mercurial at release 3.0, so you should always use the same major
+revision number of TortoiseHg as Mercurial for any Mercurial version later than 3.0.
+For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 

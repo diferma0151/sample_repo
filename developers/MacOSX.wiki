@@ -4,7 +4,7 @@ There are several ways to install TortoiseHg on Mac OS X.
 
 <<toc 2>>
 
-Look for the most recent *-mac-x64.zip at our [[https://bitbucket.org/tortoisehg/files/downloads|downloads]] page
+DMG packages are also available, look for the most recent *-mac-x64.zip at our [[https://bitbucket.org/tortoisehg/files/downloads|downloads]] page
 
 ----
 

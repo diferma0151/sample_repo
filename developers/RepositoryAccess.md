@@ -160,15 +160,18 @@ In 3.2:
 
 * global abort button (#1186)
 
+In 3.3 (unreleased):
+
+* \#3931 - run `hg init` in command server
+* shutdown app gracefully by `SIGINT`
+* stop command server before closing clone/init dialog
+
 ### TODOs
 
 short-term (in 3.3):
 
 1. busy progress (#1186)
 1. fine-tune change notification for MQ
-1. pool `CmdAgent` instances for clone/init diag
-   (and replace service management in `RepoManager`)
-1. shutdown app gracefully by `SIGINT`
 1. use `hg annotate -Tjson` for thread safety
 1. redesign `ui.error` and `dispatch` wrapper
 1. add API to connect `QIODevice` to "I" channel of command server
@@ -209,10 +212,6 @@ thread/process:
 
 * \#1507 - Stop button for pull that hangs
 * \#3381 - Locked folders/files on Windows (again)
-
-direct command call:
-
-* InitDialog calls `hg.repository(..., create=1)` - #3931
 
 repomodel:
 

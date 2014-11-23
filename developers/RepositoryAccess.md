@@ -174,10 +174,17 @@ short-term (in 3.3):
 1. fine-tune change notification for MQ
 1. use `hg annotate -Tjson` for thread safety
 1. redesign `ui.error` and `dispatch` wrapper
-1. add API to connect `QIODevice` to "I" channel of command server
-   (in order to replace use of temporary files)
 
 long-term:
+
+* add API to connect `QIODevice` to "I" channel of command server
+  (in order to replace use of temporary files)
+* command runner for clone, init and bulk sync operation
+
+    * extract service manager from `RepoManager`
+      (see also 1ff0182d8523, a8c83e9e3b87 and 9d66488a0e67)
+    * pool unbound `CmdAgent` and create as necessary
+    * per-widget thin proxy to select free `CmdAgent`
 
 * fetch log and calculate revision graph asynchronously
 * template-based log columns (e.g. `{date|localdate|isodatesec}`)

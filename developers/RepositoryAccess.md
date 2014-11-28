@@ -228,6 +228,12 @@ repomodel:
 * \#3832 - Sync target is reset after detecting outgoing changesets
 ...
 
+auto-refresh working status:
+
+* \#3706 - No automatic refresh after Import to working copy
+* \#3981 - No refresh after undo/rollback
+...
+
 workingctx:
 
 * \#3621 - Shelve tool does not always know about added/removed files

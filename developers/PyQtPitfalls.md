@@ -230,6 +230,21 @@ See http://www.riverbankcomputing.com/pipermail/pyqt/2010-March/026021.html
 
 Workaround: use `qtlib.allowCaseChangingInput(combo)`
 
+### QCompleter(parent) may lead to random crash due to ownership bug
+
+*In PyQt < 4.11.4, Changeset 36b8e6315d05*
+
+~~~~{.py}
+completer = QCompleter(self)  # set wrong ownership
+~~~~
+
+Workaround: use `QCompleter(model, parent)
+~~~~{.py}
+completer = QCompleter(None, self)
+~~~~
+
+See http://thread.gmane.org/gmane.comp.python.pyqt-pykde/27768/focus=27769
+
 ### Dialog that is resizable only in horizontal direction
 
 *Changeset 709bcfb9c860*

@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.2 =
+= Changes since 3.2.1 =
 
 Since 3.1, Mercurial commands are run in separate
 [[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
@@ -15,7 +15,17 @@ are known to have this issue.
 
 == Bug Fixes ==
 
+* chunks: preserve line ending of source file in diff view (fixes #3975)
+* console: do not confuse output with prompt input while idle (fixes #3982)
+* filectxactions: directly use boolean evaluation to check for empty
+  (fixes #3967)
+* init: getExistingDirectory without keyword argument (CentOs 6.3)
+* rejects: decode chunk lines as selected content encoding (fixes #3974)
+* rename, settings: work around memory corruption by QCompleter(parent)
+
 == Improvements ==
+
+* mergetools: add 3-way dir diff to BeyondCompare 4 (closes #3976)
 
 == Installer ==
 

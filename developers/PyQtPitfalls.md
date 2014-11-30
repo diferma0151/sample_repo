@@ -238,7 +238,7 @@ Workaround: use `qtlib.allowCaseChangingInput(combo)`
 completer = QCompleter(self)  # set wrong ownership
 ~~~~
 
-Workaround: use `QCompleter(model, parent)
+Workaround: use `QCompleter(model, parent)`
 ~~~~{.py}
 completer = QCompleter(None, self)
 ~~~~

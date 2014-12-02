@@ -22,6 +22,7 @@ are known to have this issue.
 * init: getExistingDirectory without keyword argument (CentOs 6.3)
 * rejects: decode chunk lines as selected content encoding (fixes #3974)
 * rename, settings: work around memory corruption by QCompleter(parent)
+* repowidget: evaluate dagrange set eagerly to fix crash on "Bundle DAG Range"
 
 == Improvements ==
 

@@ -192,6 +192,7 @@ long-term:
 * reimplement `visdiff.visualdiff` which isn't thread-safe
 * replace `visdiff.snapshot()` by `hg archive` ?
 * replace `StatusThread`
+* run `hg grep` in command process
 * make `ManifestModel` fetch status asynchronously
 * remove global cache of `thgrepository` instances
 * keep dirstate/wctx up-to-date by RepoAgent?

@@ -128,16 +128,16 @@ In 3.0.2:
 In 3.1:
 
 * missing `ui.error` label in command server
-* \#3343 - Blackbox extension not working when using hg from within TortoiseHg
-* \#1661 - "abort: Interrupted system" call during push with subrepos
-* \#2071 - crash when pushing with mercurial_keyring
-* \#2614 - `util.hgexecutable()` returns wrong path
-* 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
+* use command server by default
+    * \#3343 - Blackbox extension not working when using hg from within TortoiseHg
+    * \#1661 - "abort: Interrupted system" call during push with subrepos
+    * \#2071 - crash when pushing with mercurial_keyring
+    * \#2614 - `util.hgexecutable()` returns wrong path
+    * 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
+    * \#484 - Can't update to any revision (SVN subrepo)
+    * \#788 - Can't use git repo
+    * \#3637 - Redirect hook stdout, stderr to Output log
 * \#3370 - Workbench UI getting dispresponsive on certain operations
-* \#484 - Can't update to any revision (SVN subrepo)
-* \#788 - Can't use git repo
-* \#3637 - Redirect hook stdout, stderr to Output log
-* \#3670 - WindowsError 6 in pipe decode/encode filter
 * switch bundlerepo (and unionrepo) globally by RepoAgent
 * manage `--hidden` flag globally by RepoAgent
 * \#3735 - obosoleted changeset appears as "Child:" field unexpectedly
@@ -238,6 +238,7 @@ auto-refresh working status:
 workingctx:
 
 * \#3621 - Shelve tool does not always know about added/removed files
+* \#3670 - WindowsError 6 in pipe decode/encode filter
 
 child to workbench:
 

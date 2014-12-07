@@ -22,6 +22,8 @@ are known to have this issue.
 * init: getExistingDirectory without keyword argument (CentOs 6.3)
 * rejects: decode chunk lines as selected content encoding (fixes #3974)
 * rename, settings: work around memory corruption by QCompleter(parent)
+* repomodel: actually clear revset when repository is stripped
+* repomodel: update row count even if failed to reload graph (fixes #3971)
 * repowidget: evaluate dagrange set eagerly to fix crash on "Bundle DAG Range"
 
 == Improvements ==

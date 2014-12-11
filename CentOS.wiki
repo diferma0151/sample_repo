@@ -4,6 +4,7 @@ The tip of TortoiseHg stable (post 2.7) is now mostly functional on CentOS 6.3. 
 
 {{{
 # get prereq packages
+yum install epel-release
 yum install PyQt4-devel python-devel python-iniparse gcc gettext
 yum --enablerepo=epel install qscintilla-python python-keyring python-sphinx Django
 

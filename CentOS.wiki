@@ -1,4 +1,4 @@
-﻿== Installing on CentOS 6.3 ==
+== Installing on CentOS 6.3 ==
 
 The tip of TortoiseHg stable (post 2.7) is now mostly functional on CentOS 6.3.  Use these instructions to get a source install:
 

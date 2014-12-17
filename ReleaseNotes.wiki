@@ -20,6 +20,29 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.2.2 =
+
+TortoiseHg 3.2.2 is a regularly scheduled bug fix release
+
+== Bug Fixes ==
+
+* chunks: preserve line ending of source file in diff view (fixes #3975)
+* console: do not confuse output with prompt input while idle (fixes #3982)
+* filectxactions: directly use boolean evaluation to check for empty
+  (fixes #3967)
+* init: getExistingDirectory without keyword argument (CentOs 6.3)
+* rejects: decode chunk lines as selected content encoding (fixes #3974)
+* rename, settings: work around memory corruption by QCompleter(parent)
+* repomodel: actually clear revset when repository is stripped
+* repomodel: update row count even if failed to reload graph (fixes #3971)
+* repowidget: evaluate dagrange set eagerly to fix crash on "Bundle DAG Range"
+
+== Improvements ==
+
+* mergetools: add 3-way dir diff to BeyondCompare 4 (closes #3976)
+
+----
+
 = TortoiseHg 3.2.1 =
 
 TortoiseHg 3.2.1 is a bug fix release, mostly intended to pick up hot-fixes in Mercurial 3.2.1

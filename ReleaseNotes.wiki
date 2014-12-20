@@ -55,7 +55,7 @@ TortoiseHg 3.2.2 is a regularly scheduled bug fix release
 
 TortoiseHg 3.2.1 is a bug fix release, mostly intended to pick up hot-fixes in Mercurial 3.2.1
 
-== BugFixes ==
+== Bug Fixes ==
 
 * Avoid confusion with explorer extension dialog (#3968, #2339)
 * Improve documentation for terminal shell configuration (#3957)

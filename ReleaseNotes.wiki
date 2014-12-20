@@ -23,7 +23,8 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 = TortoiseHg 3.2.3 =
 
 TortoiseHg 3.2.3 is an unscheduled bug fix release, intended to pick up
-two security fixes in Mercurial 3.2.3. Users on Mac and Windows are encouraged
+[[http://mercurial.selenic.com/wiki/WhatsNew#Mercurial_3.2.3_.282014-12-18.29|
+two security fixes in Mercurial 3.2.3]]. Users on Mac and Windows are encouraged
 to upgrade.
 
 ----

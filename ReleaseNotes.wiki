@@ -20,6 +20,14 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.2.3 =
+
+TortoiseHg 3.2.3 is an unscheduled bug fix release, intended to pick up
+two security fixes in Mercurial 3.2.3. Users on Mac and Windows are encouraged
+to upgrade.
+
+----
+
 = TortoiseHg 3.2.2 =
 
 TortoiseHg 3.2.2 is a regularly scheduled bug fix release

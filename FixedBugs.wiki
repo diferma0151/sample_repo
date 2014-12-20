@@ -40,6 +40,7 @@ QScintilla 2.8.1:
 
 Qt 4.8.6:
 * #2300 - Workbench always opens on primary monitor when maximized
+* #4006 - Incorrect Scrollbar appearence on Windows 8 (QTBUG-26503)
 
 libsvn:
 * #3745 - error 175009 - libsvn 1.6 sometimes fails to talk to svn 1.8 server

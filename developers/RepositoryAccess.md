@@ -179,6 +179,7 @@ long-term:
 
 * add API to connect `QIODevice` to "I" channel of command server
   (in order to replace use of temporary files)
+* wrap `ui.edit()` for histedit or rebase --edit?
 * command runner for clone, init and bulk sync operation
 
     * extract service manager from `RepoManager`

@@ -16,6 +16,9 @@ are known to have this issue.
 == Bug Fixes ==
 
 * commit: reload patch description if hash changes (fixes #3983)
+* filedialogs: forcibly add --hidden because hidden rev can appear in filelog
+* repofilter: another workaround to run selected query on Mac OS X
+* repowidget: fix indexes of unapplied patch actions to be enabled
 
 == Improvements ==
 

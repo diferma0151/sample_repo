@@ -165,14 +165,14 @@ In 3.3 (unreleased):
 * \#3931 - run `hg init` in command server
 * shutdown app gracefully by `SIGINT`
 * stop command server before closing clone/init dialog
+* busy progress (#1186)
+* use `hg annotate -Tpickle` for thread safety
 
 ### TODOs
 
 short-term (in 3.3):
 
-1. busy progress (#1186)
 1. fine-tune change notification for MQ
-1. use `hg annotate -Tjson` for thread safety
 1. redesign `ui.error` and `dispatch` wrapper
 
 long-term:

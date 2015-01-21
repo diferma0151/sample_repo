@@ -170,7 +170,7 @@ In 3.3 (unreleased):
 
 ### TODOs
 
-short-term (in 3.3):
+short-term (in 3.4?):
 
 1. fine-tune change notification for MQ
 1. redesign `ui.error` and `dispatch` wrapper
@@ -202,6 +202,7 @@ long-term:
 * reload root ui object when global setting is changed?
 * how to call workbench from sub dialogs?
 * drop `thgrepository` extension
+* command server over ssh link
 * ...
 
 ## Issues to Consider

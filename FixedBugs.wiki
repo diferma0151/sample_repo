@@ -2,17 +2,6 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Changes since 3.2.4 =
 
-Since 3.1, Mercurial commands are run in separate
-[[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
-It generally contributes to reliability, but if you have a faulty extension
-or an in-process Python hook, it can corrupt the communication channel between
-TortoiseHg and the command server.
-
-If you see an error message like "cmdserver: timeout while reading...",
-[[BugReport|please report it]] with the list of enabled third-party extensions
-and their versions.  Currently, reviewboard (#3841) and onsub (#3924) extensions
-are known to have this issue.
-
 == Bug Fixes ==
 
 * annotate: fetch line information by command (fixes unsafe thread access)

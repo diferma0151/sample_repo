@@ -167,6 +167,10 @@ In 3.3 (unreleased):
 * stop command server before closing clone/init dialog
 * busy progress (#1186)
 * use `hg annotate -Tpickle` for thread safety
+* refactor repomodel
+
+    * \#1594 - error after qpop
+    * \#3832 - Sync target is reset after detecting outgoing changesets
 
 ### TODOs
 
@@ -211,7 +215,6 @@ file-system monitoring:
 
 * \#812, #1305, #1426, #1469, #1758, #2565 - RevlogError on strip,
   rebase, collapse, etc.
-* \#1594, #2604 - error after qpop
 * \#2470 - hg push in command line (to SVN with hgsubversion)
 
 hidden, union repo:
@@ -227,8 +230,6 @@ repomodel:
 
 * \#532 - Long operations block UI (Qt)
 * \#2038 - Local Time log column should be MY local time
-* \#3304 - Changing branch name or options for MQ patch resets description
-* \#3832 - Sync target is reset after detecting outgoing changesets
 ...
 
 auto-refresh working status:

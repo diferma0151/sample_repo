@@ -230,6 +230,7 @@ repomodel:
 
 * \#532 - Long operations block UI (Qt)
 * \#2038 - Local Time log column should be MY local time
+* \#4033 - graph: highlight ancestors of selected revision
 ...
 
 auto-refresh working status:

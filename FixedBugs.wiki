@@ -5,6 +5,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 == Bug Fixes ==
 
 * annotate: fetch line information by command (fixes unsafe thread access)
+* cmdcore: handle ui labels in unicode to avoid possible exception (fixes #3988)
 * guifork: use real fork() on posix to run GUI in background (fixes #3701)
 * init: open repo in existing workbench process if any (fixes #3922)
 * init: run "hg init" in command process (fixes #3931)

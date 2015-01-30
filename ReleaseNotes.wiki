@@ -20,19 +20,6 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
-= TortoiseHg 3.2.3 =
-
-TortoiseHg 3.2.3 is an unscheduled bug fix release, intended to pick up
-[[http://mercurial.selenic.com/wiki/WhatsNew#Mercurial_3.2.3_.282014-12-18.29|
-two security fixes in Mercurial 3.2.3]]. Users on Mac and Windows are encouraged
-to upgrade.
-
-TortoiseHg is itself unchanged in this release, the 3.2.2 tagged revision was re-tagged
-as 3.2.3, so the release only affects installer packages which bundle TortoiseHg and
-Mercurial together (Mac and Windows).
-
-----
-
 = TortoiseHg 3.2.4 =
 
 TortoiseHg 3.2.4 is a regularly scheduled bug fix release
@@ -53,7 +40,14 @@ TortoiseHg 3.2.4 is a regularly scheduled bug fix release
 
 = TortoiseHg 3.2.3 =
 
-TortoiseHg 3.2.3 is hot-fix package for Windows-only which included Mercurial 3.2.3, which fixed some case-folding related security vulnerabilities.
+TortoiseHg 3.2.3 is an unscheduled bug fix release, intended to pick up
+[[http://mercurial.selenic.com/wiki/WhatsNew#Mercurial_3.2.3_.282014-12-18.29|
+two security fixes in Mercurial 3.2.3]]. Users on Mac and Windows are encouraged
+to upgrade.
+
+TortoiseHg is itself unchanged in this release, the 3.2.2 tagged revision was re-tagged
+as 3.2.3, so the release only affects installer packages which bundle TortoiseHg and
+Mercurial together (Mac and Windows).
 
 ----
 

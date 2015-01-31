@@ -38,7 +38,7 @@ graph:
 * color: use "color hashing" to pick a color for each user
 * graph: support the branch grouping experiment from mercurial core
 * repomodel: hide all revisions if no matches found for the given revset query
-* repomodel: rerun last revset query on reload
+* repomodel: rerun last revset query on reload (closes #1705)
 * repoview: use a square shape for secret changesets
 * repoview: use a pentagon shape for draft changesets
 

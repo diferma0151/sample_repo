@@ -213,8 +213,7 @@ long-term:
 
 file-system monitoring:
 
-* \#812, #1305, #1426, #1469, #1758, #2565 - RevlogError on strip,
-  rebase, collapse, etc.
+* \#1469 - RevlogError on strip, rebase, collapse, etc.
 * \#2470 - hg push in command line (to SVN with hgsubversion)
 
 hidden, union repo:
@@ -253,6 +252,13 @@ unicode:
 
 * \#3246 - better handling of UnicodeEncodeError of command-line parameters
 * \#3453 - Cannot commit
+
+bulk push/pull:
+
+* \#456 - Allow multiple push/pull in Hg Workbench
+* \#799 - Workbench: Check each repo for new incoming changelists
+* \#1348 - Mark repositories with uncommited/unpushed changes in repository
+  registry
 
 ## See Also
 

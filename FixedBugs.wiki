@@ -9,6 +9,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 * guifork: use real fork() on posix to run GUI in background (fixes #3701)
 * init: open repo in existing workbench process if any (fixes #3922)
 * init: run "hg init" in command process (fixes #3931)
+* lfprompt: parse minsize as float value (fixes #1901 again)
 * qtapp: handle SIGINT more gracefully by sending close event to all windows
 * repomodel: work around RepoLookupError that may occur while reload is pending
 * repowidget: switch to default task tab after initial revision is selected

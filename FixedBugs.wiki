@@ -1,58 +1,10 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.2.4 =
+= Changes since 3.3 =
 
 == Bug Fixes ==
 
-* annotate: fetch line information by command (fixes unsafe thread access)
-* cmdcore: handle ui labels in unicode to avoid possible exception (fixes #3988)
-* guifork: use real fork() on posix to run GUI in background (fixes #3701)
-* init: open repo in existing workbench process if any (fixes #3922)
-* init: run "hg init" in command process (fixes #3931)
-* lfprompt: parse minsize as float value (fixes #1901 again)
-* qtapp: handle SIGINT more gracefully by sending close event to all windows
-* repomodel: work around RepoLookupError that may occur while reload is pending
-* repowidget: switch to default task tab after initial revision is selected
-* sync: drop "recurse into subrepositories" option (closes #1645)
-* workbench: disable back/forward actions when all repositories are closed
-* workbench: make sure to run workbench by "New Workbench" action
-* workbench: narrow --newworkbench option to command scope
-* workbench: show busy indicator while command is running (fixes #1186)
-
 == Improvements ==
-
-* clone, init: open workbench after repository created by standalone dialog
-* filectxactions: open file history dialog in annotate mode (closes #3760)
-* init: add option to copy user files instead of empty .hgignore (closes #3569)
-* reporegistry: mark shared repositories with a link icon overlay
-* repotab: stop filesystem watcher of background tabs
-* sync: never switch task tabs on revision selected
-* sync: provide standalone dialog by LightRepoWindow
-* workbench: forcibly reload models and views by Ctrl+refresh
-* workbench: make it possible to restore the selected sync path across restarts
-* workbench: restore last open repositories without loading them
-* workbench: resurrect docked console widget (closes #3984)
-
-graph:
-
-* color: use "color hashing" to pick a color for each branch (closes #3490)
-* color: use "color hashing" to pick a color for each user
-* graph: support the branch grouping experiment from mercurial core
-* repomodel: hide all revisions if no matches found for the given revset query
-* repomodel: rerun last revset query on reload (closes #1705)
-* repoview: use a square shape for secret changesets
-* repoview: use a pentagon shape for draft changesets
-
-command:
-
-* log: add -r option to specify the initial revision to be selected
-* log: add -k/--query option to filter changesets by keyword or revset
-
-nautilus/caja:
-
-* add Python Caja extension support (fixes #3936)
-
-== Installer ==
 
 ----
 

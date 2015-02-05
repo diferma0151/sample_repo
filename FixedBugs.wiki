@@ -2,8 +2,8 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Changes since 3.3 =
 
-Note: [[https://bitbucket.org/remleduff/win32lfn/issue/11/|win32lfn does not work]]
-with Mercurial/TortoiseHg 3.3.
+Note: [[https://bitbucket.org/remleduff/win32lfn/issue/11/|win32lfn should be updated]]
+to use Mercurial/TortoiseHg 3.3.
 
 == Bug Fixes ==
 

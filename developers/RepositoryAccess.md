@@ -160,7 +160,7 @@ In 3.2:
 
 * global abort button (#1186)
 
-In 3.3 (unreleased):
+In 3.3:
 
 * \#3931 - run `hg init` in command server
 * shutdown app gracefully by `SIGINT`
@@ -171,6 +171,13 @@ In 3.3 (unreleased):
 
     * \#1594 - error after qpop
     * \#3832 - Sync target is reset after detecting outgoing changesets
+
+In 3.3.1 (unreleased):
+
+* better handling of unicode error
+
+    * \#3246 - better handling of UnicodeEncodeError of command-line parameters
+    * \#3453 - Cannot commit
 
 ### TODOs
 
@@ -246,11 +253,6 @@ workingctx:
 child to workbench:
 
 * \#2354 - "Folder History" in revision browser does nothing
-
-unicode:
-
-* \#3246 - better handling of UnicodeEncodeError of command-line parameters
-* \#3453 - Cannot commit
 
 bulk push/pull:
 

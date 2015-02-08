@@ -214,7 +214,6 @@ long-term:
 file-system monitoring:
 
 * \#1469 - RevlogError on strip, rebase, collapse, etc.
-* \#2470 - hg push in command line (to SVN with hgsubversion)
 
 hidden, union repo:
 

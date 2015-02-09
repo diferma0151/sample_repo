@@ -7,6 +7,10 @@ to use Mercurial/TortoiseHg 3.3.
 
 == Bug Fixes ==
 
+* cmdserver: handle unicode error in command gracefully (fixes #3246, #3453)
+* openshell: do not parse command string by shlex on Windows (fixes #4044)
+* repofilter: take query not convertible to localstr as revset (fixes #3664)
+
 == Improvements ==
 
 ----

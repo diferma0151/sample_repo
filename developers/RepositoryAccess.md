@@ -214,6 +214,8 @@ long-term:
 * how to call workbench from sub dialogs?
 * drop `thgrepository` extension
 * command server over ssh link
+* show command to be executed in log widget instead of separate "Hg command"
+  text box
 * ...
 
 ## Issues to Consider

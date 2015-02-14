@@ -2,14 +2,15 @@
 
 ## Overview
 
-* All Mercurial inputs and outputs are in local encoding
+* All Mercurial inputs and outputs are in local encoding, except for
+    * file contents, which are in arbitrary encoding or binary
+    * `-Tjson` output may be encoded in UTF-8b
 * All QStrings are in unicode
 * All strings passed to Qt are converted to a QString (in API 1)
 * All strings returned by Qt APIs are QString (in API 1)
 * All strings emitted through signals are converted to QString (in API 1)
 * Our gettext wrapper `_()` returns unicode strings
 * Configuration files are assumed to be in local encoding by Mercurial
-* Repository contents may be saved in arbitrary encoding
 
 ## API
 
@@ -34,4 +35,5 @@ file content:
 ## See also
 
 * http://mercurial.selenic.com/wiki/EncodingStrategy
+* http://mercurial.selenic.com/wiki/GenericTemplatingPlan
 * http://pyqt.sourceforge.net/Docs/PyQt4/incompatible_apis.html

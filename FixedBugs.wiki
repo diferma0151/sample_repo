@@ -16,6 +16,8 @@ to use Mercurial/TortoiseHg 3.3.
 * openshell: do not parse command string by shlex on Windows (fixes #4044)
 * repofilter: take query not convertible to localstr as revset (fixes #3664)
 * repomodel: prioritize latest tags by date and distance (fixes #4048)
+* resolve: preserve selection on refresh instead of selecting all (refs #2615)
+* resolve: disable actions while command is running (fixes #2615)
 * sync: enable incomingbundle hack to pull bookmarks/phases (fixes #2497, #3582)
 
 == Improvements ==

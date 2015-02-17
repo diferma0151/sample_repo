@@ -23,5 +23,5 @@
 
 === Menus ===
 
-* [[http://msdn.microsoft.com/en-us/library/windows/desktop/aa511502.aspx#accessKeys|Microsoft - Menus - Guidelines - Access keys]]
-* [[http://msdn.microsoft.com/en-us/library/windows/desktop/aa511502.aspx#ellipses|Microsoft - Menus - Guidelines - Using ellipsis]]
+* [[https://msdn.microsoft.com/en-us/library/windows/desktop/dn742392.aspx#access_keys|Microsoft - Menus - Guidelines - Access keys]]
+* [[https://msdn.microsoft.com/en-us/library/windows/desktop/dn742392.aspx#usingellipses|Microsoft - Menus - Guidelines - Using ellipsis]]

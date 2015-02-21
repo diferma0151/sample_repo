@@ -18,7 +18,7 @@
 
 Templates can be configured by user.
 
-~~~~
+~~~~{.ini}
 # visible fields can be selected per widget
 [thg-revfields]
 # RevDetailsWidget has quiet (single-line) and verbose (expanded) styles

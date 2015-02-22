@@ -29,18 +29,18 @@ update = rev branch tags | summary
 
 # templates for widgets that use QTextDocument
 [thg-revtemplates]
-rev.data = {rev} (<tt>{node|short}</tt>)
-tags.data = {tags % '<span class="tag"> {tag|escape} </span> '}
-summary.data = {desc|firstline}
+rev = {rev} (<tt>{node|short}</tt>)
+tags = {tags % '<span class="tag"> {tag|escape} </span> '}
+summary = {desc|firstline}
 
 # custom field can be added by user
-git.label = Git:
-git.data = {gitnode}
+git.label = Git
+git = {gitnode}
 
 # templates for log model (repomodel)
 [thg-logtemplates]
-rev.data = {rev}
-date.data = {date|localdate|shortdate}
+rev = {rev}
+date = {date|localdate|shortdate}
 ~~~~
 
 ## API

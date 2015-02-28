@@ -15,11 +15,12 @@ to use Mercurial/TortoiseHg 3.3.
 * merge, rename, settings: correct typos in help and warning messages
   (fixes #4047, #4049, #4050)
 * openshell: do not parse command string by shlex on Windows (fixes #4044)
+* qscilib: re-enable custom handling of input method events on QScintilla 2.8
 * repofilter: take query not convertible to localstr as revset (fixes #3664)
 * repomodel: prioritize latest tags by date and distance (fixes #4048)
 * resolve: preserve selection on refresh instead of selecting all (refs #2615)
 * resolve: disable actions while command is running (fixes #2615)
-* sync: enable incomingbundle hack to pull bookmarks/phases (fixes #2497, #3582)
+* sync: do not trust incoming bundle, just re-pull (fixes #2497, #3582, #3847)
 
 == Improvements ==
 

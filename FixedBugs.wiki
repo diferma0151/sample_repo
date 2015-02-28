@@ -24,32 +24,20 @@ to use Mercurial/TortoiseHg 3.3.
 
 == Improvements ==
 
+== Installer ==
+
+* Pygments 2.0.2 (fixes #2407, #4028 by any chance)
+* Python 2.7.9 (fixes #3938)
+* QScintilla 2.8.4 (fixes #3573)
+* Qt 4.8.6 (fixes #2300, #4006)
+* libsvn 1.7.5 (fixes #3745)
+
 ----
 
 == Bug Fixes in Third-party Modules ==
 
-Pygments 2.0:
-* [[https://bitbucket.org/birkenfeld/pygments-main/issue/891/|PrologLexer may freeze with triple backslashes]]
-* #4028, by any chance
-
-Python:
-* #3938 - Update bundled Python (HTTPS issues)
-
 OpenSSL 1.0.1g:
 * #3702 - Client Heartbleed vulnerability (possibly with libsvn_ra-1.dll)
-
-QScintilla 2.8:
-* Input methods are now properly supported
-
-QScintilla 2.8.1:
-* #3573 - Commit message input does not permit all unicode characters
-
-Qt 4.8.6:
-* #2300 - Workbench always opens on primary monitor when maximized
-* #4006 - Incorrect Scrollbar appearence on Windows 8 (QTBUG-26503)
-
-libsvn:
-* #3745 - error 175009 - libsvn 1.6 sometimes fails to talk to svn 1.8 server
 
 ----
 

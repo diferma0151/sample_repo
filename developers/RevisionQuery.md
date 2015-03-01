@@ -54,6 +54,23 @@ The following widgets can render HTML subset by using `QTextDocument`:
 * `QLabel` for single revision
 * `QTextEdit` for scrollable view
 
+### Mercurial Extensions
+
+* `hg preparerevset` and `prepared(name)` predicate allow us to render the
+  same query in different styles, and retrieve chunks form the large query.
+* `thgrevfields(form, style)` template function applies the pre-configured
+  template.
+
+Example:
+
+~~~~
+# execute query, count items, and save it as "cslist0"
+$ hg preparerevset cslist0 -r 'outgoing()' --count
+# retrieve the first 20 items and the last for "prune" dialog in "list" style
+$ hg log -r 'limit(prepared(cslist0), 20)' -T '{thgrevfields("prune", "list")}'
+$ hg log -r 'last(prepared(cslist0))' -T '{thgrevfields("prune", "list")}'
+~~~~
+
 ## Unresolved Issues
 
 * How to handle unapplied MQ patches?
@@ -61,7 +78,6 @@ The following widgets can render HTML subset by using `QTextDocument`:
 * Hyperlinks
 * Stylesheets
 * Cache
-* How to fetch raw values at once?
 ...
 
 ## Issues to Consider

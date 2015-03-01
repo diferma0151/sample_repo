@@ -19,17 +19,20 @@
 Templates can be configured by user.
 
 ~~~~{.ini}
-# visible fields can be selected per widget
+# visible fields can be selected per form
 [thg-revfields]
-# RevDetailsWidget has quiet (single-line) and verbose (expanded) styles
-revdetails.quiet = rev summary
-revdetails.verbose = cset branch obsolete close user ... git
+# form[.style] = fields
+# RevDetailsWidget has default (expanded) and compact (single-line) styles
+revdetails = cset branch obsolete close user ... git
+revdetails.compact = rev summary
 # '|' means '\n' for quiet (label) style, '<p>' for verbose (panel) style?
 update = rev branch tags | summary
 
 # templates for widgets that use QTextDocument
 [thg-revtemplates]
+# field[.style] = template; or field.label = label
 rev = {rev} (<tt>{node|short}</tt>)
+rev.compact = {rev}
 tags = {tags % '<span class="tag"> {tag|escape} </span> '}
 summary = {desc|firstline}
 
@@ -74,7 +77,6 @@ $ hg log -r 'last(prepared(cslist0))' -T '{thgrevfields("prune", "list")}'
 ## Unresolved Issues
 
 * How to handle unapplied MQ patches?
-* Should templates be able to be configured per widget?
 * Hyperlinks
 * Stylesheets
 * Cache

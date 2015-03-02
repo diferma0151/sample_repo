@@ -1,36 +1,15 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.3 =
+= Changes since 3.3.2 =
 
 Note: [[https://bitbucket.org/remleduff/win32lfn/issue/11/|win32lfn should be updated]]
 to use Mercurial/TortoiseHg 3.3.
 
 == Bug Fixes ==
 
-* archive, clone, init, rename: prettify command-line string for display
-  (fixes #4051)
-* cmdserver: handle unicode error in command gracefully (fixes #3246, #3453)
-* cmdserver: recreate QProcess if remainder of last request is in write buffer
-* guifork: do not fork() more than once on posix by reentering to dispatch()
-* merge, rename, settings: correct typos in help and warning messages
-  (fixes #4047, #4049, #4050)
-* openshell: do not parse command string by shlex on Windows (fixes #4044)
-* qscilib: re-enable custom handling of input method events on QScintilla 2.8
-* repofilter: take query not convertible to localstr as revset (fixes #3664)
-* repomodel: prioritize latest tags by date and distance (fixes #4048)
-* resolve: preserve selection on refresh instead of selecting all (refs #2615)
-* resolve: disable actions while command is running (fixes #2615)
-* sync: do not trust incoming bundle, just re-pull (fixes #2497, #3582, #3847)
-
 == Improvements ==
 
 == Installer ==
-
-* Pygments 2.0.2 (fixes #2407, #4028 by any chance)
-* Python 2.7.9 (fixes #3938)
-* QScintilla 2.8.4 (fixes #3573)
-* Qt 4.8.6 (fixes #2300, #4006)
-* libsvn 1.7.5 (fixes #3745)
 
 ----
 

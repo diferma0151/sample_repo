@@ -9,11 +9,14 @@ to use Mercurial/TortoiseHg 3.3.
 
 * annotate: do not instantiate filectx per line (fixes #4071)
 * doc, version: bump copyright year (fixes #4066)
+* repofilter: always request to unapply revset by clear button (fixes #4073)
 * repotab: catch Abort on repository lookup as well (fixes #4069)
 
 == Improvements ==
 
 == Installer ==
+
+* hgcr-gui (fixes #4065)
 
 ----
 

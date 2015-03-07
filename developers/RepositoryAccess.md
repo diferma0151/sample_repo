@@ -213,6 +213,8 @@ long-term:
 * reload root ui object when global setting is changed?
 * how to call workbench from sub dialogs?
 * drop `thgrepository` extension
+* don't propagate data output by slow signal (always send data through
+  `QIODevice` interface)
 * command server over ssh link
 * show command to be executed in log widget instead of separate "Hg command"
   text box

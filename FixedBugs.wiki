@@ -25,6 +25,9 @@ to use Mercurial/TortoiseHg 3.3.
 OpenSSL 1.0.1g:
 * #3702 - Client Heartbleed vulnerability (possibly with libsvn_ra-1.dll)
 
+docdiff (TortoiseSVN):
+* #3404 - docdiff always fails with "Error comparing X and Y"
+
 ----
 
 Random builds of the stable branch can be found at

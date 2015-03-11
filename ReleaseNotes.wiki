@@ -47,6 +47,7 @@ TortoiseHg 3.3.2 is a regularly scheduled bug-fix release, and an overhaul of th
 * QScintilla 2.8.4 (fixes #3573)
 * Qt 4.8.6 (fixes #2300, #4006)
 * libsvn 1.7.5 (fixes #3745)
+  (EDIT: 64bit installer still bundles libsvn 1.6.x)
 
 ----
 

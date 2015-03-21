@@ -10,6 +10,7 @@ to use Mercurial/TortoiseHg 3.3.
 * annotate: do not instantiate filectx per line (fixes #4071)
 * copypatch, export: pass --rev option in compact form (fixes #4081)
 * doc, version: bump copyright year (fixes #4066)
+* filectxactions: avoid crash by opening log of new file (fixes #4096)
 * guess: sort added/removed files by path for stable result (fixes #4079)
 * repofilter: always request to unapply revset by clear button (fixes #4073)
 * repotab: catch Abort on repository lookup as well (fixes #4069)

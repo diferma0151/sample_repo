@@ -85,7 +85,7 @@ In Mercurial 3.4 (unreleased):
 
 ### TODOs
 
-short-term:
+short-term (in 3.5?):
 
 1. implement prepared revset extension (WIP)
 1. implement template extension (WIP)

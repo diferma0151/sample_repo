@@ -37,8 +37,10 @@ tags = {tags % '<span class="tag"> {tag|escape} </span> '}
 summary = {desc|firstline}
 
 # custom field can be added by user
-git.label = Git
 git = {gitnode}
+
+[thg-revlabels]
+git = Git
 
 # templates for log model (repomodel)
 [thg-logtemplates]

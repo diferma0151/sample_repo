@@ -76,7 +76,30 @@ $ hg log -r 'limit(prepared(cslist0), 20)' -T '{thgrevfields("prune", "list")}'
 $ hg log -r 'last(prepared(cslist0))' -T '{thgrevfields("prune", "list")}'
 ~~~~
 
-## Unresolved Issues
+## Change History
+
+In Mercurial 3.4 (unreleased):
+
+* fix `{get(extras, key)}`
+* fix `{function()|filter}`
+
+### TODOs
+
+short-term:
+
+1. implement prepared revset extension (WIP)
+1. implement template extension (WIP)
+1. implement APIs for asynchronous query (WIP)
+1. `{limit(set, n, offset)}` revset?
+1. add incremental fetcher?
+
+long-term:
+
+* add replacement for `csinfo`, `cslist` and `revpanel`
+* rewrite `repomodel`
+...
+
+unresolved issues:
 
 * How to handle unapplied MQ patches?
 * Hyperlinks

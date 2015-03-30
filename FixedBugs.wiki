@@ -16,6 +16,7 @@ to use Mercurial/TortoiseHg 3.3.
 * guess: sort added/removed files by path for stable result (fixes #4079)
 * repofilter: always request to unapply revset by clear button (fixes #4073)
 * repotab: catch Abort on repository lookup as well (fixes #4069)
+* repowidget: stop the description column from shrinking on restart (refs #3882)
 
 == Improvements ==
 

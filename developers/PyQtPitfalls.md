@@ -267,3 +267,9 @@ And unhandled `QStatusTipEvent` is not propagated to the parent if it isn't a wi
 Workaround: own `QAction` by `QWidget`
 
 See https://bugreports.qt-project.org/browse/QTBUG-16114
+
+### QWIDGETSIZE_MAX is not defined
+
+Workaround: use `qtlib.QWIDGETSIZE_MAX`
+
+See http://thread.gmane.org/gmane.comp.python.pyqt-pykde/28353/focus=28357

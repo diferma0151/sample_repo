@@ -19,6 +19,30 @@ revision number of TortoiseHg as Mercurial for any Mercurial version later than 
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
+= TortoiseHg 3.3.3 =
+
+TortoiseHg 3.3.2 is a regularly scheduled bug-fix release. The evolve extension was added to the Windows installer packages in this release.
+
+== Bug Fixes ==
+
+* annotate: do not instantiate filectx per line (fixes #4071)
+* copypatch, export: pass --rev option in compact form (fixes #4081)
+* doc, version: bump copyright year (fixes #4066)
+* filectxactions: avoid crash by opening log of new file (fixes #4096)
+* filedata: calculate status from given base revision if not known
+* filedata: copy subrepo attributes when switching base revisions (fixes #4102)
+* guess: sort added/removed files by path for stable result (fixes #4079)
+* repofilter: always request to unapply revset by clear button (fixes #4073)
+* repotab: catch Abort on repository lookup as well (fixes #4069)
+* repowidget: stop the description column from shrinking on restart (refs #3882)
+
+== Installer ==
+
+* Evolve extension is now bundled (latest stable tag: 5.1.2)
+* dulwich bumped to 0.9.9 (0.10.0 is broken on Windows)
+* hgkeyring bumped to 0.6.7
+
+----
 = TortoiseHg 3.3.2 =
 
 TortoiseHg 3.3.2 is a regularly scheduled bug-fix release, and an overhaul of the installer build system. Many components were upgraded in this release.

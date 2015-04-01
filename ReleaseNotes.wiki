@@ -41,6 +41,7 @@ TortoiseHg 3.3.2 is a regularly scheduled bug-fix release. The evolve extension 
 * Evolve extension is now bundled (latest stable tag: 5.1.2)
 * dulwich bumped to 0.9.9 (0.10.0 is broken on Windows)
 * hgkeyring bumped to 0.6.7
+* hgcr-gui (fixes #4065)
 
 ----
 = TortoiseHg 3.3.2 =

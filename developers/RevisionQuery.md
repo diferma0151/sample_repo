@@ -111,6 +111,8 @@ unresolved issues:
 
 TODO
 
+* \#4099 - Updated dynamic tags not updating in GUI (hg-git)
+
 ## See Also
 
 * [Qt: Supported HTML Subset](http://qt-project.org/doc/qt-4.8/richtext-html-subset.html)

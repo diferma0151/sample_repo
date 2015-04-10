@@ -25,6 +25,9 @@ docdiff (TortoiseSVN):
 libsvn:
 * #3745 - error 175009 - libsvn 1.6 sometimes fails to talk to svn 1.8 server
 
+QScintilla (not fixed yet):
+* #4112 - Blinking cursor on inactive text fields
+
 ----
 
 Random builds of the stable branch can be found at

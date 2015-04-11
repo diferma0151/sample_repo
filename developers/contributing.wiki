@@ -4,9 +4,8 @@ If your changes are simple enough to be contained within a few changesets, it
 is preferable for patches to be sent to the
 [[http://groups.google.com/group/thg-dev/about?hl=en|thg-devel]] mailing list.
 This expedites the review of the patches, and allows other developers to
-comment directly on your changes.  If possible, please //also// attach your
-patches. This makes importing patches easier for developers that rely on
-webmail service.
+comment directly on your changes.  If possible, please //don't// attach your
+patches. Developers have to strip them manually to import from maildir. 
 
 It is typically easier for everyone (including yourself) if you proceed as follows:
 * check in your fix locally, give it a meaningful commit message explaining what you are fixing, 

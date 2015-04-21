@@ -111,6 +111,7 @@ unresolved issues:
 
 TODO
 
+* \#2038 - Local Time log column should be MY local time
 * \#4099 - Updated dynamic tags not updating in GUI (hg-git)
 
 ## See Also

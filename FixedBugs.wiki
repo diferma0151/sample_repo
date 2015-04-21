@@ -4,7 +4,6 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 * [[https://bitbucket.org/remleduff/win32lfn/issue/11/|win32lfn should be updated]]
   to use Mercurial/TortoiseHg 3.3.
-* The bundled [[/tortoisehg/thg/issue/4107/|hg-git extension has a problem with Mercurial 3.3.3]].
 
 == Bug Fixes ==
 

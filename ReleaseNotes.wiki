@@ -21,7 +21,9 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 ----
 = TortoiseHg 3.3.3 =
 
-TortoiseHg 3.3.3 is a regularly scheduled bug-fix release. The evolve extension was added to the Windows installer packages in this release.
+TortoiseHg 3.3.3 is a regularly scheduled bug-fix release. The evolve extension
+was added to the Windows installer packages in this release.
+The bundled hg-git extension has a problem with Mercurial 3.3.3 (#4107).
 
 == Bug Fixes ==
 

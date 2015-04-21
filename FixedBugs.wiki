@@ -4,9 +4,31 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 == Bug Fixes ==
 
+* bookmark, matching, sign, tag: allow to resize horizontally while having
+  fixed height (refs #4043)
+* bookmark, tag, update: avoid combo box taking too much space (fixes #4043)
+* commit: prompt for new largefiles first to skip extra confirmation
+  (fixes #1954)
+* filedata: rewrite copy detection by using copies.pathcopies() (fixes #3949)
+* merge: discard p2 changes without using debugsetparents (fixes #3856)
+* repowidget: refresh commit tab after rollback or custom hg command
+  (fixes #3981)
+* sync: get host fingerprint asynchronously by extension command (fixes #4114)
+
 == Improvements ==
 
+* bookmark: add simple bookmark dialog to sync screen (fixes #322)
+* filectxactions: enable shortcuts only if the owner or its children has focus
+* filectxactions: add shortcut to delete unversioned file (closes #3681)
+* fileview, status: enable annotate mode for working directory
+* rebase: mention command line options in checkbox labels
+* sync: add "unbundle" to "repository" menu (fixes #4067)
+* workbench: add default merge action to main menu and toolbar (closes #222)
+
 == Installer ==
+
+* evict libsvn from the binary package - it will be a 2nd download
+* ssl: use the system's CA store
 
 ----
 

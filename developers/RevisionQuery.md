@@ -111,6 +111,8 @@ unresolved issues:
 
 TODO
 
+* \#532 - Long operations block UI (Qt)
+* \#580 - Sorting order in workbench
 * \#2038 - Local Time log column should be MY local time
 * \#4099 - Updated dynamic tags not updating in GUI (hg-git)
 

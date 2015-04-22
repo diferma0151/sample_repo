@@ -11,8 +11,10 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
   (fixes #1954)
 * filedata: rewrite copy detection by using copies.pathcopies() (fixes #3949)
 * merge: discard p2 changes without using debugsetparents (fixes #3856)
+* repoview: ignore corrupted column_widths saved in QSettings (fixes #1456)
 * repowidget: refresh commit tab after rollback or custom hg command
   (fixes #3981)
+* revset: set appropriate size policy to status bar of query dialog (fixes #834)
 * sync: get host fingerprint asynchronously by extension command (fixes #4114)
 
 == Improvements ==

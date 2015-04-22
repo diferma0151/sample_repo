@@ -90,7 +90,8 @@ short-term (in 3.5?):
 1. implement prepared revset extension (WIP)
 1. implement template extension (WIP)
 1. implement APIs for asynchronous query (WIP)
-1. `{limit(set, n, offset)}` revset?
+1. `limit(set, n, offset)` revset?
+1. `{utcoffset(date, offset)}` template?
 1. add incremental fetcher?
 
 long-term:

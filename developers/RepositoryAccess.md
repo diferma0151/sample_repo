@@ -238,6 +238,7 @@ thread/process:
 repomodel:
 
 * \#532 - Long operations block UI (Qt)
+* \#1738 - Add option to hide close branch commit
 * \#2038 - Local Time log column should be MY local time
 * \#2264 - Allow to export the log view content to file/clipboard
 * \#4033 - graph: highlight ancestors of selected revision

@@ -116,7 +116,11 @@ repomodel:
 
 * \#532 - Long operations block UI (Qt)
 * \#580 - Sorting order in workbench
+* \#1991 - Highlight parents of merge
 * \#2038 - Local Time log column should be MY local time
+* \#2210 - Workbench, reversion list get slow when showing 'Changes' column
+  for large repo
+* \#4033 - graph: highlight ancestors of selected revision
 * \#4099 - Updated dynamic tags not updating in GUI (hg-git)
 
 revdetails/revpanel:

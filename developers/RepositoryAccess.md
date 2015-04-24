@@ -239,9 +239,11 @@ repomodel:
 
 * \#532 - Long operations block UI (Qt)
 * \#1738 - Add option to hide close branch commit
+* \#1991 - Highlight parents of merge
 * \#2038 - Local Time log column should be MY local time
 * \#2264 - Allow to export the log view content to file/clipboard
 * \#4033 - graph: highlight ancestors of selected revision
+* \#4099 - Updated dynamic tags not updating in GUI (hg-git)
 ...
 
 auto-refresh working status:
@@ -259,12 +261,13 @@ child to workbench:
 
 * \#2354 - "Folder History" in revision browser does nothing
 
-bulk push/pull:
+bulk push/pull and polling:
 
 * \#456 - Allow multiple push/pull in Hg Workbench
 * \#799 - Workbench: Check each repo for new incoming changelists
 * \#1348 - Mark repositories with uncommited/unpushed changes in repository
   registry
+* \#1951 - Add to the toolbar visible number of incoming and outgoing revisions
 
 ## See Also
 

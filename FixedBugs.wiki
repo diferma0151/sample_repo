@@ -11,6 +11,8 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
   (fixes #1954)
 * filedata: rewrite copy detection by using copies.pathcopies() (fixes #3949)
 * merge: discard p2 changes without using debugsetparents (fixes #3856)
+* quickop: do not calculate status unnecessarily in GUI process (refs #1828)
+* quickop: catch known exceptions raised from repo.status() (fixes #1828)
 * repoview: ignore corrupted column_widths saved in QSettings (fixes #1456)
 * repowidget: refresh commit tab after rollback or custom hg command
   (fixes #3981)
@@ -20,6 +22,7 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 == Improvements ==
 
 * bookmark: add simple bookmark dialog to sync screen (fixes #322)
+* commit: do not overwrite username if ui.askusername is set (closes #4064)
 * filectxactions: enable shortcuts only if the owner or its children has focus
 * filectxactions: add shortcut to delete unversioned file (closes #3681)
 * fileview, status: enable annotate mode for working directory
@@ -30,6 +33,8 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 == Installer ==
 
 * evict libsvn from the binary package - it will be a 2nd download
+* move Qt and other DLLS into bin/ folder in Windows installers
+* remove PDF file from Windows installers
 * ssl: use the system's CA store
 
 ----

@@ -11,8 +11,11 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
   (fixes #1954)
 * filedata: rewrite copy detection by using copies.pathcopies() (fixes #3949)
 * merge: discard p2 changes without using debugsetparents (fixes #3856)
+* mergetools: add $output to meld to change which file will be saved
+  (fixes #4134)
 * quickop: do not calculate status unnecessarily in GUI process (refs #1828)
 * quickop: catch known exceptions raised from repo.status() (fixes #1828)
+* repomodel: clear cache of latest tags on repository change (fixes #4137)
 * repoview: ignore corrupted column_widths saved in QSettings (fixes #1456)
 * repowidget: refresh commit tab after rollback or custom hg command
   (fixes #3981)

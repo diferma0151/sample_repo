@@ -244,6 +244,7 @@ repomodel:
 * \#2264 - Allow to export the log view content to file/clipboard
 * \#4033 - graph: highlight ancestors of selected revision
 * \#4099 - Updated dynamic tags not updating in GUI (hg-git)
+* \#4139 - Crash when stripping last changeset of branch included in filter
 ...
 
 auto-refresh working status:

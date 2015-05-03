@@ -128,6 +128,7 @@ revdetails/revpanel:
 * \#1035 - thg file log full changeset description
 * \#1382 - Log message viewer needs word-wrap
 * \#1620 - Issue Tracking Named Branch?
+* \#2642 - Show graft/transplant branch in changeset details panel
 
 ## See Also
 

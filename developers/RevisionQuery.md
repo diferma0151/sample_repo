@@ -78,7 +78,7 @@ $ hg log -r 'last(prepared(cslist0))' -T '{thgrevfields("prune", "list")}'
 
 ## Change History
 
-In Mercurial 3.4 (unreleased):
+In Mercurial 3.4:
 
 * fix `{get(extras, key)}`
 * fix `{function()|filter}`

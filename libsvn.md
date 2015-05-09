@@ -1,8 +1,10 @@
-= Thg 3.3.3 and earlier =
+# Subversion bindings for Python 2.7
+
+## Thg 3.3.3 and earlier
 
 In all versions up to and including THG 3.3.3, the python 2.7 SWIG bindings for subversion were packaged inside the TortoiseHg Windows installers.  Users could enable the convert extension or hgsubversion extensions and they would just work because a full copy of subversion and its bindings were installed together with TortoiseHg.
 
-= Thg 3.4 and later =
+## Thg 3.4 and later
 
 Beginning with release 3.4 of TortoiseHg, the subversion libraries and the Python 2.7 SWIG bindings for them have been removed from the TortoiseHg packages.  This was done primarily because of security problems in the subversion DLLs that we as TortoiseHg maintainers have no control over, but also to avoid having to package a second complete revision control system (svn) in every copy of TortoiseHg (and the major headaches these bindings have become).
 

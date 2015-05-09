@@ -10,8 +10,8 @@ Windows builds of the Python 2.7 SWIG bindings for subversion are not easy to co
 
 We offer for download the python SWIG bindings that we were previously including in our binary installers, they are available here:
 
-# https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x86.zip
-# https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x64.zip
+* https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x86.zip
+* https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x64.zip
 
 If you have a 64bit Operating System, and thus installed the 64bit version of TortoiseHg, then you need the 64bit subversion bindings in svn_1.7.5_py27_x64.zip. Otherwise you need the x86 version.  If you can find functional python bindings for more recent versions of subversion, then great (please add a link to them here).
 

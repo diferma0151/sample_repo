@@ -235,6 +235,10 @@ thread/process:
 * \#1507 - Stop button for pull that hangs
 * \#3381 - Locked folders/files on Windows (again)
 
+manifestmodel:
+
+* \#3226 - IOError while trying to commit
+
 repomodel:
 
 * \#532 - Long operations block UI (Qt)

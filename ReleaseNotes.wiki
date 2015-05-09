@@ -61,6 +61,7 @@ TortoiseHg 3.4 is a regularly scheduled feature release. The Windows packages no
 * move Qt and other DLLS into bin/ folder in Windows installers
 * remove PDF file from Windows installers
 * ssl: use the system's CA store
+* dulwich 0.10.1+, hgsubversion 1.8.1, evolve 5.1.4, keyring 5.0
 
 ----
 

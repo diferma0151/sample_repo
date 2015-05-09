@@ -2,6 +2,8 @@
 
 //Do not "Create page" to report bugs. Use [[/tortoisehg/thg/issues|issue tracker]].//
 
+Note: the Python bindings for subversion were deliberately removed from the TortoiseHg packages in release 3.4 for security and packaging reasons. They must be downloaded and setup manually if you need TortoiseHg to interact with subversion repositories.  See [[libsvn]]
+
 == Make sure the bug hasn't already been reported ==
 
 The first step should be to consult the list of **[[FixedBugs]]** that are already fixed on the tip of the stable branch, and are likely already in the [[/tortoisehg/thg-winbuild/downloads|nightly builds]].

@@ -57,7 +57,7 @@ TortoiseHg 3.4 is a regularly scheduled feature release. The Windows packages no
 
 == Installer ==
 
-* libsvn evicted from the binary packages - it will be a 2nd download
+* [[libsvn]] evicted from the binary packages - it will be a 2nd download
 * move Qt and other DLLS into bin/ folder in Windows installers
 * remove PDF file from Windows installers
 * ssl: use the system's CA store

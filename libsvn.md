@@ -8,6 +8,8 @@ In all versions up to and including THG 3.3.3, the python 2.7 SWIG bindings for 
 
 Beginning with release 3.4 of TortoiseHg, the subversion libraries and the Python 2.7 SWIG bindings for them have been removed from the TortoiseHg packages.  This was done primarily because of security problems in the subversion DLLs that we as TortoiseHg maintainers have no control over, but also to avoid having to package a second complete revision control system (svn) in every copy of TortoiseHg (and the major headaches these bindings have become).
 
+This is inconsequential for most TortoiseHg users, the subversion bindings are only required when using 'hg convert' to convert a subversion repository, or using the hgsubversion extension to interact with a subversion server. If you do neither of these things, then you can just enjoy the 3MB smaller packages. If you do need either of those two features, continue reading.
+
 Windows builds of the Python 2.7 SWIG bindings for subversion are not easy to come by. 32-bit builds for relatively recent versions of subversion can be found at http://alagazam.net/.  64-bit builds are much less common (if you know of any, please add a link here. Anyone can edit this page).
 
 We offer for download the python SWIG bindings that we were previously including in our binary installers, they are available here:
@@ -15,9 +17,9 @@ We offer for download the python SWIG bindings that we were previously including
 * https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x86.zip
 * https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x64.zip
 
-If you have a 64bit Operating System, and thus installed the 64bit version of TortoiseHg, then you need the 64bit subversion bindings in svn_1.7.5_py27_x64.zip. Otherwise you need the x86 version.  If you can find functional python bindings for more recent versions of subversion, then great (please add a link to them here).
+If you have a 64bit operating system, and thus installed the 64bit version of TortoiseHg, then you need the 64bit subversion bindings in svn_1.7.5_py27_x64.zip. Otherwise you need the x86 version.  If you can find functional python bindings for more recent versions of subversion, then great (please add a link to them here).
 
-Each zip file contains two folders, libsvn/ and svn/. These two folders are typically copied into your natively installed Python site-packages folder, but since TortoiseHg is packaged as a 'frozen' Python environment there is no site-packages folder but there is a simple workaround for this. One can use a small Mercurial extension to add any arbitrary folder into the Python system path.
+Each zip file contains two folders, libsvn/ and svn/. These two folders are typically copied into your natively installed Python site-packages folder, but since TortoiseHg is packaged as a 'frozen' Python environment there is no site-packages folder but there is a simple workaround for this. One can use a small Mercurial extension to add any arbitrary folder into the Python frozen system path.
 
 The complete setup steps are as follows:
 
@@ -38,4 +40,4 @@ svnbindings = C:\stuff\insertpath.py
 
 If your mercurial.ini file already has an [extensions] section, you can simply add this new extension to that section (order is unimportant).
 
-Note that this is a one-time setup for your computer. Upgrading TortoiseHg will not affect Mercurial.ini or these Python bindings. If you uninstall TortoiseHg you will probably also want to remove these subversion bindings.
+Note that this is a one-time setup for your computer. Upgrading TortoiseHg will not affect Mercurial.ini or these Python bindings. If you uninstall TortoiseHg you will probably also want to remove these subversion bindings. Also note that this general method of inserting the subversion bindings into the frozen system path will also work for the Mercurial MSI packages, if you happen to use those instead of the TortoiseHg installers.

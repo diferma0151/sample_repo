@@ -22,14 +22,8 @@ Note: the Python bindings for subversion were deliberately removed from the Tort
 
 == Bug Fixes in Third-party Modules ==
 
-OpenSSL 1.0.1g:
-* #3702 - Client Heartbleed vulnerability (possibly with libsvn_ra-1.dll)
-
 docdiff (TortoiseSVN):
 * #3404 - docdiff always fails with "Error comparing X and Y"
-
-libsvn:
-* #3745 - error 175009 - libsvn 1.6 sometimes fails to talk to svn 1.8 server
 
 QScintilla 2.9:
 * #4112 - Blinking cursor on inactive text fields

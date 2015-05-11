@@ -6,7 +6,17 @@ Note: the Python bindings for subversion were deliberately removed from the Tort
 
 == Bugs Fixes ==
 
+* hglib: prevent loading zeroconf extension in GUI process (fixes #3289)
+
+== Improvements ==
+
+* filectxactions: add explore local option to file context menu (fixes #3442)
+
 == Installer ==
+
+* contrib/hg, thg: avoid crash by missing PATH environment
+* thg: insert bin folder into sys.path for pywintypes (fixes #4153)
+* wix: move kdiff3.exe into bin/ folder (fixes #4151)
 
 ----
 

@@ -10,8 +10,6 @@ Beginning with release 3.4 of TortoiseHg, the subversion libraries and the Pytho
 
 This is inconsequential for most TortoiseHg users, the subversion bindings are only required when using 'hg convert' to convert a subversion repository, or using the hgsubversion extension to interact with a subversion server. If you do neither of these things, then you can just enjoy the 3MB smaller packages. If you do need either of those two features, continue reading.
 
-Windows builds of the Python 2.7 SWIG bindings for subversion are not easy to come by. 32-bit builds for relatively recent versions of subversion can be found at http://alagazam.net/.  64-bit builds are much less common (if you know of any, please add a link here. Anyone can edit this page).
-
 We offer for download the python SWIG bindings that we were previously including in our binary installers, they are available here:
 
 * https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x86.zip
@@ -41,3 +39,5 @@ svnbindings = C:\stuff\insertpath.py
 If your mercurial.ini file already has an [extensions] section, you can simply add this new extension to that section (order is unimportant).
 
 Note that this is a one-time setup for your computer. Upgrading TortoiseHg will not affect Mercurial.ini or these Python bindings. If you uninstall TortoiseHg you will probably also want to remove these subversion bindings. Also note that this general method of inserting the subversion bindings into the frozen system path will also work for the Mercurial MSI packages, if you happen to use those instead of the TortoiseHg installers.
+
+Also note that you do *not* have to use the subversion bindings that we were packaging, you can use any version of them that you like, but Windows builds of the Python 2.7 SWIG bindings for subversion are not easy to come by. 32-bit builds for relatively recent versions of subversion can be found at http://alagazam.net/.  64-bit builds are much less common (if you know of any, please add a link here. Anyone can edit this page).

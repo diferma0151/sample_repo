@@ -15,9 +15,7 @@ We offer for download the python SWIG bindings that we were previously including
 * https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x86.zip
 * https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x64.zip
 
-If you have a 64bit operating system, and thus installed the 64bit version of TortoiseHg, then you need the 64bit subversion bindings in svn_1.7.5_py27_x64.zip. Otherwise you need the x86 version.  If you can find functional python bindings for more recent versions of subversion, then great (please add a link to them here).
-
-Each zip file contains two folders, libsvn/ and svn/. These two folders are typically copied into your natively installed Python site-packages folder, but since TortoiseHg is packaged as a 'frozen' Python environment there is no site-packages folder but there is a simple workaround for this. One can use a small Mercurial extension to add any arbitrary folder into the Python frozen system path.
+If you have a 64bit operating system, and thus installed the 64bit version of TortoiseHg, then you need the 64bit subversion bindings in svn_1.7.5_py27_x64.zip. Otherwise you need the x86 version. Each zip file contains two folders, libsvn/ and svn/.
 
 The complete setup steps are as follows:
 

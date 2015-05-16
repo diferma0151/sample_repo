@@ -15,6 +15,7 @@ Note: the Python bindings for subversion were deliberately removed from the Tort
 == Installer ==
 
 * contrib/hg, thg: avoid crash by missing PATH environment
+* overlay: insert bin folder to PATH and sys.path for pywintypes (fixes #4158)
 * thg: insert bin folder into sys.path for pywintypes (fixes #4153)
 * wix: move kdiff3.exe into bin/ folder (fixes #4151)
 

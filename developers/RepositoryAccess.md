@@ -249,6 +249,7 @@ repomodel:
 * \#4033 - graph: highlight ancestors of selected revision
 * \#4099 - Updated dynamic tags not updating in GUI (hg-git)
 * \#4139 - Crash when stripping last changeset of branch included in filter
+* \#4173 - fetch revset results per batch size
 ...
 
 auto-refresh working status:

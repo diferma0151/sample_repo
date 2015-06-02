@@ -1,7 +1,5 @@
 [[http://tortoisehg.bitbucket.org/|{{http://tortoisehg.bitbucket.org/css/img/logo.png|TortoiseHg Website}}]]
 
-[TOC]
-
 TortoiseHg is a Windows shell extension and a series of applications for
 the [[http://mercurial.selenic.com|Mercurial]] distributed
 revision control system. It also includes a Gnome/Nautilus extension and a CLI

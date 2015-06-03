@@ -20,18 +20,6 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
-= TortoiseHg 3.4+7 =
-
-TortoiseHg 3.4+7 is a respin of the 3.4 Windows packages with fixes for multiple problems exposed
-by the reorganization of the target install folder.
-
-* contrib/hg, thg: avoid crash by missing PATH environment
-* overlay: insert bin folder to PATH and sys.path for pywintypes (fixes #4158)
-* thg: insert bin folder into sys.path for pywintypes (fixes #4153)
-* wix: move kdiff3.exe into bin/ folder (fixes #4151)
-
-----
-
 = TortoiseHg 3.4.1 =
 
 TortoiseHg 3.4 is a regularly scheduled bugfix release. The Windows packages no longer include subversion SWIG bindings, see [[libsvn]].
@@ -45,6 +33,18 @@ TortoiseHg 3.4 is a regularly scheduled bugfix release. The Windows packages no 
 * filectxactions: add explore local option to file context menu (fixes #3442)
 
 == Installer ==
+
+* contrib/hg, thg: avoid crash by missing PATH environment
+* overlay: insert bin folder to PATH and sys.path for pywintypes (fixes #4158)
+* thg: insert bin folder into sys.path for pywintypes (fixes #4153)
+* wix: move kdiff3.exe into bin/ folder (fixes #4151)
+
+----
+
+= TortoiseHg 3.4+7 =
+
+TortoiseHg 3.4+7 is a respin of the 3.4 Windows packages with fixes for multiple problems exposed
+by the reorganization of the target install folder.
 
 * contrib/hg, thg: avoid crash by missing PATH environment
 * overlay: insert bin folder to PATH and sys.path for pywintypes (fixes #4158)

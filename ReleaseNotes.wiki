@@ -27,6 +27,8 @@ TortoiseHg 3.4 is a regularly scheduled bugfix release. The Windows packages no 
 == Bug Fixes ==
 
 * hglib: prevent loading zeroconf extension in GUI process (fixes #3289)
+* merge: suppress changed/deleted prompt when discarding p2 changes (refs #3856)
+* workbench: avoid crash on sync bookmarks with no configured path (fixes #4166)
 
 == Improvements ==
 

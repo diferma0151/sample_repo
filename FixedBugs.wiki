@@ -10,12 +10,11 @@ Note: the Python bindings for subversion were deliberately removed from the Tort
 
 == Installer ==
 
+* update tsvn doc-diff scripts (fixes #3404)
+
 ----
 
 == Bug Fixes in Third-party Modules ==
-
-docdiff (TortoiseSVN):
-* #3404 - docdiff always fails with "Error comparing X and Y"
 
 QScintilla 2.9:
 * #4112 - Blinking cursor on inactive text fields

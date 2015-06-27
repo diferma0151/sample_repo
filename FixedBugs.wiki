@@ -19,6 +19,9 @@ Note: the Python bindings for subversion were deliberately removed from the Tort
 QScintilla 2.9:
 * #4112 - Blinking cursor on inactive text fields
 
+projrc (not yet fixed in upstream):
+* #4207 - projrc extension incompatible with Mercurial > 3.2
+
 ----
 
 Random builds of the stable branch can be found at

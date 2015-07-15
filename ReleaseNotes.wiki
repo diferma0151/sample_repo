@@ -20,9 +20,22 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.4.2 =
+
+TortoiseHg 3.4.2 is a regularly scheduled bugfix release. The Windows packages no longer include subversion SWIG bindings, see [[libsvn]].
+
+== Bug Fixes ==
+
+* settings: have filename edit accept focus by clicking (fixes #4192)
+* update docdiff scripts
+* thgstatus: fix typo in an option description
+* lighthg: use 'sys.argv' instead of undefined 'argv'
+
+----
+
 = TortoiseHg 3.4.1 =
 
-TortoiseHg 3.4 is a regularly scheduled bugfix release. The Windows packages no longer include subversion SWIG bindings, see [[libsvn]].
+TortoiseHg 3.4.1 is a regularly scheduled bugfix release. The Windows packages no longer include subversion SWIG bindings, see [[libsvn]].
 
 == Bug Fixes ==
 

@@ -2,15 +2,42 @@ See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
 = Changes since 3.4.1 =
 
-Note: the Python bindings for subversion were deliberately removed from the TortoiseHg packages in release 3.4 for security and packaging reasons. They must be downloaded and setup manually if you need TortoiseHg to interact with subversion repositories.  See [[libsvn]]
+Note: the Python bindings for subversion were deliberately removed from the
+TortoiseHg packages in release 3.4 for security and packaging reasons.
+They must be downloaded and setup manually if you need TortoiseHg to interact
+with subversion repositories.  See [[libsvn]]
+
+Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* filectxactions: open save dialog where repository file exists (fixes #3445)
+* grep: split inc/exc patterns on Comma instead of Comma+Space (fixes #836)
+* qtlib: drop support for old-style icon lookup
+* qtlib: load icons from filesystem unless frozen
+* reporegistry: look for parent repo in model on removeSubrepo (fixes #4214)
+* repowatcher: check mtime of bookmarks file (hg 3.5)
+* repowatcher: detect rollback of repository states (fixes #4193)
+* sync: sort bookmarks in target combobox alphabetically (fixes #4222)
+
 == Improvements ==
+
+* names: experimental support for displaying any name space
+* repoview: add an action to resize columns ignoring settings
+* repowidget: add menu to filter ancestors, by author or branch (closes #1455)
+* sync: allow to select user certificates by file dialog
+* sync: open the save dialog when Enter is pressed in URL field
+* workbench: add icon to Web Server menu item (closes #4211)
 
 == Installer ==
 
 * update tsvn doc-diff scripts (fixes #3404)
+* setup: build Qt resources only for py2exe target
+* setup: do not pack unnecessary files to icon resource
+* setup: generate config module according to installation options (refs #2178)
+* setup: generate list of .mo files from existing .po files (fixes #2431)
+* setup: move library.zip and dlls to lib/ directory (refs #4164)
+* setup: respect prefix where nautilus extension will be installed (fixes #2178)
 
 ----
 

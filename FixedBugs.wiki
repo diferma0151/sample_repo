@@ -13,6 +13,7 @@ Python 2.4 and 2.5 are no longer supported.
 
 * filectxactions: open save dialog where repository file exists (fixes #3445)
 * grep: split inc/exc patterns on Comma instead of Comma+Space (fixes #836)
+* lfprompt: suppress exception on getting size of inaccessible file (fixes #4240)
 * qtlib: drop support for old-style icon lookup
 * qtlib: load icons from filesystem unless frozen
 * reporegistry: look for parent repo in model on removeSubrepo (fixes #4214)

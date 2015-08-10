@@ -53,7 +53,7 @@ and a small number of bug-fix commits.
 * setup: do not pack unnecessary files to icon resource
 * setup: generate config module according to installation options (refs #2178)
 * setup: generate list of .mo files from existing .po files (fixes #2431)
-* setup: move library.zip and dlls to lib/ directory (refs #4164)
+* setup: move library.zip and dlls to lib/ directory (refs #4164, #4194)
 * setup: respect prefix where nautilus extension will be installed (fixes #2178)
 
 ----

@@ -122,6 +122,7 @@ repomodel:
   for large repo
 * \#4033 - graph: highlight ancestors of selected revision
 * \#4099 - Updated dynamic tags not updating in GUI (hg-git)
+* \#4259 - Latest tag distance in revision history
 
 revdetails/revpanel:
 

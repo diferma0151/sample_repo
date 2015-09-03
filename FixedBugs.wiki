@@ -11,9 +11,14 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* visdiff: preserve the executable bit after editing a file
+
 == Improvements ==
 
 == Installer ==
+
+* setup: exclude setup.py and distutils from py2exe build
+* wix: add mercurial/help/scripting.txt (fixes #4264)
 
 ----
 

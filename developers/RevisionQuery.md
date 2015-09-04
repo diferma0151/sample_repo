@@ -83,6 +83,10 @@ In Mercurial 3.4:
 * fix `{get(extras, key)}`
 * fix `{function()|filter}`
 
+In Mercurial 3.6 (unreleased):
+
+* `{localdate(date, "UTC")}` template function
+
 ### TODOs
 
 short-term (in Mercurial 3.6, TortoiseHg 3.7?):
@@ -91,7 +95,6 @@ short-term (in Mercurial 3.6, TortoiseHg 3.7?):
 1. implement template extension (WIP)
 1. implement APIs for asynchronous query (WIP)
 1. `limit(set, n, offset)` revset?
-1. `{utcoffset(date, offset)}` template?
 1. add incremental fetcher?
 
 long-term:

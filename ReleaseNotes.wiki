@@ -17,6 +17,20 @@ recent stable releases of TortoiseHG and Mercurial together. TortoiseHg synchron
 version numbers with Mercurial at release 3.0, so you should always use the same major
 revision number of TortoiseHg as Mercurial for any Mercurial version later than 3.0.
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
+----
+
+= TortoiseHg 3.5.1 =
+
+TortoiseHg 3.5.1 is a regularly scheduled bugfix release. 
+
+== Bugs Fixes ==
+
+* visdiff: preserve the executable bit after editing a file
+
+== Installer ==
+
+* setup: exclude setup.py and distutils from py2exe build
+* wix: add mercurial/help/scripting.txt (fixes #4264)
 
 ----
 

@@ -119,6 +119,10 @@ unresolved issues:
 
 TODO
 
+annotate:
+
+* \#4284 - KeyError on annotate
+
 repomodel:
 
 * \#532 - Long operations block UI (Qt)

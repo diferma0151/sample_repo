@@ -11,6 +11,9 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* repotab: do not close removed repo in the middle of switching tabs (fixes #4253)
+* settings: fix noop deletion of unnamed hook (fixes #4289)
+
 == Improvements ==
 
 == Installer ==

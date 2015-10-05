@@ -13,10 +13,13 @@ Python 2.4 and 2.5 are no longer supported.
 
 * repotab: do not close removed repo in the middle of switching tabs (fixes #4253)
 * settings: fix noop deletion of unnamed hook (fixes #4289)
+* shelve: create patchctx by MQ patch name if appropriate (fixes #4308)
 
 == Improvements ==
 
 == Installer ==
+
+* wix: resurrect kdiff3-noauto for bundled kdiff3 (fixes #4309)
 
 ----
 

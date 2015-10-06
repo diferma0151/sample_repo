@@ -19,6 +19,22 @@ revision number of TortoiseHg as Mercurial for any Mercurial version later than 
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 ----
 
+= TortoiseHg 3.5.2 =
+
+TortoiseHg 3.5.2 is a regularly scheduled bugfix release. 
+
+== Bug Fixes ==
+
+* repotab: do not close removed repo in the middle of switching tabs (fixes #4253)
+* settings: fix noop deletion of unnamed hook (fixes #4289)
+* shelve: create patchctx by MQ patch name if appropriate (fixes #4308)
+
+== Installer -==
+
+* wix: resurrect kdiff3-noauto for bundled kdiff3 (fixes #4309)
+
+----
+
 = TortoiseHg 3.5.1 =
 
 TortoiseHg 3.5.1 is a regularly scheduled bugfix release. 

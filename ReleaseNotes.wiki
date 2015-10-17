@@ -31,6 +31,7 @@ TortoiseHg 3.5.2 is a regularly scheduled bugfix release.
 
 == Installer ==
 
+* update projrc extension (fixes #4207)
 * wix: resurrect kdiff3-noauto for bundled kdiff3 (fixes #4309)
 
 ----

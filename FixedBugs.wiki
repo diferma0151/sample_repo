@@ -25,9 +25,6 @@ QScintilla 2.9:
 TortoisePlink:
 * #4234 - TortoisePlink should be replaced
 
-projrc:
-* #4207 - projrc extension incompatible with Mercurial > 3.2
-
 ----
 
 Random builds of the stable branch can be found at

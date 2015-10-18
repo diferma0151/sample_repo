@@ -22,6 +22,10 @@ Python 2.4 and 2.5 are no longer supported.
 QScintilla 2.9:
 * #4112 - Blinking cursor on inactive text fields
 
+QScintilla 2.9.1 (unreleased):
+* #4317 - Pressing numpad 'Del' while editing message may cause to ask to
+  delete unversioned files
+
 TortoisePlink:
 * #4234 - TortoisePlink should be replaced
 

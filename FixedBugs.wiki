@@ -11,7 +11,18 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* mq: suppress original error only if all rejects are resolved (fixes #4325)
+* osx: adjust icon sizes when add THG_RETINA environment variable is set to True
+* update: handle EnvironmentError in the same way as parameter error
+  (fixes #4283)
+
 == Improvements ==
+
+* compress, graft, rebase: provide "shelve" as cleanup option (closes #4252)
+* mqdock: add menu action to push/pop to the selected patch
+* mqdock: add menu and toolbar action to finish patches (closes #4296)
+* repowidget: change Filter by/Ancestors into Filter by/Ancestors and
+  Descendants
 
 == Installer ==
 

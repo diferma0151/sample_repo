@@ -13,6 +13,7 @@ Python 2.4 and 2.5 are no longer supported.
 
 * mq: suppress original error only if all rejects are resolved (fixes #4325)
 * osx: adjust icon sizes when add THG_RETINA environment variable is set to True
+* repowidget: allow bookmarking applied MQ patch (fixes #4336)
 * update: handle EnvironmentError in the same way as parameter error
   (fixes #4283)
 

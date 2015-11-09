@@ -19,6 +19,28 @@ revision number of TortoiseHg as Mercurial for any Mercurial version later than 
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 ----
 
+= TortoiseHg 3.6 =
+
+TortoiseHg 3.6 is a major feature release
+
+== Bugs Fixes ==
+
+* mq: suppress original error only if all rejects are resolved (fixes #4325)
+* osx: adjust icon sizes when add THG_RETINA environment variable is set to True
+* repowidget: allow bookmarking applied MQ patch (fixes #4336)
+* update: handle EnvironmentError in the same way as parameter error
+  (fixes #4283)
+
+== Improvements ==
+
+* compress, graft, rebase: provide "shelve" as cleanup option (closes #4252)
+* mqdock: add menu action to push/pop to the selected patch
+* mqdock: add menu and toolbar action to finish patches (closes #4296)
+* repowidget: change Filter by/Ancestors into Filter by/Ancestors and
+  Descendants
+
+----
+
 = TortoiseHg 3.5.2 =
 
 TortoiseHg 3.5.2 is a regularly scheduled bugfix release. 

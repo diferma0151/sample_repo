@@ -31,6 +31,24 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 3.2.4 =
+
+TortoiseHg 3.2.4 is a regularly scheduled bug fix release
+
+== Bug Fixes ==
+
+* commit: reload patch description if hash changes (fixes #3983)
+* filedialogs: forcibly add --hidden because hidden rev can appear in filelog
+* repofilter: another workaround to run selected query on Mac OS X
+* repowidget: fix indexes of unapplied patch actions to be enabled
+
+== Installer ==
+
+* Dulwich 0.9.8
+* mercurial_keyring 0.6.4
+
+----
+
 = TortoiseHg 3.2.3 =
 
 TortoiseHg 3.2.3 is an unscheduled bug fix release, intended to pick up

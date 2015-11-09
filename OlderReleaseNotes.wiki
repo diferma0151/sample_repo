@@ -31,6 +31,413 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 3.2.3 =
+
+TortoiseHg 3.2.3 is an unscheduled bug fix release, intended to pick up
+[[http://mercurial.selenic.com/wiki/WhatsNew#Mercurial_3.2.3_.282014-12-18.29|
+two security fixes in Mercurial 3.2.3]]. Users on Mac and Windows are encouraged
+to upgrade.
+
+TortoiseHg is itself unchanged in this release, the 3.2.2 tagged revision was re-tagged
+as 3.2.3, so the release only affects installer packages which bundle TortoiseHg and
+Mercurial together (Mac and Windows).
+
+----
+
+= TortoiseHg 3.2.2 =
+
+TortoiseHg 3.2.2 is a regularly scheduled bug fix release
+
+== Bug Fixes ==
+
+* chunks: preserve line ending of source file in diff view (fixes #3975)
+* console: do not confuse output with prompt input while idle (fixes #3982)
+* filectxactions: directly use boolean evaluation to check for empty
+  (fixes #3967)
+* init: getExistingDirectory without keyword argument (CentOs 6.3)
+* rejects: decode chunk lines as selected content encoding (fixes #3974)
+* rename, settings: work around memory corruption by QCompleter(parent)
+* repomodel: actually clear revset when repository is stripped
+* repomodel: update row count even if failed to reload graph (fixes #3971)
+* repowidget: evaluate dagrange set eagerly to fix crash on "Bundle DAG Range"
+
+== Improvements ==
+
+* mergetools: add 3-way dir diff to BeyondCompare 4 (closes #3976)
+
+----
+
+= TortoiseHg 3.2.1 =
+
+TortoiseHg 3.2.1 is a bug fix release, mostly intended to pick up hot-fixes in Mercurial 3.2.1
+
+== Bug Fixes ==
+
+* Avoid confusion with explorer extension dialog (#3968, #2339)
+* Improve documentation for terminal shell configuration (#3957)
+
+----
+
+= TortoiseHg 3.2 =
+
+TortoiseHg 3.2 is a regularly scheduled feature release
+
+Since 3.1, Mercurial commands are run in separate
+[[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
+It generally contributes to reliability, but if you have a faulty extension
+or an in-process Python hook, it can corrupt the communication channel between
+TortoiseHg and the command server.
+
+If you see an error message like "cmdserver: timeout while reading...",
+[[BugReport|please report it]] with the list of enabled third-party extensions
+and their versions.  Currently, reviewboard (#3841) and onsub (#3924) extensions
+are known to have this issue.
+
+== Bug Fixes ==
+
+* commit: do not reload patch description if parent is unchanged (fixes #3304)
+* qreorder: have drag-and-drop patches run extension command in worker process
+* paths: resolve root directory from frozen executable path
+* repowatcher: detect removal of repository files (fixes #3697)
+* repoagent: unify workingBranchChanged with repositoryChanged \\
+  (fixes #2572 - doesn't auto refresh when update and discard new branch)
+* repofilter: grab focus only if shown by user action (refs #3917)
+* repomodel: do not clear status message on filter option change (fixes #3887)
+* repomodel: restore current/selected indexes by model on reload
+  (refs #1913, fixes #3897)
+* repowatcher: check mtime of obsolescence markers (fixes #3913)
+* repowidget: do not overwrite browse history by revset result (refs #3832)
+* repowidget: do not re-create model on repository or revset changed
+* repowidget: move focus to history view when window gets visible (fixes #3917)
+* repowidget: remove unused _reload_rev and _last_series (fixes #3923)
+* repowidget: switch to commit tab if working-dir row is selected (fixes #1913)
+* sync: bypass bundle overlay on fetch just like pull \\
+  (fixes #3946 - fetch after check incoming fails)
+* sync: rebuild target bookmarks/branches only when changelog updated
+  (refs #3912)
+
+== Improvements ==
+
+* make output log a task tab, remove class LogDockWidget
+* cmdcore: propagate --config options to command process
+* debugruncommand: add command that runs hg command in dialog (closes #3934)
+* infobar: clear status message with slight delay if command finished
+  (refs #3308)
+* prune: add dialog that prunes the specified revs
+* qtapp: use wake-up fd to notice SIGINT on Unix
+* strip: add --keep checkbox (closes #1865)
+* workbench: add toolbar button that aborts any running commands
+
+graph style:
+
+* evolution: also fadeout obsolete changeset
+* repomodel: use lighter version of the usual color when a revision is hidden
+* repomodel: use red as the default text color for troubled changeset
+
+----
+
+= TortoiseHg 3.1.2 =
+
+TortoiseHg 3.1.2 is a regularly scheduled bug-fix release.
+
+Since 3.1, Mercurial commands are run in separate
+[[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
+It generally contributes to reliability, but if you have a faulty extension
+or an in-process Python hook, it can corrupt the communication channel between
+TortoiseHg and the command server.
+
+If you see an error message like "cmdserver: timeout while reading...",
+[[BugReport|please report it]] with the list of enabled third-party extensions
+and their versions.  Currently, reviewboard (#3841) and onsub (#3924) extensions
+are known to have this issue.
+
+== Bug Fixes ==
+
+* commit: correct boundary value to disable pygments parsing (refs #3910)
+* commit: do not show username prompt if ui.user is set (fixes #3901)
+* obsolete: look for markers even if intermediate revisions are hidden
+* repomodel, sync: fix performance regression on repo having many named
+  branches (fixes #3912)
+* tag: propagate --force option properly on remove
+
+----
+
+= TortoiseHg 3.1.1 =
+
+TortoiseHg 3.1.1 is a regularly scheduled bug-fix release.
+
+Since 3.1, Mercurial commands are run in separate
+[[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
+It generally contributes to reliability, but if you have a faulty extension
+or an in-process Python hook, it can corrupt the communication channel between
+TortoiseHg and the command server.
+
+If you see an error message like "cmdserver: timeout while reading...",
+[[BugReport|please report it]] with the list of enabled third-party extensions
+and their versions.  Currently, reviewboard extension is known to have this
+issue. #3841
+
+== Bug Fixes ==
+
+* annotate: ignore double-click of margin next to the last line (fixes #3877)
+* cmdcore: allow to change output device of null command session \\
+  (fixes #3864 - RuntimeError on detect outgoing changes to empty path)
+* filectxactions: do not try 3-way diff if p2 is explicitly selected \\
+  (fixes #3854 - "Diff to parent" options only diff to the left parent)
+* graph: fix AssertionError when generating family lined graph (fixes #3892)
+* hgignore: disable auto-default of all buttons (fixes #3889)
+* repomodel: make sure to render labels by using the same font as view
+* status: do not set "remove filter" button as auto-default (fixes #3876)
+* sync: outgoing {node} might be prefixed with white space \\
+  (fixes #3872 - missing first outgoing node if authentication required)
+* wctxcleaner: do not report branch change as dirty working directory \\
+  (refs #3822 - allow backout, graft, merge and rebase onto new branch)
+* win32ill: suppress KeyboardInterrupt while shutting down message-loop thread
+
+== Improvements ==
+
+* merge: add link to review a merge
+* wctxactions: add "Edit Rejects" action that opens RejectsDialog (closes #3838)
+
+== Installer ==
+
+* update hg-git to current tip (c68edf83bfbc), fixes SSH issue (#3862)
+* pyre2 is now bundled, for much improved regexp performance
+
+----
+
+= TortoiseHg 3.1 =
+
+TortoiseHg 3.1 is a major feature release.
+
+Since 3.1, Mercurial commands are run in separate
+[[http://mercurial.selenic.com/wiki/CommandServer|command server]] process.
+It generally contributes to reliability, but if you have a faulty extension
+or an in-process Python hook, it can corrupt the communication channel between
+TortoiseHg and the command server.
+
+If you see an error message like "cmdserver: timeout while reading...",
+[[BugReport|please report it]] with the list of enabled third-party extensions
+and their versions.  Currently, reviewboard (#3841) and hg-git (#3862) are
+known to have this issue.
+
+Note the Windows installers include Mercurial version 3.1 plus two stable commits
+which addressed Windows platform-specific bugs.
+
+== Bug Fixes ==
+
+* cmdui: add hidden button to close prompt dialog with no response \\
+  (fixes #1317 - merge has no cancel option)
+* filectxactions: redesign to show diff between baseRev and rev \\
+  (fixes #2313 - diff selected file revisions not working after move/rename)
+* grep, status: use built-in drag-and-drop infrastructure
+* patchctx: use patch name give by repo if it is an MQ patch \\
+  (fixes #3831 - patch name is ambiguous when using directories)
+* postreview: correctly set parent of first selected revision (fixes #3538)
+* repofilter: do no run revset query by focus out during history completion
+* repofilter: do not steal focus when window is restored from minimized state
+* repomodel: render description column without using HTMLDelegate \\
+  (fixes #1590 - description column contents aligned 1px upper)
+* repotreemodel: work around unicode error on XML parse failure (fixes #3820)
+* run: continue without fork if new process can't be spawned
+  (fixes #1949, #3800)
+* run: promote rev to common annotate/log option (fixes #3799)
+* workbench: do not change window icon (closes #3737)
+
+command runner:
+
+* cmdcore: enable command-server client by default in 3.1, fixes:
+** #3343 - blackbox extension not working
+** #1661 - "abort: Interrupted system" call during push with subrepos
+** #2071 - crash when pushing with mercurial_keyring
+** #2614 - {{{util.hgexecutable()}}} returns wrong path
+** 074fd0fde0b6 - worker.py of Mercurial 2.6 only works in main thread
+** #3370 - Workbench UI getting dispresponsive on certain operations
+** #484, #788 - can't use git/subversion subrepo
+** #3637 - redirect hook stdout, stderr to Output log
+** #3670 - WindowsError 6 in pipe decode/encode filter
+* repowidget: run "Export Diff" and "Copy Patch" in command process for
+  stability
+* revset: run query in command process for stability
+
+commit/status widget:
+
+* commit: do not bulk-add unknown files when all selected files are largefiles
+* commit, filectxactions: escape paths prior to command execution \\
+  (fixes #2108 - files with some special names can't be added or commited)
+* commit: take "autoinc" list as glob pattern again
+* filectxactions: make "copy patch" generate diff between base and target revs
+* repowatcher: invalidate cache if dirstate file is modified \\
+  (fixes #3647 - file renaming inconsistencies)
+* wctxactions: delegate "file history" action to filectxactions \\
+  (fixes #2591 - No shortcut for "File history" command on files in Working
+  Directory)
+* wctxcleaner: invalidate changelog on each check of dirstate \\
+  (fixes #3826 - commit do not work properly in the merge dialog)
+* wctxactions: make visual diff compare to base revision, add "diff local" in
+  place \\
+  (fixes #2001 - diff does not work on MQ patches)
+* wctxactions: reimplement by using command APIs, fixes:
+** #1347 - add support for {{{pre-<command>}}} and {{{post-<command>}}} hooks
+** #2217 - adding files to source control in the separate thread
+** #1953 - largefiles treated wrong when added by "add large..." menu
+
+high dpi issues:
+
+* graphdelegate: update row height to actual value prior to painting \\
+  (refs #3690)
+* widgets: use small icon size defined by platform style (fixes #3690)
+
+obsolete changeset:
+
+* repoagent: append --hidden option while hidden changesets are visible
+* repowidget: replace pseudo "incoming()" filter by "bundle()" (refs #3535)
+* repowidget: switch visibility of hidden changesets globally \\
+  (fixes #3735 - obosoleted changeset appears as "Child:" field unexpectedly)
+* thgrepo: start with filtered repo because it is the default of Mercurial
+
+== Improvements ==
+
+* blockmatcher: improve visibility of narrow markers
+* filelog: export {{{thg filelog [-r REV] [--compare] FILE}}} command
+* fileview: remember chunk selection on view mode switch
+* mergetools: port gvimdiff from Mercurial's mergetools.hgrc
+* searchtoolbar: make next/prev shortcuts available in owner widget (fixes #3819)
+* status: open merge tool on double-click for unresolved file (closes #1230)
+* toolbars: use toolbar icon size defined by QApplication.style() except on Mac
+  (see 8d6212194e21 for details)
+
+graph:
+
+* graph: draw ancestor-descendant relations in filtered graph
+  (see 891146f5a9bb for details)
+
+== Installer ==
+
+* wix: remove i18n source files (.po) from installer package (closes #2566)
+* keyring 4.0
+* hgsubversion 1.6.2
+
+----
+
+= TortoiseHg 3.0.2 =
+
+TortoiseHg 3.0.2 is a regularly scheduled bug-fix release.
+
+If you had installed 3.0 and were using the newly bundled hg-svn or hg-git, you must change the name of those extensions to hgsubversion and hggit respectively.  The method of their bundling has been changed because of issue #3768.  Post-upgrade, you should be able to de-select "hg-git" and/or "hg-svn" from the settings dialog and select the new "hggit" and/or "hgsubversion" respectively.
+
+Also note that now that TortoiseHg and Mercurial have synchronized revision numbers, the names of the TortoiseHg installers for Windows have been simplified to include just a single version number.  These installer packages still include TortoiseHg and Mercurial (it would be quite impossible to package one without the other).
+
+== Bug Fixes ==
+
+* cmdthread: map empty promptchoice response to default value \\
+  (fixes #3785 - crash on email preview with diffstat)
+* grep: fix list of urls to include all dragged files
+* grep, status: fix several unicode errors in drag-and-drop handler
+* status: fix handling of non-ascii file name in drag-and-drop handler
+* purge: make sure to not include deselected statuses \\
+  (fixes #3786 - ignored files can be deleted even if checkbox is off)
+* settings: remove outdated details of default authorcolor behavior
+  (fixes #3789)
+* thgrepo: preserve config values that are internally set \\
+  (fixes #588 - random failure of unified diff with eol extension)
+
+== Improvements ==
+
+* commit: allow amending non-head if obsolete is enabled
+* repomodel: do not truncate description if longsummary is enabled (fixes #3776)
+* reduce workbench toolbar icon size on Mac to match size on Windows
+
+== Installer ==
+
+* update python keyring library to 3.8
+* update dulwich to 0.9.7
+* update hg-git to current tip (ab8562b11c4f)
+
+----
+
+= TortoiseHg 3.0.1 =
+
+TortoiseHg 3.0.1 is a regularly scheduled bug-fix release.
+
+If you had installed 3.0 and were using the newly bundled hg-svn or hg-git, you must change the name of those extensions to hgsubversion and hggit respectively.  The method of their bundling has been changed because of issue #3768.  Post-upgrade, you should be able to de-select "hg-git" and/or "hg-svn" from the settings dialog and select the new "hggit" and/or "hgsubversion" respectively.
+
+Also note that now that TortoiseHg and Mercurial have synchronized revision numbers, the names of the TortoiseHg installers for Windows have been simplified to include just a single version number.  These installer packages still include TortoiseHg and Mercurial (it would be quite impossible to package one without the other).
+
+== Bug Fixes ==
+
+* commit: do not crash by invalid issue.regex expression (fixes #3732)
+* customtools: separate arguments before running external commands (fixes #3752) \\
+  the specified command will be executed through the system shell, so
+  use {{{start}}} to open new command window (see #3783 for details.)
+* graph: fix problem about `showgraftsource` and `branch`
+* repowidget: resize columns only when model is initially loaded (fixes #3742)
+* wctxactions: resurrect 'forget' action for added files (closes #3748)
+* commit: clear unmodified message, including the default merge message,
+  when repository changed (fixes #3755)
+
+== Installer ==
+
+* bundled hgsubversion moved from hg-svn to hgsubversion
+* bundled hg-git moved from hg-git to hggit
+* package naming simplified, now that thg and hg version numbers are synchronized
+
+----
+
+= TortoiseHg 3.0 =
+
+TortoiseHg 3.0 is a timed feature release.  With 3.0, TortoiseHg is synchronizing its release numbers with Mercurial.  The Windows installers for 3.0 come with a patched version of Mercurial 3.0; we've taken the first three stable commits following the 3.0 tag in order to fix a file permission regression.
+
+== Bug Fixes ==
+
+* backout: remove support for merges deprecated since Mercurial 2.0 (refs #3416)
+* commit: do not create recent message menu more than once (fixes memleak)
+* email: preview is empty if patchbomb extension is not loaded
+* filectxactions: save files in working-copy line endings (fixes #3696)
+* graft: merge source csinfo and cslist to save vertical space (closes #3655)
+* qtapp: font placement is wrong with OSX 10.9
+* shellext: context menus icons NOT properly displayed on Windows XP (fixes #1364)
+
+== Improvements ==
+
+* bisect: open as modeless dialog in workbench
+* bisect: follow candidate changeset in workbench
+* clone: suggest new destination on source changed or existing dest selected
+* cmdui: switch detail button text to show what will happen (closes #3666)
+* commit: automatically set merge commit message
+* email: allow to omit introduction email even if more than one patches
+  available
+* filectxactions: add filter action to file context menu
+* filectxactions: run "hg cat" by asynchronous command runner
+* fileview: add option to guess encoding from its content on load (closes #3620)
+* fileview: add shift-clicking feature on chunk selection (ref #3672)
+* graft: save/restore boolean command options
+* merge: remember autoresolve check, run internal:merge (autoresolve) by default
+* qdelete: remember last state of --keep option
+* reporegistry: save expanded state in settings (closes #2132)
+* repoview: allow drag-and-drop of column headers (closes #2544)
+* shelve: confirm to delete selected chunks (closes #2493)
+* update: add 'Pull subrepos from:' combobox
+* workbench, filelog: give standard shortcuts to go-back/forward actions
+
+core:
+
+* cmdcore: add experimental command-server client enabled by
+  {{{--config tortoisehg.cmdworker=server}}}\\
+  (refs #1507, #1661, #2071, #2614, #3343, #3370, #3637)
+* graph: assign same color to edges in first ancestors line
+* graph: do not assign gray to normal line because gray means `inactive`
+* graph: draw starting edge of topo branch in same color as its descendants
+* graph: narrow margin around graph edges to save horizontal space
+
+== Installer ==
+
+* bundle hg-git and hgsubversion extensions
+* dulwich 0.9.6 (inclues [[https://groups.google.com/d/msg/thg-dev/lq3xlrOh19Y/Ni3y9v1gafwJ|fixes for GitHub]], #3653)
+* keyring 3.7 and hgkeyring 0.6.2
+
+----
+
 = TortoiseHg 2.11.2 =
 
 TortoiseHg 2.11.2 is a regularly scheduled bug-fix release

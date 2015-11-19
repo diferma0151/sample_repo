@@ -17,6 +17,26 @@ recent stable releases of TortoiseHG and Mercurial together. TortoiseHg synchron
 version numbers with Mercurial at release 3.0, so you should always use the same major
 revision number of TortoiseHg as Mercurial for any Mercurial version later than 3.0.
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
+
+----
+
+= TortoiseHg 3.6.1 =
+
+TortoiseHg 3.6.1 is a bug fix release, primarily to pick up fixes in Mercurial in its 3.6.1 tag.
+
+== Bugs Fixes ==
+
+* reporegistry: move warning of opening non-hg repository to common function
+* bump major revision number in docs
+
+== Installer ==
+
+* mercurial_keyring 0.7.1
+* evolve 5.2.1
+* dulwich 0.11.2
+* hgsubversion tip of stable branch
+* hggit tip
+
 ----
 
 = TortoiseHg 3.6 =

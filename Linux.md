@@ -8,6 +8,7 @@ To find out what libraries a particular executable depends on, you can use ldd c
 $ ldd /path/to/program
 
 ```
+![1.jpg](https://bitbucket.org/repo/48R4X/images/159489852-1.jpg)
 
 Note that it is **NOT recommended** to run ldd with any untrusted third-party executable because some versions of ldd may directly invoke the executable to identify its library dependencies, which can be security risk.
 
@@ -19,6 +20,7 @@ $ objdump -p /path/to/program | grep NEEDED
 
 ```
 
+![2.png](https://bitbucket.org/repo/48R4X/images/2304139892-2.png)
 ### Check shared library dependencies of a running process ###
 If you want to find out what shared libraries are loaded by a running process, you can use pldd command, which shows all shared objects loaded into a process at run-time.
 
@@ -27,6 +29,7 @@ If you want to find out what shared libraries are loaded by a running process, y
 $ sudo pldd <PID>
 ```
 
+![3.jpg](https://bitbucket.org/repo/48R4X/images/1488258748-3.jpg)
 Note that you need root privilege to run pldd command.
 
 Alternatively, a command line utility called pmap, which reports memory map of a process, can also show shared library dependencies of a running process.
@@ -35,4 +38,4 @@ Alternatively, a command line utility called pmap, which reports memory map of a
 #!bash
 $ sudo pmap <PID>>
 ```
-
+![4.jpg](https://bitbucket.org/repo/48R4X/images/2061893745-4.jpg)

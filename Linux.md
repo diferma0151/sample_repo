@@ -30,6 +30,7 @@ $ sudo pldd <PID>
 ```
 
 ![3.jpg](https://bitbucket.org/repo/48R4X/images/1488258748-3.jpg)
+
 Note that you need root privilege to run pldd command.
 
 Alternatively, a command line utility called pmap, which reports memory map of a process, can also show shared library dependencies of a running process.

@@ -34,7 +34,7 @@ TortoiseHg 3.6.1 is a bug fix release, primarily to pick up fixes in Mercurial i
 * mercurial_keyring 0.7.1
 * evolve 5.2.1
 * dulwich 0.11.2
-* hgsubversion tip of stable branch
+* hgsubversion tip of stable branch (fixes #4356)
 * hggit tip
 
 ----

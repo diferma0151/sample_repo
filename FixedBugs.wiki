@@ -11,7 +11,11 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* repowidget: fix handling of patch.extract() result (hg 3.6) (fixes #4390)
+
 == Improvements ==
+
+* doc: include link to download and use Python 2.7 SWIG bindings
 
 == Installer ==
 

@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.6.1 =
+= Changes since 3.6.2 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -11,11 +11,7 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
-* repowidget: fix handling of patch.extract() result (hg 3.6) (fixes #4390)
-
 == Improvements ==
-
-* doc: include link to download and use Python 2.7 SWIG bindings
 
 == Installer ==
 

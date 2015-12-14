@@ -20,6 +20,20 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.6.2 =
+
+TortoiseHg 3.6.2 is a regularly scheduled bug fix release.
+
+== Bugs Fixes ==
+
+* repowidget: fix handling of patch.extract() result (hg 3.6) (fixes #4390)
+
+== Improvements ==
+
+* doc: include link to download and use Python 2.7 SWIG bindings
+
+----
+
 = TortoiseHg 3.6.1 =
 
 TortoiseHg 3.6.1 is a bug fix release, primarily to pick up fixes in Mercurial in its 3.6.1 tag.

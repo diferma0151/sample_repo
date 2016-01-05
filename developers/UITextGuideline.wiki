@@ -14,7 +14,7 @@
 
 === Capitalization ===
 
-* [[http://msdn.microsoft.com/en-us/library/windows/desktop/aa974176.aspx#capitalization|Microsoft - User Interface Text - Guidelines - Capitalization]]
+* [[https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478.aspx#Capitalization|Microsoft - User Interface Text - Guidelines - Capitalization]]
 ** "Title Caps" for window title.
 ** "Sentence caps" for others, but "Title Caps" is acceptable for buttons,  menus and headings.
 * [[http://developer.apple.com/library/mac/#documentation/userexperience/conceptual/applehiguidelines/TextStyle/TextStyle.html#//apple_ref/doc/uid/TP30000365-BABDIBBH|OS X Human Interface Guidelines - Text Style - Capitalizing Labels and Text]]

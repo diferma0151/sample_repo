@@ -11,6 +11,8 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* demandimport: exclude pkgutil and pkg_resources (fixes #4271, #4298)
+
 == Improvements ==
 
 == Installer ==

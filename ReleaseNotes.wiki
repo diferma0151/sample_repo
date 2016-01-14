@@ -20,6 +20,16 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.6.3 =
+
+TortoiseHg 3.6.3 is a regularly scheduled bug fix release.
+
+== Bugs Fixes ==
+
+* demandimport: exclude pkgutil and pkg_resources (fixes #4271, #4298)
+
+----
+
 = TortoiseHg 3.6.2 =
 
 TortoiseHg 3.6.2 is a regularly scheduled bug fix release.

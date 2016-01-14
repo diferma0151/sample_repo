@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.6.2 =
+= Changes since 3.6.3 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -10,8 +10,6 @@ with subversion repositories.  See [[libsvn]]
 Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
-
-* demandimport: exclude pkgutil and pkg_resources (fixes #4271, #4298)
 
 == Improvements ==
 

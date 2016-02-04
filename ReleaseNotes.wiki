@@ -20,6 +20,35 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.7.1 =
+
+TortoiseHg 3.7.1 is a feature release. TortoiseHg 3.7 was never packaged since there was a hot-fix necessary for Mercurial 3.7.
+
+== Bug Fixes ==
+
+* cmdui: backport more robust parsing of prompt choices (fixes #4423)
+* commit: include ignored files if explicitly selected (fixes #4422)
+* docklog: stop shell expansion if command-line token looks quoted (fixes #4312)
+* fileview: invert colors of excluded chunks on dark theme (refs #810)
+* lfprompt: catch Abort caused by invalid largefiles.patterns (fixes #4397)
+* merge: don't call other revision as "target" (fixes #4413)
+* nautilus: fix the extension for Nautilus 3.16+ (fixes #4228)
+* repowidget: label "reject bundle" button as "cancel" (closes #4292)
+* repotreeitem: keep root paths in unicode (fixes #3723)
+
+== Improvements ==
+
+* introduce a GUI lock tool
+* repowidget: add "Revert all Files" context menu (closes #4337)
+* settings: resurrect field for ui.editor
+* sync: add browse button to the synchronize window (closes #4394)
+
+== Installer ==
+
+* setup: add support for building OS X application bundles
+
+----
+
 = TortoiseHg 3.6.3 =
 
 TortoiseHg 3.6.3 is a regularly scheduled bug fix release.

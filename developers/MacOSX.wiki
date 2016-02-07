@@ -173,6 +173,209 @@ Happy Hacking!
 
 ----
 
+== Install from Source for OS X 10.11 (El Capitan) ==
+
+=== Dependencies: PyQt and QScintilla ===
+
+==== 0. Install Apple Development Tools (Xcode) ====
+
+https://developer.apple.com/xcode/download/
+
+and install Command Line Developer Tools
+{{{
+xcode-select --install
+}}}
+
+==== 1. Install Qt4 (Qt SDK for Mac) ====
+
+Unfortunately, there is no binary available for OS X 10.11 from Qt site.
+
+To build Qt 4.8.7 from sources:
+Direct access via
+http://download.qt.io/official_releases/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.tar.gz
+
+{{{
+cd /tmp
+gunzip qt-everywhere-opensource-src-4.8.7.tar.gz
+tar xvf qt-everywhere-opensource-src-4.8.7.tar
+cd /tmp/qt-everywhere-opensource-src-4.8.7
+}}}
+
+As Qt is using CMGetProfileByAVID() and CMCloseProfile() functions which are not more
+available in El Capitan, you need to patch src/gui/painting/qpaintengine_mac.cpp
+according to https://github.com/Homebrew/patches/tree/master/qt/el-capitan.patch
+
+{{{
+./configure -nomake examples # at least one example is no more compiling on El Capitan)
+make                         # to speed up, you can use -j option (see man make)
+sudo make -j1 install
+}}}
+
+Modify your .profile file
+{{{
+PATH=/usr/local/Trolltech/Qt-4.8.7/bin:$PATH
+export PATH
+}}}
+ 
+==== 2. Install QScintilla (from source) ====
+
+http://www.riverbankcomputing.co.uk/software/qscintilla/download
+
+{{{
+~/Downloads/QScintilla-gpl-2.9.1
+$ cd Qt4Qt5
+$ qmake -spec macx-g++
+$ make
+$ sudo make install
+}}}
+
+installed files:
+* /usr/local/Trolltech/Qt-4.8.7/include/Qsci
+* /usr/local/Trolltech/Qt-4.8.7/translations/qscintilla_*
+* /usr/local/Trolltech/Qt-4.8.7/lib/libqscintilla*
+* /usr/local/Trolltech/Qt-4.8.7/qsci
+* /usr/local/Trolltech/Qt-4.8.7/mkspecs/features/qscintilla2.prf
+
+(Optionally) install Qt Designer plugin:
+
+{{{
+~/Downloads/QScintilla-gpl-2.9.1
+$ cd designer-Qt4Qt5
+$ qmake -spec macx-g++
+$ make
+$ sudo make install
+}}}
+
+installed files:
+* /usr/local/Trolltech/Qt-4.8.7/plugins/designer/libqscintillaplugin.dylib
+
+==== 3. Install Sip (from source) ====
+
+http://www.riverbankcomputing.co.uk/software/sip/download
+
+{{{
+~/Downloads/sip-4.17
+$ python configure.py -b /Library/Frameworks/Python.framework/Versions/2.7/bin -e /Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -v /Library/Frameworks/Python.framework/Versions/2.7/share/sip
+$ make
+$ sudo make install
+}}}
+
+Attention: as you are no more allowed to add, modify, remove files in /System
+due to activation of SIP (System Integrity Protection: https://support.apple.com/en-us/HT204899),
+the configuration of the installation needs to be customized.
+
+
+installed files:
+* /Library/Frameworks/Python.framework/Versions/2.7/bin/sip
+* /Library/Python/2.7/site-packages/sip.so
+* /Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/sip.h
+* /Library/Python/2.7/site-packages/sipconfig.py
+* /Library/Python/2.7/site-packages/sipdistutils.py
+
+You may need to add /Library/Frameworks/Python.framework/Versions/2.7/bin to PATH; or create symlink to them:
+
+{{{
+/usr/local/bin
+$ sudo ln -s ../../../Library/Frameworks/Python.framework/Versions/2.7/bin/sip
+}}}
+
+==== 4. Install PyQt (from source) ====
+
+http://www.riverbankcomputing.co.uk/software/pyqt/download
+
+{{{
+~/Downloads/PyQt-mac-gpl-4.11.4
+$ python configure.py -b /Library/Frameworks/Python.framework/Versions/2.7/bin -v /Library/Frameworks/Python.framework/Versions/2.7/share/sip/PyQt4
+$ make
+$ sudo make install
+}}}
+
+installed files:
+* /Library/Python/2.7/site-packages/PyQt4
+* /Library/Frameworks/Python.framework/Versions/2.7/share/sip/PyQt4
+* /Library/Frameworks/Python.framework/Versions/2.7/bin/pyuic4
+* /Library/Frameworks/Python.framework/Versions/2.7/bin/pylupdate4
+* /Library/Frameworks/Python.framework/Versions/2.7/bin/pyrcc4
+* /usr/local/Trolltech/Qt-4.8.7/qsci/api/python/PyQt4.api
+
+You may need to add /Library/Frameworks/Python.framework/Versions/2.7/bin to PATH; or create symlink to them:
+
+{{{
+/usr/local/bin
+$ for name in pyuic4 pylupdate4 pyrcc4; do sudo ln -s ../../../Library/Frameworks/Python.framework/Versions/2.7/bin/$name; done
+}}}
+
+
+==== 5. Install Python binding for QScintilla ====
+
+{{{
+~/Downloads/QScintilla-gpl-2.9.1
+$ cd Python
+$ python configure.py --sip-incdir=/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 --pyqt-sipdir=/Library/Frameworks/Python.framework/Versions/2.7/share/sip/PyQt4 -v /Library/Frameworks/Python.framework/Versions/2.7/share/sip/PyQt4
+$ make
+$ sudo make install
+}}}
+
+installed files:
+* /Library/Python/2.7/site-packages/PyQt4/Qsci.so
+* /Library/Frameworks/Python.framework/Versions/2.7/share/sip/PyQt4/Qsci
+* /usr/local/Trolltech/Qt-4.8.7/qsci/api/python/QScintilla2.api
+
+==== 6. Test installation ====
+
+{{{
+$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from PyQt4.QtGui import *
+>>> app = QApplication([])
+>>> w = QDialog()
+>>> w.show()
+>>> app.exec_()
+}}}
+
+=== Optional Dependencies ===
+
+* Install iniparse - allows thg to modify your configuration files
+
+Due to SIP, you need to specify an allowed destination:
+{{{
+$ sudo python setup.py install --prefix /Library/Python/2.7/site-packages
+}}}
+
+* install pygments - enables auto-completion of source in commit tool
+
+=== Get Latest Mercurial and TortoiseHg ===
+
+{{{
+~/Documents 
+$ hg clone http://selenic.com/repo/hg mercurial
+$ hg clone http://bitbucket.org/tortoisehg/thg/
+$ cd mercurial
+$ make local
+}}}
+
+Add {{{~/Documents/mercurial}}} to PYTHONPATH, or symlink to them:
+{{{
+~/Documents/thg
+$ ln -s ../mercurial/mercurial
+$ ln -s ../mercurial/hgext
+}}}
+
+Run it:
+{{{
+$ thg log
+}}}
+or on a Mac Retina, you may need to:
+{{{
+$ THG_RETINA=True thg log
+}}}
+
+Happy Hacking!
+
+----
+
 == Install via Fink ==
 
 TortoiseHg is now available in [[http://www.finkproject.org/|fink]]'s unstable tree, as tortoisehg-py27 (or 25 or 26 if you are using an older python for some reason). You can get it prebuilt for 10.8 from @brendan's unofficial apt repository for fink by adding {{{deb http://brendan.users.finkproject.org/10.8 stable main}}} to {{{/sw/etc/apt/sources.conf}}}. After adding the repository, {{{apt-get update}}} and {{{apt-get install tortoisehg-py27}}}. 

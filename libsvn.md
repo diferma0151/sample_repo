@@ -12,14 +12,12 @@ This is inconsequential for most TortoiseHg users, the subversion bindings are o
 
 If you attempt to use either of these features and are missing the subversion bindings, you will see the following error message:
 
-```
-abort: no compatible bindings available:
+    abort: no compatible bindings available:
 
-Subversion 1.5.0 or later required, but no bindings were found
-Subvertpy 0.7.4 or later required, but not found
+    Subversion 1.5.0 or later required, but no bindings were found
+    Subvertpy 0.7.4 or later required, but not found
 
-Please install either Subvertpy or the Subversion Python SWIG bindings!
-```
+    Please install either Subvertpy or the Subversion Python SWIG bindings!
 
 We offer for download the python SWIG bindings that we were previously including in our binary installers, they are available here:
 

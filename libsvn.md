@@ -10,6 +10,17 @@ Beginning with release 3.4 of TortoiseHg, the subversion libraries and the Pytho
 
 This is inconsequential for most TortoiseHg users, the subversion bindings are only required when using 'hg convert' to convert a subversion repository, or using the hgsubversion extension to interact with a subversion server. If you do neither of these things, then you can just enjoy the 3MB smaller packages. If you do need either of those two features, continue reading.
 
+If you attempt to use either of these features and are missing the subversion bindings, you will see the following error message:
+
+```
+abort: no compatible bindings available:
+
+Subversion 1.5.0 or later required, but no bindings were found
+Subvertpy 0.7.4 or later required, but not found
+
+Please install either Subvertpy or the Subversion Python SWIG bindings!
+```
+
 We offer for download the python SWIG bindings that we were previously including in our binary installers, they are available here:
 
 * https://bitbucket.org/tortoisehg/thg-winbuild/downloads/svn_1.7.5_py27_x86.zip

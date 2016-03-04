@@ -20,6 +20,13 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.7.2 =
+
+TortoiseHg 3.7.2 is a regularly scheduled bugfix release, primarily to pick up bug fixes on
+the stable branch of Mercurial.
+
+----
+
 = TortoiseHg 3.7.1 =
 
 TortoiseHg 3.7.1 is a feature release. TortoiseHg 3.7 was never packaged since there was a hot-fix necessary for Mercurial 3.7.

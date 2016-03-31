@@ -1,3 +1,13 @@
+* 2015-09-10: TortoiseHg (with Mercurial) 3.5.1 released
+* 2015-08-07: TortoiseHg (with Mercurial) 3.5 released
+* 2015-07-14: TortoiseHg (with Mercurial) 3.4.2 released
+* 2015-06-03: TortoiseHg (with Mercurial) 3.4.1 released
+* 2015-05-18: TortoiseHg (with Mercurial) 3.4+7 released
+* 2015-05-09: TortoiseHg (with Mercurial) 3.4 released
+* 2015-04-01: TortoiseHg (with Mercurial) 3.3.3 released
+* 2015-03-02: TortoiseHg (with Mercurial) 3.3.2 released
+* 2015-02-03: TortoiseHg (with Mercurial) 3.3 released
+* 2015-01-20: TortoiseHg (with Mercurial) 3.2.4 released
 * 2014-12-19: TortoiseHg (with Mercurial) 3.2.3 released
 * 2014-12-17: TortoiseHg (with Mercurial) 3.2.2 released
 * 2014-11-20: TortoiseHg (with Mercurial) 3.2.1 released

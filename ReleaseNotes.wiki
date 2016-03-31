@@ -20,6 +20,14 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.7.3 =
+
+TortoiseHg 3.7.3 is a regularly scheduled bugfix release, primarily to pick up security bug fixes in Mercurial 3.7.3.
+
+See https://www.mercurial-scm.org/pipermail/mercurial/2016-March/049452.html
+
+----
+
 = TortoiseHg 3.7.2 =
 
 TortoiseHg 3.7.2 is a regularly scheduled bugfix release, primarily to pick up bug fixes on

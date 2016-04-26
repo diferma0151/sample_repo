@@ -11,7 +11,15 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* guifork: disable interaction with tty input (refs #4469)
+* qtapp: disable interaction with tty on GUI (fixes #4469)
+* postreview: suggest wiki if reviewboard extension not enabled (fixes #4463)
+* workbench: fall back to revset query on "go to revision" (fixes #4084)
+
 == Improvements ==
+
+* clone: add a --config extensions.largefiles= option
+* paths: always respect the HG environment variable
 
 ----
 

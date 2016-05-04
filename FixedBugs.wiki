@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.7.3 =
+= Changes since 3.8.1 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -11,15 +11,7 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
-* guifork: disable interaction with tty input (refs #4469)
-* qtapp: disable interaction with tty on GUI (fixes #4469)
-* postreview: suggest wiki if reviewboard extension not enabled (fixes #4463)
-* workbench: fall back to revset query on "go to revision" (fixes #4084)
-
 == Improvements ==
-
-* clone: add a --config extensions.largefiles= option
-* paths: always respect the HG environment variable
 
 ----
 

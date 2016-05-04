@@ -20,6 +20,28 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.8.1 =
+
+TortoiseHg 3.8.1 is a feature release. 3.8.0 was skipped since Mercurial tagged 3.8.1 the same day as 3.8.0.
+
+== Bug Fixes ==
+
+* guifork: disable interaction with tty input (refs #4469)
+* qtapp: disable interaction with tty on GUI (fixes #4469)
+* postreview: suggest wiki if reviewboard extension not enabled (fixes #4463)
+* workbench: fall back to revset query on "go to revision" (fixes #4084)
+
+== Improvements ==
+
+* clone: add a --config extensions.largefiles= option
+* paths: always respect the HG environment variable
+
+== Installer ==
+
+* updates to packaged dulwich and hgsubversion
+
+----
+
 = TortoiseHg 3.7.3 =
 
 TortoiseHg 3.7.3 is a regularly scheduled bugfix release, primarily to pick up security bug fixes in Mercurial 3.7.3.

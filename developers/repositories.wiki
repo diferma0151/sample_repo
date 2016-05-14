@@ -9,9 +9,9 @@ https://bitbucket.org/tortoisehg/thg/
 
 It has two named branches:
 
-* *stable* contains only released code and reasonably well tested bug fixes. All official release binary installers are built from this repository.
+* **stable** contains only released code and reasonably well tested bug fixes. All official release binary installers are built from this repository.
 
-* *default*  This is where development occurs between releases, and is the basis for nightly builds.
+* **default**  This is where development occurs between releases, and is the basis for nightly builds.
 
 === Installer ===
 

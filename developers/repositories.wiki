@@ -13,13 +13,15 @@ It has two named branches:
 
 * *default*  This is where development occurs between releases, and is the basis for nightly builds.
 
-A mirror of the main repo is kept at: https://hg01.codeplex.com/tortoisehg/
-
 === Installer ===
 
 The installer repository, based on a subrepo tree of source repositories and an intelligent setup script.  This repository is used to build TortoiseHg and Mercurial packages for Windows.
 
 https://bitbucket.org/tortoisehg/thg-winbuild/
+
+=== Inactive Repositories ===
+
+* A mirror of the main repo is kept at: https://hg01.codeplex.com/tortoisehg/
 
 == TortoiseHg Project Layout ==
 

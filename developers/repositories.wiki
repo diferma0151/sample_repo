@@ -5,7 +5,7 @@
 The main repository hosted on bitbucket that only Steve Borho and a few contributors can push
 to. This is the official repository that everyone should clone:
 
-http://bitbucket.org/tortoisehg/thg/
+https://bitbucket.org/tortoisehg/thg/
 
 It has two named branches:
 
@@ -19,7 +19,7 @@ A mirror of the main repo is kept at: https://hg01.codeplex.com/tortoisehg/
 
 The installer repository, based on a subrepo tree of source repositories and an intelligent setup script.  This repository is used to build TortoiseHg and Mercurial packages for Windows.
 
-http://bitbucket.org/tortoisehg/thg-winbuild/
+https://bitbucket.org/tortoisehg/thg-winbuild/
 
 == TortoiseHg Project Layout ==
 

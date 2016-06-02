@@ -31,6 +31,292 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 3.5.2 =
+
+TortoiseHg 3.5.2 is a regularly scheduled bugfix release. 
+
+== Bug Fixes ==
+
+* repotab: do not close removed repo in the middle of switching tabs (fixes #4253)
+* settings: fix noop deletion of unnamed hook (fixes #4289)
+* shelve: create patchctx by MQ patch name if appropriate (fixes #4308)
+
+== Installer ==
+
+* update projrc extension (fixes #4207)
+* wix: resurrect kdiff3-noauto for bundled kdiff3 (fixes #4309)
+
+----
+
+= TortoiseHg 3.5.1 =
+
+TortoiseHg 3.5.1 is a regularly scheduled bugfix release. 
+
+== Bugs Fixes ==
+
+* visdiff: preserve the executable bit after editing a file
+
+== Installer ==
+
+* setup: exclude setup.py and distutils from py2exe build
+* wix: add mercurial/help/scripting.txt (fixes #4264)
+
+----
+
+= TortoiseHg 3.5 =
+
+TortoiseHg 3.5 is a major feature release, including the new Mercurial 3.5 major release
+and a small number of bug-fix commits.
+
+== Bugs Fixes ==
+
+* filectxactions: open save dialog where repository file exists (fixes #3445)
+* grep: split inc/exc patterns on Comma instead of Comma+Space (fixes #836)
+* lfprompt: suppress exception on getting size of inaccessible file (fixes #4240)
+* qtlib: drop support for old-style icon lookup
+* qtlib: load icons from filesystem unless frozen
+* reporegistry: look for parent repo in model on removeSubrepo (fixes #4214)
+* repowatcher: check mtime of bookmarks file (hg 3.5)
+* repowatcher: detect rollback of repository states (fixes #4193)
+* sync: sort bookmarks in target combobox alphabetically (fixes #4222)
+
+== Improvements ==
+
+* names: experimental support for displaying any name space
+* repoview: add an action to resize columns ignoring settings
+* repowidget: add menu to filter ancestors, by author or branch (closes #1455)
+* sync: allow to select user certificates by file dialog
+* sync: open the save dialog when Enter is pressed in URL field
+* workbench: add icon to Web Server menu item (closes #4211)
+
+== Installer ==
+
+* update tsvn doc-diff scripts (fixes #3404, #4244)
+* setup: build Qt resources only for py2exe target
+* setup: do not pack unnecessary files to icon resource
+* setup: generate config module according to installation options (refs #2178)
+* setup: generate list of .mo files from existing .po files (fixes #2431)
+* setup: move library.zip and dlls to lib/ directory (refs #4164, #4194)
+* setup: respect prefix where nautilus extension will be installed (fixes #2178)
+
+----
+
+= TortoiseHg 3.4.2 =
+
+TortoiseHg 3.4.2 is a regularly scheduled bugfix release. The Windows packages no longer include subversion SWIG bindings, see [[libsvn]].
+
+== Bug Fixes ==
+
+* settings: have filename edit accept focus by clicking (fixes #4192)
+* update docdiff scripts
+* thgstatus: fix typo in an option description
+* lighthg: use 'sys.argv' instead of undefined 'argv'
+
+----
+
+= TortoiseHg 3.4.1 =
+
+TortoiseHg 3.4.1 is a regularly scheduled bugfix release. The Windows packages no longer include subversion SWIG bindings, see [[libsvn]].
+
+== Bug Fixes ==
+
+* hglib: prevent loading zeroconf extension in GUI process (fixes #3289)
+* merge: suppress changed/deleted prompt when discarding p2 changes (refs #3856)
+* workbench: avoid crash on sync bookmarks with no configured path (fixes #4166)
+
+== Improvements ==
+
+* filectxactions: add explore local option to file context menu (fixes #3442)
+
+== Installer ==
+
+* contrib/hg, thg: avoid crash by missing PATH environment
+* overlay: insert bin folder to PATH and sys.path for pywintypes (fixes #4158)
+* thg: insert bin folder into sys.path for pywintypes (fixes #4153)
+* wix: move kdiff3.exe into bin/ folder (fixes #4151)
+
+----
+
+= TortoiseHg 3.4+7 =
+
+TortoiseHg 3.4+7 is a respin of the 3.4 Windows packages with fixes for multiple problems exposed
+by the reorganization of the target install folder.
+
+* contrib/hg, thg: avoid crash by missing PATH environment
+* overlay: insert bin folder to PATH and sys.path for pywintypes (fixes #4158)
+* thg: insert bin folder into sys.path for pywintypes (fixes #4153)
+* wix: move kdiff3.exe into bin/ folder (fixes #4151)
+
+----
+
+= TortoiseHg 3.4 =
+
+TortoiseHg 3.4 is a regularly scheduled feature release. The Windows packages no longer include subversion SWIG bindings, see [[libsvn]].
+
+== Bug Fixes ==
+
+* bookmark, matching, sign, tag: allow to resize horizontally while having
+  fixed height (refs #4043)
+* bookmark, tag, update: avoid combo box taking too much space (fixes #4043)
+* commit: prompt for new largefiles first to skip extra confirmation
+  (fixes #1954)
+* filedata: rewrite copy detection by using copies.pathcopies() (fixes #3949)
+* merge: discard p2 changes without using debugsetparents (fixes #3856)
+* mergetools: add $output to meld to change which file will be saved
+  (fixes #4134)
+* quickop: do not calculate status unnecessarily in GUI process (refs #1828)
+* quickop: catch known exceptions raised from repo.status() (fixes #1828)
+* repomodel: clear cache of latest tags on repository change (fixes #4137)
+* repoview: ignore corrupted column_widths saved in QSettings (fixes #1456)
+* repowidget: refresh commit tab after rollback or custom hg command
+  (fixes #3981)
+* revset: set appropriate size policy to status bar of query dialog (fixes #834)
+* sync: get host fingerprint asynchronously by extension command (fixes #4114)
+
+== Improvements ==
+
+* bookmark: add simple bookmark dialog to sync screen (fixes #322)
+* commit: do not overwrite username if ui.askusername is set (closes #4064)
+* filectxactions: enable shortcuts only if the owner or its children has focus
+* filectxactions: add shortcut to delete unversioned file (closes #3681)
+* fileview, status: enable annotate mode for working directory
+* rebase: mention command line options in checkbox labels
+* sync: add "unbundle" to "repository" menu (fixes #4067)
+* workbench: add default merge action to main menu and toolbar (closes #222)
+
+== Installer ==
+
+* [[libsvn]] evicted from the binary packages - it will be a 2nd download
+  (fixes #3745)
+* move Qt and other DLLS into bin/ folder in Windows installers
+  (refs #3745, fixes #4088)
+* remove PDF file from Windows installers
+* ssl: use the system's CA store
+* dulwich 0.10.1+, hgsubversion 1.8.1, evolve 5.1.4, keyring 5.0
+
+----
+
+= TortoiseHg 3.3.3 =
+
+TortoiseHg 3.3.3 is a regularly scheduled bug-fix release. The evolve extension
+was added to the Windows installer packages in this release.
+The bundled hg-git extension has a problem with Mercurial 3.3.3 (#4107).
+
+== Bug Fixes ==
+
+* annotate: do not instantiate filectx per line (fixes #4071)
+* copypatch, export: pass --rev option in compact form (fixes #4081)
+* doc, version: bump copyright year (fixes #4066)
+* filectxactions: avoid crash by opening log of new file (fixes #4096)
+* filedata: calculate status from given base revision if not known
+* filedata: copy subrepo attributes when switching base revisions (fixes #4102)
+* guess: sort added/removed files by path for stable result (fixes #4079)
+* repofilter: always request to unapply revset by clear button (fixes #4073)
+* repotab: catch Abort on repository lookup as well (fixes #4069)
+* repowidget: stop the description column from shrinking on restart (refs #3882)
+
+== Installer ==
+
+* Evolve extension is now bundled (latest stable tag: 5.1.2)
+* dulwich bumped to 0.9.9 (0.10.0 is broken on Windows)
+* hgkeyring bumped to 0.6.7
+* hgcr-gui (fixes #4065)
+
+----
+= TortoiseHg 3.3.2 =
+
+TortoiseHg 3.3.2 is a regularly scheduled bug-fix release, and an overhaul of the installer build system. Many components were upgraded in this release.
+
+== Bug Fixes ==
+
+* archive, clone, init, rename: prettify command-line string for display
+  (fixes #4051)
+* cmdserver: handle unicode error in command gracefully (fixes #3246, #3453)
+* cmdserver: recreate QProcess if remainder of last request is in write buffer
+* guifork: do not fork() more than once on posix by reentering to dispatch()
+* merge, rename, settings: correct typos in help and warning messages
+  (fixes #4047, #4049, #4050)
+* openshell: do not parse command string by shlex on Windows (fixes #4044)
+* qscilib: re-enable custom handling of input method events on QScintilla 2.8
+* repofilter: take query not convertible to localstr as revset (fixes #3664)
+* repomodel: prioritize latest tags by date and distance (fixes #4048)
+* resolve: preserve selection on refresh instead of selecting all (refs #2615)
+* resolve: disable actions while command is running (fixes #2615)
+* sync: do not trust incoming bundle, just re-pull (fixes #2497, #3582, #3847)
+
+== Installer ==
+
+* Pygments 2.0.2 (fixes #2407, #4028 by any chance)
+* Python 2.7.9 (fixes #3938)
+* QScintilla 2.8.4 (fixes #3573)
+* Qt 4.8.6 (fixes #2300, #4006)
+* libsvn 1.7.5 (fixes #3745)
+  (EDIT: 64bit installer still bundles libsvn 1.6.x)
+
+----
+
+= TortoiseHg 3.3 =
+
+TortoiseHg 3.3 is a regularly scheduled feature release
+
+== Bug Fixes ==
+
+* annotate: fetch line information by command (fixes unsafe thread access)
+* cmdcore: handle ui labels in unicode to avoid possible exception (fixes #3988)
+* guifork: use real fork() on posix to run GUI in background (fixes #3701)
+* init: open repo in existing workbench process if any (fixes #3922)
+* init: run "hg init" in command process (fixes #3931)
+* lfprompt: parse minsize as float value (fixes #1901 again)
+* qtapp: handle SIGINT more gracefully by sending close event to all windows
+* repomodel: work around RepoLookupError that may occur while reload is pending
+* repowidget: switch to default task tab after initial revision is selected
+* sync: drop "recurse into subrepositories" option (closes #1645)
+* workbench: disable back/forward actions when all repositories are closed
+* workbench: make sure to run workbench by "New Workbench" action
+* workbench: narrow --newworkbench option to command scope
+* workbench: show busy indicator while command is running (fixes #1186)
+
+== Improvements ==
+
+* clone, init: open workbench after repository created by standalone dialog
+* filectxactions: open file history dialog in annotate mode (closes #3760)
+* init: add option to copy user files instead of empty .hgignore (closes #3569)
+* reporegistry: mark shared repositories with a link icon overlay
+* repotab: stop filesystem watcher of background tabs
+* sync: never switch task tabs on revision selected
+* sync: provide standalone dialog by LightRepoWindow
+* workbench: forcibly reload models and views by Ctrl+refresh
+* workbench: make it possible to restore the selected sync path across restarts
+* workbench: restore last open repositories without loading them
+* workbench: resurrect docked console widget (closes #3984)
+
+graph:
+
+* color: use "color hashing" to pick a color for each branch (closes #3490)
+* color: use "color hashing" to pick a color for each user
+* graph: support the branch grouping experiment from mercurial core
+* repomodel: hide all revisions if no matches found for the given revset query
+* repomodel: rerun last revset query on reload (closes #1705)
+* repoview: use a square shape for secret changesets
+* repoview: use a pentagon shape for draft changesets
+
+command:
+
+* log: add -r option to specify the initial revision to be selected
+* log: add -k/--query option to filter changesets by keyword or revset
+
+nautilus/caja:
+
+* add Python Caja extension support (fixes #3936)
+
+== installer ==
+
+* hgsubversion 1.8
+* mercurial_keyring 0.6.6
+* python-keyring 4.1.1
+
+----
+
 = TortoiseHg 3.2.4 =
 
 TortoiseHg 3.2.4 is a regularly scheduled bug fix release

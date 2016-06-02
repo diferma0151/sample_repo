@@ -20,6 +20,16 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.8.3 =
+
+TortoiseHg 3.8.3 is a regularly scheduled bug-fix release.
+
+== Installer ==
+
+Updates to hgsubversion, hggit, evolve, hgkeyring, and python-keyring (which changed hosting to github)
+
+----
+
 = TortoiseHg 3.8.1 =
 
 TortoiseHg 3.8.1 is a feature release. 3.8.0 was skipped since Mercurial tagged 3.8.1 the same day as 3.8.0.

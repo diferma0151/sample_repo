@@ -24,6 +24,12 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 TortoiseHg 3.8.3 is a regularly scheduled bug-fix release.
 
+== Bug Fixes ==
+
+* extensions: prevent loading blackbox in GUI process (fixes #4489)
+* matching: do not use indexing to get first revision from smartset
+  (fixes #4497)
+
 == Installer ==
 
 Updates to hgsubversion, hggit, evolve, hgkeyring, and python-keyring (which changed hosting to github)

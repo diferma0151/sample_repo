@@ -14,7 +14,9 @@ Python 2.4 and 2.5 are no longer supported.
 * merge: fix missing separator in merge preview output (fixes #4526)
 * repofilter: do not emit branchChanged if original branch is restored
 * repowatcher: compare st_size and st_ctime to detect changes
+* repowidget: add status bar to LightRepoWindow (fixes #4553)
 * run: load template functions from extensions (fixes #4515)
+* wconfig: patch iniparse to allow :suboption in name
 
 == Improvements ==
 
@@ -27,6 +29,7 @@ Python 2.4 and 2.5 are no longer supported.
 * repofilter: improve branch drop-down performance
 * repomodel: new graph layout algorithm for large repositories
 * status: reuse working context in WctxModel
+* sync: add widget to select minimum TLS protocol
 * workbench: add actions to switch tabs by Ctrl+n key (closes #3543)
 * workbench: add shortcut to toggle visibility of task tab
 

@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.8.1 =
+= Changes since 3.9 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -11,27 +11,7 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
-* merge: fix missing separator in merge preview output (fixes #4526)
-* repofilter: do not emit branchChanged if original branch is restored
-* repowatcher: compare st_size and st_ctime to detect changes
-* repowidget: add status bar to LightRepoWindow (fixes #4553)
-* run: load template functions from extensions (fixes #4515)
-* wconfig: patch iniparse to allow :suboption in name
-
 == Improvements ==
-
-* commit: focus on commit message after branch operation (fixes #4442)
-* filedata: pass in existing copy information to diff
-* fileview: change shortcut keys of parent toggle actions to free Ctrl+n
-* icons: doubles the icon sizes on Linux on retina displays (fixes #4493)
-* init: relabel "Add special files" to avoid confusion with "hg add"
-  (fixes #4513)
-* repofilter: improve branch drop-down performance
-* repomodel: new graph layout algorithm for large repositories
-* status: reuse working context in WctxModel
-* sync: add widget to select minimum TLS protocol
-* workbench: add actions to switch tabs by Ctrl+n key (closes #3543)
-* workbench: add shortcut to toggle visibility of task tab
 
 ----
 

@@ -20,6 +20,40 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.9 =
+
+TortoiseHg 3.9 is a quarterly feature release, with many improvements to performance on large repositories, and security improvements in Mercurial 3.9. See https://www.mercurial-scm.org/wiki/SecureConnections
+
+== Bugs Fixes ==
+
+* merge: fix missing separator in merge preview output (fixes #4526)
+* repofilter: do not emit branchChanged if original branch is restored
+* repowatcher: compare st_size and st_ctime to detect changes
+* repowidget: add status bar to LightRepoWindow (fixes #4553)
+* run: load template functions from extensions (fixes #4515)
+* wconfig: patch iniparse to allow :suboption in name
+
+== Improvements ==
+
+* commit: focus on commit message after branch operation (fixes #4442)
+* filedata: pass in existing copy information to diff
+* fileview: change shortcut keys of parent toggle actions to free Ctrl+n
+* icons: doubles the icon sizes on Linux on retina displays (fixes #4493)
+* init: relabel "Add special files" to avoid confusion with "hg add"
+  (fixes #4513)
+* repofilter: improve branch drop-down performance
+* repomodel: new graph layout algorithm for large repositories
+* status: reuse working context in WctxModel
+* sync: add widget to select minimum TLS protocol
+* workbench: add actions to switch tabs by Ctrl+n key (closes #3543)
+* workbench: add shortcut to toggle visibility of task tab
+
+== Installer ==
+
+* updates to mercurial_keyring, evolve, hgsubversion, and hg-git
+
+----
+
 = TortoiseHg 3.8.4 =
 
 TortoiseHg 3.8.4 is a regularly scheduled bug-fix release.

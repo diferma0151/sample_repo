@@ -87,7 +87,7 @@ In Mercurial 3.5:
 
 * [template support in formatter](https://selenic.com/repo/hg/rev/0c6f98398f8a)
 
-In Mercurial 3.6 (unreleased):
+In Mercurial 3.6:
 
 * `{localdate(date, "UTC")}` template function
 

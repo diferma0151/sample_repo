@@ -11,6 +11,10 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* graphopt: show working copy if any of its parents are in a branch filtering
+* sync: reorder SecureDialog.__init__ to avoid too early _updateUi() (fixes #4559)
+* toposort: avoid crash when tip revision is hidden
+
 == Improvements ==
 
 ----

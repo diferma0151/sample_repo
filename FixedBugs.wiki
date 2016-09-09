@@ -21,6 +21,9 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bug Fixes in Third-party Modules ==
 
+Python 2.7.10:
+* #4588 - importing mimetypes raises TypeError (Windows)
+
 QScintilla 2.9:
 * #4112 - Blinking cursor on inactive text fields
 

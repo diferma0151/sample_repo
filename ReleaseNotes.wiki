@@ -20,6 +20,18 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 3.9.1 = 
+
+TortoiseHg 3.9.1 is a regularly scheduled bug-fix release.
+
+== Bug Fixes ==
+
+* graphopt: show working copy if any of its parents are in a branch filtering
+* sync: reorder SecureDialog.__init__ to avoid too early _updateUi() (fixes #4559)
+* toposort: avoid crash when tip revision is hidden
+
+----
+
 = TortoiseHg 3.9 =
 
 TortoiseHg 3.9 is a quarterly feature release, with many improvements to performance on large repositories, and security improvements in Mercurial 3.9. See https://www.mercurial-scm.org/wiki/SecureConnections

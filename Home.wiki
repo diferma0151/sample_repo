@@ -1,4 +1,4 @@
-[[http://tortoisehg.bitbucket.org/|{{http://tortoisehg.bitbucket.org/css/img/logo.png|TortoiseHg Website}}]]
+[[http://tortoisehg.bitbucket.io/|{{http://tortoisehg.bitbucket.io/css/img/logo.png|TortoiseHg Website}}]]
 
 TortoiseHg is a Windows shell extension and a series of applications for
 the [[http://mercurial.selenic.com|Mercurial]] distributed
@@ -8,9 +8,9 @@ platforms.
 
 //Acknowledgement//: The TortoiseHg installer for Windows includes the TortoiseOverlays handler, as provided by the [[http://tortoisesvn.net|TortoiseSVN project]].
 
-**[[http://tortoisehg.bitbucket.org/download/index.html|Download]]** | 
-**[[http://tortoisehg.bitbucket.org/docs.html|Documentation]]** |
-**[[http://tortoisehg.bitbucket.org/manual/2.10/faq.html|FAQ]]** |
+**[[http://tortoisehg.bitbucket.io/download/index.html|Download]]** | 
+**[[http://tortoisehg.bitbucket.io/docs.html|Documentation]]** |
+**[[http://tortoisehg.bitbucket.io/manual/2.10/faq.html|FAQ]]** |
 **[[ReleaseNotes]]** |  **[[RoadMap]]**
 
 == Releases ==
@@ -21,7 +21,7 @@ TortoiseHg has monthly releases, roughly at the same time as Mercurial releases.
 
 * Microsoft Windows XP, Vista, Windows 7
 * Command line support via [[thg]]
-* Debian and RedHat distributions, see [[http://tortoisehg.bitbucket.org/download/index.html|Download]]
+* Debian and RedHat distributions, see [[http://tortoisehg.bitbucket.io/download/index.html|Download]]
 * [[developers/MacOSX|Mac OS X]] is supported via source install or nightly builds
 * [[Ubuntu]] / [[CentOS]]
 
@@ -29,7 +29,7 @@ Please note that like TortoiseSVN, [[http://www.selenic.com/pipermail/mercurial/
 
 == Documentation ==
 
-* Online [[http://tortoisehg.bitbucket.org/docs.html|Manuals]]
+* Online [[http://tortoisehg.bitbucket.io/docs.html|Manuals]]
 * TortoiseHg for [[SVN]] Users
 * [[KeySequences]] shortcuts used in various dialogs
 * [[OpenAtLine]] new feature in 2.0

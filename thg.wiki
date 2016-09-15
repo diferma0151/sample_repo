@@ -7,7 +7,7 @@ PyQt. This is the easiest way to start using TortoiseHg on [[developers/Linux|Li
 == Packages ==
 
 You may be able to find RPM and DEB packages on the 
-[[http://tortoisehg.bitbucket.org/download/index.html|download]]
+[[http://tortoisehg.bitbucket.io/download/index.html|download]]
 page.  If not, please use the source install method.
 
 == From Source ==

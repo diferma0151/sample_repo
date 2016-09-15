@@ -5,7 +5,7 @@ This page is intended as a compendium of links and helpful notes for Subversion 
 \\这篇文章是给那些想从SVN转到HG的，或者正在尝试使用HG的用户准备的一份提纲和备注。
 
 When learning Mercurial the first step should be [[http://hgbook.red-bean.com/|the hgbook]], available in 
-[[http://tortoisehg.bitbucket.org/hgbook/1.6/index.html|html]].
+[[http://tortoisehg.bitbucket.io/hgbook/1.6/index.html|html]].
 [[http://mercurial.selenic.com/wiki/|Mercurial's wiki]] is also a key source.
 \\学习Mercurial
 (分布式版本管理,//Google翻译里面有解释“水银”这一项，因此可以理解TortoiseHg（乌龟汞）的由来//)
@@ -29,8 +29,8 @@ When learning Mercurial the first step should be [[http://hgbook.red-bean.com/|t
 == Using TortoiseHg with a Subversion like workflow ==
 == 使用乌龟汞(TortoiseHg)实现工作流式的版本管理 ==
 
-As you first begin using TortoiseHg, you may want to configure some of these optional features to approach a more subversion like work flow.  See the [[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|settings]] tool manual to learn how to configure these settings either globally or per-repository.
-\\当你第一次使用使用乌龟汞(TortoiseHg)的时候，你可能需要配置一些可选的功能使得你的版本管理就像工作流一样。请参阅乌龟汞(TortoiseHg)的[[http://tortoisehg.bitbucket.org/manual/0.9/settings.html|设置界面的帮助手册]]，学习如何去修改它的全局设置或子库设置。
+As you first begin using TortoiseHg, you may want to configure some of these optional features to approach a more subversion like work flow.  See the [[http://tortoisehg.bitbucket.io/manual/0.9/settings.html|settings]] tool manual to learn how to configure these settings either globally or per-repository.
+\\当你第一次使用使用乌龟汞(TortoiseHg)的时候，你可能需要配置一些可选的功能使得你的版本管理就像工作流一样。请参阅乌龟汞(TortoiseHg)的[[http://tortoisehg.bitbucket.io/manual/0.9/settings.html|设置界面的帮助手册]]，学习如何去修改它的全局设置或子库设置。
 
 === Post-Pull Operations ===
 === 拉取操作 ===

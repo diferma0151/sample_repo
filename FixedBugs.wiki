@@ -14,6 +14,17 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Improvements ==
 
+* graph: make annotate/history graph work with a shallow (remotefilelog) repo
+* repoagent: light-weight suspend of repository monitor while running commands
+* repofilter: adjust branch combo to content every time model changed
+* repofilter: do not calculate width of revset combo from contents (fixes #4035)
+
+hgext:
+
+* extension: rename the extension from 'lighthg' to 'thg'
+* extension: restrict to only 'view' as a command name
+* light-ui: update the windows name to mention TortoiseHg and reponame
+
 ----
 
 == Bug Fixes in Third-party Modules ==

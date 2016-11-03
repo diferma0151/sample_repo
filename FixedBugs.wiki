@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 3.9.2 =
+= Changes since 4.0 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -17,16 +17,6 @@ move towards PyQt 5.
 
 == Improvements ==
 
-* graph: make annotate/history graph work with a shallow (remotefilelog) repo
-* repoagent: light-weight suspend of repository monitor while running commands
-* repofilter: adjust branch combo to content every time model changed
-* repofilter: do not calculate width of revset combo from contents (fixes #4035)
-
-hgext:
-
-* extension: rename the extension from 'lighthg' to 'thg'
-* extension: restrict to only 'view' as a command name
-* light-ui: update the windows name to mention TortoiseHg and reponame
 
 ----
 

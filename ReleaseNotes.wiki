@@ -20,14 +20,6 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
-= TortoiseHg 3.9.2 = 
-
-TortoiseHg 3.9.2 is a regularly scheduled bug-fix release.
-
-There were no changes to TortoiseHg itself in this release, but the installer packages include Mercurial 3.9.2 and many updates to the packaged software libraries.  The Windows installers now come with the latest Python release (2.7.10), the latest Qt4 and PyQt4 releases, and updates to several Mercurial extensions including keyring, evolve, and dulwich (hg-git).
-
-----
-
 = TortoiseHg 4.0 =
 
 TortoiseHg 4.0 is a quarterly feature release
@@ -43,6 +35,14 @@ hgext:
 * extension: rename the extension from 'lighthg' to 'thg'
 * extension: restrict to only 'view' as a command name
 * light-ui: update the windows name to mention TortoiseHg and reponame
+
+----
+
+= TortoiseHg 3.9.2 = 
+
+TortoiseHg 3.9.2 is a regularly scheduled bug-fix release.
+
+There were no changes to TortoiseHg itself in this release, but the installer packages include Mercurial 3.9.2 and many updates to the packaged software libraries.  The Windows installers now come with the latest Python release (2.7.10), the latest Qt4 and PyQt4 releases, and updates to several Mercurial extensions including keyring, evolve, and dulwich (hg-git).
 
 ----
 

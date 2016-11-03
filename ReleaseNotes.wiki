@@ -28,6 +28,24 @@ There were no changes to TortoiseHg itself in this release, but the installer pa
 
 ----
 
+= TortoiseHg 4.0 =
+
+TortoiseHg 4.0 is a quarterly feature release
+
+== Improvements ==
+
+* graph: make annotate/history graph work with a shallow (remotefilelog) repo
+* repoagent: light-weight suspend of repository monitor while running commands
+* repofilter: adjust branch combo to content every time model changed
+* repofilter: do not calculate width of revset combo from contents (fixes #4035)
+
+hgext:
+* extension: rename the extension from 'lighthg' to 'thg'
+* extension: restrict to only 'view' as a command name
+* light-ui: update the windows name to mention TortoiseHg and reponame
+
+----
+
 = TortoiseHg 3.9.1 = 
 
 TortoiseHg 3.9.1 is a regularly scheduled bug-fix release.

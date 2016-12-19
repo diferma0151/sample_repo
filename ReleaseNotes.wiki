@@ -20,6 +20,16 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.0.1 =
+
+TortoiseHg 4.0.1 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* customtools: add tooltips to hook types dropdown (fixes #4625)
+
+----
+
 = TortoiseHg 4.0 =
 
 TortoiseHg 4.0 is a quarterly feature release

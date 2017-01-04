@@ -9,9 +9,6 @@ with subversion repositories.  See [[libsvn]]
 
 Python 2.4 and 2.5 are no longer supported.
 
-We plan to drop support for PyQt < 4.7.5 in TortoiseHg 4.1 to accelerate the
-move towards PyQt 5.
-
 == Bugs Fixes ==
 
 

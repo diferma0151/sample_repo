@@ -20,6 +20,12 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.0.2 =
+
+TortoiseHg 4.0.2 is a regularly scheduled bug-fix release, containing only updates to Mercurial itself.
+
+----
+
 = TortoiseHg 4.0.1 =
 
 TortoiseHg 4.0.1 is a regularly scheduled bug-fix release

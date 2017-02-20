@@ -20,6 +20,21 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.1 =
+
+TortoiseHg is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.1
+
+== Bug Fixes ==
+
+* cmdcore: fix PYTHONPATH to not include ''
+* revdetails: fix url/nodeid markup to not capture HTML escapes (fixes #4663)
+
+== Installer ==
+
+* Latest hgsubversion and evolve tags
+
+----
+
 = TortoiseHg 4.0.2 =
 
 TortoiseHg 4.0.2 is a regularly scheduled bug-fix release, containing only updates to Mercurial itself.

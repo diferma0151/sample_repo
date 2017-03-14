@@ -20,6 +20,20 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.1.1 =
+
+TortoiseHg is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* fix URLs to website
+
+== Installer ==
+
+* Latest keyring extension
+
+----
+
 = TortoiseHg 4.1 =
 
 TortoiseHg is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.1

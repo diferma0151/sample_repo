@@ -31,6 +31,167 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+= TortoiseHg 3.8.4 =
+
+TortoiseHg 3.8.4 is a regularly scheduled bug-fix release.
+
+== Bug Fixes ==
+
+* N/A
+
+== Installer ==
+
+Updates to dulwich and evolve, and (obviously) hg 3.8.4
+
+----
+
+= TortoiseHg 3.8.3 =
+
+TortoiseHg 3.8.3 is a regularly scheduled bug-fix release.
+
+== Bug Fixes ==
+
+* extensions: prevent loading blackbox in GUI process (fixes #4489)
+* matching: do not use indexing to get first revision from smartset
+  (fixes #4497)
+
+== Installer ==
+
+Updates to hgsubversion, hggit, evolve, hgkeyring, and python-keyring (which changed hosting to github)
+
+----
+
+= TortoiseHg 3.8.1 =
+
+TortoiseHg 3.8.1 is a feature release. 3.8.0 was skipped since Mercurial tagged 3.8.1 the same day as 3.8.0.
+
+== Bug Fixes ==
+
+* guifork: disable interaction with tty input (refs #4469)
+* qtapp: disable interaction with tty on GUI (fixes #4469)
+* postreview: suggest wiki if reviewboard extension not enabled (fixes #4463)
+* workbench: fall back to revset query on "go to revision" (fixes #4084)
+
+== Improvements ==
+
+* clone: add a --config extensions.largefiles= option
+* paths: always respect the HG environment variable
+
+== Installer ==
+
+* updates to packaged dulwich and hgsubversion
+
+----
+
+= TortoiseHg 3.7.3 =
+
+TortoiseHg 3.7.3 is a regularly scheduled bugfix release, primarily to pick up security bug fixes in Mercurial 3.7.3.
+
+See https://www.mercurial-scm.org/pipermail/mercurial/2016-March/049452.html
+
+----
+
+= TortoiseHg 3.7.2 =
+
+TortoiseHg 3.7.2 is a regularly scheduled bugfix release, primarily to pick up bug fixes on
+the stable branch of Mercurial and packaging improvements.
+
+----
+
+= TortoiseHg 3.7.1 =
+
+TortoiseHg 3.7.1 is a feature release. TortoiseHg 3.7 was never packaged since there was a hot-fix necessary for Mercurial 3.7.
+
+== Bug Fixes ==
+
+* cmdui: backport more robust parsing of prompt choices (fixes #4423)
+* commit: include ignored files if explicitly selected (fixes #4422)
+* docklog: stop shell expansion if command-line token looks quoted (fixes #4312)
+* fileview: invert colors of excluded chunks on dark theme (refs #810)
+* lfprompt: catch Abort caused by invalid largefiles.patterns (fixes #4397)
+* merge: don't call other revision as "target" (fixes #4413)
+* nautilus: fix the extension for Nautilus 3.16+ (fixes #4228)
+* repowidget: label "reject bundle" button as "cancel" (closes #4292)
+* repotreeitem: keep root paths in unicode (fixes #3723)
+
+== Improvements ==
+
+* introduce a GUI lock tool
+* repowidget: add "Revert all Files" context menu (closes #4337)
+* settings: resurrect field for ui.editor
+* sync: add browse button to the synchronize window (closes #4394)
+
+== Installer ==
+
+* setup: add support for building OS X application bundles
+
+----
+
+= TortoiseHg 3.6.3 =
+
+TortoiseHg 3.6.3 is a regularly scheduled bug fix release.
+
+== Bugs Fixes ==
+
+* demandimport: exclude pkgutil and pkg_resources (fixes #4271, #4298)
+
+----
+
+= TortoiseHg 3.6.2 =
+
+TortoiseHg 3.6.2 is a regularly scheduled bug fix release.
+
+== Bugs Fixes ==
+
+* repowidget: fix handling of patch.extract() result (hg 3.6) (fixes #4390)
+
+== Improvements ==
+
+* doc: include link to download and use Python 2.7 SWIG bindings
+
+----
+
+= TortoiseHg 3.6.1 =
+
+TortoiseHg 3.6.1 is a bug fix release, primarily to pick up fixes in Mercurial in its 3.6.1 tag.
+
+== Bugs Fixes ==
+
+* reporegistry: move warning of opening non-hg repository to common function
+* bump major revision number in docs
+
+== Installer ==
+
+* mercurial_keyring 0.7.1
+* evolve 5.2.1
+* dulwich 0.11.2
+* hgsubversion tip of stable branch (fixes #4356)
+* hggit tip
+
+----
+
+= TortoiseHg 3.6 =
+
+TortoiseHg 3.6 is a major feature release
+
+== Bugs Fixes ==
+
+* mq: suppress original error only if all rejects are resolved (fixes #4325)
+* osx: adjust icon sizes when add THG_RETINA environment variable is set to True
+* repowidget: allow bookmarking applied MQ patch (fixes #4336)
+* update: handle EnvironmentError in the same way as parameter error
+  (fixes #4283)
+
+== Improvements ==
+
+* compress, graft, rebase: provide "shelve" as cleanup option (closes #4252)
+* mqdock: add menu action to push/pop to the selected patch
+* mqdock: add menu and toolbar action to finish patches (closes #4296)
+* repowidget: change Filter by/Ancestors into Filter by/Ancestors and
+  Descendants
+
+----
+
 = TortoiseHg 3.5.2 =
 
 TortoiseHg 3.5.2 is a regularly scheduled bugfix release. 

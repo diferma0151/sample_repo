@@ -42,7 +42,7 @@ TortoiseHg 4.1.2 is a regularly scheduled bug-fix release
 
 = TortoiseHg 4.1.1 =
 
-TortoiseHg is a regularly scheduled bug-fix release
+TortoiseHg 4.1.1 is a regularly scheduled bug-fix release
 
 == Bug Fixes ==
 
@@ -56,7 +56,7 @@ TortoiseHg is a regularly scheduled bug-fix release
 
 = TortoiseHg 4.1 =
 
-TortoiseHg is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.1
+TortoiseHg 4.1 is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.1
 
 == Bug Fixes ==
 

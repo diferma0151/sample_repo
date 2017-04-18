@@ -20,9 +20,15 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.1.3 =
+
+TortoiseHg 4.1.3 is a special release to pick up security fixes in Mercurial 4.1.3
+
+----
+
 = TortoiseHg 4.1.2 =
 
-TortoiseHg is a regularly scheduled bug-fix release
+TortoiseHg 4.1.2 is a regularly scheduled bug-fix release
 
 == Bug Fixes ==
 

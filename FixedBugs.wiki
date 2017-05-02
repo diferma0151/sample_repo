@@ -11,8 +11,15 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* customtools: do not crash by tool name containing dot (fixes #4740)
+* revdetails: convert issue patterns to unicode (fixes #4737)
+* win32: fix XLS hack in docdiff (refs #4540)
+
 == Improvements ==
 
+* archive: allow to archive "all files touched since X"
+* merge: respect 'merge-pattern' config when merging (fixes #1928)
+* status, repo: remove unnecessary invalidation (fsmonitor compatibility)
 
 ----
 

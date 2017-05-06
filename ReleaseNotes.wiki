@@ -20,6 +20,29 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.2 =
+
+TortoiseHg 4.2 is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.2
+
+== Bug Fixes ==
+
+* customtools: do not crash by tool name containing dot (fixes #4740)
+* revdetails: convert issue patterns to unicode (fixes #4737)
+* win32: fix XLS hack in docdiff (refs #4540)
+
+== Improvements ==
+
+* archive: allow to archive "all files touched since X"
+* merge: respect 'merge-pattern' config when merging (fixes #1928)
+* status, repo: remove unnecessary invalidation (fsmonitor compatibility)
+
+== Installer ==
+
+* packaged with Mercurial 4.2 + 3 stable commits and one WIX fix commit
+* updated keyring and evolution
+
+----
+
 = TortoiseHg 4.1.3 =
 
 TortoiseHg 4.1.3 is a special release to pick up security fixes in Mercurial 4.1.3

@@ -11,6 +11,9 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* compat: wrap scmutil.userrcpath() for hg 4.2 (fixes #4744)
+* run: import getopt.GetoptError directly (fixes #4746)
+
 == Improvements ==
 
 ----

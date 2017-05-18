@@ -14,6 +14,7 @@ Python 2.4 and 2.5 are no longer supported.
 * compat: replace util.stderr on frozen Windows build (fixes #4754)
 * compat: wrap scmutil.userrcpath() for hg 4.2 (fixes #4744)
 * mq: escape patch revision passed to qfinish command (fixes #4773)
+* qtrun: actually disable pager in GUI by ui.paginate flag (fixes #4778)
 * run: import getopt.GetoptError directly (fixes #4746)
 
 == Improvements ==

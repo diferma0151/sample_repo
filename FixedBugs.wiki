@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 4.2 =
+= Changes since 4.2.1 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -11,11 +11,6 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
-* compat: replace util.stderr on frozen Windows build (fixes #4754)
-* compat: wrap scmutil.userrcpath() for hg 4.2 (fixes #4744)
-* mq: escape patch revision passed to qfinish command (fixes #4773)
-* qtrun: actually disable pager in GUI by ui.paginate flag (fixes #4778)
-* run: import getopt.GetoptError directly (fixes #4746)
 
 == Improvements ==
 

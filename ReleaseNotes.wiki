@@ -22,6 +22,8 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 = TortoiseHg 4.2.1 =
 
+TortoiseHg 4.2.1 is a regularly scheduled bug-fix release
+
 == Bug Fixes ==
 
 * compat: replace util.stderr on frozen Windows build (fixes #4754)

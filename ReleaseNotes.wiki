@@ -20,6 +20,22 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.2.1 =
+
+== Bug Fixes ==
+
+* compat: replace util.stderr on frozen Windows build (fixes #4754)
+* compat: wrap scmutil.userrcpath() for hg 4.2 (fixes #4744)
+* mq: escape patch revision passed to qfinish command (fixes #4773)
+* qtrun: actually disable pager in GUI by ui.paginate flag (fixes #4778)
+* run: import getopt.GetoptError directly (fixes #4746)
+
+== Installer ==
+
+* latest hg-git, mercurial_keyring
+
+----
+
 = TortoiseHg 4.2 =
 
 TortoiseHg 4.2 is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.2

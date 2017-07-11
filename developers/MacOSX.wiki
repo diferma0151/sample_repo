@@ -383,9 +383,11 @@ TortoiseHg is now available in [[http://www.finkproject.org/|fink]]'s unstable t
 ----
 
 == Install via Homebrew ==
-**Note:** Qt now comes pre-compiled with homebrew. So installing TortoiseHg is much faster than it used to be.
 
-**Note:** These steps have been confirmed to work with TortoiseHg 2.2.2. They also create an app for your ##Applications## folder.
+**Note:** Qt now comes pre-compiled with homebrew. So installing TortoiseHg is much faster than it used to be.
+**Note:** PyQt4 has been removed from mainline Homebrew, so the instructions have changed
+
+=== Step 1. Install homebrew ===
 
 * Install XCode via [[http://itunes.apple.com/us/app/xcode/id497799835|AppStore]] or XCode command line tools via [[https://developer.apple.com/downloads/]] (required by Homebrew)
 * Install [[http://mxcl.github.com/homebrew/|Homebrew]]
@@ -400,23 +402,44 @@ export PATH=$BREW_PREFIX/share/python:$BREW_PREFIX/bin/:$BREW_PREFIX/sbin:$PATH
 export PYTHONPATH=$BREW_PREFIX/lib/python2.7/site-packages:$PYTHONPATH
 }}}
 
-* Install PyQt via homebrew (this also installs qt and sip):
+=== Step 2. Install PyQt4 ====
+
+* Follow instructions at https://github.com/cartr/homebrew-qt4
 
 {{{
-$ brew install pyqt
+brew tap cartr/qt4
+brew tap-pin cartr/qt4
+brew install qt@4
 }}}
 
-* Install QScintilla via homebrew.
+* install pyqt4 from this tap
 
 {{{
-$ brew install qscintilla2
+brew install pyqt@4
+}}}
+
+* pin qt and sip to prevent breakage from updates
+
+{{{
+brew pin sip qt qt@4 pyqt@4
+}}}}
+
+* Install QScintilla via source. Download QScintilla_gpl-2.10.1.tar.gz from Riverbank
+
+{{{
+$ cd QScintilla_gpl-2.10.1/Qt4Qt5
+$ /usr/local/Cellar/qt@4/4.8.7_1/bin/qmake
+$ make install
+$ cd ../Python
+$ python configure.py --pyqt=PyQt4 --pyqt-sipdir=/usr/local/Cellar/pyqt@4/4.12_1/share/sip/
+$ make install
 }}}
 
 
 * Install required Python packages:
 {{{
 $ easy_install pip
-$ pip install -U Pygments iniparse Mercurial
+$ pip install -U Pygments iniparse mercurial
 }}}
 
 

@@ -385,6 +385,7 @@ TortoiseHg is now available in [[http://www.finkproject.org/|fink]]'s unstable t
 == Install via Homebrew ==
 
 **Note:** Qt now comes pre-compiled with homebrew. So installing TortoiseHg is much faster than it used to be.
+
 **Note:** PyQt4 has been removed from mainline Homebrew, so the instructions have changed
 
 === Step 1. Install homebrew ===
@@ -422,7 +423,7 @@ brew install pyqt@4
 
 {{{
 brew pin sip qt qt@4 pyqt@4
-}}}}
+}}}
 
 * Install QScintilla via source. Download QScintilla_gpl-2.10.1.tar.gz from Riverbank
 

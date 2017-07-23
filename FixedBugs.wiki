@@ -11,8 +11,13 @@ Python 2.4 and 2.5 are no longer supported.
 
 == Bugs Fixes ==
 
+* fileview: fix marker dark theme background colors (refs #810)
 
 == Improvements ==
+
+* repowidget: add custom tools support to pair selection menu
+* repowidget: add custom tools support to multiple selection menu
+* sync: use [hostsecurity] section instead of [hostfingerprints] (refs #4830)
 
 ----
 
@@ -34,4 +39,4 @@ TortoisePlink:
 ----
 
 Random builds of the stable branch can be found at
-**[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]**
+**[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]

@@ -1,8 +1,8 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 4.2.2 =
+= Changes since 4.3.1 =
 
-TortoiseHg 4.3 will be the last version that supports Python 2.6 and
+TortoiseHg 4.3 is the last version that supports Python 2.6 and
 PyQt 4.6-4.8.2. Upcoming release will require Python 2.7 and PyQt 4.8.3,
 and is expected to support Qt5 on macOS and Linux.
 
@@ -12,14 +12,7 @@ They must be downloaded and setup manually if you need TortoiseHg to interact
 with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
-
-* fileview: fix marker dark theme background colors (refs #810)
-
 == Improvements ==
-
-* repowidget: add custom tools support to pair selection menu
-* repowidget: add custom tools support to multiple selection menu
-* sync: use [hostsecurity] section instead of [hostfingerprints] (refs #4830)
 
 ----
 

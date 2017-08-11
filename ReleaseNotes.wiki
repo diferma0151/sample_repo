@@ -20,6 +20,27 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.3.1 =
+
+TortoiseHg 4.3.1 is a quarterly feature release; 4.3.0 was skipped since Mercurial tagged 4.3.1 the
+day as 4.3
+
+== Bug Fixes ==
+
+* fileview: fix marker dark theme background colors (refs #810)
+
+== Improvements ==
+
+* repowidget: add custom tools support to pair selection menu
+* repowidget: add custom tools support to multiple selection menu
+* sync: use [hostsecurity] section instead of [hostfingerprints] (refs #4830)
+
+== Installer ==
+
+* newest versions of hg-git, dulwich and evolve
+
+----
+
 = TortoiseHg 4.2.2 =
 
 TortoiseHg 4.2.2 is a regularly scheduled bug-fix release

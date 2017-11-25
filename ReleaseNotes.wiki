@@ -20,6 +20,17 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.4.1 =
+
+TortoiseHg 4.4.1 is a major release, coinciding with Mercurial's 4.4.1 security fix release. The x64 Windows installer packages are now built with Qt5. The x86 Windows installer packages will remain on Qt4.  Linux and Mac OS X users can use Qt4 or Qt5, whichever is more stable on your platform.
+
+== Installer ==
+
+* Qt5.9.2, PyQt5.9.2
+* latest versions of hg-git, dulwich and evolve
+
+----
+
 = TortoiseHg 4.3.1 =
 
 TortoiseHg 4.3.1 is a quarterly feature release; 4.3.0 was skipped since Mercurial tagged 4.3.1 the

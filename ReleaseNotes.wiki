@@ -26,9 +26,11 @@ TortoiseHg 4.4.2 is a regularly scheduled bug-fix release
 
 == Fixed Bugs ==
 
+* graphopt: in revset_mode don't add edges for revs not in the set (fixes #4935)
 * guess: replace Model.reset() by begin/endResetModel() (fixes #4967)
 * qt5: work around incompatibility with QProxyStyle (fixes #4962)
 * qtapp: convert login username to unicode (fixes #4964)
+* repomodel: cache repo.branchheads() (refs #4963)
 * visdiff: coerce type of configbool() value to be passed to setEnabled()
 
 ----

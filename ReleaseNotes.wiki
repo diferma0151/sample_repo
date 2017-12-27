@@ -20,6 +20,19 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.4.2 =
+
+TortoiseHg 4.4.2 is a regularly scheduled bug-fix release
+
+== Fixed Bugs ==
+
+* guess: replace Model.reset() by begin/endResetModel() (fixes #4967)
+* qt5: work around incompatibility with QProxyStyle (fixes #4962)
+* qtapp: convert login username to unicode (fixes #4964)
+* visdiff: coerce type of configbool() value to be passed to setEnabled()
+
+----
+
 = TortoiseHg 4.4.1 =
 
 TortoiseHg 4.4.1 is a major release, coinciding with Mercurial's 4.4.1 security fix release. The x64 Windows installer packages are now built with Qt5. The x86 Windows installer packages will remain on Qt4.  Linux and Mac OS X users can use Qt4 or Qt5, whichever is more stable on your platform.

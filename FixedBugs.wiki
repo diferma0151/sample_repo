@@ -9,8 +9,19 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* mergetools: add meld with --auto-merge (fixes #4973)
+* mq: add action for "qpush --move" (closes #4991)
+* mq: preserve selection on trivial renames (fixes #5004)
+* mq: trigger delete patches action by Del (closes #4944)
 
 == Improvements ==
+
+
+* chunks: do not apply fontdiff to whole DiffBrowser widget
+* manifestmodel: do not call begin/endInsertRows() if empty (fixes #5000)
+* qtapp: do not try to select destroyed signal having no argument (fixes #5020)
+* qtapp: enable support for HiDPI toolbar icons (fixes #5025)
+* settings: remove unsupported "fontlist" config knob (fixes #4945)
 
 ----
 

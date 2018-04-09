@@ -28,6 +28,8 @@ TortoiseHg 4.5.3 is a regularly scheduled bug-fix release
 * i18n:  drop excessive '\' from internal URL of ru translation (fixes #5063)
 * graphopt: do not build nodes just for flags() (fixes #5061)
 
+----
+
 = TortoiseHg 4.5.2 =
 
 TortoiseHg 4.5.2 is a regularly scheduled bug-fix release, primarily containing the security fixes in Mercurial 4.5.2

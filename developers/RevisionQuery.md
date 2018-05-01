@@ -31,21 +31,19 @@ update = rev branch tags | summary
 # templates for widgets that use QTextDocument
 [thg-revtemplates]
 # field[.style] = template; or field.label = label
-rev = {rev} (<tt>{node|short}</tt>)
-rev.compact = {rev}
-tags = {tags % '<span class="tag"> {tag|escape} </span> '}
-summary = {desc|firstline}
+rev = "{rev} (<tt>{node|short}</tt>)"
+rev.compact = "{rev}"
+tags = "{tags % '<span class="tag"> {tag|escape} </span> '}"
+summary = "{desc|firstline}"
 
 # custom field can be added by user
-git = {gitnode}
-
-[thg-revlabels]
-git = Git
+git = "{gitnode}"
+git:label = "Git"
 
 # templates for log model (repomodel)
 [thg-logtemplates]
-rev = {rev}
-date = {date|localdate|shortdate}
+rev = "{rev}"
+date = "{date|localdate|shortdate}"
 ~~~~
 
 ## API
@@ -63,7 +61,7 @@ The following widgets can render HTML subset by using `QTextDocument`:
 
 * `hg preparerevset` and `prepared(name)` predicate allow us to render the
   same query in different styles, and retrieve chunks form the large query.
-* `thgrevfields(form, style)` template function applies the pre-configured
+* `-T 'thgrevfields(form, style)'` template spec applies the pre-configured
   template.
 
 Example:
@@ -72,8 +70,8 @@ Example:
 # execute query, count items, and save it as "cslist0"
 $ hg preparerevset cslist0 -r 'outgoing()' --count
 # retrieve the first 20 items and the last for "prune" dialog in "list" style
-$ hg log -r 'limit(prepared(cslist0), 20)' -T '{thgrevfields("prune", "list")}'
-$ hg log -r 'last(prepared(cslist0))' -T '{thgrevfields("prune", "list")}'
+$ hg log -r 'limit(prepared(cslist0), 20)' -T 'thgrevfields("prune", "list")'
+$ hg log -r 'last(prepared(cslist0))' -T 'thgrevfields("prune", "list")'
 ~~~~
 
 ## Change History

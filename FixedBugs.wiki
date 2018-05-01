@@ -9,7 +9,14 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* fileview: serialize font name passed to Scintilla as UTF-8 (fixes #5075)
+
 == Improvements ==
+
+* repofilter: use partial matching to filter branch list (closes #4589)
+* repomodel: add a column with the git commit hash (closes #5073)
+* revpanel: show the git commit hash if the repo is a git clone (refs #5073)
+* topics: new dialog to manage topics
 
 ----
 

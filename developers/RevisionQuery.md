@@ -20,13 +20,14 @@ Templates can be configured by user.
 
 ~~~~{.ini}
 # visible fields can be selected per form
-[thg-revfields]
-# form[.style] = fields
+[thg-revforms]
+# form[.style]
 # RevDetailsWidget has default (expanded) and compact (single-line) styles
-revdetails = cset branch obsolete close user ... git
-revdetails.compact = rev summary
+revdetails:fields = cset branch obsolete close user ... git
+revdetails.compact:fields = rev summary
+revdetails:link = True
 # '|' means '\n' for quiet (label) style, '<p>' for verbose (panel) style?
-update = rev branch tags | summary
+update:fields = rev branch tags | summary
 
 # templates for widgets that use QTextDocument
 [thg-revtemplates]
@@ -40,7 +41,7 @@ summary = "{desc|firstline}"
 git = "{gitnode}"
 git:label = "Git"
 
-# templates for log model (repomodel)
+# TODO: templates for log model (repomodel)
 [thg-logtemplates]
 rev = "{rev}"
 date = "{date|localdate|shortdate}"
@@ -70,8 +71,10 @@ Example:
 # execute query, count items, and save it as "cslist0"
 $ hg preparerevset cslist0 -r 'outgoing()' --count
 # retrieve the first 20 items and the last for "prune" dialog in "list" style
-$ hg log -r 'limit(prepared(cslist0), 20)' -T 'thgrevfields("prune", "list")'
-$ hg log -r 'last(prepared(cslist0))' -T 'thgrevfields("prune", "list")'
+$ hg log --config tortoisehg.loadtemplates=True \
+> -r 'limit(prepared(cslist0), 20)' -T '{thgrevfields("prune", "list")}'
+$ hg log --config tortoisehg.loadtemplates=True \
+> -r 'last(prepared(cslist0))' -T '{thgrevfields("prune", "list")}'
 ~~~~
 
 ## Change History
@@ -100,6 +103,9 @@ short-term:
 1. implement prepared revset extension (WIP)
 1. implement template extension (WIP)
 1. implement APIs for asynchronous query (WIP)
+1. add hack for MQ (maybe we'll need new command that feeds patchctxs
+   to templater)
+1. add hyperlink support
 1. add incremental fetcher?
 
 long-term:

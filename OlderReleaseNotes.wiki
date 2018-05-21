@@ -31,6 +31,247 @@ an older version of Mercurial, please consult the following chart:
 
 ----
 
+----
+
+= TortoiseHg 4.4.2 =
+
+TortoiseHg 4.4.2 is a regularly scheduled bug-fix release
+
+== Fixed Bugs ==
+
+* graphopt: in revset_mode don't add edges for revs not in the set (fixes #4935)
+* guess: replace Model.reset() by begin/endResetModel() (fixes #4967)
+* qt5: work around incompatibility with QProxyStyle (fixes #4962)
+* qtapp: convert login username to unicode (fixes #4964)
+* repomodel: cache repo.branchheads() (refs #4963)
+* visdiff: coerce type of configbool() value to be passed to setEnabled()
+
+----
+
+= TortoiseHg 4.4.1 =
+
+TortoiseHg 4.4.1 is a major release, coinciding with Mercurial's 4.4.1 security fix release. The x64 Windows installer packages are now built with Qt5. The x86 Windows installer packages will remain on Qt4.  Linux and Mac OS X users can use Qt4 or Qt5, whichever is more stable on your platform.
+
+== Installer ==
+
+* Qt5.9.2, PyQt5.9.2
+* latest versions of hg-git, dulwich and evolve
+
+----
+
+= TortoiseHg 4.3.1 =
+
+TortoiseHg 4.3.1 is a quarterly feature release; 4.3.0 was skipped since Mercurial tagged 4.3.1 the
+day as 4.3
+
+== Bug Fixes ==
+
+* fileview: fix marker dark theme background colors (refs #810)
+
+== Improvements ==
+
+* repowidget: add custom tools support to pair selection menu
+* repowidget: add custom tools support to multiple selection menu
+* sync: use [hostsecurity] section instead of [hostfingerprints] (refs #4830)
+
+== Installer ==
+
+* newest versions of hg-git, dulwich and evolve
+
+----
+
+= TortoiseHg 4.2.2 =
+
+TortoiseHg 4.2.2 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* N/A
+
+== Installer ==
+
+* latest hg-git, evolve
+
+----
+
+= TortoiseHg 4.2.1 =
+
+TortoiseHg 4.2.1 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* compat: replace util.stderr on frozen Windows build (fixes #4754)
+* compat: wrap scmutil.userrcpath() for hg 4.2 (fixes #4744)
+* mq: escape patch revision passed to qfinish command (fixes #4773)
+* qtrun: actually disable pager in GUI by ui.paginate flag (fixes #4778)
+* run: import getopt.GetoptError directly (fixes #4746)
+
+== Installer ==
+
+* latest hg-git, mercurial_keyring
+
+----
+
+= TortoiseHg 4.2 =
+
+TortoiseHg 4.2 is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.2
+
+== Bug Fixes ==
+
+* customtools: do not crash by tool name containing dot (fixes #4740)
+* revdetails: convert issue patterns to unicode (fixes #4737)
+* win32: fix XLS hack in docdiff (refs #4540)
+
+== Improvements ==
+
+* archive: allow to archive "all files touched since X"
+* merge: respect 'merge-pattern' config when merging (fixes #1928)
+* status, repo: remove unnecessary invalidation (fsmonitor compatibility)
+
+== Installer ==
+
+* packaged with Mercurial 4.2 + 3 stable commits and one WIX fix commit
+* updated keyring and evolution
+
+----
+
+= TortoiseHg 4.1.3 =
+
+TortoiseHg 4.1.3 is a special release to pick up security fixes in Mercurial 4.1.3
+
+----
+
+= TortoiseHg 4.1.2 =
+
+TortoiseHg 4.1.2 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* fix URLs to websites
+
+== Installer ==
+
+* Latest evolve and dulwich extensions
+
+----
+
+= TortoiseHg 4.1.1 =
+
+TortoiseHg 4.1.1 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* fix URLs to website
+
+== Installer ==
+
+* Latest keyring extension
+
+----
+
+= TortoiseHg 4.1 =
+
+TortoiseHg 4.1 is a regularly scheduled (quarterly) feature release, coinciding with Mercurial 4.1
+
+== Bug Fixes ==
+
+* cmdcore: fix PYTHONPATH to not include ''
+* revdetails: fix url/nodeid markup to not capture HTML escapes (fixes #4663)
+
+== Installer ==
+
+* Latest hgsubversion and evolve tags
+
+----
+
+= TortoiseHg 4.0.2 =
+
+TortoiseHg 4.0.2 is a regularly scheduled bug-fix release, containing only updates to Mercurial itself.
+
+----
+
+= TortoiseHg 4.0.1 =
+
+TortoiseHg 4.0.1 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* customtools: add tooltips to hook types dropdown (fixes #4625)
+
+----
+
+= TortoiseHg 4.0 =
+
+TortoiseHg 4.0 is a quarterly feature release
+
+== Improvements ==
+
+* graph: make annotate/history graph work with a shallow (remotefilelog) repo
+* repoagent: light-weight suspend of repository monitor while running commands
+* repofilter: adjust branch combo to content every time model changed
+* repofilter: do not calculate width of revset combo from contents (fixes #4035)
+
+hgext:
+* extension: rename the extension from 'lighthg' to 'thg'
+* extension: restrict to only 'view' as a command name
+* light-ui: update the windows name to mention TortoiseHg and reponame
+
+----
+
+= TortoiseHg 3.9.2 = 
+
+TortoiseHg 3.9.2 is a regularly scheduled bug-fix release.
+
+There were no changes to TortoiseHg itself in this release, but the installer packages include Mercurial 3.9.2 and many updates to the packaged software libraries.  The Windows installers now come with the latest Python release (2.7.10), the latest Qt4 and PyQt4 releases, and updates to several Mercurial extensions including keyring, evolve, and dulwich (hg-git).
+
+----
+
+= TortoiseHg 3.9.1 = 
+
+TortoiseHg 3.9.1 is a regularly scheduled bug-fix release.
+
+== Bug Fixes ==
+
+* graphopt: show working copy if any of its parents are in a branch filtering
+* sync: reorder SecureDialog.__init__ to avoid too early _updateUi() (fixes #4559)
+* toposort: avoid crash when tip revision is hidden
+
+----
+
+= TortoiseHg 3.9 =
+
+TortoiseHg 3.9 is a quarterly feature release, with many improvements to performance on large repositories, and security improvements in Mercurial 3.9. See https://www.mercurial-scm.org/wiki/SecureConnections
+
+== Bugs Fixes ==
+
+* merge: fix missing separator in merge preview output (fixes #4526)
+* repofilter: do not emit branchChanged if original branch is restored
+* repowatcher: compare st_size and st_ctime to detect changes
+* repowidget: add status bar to LightRepoWindow (fixes #4553)
+* run: load template functions from extensions (fixes #4515)
+* wconfig: patch iniparse to allow :suboption in name
+
+== Improvements ==
+
+* commit: focus on commit message after branch operation (fixes #4442)
+* filedata: pass in existing copy information to diff
+* fileview: change shortcut keys of parent toggle actions to free Ctrl+n
+* icons: doubles the icon sizes on Linux on retina displays (fixes #4493)
+* init: relabel "Add special files" to avoid confusion with "hg add"
+  (fixes #4513)
+* repofilter: improve branch drop-down performance
+* repomodel: new graph layout algorithm for large repositories
+* status: reuse working context in WctxModel
+* sync: add widget to select minimum TLS protocol
+* workbench: add actions to switch tabs by Ctrl+n key (closes #3543)
+* workbench: add shortcut to toggle visibility of task tab
+
+== Installer ==
+
+* updates to mercurial_keyring, evolve, hgsubversion, and hg-git
+
+----
+
 = TortoiseHg 3.8.4 =
 
 TortoiseHg 3.8.4 is a regularly scheduled bug-fix release.

@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 4.5.3 =
+= Changes since 4.6 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -9,14 +9,7 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
-* fileview: serialize font name passed to Scintilla as UTF-8 (fixes #5075)
-
 == Improvements ==
-
-* repofilter: use partial matching to filter branch list (closes #4589)
-* repomodel: add a column with the git commit hash (closes #5073)
-* revpanel: show the git commit hash if the repo is a git clone (refs #5073)
-* topics: new dialog to manage topics
 
 ----
 

@@ -47,13 +47,9 @@ Here's some examples by peso to help illustrate the guidelines:
 
 The standard prefixes we've used so far (extracted from the revision history) :
 * cmenu - context menu extension
-* overlay - overlay icons extension
-* thg - generic change that affects thg
-* <module> - changes made to <module> in tortoisehg/thg/ subdir
-* contrib/<module> - changes made to <module> in contrib subdir
+* <module> - changes made to <module> in tortoisehg/hgqt/ subdir
 * wix - on binary installer (WiX, config files, etc)
 * setup - changes in setup.py
-* py2exe - related to py2exe (in setup.py)
 * icons - icon maintenance
 * doc - contributions to the documentation
 * nautilus - nautilus integration

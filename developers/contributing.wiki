@@ -1,4 +1,4 @@
-== Contributing
+= Contributing
 
 The preferred way to submit your changes is to send patches to
 [[https://groups.google.com/group/thg-dev/about|the thg-devel mailing list]].

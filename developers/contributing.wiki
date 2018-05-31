@@ -1,6 +1,8 @@
 = Contributing
 
-The preferred way to submit your changes is to send patches to
+== Submitting Patches
+
+The preferred is to email patches to
 [[https://groups.google.com/group/thg-dev/about|the thg-devel mailing list]].
 If possible, please //don't// attach your patches, but use the patchbomb
 extension (or "Email Patch" of TortoiseHg) instead.
@@ -12,11 +14,7 @@ You should indicate to which branch your patch applies (stable or default).
 Bug fix patches should be based on stable unless the bug they address is only
 on the default branch.
 
-Please also note that TortoiseHg has adopted the **unix line end** style of the
-Mercurial sources, even though we are targeting the Windows platform.
-
 == General Guidelines
-
 
 The Mercurial wiki has a good page with
 [[https://www.mercurial-scm.org/wiki/ContributingChanges|suggestions for contributing patches]].
@@ -24,6 +22,9 @@ In general these are also applicable for TortoiseHg.
 
 TortoiseHg specific guidelines can be found in
 [[https://bitbucket.org/tortoisehg/thg/src/tip/CONTRIBUTING.txt|CONTRIBUTING.txt]]
+
+Please also note that TortoiseHg has adopted the **unix line end** style of the
+Mercurial sources, even though we are targeting the Windows platform.
 
 == Guidelines For Commit Messages
 

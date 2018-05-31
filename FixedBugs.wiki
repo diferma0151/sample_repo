@@ -9,6 +9,11 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* archive: don't convert changectx to int, call rev() explicitly (fixes #5095)
+* compat: adapt to patch.extract() generator of hg 4.6 (fixes #5088)
+* compat: catch the right exception to be raised by util.parsedate()
+* pipeui: wrap _writenobuf() if available for hg 4.6 compatibility (fixes #5090)
+
 == Improvements ==
 
 ----

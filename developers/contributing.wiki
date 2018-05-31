@@ -1,36 +1,29 @@
 == Contributing
 
-If your changes are simple enough to be contained within a few changesets, it
-is preferable for patches to be sent to the
-[[http://groups.google.com/group/thg-dev/about?hl=en|thg-devel]] mailing list.
-This expedites the review of the patches, and allows other developers to
-comment directly on your changes.  If possible, please //don't// attach your
-patches. Developers have to strip them manually to import from maildir. 
+The preferred way to submit your changes is to send patches to
+[[https://groups.google.com/group/thg-dev/about|the thg-devel mailing list]].
+If possible, please //don't// attach your patches, but use the patchbomb
+extension (or "Email Patch" of TortoiseHg) instead.
 
-It is typically easier for everyone (including yourself) if you proceed as follows:
-* check in your fix locally, give it a meaningful commit message explaining what you are fixing, 
-* then use the email tool (from the TortoiseHG synchronize dialog) to send it to this list.
-
-Remember to use git patches if you are submitting binary files, symlinks, or
-permission changes. Setting **[diff] git = 1** in your Mercurial.ini or .hgrc makes this selection permanent and global.
+For trivial changes, [[/tortoisehg/thg/pull-requests/|pull requests]] are also
+accepted.
 
 You should indicate to which branch your patch applies (stable or default).
 Bug fix patches should be based on stable unless the bug they address is only
 on the default branch.
-
-Large changes that do not fit within a few patches could be published in a
-public repository. If you don't have your own server, you can use one of the
-[[http://www.selenic.com/mercurial/wiki/index.cgi/MercurialHosting|free hosting services]] on the net.  Obviously we prefer Bitbucket.  Just open an
-account, fork the appropriate repository, and start hacking.
 
 Please also note that TortoiseHg has adopted the **unix line end** style of the
 Mercurial sources, even though we are targeting the Windows platform.
 
 == General Guidelines
 
-The Mercurial wiki has a good page with [[http://www.selenic.com/mercurial/wiki/index.cgi/SuccessfulPatch|suggestions]] for contributing patches.  In general these are also applicable for TortoiseHg.
 
-TortoiseHg specific guidelines can be found in [[https://bitbucket.org/tortoisehg/thg/src/tip/CONTRIBUTING.txt|CONTRIBUTING.txt]]
+The Mercurial wiki has a good page with
+[[https://www.mercurial-scm.org/wiki/ContributingChanges|suggestions for contributing patches]].
+In general these are also applicable for TortoiseHg.
+
+TortoiseHg specific guidelines can be found in
+[[https://bitbucket.org/tortoisehg/thg/src/tip/CONTRIBUTING.txt|CONTRIBUTING.txt]]
 
 == Guidelines For Commit Messages
 

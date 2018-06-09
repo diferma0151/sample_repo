@@ -13,6 +13,7 @@ with subversion repositories.  See [[libsvn]]
 * compat: adapt to patch.extract() generator of hg 4.6 (fixes #5088)
 * compat: catch the right exception to be raised by util.parsedate()
 * pipeui: wrap _writenobuf() if available for hg 4.6 compatibility (fixes #5090)
+* qscilib: use QWheelEvent::angleDelta() on Qt5 (fixes #5109)
 
 == Improvements ==
 

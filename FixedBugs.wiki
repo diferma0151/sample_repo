@@ -30,6 +30,9 @@ QScintilla 2.9.1:
 * #4317 - Pressing numpad 'Del' while editing message may cause to ask to
   delete unversioned files
 
+QScintilla 2.10.5:
+* #5086 - Caret position is incorrect if window dragged across monitors
+
 TortoisePlink:
 * #4234 - TortoisePlink should be replaced
 

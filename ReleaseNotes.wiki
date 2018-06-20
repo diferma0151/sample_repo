@@ -20,6 +20,24 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.6.1 =
+
+TortoiseHg 4.6.1 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* archive: don't convert changectx to int, call rev() explicitly (fixes #5095)
+* compat: adapt to patch.extract() generator of hg 4.6 (fixes #5088)
+* compat: catch the right exception to be raised by util.parsedate()
+* pipeui: wrap _writenobuf() if available for hg 4.6 compatibility (fixes #5090)
+* qscilib: use QWheelEvent::angleDelta() on Qt5 (fixes #5109)
+
+== Installer ==
+
+* perfarce extension has been unbundled, for a broken upstream link
+
+----
+
 = TortoiseHg 4.6 =
 
 == Bug Fixes ==

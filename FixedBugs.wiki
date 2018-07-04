@@ -9,6 +9,9 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* hglib: don't show diff when there are no hunks
+* revdetails: make external links work correctly
+
 == Improvements ==
 
 ----

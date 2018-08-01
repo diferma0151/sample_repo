@@ -20,6 +20,15 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.6.2 =
+
+TortoiseHg 4.6.2 is a regularly scheduled bug-fix release
+
+== Bugs Fixes ==
+
+* hglib: don't show diff when there are no hunks
+* revdetails: make external links work correctly
+
 = TortoiseHg 4.6.1 =
 
 TortoiseHg 4.6.1 is a regularly scheduled bug-fix release

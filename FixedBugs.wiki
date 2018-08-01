@@ -9,7 +9,17 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* about: insert some more delay before starting network access (fixes #5142)
+* compat: replace procutil.stderr instead of util.stderr (fixes #5135)
+* hgqt: make sure shortcuts are visible in context menus in Qt 5.10
+* mq: do not mess up patches prior to qrename (fixes #5129)
+* repomodel: omit layoutChanged signal when model was/is about to be empty
+* repoview: compute optimal height on show event (fixes #5066)
+* repoview: switch to QTableView due to performance problem (refs #5061, #5066)
+
 == Improvements ==
+
+* grep: add a whole word match option, move follow button next to its peer
 
 ----
 

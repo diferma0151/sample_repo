@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 4.6.1 =
+= Changes since 4.6.2 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -8,9 +8,6 @@ They must be downloaded and setup manually if you need TortoiseHg to interact
 with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
-
-* hglib: don't show diff when there are no hunks
-* revdetails: make external links work correctly
 
 == Improvements ==
 

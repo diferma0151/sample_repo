@@ -9,6 +9,17 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* filedialogs: use scmutil.revsymbol() to resolve revision string to changectx
+* graft: use scmutil.revsymbol to resolve revision string (fixes #5158)
+* patchctx: expose repo() to fix a bug in unapplied MQ patches
+* qfold: use scmutil.revsymbol() to resolve "qtip" to changectx (fixes #5159)
+* repofilter: use scmutil.isrevsymbol() to test query type (fixes #5155)
+* repoview: do not look up integer revision by revsymbol() (fixes #5156)
+* repowidget: use scmutil.isrevsymbol() for instant revision lookup
+* revpanel: use scmutil.revsymbol() to resolve source to changectx (fixes #5160)
+* strip: use scmutil.revsymbol() to resolve revision string (fixes #5162)
+* update: pass in p2.node() to csinfo to wrap it with thgchangectx (fixes #5157)
+
 == Improvements ==
 
 ----

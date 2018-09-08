@@ -51,7 +51,6 @@ For any questions or comments on TortoiseHg, please post to mailing lists:
 
 * [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-discuss|discussion list]]:
   for general questions on TortoiseHg
-  ([[http://news.gmane.org/gmane.comp.version-control.mercurial.tortoisehg.user|gmane archive]])
 * [[http://groups.google.com/group/thg-dev|developers list]]:
   for development on TortoiseHg
 * [[https://lists.sourceforge.net/lists/listinfo/tortoisehg-issues|issues list]]:

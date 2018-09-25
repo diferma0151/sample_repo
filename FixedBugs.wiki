@@ -9,6 +9,9 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* commit: use scmutil.revsymbol() to look up existing branch (fixes #5226)
+* graft: parse graftstate as new format if file starts with '1\n' (fixes #5220)
+
 == Improvements ==
 
 ----

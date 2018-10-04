@@ -12,6 +12,8 @@ with subversion repositories.  See [[libsvn]]
 * commit: disable format-changing diff options for chunk select (fixes #5224)
 * commit: use scmutil.revsymbol() to look up existing branch (fixes #5226)
 * graft: parse graftstate as new format if file starts with '1\n' (fixes #5220)
+* grep: use scmutil.revsymbol to resolve revision string to changectx
+* visdiff: use scmutil.revsymbol() to resolve --change
 
 == Improvements ==
 

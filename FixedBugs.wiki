@@ -1,6 +1,6 @@
 See **[[ReleaseNotes]]** for bugs fixed in previous releases.
 
-= Changes since 4.7.1 =
+= Changes since 4.7.2 =
 
 Note: the Python bindings for subversion were deliberately removed from the
 TortoiseHg packages in release 3.4 for security and packaging reasons.
@@ -8,12 +8,6 @@ They must be downloaded and setup manually if you need TortoiseHg to interact
 with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
-
-* commit: disable format-changing diff options for chunk select (fixes #5224)
-* commit: use scmutil.revsymbol() to look up existing branch (fixes #5226)
-* graft: parse graftstate as new format if file starts with '1\n' (fixes #5220)
-* grep: use scmutil.revsymbol to resolve revision string to changectx
-* visdiff: use scmutil.revsymbol() to resolve --change
 
 == Improvements ==
 

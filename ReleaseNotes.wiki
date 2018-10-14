@@ -20,6 +20,20 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.7.2 =
+
+TortoiseHg 4.7.2 is a regularly scheduled bug-fix release
+
+== Bugs Fixes ==
+
+* commit: disable format-changing diff options for chunk select (fixes #5224)
+* commit: use scmutil.revsymbol() to look up existing branch (fixes #5226)
+* graft: parse graftstate as new format if file starts with '1\n' (fixes #5220)
+* grep: use scmutil.revsymbol to resolve revision string to changectx
+* visdiff: use scmutil.revsymbol() to resolve --change
+
+----
+
 = TortoiseHg 4.7.1 =
 
 TortoiseHg 4.7.1 is a regularly scheduled bug-fix release

@@ -40,4 +40,4 @@ TortoisePlink:
 ----
 
 Random builds of the stable branch can be found at
-**[[http://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]
+**[[https://bitbucket.org/tortoisehg/thg-winbuild/downloads/|thg-winbuild]]

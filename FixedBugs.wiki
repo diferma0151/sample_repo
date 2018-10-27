@@ -9,7 +9,13 @@ with subversion repositories.  See [[libsvn]]
 
 == Bugs Fixes ==
 
+* fileEditor: use a fixed width font
+* merge: don't show config dialog if ui.askusername is enabled (fixes #5245)
+* bisect: use scmutil.revsymbol() to resolve revision string (fixes #5263)
+
 == Improvements ==
+
+* clone: add default destination setting (fixes #5241)
 
 ----
 

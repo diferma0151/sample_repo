@@ -20,6 +20,22 @@ For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
 ----
 
+= TortoiseHg 4.8 =
+
+TortoiseHg 4.8 is a quarterly feature release
+
+== Bug Fixes ==
+
+* fileEditor: use a fixed width font
+* merge: don't show config dialog if ui.askusername is enabled (fixes #5245)
+* bisect: use scmutil.revsymbol() to resolve revision string (fixes #5263)
+
+== Improvements ==
+
+* clone: add default destination setting (fixes #5241)
+
+----
+
 = TortoiseHg 4.7.2 =
 
 TortoiseHg 4.7.2 is a regularly scheduled bug-fix release

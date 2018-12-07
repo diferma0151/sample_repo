@@ -12,6 +12,7 @@ with subversion repositories.  See [[libsvn]]
 * mq: use scmutil.revsymbol() to resolve applied patch tooltip (fixes #5271)
 * qtlib: check PyQt ver supporting setShortcutVisibleInContextMenu (fixes #5272)
 * repowidget: do not open merge dialog with the "current" rev (fixes #5222)
+* repowidget: use rev() to convert changectx and thgchangectx (fixes #5283)
 * settings: display only usable phases for phases.new-commit (fixes #5288)
 * update: use rev() to convert changectx and thgchangectx (fixes #5281)
 * wix: add _sqlite3.pyd to the lib\ folder

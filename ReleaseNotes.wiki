@@ -17,6 +17,15 @@ recent stable releases of TortoiseHG and Mercurial together. TortoiseHg synchron
 version numbers with Mercurial at release 3.0, so you should always use the same major
 revision number of TortoiseHg as Mercurial for any Mercurial version later than 3.0.
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
+----
+
+= TortoiseHg 4.8.2 =
+
+TortoiseHg 4.8.2 is a regularly scheduled bug-fix release
+
+== Bug Fixes ==
+
+* hglib: use mercurial.filesetlang instead of mercurial.fileset (fixes #5301)
 
 ----
 

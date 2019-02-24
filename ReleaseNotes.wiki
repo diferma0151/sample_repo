@@ -17,6 +17,19 @@ recent stable releases of TortoiseHG and Mercurial together. TortoiseHg synchron
 version numbers with Mercurial at release 3.0, so you should always use the same major
 revision number of TortoiseHg as Mercurial for any Mercurial version later than 3.0.
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
+
+= TortoiseHg 4.9 =
+
+TortoiseHg 4.9 is a quarterly feature release
+
+== Bugs Fixes ==
+
+* hglib: use mercurial.filesetlang instead of mercurial.fileset (fixes #5301)
+
+== Improvements ==
+
+* phabricator: introduce a dialog for posting reviews
+
 ----
 
 = TortoiseHg 4.8.2 =

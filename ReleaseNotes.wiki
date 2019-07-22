@@ -18,6 +18,10 @@ version numbers with Mercurial at release 3.0, so you should always use the same
 revision number of TortoiseHg as Mercurial for any Mercurial version later than 3.0.
 For older versions of Mercurial, consult the table in [[OlderReleaseNotes]]
 
+= TortoiseHg 5.0.2 =
+
+TortoiseHg 5.0.2 is primarily a refresh to pick up the latest stable Mercurial release
+
 = TortoiseHg 4.9.1 =
 
 TortoiseHg 4.9.1 is a regularly scheduled bug-fix release
